@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9073D867-27A9-8743-A0AD-351DA1DE33B9" name="TA_IDENTIFIANT">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-15 11:45:51 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="objectid" id="130C0692-0186-9BAF-074E-0A875A600AC7">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-15 11:45:59 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="code" id="358BB757-665C-688C-65B4-03090F4FD174">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-15 11:46:11 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type_code" id="0E01F38A-8E6B-E587-D957-E4A737AEF4B6">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-15 11:46:52 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="objectid1" id="8827DA8E-0ABD-A5FE-F57B-4938CEF66995">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-15 11:48:46 UTC</createdTime>
+<generatorID>D15885AE-D4DF-5BEC-8E05-866951C96FC7</generatorID>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<referedAttribute>51A090EF-8E3A-E7D0-8AD0-75ADB30CE20B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CB67BC49-7AEB-575F-1CAB-0B1E22C171C9" name="TA_CODE PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-15 11:46:10 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>130C0692-0186-9BAF-074E-0A875A600AC7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

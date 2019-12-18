@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="B67CADED-5C55-5023-0CCB-C68C0110F0BB">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:13:37 UTC</createdTime>
+<ownerDesignName>Topo_communes</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

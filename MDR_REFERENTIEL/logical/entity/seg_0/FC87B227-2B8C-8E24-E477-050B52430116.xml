@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC87B227-2B8C-8E24-E477-050B52430116" name="TA_FAMILLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:16:17 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="objectid" id="769CE231-EEA4-A0EC-F978-1FA83B7138E1">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:16:31 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="famille" id="CB3B00F4-B5F4-97DD-02E2-9518DAD9EDBC">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:16:46 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C7776A5A-801B-56B0-F85A-13CC5DDDC50F" name="TA_FAMILLE PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:37:16 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>769CE231-EEA4-A0EC-F978-1FA83B7138E1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

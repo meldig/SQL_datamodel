@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12807D2D-DB0D-7BF4-7044-A7BB66B82238" name="TA_CORRESPONDANCE_BPE_POI">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-18 09:17:54 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="AD67CE45-C5E3-7BD0-2725-0310785A900D">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-18 09:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef primaire de la table TA_CORRESPONDANCE_BPE_POI]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code_BPE" id="FF82B487-5692-8474-741C-7404ECDBE471">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-18 09:20:04 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D767E423-EE3B-F108-6CD3-BBCD9F9F9F8A" referredColumn="95D47941-BE02-DF26-6F35-6AA43A409CE8"/>
+</associations>
+</Column>
+<Column name="CDS_FAMILLE" id="5E7D859C-B1A2-AA78-57E4-1C51F65E762B">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-18 09:20:04 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A070BCCA-F338-00D7-5737-F3EAD85F964A" name="TA_CORRESPONDANCE_BPE_POI_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-18 09:23:20 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD67CE45-C5E3-7BD0-2725-0310785A900D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAC78AD2-14CF-CF3E-D529-B02B53506D8F" name="TA_CORRESPONDANCE_BPE_POI_NOMENCLATURE_POI_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-18 09:20:26 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF82B487-5692-8474-741C-7404ECDBE471"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

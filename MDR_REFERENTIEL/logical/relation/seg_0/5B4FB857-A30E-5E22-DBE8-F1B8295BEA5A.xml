@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Rassembler" directorySegmentName="seg_0" id="5B4FB857-A30E-5E22-DBE8-F1B8295BEA5A">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-18 11:14:18 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<sourcePk>C7776A5A-801B-56B0-F85A-13CC5DDDC50F</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FC87B227-2B8C-8E24-E477-050B52430116</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5FFB367C-0774-BB3B-96EB-5E3EFAB1097B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

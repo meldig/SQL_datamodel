@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Produire" directorySegmentName="seg_0" id="35AC7D2D-5DB6-6590-C230-55CE2CACCBFA">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-18 11:14:42 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<sourcePk>9E54C4E5-465D-D709-7406-EF691920CA43</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7E460425-CFC2-99A9-5629-D5053C39FC1C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B407D66-BE3B-DD72-3427-970EEF9C429B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

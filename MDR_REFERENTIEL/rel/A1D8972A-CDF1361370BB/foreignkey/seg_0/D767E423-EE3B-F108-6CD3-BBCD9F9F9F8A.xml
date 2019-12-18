@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D767E423-EE3B-F108-6CD3-BBCD9F9F9F8A" containerWithKeyObject="12807D2D-DB0D-7BF4-7044-A7BB66B82238" localFKIndex="BAC78AD2-14CF-CF3E-D529-B02B53506D8F" name="TA_CORRESPONDANCE_BPE_POI_NOMENCLATURE_POI_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-18 09:20:26 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_NOMENCLATURE_BPE_POI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B656DA39-DD11-EB4E-712E-B312153F5605</referredTableID>
+<keyObject>7934571E-13C8-7FB5-98D5-BC5F5899BE36</keyObject>
+<referredKeyID>7934571E-13C8-7FB5-98D5-BC5F5899BE36</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>code</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

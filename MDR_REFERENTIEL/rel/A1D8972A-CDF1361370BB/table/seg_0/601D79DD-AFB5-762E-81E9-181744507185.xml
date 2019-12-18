@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="601D79DD-AFB5-762E-81E9-181744507185" name="TA_ZONE_ADMINISTRATIVE">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="494F5814-E7F8-3983-905B-C8E2747AB35C">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acronyme" id="A51EFF61-501D-AEB5-40C9-72602C4079C1">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_complet" id="2344DBDD-158E-C7C6-7D8E-7BC880539936">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="ABE62FC1-478B-31B8-B05E-251EFE3A6574">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A7FB339-F031-8754-D970-5483016B82F2" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="fid_source" id="292FEEEF-CDC5-A71F-434E-A4F11E8BAE4D">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC12572A-0176-6F07-5A7B-6DFE567262FB" referredColumn="A6D4B337-DD1D-5387-74FE-7D7B440E6EDA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FAF69893-9C98-D6CD-381B-70678412A30A" name="TA_ZONE_ADMINISTRATIVE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="494F5814-E7F8-3983-905B-C8E2747AB35C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9725E2C-EDBF-7AB9-51A5-1D569C5391D2" name="TA_SOURCE_FKv2">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="292FEEEF-CDC5-A71F-434E-A4F11E8BAE4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="584A33F7-3AFA-11BA-6D8E-3AFA526E2D48" name="TA_LIBELLE_FKv1">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABE62FC1-478B-31B8-B05E-251EFE3A6574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

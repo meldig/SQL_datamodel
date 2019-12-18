@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Donner" directorySegmentName="seg_0" id="87EE1A50-EA17-955E-E715-5E7654C2ED84">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-18 11:15:55 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<sourcePk>90D1EDA5-4D0A-6773-5E27-831694589EF8</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BFEEA9CC-D02C-EC64-8E04-16EC9E70F498</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AABDF7B2-92F9-129A-7F9C-6E85ABF2029B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

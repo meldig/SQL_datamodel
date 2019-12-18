@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Modèle relationnel" id="A1D8972A-9952-105C-4895-CDF1361370BB" mainViewID="B0BAB015-D108-42D6-7BE1-D3B7E4943017">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:16 UTC</createdTime>
+<ownerDesignName>Modèle de données topographiques</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

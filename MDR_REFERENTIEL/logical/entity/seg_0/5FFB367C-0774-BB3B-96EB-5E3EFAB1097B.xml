@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5FFB367C-0774-BB3B-96EB-5E3EFAB1097B" name="TA_FAMILLE_LIBELLES">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:38:19 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="objectid" id="210E8F3C-DBE2-01BB-1209-37B0BB0DB899">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:38:32 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fid_libelle" id="C1607C1F-0F23-C2A6-4D41-DCE14FFD33F9">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:38:50 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fid_famille" id="D4F22C7F-9EB7-6138-9A0C-D9D3CC2B4A88">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:39:15 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="objectid2" id="B21C93EC-C259-F885-362D-AA66C89F4286">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-18 11:13:54 UTC</createdTime>
+<generatorID>66864419-961E-44E0-C964-A89125CEF05F</generatorID>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<referedAttribute>51A090EF-8E3A-E7D0-8AD0-75ADB30CE20B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="objectid1" id="FBA0445B-9E54-1630-C0ED-B95B0DCF7EF4">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-18 11:14:18 UTC</createdTime>
+<generatorID>5B4FB857-A30E-5E22-DBE8-F1B8295BEA5A</generatorID>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<referedAttribute>769CE231-EEA4-A0EC-F978-1FA83B7138E1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="39D0A049-BCE1-4D92-EB8A-9C8EDCB0CA89" name="TA_FAMILLE_LIBELLES PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:38:47 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>210E8F3C-DBE2-01BB-1209-37B0BB0DB899</attributeRef>
+<attributeRef>B21C93EC-C259-F885-362D-AA66C89F4286</attributeRef>
+<attributeRef>FBA0445B-9E54-1630-C0ED-B95B0DCF7EF4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

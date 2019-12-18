@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="698182FE-44C3-9FD5-FD6E-0BCF048EA27A" name="VM_MEL_ACTUELLE_CARTO">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+	a.insee,
+	a.nom,
+	a.geom
+FROM
+	ta_commune a
+	INNER JOIN ta_za_communes b
+	ON a.fid_validite = b.objectid
+WHERE
+	sysdate BETWEEN b.debut_validite AND b.fin_validite;]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fid_identifiant" id="193702B0-28BC-498F-EE1F-45A4CA32C50F">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<comment><![CDATA[Code insee de la commune]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (38)</dataType>
+<headerAlias>insee</headerAlias>
+<reference>false</reference>
+<viewID>698182FE-44C3-9FD5-FD6E-0BCF048EA27A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nom" id="BF2812E7-A24A-7AD2-DB75-0769CFFBADF3">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<comment><![CDATA[Nom de la commune]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (200 BYTE)</dataType>
+<headerAlias>nom</headerAlias>
+<reference>false</reference>
+<viewID>698182FE-44C3-9FD5-FD6E-0BCF048EA27A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="6AEDE524-2A5F-9A18-4BE0-4A0D9422EF89">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<comment><![CDATA[Géométrie de la commune]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>SDO_GEOMETRY</dataType>
+<headerAlias>geom</headerAlias>
+<reference>false</reference>
+<viewID>698182FE-44C3-9FD5-FD6E-0BCF048EA27A</viewID>
+</viewElement>
+</viewElements>
+</TableView>

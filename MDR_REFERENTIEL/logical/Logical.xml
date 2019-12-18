@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="4630E70A-2897-F8BB-4000-705AF6CBD55C" mainViewID="89213C65-2035-2F11-B5EA-0ADC0582AE5F">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:13:37 UTC</createdTime>
+<ownerDesignName>Topo_communes</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

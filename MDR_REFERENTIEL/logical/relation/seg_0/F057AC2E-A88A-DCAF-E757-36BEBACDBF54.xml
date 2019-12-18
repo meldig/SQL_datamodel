@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Regrouper" directorySegmentName="seg_0" id="F057AC2E-A88A-DCAF-E757-36BEBACDBF54">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-18 11:15:28 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<sourcePk>F643D078-05BD-D204-D37A-2357CA21C46C</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>28A03343-EF14-A849-EB14-A21F74BD45FA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AABDF7B2-92F9-129A-7F9C-6E85ABF2029B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

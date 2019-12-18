@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MDR_REFERENTIEL" id="ED2B5B29-1539-34A3-B745-F5323D3F9867" version="3.5">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:13:37 UTC</createdTime>
+<ownerDesignName>Topo_communes</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>ED2B5B29-1539-34A3-B745-F5323D3F9867</designId>
+</OSDM_Design>

@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28A03343-EF14-A849-EB14-A21F74BD45FA" name="TA_COMMUNES">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:52:16 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="objectid" id="B10930CC-E597-3E1C-41F3-976CE1A379DA">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:52:54 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fid_code" id="4FAE9EFA-0791-3665-3C7C-3668BB12FCC4">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:53:10 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom" id="75C3779E-0A81-9B7E-2C23-E9D1C6CCEEDF">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:53:25 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="geom" id="09EBC9CC-933B-C782-6E9B-5AB81CA3684B">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:53:44 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fid_source" id="70EEDCC6-7FB0-F678-92BE-230B63724FD7">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:54:27 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fid_lib_type_commune" id="5AAA753B-792D-7CF1-3CDB-483F9D1730A0">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:54:48 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="objectid1" id="F0339526-1D49-8DD8-3667-ECD5F66645C7">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:57:50 UTC</createdTime>
+<generatorID>A7A4030A-2F04-EC87-73A9-3065DB2448CB</generatorID>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<referedAttribute>51A090EF-8E3A-E7D0-8AD0-75ADB30CE20B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="objectid2" id="7123B8B2-EC68-B738-CF25-BBE5F3D101ED">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-18 11:15:07 UTC</createdTime>
+<generatorID>A5AA4331-1D50-B430-E975-8FB30FB83080</generatorID>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<referedAttribute>7DA1F0C7-35D1-D5E9-4196-D5A1CEEAFA1D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="objectid12" id="A7E03B28-96E2-1AD0-A96C-9521BB9DC53F">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-18 11:15:07 UTC</createdTime>
+<generatorID>A5AA4331-1D50-B430-E975-8FB30FB83080</generatorID>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<referedAttribute>C155E13F-31FD-247C-3598-B511314F29B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="objectid3" id="B3A02E65-17E8-FBCE-DE5C-741E51A77790">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-11-15 11:49:23 UTC</createdTime>
+<generatorID>79DF3CE0-CE84-54F8-24A0-84AD278F6DC8</generatorID>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<referedAttribute>130C0692-0186-9BAF-074E-0A875A600AC7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F643D078-05BD-D204-D37A-2357CA21C46C" name="TA_COMMUNES PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2019-09-17 13:53:09 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<engineerTo>
+<item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B10930CC-E597-3E1C-41F3-976CE1A379DA</attributeRef>
+<attributeRef>7123B8B2-EC68-B738-CF25-BBE5F3D101ED</attributeRef>
+<attributeRef>A7E03B28-96E2-1AD0-A96C-9521BB9DC53F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
