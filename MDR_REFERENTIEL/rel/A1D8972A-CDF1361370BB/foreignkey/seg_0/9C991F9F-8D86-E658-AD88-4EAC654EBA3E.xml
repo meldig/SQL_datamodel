@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9C991F9F-8D86-E658-AD88-4EAC654EBA3E" containerWithKeyObject="8F15DCB7-36B7-BF95-98E6-BFD1AEE4D524" localFKIndex="59B07C39-5BE4-9A86-6448-B278A0DAD8CC" name="TA_BPE_VARIABLE_ENSEIGNEMENT_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_BPE_VARIABLE_ENSEIGNEMENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>839D31E3-0BE9-61BA-429A-C5ABEF64C167</referredTableID>
+<keyObject>35B5FE20-5601-C34B-D29E-F75A51074967</keyObject>
+<referredKeyID>35B5FE20-5601-C34B-D29E-F75A51074967</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5CAB17B-068A-C2DB-E3A5-276F0A0D6153" name="TA_BPE_NOMENCLATURE_CORRESPONDANCE">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fid_bpe" id="FBAA1DD7-AA56-A307-D9E2-C6263A8203C9">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA7C6044-392F-1DB5-F05A-762AB952809E" referredColumn="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
+</associations>
+</Column>
+<Column name="fid_bpe_poi_nomenclature" id="D128A2ED-8912-D7F4-EE6B-2A5D78D7418B">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AC6BE40-3C36-424F-8C8D-CE13587801C7" referredColumn="9C8A3508-C8A3-45ED-B9D2-8AF74681ECB2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F5984F4-6748-EE14-32D1-2A89CEF00042" name="TA_BPE_NOMENCLATURE_CORRESPONDANCE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBAA1DD7-AA56-A307-D9E2-C6263A8203C9"/>
+<colUsage columnID="D128A2ED-8912-D7F4-EE6B-2A5D78D7418B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FDF9CEF-7454-FF6A-0B6F-4A06B7DAB733" name="TA_BPE_POI_NOMENCLATURE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D128A2ED-8912-D7F4-EE6B-2A5D78D7418B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="534EF291-C0C3-886C-22CC-3B70FD4897B0" name="TA_BPE_FKv2">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-27 07:58:02 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBAA1DD7-AA56-A307-D9E2-C6263A8203C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

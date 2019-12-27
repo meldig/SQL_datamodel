@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2AC13709-CC7A-3FAA-8437-ADFA03C7E8C5" containerWithKeyObject="4CB23E8C-1C4F-5696-BCEC-3D71A44ADD6A" localFKIndex="BB2EDDE1-A34B-84A1-46E8-C3008A38FEF3" name="TA_BPE_TA_SOURCE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B883D544-0A2E-5B94-DC5C-88BCC59A9DF3" containerWithKeyObject="4D46E40A-1D66-2AFB-6D86-8D049C9E302E" localFKIndex="62635157-EAFA-F4D6-FA5E-2B79620FF4C3" name="TA_SOURCE_FKv4">
 <createdBy>rjault</createdBy>
-<createdTime>2019-12-18 08:16:03 UTC</createdTime>
+<createdTime>2019-12-23 16:43:41 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_SOURCE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

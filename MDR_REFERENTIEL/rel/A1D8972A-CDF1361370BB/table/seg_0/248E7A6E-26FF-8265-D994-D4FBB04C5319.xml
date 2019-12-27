@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="248E7A6E-26FF-8265-D994-D4FBB04C5319" name="TA_BPE_VARIABLE">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="46EE3EED-E15C-08BD-98CA-7CA0847C74C1">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[clef primaire de latable]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_mod" id="7DDD185D-906F-0240-FD5F-8A6129267F0E">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table contenant le code departement-commune-IRIS (DCIRIS) le departement (DEP), le departement-commune (DEPCOM) et la region d'implantation de l'equipement.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lib_var" id="B878EA02-4BB7-46DE-E148-C09DB4B85C50">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle de la variable]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lib_mod" id="0DE1DB20-2AA7-B6F4-180E-BFF1554670A8">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle de la modalite]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BFAEB3A9-F670-8131-EC8D-DB4EA43A4C19" name="TA_BPE_VARIABLE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46EE3EED-E15C-08BD-98CA-7CA0847C74C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
