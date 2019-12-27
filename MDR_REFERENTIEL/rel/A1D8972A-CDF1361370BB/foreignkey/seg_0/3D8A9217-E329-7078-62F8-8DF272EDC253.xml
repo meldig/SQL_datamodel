@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3D8A9217-E329-7078-62F8-8DF272EDC253" containerWithKeyObject="F478BA61-12C8-9219-7390-725A9E7017ED" localFKIndex="02823C67-4B56-F8F7-C01F-8D65E454AC88" name="TA_BPE_VARIABLE_SPORT_LOISIR_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_BPE_VARIABLE_SPORT_LOISIR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>587F1DC3-E95D-396D-7AD2-7483EDD6D986</referredTableID>
+<keyObject>31850D05-8CA8-65AD-C8CE-A7CA55CADB07</keyObject>
+<referredKeyID>31850D05-8CA8-65AD-C8CE-A7CA55CADB07</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

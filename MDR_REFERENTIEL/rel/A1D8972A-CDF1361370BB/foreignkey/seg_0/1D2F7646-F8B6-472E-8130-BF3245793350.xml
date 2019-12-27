@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1D2F7646-F8B6-472E-8130-BF3245793350" containerWithKeyObject="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" localFKIndex="2F25CB29-ACBD-35C2-2C04-D46227276A7A" name="TA_PROVENANCE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-27 07:39:31 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_PROVENANCE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AD2CBE34-3E03-913A-8730-00AB16EABABA</referredTableID>
+<keyObject>A40F2446-51F7-B6D1-FB0F-A438D166DE8A</keyObject>
+<referredKeyID>A40F2446-51F7-B6D1-FB0F-A438D166DE8A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

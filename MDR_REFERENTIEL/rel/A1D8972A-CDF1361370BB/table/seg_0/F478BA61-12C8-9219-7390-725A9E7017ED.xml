@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F478BA61-12C8-9219-7390-725A9E7017ED" name="TA_BPE_VARIABLE_CORRESPONDANCE_SPORT_LOISIR">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_33</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fid_bpe" id="DFFAB885-7D83-0488-6801-FD5E5B091DB5">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef etrangere vers la table TA_BPE]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C9EA257-3ED4-DFAA-85DE-4C79EDB2E39E" referredColumn="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
+</associations>
+</Column>
+<Column name="fid_bpe_variable_sport_loisir" id="EDCC7A70-EC26-4426-929D-FCF2CB5F5762">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef etrangere vers la table TA_BPE_VARIABLE_SPORT_LOISIR]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D8A9217-E329-7078-62F8-8DF272EDC253" referredColumn="8021F3A9-3AC0-7C05-7EB3-20FB409F8BD7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2259D7CA-6EFE-7E11-C3A8-67F8FA895CB7" name="TA_BPE_VARIABLE_CORRESPONDANCE_SPORT_LOISIR">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFFAB885-7D83-0488-6801-FD5E5B091DB5"/>
+<colUsage columnID="EDCC7A70-EC26-4426-929D-FCF2CB5F5762"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02823C67-4B56-F8F7-C01F-8D65E454AC88" name="TA_BPE_VARIABLE_SPORT_LOISIR_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDCC7A70-EC26-4426-929D-FCF2CB5F5762"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23076CBA-8A05-5F12-3ED9-E0864262AB5F" name="TA_BPE_FKv1">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-27 07:54:56 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFFAB885-7D83-0488-6801-FD5E5B091DB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
