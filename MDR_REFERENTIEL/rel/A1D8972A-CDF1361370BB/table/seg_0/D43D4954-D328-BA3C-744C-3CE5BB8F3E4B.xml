@@ -33,6 +33,7 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="1D2F7646-F8B6-472E-8130-BF3245793350" referredColumn="BDF51AC6-722D-4109-6318-B9A8D8EC7610"/>
+<colAssociation fkAssociation="3EAC4D00-7A97-33D6-B542-20C5FB75584C" referredColumn="A6D4B337-DD1D-5387-74FE-7D7B440E6EDA"/>
 </associations>
 </Column>
 <Column name="GEOM" id="3FCC291E-433C-F3AF-6C0F-375D07DECC2C">
@@ -205,6 +206,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5CAAC10B-EEB8-00F2-DFA8-0A13427B8B7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3E57FD5-8718-CABC-6FA3-3FA74812A42D" name="TA_BPE_TA_SOURCE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-27 08:26:40 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EECE9F90-B79E-5EF8-4C25-956921CD4149"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
