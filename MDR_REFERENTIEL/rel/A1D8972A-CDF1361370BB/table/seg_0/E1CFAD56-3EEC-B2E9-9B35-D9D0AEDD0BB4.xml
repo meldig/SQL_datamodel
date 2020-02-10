@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1CFAD56-3EEC-B2E9-9B35-D9D0AEDD0BB4" name="TA_ECHELLE">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-27 08:42:14 UTC</createdTime>
+<comment><![CDATA[Table qui recence les echelles d'affichage des données sources.]]></comment>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="A0FCAF6E-B8B8-037B-63E2-0A6A00498779">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-27 08:43:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef primaire de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="echelle" id="97634629-854B-27A1-63FC-A135BB3DD216">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-27 08:43:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Echelle d'affichage de la donnée source. Exemple: 1/25000.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="811A4FAE-D8D7-F1ED-8ABC-6A1904F501AD" name="TA_ECHELLE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-27 08:43:43 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0FCAF6E-B8B8-037B-63E2-0A6A00498779"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

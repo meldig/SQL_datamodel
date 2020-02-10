@@ -2,7 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADD8A6E5-A82E-8B3F-9FF2-FF0814606D84" name="TA_IDENTIFIANT_PAYS">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_20</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +11,7 @@
 <Column name="objectid" id="16C18823-0FAC-88EE-D361-E2FD536DCCA0">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -22,19 +22,7 @@
 <Column name="fid_pays" id="D3F908AE-C261-843C-FB5A-4FB90BF9B4C1">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fid_identifiant" id="A4F221A3-A9FE-6E31-3C72-DE90C96B9CB5">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -42,24 +30,30 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="10E80666-DB35-AF08-DC33-1659BA6868B0" referredColumn="82C4FB7B-2C83-5B98-9019-80B40B82674C"/>
+<colAssociation fkAssociation="0D591DEF-7828-B6D9-598F-034C047E3756" referredColumn="0F4ED203-BE18-F869-357C-B2669A4D4E29"/>
 </associations>
 </Column>
-<Column name="Column_4" id="F7425649-2E29-DB43-99E9-3DA623507FA8">
+<Column name="fid_identifiant" id="A4F221A3-A9FE-6E31-3C72-DE90C96B9CB5">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_CODE indiquant le ou les codes du pays.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2519DC51-03DC-EF09-FAFB-FC67E57C812B" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="0285A1C8-B5DC-926D-F823-6271B4A13B52" name="TA_IDENTIFIANT_PAYS_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -67,14 +61,24 @@
 <colUsage columnID="16C18823-0FAC-88EE-D361-E2FD536DCCA0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="65AB19FC-AFF1-FCE9-DC40-36FD5C48234D" name="TABLE_20_TA_IDENTIFIANT_FK">
+<ind_PK_UK id="89E06BE8-76D1-A398-39F9-C65ED788D0ED" name="TA_CODE_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<createdTime>2020-01-27 09:39:54 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A4F221A3-A9FE-6E31-3C72-DE90C96B9CB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E32408E8-4378-465B-2B0C-DC90E2AE187A" name="TA_PAYS_FKv1">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-01-27 09:44:30 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3F908AE-C261-843C-FB5A-4FB90BF9B4C1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

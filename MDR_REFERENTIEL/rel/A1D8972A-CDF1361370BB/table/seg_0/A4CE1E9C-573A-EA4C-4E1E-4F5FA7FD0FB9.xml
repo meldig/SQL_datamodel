@@ -2,7 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9" name="TA_FAMILLE">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_3</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +11,7 @@
 <Column name="objectid" id="164B7C89-0615-592B-D455-E44A201D8B81">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -22,7 +22,7 @@
 <Column name="famille" id="96D82F41-F7A9-A7F1-AF30-64C4863A86BC">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -36,7 +36,7 @@
 <ind_PK_UK id="30D66828-C324-E3BC-C43C-7C2929BA3322" name="TA_FAMILLE_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>

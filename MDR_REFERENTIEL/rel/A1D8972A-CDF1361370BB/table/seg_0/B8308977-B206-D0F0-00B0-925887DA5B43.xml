@@ -2,7 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B8308977-B206-D0F0-00B0-925887DA5B43" name="TA_ZA_COMMUNES">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_11</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +11,7 @@
 <Column name="objectid" id="2EA41768-8EAF-8F2B-55B1-0BC0882EDFAE">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -22,7 +22,7 @@
 <Column name="fid_commune" id="5A312A3F-2A4E-BDA3-FD59-12D71D2219C4">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -37,7 +37,7 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <comment><![CDATA[Le fid_commune correspond au code insee de chaque commune.]]></comment>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -51,7 +51,7 @@
 <Column name="debut_validite" id="DD468113-0F10-E10A-6B37-61E6B0645522">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -62,7 +62,7 @@
 <Column name="fin_validite" id="E1C10412-307F-CFD1-2151-8D4A4AC4394B">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -75,7 +75,7 @@
 <ind_PK_UK id="54F7D89B-DDF9-A4EF-51A0-9C2E79CAAD56" name="TA_ZA_COMMUNES_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -86,7 +86,7 @@
 <ind_PK_UK id="B2D8471D-D4E7-9AA9-3981-B6485A63FB36" name="TA_ZONE_ADMINISTRATIVE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -96,7 +96,7 @@
 <ind_PK_UK id="62C6293A-A8B3-E367-71D0-5251B05BC340" name="TA_COMMUNE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

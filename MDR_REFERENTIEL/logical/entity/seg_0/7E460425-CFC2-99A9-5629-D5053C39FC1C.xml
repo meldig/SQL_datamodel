@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E460425-CFC2-99A9-5629-D5053C39FC1C" name="TA_ORGANISME">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:01:44 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="objectid" id="F72C7CBF-3763-BCF2-78EF-12D9A73CE782">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:01:54 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -31,7 +31,7 @@
 <Attribute name="acronyme" id="BA637E3E-3072-3276-CE38-044972B4265F">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:02:06 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -45,7 +45,7 @@
 <Attribute name="nom_complet" id="A9EE3DF6-CBDF-176F-A141-1D9A5C19B3E7">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:02:28 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -61,7 +61,7 @@
 <identifier id="9E54C4E5-465D-D709-7406-EF691920CA43" name="TA_ORGANISME PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:02:51 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>

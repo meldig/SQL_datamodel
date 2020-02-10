@@ -2,7 +2,7 @@
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Appartenir" directorySegmentName="seg_0" id="66864419-961E-44E0-C964-A89125CEF05F">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-18 11:13:54 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>

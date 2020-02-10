@@ -2,7 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="601D79DD-AFB5-762E-81E9-181744507185" name="TA_ZONE_ADMINISTRATIVE">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_10</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +11,7 @@
 <Column name="objectid" id="494F5814-E7F8-3983-905B-C8E2747AB35C">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -22,7 +22,7 @@
 <Column name="acronyme" id="A51EFF61-501D-AEB5-40C9-72602C4079C1">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +34,7 @@
 <Column name="nom_complet" id="2344DBDD-158E-C7C6-7D8E-7BC880539936">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,21 +46,22 @@
 <Column name="fid_libelle" id="ABE62FC1-478B-31B8-B05E-251EFE3A6574">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="2A7FB339-F031-8754-D970-5483016B82F2" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
 </associations>
 </Column>
-<Column name="fid_source" id="292FEEEF-CDC5-A71F-434E-A4F11E8BAE4D">
+<Column name="fid_metadonnee" id="EA9793A0-D8C2-1EA4-4392-1788073B84E0">
 <createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<createdTime>2020-01-27 10:06:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_METADONNEE.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -68,7 +69,7 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="DC12572A-0176-6F07-5A7B-6DFE567262FB" referredColumn="A6D4B337-DD1D-5387-74FE-7D7B440E6EDA"/>
+<colAssociation fkAssociation="15EC4231-DDF1-D50E-7883-29C70F3E300A" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
 </associations>
 </Column>
 </columns>
@@ -76,7 +77,7 @@
 <ind_PK_UK id="FAF69893-9C98-D6CD-381B-70678412A30A" name="TA_ZONE_ADMINISTRATIVE_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -84,24 +85,24 @@
 <colUsage columnID="494F5814-E7F8-3983-905B-C8E2747AB35C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D9725E2C-EDBF-7AB9-51A5-1D569C5391D2" name="TA_SOURCE_FKv2">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="292FEEEF-CDC5-A71F-434E-A4F11E8BAE4D"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="584A33F7-3AFA-11BA-6D8E-3AFA526E2D48" name="TA_LIBELLE_FKv1">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="ABE62FC1-478B-31B8-B05E-251EFE3A6574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56254C48-9B63-174C-64A3-33FCB5D8D98B" name="TA_METADONNEE_FKv2">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-01-27 10:06:52 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA9793A0-D8C2-1EA4-4392-1788073B84E0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

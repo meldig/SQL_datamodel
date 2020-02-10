@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="49CBF571-6161-FE18-67DB-2B3F81A8904F" containerWithKeyObject="4068220D-C45D-34FB-66B9-7F163754C58A" localFKIndex="1A48A8DE-9C47-F4D5-FF1C-4AA815C3D129" name="TA_BPE_OBJECTID_FKv1">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-03 14:53:56 UTC</createdTime>
+<comment><![CDATA[Clef étrangère vers la table TA_BPE.]]></comment>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_BPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D43D4954-D328-BA3C-744C-3CE5BB8F3E4B</referredTableID>
+<keyObject>33E8F57F-FCCA-B41E-BF16-CECF49A39F34</keyObject>
+<referredKeyID>33E8F57F-FCCA-B41E-BF16-CECF49A39F34</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

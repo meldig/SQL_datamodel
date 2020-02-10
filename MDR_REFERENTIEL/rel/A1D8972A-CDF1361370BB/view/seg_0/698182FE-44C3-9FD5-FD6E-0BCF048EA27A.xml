@@ -2,7 +2,7 @@
 <TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="698182FE-44C3-9FD5-FD6E-0BCF048EA27A" name="VM_MEL_ACTUELLE_CARTO">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <ordsAlias>view_1</ordsAlias>
 <userDefined>true</userDefined>
 <userDefinedSQL><![CDATA[SELECT
@@ -21,7 +21,7 @@ WHERE
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <comment><![CDATA[Code insee de la commune]]></comment>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <dataType>NUMBER (38)</dataType>
@@ -33,7 +33,7 @@ WHERE
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <comment><![CDATA[Nom de la commune]]></comment>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <dataType>VARCHAR2 (200 BYTE)</dataType>
@@ -45,7 +45,7 @@ WHERE
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <comment><![CDATA[Géométrie de la commune]]></comment>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <dataType>SDO_GEOMETRY</dataType>

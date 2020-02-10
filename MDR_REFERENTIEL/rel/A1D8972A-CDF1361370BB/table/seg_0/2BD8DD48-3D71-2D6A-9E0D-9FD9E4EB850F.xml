@@ -2,7 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2BD8DD48-3D71-2D6A-9E0D-9FD9E4EB850F" name="TA_IDENTIFIANT_COMMUNE">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_12</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +11,7 @@
 <Column name="objectid" id="CDB72384-34AF-7862-960E-35767855300F">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -22,12 +22,12 @@
 <Column name="fid_commune" id="E0DE7ECD-47B8-7533-1034-51C9ADEA4E91">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="D16B80BA-19D5-9DF1-B781-4ACFBED4C147" referredColumn="3E0B2346-AFE5-9E01-FBFC-EF59E37B89ED"/>
@@ -36,15 +36,16 @@
 <Column name="fid_identifiant" id="80F9D246-A268-69B3-D3CF-F2D645540EB5">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_CODE indiquant le ou les codes de la commune. Exemple : code insee / code postal.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B89E7851-B894-1A84-D6DE-4520A1E80165" referredColumn="82C4FB7B-2C83-5B98-9019-80B40B82674C"/>
+<colAssociation fkAssociation="90E90EC4-A512-4B9F-6246-7186DDA539FF" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
 </associations>
 </Column>
 </columns>
@@ -52,7 +53,7 @@
 <ind_PK_UK id="9258FE5D-82B9-5EE7-EA84-18F6CB6C6178" name="TA_IDENTIFIANT_COMMUNE_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -60,24 +61,24 @@
 <colUsage columnID="CDB72384-34AF-7862-960E-35767855300F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E2A8D9D0-581D-5255-8249-2E2D40890FA2" name="TA_IDENTIFIANT_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="80F9D246-A268-69B3-D3CF-F2D645540EB5"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="552D6F55-B2E3-E420-68B5-061FD595F852" name="TA_COMMUNE_FKv1">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E0DE7ECD-47B8-7533-1034-51C9ADEA4E91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE9257AB-59E2-EDE2-271A-10A5F49BE762" name="TA_CODE_FKv1">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-01-27 09:40:38 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80F9D246-A268-69B3-D3CF-F2D645540EB5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
