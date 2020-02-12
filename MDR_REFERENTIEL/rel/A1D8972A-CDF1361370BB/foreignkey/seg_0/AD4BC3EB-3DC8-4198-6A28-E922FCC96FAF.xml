@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FC88199D-D9CA-7B73-8378-063E9B5ED59E" containerWithKeyObject="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" localFKIndex="338848DD-4967-1AB0-49C8-C71812E63DE3" name="TA_BPE_TA_METADONNEE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AD4BC3EB-3DC8-4198-6A28-E922FCC96FAF" containerWithKeyObject="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" localFKIndex="FF81A11E-80D5-9854-62E8-36B0E3775E62" name="TA_BPE_TA_METADONNEE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-01-15 14:21:26 UTC</createdTime>
-<comment><![CDATA[Clef etrangere vers la table TA_METADONNEE  pour connaitre la source de la donnees.]]></comment>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<createdTime>2020-02-11 08:56:55 UTC</createdTime>
+<comment><![CDATA[Clef étrangère vers la table TA_METADONNEE.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_METADONNEE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>3DCD645D-F32F-3D02-660A-8A35DA02282A</referredTableID>
