@@ -3,7 +3,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:06:29 UTC</createdTime>
 <comment><![CDATA[Table de correspondance pour renseigner les variables quantitatives des équipements issus des fichiers enseignements et sport loisir.]]></comment>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_26</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,27 +13,24 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:11:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef primaire de la table]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="558DA037-3F0E-12D6-8485-91FC57E48F5C" referredColumn="FF107EC0-F301-27D5-E55D-0DC50354D116"/>
-</associations>
 </Column>
 <Column name="fid_bpe" id="C83C4244-B040-2260-5F60-631E86E3A4F2">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:12:46 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef étrangère vers la table TA_BPE.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7B466C77-948A-96ED-A4A8-E96A32B89C77" referredColumn="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
@@ -43,7 +40,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:13:28 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef étrangère vers la table TA_LIBELLE.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -55,7 +52,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:14:37 UTC</createdTime>
 <commentInRDBMS><![CDATA[Nombre d'équipement.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -64,12 +61,42 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TA_BPE_RELATION_LIBELLE_fid_libelle_fils" id="A61686A5-82CE-8B31-2F04-DD942AEB00E1">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-12 13:46:46 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="558DA037-3F0E-12D6-8485-91FC57E48F5C" referredColumn="3629640D-B529-48BA-B21F-548A365062C9"/>
+</associations>
+</Column>
+<Column name="TA_BPE_RELATION_LIBELLE_fid_libelle_parent" id="EE859622-16B5-87CB-7053-9E0A68A7CC96">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-12 13:46:46 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="558DA037-3F0E-12D6-8485-91FC57E48F5C" referredColumn="C4F00EF2-2156-27B5-923F-E1708C4577E9"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="F6A60BDD-111E-E387-5EC1-4CA510506EED" name="TA_NOMBRE_AIRE_JEU_OU_EQUIPEMENTOU_SALLES_PK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:11:16 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -80,7 +107,7 @@
 <ind_PK_UK id="1F4AED38-0477-8374-DBCF-03B8A13F765C" name="TA_BPE_OBJECTID_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:15:57 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -90,11 +117,12 @@
 <ind_PK_UK id="18A31102-C71C-D682-593B-CF61AFC5B8F5" name="TA_BPE_RELATION_LIBELLE_OBJECTID_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-05 14:02:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4E58B410-5399-5C87-997E-CAFED39CF8A1"/>
+<colUsage columnID="A61686A5-82CE-8B31-2F04-DD942AEB00E1"/>
+<colUsage columnID="EE859622-16B5-87CB-7053-9E0A68A7CC96"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

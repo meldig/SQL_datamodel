@@ -3,29 +3,17 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 14:37:10 UTC</createdTime>
 <comment><![CDATA[Table qui sert à définir les relations entre les différents libelle de la nomenclature de la base permanente des equipements. Exemple A101/Police est un sous élément du libelle A1/Services Publics.x/Sans Object peut être un sous élément de COUVERT/Equipement couvert ou non mais aussi de ECLAIRE/Equipement éclairé ou non.]]></comment>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_30</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="FF107EC0-F301-27D5-E55D-0DC50354D116">
-<createdBy>rjault</createdBy>
-<createdTime>2020-02-03 14:38:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clef primaire de la table TA_BPE_RELATION_LIBELLE.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="fid_libelle_fils" id="3629640D-B529-48BA-B21F-548A365062C9">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 14:44:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Cléf étrangère vers la table TA_LIBELLE  pour connaitre libelle fils.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -40,7 +28,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 14:45:29 UTC</createdTime>
 <commentInRDBMS><![CDATA[Cléf étrangère vers la table TA_LIBELLE  pour connaitre libelle parent.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -56,18 +44,19 @@
 <ind_PK_UK id="84AEC3A6-205D-CB95-62D5-D43D91F5976F" name="TA_BPE_RELATION_PK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 14:38:34 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FF107EC0-F301-27D5-E55D-0DC50354D116"/>
+<colUsage columnID="3629640D-B529-48BA-B21F-548A365062C9"/>
+<colUsage columnID="C4F00EF2-2156-27B5-923F-E1708C4577E9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="8A79C822-F2A5-718A-0ED6-BA25D5047506" name="TA_LIBELLE_OBJECTID_FID_LIBELLE_FILS_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-05 07:42:38 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -77,7 +66,7 @@
 <ind_PK_UK id="619CC684-15E5-A04F-F1A1-83D88776E9A3" name="TA_LIBELLE_OBJECTID_FID_LIBELLE_PARENT_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-05 07:42:48 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
