@@ -2,8 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1CFAD56-3EEC-B2E9-9B35-D9D0AEDD0BB4" name="TA_ECHELLE">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-27 08:42:14 UTC</createdTime>
-<comment><![CDATA[Table qui recence les echelles d'affichage des données sources.]]></comment>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Table qui recence les echelles d'affichage des données sources.
+Exemple : 1:10 000]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_29</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -13,7 +14,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-27 08:43:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef primaire de la table.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -25,7 +26,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-27 08:43:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Echelle d'affichage de la donnée source. Exemple: 1/25000.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -39,7 +40,7 @@
 <ind_PK_UK id="811A4FAE-D8D7-F1ED-8ABC-6A1904F501AD" name="TA_ECHELLE_PK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-27 08:43:43 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>

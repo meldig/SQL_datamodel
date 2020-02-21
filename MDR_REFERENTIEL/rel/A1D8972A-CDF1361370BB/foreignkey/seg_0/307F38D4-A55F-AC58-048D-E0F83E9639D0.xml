@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="307F38D4-A55F-AC58-048D-E0F83E9639D0" containerWithKeyObject="14F62236-464B-7A94-76C3-C1AA0EFD8664" localFKIndex="7B77D54C-320C-64C0-7566-4E79B400CEB1" name="TA_CODE_TA_LIBELLE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="307F38D4-A55F-AC58-048D-E0F83E9639D0" containerWithKeyObject="14F62236-464B-7A94-76C3-C1AA0EFD8664" localFKIndex="7B77D54C-320C-64C0-7566-4E79B400CEB1" name="TA_LIBELLE_FKv5">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 08:25:37 UTC</createdTime>
 <comment><![CDATA[Clef étrangère vers la table TA_LIBELLE pour connaitre la signification des codes. Par exemple: CODE:A101 ->libelle Police.]]></comment>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>5BA04846-FCD4-327F-D4D7-00C6BC71F6D8</referredTableID>

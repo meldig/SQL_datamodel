@@ -14,41 +14,188 @@
 <display>false</display>
 <notation>1</notation>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="0BA759AA-B2EB-09A7-47A6-3661A56A78C7" otype="Note" vid="C89B01CD-23A5-80EB-9F83-38444E60254A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1188" y="609" width="210" height="65"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table indiquant les correspondances entre les libelles et les libelles court issus de la Base Permanente des Equipements. Exemple Police = A101 ou Sans objet = x</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="14F62236-464B-7A94-76C3-C1AA0EFD8664" otype="Table" vid="4C076C54-C591-5330-3BCF-CCE0D5EC05AE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1093" y="61" width="250" height="125"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="155DAFE2-4C2A-1411-D3B2-80F75B66F8C5" otype="Note" vid="71FE82CE-C936-061D-0A8B-C0D51715CEA4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1149" y="189" width="189" height="56"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les codes de chaque objet de la base.
+Exemple : 59000, 59350</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="2AFEABCB-28FA-EF7E-6444-0469B83FA82D" otype="Note" vid="6D6B3B9C-F423-CA80-1269-E0D7B602F94B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="34" y="642" width="278" height="40"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table regroupant les equipements de la Base Permanente des Equipements.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="38BACC06-F938-3BA3-BE61-1E72C6B5FBF7" otype="Note" vid="AF753B3B-074B-8A87-F307-987B2FE5E0BB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="772" y="16" width="275" height="92"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison entre les tables TA_FAMILLE et TA_LIBELLE, permettant de savoir à quelle famille appartiennent les libellés.
+Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&quot; appartiennent à la famille &quot;Type de commune&quot;</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4068220D-C45D-34FB-66B9-7F163754C58A" otype="Table" vid="E3EF0999-380D-2736-3ABC-B95A92488D14">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="422" y="401" width="398" height="159"/>
+<bounds x="426" y="494" width="398" height="159"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="886" y="207" width="251" height="97"/>
+<bounds x="886" y="279" width="251" height="97"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="62BA9298-AAE5-FEAE-1238-BC8EE0E84023" otype="Note" vid="700B18B2-AAD3-1276-20DE-550B1F2C993B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="913" y="737" width="246" height="57"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table regroupant les libelles court de la Base Permanente des Equipements. Par exemple A101 ou X.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="645C266A-26C2-2557-3F74-A1429498367D" otype="Table" vid="255D4E9B-BF64-AC4B-162F-0772B6F2A487">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="911" y="595" width="257" height="103"/>
+<bounds x="908" y="647" width="257" height="85"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="687275BB-0786-A635-FDB6-09BF0BEFB789" otype="Note" vid="8C6C8D51-ED59-C3D2-154F-CC324FE11B00">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="429" y="659" width="399" height="63"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de relation entre les tables TA_BPE et TA_BPE_LIBELLE_RELATION pour connaitre les attributs des équipements issus de la Base Permanente des Equipements</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="721BE4AD-545B-BCD2-3030-DFD477C9F3A9" otype="Note" vid="9CB88280-8E8D-8DCB-0950-90CD3632F9B8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="418" y="73" width="214" height="70"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de relation entre les equipements et les libelles ou l&apos;&apos;information et sous la forme d&apos;&apos;un nombre: exemple NB_SALLES: 4. L&apos;équipement dispose de 4 salles.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8E6A577C-CE28-B22E-7C55-A3AF7E34082E" otype="Table" vid="9A801D96-B4E5-B119-447C-E8014BF15425">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="772" y="64" width="276" height="121"/>
+<bounds x="769" y="116" width="276" height="121"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A83D28DB-796D-6EF5-6E0E-1C52DC76D35D" otype="Table" vid="588445BB-0D49-9BC7-4338-D3074C032262">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="907" y="365" width="496" height="184"/>
+<bounds x="904" y="417" width="496" height="184"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BA408771-5FAE-5233-4F8D-859389212E53" otype="Table" vid="1DF02D6A-B7B7-3A80-0ACD-2DCB77708514">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="39" y="20" width="373" height="144"/>
+<bounds x="37" y="74" width="373" height="144"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" otype="Table" vid="85055D95-FBCD-DCF1-8DC4-71B01D4EDEA0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="36" y="469" width="282" height="114"/>
+<bounds x="33" y="521" width="282" height="114"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DB9A0F83-D1DC-B841-CFEB-FC24E1C6768E" otype="Table" vid="808FF654-FC21-24CD-B725-17A8EA997C58">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="272" y="206" width="424" height="115"/>
+<bounds x="268" y="346" width="424" height="115"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E2B9E892-6C83-6E18-4CD0-D261D500276C" otype="Note" vid="A167C115-426D-81F4-2416-3326AE798C88">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1145" y="299" width="191" height="71"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant les libellés utilisés pour catégoriser un type d&apos;objets.
+Exemple : commune simple, code insee, unité territoriale</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="FEA56A97-F862-338A-2F03-09BE54DD96D9" otype="Note" vid="F385CAFF-AD7E-CF7F-0EB5-C0D14F7CCFC8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="268" y="251" width="372" height="86"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table qui sert à définir les relations entre les différents libelle de la nomenclature de la base permanente des equipements. Exemple A101/Police est un sous élément du libelle A1/Services Publics.x/Sans Object peut être un sous élément de COUVERT/Equipement couvert ou non mais aussi de ECLAIRE/Equipement éclairé ou non.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 </objectViews>
 <connectors>
@@ -57,8 +204,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="318" y="514"/>
-<point x="422" y="514"/>
+<point x="315" y="578"/>
+<point x="426" y="578"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="251D4BD5-DEE1-D25A-5141-EB30AD009202" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="E3EF0999-380D-2736-3ABC-B95A92488D14">
@@ -66,8 +213,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="886" y="302"/>
-<point x="422" y="464"/>
+<point x="935" y="376"/>
+<point x="749" y="494"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="29A86792-FFE6-EDAB-23AC-1DEE2EBBFC25" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="1DF02D6A-B7B7-3A80-0ACD-2DCB77708514">
@@ -75,8 +222,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="886" y="229"/>
-<point x="412" y="130"/>
+<point x="886" y="298"/>
+<point x="410" y="188"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="307F38D4-A55F-AC58-048D-E0F83E9639D0" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="4C076C54-C591-5330-3BCF-CCE0D5EC05AE">
@@ -84,7 +231,7 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1115" y="207"/>
+<point x="1115" y="279"/>
 <point x="1115" y="186"/>
 </points>
 </Connector>
@@ -93,8 +240,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1022" y="304"/>
-<point x="1022" y="365"/>
+<point x="1020" y="376"/>
+<point x="1020" y="417"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7B466C77-948A-96ED-A4A8-E96A32B89C77" otype="FKIndexAssociation" vid_source="85055D95-FBCD-DCF1-8DC4-71B01D4EDEA0" vid_target="1DF02D6A-B7B7-3A80-0ACD-2DCB77708514">
@@ -102,8 +249,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="178" y="469"/>
-<point x="178" y="164"/>
+<point x="176" y="521"/>
+<point x="176" y="218"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C11B4220-C1A4-F577-F05B-4A3932806C5E" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="9A801D96-B4E5-B119-447C-E8014BF15425">
@@ -111,8 +258,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="967" y="207"/>
-<point x="967" y="185"/>
+<point x="965" y="279"/>
+<point x="965" y="237"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D00D6CDD-EA45-E74D-80F8-050A12FF7939" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="808FF654-FC21-24CD-B725-17A8EA997C58">
@@ -120,8 +267,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="886" y="255"/>
-<point x="696" y="255"/>
+<point x="886" y="376"/>
+<point x="692" y="376"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="DD90D900-6A58-A772-9EE5-4EF35FCDC350" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="808FF654-FC21-24CD-B725-17A8EA997C58">
@@ -129,8 +276,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="886" y="270"/>
-<point x="696" y="270"/>
+<point x="886" y="361"/>
+<point x="692" y="361"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F1FFAD70-73AE-5E16-0DB4-73706FBE9677" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="E3EF0999-380D-2736-3ABC-B95A92488D14">
@@ -138,8 +285,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="886" y="302"/>
-<point x="422" y="464"/>
+<point x="935" y="376"/>
+<point x="734" y="494"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="FF4790B2-2EDD-54C6-D79F-8FD239097480" otype="FKIndexAssociation" vid_source="255D4E9B-BF64-AC4B-162F-0772B6F2A487" vid_target="588445BB-0D49-9BC7-4338-D3074C032262">
@@ -147,8 +294,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1039" y="595"/>
-<point x="1039" y="549"/>
+<point x="1036" y="647"/>
+<point x="1036" y="601"/>
 </points>
 </Connector>
 </connectors>

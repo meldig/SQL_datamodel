@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14F62236-464B-7A94-76C3-C1AA0EFD8664" name="TA_CODE">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-15 09:01:30 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Table rassemblant les codes de chaque objet de la base.
+Exemple : 59000, 59350]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_29</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -12,7 +14,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-15 09:03:01 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef primaire de la table TA_CODE.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -24,7 +26,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-15 09:15:04 UTC</createdTime>
 <commentInRDBMS><![CDATA[Colonne qui repertorie les differents codes que peuvent prendre les differents variables du schema.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -37,7 +39,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 08:21:56 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef étrangère vers la table TA_LIBELLE pour connaitre la signification des codes. Par exemple: CODE:A101 ->libelle Police.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -53,7 +55,7 @@
 <ind_PK_UK id="97A9EEF6-8C66-E89C-51E3-DB07ABBAF908" name="TA_CODE_PK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-15 09:19:43 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -61,10 +63,10 @@
 <colUsage columnID="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7B77D54C-320C-64C0-7566-4E79B400CEB1" name="TA_CODE_TA_LIBELLE_FK">
+<ind_PK_UK id="7B77D54C-320C-64C0-7566-4E79B400CEB1" name="TA_LIBELLE_FKv5">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 08:25:37 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

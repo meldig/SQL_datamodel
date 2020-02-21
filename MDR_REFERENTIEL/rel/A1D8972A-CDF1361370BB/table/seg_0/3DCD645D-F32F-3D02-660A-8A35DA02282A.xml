@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DCD645D-F32F-3D02-660A-8A35DA02282A" name="TA_METADONNEE">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:12:46 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Table de liaison rassemblant la provenance, la date d'acquisition, la source,  l'organisme et l'échelle de chaque donnée source.
+]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_31</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -12,7 +14,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:20:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef primaire de la table TA_METADONNEE]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -24,7 +26,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:13:38 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef étrangère vers la table TA_SOURCE.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -39,7 +41,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:18:08 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef étrangère vers la table TA_ACQUISITION.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -54,7 +56,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:18:40 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef étrangère vers la table TA_PROVENANCE.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -69,7 +71,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:17:37 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef étrangère vers la table TA_ORGANISME.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -84,7 +86,7 @@
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:19:47 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef étrangère vers la table TA_ECHELLE.]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -100,7 +102,7 @@
 <ind_PK_UK id="6CF3B720-A5F7-BA1D-0BF1-E21F3209C577" name="TA_METADONNEE_PK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:20:57 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -111,7 +113,7 @@
 <ind_PK_UK id="65274A94-BE2F-8E1B-067C-8BAADEC5A2A3" name="TA_SOURCE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:32:31 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -121,7 +123,7 @@
 <ind_PK_UK id="18809B5E-AD65-9AE9-2A9A-82411B0E124E" name="TA_PROVENANCE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:32:31 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -131,7 +133,7 @@
 <ind_PK_UK id="8E634549-EC32-D3B5-41E7-F30E10511CAE" name="TA_ORGANISME_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:33:19 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -141,7 +143,7 @@
 <ind_PK_UK id="A55FDFA9-C53D-63FE-F405-CA56F05F87F9" name="TA_DATE_ACQUISITION_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:36:15 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -151,7 +153,7 @@
 <ind_PK_UK id="7FCFAC7B-C60A-3A89-08C9-98053B8C1795" name="TA_ECHELLE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-27 08:46:50 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
