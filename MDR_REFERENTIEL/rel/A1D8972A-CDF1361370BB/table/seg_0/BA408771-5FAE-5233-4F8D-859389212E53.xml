@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA408771-5FAE-5233-4F8D-859389212E53" name="TA_NBR_AIREJEU_EQUPMNT_SALLES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA408771-5FAE-5233-4F8D-859389212E53" name="TA_BPE_CARACTERISTIQUE_NOMBRE">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:06:29 UTC</createdTime>
-<comment><![CDATA[Table de correspondance pour renseigner les variables quantitatives des équipements issus des fichiers enseignements et sport loisir.]]></comment>
+<comment><![CDATA[Table de relation entre les equipements et les libelles ou l''information et sous la forme d''un nombre: exemple NB_SALLES: 4. L'équipement dispose de 4 salles.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_26</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -12,7 +12,7 @@
 <Column name="objectid" id="4E58B410-5399-5C87-997E-CAFED39CF8A1">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:11:16 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clef primaire de la table]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clef primaire de la table TA_BPE_CARACTERISTIQUE_NOMBRE.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -30,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7B466C77-948A-96ED-A4A8-E96A32B89C77" referredColumn="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
@@ -39,19 +39,22 @@
 <Column name="fib_libelle" id="5AB5B3FA-E6BC-32AF-B948-37CE323E7BC7">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:13:28 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_LIBELLE.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_LIBELLE pour connaitre la caractéristique de l''équipement.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29A86792-FFE6-EDAB-23AC-1DEE2EBBFC25" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
 </Column>
 <Column name="nombre" id="D9395EAF-464C-139A-F195-B513E0643E49">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-30 13:14:37 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nombre d'équipement.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Nombre de salles de théatre par cinéma, théatre ou nombre d''aires de pratique d''un même type au sein de l''équipement.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,36 +63,6 @@
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TA_BPE_RELATION_LIBELLE_fid_libelle_fils" id="A61686A5-82CE-8B31-2F04-DD942AEB00E1">
-<createdBy>rjault</createdBy>
-<createdTime>2020-02-12 13:46:46 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="558DA037-3F0E-12D6-8485-91FC57E48F5C" referredColumn="3629640D-B529-48BA-B21F-548A365062C9"/>
-</associations>
-</Column>
-<Column name="TA_BPE_RELATION_LIBELLE_fid_libelle_parent" id="EE859622-16B5-87CB-7053-9E0A68A7CC96">
-<createdBy>rjault</createdBy>
-<createdTime>2020-02-12 13:46:46 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="558DA037-3F0E-12D6-8485-91FC57E48F5C" referredColumn="C4F00EF2-2156-27B5-923F-E1708C4577E9"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -114,15 +87,14 @@
 <colUsage columnID="C83C4244-B040-2260-5F60-631E86E3A4F2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="18A31102-C71C-D682-593B-CF61AFC5B8F5" name="TA_BPE_RELATION_LIBELLE_OBJECTID_FK">
+<ind_PK_UK id="BFD145A6-5269-31EB-B101-F4A5EC6FA96B" name="TA_BPE_CARACTERISTIQUE_NOMBRE_TA_LIBELLE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-02-05 14:02:21 UTC</createdTime>
+<createdTime>2020-02-21 09:38:09 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A61686A5-82CE-8B31-2F04-DD942AEB00E1"/>
-<colUsage columnID="EE859622-16B5-87CB-7053-9E0A68A7CC96"/>
+<colUsage columnID="5AB5B3FA-E6BC-32AF-B948-37CE323E7BC7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

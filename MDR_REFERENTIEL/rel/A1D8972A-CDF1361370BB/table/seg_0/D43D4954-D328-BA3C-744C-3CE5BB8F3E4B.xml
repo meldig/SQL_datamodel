@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" name="TA_BPE">
 <createdBy>rjault</createdBy>
 <createdTime>2019-12-27 07:30:02 UTC</createdTime>
+<comment><![CDATA[Table regroupant les equipements de la Base Permanente des Equipements.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_32</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -11,7 +12,7 @@
 <Column name="objectid" id="7D5B4E44-8B93-1E72-A947-C09ABB97BB86">
 <createdBy>rjault</createdBy>
 <createdTime>2019-12-27 07:30:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clef primaire de la table TA_BPE]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clef primare de la table TA_BPE.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,7 +24,7 @@
 <Column name="fid_metadonnee" id="EECE9F90-B79E-5EF8-4C25-956921CD4149">
 <createdBy>rjault</createdBy>
 <createdTime>2019-12-27 07:31:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_METADONNEE  pour connaitre la source de la donnees.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_METADONNEE  pour connaitre la source de la données.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -38,7 +39,7 @@
 <Column name="GEOM" id="3FCC291E-433C-F3AF-6C0F-375D07DECC2C">
 <createdBy>rjault</createdBy>
 <createdTime>2019-12-27 07:31:45 UTC</createdTime>
-<commentInRDBMS><![CDATA[Donnee géométrique des elements de la table.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Geometrie de la table.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

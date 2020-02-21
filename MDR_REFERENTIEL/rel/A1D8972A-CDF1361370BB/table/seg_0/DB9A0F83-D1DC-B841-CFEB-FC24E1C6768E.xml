@@ -12,7 +12,7 @@
 <Column name="fid_libelle_fils" id="3629640D-B529-48BA-B21F-548A365062C9">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 14:44:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Cléf étrangère vers la table TA_LIBELLE  pour connaitre libelle fils.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_LIBELLE  pour connaitre libelle fils.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -27,7 +27,7 @@
 <Column name="fid_libelle_parent" id="C4F00EF2-2156-27B5-923F-E1708C4577E9">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 14:45:29 UTC</createdTime>
-<commentInRDBMS><![CDATA[Cléf étrangère vers la table TA_LIBELLE  pour connaitre libelle parent.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_LIBELLE  pour connaitre libelle parent.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

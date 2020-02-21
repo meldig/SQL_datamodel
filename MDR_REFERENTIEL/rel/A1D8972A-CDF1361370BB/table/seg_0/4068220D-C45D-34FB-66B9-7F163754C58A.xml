@@ -14,7 +14,6 @@
 <createdTime>2020-02-03 14:52:15 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef primaire de la table TA_BPE_CARACTERISTIQUE.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -31,75 +30,83 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="49CBF571-6161-FE18-67DB-2B3F81A8904F" referredColumn="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
+<colAssociation fkAssociation="09A93308-F9CB-D96F-9A35-6F74784DD5A2" referredColumn="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
 </associations>
 </Column>
-<Column name="fid_libelle" id="ABD6B317-BCC2-3A2E-B1FB-A18C4024937B">
+<Column name="fid_libelle_fils" id="ABD6B317-BCC2-3A2E-B1FB-A18C4024937B">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 14:53:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_BPE_RELATION_LIBELLE.]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TA_BPE_RELATION_LIBELLE_fid_libelle_fils" id="67634EA8-8724-AEB7-79A3-1D8FCD6E1FBE">
-<createdBy>rjault</createdBy>
-<createdTime>2020-02-12 13:46:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_LIBELLE pour connaitre la caractéristique de l'équipement]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8A4C9AE9-0CA5-7569-E41C-56E7A11B065C" referredColumn="3629640D-B529-48BA-B21F-548A365062C9"/>
+<colAssociation fkAssociation="251D4BD5-DEE1-D25A-5141-EB30AD009202" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
 </associations>
 </Column>
-<Column name="TA_BPE_RELATION_LIBELLE_fid_libelle_parent" id="D36D2385-6DDE-6F24-8686-DAFA20DEB63C">
+<Column name="fid_libelle_parent" id="E5A848C0-144F-5660-F8DA-78B9B480B0BA">
 <createdBy>rjault</createdBy>
-<createdTime>2020-02-12 13:46:46 UTC</createdTime>
+<createdTime>2020-02-21 09:30:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_LIBELLE pour connaitre la caractéristique parent de l'équipement]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8A4C9AE9-0CA5-7569-E41C-56E7A11B065C" referredColumn="C4F00EF2-2156-27B5-923F-E1708C4577E9"/>
+<colAssociation fkAssociation="F1FFAD70-73AE-5E16-0DB4-73706FBE9677" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="1A48A8DE-9C47-F4D5-FF1C-4AA815C3D129" name="TA_BPE_OBJECTID_FKv1">
+<ind_PK_UK id="864D62C4-CA30-012B-C559-88EA46291CCD" name="TA_BPE_CARACTERISTIQUE_PK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-02-03 14:53:56 UTC</createdTime>
+<createdTime>2020-02-21 09:30:58 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6FB91C3-A8FE-4C39-AB2C-CEE2674C7632"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15CA4D32-571A-D1CE-FA23-768181C487F9" name="TA_BPE_CARACTERISTIQUE_TA_LIBELLE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-21 09:34:28 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABD6B317-BCC2-3A2E-B1FB-A18C4024937B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54FAA3C6-A429-F125-2779-D7B15DD07047" name="TA_BPE_CARACTERISTIQUE_TA_LIBELLE_FKv1">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-21 09:34:41 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5A848C0-144F-5660-F8DA-78B9B480B0BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C748CAD5-D6AB-E572-55B6-C942D3C5FB9E" name="TA_BPE_CARACTERISTIQUE_TA_BPE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-21 09:37:24 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="92179AEA-8544-D17C-E84F-846CB636BA75"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="A65F2F8D-F711-59ED-760C-907F84DEC005" name="TA_BPE_RELATION_LIBELLE_OBJECTID_FKv2">
-<createdBy>rjault</createdBy>
-<createdTime>2020-02-05 14:02:59 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="67634EA8-8724-AEB7-79A3-1D8FCD6E1FBE"/>
-<colUsage columnID="D36D2385-6DDE-6F24-8686-DAFA20DEB63C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
