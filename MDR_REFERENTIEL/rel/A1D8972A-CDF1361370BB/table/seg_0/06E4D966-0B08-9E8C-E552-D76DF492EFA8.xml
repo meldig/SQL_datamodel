@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="06E4D966-0B08-9E8C-E552-D76DF492EFA8" name="TA_COMMUNE">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Table rassemblant toutes les géométries des entités administratives de base.
+Exemple : les communes françaises et les municipalités belges]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_4</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,7 +13,7 @@
 <Column name="objectid" id="3E0B2346-AFE5-9E01-FBFC-EF59E37B89ED">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -19,22 +21,10 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nom" id="11FC1C01-F921-CA99-2C81-2171A0B32542">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>200 BYTE</dataTypeSize>
-<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="geom" id="B1B8F077-CA15-1329-E47D-1183ECF50FE6">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>3</use>
@@ -45,7 +35,7 @@
 <Column name="fid_lib_type_commune" id="CBA78D8A-B70C-CF26-3726-EEC10E02A0F0">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -60,15 +50,30 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2020-01-27 09:26:49 UTC</createdTime>
 <commentInRDBMS><![CDATA[Cle étrangère de la table TA_METADONNEE. ]]></commentInRDBMS>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="C67FEC75-DCD5-642D-5ABE-A9FFA14406D7" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
+</Column>
+<Column name="fid_nom" id="B8383354-87BF-383F-D11F-DC30E000A968">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-02-21 10:48:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_NOM, permettant de connaître le nom de chaque commune ou entité administrative équivalente (municipalité belge).]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE09F9A4-C77E-01D6-5822-23A1D6EF09F9" referredColumn="A193FC6B-78E5-E64F-9F5A-1C30984B215D"/>
 </associations>
 </Column>
 </columns>
@@ -76,7 +81,7 @@
 <ind_PK_UK id="3491AABC-B91F-301C-8311-60D9E504F384" name="TA_COMMUNE_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -87,7 +92,7 @@
 <ind_PK_UK id="9A71C23C-0266-A740-283D-A760BD7614FD" name="TA_LIBELLE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -97,11 +102,21 @@
 <ind_PK_UK id="A3EE9B31-B626-FD70-952A-DD867D9DD126" name="TA_METADONNEE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-01-27 09:27:43 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="75E32236-A3C5-E7FD-037B-69C57B856459"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="627D548D-0801-1358-A406-A0A6FBCBC88E" name="TA_NOM_FKv1">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-02-21 10:48:04 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8383354-87BF-383F-D11F-DC30E000A968"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
