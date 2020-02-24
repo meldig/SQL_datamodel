@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A83D28DB-796D-6EF5-6E0E-1C52DC76D35D" name="TA_BPE_CORRESPONDANCE_LIBELLE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A83D28DB-796D-6EF5-6E0E-1C52DC76D35D" name="TA_CORRESPONDANCE_LIBELLE">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 12:39:19 UTC</createdTime>
 <comment><![CDATA[Table indiquant les correspondances entre les libelles et les libelles court issus de la Base Permanente des Equipements. Exemple Police = A101 ou Sans objet = x]]></comment>
