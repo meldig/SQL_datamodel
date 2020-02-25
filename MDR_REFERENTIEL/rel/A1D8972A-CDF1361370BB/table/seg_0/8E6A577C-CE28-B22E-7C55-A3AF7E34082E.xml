@@ -2,6 +2,8 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E6A577C-CE28-B22E-7C55-A3AF7E34082E" name="TA_FAMILLE_LIBELLES">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<comment><![CDATA[Table de liaison entre les tables TA_FAMILLE et TA_LIBELLE, permettant de savoir à quelle famille appartiennent les libellés.
+Exemple : les libellés "commune simple" et "commune associée" appartiennent à la famille "Type de commune"]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_2</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -27,7 +29,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="C11B4220-C1A4-F577-F05B-4A3932806C5E" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
@@ -41,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="E71552C1-4529-3C7D-3CF7-AE50D53CDBE2" referredColumn="164B7C89-0615-592B-D455-E44A201D8B81"/>

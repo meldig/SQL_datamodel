@@ -1,0 +1,536 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="MRD - Communes" id="F9AF421D-C2DC-F1E9-A5BB-B93197C83D7D">
+<createdBy>bjacq</createdBy>
+<modifiedBy>bjacq</modifiedBy>
+<createdTime>2020-01-27 09:58:08 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>false</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="0613B4A3-E422-C2AE-8890-8E4CA000E4EA" otype="Note" vid="9A6EE1A5-C698-93D7-56E8-B9B0E47076EB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1330" y="96" width="165" height="90"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant les libellés utilisés pour catégoriser un type d&apos;objets.
+Exemple : commune simple, code insee, unité territoriale</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="06E4D966-0B08-9E8C-E552-D76DF492EFA8" otype="Table" vid="228412F6-7A23-97A3-96E7-2250494B43B8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="534" y="751" width="266" height="155"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="14F62236-464B-7A94-76C3-C1AA0EFD8664" otype="Table" vid="9E53026F-FD1E-5824-19E8-BCD5F7FC08E2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1212" y="929" width="198" height="111"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="1C0B4FE8-A4BB-1FB1-1555-3BE1779DCE2D" otype="Note" vid="8ED85759-630F-286D-4D2B-A9419700FD91">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1470" y="840" width="250" height="48"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table qui recence les echelles d&apos;affichage des données sources.
+Exemple : 1:10 000</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="1C6F1086-88AA-2A35-A2DE-50BCC409160B" otype="Note" vid="F966B65A-9907-5A05-E5F7-8DE3858A44E1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="254" y="331" width="182" height="98"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les noms de tous les objets présents dans la base,
+sauf les noms des organismes et des sources dont la donnée est issue.
+Exemple : Haubourdin, Lille-Seclin</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="22A1E563-A15F-E90E-23B9-67BCB030C462" otype="Note" vid="7B349048-884F-578D-C1D0-0B286BF77F1D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="891" y="26" width="326" height="70"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison entre les tables TA_FAMILLE et TA_LIBELLE.
+Cela permet de savoir à quelle famille appartiennent les libellés.
+Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&quot; appartiennent à la famille &quot;Type de commune&quot;</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="2AF2D41E-5D52-4F1A-0D3E-D3A3142FE80F" otype="Note" vid="1DE03709-2F38-5ACA-CBC0-5C6B13CEC647">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1029" y="702" width="229" height="54"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison rassemblant la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.
+</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2BD8DD48-3D71-2D6A-9E0D-9FD9E4EB850F" otype="Table" vid="4418F932-F391-4BFD-BA26-C483B12B319F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="864" y="773" width="259" height="131"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="2F11F2DC-6EE6-D4CA-3F32-97B4179B4B9E" otype="Note" vid="A0E9610E-232B-0EB6-54D1-BFD390CD33D8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="512" y="393" width="264" height="111"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison entre les tables TA_COMMUNE et TA_ZONE_ADMINISTRATIVE.
+Cela permet de savoir quelle commune appartient à telle zone supra-communale,
+ainsi que leur date de début et de fin de validité.
+Exemple :  la commune de Provin appartient à la MEL depuis le 17/03/2020</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3B9055B9-B01C-3634-9BCE-E0327F3C55BE" otype="Table" vid="E5ECDA4D-609B-B7AA-5A07-0C4738ECA0C4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1460" y="540" width="242" height="102"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3DCD645D-F32F-3D02-660A-8A35DA02282A" otype="Table" vid="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1032" y="485" width="229" height="212"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="48EE54C9-CE08-0A29-BCFF-5CEA3B4C3ECA" otype="Note" vid="2DCDD732-6199-4090-77F4-408CFAC3BF93">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1412" y="288" width="310" height="64"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les modes d&apos;acquisition de chaque donnée source.
+Exemple : &quot;donnée téléchargée depuis un lien envoyé par mail par l&apos;organisme créateur de la donnée&quot;</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="50AA4A53-30B9-6550-9895-02BEEA6EBE2D" otype="Note" vid="F1CEAF34-3E33-669E-B352-8B44BF046B8C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="535" y="913" width="264" height="72"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant toutes les géométries des entités administratives de base.
+Exemple : les communes françaises et les municipalités belges</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="595CF166-97DF-EB11-1DE5-9B2B2ACF1ED4" otype="Table" vid="5E0821AA-F3BD-0700-2BBD-9B867F015DEF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="263" y="444" width="170" height="96"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1328" y="200" width="210" height="81"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="5D943E24-8748-A95F-23CD-BF1A8BCE076B" otype="Note" vid="246F1F01-8C78-0D08-DA9E-46C9715FA572">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="175" y="784" width="236" height="97"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison entre les tables TA_CODE et TA_ZONE_ADMINISTRATIVE,
+permettant de connaître le nom de chaque zone supra-communale.
+Exemple : &quot;Lille-Seclin&quot; est le nom d&apos;une zone supra-communale de type &quot;unité territoriale&quot;</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="601D79DD-AFB5-762E-81E9-181744507185" otype="Table" vid="838547C9-D0E1-29FC-B409-48F61FF569AB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="625" y="241" width="257" height="132"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="6664F5BF-8D31-FAEA-52FA-F05AD51A3058" otype="Note" vid="139B790A-00C7-20C8-B114-633904B86BCF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1442" y="467" width="294" height="65"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les dates d&apos;insertion dans la base et les millésimes de chaque donnée source.
+Exemple : insertion de la donnée source millésimée &quot;2019&quot; le &quot;01/05/2019&quot;</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="7D5F714D-B454-2078-DE4E-BF11A663AF39" otype="Note" vid="9F97B174-5E57-8789-277E-7E8C20EEFFD9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1469" y="659" width="242" height="55"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les organismes créateurs des données source.
+Exemple : IGN pour la BdTopo</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8E6A577C-CE28-B22E-7C55-A3AF7E34082E" otype="Table" vid="EBB8F819-7DD9-0C93-C375-0DF52C4B0287">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="925" y="100" width="213" height="136"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="98F17407-6188-41A6-5D60-80D54E4F7958" otype="Note" vid="B50CF06F-1BD1-471D-888B-3CAA4BBC92D1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="865" y="910" width="254" height="69"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison entre les tables TA_CODE et TA_COMMUNE afin de connaître les identifiants de chaque entité administrative de base.
+Exemple : le code insee Lille est 59000</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9" otype="Table" vid="AB9CDCD4-74D0-6CFC-5416-E13F8733DA06">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="311" y="81" width="208" height="78"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A64DBEC9-246E-0B9F-D283-E516975B73D7" otype="Table" vid="811A1F3B-9C82-3B48-CA01-C9E42D6CE53A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1469" y="721" width="241" height="105"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AD2CBE34-3E03-913A-8730-00AB16EABABA" otype="Table" vid="A2640010-E09E-EEFB-9788-92E561AE0373">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1423" y="358" width="300" height="96"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="B03A2199-2FB1-6C21-D679-7F980C0A8E42" otype="Note" vid="21C0F317-0348-FC29-9855-65CF9067031E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1209" y="872" width="183" height="49"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les codes de chaque objet de la base.
+Exemple : 59000, 59350</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="B5BD9ED1-AEA0-FE5C-17CD-996F6F27B1D2" otype="Note" vid="21F3B4DD-25DE-8778-B7D2-EC83854F59A1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="291" y="34" width="315" height="40"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant les catégories de tous les éléments de la base.
+Exemple : entité administrative</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B8308977-B206-D0F0-00B0-925887DA5B43" otype="Table" vid="5A8E53DA-C77D-86E8-8679-9B0B64B0C565">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="531" y="509" width="296" height="149"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D9812882-3186-E109-305D-3116AA692C8B" otype="Table" vid="ACF2892A-06A7-9792-2D26-1E5669A704EA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1035" y="355" width="266" height="98"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E1A0D4B0-CB32-E573-CB17-935BA3B86F5A" otype="Table" vid="CA17174D-3A44-EB58-48A0-BC3C15A139DF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="122" y="887" width="324" height="133"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E1CFAD56-3EEC-B2E9-9B35-D9D0AEDD0BB4" otype="Table" vid="F4A03407-C06C-7387-A1BC-7F436B821458">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1470" y="894" width="201" height="89"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="ECAF0F8D-B949-6597-CE4D-FFDBA8E9DEC1" otype="Note" vid="C6F08530-AB55-5C52-3237-650C3FF4BBBE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="624" y="174" width="256" height="55"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les zones supra-communales.
+Exemple : les départements, régions, unités territoriales...</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="F773858E-9C7F-149C-899F-A5E0DE629262" otype="Note" vid="A7F2B503-E8A9-DF46-16C4-F6C0EC930DFD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1022" y="306" width="296" height="40"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant toutes les sources de données externes.
+Exemple : BdTopo</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="01197056-8B67-DC99-F00E-7F765A77FB88" otype="FKIndexAssociation" vid_source="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2" vid_target="228412F6-7A23-97A3-96E7-2250494B43B8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1328" y="281"/>
+<point x="1009" y="287"/>
+<point x="800" y="751"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="08FE0DC7-C9BE-BE4F-6811-E13AA749DA2B" otype="FKIndexAssociation" vid_source="9E53026F-FD1E-5824-19E8-BCD5F7FC08E2" vid_target="CA17174D-3A44-EB58-48A0-BC3C15A139DF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1212" y="1006"/>
+<point x="446" y="1006"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="15514531-03A2-FD96-4BC6-9EECEC20EAF6" otype="FKIndexAssociation" vid_source="F4A03407-C06C-7387-A1BC-7F436B821458" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1470" y="920"/>
+<point x="1261" y="684"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="29CB190C-AEA4-182A-F933-FF57E672D415" otype="FKIndexAssociation" vid_source="811A1F3B-9C82-3B48-CA01-C9E42D6CE53A" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1469" y="723"/>
+<point x="1261" y="638"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2A7FB339-F031-8754-D970-5483016B82F2" otype="FKIndexAssociation" vid_source="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2" vid_target="838547C9-D0E1-29FC-B409-48F61FF569AB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1328" y="261"/>
+<point x="882" y="261"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="307F38D4-A55F-AC58-048D-E0F83E9639D0" otype="FKIndexAssociation" vid_source="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2" vid_target="9E53026F-FD1E-5824-19E8-BCD5F7FC08E2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1538" y="248"/>
+<point x="1743" y="248"/>
+<point x="1751" y="1008"/>
+<point x="1410" y="1008"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="484EE066-34EB-E8AF-48A8-C2D079620D21" otype="FKIndexAssociation" vid_source="228412F6-7A23-97A3-96E7-2250494B43B8" vid_target="5A8E53DA-C77D-86E8-8679-9B0B64B0C565">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="667" y="751"/>
+<point x="667" y="658"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="78631F35-CD4D-4FD5-BF5C-526170FE45DA" otype="FKIndexAssociation" vid_source="838547C9-D0E1-29FC-B409-48F61FF569AB" vid_target="5A8E53DA-C77D-86E8-8679-9B0B64B0C565">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="789" y="373"/>
+<point x="789" y="509"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="90E90EC4-A512-4B9F-6246-7186DDA539FF" otype="FKIndexAssociation" vid_source="9E53026F-FD1E-5824-19E8-BCD5F7FC08E2" vid_target="4418F932-F391-4BFD-BA26-C483B12B319F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1212" y="938"/>
+<point x="1123" y="898"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A88DB619-97FE-EE6E-4464-ED295D43C1C6" otype="FKIndexAssociation" vid_source="838547C9-D0E1-29FC-B409-48F61FF569AB" vid_target="CA17174D-3A44-EB58-48A0-BC3C15A139DF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="625" y="251"/>
+<point x="160" y="251"/>
+<point x="160" y="887"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A9D7F462-548D-5DC7-5B03-21FDD409AF01" otype="FKIndexAssociation" vid_source="E5ECDA4D-609B-B7AA-5A07-0C4738ECA0C4" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1460" y="591"/>
+<point x="1261" y="591"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="BE09F9A4-C77E-01D6-5822-23A1D6EF09F9" otype="FKIndexAssociation" vid_source="5E0821AA-F3BD-0700-2BBD-9B867F015DEF" vid_target="228412F6-7A23-97A3-96E7-2250494B43B8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="431" y="540"/>
+<point x="553" y="751"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C11B4220-C1A4-F577-F05B-4A3932806C5E" otype="FKIndexAssociation" vid_source="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2" vid_target="EBB8F819-7DD9-0C93-C375-0DF52C4B0287">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1328" y="218"/>
+<point x="1138" y="218"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C67FEC75-DCD5-642D-5ABE-A9FFA14406D7" otype="FKIndexAssociation" vid_source="EFFAC340-27F6-9738-C1CA-873DE04A92BA" vid_target="228412F6-7A23-97A3-96E7-2250494B43B8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1032" y="647"/>
+<point x="800" y="762"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D16B80BA-19D5-9DF1-B781-4ACFBED4C147" otype="FKIndexAssociation" vid_source="228412F6-7A23-97A3-96E7-2250494B43B8" vid_target="4418F932-F391-4BFD-BA26-C483B12B319F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="800" y="838"/>
+<point x="864" y="838"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D7D52C70-2321-725A-C5C4-519C9D50C23A" otype="FKIndexAssociation" vid_source="A2640010-E09E-EEFB-9788-92E561AE0373" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1462" y="454"/>
+<point x="1261" y="541"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="E71552C1-4529-3C7D-3CF7-AE50D53CDBE2" otype="FKIndexAssociation" vid_source="AB9CDCD4-74D0-6CFC-5416-E13F8733DA06" vid_target="EBB8F819-7DD9-0C93-C375-0DF52C4B0287">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="519" y="129"/>
+<point x="925" y="129"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="EFC1080A-A73B-188D-97F6-F250CEF989C2" otype="FKIndexAssociation" vid_source="5E0821AA-F3BD-0700-2BBD-9B867F015DEF" vid_target="838547C9-D0E1-29FC-B409-48F61FF569AB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="433" y="444"/>
+<point x="625" y="281"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F2A32B6B-554E-3761-C568-E8384B319F0E" otype="FKIndexAssociation" vid_source="ACF2892A-06A7-9792-2D26-1E5669A704EA" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1148" y="453"/>
+<point x="1148" y="485"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

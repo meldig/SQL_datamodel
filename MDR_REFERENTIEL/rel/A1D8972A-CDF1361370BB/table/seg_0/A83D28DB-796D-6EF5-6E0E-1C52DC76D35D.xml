@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A83D28DB-796D-6EF5-6E0E-1C52DC76D35D" name="TA_CORRESPONDANCE_LIBELLE">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-03 12:39:19 UTC</createdTime>
+<comment><![CDATA[Table indiquant les correspondances entre les libelles et les libelles court issus de la Base Permanente des Equipements. Exemple Police = A101 ou Sans objet = x]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="63EE9D5D-9BBF-D343-7E8B-F5E61E358B90">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-03 12:40:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef primaire de la table TA_BPE_CORRESPONDANCE_LIBELLE.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="0875F31D-C618-9FDE-5D76-F528D88B058A">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-03 12:42:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef etrangere vers la table TA_LIBELLE]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6CE30B9E-DFD5-3E11-28B6-F183441A594B" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="fid_libelle_court" id="F1AB5055-6B4F-E715-F2D1-E14D49114D0B">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-03 12:44:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef etrangere vers la table TA_LIBELLE_COURT pour connaitre les libelles courts des libelles. Exemple Police = A10 ou Sans objet  = x]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF4790B2-2EDD-54C6-D79F-8FD239097480" referredColumn="F610DB35-571B-A2B2-DBF0-9742E8C44EEA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9427FB0C-2C4B-17B8-9857-FB2750F177D8" name="TA_BPE_LIBELLE_LONG_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-03 12:41:57 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63EE9D5D-9BBF-D343-7E8B-F5E61E358B90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E444A529-D7CF-5CC9-89D0-EF892C81882A" name="TA_BPE_CORRESPONDANCE_LIBELLE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-05 12:48:34 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63EE9D5D-9BBF-D343-7E8B-F5E61E358B90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="105C539F-AE7B-86D2-232E-20110E2CA941" name="TA_BPE_CORRESPONDANCE_LIBELLE_FID_LIBELLE_IDX">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-05 12:49:02 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0875F31D-C618-9FDE-5D76-F528D88B058A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85BB5591-E91E-FF0C-8A2E-8D29DE9E17A9" name="TA_BPE_CORRESPONDANCE_LIBELLE_FID_TA_BPE_LIBELLE_COURT_IDX">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-05 12:49:33 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1AB5055-6B4F-E715-F2D1-E14D49114D0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E55395B-14C9-248D-F337-E034334E9BAA" name="TA_LIBELLE_OBJECTID_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-05 13:01:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0875F31D-C618-9FDE-5D76-F528D88B058A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25CB7777-2A44-3732-32FA-468AF7A0951C" name="TA_BPE_CORRESPONDANCE_LIBELLE_TA_BPE_LIBELLE_COURT_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-05 13:02:15 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1AB5055-6B4F-E715-F2D1-E14D49114D0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

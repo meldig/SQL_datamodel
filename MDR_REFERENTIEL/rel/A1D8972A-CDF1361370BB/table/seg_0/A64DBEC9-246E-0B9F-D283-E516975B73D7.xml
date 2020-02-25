@@ -2,6 +2,8 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A64DBEC9-246E-0B9F-D283-E516975B73D7" name="TA_ORGANISME">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<comment><![CDATA[Table rassemblant les organismes créateurs des données source.
+Exemple : IGN pour la BdTopo]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_7</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

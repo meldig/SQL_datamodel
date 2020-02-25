@@ -2,6 +2,8 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B9055B9-B01C-3634-9BCE-E0327F3C55BE" name="TA_DATE_ACQUISITION">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<comment><![CDATA[Table rassemblant les dates d'insertion dans la base et les millésimes de chaque donnée source.
+Exemple : insertion de la donnée source millésimée "2019" le "01/05/2019"]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_8</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

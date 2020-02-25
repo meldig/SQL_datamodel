@@ -2,6 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1A0D4B0-CB32-E573-CB17-935BA3B86F5A" name="TA_IDENTIFIANT_ZONE_ADMIN">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<comment><![CDATA[Table de liaison entre les tables TA_CODE et TA_ZONE_ADMINISTRATIVE,
+permettant de connaître le nom de chaque zone supra-communale.
+Exemple : "Lille-Seclin" est le nom d'une zone supra-communale de type "unité territoriale"]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_14</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -27,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="A88DB619-97FE-EE6E-4464-ED295D43C1C6" referredColumn="494F5814-E7F8-3983-905B-C8E2747AB35C"/>
@@ -36,15 +39,16 @@
 <Column name="fid_identifiant" id="CF2F5537-681A-D887-4A01-DA23A4B8C2A7">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_CODE indiquant le ou les codes de la zone administrative.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="05BBEC20-CB80-F663-0D27-050D9DFEB9DD" referredColumn="82C4FB7B-2C83-5B98-9019-80B40B82674C"/>
+<colAssociation fkAssociation="08FE0DC7-C9BE-BE4F-6811-E13AA749DA2B" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
 </associations>
 </Column>
 </columns>
@@ -60,16 +64,6 @@
 <colUsage columnID="617D64B6-CB23-B75E-8027-C72EA2F06B65"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4033B765-43B4-E37C-C214-99549F00C671" name="TA_IDENTIFIANT_FKv1">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="CF2F5537-681A-D887-4A01-DA23A4B8C2A7"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="6D81E9D2-67B7-A8D9-C066-A9A8359B0DE5" name="TA_ZONE_ADMINISTRATIVE_FKv1">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
@@ -79,6 +73,23 @@
 <indexColumnUsage>
 <colUsage columnID="0A646745-A339-1F63-80D7-0B114922F540"/>
 </indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC541820-57FA-CEB4-624E-711715C2E7B4" name="TA_CODE_FKv3">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-01-27 09:41:32 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF2F5537-681A-D887-4A01-DA23A4B8C2A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="623ADDA1-3852-9C43-41EE-239AA06A20BA" name="TA_IDENTIFIANT_FKv1">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-02-21 10:33:45 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
 </ind_PK_UK>
 </indexes>
 </Table>

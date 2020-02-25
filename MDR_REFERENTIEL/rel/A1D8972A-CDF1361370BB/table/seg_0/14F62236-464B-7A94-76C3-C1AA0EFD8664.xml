@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14F62236-464B-7A94-76C3-C1AA0EFD8664" name="TA_CODE">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-15 09:01:30 UTC</createdTime>
+<comment><![CDATA[Table rassemblant les codes de chaque objet de la base.
+Exemple : 59000, 59350]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="BCEF0135-7194-DC58-2430-67A637FD4B6F">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-15 09:03:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef primaire de la table TA_CODE.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code" id="D9C1E3E7-FD02-D3DE-9C12-FE17925495AB">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-15 09:15:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Colonne qui repertorie les differents codes que peuvent prendre les differents variables du schema.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="BE43AF5F-4A16-5E01-4C19-78E34CD91F3A">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-30 08:21:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_LIBELLE pour connaitre la signification des codes. Par exemple: CODE:A101 ->libelle Police.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="307F38D4-A55F-AC58-048D-E0F83E9639D0" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="97A9EEF6-8C66-E89C-51E3-DB07ABBAF908" name="TA_CODE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-15 09:19:43 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B77D54C-320C-64C0-7566-4E79B400CEB1" name="TA_LIBELLE_FKv5">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-30 08:25:37 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE43AF5F-4A16-5E01-4C19-78E34CD91F3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

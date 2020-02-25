@@ -2,6 +2,8 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD2CBE34-3E03-913A-8730-00AB16EABABA" name="TA_PROVENANCE">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<comment><![CDATA[Table rassemblant les modes d'acquisition de chaque donnée source.
+Exemple : "donnée téléchargée depuis un lien envoyé par mail par l'organisme créateur de la donnée"]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_10</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -43,20 +45,6 @@
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_source" id="1FD74271-5808-C22C-6345-6E8A32F21F65">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="09B2D3DA-8CE5-327F-C54F-3F45882EB422" referredColumn="A6D4B337-DD1D-5387-74FE-7D7B440E6EDA"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="A40F2446-51F7-B6D1-FB0F-A438D166DE8A" name="TA_RECUPERATION_DONNEE_PK">
@@ -68,16 +56,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BDF51AC6-722D-4109-6318-B9A8D8EC7610"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="FA1330BA-44DC-2AC6-364F-F49C2BC1229C" name="TA_SOURCE_FKv1">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="1FD74271-5808-C22C-6345-6E8A32F21F65"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

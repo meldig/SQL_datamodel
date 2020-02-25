@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D46E40A-1D66-2AFB-6D86-8D049C9E302E" name="TA_BPE_POI_NOMENCLATURE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D46E40A-1D66-2AFB-6D86-8D049C9E302E" name="TA_NOMENCLATURE">
 <createdBy>rjault</createdBy>
 <createdTime>2019-12-23 16:42:24 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_25</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -11,63 +11,63 @@
 <Column name="objectid" id="9C8A3508-C8A3-45ED-B9D2-8AF74681ECB2">
 <createdBy>rjault</createdBy>
 <createdTime>2019-12-23 16:42:24 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clef primaire de la table TA_BPE_POI_NOMENCLATURE]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<commentInRDBMS><![CDATA[Clef primaire de la table TA_NOMENCLATURE.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_code" id="0F2F41D1-F3AC-2670-ABDB-6E6D20B50BCB">
+<createdBy>rjault</createdBy>
+<createdTime>2019-12-23 16:42:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef etranger vers la table TA_CODE.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B883D544-0A2E-5B94-DC5C-88BCC59A9DF3" referredColumn="A6D4B337-DD1D-5387-74FE-7D7B440E6EDA"/>
+<colAssociation fkAssociation="6E5CAC84-B148-3A2B-E169-7B8AA186DE7A" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
 </associations>
 </Column>
-<Column name="code" id="0F2F41D1-F3AC-2670-ABDB-6E6D20B50BCB">
+<Column name="fid_libelle" id="CEAE74D9-B174-65DC-4627-0F492D4DFA16">
 <createdBy>rjault</createdBy>
 <createdTime>2019-12-23 16:42:24 UTC</createdTime>
-<commentInRDBMS><![CDATA[code des différentes nomenclature BPE / POI /OSM]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<commentInRDBMS><![CDATA[Clef etrangere vers la table TA_LIBELLE. Permet de connaitre l'explication de la variable.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000 BYTE</dataTypeSize>
-<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80FEABC3-9197-D35E-DB37-317AE0882BA4" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
 </Column>
-<Column name="libelle" id="50D7FFF5-B83B-71FB-3E76-816D5FE44C57">
+<Column name="fid_modalite" id="7F563578-B66E-9E39-AC8C-EC4B9148EF12">
 <createdBy>rjault</createdBy>
-<createdTime>2019-12-23 16:42:24 UTC</createdTime>
-<commentInRDBMS><![CDATA[Descriptif de la modalite]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<createdTime>2020-01-15 13:47:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef etrangere vers la table modalite pour connaitre les modalites des différents codes.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000 BYTE</dataTypeSize>
-<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fid_source" id="CEAE74D9-B174-65DC-4627-0F492D4DFA16">
-<createdBy>rjault</createdBy>
-<createdTime>2019-12-23 16:42:24 UTC</createdTime>
-<commentInRDBMS><![CDATA[source du code]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000 BYTE</dataTypeSize>
-<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="99A390E1-9A16-9376-15B4-508FA88739A4" name="TA_BPE_POI_NOMENCLATURE_PK">
+<ind_PK_UK id="99A390E1-9A16-9376-15B4-508FA88739A4" name="TA_CODE_PKv3">
 <createdBy>rjault</createdBy>
 <createdTime>2019-12-23 16:42:24 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -75,14 +75,24 @@
 <colUsage columnID="9C8A3508-C8A3-45ED-B9D2-8AF74681ECB2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="62635157-EAFA-F4D6-FA5E-2B79620FF4C3" name="TA_SOURCE_FKv4">
+<ind_PK_UK id="ED146762-02D7-24B3-5AC1-FF18720CC9D6" name="TA_NOMENCLATURE_TA_LIBELLE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2019-12-23 16:43:41 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<createdTime>2020-01-15 08:52:41 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9C8A3508-C8A3-45ED-B9D2-8AF74681ECB2"/>
+<colUsage columnID="CEAE74D9-B174-65DC-4627-0F492D4DFA16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="423E5A7F-CE04-F39E-54C7-98785D82FB6D" name="TA_NOMENCLATURE_TA_CODE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-15 09:21:11 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F2F41D1-F3AC-2670-ABDB-6E6D20B50BCB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

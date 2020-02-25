@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28A22CC9-A00A-5A61-006A-66EB7186233B" name="TA_RECENSEMENT">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-10 08:52:21 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="511C56D9-79F2-41C7-53E8-D8C03FDDED5D">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-10 08:53:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef primaire de la table TA_RECENSEMENT.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_nomenclature_commune" id="9518C349-B7AA-FA6A-C651-7CBFBB9CDEFC">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-15 09:35:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_NOMENCLATURE pour connaitre la commune concernee par la valeur du recensement.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2CEFB4F-0B6C-98C8-8C29-A2FDF574A21D" referredColumn="9C8A3508-C8A3-45ED-B9D2-8AF74681ECB2"/>
+</associations>
+</Column>
+<Column name="population" id="1CF3F08F-0BCB-FF4C-BE67-96D02A6F37BB">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-10 12:49:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Population de la commune lors du recensement.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_nomenclature_recensement" id="24985A97-1F9C-ED84-3186-5BFB4533F5D3">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-10 12:50:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_NOMENCLATURE pour connaitre la siginification de la valeur population (type recensement).]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4298C469-C3A4-83FA-55F2-A5938DB4C0AF" referredColumn="9C8A3508-C8A3-45ED-B9D2-8AF74681ECB2"/>
+</associations>
+</Column>
+<Column name="fid_metadonnee" id="C4A7AD3C-AD98-3E40-0FDE-BD1668F344AE">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-10 13:04:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_METADONNE  afin de connaitre les metadonnee de l'information:source, organisme, acquisition, provenance.]]></commentInRDBMS>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F913077-88F0-3657-0715-8EBC75CAC279" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD71953F-579C-5018-70F0-7836FAE81E8D" name="TA_RECENSEMENT_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-10 13:04:40 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="511C56D9-79F2-41C7-53E8-D8C03FDDED5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7E69044-6907-D1EB-6CFF-47414AC6FFDE" name="TA_NOMENCLATURE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-15 09:38:12 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9518C349-B7AA-FA6A-C651-7CBFBB9CDEFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45CC00C2-CA12-B3DF-C3A2-6ABE8DFF9ED4" name="TA_NOMENCLATURE_FKv2">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-15 09:39:42 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24985A97-1F9C-ED84-3186-5BFB4533F5D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D5C5FED-BADE-DA44-127A-4279C542100C" name="TA_METADONNEE_FKv1">
+<createdBy>rjault</createdBy>
+<createdTime>2020-01-15 09:40:24 UTC</createdTime>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4A7AD3C-AD98-3E40-0FDE-BD1668F344AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

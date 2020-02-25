@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ED277F9D-0F3D-57D2-46F6-79B9CA312382" name="TA_LIBELLE">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 13:14:40 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="objectid" id="51A090EF-8E3A-E7D0-8AD0-75ADB30CE20B">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 13:15:14 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -31,7 +31,7 @@
 <Attribute name="libelle" id="1E0D49FB-7F71-D7F8-98FB-4DCFD9AF0A34">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 13:15:35 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -47,7 +47,7 @@
 <identifier id="51051418-5289-2DD3-C9BF-A94FE06DD672" name="TA_LIBELLE PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 13:37:06 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>

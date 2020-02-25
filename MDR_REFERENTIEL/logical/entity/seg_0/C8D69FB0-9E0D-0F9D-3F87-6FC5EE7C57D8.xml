@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C8D69FB0-9E0D-0F9D-3F87-6FC5EE7C57D8" name="TA_ACQUISITION">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:03:09 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="objectid" id="DB21DB88-E155-AE47-D777-6BBC0C78C99E">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:03:18 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -31,7 +31,7 @@
 <Attribute name="date_acquisition" id="49494975-968C-F79B-FA49-B6E8FB7E70D3">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:03:33 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -44,7 +44,7 @@
 <Attribute name="nom_obtenteur" id="EC09DFCC-BBDD-61F9-A258-F21C1B486111">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:05:02 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -58,7 +58,7 @@
 <Attribute name="millesime" id="D3848870-CC00-1229-17AD-61826AC7CCCA">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:08:58 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -72,7 +72,7 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:29:34 UTC</createdTime>
 <generatorID>43BA8884-147D-451C-B2D2-E50D6A46FF35</generatorID>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -87,7 +87,7 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-18 11:14:42 UTC</createdTime>
 <generatorID>43BA8884-147D-451C-B2D2-E50D6A46FF35</generatorID>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>
@@ -103,7 +103,7 @@
 <identifier id="C37963B4-7210-ECFF-51CA-6B5C480D8BED" name="TA_ACQUISITION PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-17 14:03:23 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>

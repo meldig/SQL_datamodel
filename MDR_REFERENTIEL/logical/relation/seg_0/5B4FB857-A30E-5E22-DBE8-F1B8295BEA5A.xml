@@ -2,7 +2,7 @@
 <Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Rassembler" directorySegmentName="seg_0" id="5B4FB857-A30E-5E22-DBE8-F1B8295BEA5A">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-09-18 11:14:18 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <engineerTo>
 <item key="A1D8972A-9952-105C-4895-CDF1361370BB" value="true"/>
 </engineerTo>

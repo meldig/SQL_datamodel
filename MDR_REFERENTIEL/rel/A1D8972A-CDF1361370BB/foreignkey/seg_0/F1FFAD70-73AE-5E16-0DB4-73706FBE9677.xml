@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F1FFAD70-73AE-5E16-0DB4-73706FBE9677" containerWithKeyObject="4068220D-C45D-34FB-66B9-7F163754C58A" localFKIndex="54FAA3C6-A429-F125-2779-D7B15DD07047" name="TA_BPE_CARACTERISTIQUE_TA_LIBELLE_FKv1">
+<createdBy>rjault</createdBy>
+<createdTime>2020-02-21 09:34:41 UTC</createdTime>
+<comment><![CDATA[Clef étrangère vers la table TA_LIBELLE pour connaitre le libelle parent.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5BA04846-FCD4-327F-D4D7-00C6BC71F6D8</referredTableID>
+<keyObject>E20F724E-8EE6-8F08-7516-7771919FFA52</keyObject>
+<referredKeyID>E20F724E-8EE6-8F08-7516-7771919FFA52</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

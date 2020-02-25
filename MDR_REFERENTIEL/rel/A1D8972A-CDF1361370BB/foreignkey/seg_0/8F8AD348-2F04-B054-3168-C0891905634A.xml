@@ -2,7 +2,7 @@
 <FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8F8AD348-2F04-B054-3168-C0891905634A" containerWithKeyObject="A15AE6DA-39CC-BF12-D117-A603EF8E8F44" localFKIndex="EE461FE4-B12B-4A35-DF70-A244D1FC10DC" name="TA_ZONE_INTERNATIONALE_FKv1">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_ZONE_INTERNATIONALE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>8BFB7DC5-CC17-7FEE-57A6-317C6A9E50ED</referredTableID>

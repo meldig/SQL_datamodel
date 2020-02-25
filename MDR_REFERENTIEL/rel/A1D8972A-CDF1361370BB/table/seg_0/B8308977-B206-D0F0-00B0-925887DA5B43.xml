@@ -2,6 +2,10 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B8308977-B206-D0F0-00B0-925887DA5B43" name="TA_ZA_COMMUNES">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<comment><![CDATA[Table de liaison entre les tables TA_COMMUNE et TA_ZONE_ADMINISTRATIVE.
+Cela permet de savoir quelle commune appartient à telle zone supra-communale,
+ainsi que leur date de début et de fin de validité.
+Exemple :  la commune de Provin appartient à la MEL depuis le 17/03/2020]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_11</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -27,7 +31,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="484EE066-34EB-E8AF-48A8-C2D079620D21" referredColumn="3E0B2346-AFE5-9E01-FBFC-EF59E37B89ED"/>
@@ -42,7 +46,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="78631F35-CD4D-4FD5-BF5C-526170FE45DA" referredColumn="494F5814-E7F8-3983-905B-C8E2747AB35C"/>
