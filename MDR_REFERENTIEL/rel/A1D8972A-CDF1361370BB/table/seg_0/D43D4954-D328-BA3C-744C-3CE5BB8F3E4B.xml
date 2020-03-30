@@ -36,17 +36,20 @@
 <colAssociation fkAssociation="AD4BC3EB-3DC8-4198-6A28-E922FCC96FAF" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
 </associations>
 </Column>
-<Column name="GEOM" id="3FCC291E-433C-F3AF-6C0F-375D07DECC2C">
-<createdBy>rjault</createdBy>
-<createdTime>2019-12-27 07:31:45 UTC</createdTime>
-<commentInRDBMS><![CDATA[Geometrie de la table.]]></commentInRDBMS>
+<Column name="fid_bpe_geom" id="51A104FB-39FC-E3C3-C3BF-182850883F4B">
+<createdBy>Romain</createdBy>
+<createdTime>2020-03-30 15:11:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_BPE_GEOM pour connaitre la position géographique de l'équipement.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
-<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>34</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E38D33DC-D777-32CD-5732-761615C383EA" referredColumn="8EF6FE63-72A3-F3F1-701C-89E14A3BE740"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -69,6 +72,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EECE9F90-B79E-5EF8-4C25-956921CD4149"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84B98494-D656-F02C-3F3F-952B0BF60C87" name="TA_BPE_TA_BPE_GEOM_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-03-30 15:15:08 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51A104FB-39FC-E3C3-C3BF-182850883F4B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

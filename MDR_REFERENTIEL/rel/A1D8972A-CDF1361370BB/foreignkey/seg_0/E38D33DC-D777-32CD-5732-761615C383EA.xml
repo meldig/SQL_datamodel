@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E38D33DC-D777-32CD-5732-761615C383EA" containerWithKeyObject="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" localFKIndex="84B98494-D656-F02C-3F3F-952B0BF60C87" name="TA_BPE_TA_BPE_GEOM_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-03-30 15:15:08 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_BPE_GEOM pour connaitre la position géographique de l'équipement.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_BPE_GEOM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5ADABCDD-F011-56DB-C8D9-1429EDF35931</referredTableID>
+<keyObject>783817DE-6865-C413-83F3-5FBD505D817C</keyObject>
+<referredKeyID>783817DE-6865-C413-83F3-5FBD505D817C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

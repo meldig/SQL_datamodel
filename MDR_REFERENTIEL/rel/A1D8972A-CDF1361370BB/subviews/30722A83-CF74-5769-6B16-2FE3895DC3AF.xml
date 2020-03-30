@@ -53,7 +53,7 @@ Exemple : 59000, 59350</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="2AFEABCB-28FA-EF7E-6444-0469B83FA82D" otype="Note" vid="6D6B3B9C-F423-CA80-1269-E0D7B602F94B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="34" y="642" width="278" height="40"/>
+<bounds x="18" y="600" width="278" height="40"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -87,6 +87,10 @@ Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&qu
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4068220D-C45D-34FB-66B9-7F163754C58A" otype="Table" vid="E3EF0999-380D-2736-3ABC-B95A92488D14">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="426" y="494" width="398" height="159"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5ADABCDD-F011-56DB-C8D9-1429EDF35931" otype="Table" vid="6AE1AC0C-80B6-2616-5B4B-372396C21F1F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="679" width="270" height="121"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -158,7 +162,7 @@ Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&qu
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" otype="Table" vid="85055D95-FBCD-DCF1-8DC4-71B01D4EDEA0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="33" y="521" width="282" height="114"/>
+<bounds x="17" y="479" width="282" height="114"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DB9A0F83-D1DC-B841-CFEB-FC24E1C6768E" otype="Table" vid="808FF654-FC21-24CD-B725-17A8EA997C58">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -204,8 +208,8 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="315" y="578"/>
-<point x="426" y="578"/>
+<point x="299" y="543"/>
+<point x="426" y="543"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="251D4BD5-DEE1-D25A-5141-EB30AD009202" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="E3EF0999-380D-2736-3ABC-B95A92488D14">
@@ -249,8 +253,8 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="176" y="521"/>
-<point x="176" y="218"/>
+<point x="168" y="479"/>
+<point x="168" y="218"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C11B4220-C1A4-F577-F05B-4A3932806C5E" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="9A801D96-B4E5-B119-447C-E8014BF15425">
@@ -278,6 +282,15 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <points>
 <point x="886" y="361"/>
 <point x="692" y="361"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="E38D33DC-D777-32CD-5732-761615C383EA" otype="FKIndexAssociation" vid_source="6AE1AC0C-80B6-2616-5B4B-372396C21F1F" vid_target="85055D95-FBCD-DCF1-8DC4-71B01D4EDEA0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="155" y="679"/>
+<point x="155" y="593"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F1FFAD70-73AE-5E16-0DB4-73706FBE9677" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="E3EF0999-380D-2736-3ABC-B95A92488D14">

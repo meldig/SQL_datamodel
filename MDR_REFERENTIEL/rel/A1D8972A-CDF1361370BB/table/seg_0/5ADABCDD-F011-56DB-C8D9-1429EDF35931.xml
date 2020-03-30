@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5ADABCDD-F011-56DB-C8D9-1429EDF35931" name="TA_BPE_GEOM">
+<createdBy>Romain</createdBy>
+<createdTime>2020-03-30 15:11:35 UTC</createdTime>
+<comment><![CDATA[La table TA_BPE_GEOM permet de connaitre la position géographique de l'équipement.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_40</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="8EF6FE63-72A3-F3F1-701C-89E14A3BE740">
+<createdBy>Romain</createdBy>
+<createdTime>2020-03-30 15:12:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_BPE_GEOM]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>34</dataTypePrecision>
+<ownDataTypeParameters>,34,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="01A3F781-C15D-65DE-BFDF-008F41CF262A">
+<createdBy>Romain</createdBy>
+<createdTime>2020-03-30 15:12:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[GEOM pour connaitre la position géographique de l'équipement.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="783817DE-6865-C413-83F3-5FBD505D817C" name="TA_BPE_GEOM_PK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-03-30 15:12:01 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EF6FE63-72A3-F3F1-701C-89E14A3BE740"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
