@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B7F98533-F3FF-DDE4-1937-CDC88FCE2E93" containerWithKeyObject="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" localFKIndex="440A57A1-D707-F5F0-F0A8-1E095390B6CA" name="TA_BPE_TA_CODE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-02 07:50:53 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre le code IRIS d' implantation de l'équipement.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_CODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>14F62236-464B-7A94-76C3-C1AA0EFD8664</referredTableID>
+<keyObject>97A9EEF6-8C66-E89C-51E3-DB07ABBAF908</keyObject>
+<referredKeyID>97A9EEF6-8C66-E89C-51E3-DB07ABBAF908</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E38D33DC-D777-32CD-5732-761615C383EA" containerWithKeyObject="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" localFKIndex="84B98494-D656-F02C-3F3F-952B0BF60C87" name="TA_BPE_TA_BPE_GEOM_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9BE736ED-14F6-FD09-5E59-9C120342EAC8" containerWithKeyObject="8DB4588A-1327-C9B3-5CAC-3AD4AE777876" localFKIndex="E4F2B738-561A-B0F5-1194-C667BF67747E" name="TA_RELATION_BPE_GEOM_TA_BPE_GEOM_FK">
 <createdBy>Romain</createdBy>
-<createdTime>2020-03-30 15:15:08 UTC</createdTime>
-<comment><![CDATA[Clé étrangère vers la table TA_BPE_GEOM pour connaitre la position géographique de l'équipement.]]></comment>
+<createdTime>2020-04-02 08:02:57 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_BPE_GEOM pour connaitre la position géométrique de l'équipement.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_BPE_GEOM</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
