@@ -51,6 +51,21 @@
 <colAssociation fkAssociation="E38D33DC-D777-32CD-5732-761615C383EA" referredColumn="8EF6FE63-72A3-F3F1-701C-89E14A3BE740"/>
 </associations>
 </Column>
+<Column name="fid_code_iris" id="39CCD266-2103-B2EA-F494-51F5053636FF">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-02 07:24:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre l'IRIS d'implantation de l'équipement.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>34</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C3F54E6-D61B-DE3C-EA13-0565B101F620" referredColumn="E1E48F01-510D-A1FA-D113-D93D88704C2E"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="33E8F57F-FCCA-B41E-BF16-CECF49A39F34" name="TA_BPE_PK">
@@ -82,6 +97,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="51A104FB-39FC-E3C3-C3BF-182850883F4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCB5ED24-395D-9FFD-043C-FD104D1AC4C3" name="TA_BPE_TA_IRIS_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-02 07:24:47 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39CCD266-2103-B2EA-F494-51F5053636FF"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
