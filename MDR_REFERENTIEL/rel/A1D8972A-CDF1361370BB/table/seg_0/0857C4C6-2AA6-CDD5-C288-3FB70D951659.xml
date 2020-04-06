@@ -81,17 +81,21 @@
 <colAssociation fkAssociation="4D9CD4BA-2893-5667-71A2-C2E51AE9A5D7" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
 </associations>
 </Column>
-<Column name="geom" id="3EE478E7-CDBE-C616-56C1-D96A237E149F">
+<Column name="fid_iris_geom" id="3EE478E7-CDBE-C616-56C1-D96A237E149F">
 <createdBy>Romain</createdBy>
 <createdTime>2020-03-30 15:27:57 UTC</createdTime>
-<commentInRDBMS><![CDATA[Géométrie de la zone IRIS.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_IRIS_GEOM pour connaitre la géométrie de la zone IRIS.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
+<use>1</use>
 <structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>34</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F593DF3-B75E-FEA1-DDEE-BEA14C5DF414" referredColumn="604DFEA3-9CE3-64B3-8419-CC3834E5CEDF"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -144,6 +148,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1FDE3C3C-32D7-611F-E28B-BD99EB01EDD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="183F761F-5574-4DF2-AFDA-32B496C408F8" name="TA_IRIS_TA_IRIS_GEOM_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-02 08:53:55 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EE478E7-CDBE-C616-56C1-D96A237E149F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
