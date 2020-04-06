@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4D9CD4BA-2893-5667-71A2-C2E51AE9A5D7" containerWithKeyObject="0857C4C6-2AA6-CDD5-C288-3FB70D951659" localFKIndex="574818D2-24F7-155B-D014-6CA5BB9CA3BA" name="TA_IRIS_TA_METADONNEE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-03-30 15:28:50 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la TA_METADONNEE pour connaitre la source et le millesime de l'IRIS.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_METADONNEE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3DCD645D-F32F-3D02-660A-8A35DA02282A</referredTableID>
+<keyObject>6CF3B720-A5F7-BA1D-0BF1-E21F3209C577</keyObject>
+<referredKeyID>6CF3B720-A5F7-BA1D-0BF1-E21F3209C577</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
