@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B91BC369-B5C1-9727-8440-7992E895C63A" name="TA_IRIS_GEOM">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-06 09:29:19 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_43</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="2A358743-1877-2D43-BF88-507027DFCEA2">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-06 09:30:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_IRIS_GEOM]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="75634CD4-C870-DF1D-EEBF-24C348BE815A">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-06 09:30:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie des zones IRIS.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FADA9C7-44D6-8A28-8851-B934E374479A" name="TA_IRIS_GEOM_PK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-06 09:30:04 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A358743-1877-2D43-BF88-507027DFCEA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
