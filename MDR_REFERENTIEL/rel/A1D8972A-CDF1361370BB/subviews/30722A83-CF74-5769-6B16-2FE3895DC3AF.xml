@@ -264,18 +264,6 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <point x="430" y="123"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="307F38D4-A55F-AC58-048D-E0F83E9639D0" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="4C076C54-C591-5330-3BCF-CCE0D5EC05AE">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="963" y="311"/>
-<point x="963" y="341"/>
-<point x="913" y="346"/>
-<point x="912" y="676"/>
-<point x="699" y="677"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6CE30B9E-DFD5-3E11-28B6-F183441A594B" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="588445BB-0D49-9BC7-4338-D3074C032262">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="1D93014B-AE6C-31C3-7146-5331A91D38F0" containerWithKeyObject="43CEBF40-9AB1-010D-3F00-BAF2049B1D5F" localFKIndex="05D4D445-09A0-EBCE-7AB6-77581292C36F" name="TA_RECENSEMENT_TA_LIBELLE_COURT_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:53:38 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre la commune concernée par la valeur du recensement.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_LIBELLE_COURT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>645C266A-26C2-2557-3F74-A1429498367D</referredTableID>
+<keyObject>70C7BFF9-36F0-98A3-0092-358F41FC20F3</keyObject>
+<referredKeyID>70C7BFF9-36F0-98A3-0092-358F41FC20F3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
