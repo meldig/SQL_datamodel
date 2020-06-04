@@ -36,21 +36,6 @@
 <colAssociation fkAssociation="AD4BC3EB-3DC8-4198-6A28-E922FCC96FAF" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
 </associations>
 </Column>
-<Column name="fid_code_iris" id="39CCD266-2103-B2EA-F494-51F5053636FF">
-<createdBy>Romain</createdBy>
-<createdTime>2020-04-02 07:24:10 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre l'IRIS d'implantation de l'équipement.]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>34</dataTypePrecision>
-<ownDataTypeParameters>,34,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="B7F98533-F3FF-DDE4-1937-CDC88FCE2E93" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="33E8F57F-FCCA-B41E-BF16-CECF49A39F34" name="TA_BPE_PK">
@@ -64,7 +49,7 @@
 <colUsage columnID="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FF81A11E-80D5-9854-62E8-36B0E3775E62" name="TA_BPE_TA_METADONNEE_FK">
+<ind_PK_UK id="FF81A11E-80D5-9854-62E8-36B0E3775E62" name="TA_BPE_TA_CODE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-11 08:56:55 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -72,16 +57,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EECE9F90-B79E-5EF8-4C25-956921CD4149"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="440A57A1-D707-F5F0-F0A8-1E095390B6CA" name="TA_BPE_TA_CODE_FK">
-<createdBy>Romain</createdBy>
-<createdTime>2020-04-02 07:50:53 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="39CCD266-2103-B2EA-F494-51F5053636FF"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

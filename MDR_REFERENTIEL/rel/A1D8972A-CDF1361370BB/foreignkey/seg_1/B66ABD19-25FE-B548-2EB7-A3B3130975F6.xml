@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="B66ABD19-25FE-B548-2EB7-A3B3130975F6" containerWithKeyObject="0857C4C6-2AA6-CDD5-C288-3FB70D951659" localFKIndex="3026652D-267D-F352-FDA2-DA66F34DA7FB" name="TA_IRIS_TA_LIBELLE_COURT_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="B66ABD19-25FE-B548-2EB7-A3B3130975F6" containerWithKeyObject="0857C4C6-2AA6-CDD5-C288-3FB70D951659" localFKIndex="3026652D-267D-F352-FDA2-DA66F34DA7FB" name="TA_IRIS_TA_LIBELLE_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-04-09 13:19:49 UTC</createdTime>
-<comment><![CDATA[Clé étrangère vers la table TA_LIBELLE_COURT pour connaitre le type de zone IRIS.]]></comment>
+<comment><![CDATA[Clé étrangère vers la table TA_LIBELLE pour connaitre le type de zone IRIS.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<referredTableLongName>TA_LIBELLE_COURT</referredTableLongName>
+<referredTableLongName>TA_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
-<referredTableID>645C266A-26C2-2557-3F74-A1429498367D</referredTableID>
-<keyObject>70C7BFF9-36F0-98A3-0092-358F41FC20F3</keyObject>
-<referredKeyID>70C7BFF9-36F0-98A3-0092-358F41FC20F3</referredKeyID>
+<referredTableID>5BA04846-FCD4-327F-D4D7-00C6BC71F6D8</referredTableID>
+<keyObject>E20F724E-8EE6-8F08-7516-7771919FFA52</keyObject>
+<referredKeyID>E20F724E-8EE6-8F08-7516-7771919FFA52</referredKeyID>
 <mandatory>true</mandatory>
 <refColNames>objectid</refColNames>
 <transferable>true</transferable>
