@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80874EBB-F6BB-AD7E-2F62-A3E137D16990" name="TA_OCS2D">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:00:36 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_45</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="E164A53D-B6CF-9BE2-0E38-4F0183B2D087">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:04:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D. Ces identifiants sont insérés à partir de la colonne IDENTITE de la table des données importée. Les objectids de cette colonne sont eux même définis à partir de la séquence de la table TA_OCS2D.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cs" id="EAF432C5-DAB4-B432-5723-9C4AD5B23EE5">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:08:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE pour connaitre le couvert du sol.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F6C0068-079A-020E-751A-F8CDFC2D7188" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="us" id="8D440C78-B37E-CAF2-8557-9411FA1B10FF">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:09:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE  pour connaitre l'usage du sol.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28854203-A8CF-A9D6-591C-6AAF95A1DD47" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="indice" id="4F016780-A84B-150A-F197-1AF3F35EBEF3">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:10:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_INDICE pour connaitre l'indice de la zone OCS2D.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D89FA3D8-B707-8C10-8B24-BC38B12421B9" referredColumn="E4D8F9B9-E530-F243-FFFB-3C6314C669FA"/>
+</associations>
+</Column>
+<Column name="source" id="38D6AA4B-A364-E38D-B43C-148ABAB766BC">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:13:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_SOURCE pour connaitre la source des données OCS2D.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D749306F-8B58-43DC-26E4-2FA89ECFE0CF" referredColumn="9212213A-0FE1-BED0-C471-736E8181711E"/>
+</associations>
+</Column>
+<Column name="metadonnee" id="87D1AEEE-1565-8CFE-EB70-D36DAEA4FBC5">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:14:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE pour connaitre les métadonnées des zones IRIS.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B888E3D9-695B-D8FB-B18C-0CC30CF06429" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
+</Column>
+<Column name="geom" id="33A8C95A-A00A-249C-C029-07B55A9355A6">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:15:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_GEOM pour connaitre la géométrie des zones OCS2D.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BB98C8D-69AE-A873-D883-CE0712AFEC45" referredColumn="0CC221F0-A491-FAB7-F414-6AA34D330FA8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C29EA6B-5F35-3E02-3910-4840EA108AED" name="TA_OCS2D_PK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:08:23 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la table TA_OCS2D. Ces identifiants sont insérés à partir de la colonne IDENTITE de la table des données importée. Les objectids de cette colonne sont eux même définis à partir de la séquence de la table TA_OCS2D.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E164A53D-B6CF-9BE2-0E38-4F0183B2D087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7752FFBA-FCD6-3ECB-6EBE-E0A022D8BDAF" name="TA_OCS2D_TA_LIBELLE_COUVERT_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:16:53 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAF432C5-DAB4-B432-5723-9C4AD5B23EE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBD83E82-28FF-90D9-7B64-457EFCC745EA" name="TA_OCS2D_TA_LIBELLE_USAGE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:17:27 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D440C78-B37E-CAF2-8557-9411FA1B10FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24E54E8A-B329-714A-1F53-0473BD75231D" name="TA_OCS2D_TA_OCS2D_GEOM_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:38:59 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33A8C95A-A00A-249C-C029-07B55A9355A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC991958-A58A-3891-6D9D-93852DC662A7" name="TA_OCS2D_TA_OCS2D_SOURCE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:39:17 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38D6AA4B-A364-E38D-B43C-148ABAB766BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36295326-DAFD-6E1A-553B-DDB4503C266E" name="TA_OCS2D_TA_METADONNEE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:40:07 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87D1AEEE-1565-8CFE-EB70-D36DAEA4FBC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D16DC5C4-95B8-8763-DC6F-639A16B7D390" name="TA_OCS2D_TA_OCS2D_INDICE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:41:00 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F016780-A84B-150A-F197-1AF3F35EBEF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

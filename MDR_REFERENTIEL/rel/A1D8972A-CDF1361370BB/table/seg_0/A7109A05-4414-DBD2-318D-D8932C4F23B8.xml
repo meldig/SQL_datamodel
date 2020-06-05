@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7109A05-4414-DBD2-318D-D8932C4F23B8" name="TA_OCS2D_RELATION_COMMENTAIRE">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:30:59 UTC</createdTime>
+<comment><![CDATA[La table TA_OCS2D_RELATION_COMMENTAIRE est une table qui relie les zones OCS2D avec les commentaires qu'elles peuvent avoir.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_50</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fid_ocs2d" id="20C64751-5B74-C258-2D23-D0B508414C2A">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:33:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EAF548E-486A-35D9-3FF0-2EB53750315C" referredColumn="E164A53D-B6CF-9BE2-0E38-4F0183B2D087"/>
+</associations>
+</Column>
+<Column name="fid_ocs2d_commentaire" id="F3A402B5-B7D0-8D0F-3608-DE609F473DBC">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:33:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_COMMENTAIRE pour connaitre le commentaire de la zone OCS2D concernée.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18BBAE8D-408A-05A1-FA0D-7C691E069F7A" referredColumn="C4D68220-AA51-4580-56D1-8C36FBF4BD55"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3682C48E-1A36-5831-11D8-C5B34AEA762D" name="TA_OCS2D_RELATION_COMMENTAIRE_PK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:35:28 UTC</createdTime>
+<comment><![CDATA[Clé étrangère composite.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20C64751-5B74-C258-2D23-D0B508414C2A"/>
+<colUsage columnID="F3A402B5-B7D0-8D0F-3608-DE609F473DBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2C055CB-2D51-6E6C-E829-72BB9B9F7D9C" name="TA_OCS2D_RELATION_COMMENTAIRE_TA_OCS2D_COMMENTAIRE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:36:33 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3A402B5-B7D0-8D0F-3608-DE609F473DBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F08E8859-B8CC-4333-C16A-58B51209F7B7" name="TA_OCS2D_RELATION_COMMENTAIRE_TA_OCS2D_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:37:19 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20C64751-5B74-C258-2D23-D0B508414C2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

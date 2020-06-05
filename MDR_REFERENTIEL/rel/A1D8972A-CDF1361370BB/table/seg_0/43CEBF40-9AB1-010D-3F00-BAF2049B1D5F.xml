@@ -17,11 +17,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="AED3EC56-441A-C312-2480-3848242E589C" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
-</associations>
 </Column>
 <Column name="fid_code" id="313F7619-1BA6-CAB5-F5CF-5AD41BC7D390">
 <createdBy>Romain</createdBy>
@@ -41,7 +38,7 @@
 <Column name="fid_recensement" id="F8BF3B32-9012-32F8-BA0F-2C6569C43721">
 <createdBy>Romain</createdBy>
 <createdTime>2020-04-09 12:52:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE_COURT pour connaitre le recensement concerné.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE pour connaitre le recensement concerné.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -50,7 +47,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="1D93014B-AE6C-31C3-7146-5331A91D38F0" referredColumn="F610DB35-571B-A2B2-DBF0-9742E8C44EEA"/>
+<colAssociation fkAssociation="1D93014B-AE6C-31C3-7146-5331A91D38F0" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
 </associations>
 </Column>
 <Column name="population" id="2E5E3167-3B7C-0AA0-7E59-30DE0CDE2663">
@@ -71,13 +68,15 @@
 <createdTime>2020-04-09 12:54:25 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE pour connaitre les informations sur les données contenues dans la table.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AED3EC56-441A-C312-2480-3848242E589C" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -92,7 +91,7 @@
 <colUsage columnID="FE7B14A5-7CA6-1B97-4656-609A47DAA080"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="05D4D445-09A0-EBCE-7AB6-77581292C36F" name="TA_RECENSEMENT_TA_LIBELLE_COURT_FK">
+<ind_PK_UK id="05D4D445-09A0-EBCE-7AB6-77581292C36F" name="TA_RECENSEMENT_TA_LIBELLE_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-04-09 12:53:38 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -119,7 +118,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FE7B14A5-7CA6-1B97-4656-609A47DAA080"/>
+<colUsage columnID="F90ADD1E-2A64-3573-A508-142E3D0D68FC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

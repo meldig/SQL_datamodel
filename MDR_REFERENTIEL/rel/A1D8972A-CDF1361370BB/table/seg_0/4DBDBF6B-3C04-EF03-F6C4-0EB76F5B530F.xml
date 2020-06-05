@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DBDBF6B-3C04-EF03-F6C4-0EB76F5B530F" name="TA_OCS2D_SOURCE">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:21:10 UTC</createdTime>
+<comment><![CDATA[Table contenant les sources que peuvent avoir les surfaces OCS2D]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_47</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="9212213A-0FE1-BED0-C471-736E8181711E">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:21:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_SOURCE.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="2D89EB4D-83EA-7678-29B8-3A97C580AABF">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:22:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur de la source.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07371688-8AFE-AB37-4E71-A2C65E0BECA2" name="TA_OCS2D_SOURCE_PK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:21:54 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9212213A-0FE1-BED0-C471-736E8181711E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

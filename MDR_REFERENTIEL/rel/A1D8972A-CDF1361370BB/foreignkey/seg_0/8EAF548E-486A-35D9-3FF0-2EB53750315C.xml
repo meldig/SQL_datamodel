@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8EAF548E-486A-35D9-3FF0-2EB53750315C" containerWithKeyObject="A7109A05-4414-DBD2-318D-D8932C4F23B8" localFKIndex="F08E8859-B8CC-4333-C16A-58B51209F7B7" name="TA_OCS2D_RELATION_COMMENTAIRE_TA_OCS2D_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:37:19 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_OCS2D.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_OCS2D</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>80874EBB-F6BB-AD7E-2F62-A3E137D16990</referredTableID>
+<keyObject>5C29EA6B-5F35-3E02-3910-4840EA108AED</keyObject>
+<referredKeyID>5C29EA6B-5F35-3E02-3910-4840EA108AED</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

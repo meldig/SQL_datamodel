@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E368621-C618-D62F-80B4-D82FCE797AEA" name="TA_OCS2D_COMMENTAIRE">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:25:30 UTC</createdTime>
+<comment><![CDATA[Table TA_OCS2D_COMMENTAIRE pour acceuillir les commentaires que peuvent avoir les surfaces OCS2D]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_48</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="C4D68220-AA51-4580-56D1-8C36FBF4BD55">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:26:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_COMMENTAIRE.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="4835206B-049F-5BEB-9265-36CF0D45BF87">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:27:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur de la source que peuvent avoir les zones OCS2D.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08DB8E2C-5868-C020-90B5-174D6346EB11" name="TA_OCS2D_COMMENTAIRE_PK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:26:14 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4D68220-AA51-4580-56D1-8C36FBF4BD55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

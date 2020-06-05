@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="1D93014B-AE6C-31C3-7146-5331A91D38F0" containerWithKeyObject="43CEBF40-9AB1-010D-3F00-BAF2049B1D5F" localFKIndex="05D4D445-09A0-EBCE-7AB6-77581292C36F" name="TA_RECENSEMENT_TA_LIBELLE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5F6C0068-079A-020E-751A-F8CDFC2D7188" containerWithKeyObject="80874EBB-F6BB-AD7E-2F62-A3E137D16990" localFKIndex="7752FFBA-FCD6-3ECB-6EBE-E0A022D8BDAF" name="TA_OCS2D_TA_LIBELLE_COUVERT_FK">
 <createdBy>Romain</createdBy>
-<createdTime>2020-04-09 12:53:38 UTC</createdTime>
-<comment><![CDATA[Clé étrangère vers la table TA_LIBELLE pour connaitre la caractéristique du recensement, type et date du décompte.]]></comment>
+<createdTime>2020-06-05 10:16:53 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_LIBELLE pour connaitre le couvert du sol.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
