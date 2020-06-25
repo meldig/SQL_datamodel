@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A83D28DB-796D-6EF5-6E0E-1C52DC76D35D" name="TA_CORRESPONDANCE_LIBELLE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A83D28DB-796D-6EF5-6E0E-1C52DC76D35D" name="TA_LIBELLE_CORRESPONDANCE">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 12:39:19 UTC</createdTime>
 <comment><![CDATA[Table indiquant les correspondances entre les libelles et les libelles court issus de la Base Permanente des Equipements. Exemple Police = A101 ou Sans objet = x]]></comment>
@@ -53,28 +53,13 @@
 <colUsage columnID="F1AB5055-6B4F-E715-F2D1-E14D49114D0B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E444A529-D7CF-5CC9-89D0-EF892C81882A" name="TA_BPE_CORRESPONDANCE_LIBELLE_PK">
+<ind_PK_UK id="A4E9E393-500D-3260-F61F-0E9308934B19" name="TA_LIBELLE_CORRESPONDANCE__IDX">
 <createdBy>rjault</createdBy>
-<createdTime>2020-02-05 12:48:34 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-</ind_PK_UK>
-<ind_PK_UK id="105C539F-AE7B-86D2-232E-20110E2CA941" name="TA_BPE_CORRESPONDANCE_LIBELLE_FID_LIBELLE_IDX">
-<createdBy>rjault</createdBy>
-<createdTime>2020-02-05 12:49:02 UTC</createdTime>
+<createdTime>2020-06-25 09:18:06 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0875F31D-C618-9FDE-5D76-F528D88B058A"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="85BB5591-E91E-FF0C-8A2E-8D29DE9E17A9" name="TA_BPE_CORRESPONDANCE_LIBELLE_FID_TA_BPE_LIBELLE_COURT_IDX">
-<createdBy>rjault</createdBy>
-<createdTime>2020-02-05 12:49:33 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
 <colUsage columnID="F1AB5055-6B4F-E715-F2D1-E14D49114D0B"/>
 </indexColumnUsage>
 </ind_PK_UK>

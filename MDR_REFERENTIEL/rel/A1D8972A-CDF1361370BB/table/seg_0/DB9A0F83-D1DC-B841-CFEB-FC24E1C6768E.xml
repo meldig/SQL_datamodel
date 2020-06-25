@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB9A0F83-D1DC-B841-CFEB-FC24E1C6768E" name="TA_BPE_RELATION_LIBELLE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB9A0F83-D1DC-B841-CFEB-FC24E1C6768E" name="TA_LIBELLE_RELATION">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-03 14:37:10 UTC</createdTime>
 <comment><![CDATA[Table qui sert à définir les relations entre les différents libelle de la nomenclature de la base permanente des equipements. Exemple A101/Police est un sous élément du libelle A1/Services Publics.x/Sans Object peut être un sous élément de COUVERT/Equipement couvert ou non mais aussi de ECLAIRE/Equipement éclairé ou non.]]></comment>

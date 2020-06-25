@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cs" id="EAF432C5-DAB4-B432-5723-9C4AD5B23EE5">
+<Column name="fid_lib_cs" id="EAF432C5-DAB4-B432-5723-9C4AD5B23EE5">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-05 10:08:23 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE pour connaitre le couvert du sol.]]></commentInRDBMS>
@@ -35,7 +35,7 @@
 <colAssociation fkAssociation="5F6C0068-079A-020E-751A-F8CDFC2D7188" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
 </associations>
 </Column>
-<Column name="us" id="8D440C78-B37E-CAF2-8557-9411FA1B10FF">
+<Column name="fid_lib_us" id="8D440C78-B37E-CAF2-8557-9411FA1B10FF">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-05 10:09:28 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE  pour connaitre l'usage du sol.]]></commentInRDBMS>
@@ -50,7 +50,7 @@
 <colAssociation fkAssociation="28854203-A8CF-A9D6-591C-6AAF95A1DD47" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
 </associations>
 </Column>
-<Column name="indice" id="4F016780-A84B-150A-F197-1AF3F35EBEF3">
+<Column name="fid_ocs2d_indice" id="4F016780-A84B-150A-F197-1AF3F35EBEF3">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-05 10:10:46 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_INDICE pour connaitre l'indice de la zone OCS2D.]]></commentInRDBMS>
@@ -65,7 +65,7 @@
 <colAssociation fkAssociation="D89FA3D8-B707-8C10-8B24-BC38B12421B9" referredColumn="E4D8F9B9-E530-F243-FFFB-3C6314C669FA"/>
 </associations>
 </Column>
-<Column name="source" id="38D6AA4B-A364-E38D-B43C-148ABAB766BC">
+<Column name="fid_ocs2d_source" id="38D6AA4B-A364-E38D-B43C-148ABAB766BC">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-05 10:13:27 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_SOURCE pour connaitre la source des données OCS2D.]]></commentInRDBMS>
@@ -80,7 +80,7 @@
 <colAssociation fkAssociation="D749306F-8B58-43DC-26E4-2FA89ECFE0CF" referredColumn="9212213A-0FE1-BED0-C471-736E8181711E"/>
 </associations>
 </Column>
-<Column name="metadonnee" id="87D1AEEE-1565-8CFE-EB70-D36DAEA4FBC5">
+<Column name="fid_metadonnee" id="87D1AEEE-1565-8CFE-EB70-D36DAEA4FBC5">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-05 10:14:42 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE pour connaitre les métadonnées des zones IRIS.]]></commentInRDBMS>
@@ -95,7 +95,7 @@
 <colAssociation fkAssociation="B888E3D9-695B-D8FB-B18C-0CC30CF06429" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
 </associations>
 </Column>
-<Column name="geom" id="33A8C95A-A00A-249C-C029-07B55A9355A6">
+<Column name="fid_geom" id="33A8C95A-A00A-249C-C029-07B55A9355A6">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-05 10:15:55 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_GEOM pour connaitre la géométrie des zones OCS2D.]]></commentInRDBMS>

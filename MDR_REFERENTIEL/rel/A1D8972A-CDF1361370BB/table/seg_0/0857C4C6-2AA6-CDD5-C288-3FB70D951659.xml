@@ -81,7 +81,7 @@
 <colAssociation fkAssociation="4D9CD4BA-2893-5667-71A2-C2E51AE9A5D7" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
 </associations>
 </Column>
-<Column name="fid_iris_geom" id="3EE478E7-CDBE-C616-56C1-D96A237E149F">
+<Column name="fid_geom" id="3EE478E7-CDBE-C616-56C1-D96A237E149F">
 <createdBy>Romain</createdBy>
 <createdTime>2020-03-30 15:27:57 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_IRIS_GEOM pour connaitre la géométrie de la zone IRIS.]]></commentInRDBMS>

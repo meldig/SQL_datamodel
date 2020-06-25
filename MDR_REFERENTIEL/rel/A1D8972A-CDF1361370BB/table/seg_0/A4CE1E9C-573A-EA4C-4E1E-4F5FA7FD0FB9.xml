@@ -22,7 +22,7 @@ Exemple : entité administrative]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="famille" id="96D82F41-F7A9-A7F1-AF30-64C4863A86BC">
+<Column name="valeur" id="96D82F41-F7A9-A7F1-AF30-64C4863A86BC">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
