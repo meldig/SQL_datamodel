@@ -149,7 +149,7 @@ Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&qu
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3211314</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>La table TA_BPE_GEOM permet de connaitre la position géographique de l&apos;équipement.</comment>
+<comment>La table TA_BPE_GEOM permet de connaitre la position géographique de l&apos;équipement. La géométrie est de type point. Sortir la géométrie de la table TA_BPE permet d&apos;avoir une seule géométrie stockée alors que plusieurs points la partage(exemple des magasins dans les centres commerciaux).</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>

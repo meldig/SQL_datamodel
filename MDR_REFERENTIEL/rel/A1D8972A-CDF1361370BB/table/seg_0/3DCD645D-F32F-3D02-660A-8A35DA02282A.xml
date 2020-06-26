@@ -67,21 +67,6 @@
 <colAssociation fkAssociation="D7D52C70-2321-725A-C5C4-519C9D50C23A" referredColumn="BDF51AC6-722D-4109-6318-B9A8D8EC7610"/>
 </associations>
 </Column>
-<Column name="fid_organisme" id="230E4D22-4223-D55B-3EC5-5B7CC26AFA7E">
-<createdBy>rjault</createdBy>
-<createdTime>2020-01-10 13:17:37 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_ORGANISME.]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="29CB190C-AEA4-182A-F933-FF57E672D415" referredColumn="30EEAB19-3837-CDAA-3BB9-99A2E85D8E1A"/>
-</associations>
-</Column>
 <Column name="fid_echelle" id="693F86E1-78C6-911F-5CC4-8A51D7AA589C">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:19:47 UTC</createdTime>
@@ -120,7 +105,7 @@
 <colUsage columnID="8CDE0A62-9078-FC24-71A0-A696E47294BE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="18809B5E-AD65-9AE9-2A9A-82411B0E124E" name="TA_PROVENANCE_FK">
+<ind_PK_UK id="18809B5E-AD65-9AE9-2A9A-82411B0E124E" name="TA_ORGANISME_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:32:31 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -128,16 +113,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F32A06F9-0098-1978-B61B-EF9E5DD7D697"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="8E634549-EC32-D3B5-41E7-F30E10511CAE" name="TA_ORGANISME_FK">
-<createdBy>rjault</createdBy>
-<createdTime>2020-01-10 13:33:19 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="230E4D22-4223-D55B-3EC5-5B7CC26AFA7E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="A55FDFA9-C53D-63FE-F405-CA56F05F87F9" name="TA_DATE_ACQUISITION_FK">
