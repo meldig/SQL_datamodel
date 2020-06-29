@@ -1,19 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9" name="TA_FAMILLE">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<comment><![CDATA[Table contenant les catégories de tous les éléments de la base.
-
-Exemple : entité administrative]]></comment>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA0069BF-061A-9D61-4687-1069E8F2AC4A" name="TA_LIBELLE_LONG">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-04 09:07:39 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<ordsAlias>table_3</ordsAlias>
+<ordsAlias>table_44</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="164B7C89-0615-592B-D455-E44A201D8B81">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<Column name="objectid" id="755D8D4D-F805-8648-CD5A-C386A0E3C6AC">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-04 09:08:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,29 +20,30 @@ Exemple : entité administrative]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="valeur" id="96D82F41-F7A9-A7F1-AF30-64C4863A86BC">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<Column name="valeur" id="382137E2-BB37-33B8-5016-3D9B32129058">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-04 09:09:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur de chaque libellé définissant l'état d''un objet ou d''une action.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>4000 BYTE</dataTypeSize>
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="30D66828-C324-E3BC-C43C-7C2929BA3322" name="TA_FAMILLE_PK">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ind_PK_UK id="D62A8E3E-13CF-7FAD-9390-28372B811C43" name="TA_LIBELLE_LONG_PK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-04 09:08:26 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="164B7C89-0615-592B-D455-E44A201D8B81"/>
+<colUsage columnID="755D8D4D-F805-8648-CD5A-C386A0E3C6AC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

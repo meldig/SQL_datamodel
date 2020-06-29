@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B7F98533-F3FF-DDE4-1937-CDC88FCE2E93" containerWithKeyObject="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" localFKIndex="440A57A1-D707-F5F0-F0A8-1E095390B6CA" name="TA_BPE_TA_CODE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="F38E97FF-F3B6-38EA-AB25-2D265C453359" containerWithKeyObject="43CEBF40-9AB1-010D-3F00-BAF2049B1D5F" localFKIndex="F0572FAA-10AD-B125-ADDF-62F9C3FEB2B0" name="TA_RECENSEMENT_TA_CODE_FK">
 <createdBy>Romain</createdBy>
-<createdTime>2020-04-02 07:50:53 UTC</createdTime>
-<comment><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre le code IRIS d' implantation de l'équipement.]]></comment>
+<createdTime>2020-04-09 12:55:55 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre la commune concernée par la valeur du recensement.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_CODE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

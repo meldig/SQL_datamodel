@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43CEBF40-9AB1-010D-3F00-BAF2049B1D5F" name="TA_RECENSEMENT">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:52:14 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_45</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="FE7B14A5-7CA6-1B97-4656-609A47DAA080">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:52:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_RECENSEMENT.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_code" id="313F7619-1BA6-CAB5-F5CF-5AD41BC7D390">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:54:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre la commune concernée par la valeur du recensement.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F38E97FF-F3B6-38EA-AB25-2D265C453359" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
+</Column>
+<Column name="fid_recensement" id="F8BF3B32-9012-32F8-BA0F-2C6569C43721">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:52:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE pour connaitre le recensement concerné.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D93014B-AE6C-31C3-7146-5331A91D38F0" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="population" id="2E5E3167-3B7C-0AA0-7E59-30DE0CDE2663">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:54:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre d''habitant recensé.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_metadonnee" id="F90ADD1E-2A64-3573-A508-142E3D0D68FC">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:54:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE pour connaitre les informations sur les données contenues dans la table.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AED3EC56-441A-C312-2480-3848242E589C" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55F4AE64-320D-2CFE-AB14-3B726CD9286A" name="TA_RECENSEMENT_PK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:55:29 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE7B14A5-7CA6-1B97-4656-609A47DAA080"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05D4D445-09A0-EBCE-7AB6-77581292C36F" name="TA_RECENSEMENT_TA_LIBELLE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:53:38 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8BF3B32-9012-32F8-BA0F-2C6569C43721"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0572FAA-10AD-B125-ADDF-62F9C3FEB2B0" name="TA_RECENSEMENT_TA_CODE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:55:55 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="313F7619-1BA6-CAB5-F5CF-5AD41BC7D390"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82E064A5-091A-D81A-5F06-9D4D64BAC115" name="TA_RECENSEMENT_TA_METADONNEE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 12:56:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F90ADD1E-2A64-3573-A508-142E3D0D68FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

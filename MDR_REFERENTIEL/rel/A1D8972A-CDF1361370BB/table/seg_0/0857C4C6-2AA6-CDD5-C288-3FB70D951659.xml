@@ -17,8 +17,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>34</dataTypePrecision>
-<ownDataTypeParameters>,34,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fid_code" id="D650D71C-0633-3AB4-CEA8-CD5D5D56B0D3">
@@ -29,8 +29,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>34</dataTypePrecision>
-<ownDataTypeParameters>,34,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="0362513B-D538-323F-E94F-573AB79C1D1D" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
@@ -44,8 +44,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>34</dataTypePrecision>
-<ownDataTypeParameters>,34,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="53AD6156-7159-38E6-1F45-0A4FD6364EC0" referredColumn="A193FC6B-78E5-E64F-9F5A-1C30984B215D"/>
@@ -59,11 +59,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>34</dataTypePrecision>
-<ownDataTypeParameters>,34,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B8F08F76-8A1F-DBD8-66BE-7778313597B6" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+<colAssociation fkAssociation="B66ABD19-25FE-B548-2EB7-A3B3130975F6" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
 </associations>
 </Column>
 <Column name="fid_metadonnée" id="6EEC71DC-8730-46A5-B9DA-C228901C780E">
@@ -74,14 +74,14 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>34</dataTypePrecision>
-<ownDataTypeParameters>,34,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="4D9CD4BA-2893-5667-71A2-C2E51AE9A5D7" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
 </associations>
 </Column>
-<Column name="fid_iris_geom" id="3EE478E7-CDBE-C616-56C1-D96A237E149F">
+<Column name="fid_geom" id="3EE478E7-CDBE-C616-56C1-D96A237E149F">
 <createdBy>Romain</createdBy>
 <createdTime>2020-03-30 15:27:57 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_IRIS_GEOM pour connaitre la géométrie de la zone IRIS.]]></commentInRDBMS>
@@ -90,11 +90,11 @@
 <use>1</use>
 <structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>34</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="9F593DF3-B75E-FEA1-DDEE-BEA14C5DF414" referredColumn="604DFEA3-9CE3-64B3-8419-CC3834E5CEDF"/>
+<colAssociation fkAssociation="64A0B532-7C44-EEF5-772D-F4AD78BE1EBA" referredColumn="2A358743-1877-2D43-BF88-507027DFCEA2"/>
 </associations>
 </Column>
 </columns>
@@ -108,6 +108,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E1E48F01-510D-A1FA-D113-D93D88704C2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="183F761F-5574-4DF2-AFDA-32B496C408F8" name="TA_IRIS_TA_IRIS_GEOM_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-02 08:53:55 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EE478E7-CDBE-C616-56C1-D96A237E149F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="3B20CF3E-6F69-4CDA-7BC3-93A0A6E2168E" name="TA_IRIS_TA_CODE_FK">
@@ -140,24 +150,24 @@
 <colUsage columnID="4DFFA0B6-CA87-08F1-B31E-3E6C0689C4CF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3F1E65CA-4EED-C035-3684-D3BF79B89DA1" name="TA_IRIS_TA_LIBELLE_FK">
+<ind_PK_UK id="A75B6267-233F-755E-250B-8723448390BD" name="TA_IRIS_TA_IRIS_GEOM_FK">
 <createdBy>Romain</createdBy>
-<createdTime>2020-03-30 15:30:37 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="1FDE3C3C-32D7-611F-E28B-BD99EB01EDD8"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="183F761F-5574-4DF2-AFDA-32B496C408F8" name="TA_IRIS_TA_IRIS_GEOM_FK">
-<createdBy>Romain</createdBy>
-<createdTime>2020-04-02 08:53:55 UTC</createdTime>
+<createdTime>2020-04-06 09:31:22 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="3EE478E7-CDBE-C616-56C1-D96A237E149F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3026652D-267D-F352-FDA2-DA66F34DA7FB" name="TA_IRIS_TA_LIBELLE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-09 13:19:49 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FDE3C3C-32D7-611F-E28B-BD99EB01EDD8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

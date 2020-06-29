@@ -21,9 +21,10 @@ Exemple : les libellés "commune simple" et "commune associée" appartiennent à
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_libelle" id="61B9F597-D22B-4489-2848-50A7E655707C">
+<Column name="fid_libelle_long" id="61B9F597-D22B-4489-2848-50A7E655707C">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE_LONG]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +33,7 @@ Exemple : les libellés "commune simple" et "commune associée" appartiennent à
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="C11B4220-C1A4-F577-F05B-4A3932806C5E" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+<colAssociation fkAssociation="1AB2C296-81E6-2B7B-2D25-54891859FA08" referredColumn="755D8D4D-F805-8648-CD5A-C386A0E3C6AC"/>
 </associations>
 </Column>
 <Column name="fid_famille" id="AC91DAF0-ED43-6525-2B78-649FB3E1886C">
@@ -72,9 +73,9 @@ Exemple : les libellés "commune simple" et "commune associée" appartiennent à
 <colUsage columnID="AC91DAF0-ED43-6525-2B78-649FB3E1886C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="407030A7-5666-8CCE-E089-40982FD81356" name="TA_LIBELLE_FKv2">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ind_PK_UK id="62A8CE72-1AC0-1830-3F7E-DAC45FC4485A" name="TA_LIBELLE_LONG_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-04 09:15:37 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>

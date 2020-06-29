@@ -1,19 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9" name="TA_FAMILLE">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<comment><![CDATA[Table contenant les catégories de tous les éléments de la base.
-
-Exemple : entité administrative]]></comment>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DBDBF6B-3C04-EF03-F6C4-0EB76F5B530F" name="TA_OCS2D_SOURCE">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:21:10 UTC</createdTime>
+<comment><![CDATA[Table contenant les sources que peuvent avoir les surfaces OCS2D]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<ordsAlias>table_3</ordsAlias>
+<ordsAlias>table_47</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="164B7C89-0615-592B-D455-E44A201D8B81">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<Column name="objectid" id="9212213A-0FE1-BED0-C471-736E8181711E">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:21:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_SOURCE.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -22,29 +21,30 @@ Exemple : entité administrative]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="valeur" id="96D82F41-F7A9-A7F1-AF30-64C4863A86BC">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<Column name="valeur" id="2D89EB4D-83EA-7678-29B8-3A97C580AABF">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:22:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur de la source.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>4000 BYTE</dataTypeSize>
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="30D66828-C324-E3BC-C43C-7C2929BA3322" name="TA_FAMILLE_PK">
-<createdBy>bjacq</createdBy>
-<createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<ind_PK_UK id="07371688-8AFE-AB37-4E71-A2C65E0BECA2" name="TA_OCS2D_SOURCE_PK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:21:54 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="164B7C89-0615-592B-D455-E44A201D8B81"/>
+<colUsage columnID="9212213A-0FE1-BED0-C471-736E8181711E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

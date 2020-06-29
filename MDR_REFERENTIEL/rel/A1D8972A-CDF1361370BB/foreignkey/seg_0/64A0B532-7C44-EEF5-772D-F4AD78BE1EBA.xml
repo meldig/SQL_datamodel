@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="64A0B532-7C44-EEF5-772D-F4AD78BE1EBA" containerWithKeyObject="0857C4C6-2AA6-CDD5-C288-3FB70D951659" localFKIndex="A75B6267-233F-755E-250B-8723448390BD" name="TA_IRIS_TA_IRIS_GEOM_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-04-06 09:31:22 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_IRIS_GEOM.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_IRIS_GEOM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B91BC369-B5C1-9727-8440-7992E895C63A</referredTableID>
+<keyObject>8FADA9C7-44D6-8A28-8851-B934E374479A</keyObject>
+<referredKeyID>8FADA9C7-44D6-8A28-8851-B934E374479A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

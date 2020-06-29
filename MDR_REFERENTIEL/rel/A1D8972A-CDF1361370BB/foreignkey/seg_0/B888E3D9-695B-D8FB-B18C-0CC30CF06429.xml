@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AD4BC3EB-3DC8-4198-6A28-E922FCC96FAF" containerWithKeyObject="D43D4954-D328-BA3C-744C-3CE5BB8F3E4B" localFKIndex="FF81A11E-80D5-9854-62E8-36B0E3775E62" name="TA_BPE_TA_CODE_FK">
-<createdBy>rjault</createdBy>
-<createdTime>2020-02-11 08:56:55 UTC</createdTime>
-<comment><![CDATA[Clef étrangère vers la table TA_METADONNEE.]]></comment>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B888E3D9-695B-D8FB-B18C-0CC30CF06429" containerWithKeyObject="80874EBB-F6BB-AD7E-2F62-A3E137D16990" localFKIndex="36295326-DAFD-6E1A-553B-DDB4503C266E" name="TA_OCS2D_TA_METADONNEE_FK">
+<createdBy>Romain</createdBy>
+<createdTime>2020-06-05 10:40:07 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_METADONNEE pour connaitre les métadonnées des zones IRIS.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_METADONNEE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
