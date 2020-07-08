@@ -21,7 +21,7 @@ Exemple : BdTopo]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nom" id="47781F0C-C5CA-E266-0B6D-AAB0FDD0C634">
+<Column name="nom_source" id="47781F0C-C5CA-E266-0B6D-AAB0FDD0C634">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
