@@ -22,17 +22,17 @@ Exemple : 1:10 000]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="echelle" id="97634629-854B-27A1-63FC-A135BB3DD216">
+<Column name="valeur" id="97634629-854B-27A1-63FC-A135BB3DD216">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-27 08:43:43 UTC</createdTime>
-<commentInRDBMS><![CDATA[Echelle d'affichage de la donnée source. Exemple: 1/25000.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Echelle d'affichage de la donnée source. Exemple: 25000.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
