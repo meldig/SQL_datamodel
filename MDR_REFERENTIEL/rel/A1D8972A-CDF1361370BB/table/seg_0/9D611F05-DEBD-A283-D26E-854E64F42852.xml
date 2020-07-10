@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D611F05-DEBD-A283-D26E-854E64F42852" name="TA_TYPE_VERIFICATION">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-10 11:27:08 UTC</createdTime>
+<comment><![CDATA[Table rassemblant tous les types de vérification à effectuer sur les points de vigilance :
+
+- chantier en cours
+- chantier potentiel
+- chantier terminé
+- démolition
+- permis de construire
+]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_54</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="C2DBCE9D-2916-FB36-4E58-E1E3C6E4E2C1">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-10 11:29:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="D459C082-15B1-1BB4-7405-C2680146F889">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-10 11:29:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type de vérification utilisés dans la réponse au signalement des points de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="31693378-9A41-B490-E699-535B3A3A293E">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-10 11:29:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ décrivant  la valeur de la ligne correspondante.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A11B5CAA-CC3D-AC92-CB7C-03B606991B71" name="TA_TYPE_VERIFICATION_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-10 11:29:55 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2DBCE9D-2916-FB36-4E58-E1E3C6E4E2C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
