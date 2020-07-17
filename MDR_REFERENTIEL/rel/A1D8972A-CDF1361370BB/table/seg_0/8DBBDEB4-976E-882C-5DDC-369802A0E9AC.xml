@@ -80,10 +80,14 @@ Les autres champs sont remplis par l'utilisateur via la liste de valeur d'un for
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="niveau_priorite" id="A31E4182-7D68-9911-AEE0-EA67974D4CF8">
+<Column name="categorie" id="A31E4182-7D68-9911-AEE0-EA67974D4CF8">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-07-10 11:24:20 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ permettant de savoir si le point de vigilance doit être traité en priorité ou non.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Champ permettant de savoir si le point de vigilance doit être traité en priorité ou non :
+
+1 = Dossier à créer ;
+2 = Dossier à créer non-prioritaire ;
+3 = Pas besoin de créer de dossier ;]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -92,49 +96,6 @@ Les autres champs sont remplis par l'utilisateur via la liste de valeur d'un for
 <dataTypePrecision>1</dataTypePrecision>
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="type_signalement" id="C2BDF8EA-96BC-6A29-32F2-F04A647B02B8">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-07-10 11:24:20 UTC</createdTime>
-<commentInRDBMS><![CDATA[Type de signalement justifiant la création du point de vigilance : 1 = création ; 2 = modification ; 3 = problème ; 4 = vérification.]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fid_verification" id="D83AD8E6-B08B-613D-9A5A-A6DF0BC776AA">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-07-10 11:24:20 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table ta_vérification permettant de connaître la réponse au signalement fait lors de la création du point.]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="6B57FE5D-12D8-1905-5A42-9ED587D813C6" referredColumn="C2DBCE9D-2916-FB36-4E58-E1E3C6E4E2C1"/>
-</associations>
-</Column>
-<Column name="fid_date_permis_construire" id="950B7D55-BAB6-C383-A137-3618C5C1D934">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-07-10 11:24:20 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table ta_date_permis_construire permettant de connaître les dates de début et de fin de permis de construire. Ces dates sont obtenue lors de visites sur le terrain.]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="44D8EA6B-74DD-656F-F536-3CDED303CD45" referredColumn="005032BA-86B4-0B57-D856-FC6D00A63913"/>
-</associations>
 </Column>
 <Column name="statut" id="DB36C521-7968-E9D1-7FC0-71D7465A3135">
 <createdBy>bjacq</createdBy>
@@ -149,6 +110,36 @@ Les autres champs sont remplis par l'utilisateur via la liste de valeur d'un for
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="fid_type_signalement" id="C2BDF8EA-96BC-6A29-32F2-F04A647B02B8">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-10 11:24:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_LIBELLE_LONG permettant de connaître le type d'objet/chantier sur lequel pourte chaque point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="059BDDA4-4570-D8B7-0FD4-7155F224D0C4" referredColumn="755D8D4D-F805-8648-CD5A-C386A0E3C6AC"/>
+</associations>
+</Column>
+<Column name="fid_verification" id="D83AD8E6-B08B-613D-9A5A-A6DF0BC776AA">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-10 11:24:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table ta_vérification permettant de connaître la réponse au signalement fait lors de la création du point.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7157F650-FDE6-A6E7-A192-1FC4B350C9C2" referredColumn="755D8D4D-F805-8648-CD5A-C386A0E3C6AC"/>
+</associations>
+</Column>
 <Column name="fid_lib_type_objet" id="8630481D-8F53-3C1C-B9FD-DD447D7C5857">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-07-10 11:24:20 UTC</createdTime>
@@ -161,8 +152,45 @@ Les autres champs sont remplis par l'utilisateur via la liste de valeur d'un for
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="09EA4577-4FB9-6F98-2515-7A8D64EF2F40" referredColumn="755D8D4D-F805-8648-CD5A-C386A0E3C6AC"/>
+<colAssociation fkAssociation="8232D525-1BAE-DB93-EBE0-F8E36232D4E3" referredColumn="755D8D4D-F805-8648-CD5A-C386A0E3C6AC"/>
 </associations>
+</Column>
+<Column name="date_observation_terrain" id="57D8DCAA-9BBC-8859-0C0A-6CF9E7314EF0">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-17 12:48:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de la dernière observation terrain du point de vigilance.
+Champ rempli par l'utilisateur.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="debut_permis_construire" id="6D98D415-BE92-65CA-828D-D2B7F8C53D4E">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-17 08:30:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de début des travaux]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fin_permis_construire" id="02420BB6-39FB-63BC-24AE-A32C8533F1D7">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-17 08:30:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin des travaux]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="commentaire" id="FA801A9A-1E4B-C609-415D-FBEABE3AB55B">
 <createdBy>bjacq</createdBy>
@@ -202,19 +230,19 @@ Les autres champs sont remplis par l'utilisateur via la liste de valeur d'un for
 <colUsage columnID="33AE36C1-AF28-76EB-D9B5-41715B44B5BA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="408F038B-22E1-7DAC-F1D6-CCDF22D0F8D7" name="TA_LIBELLE_LONG_FKv1">
+<ind_PK_UK id="DF3AC12A-2837-8290-94BC-993427D3E708" name="TA_LIBELLE_LONG_SIGNALEMENT_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-07-10 11:24:44 UTC</createdTime>
+<createdTime>2020-07-17 08:06:43 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="8630481D-8F53-3C1C-B9FD-DD447D7C5857"/>
+<colUsage columnID="C2BDF8EA-96BC-6A29-32F2-F04A647B02B8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="ED431F0B-2B83-C635-AF78-E9E164586DF6" name="TA_TYPE_VERIFICATION_FK">
+<ind_PK_UK id="C9610981-2D36-78C8-E30A-4D0838792F9B" name="TA_LIBELLE_LONG_VERIFICATION_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-07-10 11:30:14 UTC</createdTime>
+<createdTime>2020-07-17 08:08:15 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -222,14 +250,14 @@ Les autres champs sont remplis par l'utilisateur via la liste de valeur d'un for
 <colUsage columnID="D83AD8E6-B08B-613D-9A5A-A6DF0BC776AA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D7E83E68-6DC5-921F-9461-5FBA0279D7DB" name="TA_GG_POINT_VIGILANCE_TA_DATE_PERMIS_CONSTRUIRE_FK">
+<ind_PK_UK id="727F4DAB-CF5A-B044-EFF4-942AC1B53516" name="TA_LIBELLE_LONG_TYPE_OBJET_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-07-10 11:33:10 UTC</createdTime>
+<createdTime>2020-07-17 08:10:11 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="950B7D55-BAB6-C383-A137-3618C5C1D934"/>
+<colUsage columnID="8630481D-8F53-3C1C-B9FD-DD447D7C5857"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
