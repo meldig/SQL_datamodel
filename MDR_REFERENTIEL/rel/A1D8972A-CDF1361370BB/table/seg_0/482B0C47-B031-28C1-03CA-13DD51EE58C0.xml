@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="482B0C47-B031-28C1-03CA-13DD51EE58C0" name="TA_RVLLP">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 06:53:10 UTC</createdTime>
+<comment><![CDATA[La table TA_RVLLP sert à regrouper les secteurs fiscaux de la taxe dite RVLLP(Revision des Valeurs Locatives des Locaux Professionnels).]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_49</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="B99811D5-53B6-DF06-17D1-DD05E8DE526B">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 06:55:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_RVLLP.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_code_RVLLP" id="2F19C2B6-5732-F104-125C-C837EC4728F8">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 06:55:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre le code section de la section RVLLP.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CBE7A99E-FABA-7A44-0567-8F08B5B3AC60" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
+</Column>
+<Column name="fid_libelle_rvllp" id="C388AE44-C370-CB8F-9990-BDCB7C1B4B49">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 06:55:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE pour connaitre le numéro du secteur au sens de la taxe RVLLP.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4B48C59-7844-7950-F43C-1AF8C3FCE0C9" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="fid_metadonnee" id="A1BF4515-CFC3-710F-DAC7-D4729C4E8CDF">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 06:55:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D8ED19F-F3CE-20E1-D3C3-284749C60506" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
+</Column>
+<Column name="fid_geom" id="68D855BC-10B7-B38A-9AE0-FBA82826814B">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 06:55:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_RVLLP_GEOM.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B62BFA4D-9741-BEF9-0E93-47EB126BE204" referredColumn="EB51CC9E-31E2-783E-960D-57C49265C476"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="74BEC938-6D60-F669-34BA-1229E6633B7A" name="TA_RVLLP_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:07:04 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B99811D5-53B6-DF06-17D1-DD05E8DE526B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="366B6FA2-2CC6-EAD7-9057-260BE0B0EA96" name="TA_RVLLP_TA_CODE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:19:39 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F19C2B6-5732-F104-125C-C837EC4728F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BE9D0D5-806F-927A-383C-98E5EC2CEEA3" name="TA_RVLLP_TA_LIBELLE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:20:05 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C388AE44-C370-CB8F-9990-BDCB7C1B4B49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D0303F3-FFCF-F536-899E-81192FA9152E" name="TA_RVLLP_TA_METADONNEE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:20:17 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1BF4515-CFC3-710F-DAC7-D4729C4E8CDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAD9101E-06E7-76C4-B082-B1CA7070FCE9" name="TA_RVLLP_TA_RVLLP_GEOM_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:20:36 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68D855BC-10B7-B38A-9AE0-FBA82826814B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

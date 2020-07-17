@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C803982-3D8B-2C1C-8580-25F49D6C007A" name="TA_RVLLP_GEOM">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:07:25 UTC</createdTime>
+<comment><![CDATA[Table regroupant les géométries des zones RVLLP.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_50</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="EB51CC9E-31E2-783E-960D-57C49265C476">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:15:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_RVLLP_GEOM.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOM" id="DDCCDA30-A4DE-0CE8-3311-54011777A0EF">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:15:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométries des sections RVLLP.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A0214A9-BE95-E19C-0EC8-FE591B3C0558" name="TA_RVLLP_GEOM_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:15:37 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB51CC9E-31E2-783E-960D-57C49265C476"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
