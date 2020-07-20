@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B62BFA4D-9741-BEF9-0E93-47EB126BE204" containerWithKeyObject="482B0C47-B031-28C1-03CA-13DD51EE58C0" localFKIndex="BAD9101E-06E7-76C4-B082-B1CA7070FCE9" name="TA_RVLLP_TA_RVLLP_GEOM_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-17 07:20:36 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_RVLLP_GEOM.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_RVLLP_GEOM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C803982-3D8B-2C1C-8580-25F49D6C007A</referredTableID>
+<keyObject>7A0214A9-BE95-E19C-0EC8-FE591B3C0558</keyObject>
+<referredKeyID>7A0214A9-BE95-E19C-0EC8-FE591B3C0558</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
