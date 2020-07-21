@@ -16,7 +16,7 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="1A24B084-F63E-2DEE-65E5-D9F762CA57C2" otype="Note" vid="E31E7F92-153B-50A1-EA20-95B5925F26A9">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="891" y="135" width="313" height="112"/>
+<bounds x="749" y="5" width="313" height="112"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -35,16 +35,21 @@ le libellé &quot;bâti - gros chantier&quot; appartient à la famille &quot;él
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="1CB2504A-007C-C9A1-4AB9-7203DC4057A8" otype="Note" vid="5799BBF8-EFB5-7218-5F30-06E0C1C52E13">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="17" y="151" width="475" height="135"/>
+<bounds x="17" y="91" width="469" height="227"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table dans laquelle se trouvent : 
-- la famille &quot;éléments de vigilance&quot; à laquelle appartiennent tous les libellés affectés aux points de vigilance ;
-- La famille &quot;type de signalement des points de vigilance&quot; à laquelle appartiennent les signalements des points de vigilance ;
+<comment>Table dans laquelle se trouvent les familles : 
 
-- la famille &quot;type de vérification des points de vigilance&quot; à laquelle appartient les vérifications à faire sur les poitns de vigilance ;</comment>
+1. &quot;éléments de vigilance&quot; à laquelle appartiennent tous les types d&apos;objet sur lesquels portent les points ;
+2 &quot;type de signalement&quot;;
+3. &quot;type de vérification&quot; ;
+4. &quot;types de points&quot; à laquelle appartient les points de vigilance, les erreurs carto et les erreurs topo ;
+5. &quot;statut du dossier&quot; à laquelle appartiennent tous les statuts que peuvent prendre les points de vigilances et les erreurs carto/topo ;
+6. &quot;catégorie des points&quot; à laquelle appartiennent toutes les catégories que peuvent prendre les points de vigilances et les erreurs carto/topo ;
+7. &quot;type d&apos;action des individus&quot; à laquelle appartient chaque action pouvant être effectuée sur un objet par un pnom ;
+8. &quot;type de dates&quot; à laquelle appartient (pour le moment) les dates des permis de construire ;</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
@@ -52,9 +57,21 @@ le libellé &quot;bâti - gros chantier&quot; appartient à la famille &quot;él
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3C1C70B0-276E-2CA0-CC4E-316121D294C8" otype="Table" vid="6AA959F3-2859-3830-86EB-417C4EC26D1D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="434" y="634" width="491" height="160"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="455E7FC7-F193-09D9-569F-358E3B5D015A" otype="Table" vid="B90CDB00-74F3-BAA3-1301-01EBF03A7E9F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="531" y="450" width="325" height="150"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="14BE9C20-A929-32FF-3B4E-0706093385E7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="655" y="297" width="265" height="122"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="67C35870-3764-E090-94F4-D1E3D566287D" otype="Note" vid="D956DAC3-91E5-CA54-2679-75DC9D86B0F3">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="609" y="386" width="333" height="277"/>
+<bounds x="1164" y="9" width="333" height="615"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -67,16 +84,41 @@ public, lotissement) ;
 - bâti - petit chantier (maison individuelle) ;
 - Voirie (clôture, fossé et bordure) ;
 
-2. Les types de vérification à faire sur chaque point de vigilance :
+2. Les types de signalement de chaque point de vigilance :
+- création ;
+- modification manuelle ;
+- vérification ;
+
+3. Les types de vérification à faire sur chaque point de vigilance :
 - chantier potentiel ; 
 - chantier en cours ; 
 - chantier terminé ; 
 - permis de construire ;
 
-3. Les types de signalement de chaque point de vigilance :
+4. Les types de point :
+- Point de vigilance ;
+- Erreur carto ;
+- Erreur topo ;
+
+5. les statuts des objets :
+- traité ;
+- non-traité ;
+
+6. les catégories :
+- création dossier prioritaire ;
+- création dossier non-prioritaire ;
+- ne nécessite pas la création d&apos;un dossier
+
+7. Les d&apos;actions des individus :
 - création ;
-- modification manuelle ;
-- vérification ;</comment>
+- édition ;
+- création de fiche ;
+- suppression ;
+- dernière observation ;
+
+8. Les types de date :
+- date de début du permis de construire ;
+- date de fin du permis de construire ;</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
@@ -86,22 +128,14 @@ public, lotissement) ;
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="857C5FC6-7F5D-CF8D-0072-82E07F578EF5" otype="Note" vid="432388AA-5EC5-3AAA-FF82-B965D51B453F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="181" y="603" width="348" height="189"/>
+<bounds x="27" y="596" width="322" height="59"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
 <comment>Table contenant les points de vigilance saisis par les utilisateurs.
 
-- La saisie se fait dans QGIS via un formulaire avec liste de valeur (provenant de ta_libelle_long)
-- Les dates de début/fin de travaux peuvent être nulle ;
-- Les champs suivants sont mis à jour automatiquement via un trigger :
- 	- date_creation ;
-	- date_modification ;
-	- auteur_creation ;
-	- auteur_modification ;
-	- categorie ;
-	- statut ;</comment>
+- La saisie se fait dans QGIS via un formulaire.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
@@ -111,28 +145,63 @@ public, lotissement) ;
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8DBBDEB4-976E-882C-5DDC-369802A0E9AC" otype="Table" vid="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="180" y="292" width="348" height="305"/>
+<bounds x="23" y="325" width="383" height="264"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8E6A577C-CE28-B22E-7C55-A3AF7E34082E" otype="Table" vid="71E491D2-C380-5C56-613D-39945CDF33DE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="647" y="114" width="229" height="132"/>
+<bounds x="509" y="42" width="229" height="132"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="940561D7-B580-A97E-B12C-EA8C9EC647FD" otype="Note" vid="37145465-6493-0EB3-0F41-A0D8A17E6971">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="871" y="488" width="176" height="52"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison permettant d&apos;affecter les dates des permis de construire aux points de vigilance</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9BAF1665-CA08-4F44-C77E-C9969DA09AC6" otype="Table" vid="420CB5FF-D655-5BC0-FBD0-8A0C80F71BD3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="962" y="633" width="193" height="87"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9" otype="Table" vid="7AE11610-C15D-ABBE-6810-753F91351B3B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="15" y="63" width="208" height="86"/>
+<bounds x="15" y="3" width="208" height="86"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="C8B51A30-2E54-D9CD-2194-2BC624211C71" otype="Note" vid="3F35283D-2DA6-22A7-F45B-45E77AAEEF06">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="151" y="686" width="277" height="106"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison permettant de savoir quel pnom a fait quelle action sur quel point de vigilance ou erreur carto/topo et à quelle date.
+Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom ne peut faire qu&apos;une action sur un objet. Dans le cadre de la modification d&apos;un objet on ne garde que la dernière modification.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="CA0069BF-061A-9D61-4687-1069E8F2AC4A" otype="Table" vid="11A3203E-E78E-4569-7887-61615CB67BEF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="608" y="279" width="261" height="92"/>
+<bounds x="924" y="132" width="227" height="92"/>
 </OView>
-<OView class="oracle.dbtools.crest.swingui.TVNote" oid="FBA3DC87-0A43-6577-8392-2EADC31AC169" otype="Note" vid="3D2F520E-7251-7464-7D71-73842472C380">
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="F90C8C2D-FC98-5A26-A20D-5ACACBE59674" otype="Note" vid="AABCCD59-0D6D-612C-B898-F80FE80D4391">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="292" y="26" width="363" height="38"/>
+<bounds x="965" y="729" width="143" height="38"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
-<backgroundColor>-3355444</backgroundColor>
+<backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Modèle Relationnel de Données : Les Points de Vigilance</comment>
+<comment>Table comportant tous les pnoms utilisant les tables.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
@@ -142,13 +211,13 @@ public, lotissement) ;
 </OView>
 </objectViews>
 <connectors>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="059BDDA4-4570-D8B7-0FD4-7155F224D0C4" otype="FKIndexAssociation" vid_source="11A3203E-E78E-4569-7887-61615CB67BEF" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0D4DA292-C99C-BB35-E3F4-2B28F4A444E8" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="6AA959F3-2859-3830-86EB-417C4EC26D1D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="608" y="346"/>
-<point x="528" y="346"/>
+<point x="864" y="419"/>
+<point x="863" y="634"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="1AB2C296-81E6-2B7B-2D25-54891859FA08" otype="FKIndexAssociation" vid_source="11A3203E-E78E-4569-7887-61615CB67BEF" vid_target="71E491D2-C380-5C56-613D-39945CDF33DE">
@@ -156,26 +225,80 @@ public, lotissement) ;
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="758" y="279"/>
-<point x="758" y="246"/>
+<point x="924" y="153"/>
+<point x="738" y="153"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7157F650-FDE6-A6E7-A192-1FC4B350C9C2" otype="FKIndexAssociation" vid_source="11A3203E-E78E-4569-7887-61615CB67BEF" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="351563A0-1C83-CD51-18E1-2C439CE0B71D" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="608" y="331"/>
-<point x="528" y="331"/>
+<point x="655" y="372"/>
+<point x="406" y="372"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="8232D525-1BAE-DB93-EBE0-F8E36232D4E3" otype="FKIndexAssociation" vid_source="11A3203E-E78E-4569-7887-61615CB67BEF" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3824C005-9EBF-FCA5-0148-2C4B589281E4" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="608" y="316"/>
-<point x="528" y="316"/>
+<point x="655" y="402"/>
+<point x="406" y="402"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4FF063C1-FEC4-3766-B1AE-D39BC2FD9654" otype="FKIndexAssociation" vid_source="11A3203E-E78E-4569-7887-61615CB67BEF" vid_target="14BE9C20-A929-32FF-3B4E-0706093385E7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="973" y="224"/>
+<point x="872" y="297"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="5B826B21-08EA-8488-554F-BB4F5BD45E2B" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="655" y="342"/>
+<point x="406" y="342"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="753D0BA9-40E7-0460-CC5D-0F8E279310D5" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="655" y="357"/>
+<point x="406" y="357"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="8390C952-7636-6BBB-1E7F-D2602300C190" otype="FKIndexAssociation" vid_source="EE525F79-EF65-AFED-AA49-DDE51EC09EC7" vid_target="6AA959F3-2859-3830-86EB-417C4EC26D1D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="406" y="562"/>
+<point x="534" y="634"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="959C51F3-4C2E-FFC0-A97B-2BC9202A6D8C" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="B90CDB00-74F3-BAA3-1301-01EBF03A7E9F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="755" y="419"/>
+<point x="755" y="450"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="96662A6C-ABA3-DF28-68C0-C68110ADABE7" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="655" y="417"/>
+<point x="406" y="417"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="E71552C1-4529-3C7D-3CF7-AE50D53CDBE2" otype="FKIndexAssociation" vid_source="7AE11610-C15D-ABBE-6810-753F91351B3B" vid_target="71E491D2-C380-5C56-613D-39945CDF33DE">
@@ -183,8 +306,35 @@ public, lotissement) ;
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="223" y="131"/>
-<point x="647" y="131"/>
+<point x="223" y="65"/>
+<point x="509" y="65"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F584620E-69D9-9D15-6C54-240AF784F1C3" otype="FKIndexAssociation" vid_source="EE525F79-EF65-AFED-AA49-DDE51EC09EC7" vid_target="B90CDB00-74F3-BAA3-1301-01EBF03A7E9F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="406" y="519"/>
+<point x="531" y="519"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="FD626CC6-52CF-27DF-E98E-C6053ACC81E4" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="655" y="387"/>
+<point x="406" y="387"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="FF88C53B-1361-C3EE-943B-7D46695392FD" otype="FKIndexAssociation" vid_source="420CB5FF-D655-5BC0-FBD0-8A0C80F71BD3" vid_target="6AA959F3-2859-3830-86EB-417C4EC26D1D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="962" y="677"/>
+<point x="925" y="677"/>
 </points>
 </Connector>
 </connectors>
