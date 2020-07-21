@@ -45,11 +45,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="AD4BC3EB-3DC8-4198-6A28-E922FCC96FAF" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -64,17 +61,7 @@
 <colUsage columnID="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FF81A11E-80D5-9854-62E8-36B0E3775E62" name="TA_BPE_TA_CODE_FK">
-<createdBy>rjault</createdBy>
-<createdTime>2020-02-11 08:56:55 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="EECE9F90-B79E-5EF8-4C25-956921CD4149"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="80253484-0B48-6A0F-FEE5-C8388F7480C8" name="TA_BPE_TA_BPE_GEOM_FK">
+<ind_PK_UK id="80253484-0B48-6A0F-FEE5-C8388F7480C8" name="TA_BPE_GEOM_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-06-25 09:21:52 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

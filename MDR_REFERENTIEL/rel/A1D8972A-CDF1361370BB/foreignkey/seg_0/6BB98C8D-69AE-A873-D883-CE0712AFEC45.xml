@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6BB98C8D-69AE-A873-D883-CE0712AFEC45" containerWithKeyObject="80874EBB-F6BB-AD7E-2F62-A3E137D16990" localFKIndex="24E54E8A-B329-714A-1F53-0473BD75231D" name="TA_OCS2D_TA_OCS2D_GEOM_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6BB98C8D-69AE-A873-D883-CE0712AFEC45" containerWithKeyObject="80874EBB-F6BB-AD7E-2F62-A3E137D16990" localFKIndex="24E54E8A-B329-714A-1F53-0473BD75231D" name="TA_OCS2D_FID_GEOM_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-05 10:38:59 UTC</createdTime>
 <comment><![CDATA[Clé étrangère vers la table TA_OCS2D_GEOM pour connaitre la géométrie de la zone OCS2D.]]></comment>

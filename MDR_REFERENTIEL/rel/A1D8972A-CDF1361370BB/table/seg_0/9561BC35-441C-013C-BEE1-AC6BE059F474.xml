@@ -1,17 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09597B57-1592-4E9C-038D-CBD7433A4531" name="TA_METADONNEE_RELATION_ORGANISME">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9561BC35-441C-013C-BEE1-AC6BE059F474" name="TA_METADONNEE_RELATION_ECHELLE">
 <createdBy>rjault</createdBy>
-<createdTime>2020-06-26 11:38:37 UTC</createdTime>
+<createdTime>2020-07-21 07:21:31 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<ordsAlias>table_48</ordsAlias>
+<ordsAlias>table_51</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="fid_metadonnee" id="BC08C8C3-C8C7-8946-39A1-6FA764CECEF7">
+<Column name="fid_metadonnee" id="35E0BFE6-F830-97A2-9E01-8CC061D67CFC">
 <createdBy>rjault</createdBy>
-<createdTime>2020-06-26 11:40:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE.]]></commentInRDBMS>
+<createdTime>2020-07-21 07:26:51 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -20,13 +19,12 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="2407CFE3-315E-24C6-DE66-03A88DCB7134" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+<colAssociation fkAssociation="B8F56336-2851-6377-7BB0-1C92D877C78A" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
 </associations>
 </Column>
-<Column name="fid_organisme" id="FF7017BB-C7B4-425C-1527-24C938A45442">
+<Column name="fid_echelle" id="2FBD1345-F97F-1637-96F8-A7E52149410A">
 <createdBy>rjault</createdBy>
-<createdTime>2020-06-26 11:41:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_ORGANISME pour connaitre les producteur de la donnée.]]></commentInRDBMS>
+<createdTime>2020-07-21 07:26:51 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,41 +33,41 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="61D015DD-301D-8D57-A966-C652B1F28F5C" referredColumn="30EEAB19-3837-CDAA-3BB9-99A2E85D8E1A"/>
+<colAssociation fkAssociation="3358DDEA-1CFE-1991-C580-ABBD4F77C7C9" referredColumn="A0FCAF6E-B8B8-037B-63E2-0A6A00498779"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="39A8767D-FEDC-20C8-6350-47C83DF4EEC8" name="TA_METADONNEE_RELATION_ORGANISME_PK">
+<ind_PK_UK id="FE9122A8-7BB1-C736-CBA9-4F389CE85823" name="TA_METADONNEE_RELATION_ECHELLE_PK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-06-26 11:40:14 UTC</createdTime>
+<createdTime>2020-07-21 07:26:51 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BC08C8C3-C8C7-8946-39A1-6FA764CECEF7"/>
-<colUsage columnID="FF7017BB-C7B4-425C-1527-24C938A45442"/>
+<colUsage columnID="2FBD1345-F97F-1637-96F8-A7E52149410A"/>
+<colUsage columnID="35E0BFE6-F830-97A2-9E01-8CC061D67CFC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D6D587B1-B836-37A2-76E1-710A71308E73" name="TA_METADONNEE_RELATION_ORGANISME_FID_METADONNEE_FK">
+<ind_PK_UK id="D4E9ACF7-1195-4C50-F36C-07B06AED451E" name="TA_METADONNEE_RELATION_ECHELLE_FID_METADONNEE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-06-26 11:42:01 UTC</createdTime>
+<createdTime>2020-07-21 07:29:29 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="BC08C8C3-C8C7-8946-39A1-6FA764CECEF7"/>
+<colUsage columnID="35E0BFE6-F830-97A2-9E01-8CC061D67CFC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="59053EEE-72F4-6621-70B4-FF2CAA77CC69" name="TA_METADONNEE_RELATION_ORGANISME_FID_ORGANISME_FK">
+<ind_PK_UK id="C2B30252-C32E-0ECA-7B9E-4B77EDDC8BAF" name="TA_METADONNEE_RELATION_ECHELLE_FID_ECHELLE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-06-26 11:42:32 UTC</createdTime>
+<createdTime>2020-07-21 07:30:01 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FF7017BB-C7B4-425C-1527-24C938A45442"/>
+<colUsage columnID="2FBD1345-F97F-1637-96F8-A7E52149410A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

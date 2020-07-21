@@ -35,7 +35,7 @@
 <colAssociation fkAssociation="F38E97FF-F3B6-38EA-AB25-2D265C453359" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
 </associations>
 </Column>
-<Column name="fid_recensement" id="F8BF3B32-9012-32F8-BA0F-2C6569C43721">
+<Column name="fid_lib_recensement" id="F8BF3B32-9012-32F8-BA0F-2C6569C43721">
 <createdBy>Romain</createdBy>
 <createdTime>2020-04-09 12:52:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE pour connaitre le recensement concerné.]]></commentInRDBMS>
@@ -91,7 +91,7 @@
 <colUsage columnID="FE7B14A5-7CA6-1B97-4656-609A47DAA080"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="05D4D445-09A0-EBCE-7AB6-77581292C36F" name="TA_RECENSEMENT_TA_LIBELLE_FK">
+<ind_PK_UK id="05D4D445-09A0-EBCE-7AB6-77581292C36F" name="TA_RECENSEMENT_FID_LIB_RECENSEMENT_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-04-09 12:53:38 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -101,7 +101,7 @@
 <colUsage columnID="F8BF3B32-9012-32F8-BA0F-2C6569C43721"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F0572FAA-10AD-B125-ADDF-62F9C3FEB2B0" name="TA_RECENSEMENT_TA_CODE_FK">
+<ind_PK_UK id="F0572FAA-10AD-B125-ADDF-62F9C3FEB2B0" name="TA_RECENSEMENT_FID_CODE_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-04-09 12:55:55 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -111,7 +111,7 @@
 <colUsage columnID="313F7619-1BA6-CAB5-F5CF-5AD41BC7D390"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="82E064A5-091A-D81A-5F06-9D4D64BAC115" name="TA_RECENSEMENT_TA_METADONNEE_FK">
+<ind_PK_UK id="82E064A5-091A-D81A-5F06-9D4D64BAC115" name="TA_RECENSEMENT_FID_METADONNEE_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-04-09 12:56:24 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
