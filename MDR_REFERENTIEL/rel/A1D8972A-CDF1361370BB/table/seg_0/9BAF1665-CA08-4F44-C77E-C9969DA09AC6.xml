@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9BAF1665-CA08-4F44-C77E-C9969DA09AC6" name="TA_INDIVIDUS">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:22:50 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_54</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="540E4648-699A-B5B5-334C-A29B03028482">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:26:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnom" id="90CAC79D-1771-CC23-9A85-6DE6725A6218">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:26:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pnom de chaque individu travaillant sur les tables (saisie, mise à jour, etc).]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A827B0E-72B7-55F2-3119-79B59EDF6015" name="TA_INDIVIDUS_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:26:46 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="540E4648-699A-B5B5-334C-A29B03028482"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
