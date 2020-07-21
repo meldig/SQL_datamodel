@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="455E7FC7-F193-09D9-569F-358E3B5D015A" name="TA_RELATION_POINT_VIGILANCE_DATE_LIBELLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:11:55 UTC</createdTime>
+<comment><![CDATA[Table de relation entre les tables TA_GG_POINT_VIGILANCE et TA_DATE_OBSERVATION_TERRAIN]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_53</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="5C234135-AF0B-900F-98F2-4E0AF128EDEC">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:16:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_point_vigilance" id="BC1DF483-5A7F-0759-4A89-600D181111A5">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:16:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_GG_POINT_VIGILANCE permettant de connaître le  point de vigilance concerné par la date de début/fin des travaux.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F584620E-69D9-9D15-6C54-240AF784F1C3" referredColumn="33AE36C1-AF28-76EB-D9B5-41715B44B5BA"/>
+</associations>
+</Column>
+<Column name="fid_libelle" id="EF3DF68A-8FD2-D343-DEDD-2DDA43642465">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:16:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_LIBELLE permettant de savoir à quoi correspondent les dates associées aux points de vigilance :
+
+- date de début de permis de construrie ;
+- date de fin de permis de construire ;]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="959C51F3-4C2E-FFC0-A97B-2BC9202A6D8C" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="date" id="01A7D4EC-D717-56BB-56D8-6A91E14B4074">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 10:01:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date d'une action faite sur un point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="42B56628-C416-ADD6-698D-AB70AC0C6BAE" name="TA_POINT_VIGILANCE_DATE_OBSERVATION_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:16:59 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C234135-AF0B-900F-98F2-4E0AF128EDEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E37760C-D5AB-A762-6D1F-2BD4D5F34777" name="FID_POINT_VIGILANCE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 08:19:48 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC1DF483-5A7F-0759-4A89-600D181111A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4ABC9FF1-4C95-5F3E-FD30-492EC9FCFCF4" name="FID_TA_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-21 10:01:58 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF3DF68A-8FD2-D343-DEDD-2DDA43642465"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
