@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="15514531-03A2-FD96-4BC6-9EECEC20EAF6" containerWithKeyObject="3DCD645D-F32F-3D02-660A-8A35DA02282A" localFKIndex="7FCFAC7B-C60A-3A89-08C9-98053B8C1795" name="TA_ECHELLE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3358DDEA-1CFE-1991-C580-ABBD4F77C7C9" containerWithKeyObject="9561BC35-441C-013C-BEE1-AC6BE059F474" localFKIndex="C2B30252-C32E-0ECA-7B9E-4B77EDDC8BAF" name="TA_METADONNEE_RELATION_ECHELLE_FID_ECHELLE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-01-27 08:46:50 UTC</createdTime>
-<comment><![CDATA[Clef étrangere vers la table TA_ECHELLE.]]></comment>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<createdTime>2020-07-21 07:30:01 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_ECHELLE.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_ECHELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>E1CFAD56-3EEC-B2E9-9B35-D9D0AEDD0BB4</referredTableID>

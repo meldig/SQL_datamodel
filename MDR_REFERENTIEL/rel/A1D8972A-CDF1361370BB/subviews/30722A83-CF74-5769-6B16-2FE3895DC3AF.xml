@@ -69,7 +69,7 @@ Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&qu
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5ADABCDD-F011-56DB-C8D9-1429EDF35931" otype="Table" vid="6AE1AC0C-80B6-2616-5B4B-372396C21F1F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="36" y="676" width="270" height="77"/>
+<bounds x="10" y="651" width="270" height="77"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -144,7 +144,7 @@ Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&qu
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="7BD293B0-F07C-8C07-0381-34558C911CCB" otype="Note" vid="ABEB5C55-534B-6ADD-2EE4-067B798E55E4">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="37" y="759" width="267" height="47"/>
+<bounds x="11" y="734" width="267" height="47"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3211314</backgroundColor>
@@ -284,8 +284,8 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="162" y="676"/>
-<point x="162" y="542"/>
+<point x="145" y="651"/>
+<point x="145" y="542"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D00D6CDD-EA45-E74D-80F8-050A12FF7939" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="808FF654-FC21-24CD-B725-17A8EA997C58">

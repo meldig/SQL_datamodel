@@ -51,7 +51,7 @@ Exemple : commune simple, code insee, unité territoriale]]></comment>
 <colUsage columnID="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0646A277-16BB-62F8-8C13-87BFFF94E82E" name="TA_LIBELLE_TA_LIBELLE_LONG_FK">
+<ind_PK_UK id="0646A277-16BB-62F8-8C13-87BFFF94E82E" name="TA_LIBELLE_FID_LIBELLE_LONG_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-04 09:14:38 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

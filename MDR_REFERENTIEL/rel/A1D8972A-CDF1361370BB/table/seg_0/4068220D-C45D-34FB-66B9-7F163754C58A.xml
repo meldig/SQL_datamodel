@@ -64,7 +64,7 @@
 <colUsage columnID="A6FB91C3-A8FE-4C39-AB2C-CEE2674C7632"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="15CA4D32-571A-D1CE-FA23-768181C487F9" name="TA_BPE_CARACTERISTIQUE_TA_LIBELLE_FK">
+<ind_PK_UK id="15CA4D32-571A-D1CE-FA23-768181C487F9" name="TA_BPE_CARACTERISTIQUE_FID_LIBELLE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-21 09:34:28 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -74,7 +74,7 @@
 <colUsage columnID="ABD6B317-BCC2-3A2E-B1FB-A18C4024937B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C748CAD5-D6AB-E572-55B6-C942D3C5FB9E" name="TA_BPE_CARACTERISTIQUE_TA_BPE_FK">
+<ind_PK_UK id="C748CAD5-D6AB-E572-55B6-C942D3C5FB9E" name="TA_BPE_CARACTERISTIQUE_FID_BPE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-21 09:37:24 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

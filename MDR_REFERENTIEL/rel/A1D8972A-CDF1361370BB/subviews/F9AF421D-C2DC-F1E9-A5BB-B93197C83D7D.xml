@@ -376,15 +376,6 @@ Exemple : BdTopo</comment>
 <point x="446" y="1006"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="15514531-03A2-FD96-4BC6-9EECEC20EAF6" otype="FKIndexAssociation" vid_source="F4A03407-C06C-7387-A1BC-7F436B821458" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="1470" y="920"/>
-<point x="1261" y="684"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2A7FB339-F031-8754-D970-5483016B82F2" otype="FKIndexAssociation" vid_source="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2" vid_target="838547C9-D0E1-29FC-B409-48F61FF569AB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
