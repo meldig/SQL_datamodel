@@ -19,7 +19,7 @@ Exemple : commune simple, code insee, unité territoriale]]></comment>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="4FF063C1-FEC4-3766-B1AE-D39BC2FD9654" referredColumn="755D8D4D-F805-8648-CD5A-C386A0E3C6AC"/>
