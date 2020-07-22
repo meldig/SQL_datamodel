@@ -196,7 +196,7 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="F90C8C2D-FC98-5A26-A20D-5ACACBE59674" otype="Note" vid="AABCCD59-0D6D-612C-B898-F80FE80D4391">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="965" y="729" width="143" height="38"/>
+<bounds x="964" y="731" width="143" height="38"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
