@@ -57,17 +57,32 @@ le libellé &quot;bâti - gros chantier&quot; appartient à la famille &quot;él
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2F9889C9-539F-950A-7D0F-FB373800C488" otype="Table" vid="4F599856-9C22-65B2-61EF-39046DA23556">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="444" y="426" width="349" height="124"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3C1C70B0-276E-2CA0-CC4E-316121D294C8" otype="Table" vid="6AA959F3-2859-3830-86EB-417C4EC26D1D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="434" y="634" width="491" height="160"/>
-</OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="455E7FC7-F193-09D9-569F-358E3B5D015A" otype="Table" vid="B90CDB00-74F3-BAA3-1301-01EBF03A7E9F">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="531" y="450" width="325" height="150"/>
+<bounds x="433" y="636" width="491" height="160"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="14BE9C20-A929-32FF-3B4E-0706093385E7">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="655" y="297" width="265" height="122"/>
+<bounds x="639" y="291" width="265" height="122"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="5D58D11A-3E6D-9CEA-BD24-78302E33CF6E" otype="Note" vid="DEE428A0-366B-36A8-59FC-13832701DDF7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="828" y="568" width="183" height="42"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant le numéro et les dates des permis de construire.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="67C35870-3764-E090-94F4-D1E3D566287D" otype="Note" vid="D956DAC3-91E5-CA54-2679-75DC9D86B0F3">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -128,13 +143,12 @@ public, lotissement) ;
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="857C5FC6-7F5D-CF8D-0072-82E07F578EF5" otype="Note" vid="432388AA-5EC5-3AAA-FF82-B965D51B453F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="27" y="596" width="322" height="59"/>
+<bounds x="24" y="594" width="229" height="51"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
 <comment>Table contenant les points de vigilance saisis par les utilisateurs.
-
 - La saisie se fait dans QGIS via un formulaire.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
@@ -153,12 +167,12 @@ public, lotissement) ;
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="940561D7-B580-A97E-B12C-EA8C9EC647FD" otype="Note" vid="37145465-6493-0EB3-0F41-A0D8A17E6971">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="871" y="488" width="176" height="52"/>
+<bounds x="937" y="299" width="234" height="55"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table de liaison permettant d&apos;affecter les dates des permis de construire aux points de vigilance</comment>
+<comment>Table associant les points de vigilance à leur numéro et dates de permis de construire, si ces derniers ont pu être récupérés.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
@@ -168,7 +182,22 @@ public, lotissement) ;
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9BAF1665-CA08-4F44-C77E-C9969DA09AC6" otype="Table" vid="420CB5FF-D655-5BC0-FBD0-8A0C80F71BD3">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="962" y="633" width="193" height="87"/>
+<bounds x="1007" y="675" width="193" height="87"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="9F07C225-FA87-DC17-5BE4-970527BC1626" otype="Note" vid="E22CCE22-0FE6-166E-A8C3-2D120E65A03D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="488" y="554" width="296" height="52"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot entre ta_gg_point_vigilance et ta_gg_permis_de_construire servant à associer les points de vigilance avec les permis de construire.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9" otype="Table" vid="7AE11610-C15D-ABBE-6810-753F91351B3B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -176,7 +205,7 @@ public, lotissement) ;
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="C8B51A30-2E54-D9CD-2194-2BC624211C71" otype="Note" vid="3F35283D-2DA6-22A7-F45B-45E77AAEEF06">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="151" y="686" width="277" height="106"/>
+<bounds x="149" y="687" width="277" height="106"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -194,9 +223,13 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="924" y="132" width="227" height="92"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DDFACE90-D9C3-B2C9-005A-2B827D7E88CB" otype="Table" vid="9068BDA8-8C48-3E73-57A6-0482468EECBE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="828" y="448" width="323" height="115"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="F90C8C2D-FC98-5A26-A20D-5ACACBE59674" otype="Note" vid="AABCCD59-0D6D-612C-B898-F80FE80D4391">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="964" y="731" width="143" height="38"/>
+<bounds x="1008" y="764" width="143" height="38"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -216,8 +249,19 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="864" y="419"/>
-<point x="863" y="634"/>
+<point x="904" y="404"/>
+<point x="1155" y="404"/>
+<point x="1154" y="638"/>
+<point x="924" y="638"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0F35FA70-A188-D8C0-8D2D-730E26F54E88" otype="FKIndexAssociation" vid_source="EE525F79-EF65-AFED-AA49-DDE51EC09EC7" vid_target="4F599856-9C22-65B2-61EF-39046DA23556">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="406" y="488"/>
+<point x="444" y="488"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="1AB2C296-81E6-2B7B-2D25-54891859FA08" otype="FKIndexAssociation" vid_source="11A3203E-E78E-4569-7887-61615CB67BEF" vid_target="71E491D2-C380-5C56-613D-39945CDF33DE">
@@ -234,8 +278,8 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="655" y="372"/>
-<point x="406" y="372"/>
+<point x="639" y="384"/>
+<point x="406" y="384"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3824C005-9EBF-FCA5-0148-2C4B589281E4" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
@@ -243,8 +287,8 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="655" y="402"/>
-<point x="406" y="402"/>
+<point x="639" y="399"/>
+<point x="406" y="399"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4FF063C1-FEC4-3766-B1AE-D39BC2FD9654" otype="FKIndexAssociation" vid_source="11A3203E-E78E-4569-7887-61615CB67BEF" vid_target="14BE9C20-A929-32FF-3B4E-0706093385E7">
@@ -252,8 +296,8 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="973" y="224"/>
-<point x="872" y="297"/>
+<point x="967" y="224"/>
+<point x="864" y="291"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="5B826B21-08EA-8488-554F-BB4F5BD45E2B" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
@@ -261,8 +305,17 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="655" y="342"/>
-<point x="406" y="342"/>
+<point x="639" y="354"/>
+<point x="406" y="354"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="5D7E5479-1F40-A79A-8DEC-A7263B3AB580" otype="FKIndexAssociation" vid_source="9068BDA8-8C48-3E73-57A6-0482468EECBE" vid_target="4F599856-9C22-65B2-61EF-39046DA23556">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="828" y="499"/>
+<point x="793" y="499"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="753D0BA9-40E7-0460-CC5D-0F8E279310D5" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
@@ -270,8 +323,8 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="655" y="357"/>
-<point x="406" y="357"/>
+<point x="639" y="369"/>
+<point x="406" y="369"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="8390C952-7636-6BBB-1E7F-D2602300C190" otype="FKIndexAssociation" vid_source="EE525F79-EF65-AFED-AA49-DDE51EC09EC7" vid_target="6AA959F3-2859-3830-86EB-417C4EC26D1D">
@@ -279,17 +332,8 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="406" y="562"/>
-<point x="534" y="634"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="959C51F3-4C2E-FFC0-A97B-2BC9202A6D8C" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="B90CDB00-74F3-BAA3-1301-01EBF03A7E9F">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="755" y="419"/>
-<point x="755" y="450"/>
+<point x="406" y="563"/>
+<point x="535" y="636"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="96662A6C-ABA3-DF28-68C0-C68110ADABE7" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
@@ -297,8 +341,8 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="655" y="417"/>
-<point x="406" y="417"/>
+<point x="639" y="339"/>
+<point x="406" y="339"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="E71552C1-4529-3C7D-3CF7-AE50D53CDBE2" otype="FKIndexAssociation" vid_source="7AE11610-C15D-ABBE-6810-753F91351B3B" vid_target="71E491D2-C380-5C56-613D-39945CDF33DE">
@@ -310,22 +354,13 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <point x="509" y="65"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F584620E-69D9-9D15-6C54-240AF784F1C3" otype="FKIndexAssociation" vid_source="EE525F79-EF65-AFED-AA49-DDE51EC09EC7" vid_target="B90CDB00-74F3-BAA3-1301-01EBF03A7E9F">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="406" y="519"/>
-<point x="531" y="519"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="FD626CC6-52CF-27DF-E98E-C6053ACC81E4" otype="FKIndexAssociation" vid_source="14BE9C20-A929-32FF-3B4E-0706093385E7" vid_target="EE525F79-EF65-AFED-AA49-DDE51EC09EC7">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="655" y="387"/>
-<point x="406" y="387"/>
+<point x="639" y="339"/>
+<point x="406" y="339"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="FF88C53B-1361-C3EE-943B-7D46695392FD" otype="FKIndexAssociation" vid_source="420CB5FF-D655-5BC0-FBD0-8A0C80F71BD3" vid_target="6AA959F3-2859-3830-86EB-417C4EC26D1D">
@@ -333,8 +368,8 @@ Les clés étrangères font aussi parti de la clé primaire puisqu&apos;un pnom 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="962" y="677"/>
-<point x="925" y="677"/>
+<point x="1007" y="718"/>
+<point x="924" y="718"/>
 </points>
 </Connector>
 </connectors>
