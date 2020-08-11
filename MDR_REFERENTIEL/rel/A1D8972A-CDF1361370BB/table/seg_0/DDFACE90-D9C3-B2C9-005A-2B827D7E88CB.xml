@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DDFACE90-D9C3-B2C9-005A-2B827D7E88CB" name="TA_GG_PERMIS_DE_CONSTUIRE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-07 14:52:10 UTC</createdTime>
+<comment><![CDATA[Table contenant le numéro et les dates des permis de construire.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_56</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="617E0A43-E579-408F-9C83-3AF01D6CF92A">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-07 14:56:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_de_permis" id="8290762E-D0F1-6A08-2601-9C4E6A393B3B">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-07 14:56:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro du permis de construire.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="debut_permis_de_construire" id="8EE4AED9-EB09-B7A7-02DD-B1633FC02EAC">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-07 14:56:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de début du permis de construire]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fin_permis_de_construire" id="8C564E52-F905-2A4D-F920-CDFEDF86A5A8">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-07 14:56:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin du permis de construire]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0A53C2A-BF43-4977-0512-45A94DB93BBE" name="TA_GG_PERMIS_DE_CONSTUIRE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-07 14:56:43 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="617E0A43-E579-408F-9C83-3AF01D6CF92A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
