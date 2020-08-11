@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F9889C9-539F-950A-7D0F-FB373800C488" name="TA_GG_RELATION_PERMIS_CONSTRUIRE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-11 07:14:54 UTC</createdTime>
+<comment><![CDATA[Table pivot entre ta_gg_point_vigilance et ta_gg_permis_de_construire servant à associer les points de vigilance avec les permis de construire.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_56</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="2E74883B-C022-A878-7505-CC8BACFC8A76">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-11 07:17:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_point_vigilance" id="3566AE07-FD86-2132-704A-0F132238BBF3">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-11 07:17:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étangère de la table ta_gg_point_vigilance servant associer le permis de construire avec son point de vigilance.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F35FA70-A188-D8C0-8D2D-730E26F54E88" referredColumn="33AE36C1-AF28-76EB-D9B5-41715B44B5BA"/>
+</associations>
+</Column>
+<Column name="fid_permis_construire" id="A3CBD10A-813D-F204-DC74-9DDBB0248AD5">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-11 07:17:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère portant sur la table ta_permis_de_construire et servant à associer le point de vigilance à son permis de construire.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D7E5479-1F40-A79A-8DEC-A7263B3AB580" referredColumn="617E0A43-E579-408F-9C83-3AF01D6CF92A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC5899F2-4182-061F-5E1F-E6825EF2E57D" name="TA_GG_RELATION_PERMIS_CONSTRUIRE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-11 07:17:37 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E74883B-C022-A878-7505-CC8BACFC8A76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8BC55C8-E9DD-75A5-A54E-B8AE8C2B51F2" name="TA_GG_PERMIS_DE_CONSTUIRE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-11 07:18:24 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3CBD10A-813D-F204-DC74-9DDBB0248AD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4792C4B-DA37-FBB6-D2DE-C7CFBCAE7F50" name="TA_GG_POINT_VIGILANCE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-11 07:19:04 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3566AE07-FD86-2132-704A-0F132238BBF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
