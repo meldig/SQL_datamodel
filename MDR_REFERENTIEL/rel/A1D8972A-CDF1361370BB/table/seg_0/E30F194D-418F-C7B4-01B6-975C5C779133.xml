@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E30F194D-418F-C7B4-01B6-975C5C779133" name="TA_BPE_RELATION_CODE">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-21 08:26:41 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_53</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fid_bpe" id="95B8BE92-DBD6-55EA-3990-C9DD8992D5C1">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-21 08:27:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_BPE pour connaitre l''identifiant de l''équipement BPE.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="330B33C2-6A35-386D-56CC-7E69546185E5" referredColumn="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
+</associations>
+</Column>
+<Column name="fid_code" id="59B81A92-2534-58A7-4A43-4492FD7A4F27">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-21 08:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre les codes insee des communes ainsi que les codes IRIS des zones IRIS d''implantation de l''équipement.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49982B55-AC94-C45D-C134-60960F14DAAC" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FEF3A6D1-219C-0D97-4EA2-8BC91E440894" name="TA_BPE_RELATION_CODE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-21 08:30:55 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95B8BE92-DBD6-55EA-3990-C9DD8992D5C1"/>
+<colUsage columnID="59B81A92-2534-58A7-4A43-4492FD7A4F27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40C95D59-4133-BB87-64F0-C553C24CD516" name="TA_BPE_RELATION_CODE_FID_BPE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-21 08:30:55 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95B8BE92-DBD6-55EA-3990-C9DD8992D5C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9481E32-3C30-4ED9-76CB-18CBA278C472" name="TA_BPE_RELATION_CODE_TA_CODE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-07-21 08:31:13 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59B81A92-2534-58A7-4A43-4492FD7A4F27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
