@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD90D900-6A58-A772-9EE5-4EF35FCDC350" containerWithKeyObject="DB9A0F83-D1DC-B841-CFEB-FC24E1C6768E" localFKIndex="8A79C822-F2A5-718A-0ED6-BA25D5047506" name="TA_LIBELLE_OBJECTID_FID_LIBELLE_FILS_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD90D900-6A58-A772-9EE5-4EF35FCDC350" containerWithKeyObject="DB9A0F83-D1DC-B841-CFEB-FC24E1C6768E" localFKIndex="8A79C822-F2A5-718A-0ED6-BA25D5047506" name="TA_LIBELLE_RELATION_FID_LIBELLE_FILS_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-05 07:42:38 UTC</createdTime>
 <comment><![CDATA[Cléf étrangère vers la table TA_LIBELLE  pour connaitre libelle fils.]]></comment>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>5BA04846-FCD4-327F-D4D7-00C6BC71F6D8</referredTableID>

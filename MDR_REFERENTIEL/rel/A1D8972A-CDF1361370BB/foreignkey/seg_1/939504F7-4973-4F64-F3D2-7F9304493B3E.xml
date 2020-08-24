@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7B466C77-948A-96ED-A4A8-E96A32B89C77" containerWithKeyObject="BA408771-5FAE-5233-4F8D-859389212E53" localFKIndex="1F4AED38-0477-8374-DBCF-03B8A13F765C" name="TA_BPE_CARACTERISTIQUE_NOMBRE_FID_BPE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="939504F7-4973-4F64-F3D2-7F9304493B3E" containerWithKeyObject="65504637-0806-BCB8-E96C-623825031CB1" localFKIndex="2A099E27-A499-E4E9-2A66-30C3FF3A0AD9" name="TA_BPE_RELATION_GEOM_TA_BPE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-01-30 13:15:57 UTC</createdTime>
-<comment><![CDATA[Clef étrangère vers la table TA_BPE.]]></comment>
+<createdTime>2020-08-21 07:54:05 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_BPE.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_BPE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

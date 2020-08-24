@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FF4790B2-2EDD-54C6-D79F-8FD239097480" containerWithKeyObject="A83D28DB-796D-6EF5-6E0E-1C52DC76D35D" localFKIndex="25CB7777-2A44-3732-32FA-468AF7A0951C" name="TA_BPE_CORRESPONDANCE_LIBELLE_FID_LIBELLE_COURT_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FF4790B2-2EDD-54C6-D79F-8FD239097480" containerWithKeyObject="A83D28DB-796D-6EF5-6E0E-1C52DC76D35D" localFKIndex="25CB7777-2A44-3732-32FA-468AF7A0951C" name="TA_LIBELLE_CORRESPONDANCE_LIBELLE_FID_LIBELLE_COURT_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-05 13:02:15 UTC</createdTime>
 <comment><![CDATA[Clef étrangère vers la table TA_BPE_LIBELLE_COURT.]]></comment>
