@@ -67,7 +67,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="38BACC06-F938-3BA3-BE61-1E72C6B5FBF7" otype="Note" vid="AF753B3B-074B-8A87-F307-987B2FE5E0BB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1055" y="19" width="275" height="93"/>
+<bounds x="1056" y="85" width="275" height="93"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -184,6 +184,10 @@ Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&qu
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1336" y="14" width="276" height="122"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9" otype="Table" vid="A92AB558-165F-32F0-91B9-DDA620215CFD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="891" y="1" width="261" height="76"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A83D28DB-796D-6EF5-6E0E-1C52DC76D35D" otype="Table" vid="588445BB-0D49-9BC7-4338-D3074C032262">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1124" y="351" width="496" height="185"/>
@@ -256,11 +260,6 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <point x="1525" y="203"/>
 <point x="1525" y="136"/>
 </points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="24887DBA-66FD-1448-BBD9-CFADB2DC6D3B" otype="FKIndexAssociation">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="251D4BD5-DEE1-D25A-5141-EB30AD009202" otype="FKIndexAssociation" vid_source="2D1AE3D7-5F97-9EA6-D861-BD602EC8CEDE" vid_target="E3EF0999-380D-2736-3ABC-B95A92488D14">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -350,6 +349,15 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <points>
 <point x="975" y="291"/>
 <point x="912" y="291"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="E71552C1-4529-3C7D-3CF7-AE50D53CDBE2" otype="FKIndexAssociation" vid_source="A92AB558-165F-32F0-91B9-DDA620215CFD" vid_target="9A801D96-B4E5-B119-447C-E8014BF15425">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1152" y="45"/>
+<point x="1336" y="45"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="FF4790B2-2EDD-54C6-D79F-8FD239097480" otype="FKIndexAssociation" vid_source="255D4E9B-BF64-AC4B-162F-0772B6F2A487" vid_target="588445BB-0D49-9BC7-4338-D3074C032262">
