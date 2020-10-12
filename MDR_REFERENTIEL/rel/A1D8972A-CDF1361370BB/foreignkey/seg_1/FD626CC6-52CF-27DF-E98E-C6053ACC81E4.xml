@@ -1,7 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="FD626CC6-52CF-27DF-E98E-C6053ACC81E4" containerWithKeyObject="8DBBDEB4-976E-882C-5DDC-369802A0E9AC" localFKIndex="CCB35AA2-AD93-73CF-40C0-C0B60EEEBC41" name="TA_LIBELLE_FID_TYPE_POINT_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="FD626CC6-52CF-27DF-E98E-C6053ACC81E4" containerWithKeyObject="8DBBDEB4-976E-882C-5DDC-369802A0E9AC" localFKIndex="CCB35AA2-AD93-73CF-40C0-C0B60EEEBC41" name="TA_GG_POINT_VIGILANCE_FID_TYPE_POINT_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-07-21 12:04:03 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de distinguer les points de vigilance des erreurs topo/carto.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

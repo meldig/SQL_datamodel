@@ -2,6 +2,7 @@
 <FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="5B826B21-08EA-8488-554F-BB4F5BD45E2B" containerWithKeyObject="8DBBDEB4-976E-882C-5DDC-369802A0E9AC" localFKIndex="D83EDD22-0BCB-A508-D7F3-22522783DA25" name="TA_LIBELLE_FID_VERIFICATION_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-07-20 15:50:08 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table ta_vérification permettant de connaître la réponse au signalement fait lors de la création du point.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

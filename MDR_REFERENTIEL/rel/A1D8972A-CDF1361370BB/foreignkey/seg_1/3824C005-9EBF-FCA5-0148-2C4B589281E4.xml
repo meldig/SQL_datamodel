@@ -1,7 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="3824C005-9EBF-FCA5-0148-2C4B589281E4" containerWithKeyObject="8DBBDEB4-976E-882C-5DDC-369802A0E9AC" localFKIndex="C90761B4-438D-C251-A02E-740E5306A62E" name="TA_LIBELLE_FID_TYPE_SIGNALEMENT_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="3824C005-9EBF-FCA5-0148-2C4B589281E4" containerWithKeyObject="8DBBDEB4-976E-882C-5DDC-369802A0E9AC" localFKIndex="C90761B4-438D-C251-A02E-740E5306A62E" name="TA_GG_POINT_VIGILANCE_FID_TYPE_SIGNALEMENT_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-07-20 15:49:06 UTC</createdTime>
+<comment><![CDATA[Clé étrangère de la table TA_LIBELLE permettant de connaître le type d'objet/chantier sur lequel pourte chaque point de vigilance.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

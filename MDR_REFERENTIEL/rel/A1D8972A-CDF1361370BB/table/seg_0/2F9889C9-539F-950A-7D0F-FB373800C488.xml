@@ -24,7 +24,7 @@
 <Column name="fid_point_vigilance" id="3566AE07-FD86-2132-704A-0F132238BBF3">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-08-11 07:17:37 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étangère de la table ta_gg_point_vigilance servant associer le permis de construire avec son point de vigilance.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère de la table ta_gg_point_vigilance servant associer le permis de construire avec son point de vigilance.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -64,7 +64,7 @@
 <colUsage columnID="2E74883B-C022-A878-7505-CC8BACFC8A76"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E8BC55C8-E9DD-75A5-A54E-B8AE8C2B51F2" name="TA_GG_PERMIS_DE_CONSTUIRE_FK">
+<ind_PK_UK id="E8BC55C8-E9DD-75A5-A54E-B8AE8C2B51F2" name="TA_GG_RELATION_PERMIS_CONSTRUIRE_FID_PERMIS_DE_CONSTUIRE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-08-11 07:18:24 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -74,7 +74,7 @@
 <colUsage columnID="A3CBD10A-813D-F204-DC74-9DDBB0248AD5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C4792C4B-DA37-FBB6-D2DE-C7CFBCAE7F50" name="TA_GG_POINT_VIGILANCE_FK">
+<ind_PK_UK id="C4792C4B-DA37-FBB6-D2DE-C7CFBCAE7F50" name="TA_GG_RELATION_PERMIS_CONSTRUIRE_FID_POINT_VIGILANCE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-08-11 07:19:04 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
