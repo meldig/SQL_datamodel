@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="753D0BA9-40E7-0460-CC5D-0F8E279310D5" containerWithKeyObject="8DBBDEB4-976E-882C-5DDC-369802A0E9AC" localFKIndex="A0961C0C-D5EE-5C6F-C3A3-87DA1CD46C55" name="TA_GG_POINT_VIGILANCE_FID_LIB_CATEGORIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-07-20 15:53:24 UTC</createdTime>
+<comment><![CDATA[Clé étrangère de la table TA_LIBELLE permettant de savoir si le point de vigilance doit être traité en priorité ou non.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5BA04846-FCD4-327F-D4D7-00C6BC71F6D8</referredTableID>
+<keyObject>E20F724E-8EE6-8F08-7516-7771919FFA52</keyObject>
+<referredKeyID>E20F724E-8EE6-8F08-7516-7771919FFA52</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

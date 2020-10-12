@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="0F35FA70-A188-D8C0-8D2D-730E26F54E88" containerWithKeyObject="2F9889C9-539F-950A-7D0F-FB373800C488" localFKIndex="C4792C4B-DA37-FBB6-D2DE-C7CFBCAE7F50" name="TA_GG_RELATION_PERMIS_CONSTRUIRE_FID_POINT_VIGILANCE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-08-11 07:19:04 UTC</createdTime>
+<comment><![CDATA[Clé étrangère de la table ta_gg_point_vigilance servant associer le permis de construire avec son point de vigilance.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_GG_POINT_VIGILANCE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8DBBDEB4-976E-882C-5DDC-369802A0E9AC</referredTableID>
+<keyObject>C0419036-F9B5-C1B8-C383-042FE3C59CB5</keyObject>
+<referredKeyID>C0419036-F9B5-C1B8-C383-042FE3C59CB5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

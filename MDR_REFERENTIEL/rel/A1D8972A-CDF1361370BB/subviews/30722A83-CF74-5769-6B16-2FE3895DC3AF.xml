@@ -29,7 +29,6 @@
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -45,7 +44,6 @@
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -77,7 +75,6 @@ Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&qu
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -156,7 +153,6 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -180,7 +176,6 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -196,7 +191,6 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -256,7 +250,6 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -272,7 +265,6 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
