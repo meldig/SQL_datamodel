@@ -15,37 +15,81 @@
 <display>false</display>
 <notation>1</notation>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="04489E95-7CDD-0E3B-53B3-4BB185E67410" otype="Note" vid="24CE1EC8-595B-66B4-80B0-D7A4734D1ED3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="478" y="741" width="285" height="97"/>
+<comment>Table rassemblant les sources qui ont servies à interpréter les zones d&apos;OCS2D.
+Exemple : 
+- Socle réseau ferré secondaire ;
+- SDIS 59 ;
+- base socle bâti / SDIS 59 ;</comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3DCD645D-F32F-3D02-660A-8A35DA02282A" otype="Table" vid="5430CE0D-E417-4611-D094-126CD92EC674">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="29" y="12" width="394" height="206"/>
+<bounds x="29" y="92" width="394" height="206"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4DBDBF6B-3C04-EF03-F6C4-0EB76F5B530F" otype="Table" vid="561FD0C3-D8A8-D78C-8A26-76D7A1A26CA1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="430" y="516" width="282" height="79"/>
+<bounds x="476" y="656" width="282" height="79"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="8ACC0662-3146-2068-CE39-292FBA4DEBCF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="445" y="271" width="308" height="104"/>
+<bounds x="554" y="371" width="308" height="106"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="65B1EC78-AE2A-6A5F-F136-B511178090EA" otype="Table" vid="CB9CCBC0-C42B-5A56-5F76-95ACFFBFEF3C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="442" y="386" width="281" height="91"/>
+<bounds x="547" y="504" width="281" height="91"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7E368621-C618-D62F-80B4-D82FCE797AEA" otype="Table" vid="D6B96144-571C-1D01-AE2C-87FF94DFC16C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="968" y="135" width="315" height="101"/>
+<bounds x="991" y="214" width="315" height="101"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="8072138B-2B7E-B1B3-B652-CD44A511D026" otype="Note" vid="A60CECFD-678C-0E28-1A18-28D52DDAC6AE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="871" y="375" width="192" height="80"/>
+<comment>Table rassemblant les ID des libellés longs utilisés pour catégoriser un type d&apos;objets.
+Exemple : commune simple, code insee, unité territoriale</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="80874EBB-F6BB-AD7E-2F62-A3E137D16990" otype="Table" vid="A092EF33-59F4-13C4-6F99-AC1EB420DFD0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="36" y="250" width="304" height="239"/>
+<bounds x="36" y="340" width="304" height="239"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="85E5593C-7108-F6FF-613F-51D1B8529B8B" otype="Note" vid="4FEC5F21-B8E5-3407-78DB-0108ABEDB608">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="444" y="105" width="494" height="94"/>
+<comment>Table pivot rassemblant les métadonnées, c&apos;est-à-dire la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.
+</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A7109A05-4414-DBD2-318D-D8932C4F23B8" otype="Table" vid="46F4470A-13B9-51EE-D6F5-C3C5359F29C1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="444" y="135" width="496" height="108"/>
+<bounds x="444" y="215" width="512" height="108"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="CC870EBD-BF2D-2283-A8CF-61B610421C2C" otype="Note" vid="A6CE2021-BE19-3DD7-72E9-6A3231D8F51E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="108" y="583" width="212" height="47"/>
+<comment>Table rassemblant toutes les informations nécessaires à OCS2D (Occupation du Sol en deux dimensions).
+</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="CEB037E0-FEE9-C636-72BC-F68E58F9AFE3" otype="Note" vid="0E39F441-C075-2553-42CC-831B5ECB6D5B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="37" y="767" width="310" height="36"/>
+<comment>Table rassemblant la géométrie de chaque polygone OCS2D.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D18DE136-5778-0638-A3DE-33D5C278B9A7" otype="Table" vid="532221AA-8E25-6A66-D49D-3284AA1BE9D0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="36" y="586" width="297" height="96"/>
+<bounds x="36" y="666" width="297" height="96"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="D57FFA2C-E08B-B562-2751-4ED97D5E2632" otype="Note" vid="8FCF7C29-F90B-5B62-7C3D-D7E918FF8E47">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="31" y="42" width="379" height="42"/>
+<comment>Table pivot rassemblant les métadonnées, c&apos;est-à-dire la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.
+</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E318CC1B-B3E1-3986-B749-39643A0132EE" otype="Note" vid="277A070B-6C3F-012D-BB18-FB07F96C33E2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="835" y="504" width="215" height="82"/>
+<comment>Table rassemblant les ID des libellés longs utilisés pour catégoriser un type d&apos;objets.
+Exemple : commune simple, code insee, unité territoriale</comment>
 </OView>
 </objectViews>
 <connectors>
@@ -54,8 +98,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="968" y="185"/>
-<point x="940" y="185"/>
+<point x="991" y="265"/>
+<point x="956" y="265"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="28854203-A8CF-A9D6-591C-6AAF95A1DD47" otype="FKIndexAssociation" vid_source="8ACC0662-3146-2068-CE39-292FBA4DEBCF" vid_target="A092EF33-59F4-13C4-6F99-AC1EB420DFD0">
@@ -63,8 +107,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="445" y="338"/>
-<point x="340" y="338"/>
+<point x="554" y="424"/>
+<point x="340" y="424"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="5F6C0068-079A-020E-751A-F8CDFC2D7188" otype="FKIndexAssociation" vid_source="8ACC0662-3146-2068-CE39-292FBA4DEBCF" vid_target="A092EF33-59F4-13C4-6F99-AC1EB420DFD0">
@@ -72,8 +116,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="445" y="323"/>
-<point x="340" y="323"/>
+<point x="554" y="439"/>
+<point x="340" y="439"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6BB98C8D-69AE-A873-D883-CE0712AFEC45" otype="FKIndexAssociation" vid_source="532221AA-8E25-6A66-D49D-3284AA1BE9D0" vid_target="A092EF33-59F4-13C4-6F99-AC1EB420DFD0">
@@ -81,8 +125,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="184" y="586"/>
-<point x="184" y="489"/>
+<point x="89" y="666"/>
+<point x="88" y="579"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="8EAF548E-486A-35D9-3FF0-2EB53750315C" otype="FKIndexAssociation" vid_source="A092EF33-59F4-13C4-6F99-AC1EB420DFD0" vid_target="46F4470A-13B9-51EE-D6F5-C3C5359F29C1">
@@ -90,8 +134,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="340" y="315"/>
-<point x="541" y="243"/>
+<point x="340" y="402"/>
+<point x="554" y="323"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B888E3D9-695B-D8FB-B18C-0CC30CF06429" otype="FKIndexAssociation" vid_source="5430CE0D-E417-4611-D094-126CD92EC674" vid_target="A092EF33-59F4-13C4-6F99-AC1EB420DFD0">
@@ -99,8 +143,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="188" y="218"/>
-<point x="188" y="250"/>
+<point x="188" y="298"/>
+<point x="188" y="340"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D749306F-8B58-43DC-26E4-2FA89ECFE0CF" otype="FKIndexAssociation" vid_source="561FD0C3-D8A8-D78C-8A26-76D7A1A26CA1" vid_target="A092EF33-59F4-13C4-6F99-AC1EB420DFD0">
@@ -108,8 +152,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="489" y="516"/>
-<point x="340" y="443"/>
+<point x="545" y="656"/>
+<point x="340" y="569"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D89FA3D8-B707-8C10-8B24-BC38B12421B9" otype="FKIndexAssociation" vid_source="CB9CCBC0-C42B-5A56-5F76-95ACFFBFEF3C" vid_target="A092EF33-59F4-13C4-6F99-AC1EB420DFD0">
@@ -117,8 +161,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="442" y="431"/>
-<point x="340" y="431"/>
+<point x="547" y="541"/>
+<point x="340" y="541"/>
 </points>
 </Connector>
 </connectors>

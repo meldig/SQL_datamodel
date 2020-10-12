@@ -21,18 +21,6 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_geom" id="BDE46226-0DC8-D204-B5EB-7D3CD99748A7">
-<createdBy>rjault</createdBy>
-<createdTime>2020-06-25 09:20:45 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vres la table TA_BPE_GEOM.]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="fid_metadonnee" id="EECE9F90-B79E-5EF8-4C25-956921CD4149">
 <createdBy>rjault</createdBy>
 <createdTime>2019-12-27 07:31:25 UTC</createdTime>
@@ -42,8 +30,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D992247-60ED-039A-5497-9E57BD409E4F" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -56,6 +47,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7D5B4E44-8B93-1E72-A947-C09ABB97BB86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B0480A1-B84A-EDCB-3E6C-4590ED8BB1BF" name="TA_BPE_FID_METADONNEE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-12 09:23:33 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EECE9F90-B79E-5EF8-4C25-956921CD4149"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -16,12 +16,12 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="0613B4A3-E422-C2AE-8890-8E4CA000E4EA" otype="Note" vid="9A6EE1A5-C698-93D7-56E8-B9B0E47076EB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1290" y="78" width="165" height="90"/>
+<bounds x="1290" y="135" width="266" height="74"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table contenant les libellés utilisés pour catégoriser un type d&apos;objets.
+<comment>Table rassemblant les ID des libellés longs utilisés pour catégoriser un type d&apos;objets.
 Exemple : commune simple, code insee, unité territoriale</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
@@ -33,19 +33,19 @@ Exemple : commune simple, code insee, unité territoriale</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="06E4D966-0B08-9E8C-E552-D76DF492EFA8" otype="Table" vid="228412F6-7A23-97A3-96E7-2250494B43B8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="484" y="751" width="266" height="155"/>
+<bounds x="266" y="816" width="400" height="174"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="09597B57-1592-4E9C-038D-CBD7433A4531" otype="Table" vid="A8FB8795-B946-05CF-1F85-4A4B663A13D6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1179" y="592" width="261" height="110"/>
+<bounds x="1128" y="590" width="464" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="14F62236-464B-7A94-76C3-C1AA0EFD8664" otype="Table" vid="9E53026F-FD1E-5824-19E8-BCD5F7FC08E2">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1162" y="929" width="198" height="111"/>
+<bounds x="1176" y="1005" width="198" height="112"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="1C0B4FE8-A4BB-1FB1-1555-3BE1779DCE2D" otype="Note" vid="8ED85759-630F-286D-4D2B-A9419700FD91">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1413" y="882" width="250" height="48"/>
+<bounds x="1545" y="1071" width="250" height="49"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -62,7 +62,7 @@ Exemple : 1:10 000</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="1C6F1086-88AA-2A35-A2DE-50BCC409160B" otype="Note" vid="F966B65A-9907-5A05-E5F7-8DE3858A44E1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="174" y="331" width="182" height="98"/>
+<bounds x="131" y="324" width="182" height="98"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -80,7 +80,7 @@ Exemple : Haubourdin, Lille-Seclin</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="22A1E563-A15F-E90E-23B9-67BCB030C462" otype="Note" vid="7B349048-884F-578D-C1D0-0B286BF77F1D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="891" y="26" width="326" height="70"/>
+<bounds x="481" y="40" width="326" height="70"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -98,12 +98,12 @@ Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&qu
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="2AF2D41E-5D52-4F1A-0D3E-D3A3142FE80F" otype="Note" vid="1DE03709-2F38-5ACA-CBC0-5C6B13CEC647">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="891" y="689" width="229" height="54"/>
+<bounds x="793" y="766" width="229" height="72"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table de liaison rassemblant la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.
+<comment>Table pivot rassemblant les métadonnées, c&apos;est-à-dire la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.
 </comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
@@ -115,11 +115,11 @@ Exemple : les libellés &quot;commune simple&quot; et &quot;commune associée&qu
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2BD8DD48-3D71-2D6A-9E0D-9FD9E4EB850F" otype="Table" vid="4418F932-F391-4BFD-BA26-C483B12B319F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="814" y="773" width="259" height="131"/>
+<bounds x="726" y="849" width="361" height="132"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="2F11F2DC-6EE6-D4CA-3F32-97B4179B4B9E" otype="Note" vid="A0E9610E-232B-0EB6-54D1-BFD390CD33D8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="459" y="386" width="264" height="111"/>
+<bounds x="375" y="680" width="264" height="111"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -138,15 +138,15 @@ Exemple :  la commune de Provin appartient à la MEL depuis le 17/03/2020</comme
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3B9055B9-B01C-3634-9BCE-E0327F3C55BE" otype="Table" vid="E5ECDA4D-609B-B7AA-5A07-0C4738ECA0C4">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1452" y="529" width="242" height="102"/>
+<bounds x="1608" y="510" width="242" height="102"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3DCD645D-F32F-3D02-660A-8A35DA02282A" otype="Table" vid="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="816" y="434" width="229" height="212"/>
+<bounds x="776" y="514" width="315" height="212"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="48EE54C9-CE08-0A29-BCFF-5CEA3B4C3ECA" otype="Note" vid="2DCDD732-6199-4090-77F4-408CFAC3BF93">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1207" y="288" width="310" height="64"/>
+<bounds x="1215" y="474" width="310" height="64"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -161,9 +161,25 @@ Exemple : &quot;donnée téléchargée depuis un lien envoyé par mail par l&apo
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="4AD1537E-E8C4-021B-E68F-2469743168C5" otype="Note" vid="BB228633-028F-6719-7178-7AC17EF51B89">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="979" y="104" width="251" height="35"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table utilisée pour catégoriser les types d&apos;objets.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="50AA4A53-30B9-6550-9895-02BEEA6EBE2D" otype="Note" vid="F1CEAF34-3E33-669E-B352-8B44BF046B8C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="485" y="913" width="264" height="72"/>
+<bounds x="440" y="991" width="264" height="73"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -180,15 +196,15 @@ Exemple : les communes françaises et les municipalités belges</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="595CF166-97DF-EB11-1DE5-9B2B2ACF1ED4" otype="Table" vid="5E0821AA-F3BD-0700-2BBD-9B867F015DEF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="183" y="444" width="170" height="96"/>
+<bounds x="112" y="442" width="170" height="96"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1291" y="172" width="268" height="103"/>
+<bounds x="1291" y="212" width="268" height="103"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="5D943E24-8748-A95F-23CD-BF1A8BCE076B" otype="Note" vid="246F1F01-8C78-0D08-DA9E-46C9715FA572">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="175" y="784" width="236" height="97"/>
+<bounds x="23" y="1162" width="236" height="98"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -206,11 +222,11 @@ Exemple : &quot;Lille-Seclin&quot; est le nom d&apos;une zone supra-communale de
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="601D79DD-AFB5-762E-81E9-181744507185" otype="Table" vid="838547C9-D0E1-29FC-B409-48F61FF569AB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="449" y="242" width="257" height="132"/>
+<bounds x="449" y="322" width="301" height="132"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="6664F5BF-8D31-FAEA-52FA-F05AD51A3058" otype="Note" vid="139B790A-00C7-20C8-B114-633904B86BCF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1253" y="459" width="294" height="65"/>
+<bounds x="1610" y="614" width="294" height="65"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -227,7 +243,7 @@ Exemple : insertion de la donnée source millésimée &quot;2019&quot; le &quot;
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="7D5F714D-B454-2078-DE4E-BF11A663AF39" otype="Note" vid="9F97B174-5E57-8789-277E-7E8C20EEFFD9">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1464" y="642" width="242" height="55"/>
+<bounds x="1626" y="886" width="242" height="56"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -242,17 +258,49 @@ Exemple : IGN pour la BdTopo</comment>
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="808781FC-966C-202D-B309-61692BD2B124" otype="Note" vid="DB0E851D-F2A9-02EF-59E9-D8443389E2F5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1253" y="745" width="238" height="48"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;associer une donnée à plusieurs organsimes producteurs de données.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="87E7FE00-81E8-8247-C993-C186DA66E324" otype="Note" vid="C4E32883-6944-286B-AA82-E86F0606465B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1157" y="946" width="365" height="38"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;associer une donnée à plusieurs échelles.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8E6A577C-CE28-B22E-7C55-A3AF7E34082E" otype="Table" vid="EBB8F819-7DD9-0C93-C375-0DF52C4B0287">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="925" y="100" width="213" height="136"/>
+<bounds x="474" y="118" width="392" height="123"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9561BC35-441C-013C-BEE1-AC6BE059F474" otype="Table" vid="9F43810B-2125-F2BD-AC67-3CB056A51F4D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1101" y="753" width="363" height="110"/>
+<bounds x="1115" y="829" width="446" height="111"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="98F17407-6188-41A6-5D60-80D54E4F7958" otype="Note" vid="B50CF06F-1BD1-471D-888B-3CAA4BBC92D1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="815" y="910" width="254" height="69"/>
+<bounds x="829" y="986" width="254" height="70"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -269,19 +317,19 @@ Exemple : le code insee Lille est 59000</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9" otype="Table" vid="AB9CDCD4-74D0-6CFC-5416-E13F8733DA06">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="311" y="81" width="208" height="78"/>
+<bounds x="149" y="120" width="208" height="78"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A64DBEC9-246E-0B9F-D283-E516975B73D7" otype="Table" vid="811A1F3B-9C82-3B48-CA01-C9E42D6CE53A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1467" y="706" width="241" height="105"/>
+<bounds x="1625" y="779" width="241" height="106"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AD2CBE34-3E03-913A-8730-00AB16EABABA" otype="Table" vid="A2640010-E09E-EEFB-9788-92E561AE0373">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1206" y="358" width="300" height="96"/>
+<bounds x="1206" y="368" width="300" height="96"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="B03A2199-2FB1-6C21-D679-7F980C0A8E42" otype="Note" vid="21C0F317-0348-FC29-9855-65CF9067031E">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1159" y="872" width="183" height="49"/>
+<bounds x="1181" y="1124" width="183" height="50"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -298,7 +346,7 @@ Exemple : 59000, 59350</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="B5BD9ED1-AEA0-FE5C-17CD-996F6F27B1D2" otype="Note" vid="21F3B4DD-25DE-8778-B7D2-EC83854F59A1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="291" y="34" width="315" height="40"/>
+<bounds x="129" y="73" width="315" height="40"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -315,23 +363,27 @@ Exemple : entité administrative</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B8308977-B206-D0F0-00B0-925887DA5B43" otype="Table" vid="5A8E53DA-C77D-86E8-8679-9B0B64B0C565">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="451" y="509" width="296" height="149"/>
+<bounds x="280" y="519" width="421" height="156"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="CA0069BF-061A-9D61-4687-1069E8F2AC4A" otype="Table" vid="AE419CE4-74E7-CA3D-A6FA-3E4E375A20A1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="981" y="149" width="218" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D9812882-3186-E109-305D-3116AA692C8B" otype="Table" vid="ACF2892A-06A7-9792-2D26-1E5669A704EA">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="836" y="322" width="266" height="98"/>
+<bounds x="836" y="382" width="266" height="98"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E1A0D4B0-CB32-E573-CB17-935BA3B86F5A" otype="Table" vid="CA17174D-3A44-EB58-48A0-BC3C15A139DF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="122" y="887" width="324" height="133"/>
+<bounds x="25" y="1014" width="344" height="134"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E1CFAD56-3EEC-B2E9-9B35-D9D0AEDD0BB4" otype="Table" vid="F4A03407-C06C-7387-A1BC-7F436B821458">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1452" y="941" width="201" height="89"/>
+<bounds x="1540" y="973" width="201" height="90"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="ECAF0F8D-B949-6597-CE4D-FFDBA8E9DEC1" otype="Note" vid="C6F08530-AB55-5C52-3237-650C3FF4BBBE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="624" y="174" width="256" height="55"/>
+<bounds x="468" y="259" width="256" height="55"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -348,7 +400,7 @@ Exemple : les départements, régions, unités territoriales...</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="F773858E-9C7F-149C-899F-A5E0DE629262" otype="Note" vid="A7F2B503-E8A9-DF46-16C4-F6C0EC930DFD">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="835" y="277" width="296" height="40"/>
+<bounds x="835" y="337" width="296" height="40"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -370,9 +422,9 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1291" y="270"/>
-<point x="827" y="270"/>
-<point x="750" y="751"/>
+<point x="1291" y="315"/>
+<point x="818" y="329"/>
+<point x="666" y="816"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="08FE0DC7-C9BE-BE4F-6811-E13AA749DA2B" otype="FKIndexAssociation" vid_source="9E53026F-FD1E-5824-19E8-BCD5F7FC08E2" vid_target="CA17174D-3A44-EB58-48A0-BC3C15A139DF">
@@ -380,8 +432,17 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1162" y="974"/>
-<point x="446" y="974"/>
+<point x="1176" y="1065"/>
+<point x="369" y="1065"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="1AB2C296-81E6-2B7B-2D25-54891859FA08" otype="FKIndexAssociation" vid_source="AE419CE4-74E7-CA3D-A6FA-3E4E375A20A1" vid_target="EBB8F819-7DD9-0C93-C375-0DF52C4B0287">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="981" y="195"/>
+<point x="866" y="195"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2407CFE3-315E-24C6-DE66-03A88DCB7134" otype="FKIndexAssociation" vid_source="EFFAC340-27F6-9738-C1CA-873DE04A92BA" vid_target="A8FB8795-B946-05CF-1F85-4A4B663A13D6">
@@ -389,8 +450,17 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1045" y="634"/>
-<point x="1179" y="634"/>
+<point x="1091" y="645"/>
+<point x="1128" y="645"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="28737E65-3AA4-93F7-0A2E-3C7AD56A035C" otype="FKIndexAssociation" vid_source="A2640010-E09E-EEFB-9788-92E561AE0373" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1206" y="459"/>
+<point x="1045" y="514"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2A7FB339-F031-8754-D970-5483016B82F2" otype="FKIndexAssociation" vid_source="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2" vid_target="838547C9-D0E1-29FC-B409-48F61FF569AB">
@@ -398,8 +468,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1291" y="258"/>
-<point x="706" y="258"/>
+<point x="1291" y="283"/>
+<point x="750" y="322"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3358DDEA-1CFE-1991-C580-ABBD4F77C7C9" otype="FKIndexAssociation" vid_source="F4A03407-C06C-7387-A1BC-7F436B821458" vid_target="9F43810B-2125-F2BD-AC67-3CB056A51F4D">
@@ -407,8 +477,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1458" y="941"/>
-<point x="1458" y="863"/>
+<point x="1550" y="973"/>
+<point x="1550" y="940"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="484EE066-34EB-E8AF-48A8-C2D079620D21" otype="FKIndexAssociation" vid_source="228412F6-7A23-97A3-96E7-2250494B43B8" vid_target="5A8E53DA-C77D-86E8-8679-9B0B64B0C565">
@@ -416,8 +486,28 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="615" y="751"/>
-<point x="615" y="658"/>
+<point x="351" y="816"/>
+<point x="334" y="675"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4FF063C1-FEC4-3766-B1AE-D39BC2FD9654" otype="FKIndexAssociation" vid_source="AE419CE4-74E7-CA3D-A6FA-3E4E375A20A1" vid_target="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1199" y="235"/>
+<point x="1291" y="235"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="594DEAD1-098B-4874-519B-56D957F2C1F6" otype="FKIndexAssociation" vid_source="6B93CBFB-3C71-FBD8-A105-3AD6CF9A72F2" vid_target="9E53026F-FD1E-5824-19E8-BCD5F7FC08E2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1559" y="315"/>
+<point x="1910" y="534"/>
+<point x="1912" y="1109"/>
+<point x="1360" y="1080"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="61D015DD-301D-8D57-A966-C652B1F28F5C" otype="FKIndexAssociation" vid_source="811A1F3B-9C82-3B48-CA01-C9E42D6CE53A" vid_target="A8FB8795-B946-05CF-1F85-4A4B663A13D6">
@@ -425,8 +515,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1467" y="710"/>
-<point x="1440" y="699"/>
+<point x="1636" y="779"/>
+<point x="1473" y="700"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="78631F35-CD4D-4FD5-BF5C-526170FE45DA" otype="FKIndexAssociation" vid_source="838547C9-D0E1-29FC-B409-48F61FF569AB" vid_target="5A8E53DA-C77D-86E8-8679-9B0B64B0C565">
@@ -434,17 +524,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="578" y="374"/>
-<point x="578" y="509"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="90E90EC4-A512-4B9F-6246-7186DDA539FF" otype="FKIndexAssociation" vid_source="9E53026F-FD1E-5824-19E8-BCD5F7FC08E2" vid_target="4418F932-F391-4BFD-BA26-C483B12B319F">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="1162" y="938"/>
-<point x="1073" y="898"/>
+<point x="575" y="454"/>
+<point x="575" y="519"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A88DB619-97FE-EE6E-4464-ED295D43C1C6" otype="FKIndexAssociation" vid_source="838547C9-D0E1-29FC-B409-48F61FF569AB" vid_target="CA17174D-3A44-EB58-48A0-BC3C15A139DF">
@@ -452,9 +533,9 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="449" y="251"/>
-<point x="160" y="251"/>
-<point x="160" y="887"/>
+<point x="449" y="322"/>
+<point x="104" y="319"/>
+<point x="104" y="1014"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A9D7F462-548D-5DC7-5B03-21FDD409AF01" otype="FKIndexAssociation" vid_source="E5ECDA4D-609B-B7AA-5A07-0C4738ECA0C4" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
@@ -462,8 +543,17 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1452" y="580"/>
-<point x="1045" y="580"/>
+<point x="1608" y="563"/>
+<point x="1091" y="563"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B89E7851-B894-1A84-D6DE-4520A1E80165" otype="FKIndexAssociation" vid_source="9E53026F-FD1E-5824-19E8-BCD5F7FC08E2" vid_target="4418F932-F391-4BFD-BA26-C483B12B319F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1191" y="1005"/>
+<point x="1087" y="904"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B8F56336-2851-6377-7BB0-1C92D877C78A" otype="FKIndexAssociation" vid_source="EFFAC340-27F6-9738-C1CA-873DE04A92BA" vid_target="9F43810B-2125-F2BD-AC67-3CB056A51F4D">
@@ -471,8 +561,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1045" y="627"/>
-<point x="1210" y="753"/>
+<point x="1091" y="722"/>
+<point x="1253" y="829"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="BE09F9A4-C77E-01D6-5822-23A1D6EF09F9" otype="FKIndexAssociation" vid_source="5E0821AA-F3BD-0700-2BBD-9B867F015DEF" vid_target="228412F6-7A23-97A3-96E7-2250494B43B8">
@@ -480,8 +570,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="317" y="540"/>
-<point x="536" y="751"/>
+<point x="130" y="538"/>
+<point x="274" y="816"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C67FEC75-DCD5-642D-5ABE-A9FFA14406D7" otype="FKIndexAssociation" vid_source="EFFAC340-27F6-9738-C1CA-873DE04A92BA" vid_target="228412F6-7A23-97A3-96E7-2250494B43B8">
@@ -489,8 +579,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="816" y="645"/>
-<point x="750" y="785"/>
+<point x="776" y="715"/>
+<point x="609" y="816"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D16B80BA-19D5-9DF1-B781-4ACFBED4C147" otype="FKIndexAssociation" vid_source="228412F6-7A23-97A3-96E7-2250494B43B8" vid_target="4418F932-F391-4BFD-BA26-C483B12B319F">
@@ -498,17 +588,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="750" y="838"/>
-<point x="814" y="838"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D7D52C70-2321-725A-C5C4-519C9D50C23A" otype="FKIndexAssociation" vid_source="A2640010-E09E-EEFB-9788-92E561AE0373" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="1206" y="444"/>
-<point x="1045" y="444"/>
+<point x="666" y="915"/>
+<point x="726" y="915"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="E71552C1-4529-3C7D-3CF7-AE50D53CDBE2" otype="FKIndexAssociation" vid_source="AB9CDCD4-74D0-6CFC-5416-E13F8733DA06" vid_target="EBB8F819-7DD9-0C93-C375-0DF52C4B0287">
@@ -516,8 +597,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="519" y="129"/>
-<point x="925" y="129"/>
+<point x="357" y="159"/>
+<point x="474" y="159"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="EFC1080A-A73B-188D-97F6-F250CEF989C2" otype="FKIndexAssociation" vid_source="5E0821AA-F3BD-0700-2BBD-9B867F015DEF" vid_target="838547C9-D0E1-29FC-B409-48F61FF569AB">
@@ -525,8 +606,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="348" y="444"/>
-<point x="466" y="374"/>
+<point x="282" y="448"/>
+<point x="449" y="448"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F2A32B6B-554E-3761-C568-E8384B319F0E" otype="FKIndexAssociation" vid_source="ACF2892A-06A7-9792-2D26-1E5669A704EA" vid_target="EFFAC340-27F6-9738-C1CA-873DE04A92BA">
@@ -534,8 +615,8 @@ Exemple : BdTopo</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="940" y="420"/>
-<point x="940" y="434"/>
+<point x="963" y="480"/>
+<point x="963" y="514"/>
 </points>
 </Connector>
 </connectors>

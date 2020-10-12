@@ -53,7 +53,7 @@
 <colUsage columnID="AD02686A-8687-5B3D-DF02-B19C320F9F06"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2A099E27-A499-E4E9-2A66-30C3FF3A0AD9" name="TA_BPE_RELATION_GEOM_TA_BPE_FK">
+<ind_PK_UK id="2A099E27-A499-E4E9-2A66-30C3FF3A0AD9" name="TA_BPE_RELATION_GEOM_FID_BPE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-08-21 07:54:05 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -63,7 +63,7 @@
 <colUsage columnID="3E20AFB4-576D-004F-965E-372C5F425982"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EE9510EC-6DFC-EA05-DE6B-55E8D792E55B" name="TA_BPE_RELATION_GEOM_TA_BPE_GEOM_FK">
+<ind_PK_UK id="EE9510EC-6DFC-EA05-DE6B-55E8D792E55B" name="TA_BPE_RELATION_GEOM_FID_BPE_GEOM_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-08-21 07:54:28 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

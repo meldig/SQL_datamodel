@@ -24,11 +24,75 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="43CEBF40-9AB1-010D-3F00-BAF2049B1D5F" otype="Table" vid="0669DE0A-2B1E-7377-8D1B-154339F29183">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="9" y="69" width="321" height="295"/>
+<bounds x="9" y="69" width="379" height="200"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="57B81EF8-E20E-78D9-A2D2-72C6360B5F17" otype="Note" vid="6CD31E79-97BF-6358-BACF-4DF4D880FDBE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="806" y="14" width="242" height="71"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les ID des libellés longs utilisés pour catégoriser un type d&apos;objets.
+Exemple : commune simple, code insee, unité territoriale</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="E35CAC26-2735-4D30-72D1-8839CCB56E32">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="442" y="5" width="356" height="99"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="703C911A-E8D7-A0AB-018A-8632CBA6B022" otype="Note" vid="E479D871-B75D-2A04-922C-4AA893FF3F27">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="811" y="290" width="213" height="75"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot rassemblant les métadonnées, c&apos;est-à-dire la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.
+</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="D7F1D63B-73CD-7FD8-104E-4D7FD57F9618" otype="Note" vid="063A1942-2511-4933-49D8-4B973FB0E266">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="810" y="145" width="173" height="51"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les codes de chaque objet de la base.
+Exemple : 59000, 59350</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="D977DA65-F559-D73F-70BF-67A9FAEDEBB8" otype="Note" vid="FB967659-0D3B-14F8-6A0F-DE3F86EDCD9C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="10" y="272" width="266" height="44"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table permettant d&apos;associer un code INSEE à sa population pour une date donnée.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 </objectViews>
 <connectors>
@@ -38,7 +102,7 @@
 <lineWidth>1</lineWidth>
 <points>
 <point x="442" y="86"/>
-<point x="330" y="86"/>
+<point x="388" y="86"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="594DEAD1-098B-4874-519B-56D957F2C1F6" otype="FKIndexAssociation" vid_source="E35CAC26-2735-4D30-72D1-8839CCB56E32" vid_target="49998608-39F6-AD37-5CA0-51A41BFC7756">
@@ -55,8 +119,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="441" y="313"/>
-<point x="330" y="313"/>
+<point x="441" y="266"/>
+<point x="388" y="266"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F38E97FF-F3B6-38EA-AB25-2D265C453359" otype="FKIndexAssociation" vid_source="49998608-39F6-AD37-5CA0-51A41BFC7756" vid_target="0669DE0A-2B1E-7377-8D1B-154339F29183">
@@ -65,7 +129,7 @@
 <lineWidth>1</lineWidth>
 <points>
 <point x="441" y="194"/>
-<point x="330" y="194"/>
+<point x="388" y="194"/>
 </points>
 </Connector>
 </connectors>

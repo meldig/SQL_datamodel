@@ -64,7 +64,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="D7D52C70-2321-725A-C5C4-519C9D50C23A" referredColumn="BDF51AC6-722D-4109-6318-B9A8D8EC7610"/>
+<colAssociation fkAssociation="28737E65-3AA4-93F7-0A2E-3C7AD56A035C" referredColumn="BDF51AC6-722D-4109-6318-B9A8D8EC7610"/>
 </associations>
 </Column>
 </columns>
@@ -80,7 +80,7 @@
 <colUsage columnID="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="65274A94-BE2F-8E1B-067C-8BAADEC5A2A3" name="TA_SOURCE_FK">
+<ind_PK_UK id="65274A94-BE2F-8E1B-067C-8BAADEC5A2A3" name="TA_METADONNEE_FID_SOURCE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:32:31 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -90,17 +90,7 @@
 <colUsage columnID="8CDE0A62-9078-FC24-71A0-A696E47294BE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="18809B5E-AD65-9AE9-2A9A-82411B0E124E" name="TA_ORGANISME_FK">
-<createdBy>rjault</createdBy>
-<createdTime>2020-01-10 13:32:31 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="F32A06F9-0098-1978-B61B-EF9E5DD7D697"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="A55FDFA9-C53D-63FE-F405-CA56F05F87F9" name="TA_DATE_ACQUISITION_FK">
+<ind_PK_UK id="A55FDFA9-C53D-63FE-F405-CA56F05F87F9" name="TA_METADONNEE_FID_ACQUISITION_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:36:15 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -108,6 +98,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5CBE2D3C-610B-3103-C4B5-4F865240724B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F55B62E8-E742-72E0-0534-49A63697546F" name="TA_METADONNEE_FID_PROVENANCE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-12 09:38:11 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F32A06F9-0098-1978-B61B-EF9E5DD7D697"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

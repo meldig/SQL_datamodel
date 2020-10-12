@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2A7FB339-F031-8754-D970-5483016B82F2" containerWithKeyObject="601D79DD-AFB5-762E-81E9-181744507185" localFKIndex="584A33F7-3AFA-11BA-6D8E-3AFA526E2D48" name="TA_LIBELLE_FKv1">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2A7FB339-F031-8754-D970-5483016B82F2" containerWithKeyObject="601D79DD-AFB5-762E-81E9-181744507185" localFKIndex="584A33F7-3AFA-11BA-6D8E-3AFA526E2D48" name="TA_ZONE_ADMINISTRATIVE_FID_LIBELLE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>5BA04846-FCD4-327F-D4D7-00C6BC71F6D8</referredTableID>

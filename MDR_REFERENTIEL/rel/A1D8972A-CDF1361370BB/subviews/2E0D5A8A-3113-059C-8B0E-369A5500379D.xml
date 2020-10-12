@@ -18,13 +18,23 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="390" y="191" width="303" height="239"/>
 </OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="14F62236-464B-7A94-76C3-C1AA0EFD8664" otype="Table" vid="5B8872E2-21A1-D498-092C-5E79D6E1FE59">
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="14F62236-464B-7A94-76C3-C1AA0EFD8664" otype="Table" vid="E663B82B-33E2-AE06-BA91-6FEC7212F3E0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="563" y="43" width="269" height="111"/>
+<bounds x="630" y="34" width="230" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3DCD645D-F32F-3D02-660A-8A35DA02282A" otype="Table" vid="629F25FA-F0FD-9C5E-B486-1008F49C034A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="767" y="192" width="290" height="218"/>
+<bounds x="767" y="192" width="329" height="169"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="4F9144FE-5DD4-F207-43AE-960440AC9B33" otype="Note" vid="1791685F-7CFD-CD44-AFC3-13D60F14DF1C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="868" y="71" width="195" height="43"/>
+<comment>Table rassemblant les codes IRIS au format XXXX</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="532DE15F-E9DE-8597-CE5B-ED051C67D6FD" otype="Note" vid="DAFBE6F1-3332-D62B-1F83-1D375A1D1ADE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="395" y="580" width="291" height="31"/>
+<comment>Table rassemblant la géométrie de chaque IRIS.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="595CF166-97DF-EB11-1DE5-9B2B2ACF1ED4" otype="Table" vid="F82728C4-3692-4E04-7302-02FAEC469E1D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -34,19 +44,43 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="247" y="43" width="280" height="108"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="733182C0-24AE-2D75-82E8-0115C6B8FDF7" otype="Note" vid="FDFDBFBC-7FC1-BDAC-F3CD-885FC453847D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="66" y="59" width="170" height="88"/>
+<comment>Table contenant les libellés utilisés pour catégoriser un type d&apos;objets.
+Exemple : commune non découpée en IRIS</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="74507CE5-7840-A38C-345E-74205E198229" otype="Note" vid="94C14565-FEF2-FDBD-1307-A564132A6A59">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="769" y="368" width="328" height="64"/>
+<comment>Table pivot rassemblant les métadonnées, c&apos;est-à-dire la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.
+</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="90353A42-B0FC-2203-B597-6F7916B8F5BC" otype="Note" vid="05CA7C89-918C-9EA4-8C43-049D97783FB6">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="73" y="312" width="267" height="90"/>
+<comment>Table rassemblant les noms de tous les objets présents dans la base,
+sauf les noms des organismes et des sources dont la donnée est issue.
+Exemple : jardin, nord</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="A4233BD1-D9FF-A660-A20F-4F026FCC91D5" otype="Note" vid="B784CB72-0944-C21F-86E0-3ADC8A0820AF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="473" y="161" width="170" height="25"/>
+<comment>Table rassemblant les IRIS.</comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B91BC369-B5C1-9727-8440-7992E895C63A" otype="Table" vid="B6F0627A-1C9F-A91E-F294-C745D61DB34E">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="394" y="478" width="289" height="94"/>
 </OView>
 </objectViews>
 <connectors>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0362513B-D538-323F-E94F-573AB79C1D1D" otype="FKIndexAssociation" vid_source="5B8872E2-21A1-D498-092C-5E79D6E1FE59" vid_target="3D36FB71-9362-2E50-868B-B99FB00EDC79">
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0362513B-D538-323F-E94F-573AB79C1D1D" otype="FKIndexAssociation" vid_source="E663B82B-33E2-AE06-BA91-6FEC7212F3E0" vid_target="3D36FB71-9362-2E50-868B-B99FB00EDC79">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="628" y="154"/>
-<point x="628" y="191"/>
+<point x="661" y="144"/>
+<point x="661" y="191"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4D9CD4BA-2893-5667-71A2-C2E51AE9A5D7" otype="FKIndexAssociation" vid_source="629F25FA-F0FD-9C5E-B486-1008F49C034A" vid_target="3D36FB71-9362-2E50-868B-B99FB00EDC79">
@@ -54,8 +88,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="767" y="301"/>
-<point x="693" y="301"/>
+<point x="767" y="276"/>
+<point x="693" y="276"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="53AD6156-7159-38E6-1F45-0A4FD6364EC0" otype="FKIndexAssociation" vid_source="F82728C4-3692-4E04-7302-02FAEC469E1D" vid_target="3D36FB71-9362-2E50-868B-B99FB00EDC79">
@@ -65,6 +99,15 @@
 <points>
 <point x="335" y="250"/>
 <point x="390" y="250"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="594DEAD1-098B-4874-519B-56D957F2C1F6" otype="FKIndexAssociation" vid_source="CAD2FDD8-89B1-5931-6D28-A3A51BB69169" vid_target="E663B82B-33E2-AE06-BA91-6FEC7212F3E0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="527" y="93"/>
+<point x="630" y="93"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="64A0B532-7C44-EEF5-772D-F4AD78BE1EBA" otype="FKIndexAssociation" vid_source="B6F0627A-1C9F-A91E-F294-C745D61DB34E" vid_target="3D36FB71-9362-2E50-868B-B99FB00EDC79">

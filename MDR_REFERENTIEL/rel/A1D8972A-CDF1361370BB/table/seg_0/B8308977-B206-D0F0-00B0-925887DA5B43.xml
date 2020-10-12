@@ -87,7 +87,7 @@ Exemple :  la commune de Provin appartient à la MEL depuis le 17/03/2020]]></co
 <colUsage columnID="2EA41768-8EAF-8F2B-55B1-0BC0882EDFAE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B2D8471D-D4E7-9AA9-3981-B6485A63FB36" name="TA_ZONE_ADMINISTRATIVE_FK">
+<ind_PK_UK id="B2D8471D-D4E7-9AA9-3981-B6485A63FB36" name="TA_ZA_COMMUNES_FID_ZONE_ADMINISTRATIVE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -97,7 +97,7 @@ Exemple :  la commune de Provin appartient à la MEL depuis le 17/03/2020]]></co
 <colUsage columnID="34D82859-24B8-ADC7-C818-7089B0DB9EC2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="62C6293A-A8B3-E367-71D0-5251B05BC340" name="TA_COMMUNE_FK">
+<ind_PK_UK id="62C6293A-A8B3-E367-71D0-5251B05BC340" name="TA_ZA_COMMUNES_FID_COMMUNE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

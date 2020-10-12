@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="08FE0DC7-C9BE-BE4F-6811-E13AA749DA2B" containerWithKeyObject="E1A0D4B0-CB32-E573-CB17-935BA3B86F5A" localFKIndex="FC541820-57FA-CEB4-624E-711715C2E7B4" name="TA_CODE_FKv3">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="08FE0DC7-C9BE-BE4F-6811-E13AA749DA2B" containerWithKeyObject="E1A0D4B0-CB32-E573-CB17-935BA3B86F5A" localFKIndex="FC541820-57FA-CEB4-624E-711715C2E7B4" name="TA_IDENTIFIANT_COMMUNE_FID_IDENTIFIANT_FKv1">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-01-27 09:41:32 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Clé étrangère vers la table TA_CODE permettant d'associer un code avec sa zone administrative.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_CODE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>14F62236-464B-7A94-76C3-C1AA0EFD8664</referredTableID>
