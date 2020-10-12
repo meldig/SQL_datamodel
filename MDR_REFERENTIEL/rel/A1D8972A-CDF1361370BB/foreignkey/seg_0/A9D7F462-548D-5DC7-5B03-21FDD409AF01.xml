@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9D7F462-548D-5DC7-5B03-21FDD409AF01" containerWithKeyObject="3DCD645D-F32F-3D02-660A-8A35DA02282A" localFKIndex="A55FDFA9-C53D-63FE-F405-CA56F05F87F9" name="TA_DATE_ACQUISITION_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9D7F462-548D-5DC7-5B03-21FDD409AF01" containerWithKeyObject="3DCD645D-F32F-3D02-660A-8A35DA02282A" localFKIndex="A55FDFA9-C53D-63FE-F405-CA56F05F87F9" name="TA_METADONNEE_FID_ACQUISITION_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:36:15 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Clé étrangère vers la table TA_DATE_ACQUISITION  pour connaitre la date d'insertion des données.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_DATE_ACQUISITION</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>3B9055B9-B01C-3634-9BCE-E0327F3C55BE</referredTableID>

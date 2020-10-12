@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="CB739BD9-997C-347E-A311-1B2D6EC833C8" containerWithKeyObject="65504637-0806-BCB8-E96C-623825031CB1" localFKIndex="EE9510EC-6DFC-EA05-DE6B-55E8D792E55B" name="TA_BPE_RELATION_GEOM_TA_BPE_GEOM_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="CB739BD9-997C-347E-A311-1B2D6EC833C8" containerWithKeyObject="65504637-0806-BCB8-E96C-623825031CB1" localFKIndex="EE9510EC-6DFC-EA05-DE6B-55E8D792E55B" name="TA_BPE_RELATION_GEOM_FID_BPE_GEOM_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-08-21 07:54:28 UTC</createdTime>
 <comment><![CDATA[Clé étrangère vers la table TA_BPE_GEOM.]]></comment>

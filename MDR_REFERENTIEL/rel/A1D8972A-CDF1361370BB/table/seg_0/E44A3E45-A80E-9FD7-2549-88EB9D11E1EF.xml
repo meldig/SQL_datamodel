@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E44A3E45-A80E-9FD7-2549-88EB9D11E1EF" name="SECTION_CADASTRALE">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-07 08:36:06 UTC</createdTime>
+<comment><![CDATA[Table présente dans le schéma S_EDIGEO. Accessible à partir des schémas S_EDIGEO_LEC et G_DGFIP.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_54</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sec" id="528F89E0-948F-FB0F-F7CB-2BBF46521145">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-07 08:37:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code de la section: concatenation CODE_COM + PRE + SECTION]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_com" id="CEEEFBA0-A7E9-FE9A-CE0C-DDA071D35AF0">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-07 08:37:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code INSEE de la commune]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="section" id="CD96F7CB-7670-576B-AE7A-7943B739CB8D">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-07 08:37:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[identifiant section cadastrale sur 2 caractères]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pre" id="051F670A-56A9-AD97-79B6-B38FCF17270E">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-07 08:37:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[préfixe de section sur 3 caractères]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="A6EF966E-11D8-9F30-09EC-20A3841900FE">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-07 08:37:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de la section]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="90B284B7-8CC0-588F-108E-E657782B9C2A" name="SECTION_CADASTRALE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-07 08:48:17 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la table SECTION_CADASTRALE.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="528F89E0-948F-FB0F-F7CB-2BBF46521145"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

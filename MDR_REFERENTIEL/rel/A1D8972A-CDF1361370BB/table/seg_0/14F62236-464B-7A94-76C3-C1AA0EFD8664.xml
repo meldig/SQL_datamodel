@@ -22,7 +22,7 @@ Exemple : 59000, 59350]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="libelle_court" id="D9C1E3E7-FD02-D3DE-9C12-FE17925495AB">
+<Column name="valeur" id="D9C1E3E7-FD02-D3DE-9C12-FE17925495AB">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-15 09:15:04 UTC</createdTime>
 <commentInRDBMS><![CDATA[Colonne qui repertorie les differents codes que peuvent prendre les differents variables du schema.]]></commentInRDBMS>
@@ -63,7 +63,7 @@ Exemple : 59000, 59350]]></comment>
 <colUsage columnID="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="00EF990B-25A3-B2AC-06A2-1FCAE41B021E" name="TA_CODE_TA_LIBELLE_FK">
+<ind_PK_UK id="00EF990B-25A3-B2AC-06A2-1FCAE41B021E" name="TA_CODE_FID_LIBELLE_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-04-09 12:50:45 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

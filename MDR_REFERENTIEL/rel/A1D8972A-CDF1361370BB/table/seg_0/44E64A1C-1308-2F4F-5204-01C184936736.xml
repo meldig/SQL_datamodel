@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44E64A1C-1308-2F4F-5204-01C184936736" name="TA_RVLLP_TARIF">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 09:25:35 UTC</createdTime>
+<comment><![CDATA[La table TA_RVLLP_TARIF sert à indiquer pour chaque type de local professionnel le tarif de la Revision de la Valeur Locative des Locaux Professionnels suivant sont secteur de la taxe dite RVLLP.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_54</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fid_code" id="4C15F32D-74B9-3AAD-CCD7-F853CC9E29A6">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 09:29:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre le secteur concerné par le tarif.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57E5BD6D-4C60-9DE7-7034-48D0A25EB44B" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
+</Column>
+<Column name="fid_libelle" id="4CA3D4B1-8729-9E63-DF01-D4C27AB4CA2D">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 09:29:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[clé primaire vers la table TA_LIBELLE pour connaitre le local concerné par le tarif de la taxe.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B4809E0-E406-7E45-D121-49A804399A09" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="tarif" id="912F766B-CFF2-4031-333F-9156FCDFF53B">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 09:29:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tarif appliqué au local professionnel sur la section cadastrale considérée.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_metadonnee" id="86379E1A-B2AB-4A3C-D0BC-BACD166B5C64">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 09:42:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE pour connaitre les métadonnées de la source.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F4474BD-2645-B178-8AB0-7A39FED6D04D" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CBF805F-2192-4C3A-DCEC-1497A501F156" name="TA_RVLLP_TARIF_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 11:08:00 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C15F32D-74B9-3AAD-CCD7-F853CC9E29A6"/>
+<colUsage columnID="4CA3D4B1-8729-9E63-DF01-D4C27AB4CA2D"/>
+<colUsage columnID="86379E1A-B2AB-4A3C-D0BC-BACD166B5C64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F66AA5D9-4138-FE4D-3C2D-1ADCE4BBDFC1" name="TA_RVLLP_TARIF_FID_CODE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 09:45:11 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C15F32D-74B9-3AAD-CCD7-F853CC9E29A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="207E0CE1-8655-EEA7-08CC-219238075B55" name="TA_RVLLP_TARIF_FID_LIBELLE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 09:45:41 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CA3D4B1-8729-9E63-DF01-D4C27AB4CA2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEB945E4-DC02-D120-6ACE-CE167E6995C8" name="TA_RVLLP_TARIF_TA_METADONNEE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 09:46:23 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86379E1A-B2AB-4A3C-D0BC-BACD166B5C64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

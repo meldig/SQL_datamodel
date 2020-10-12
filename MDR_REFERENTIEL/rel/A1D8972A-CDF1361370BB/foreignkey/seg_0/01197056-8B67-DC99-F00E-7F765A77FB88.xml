@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="01197056-8B67-DC99-F00E-7F765A77FB88" containerWithKeyObject="06E4D966-0B08-9E8C-E552-D76DF492EFA8" localFKIndex="9A71C23C-0266-A740-283D-A760BD7614FD" name="TA_LIBELLE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="01197056-8B67-DC99-F00E-7F765A77FB88" containerWithKeyObject="06E4D966-0B08-9E8C-E552-D76DF492EFA8" localFKIndex="9A71C23C-0266-A740-283D-A760BD7614FD" name="TA_COMMUNE_FID_LIB_TYPE_COMMUNE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Clé étrangère vers la table TA_LIBELLE  pour connaitre le type de commune(commune simple/associée).]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>5BA04846-FCD4-327F-D4D7-00C6BC71F6D8</referredTableID>

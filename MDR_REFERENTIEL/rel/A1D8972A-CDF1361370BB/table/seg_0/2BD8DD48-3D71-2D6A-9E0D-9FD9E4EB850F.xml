@@ -24,6 +24,7 @@ Exemple : le code insee Lille est 59000]]></comment>
 <Column name="fid_commune" id="E0DE7ECD-47B8-7533-1034-51C9ADEA4E91">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_COMMUNE pour faire la liaison entre la commune et son code.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -47,7 +48,7 @@ Exemple : le code insee Lille est 59000]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="90E90EC4-A512-4B9F-6246-7186DDA539FF" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+<colAssociation fkAssociation="B89E7851-B894-1A84-D6DE-4520A1E80165" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
 </associations>
 </Column>
 </columns>
@@ -63,7 +64,7 @@ Exemple : le code insee Lille est 59000]]></comment>
 <colUsage columnID="CDB72384-34AF-7862-960E-35767855300F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="552D6F55-B2E3-E420-68B5-061FD595F852" name="TA_COMMUNE_FKv1">
+<ind_PK_UK id="552D6F55-B2E3-E420-68B5-061FD595F852" name="TA_IDENTIFIANT_COMMUNE_FID_COMMUNE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -73,22 +74,15 @@ Exemple : le code insee Lille est 59000]]></comment>
 <colUsage columnID="E0DE7ECD-47B8-7533-1034-51C9ADEA4E91"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CE9257AB-59E2-EDE2-271A-10A5F49BE762" name="TA_CODE_FKv1">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-01-27 09:40:38 UTC</createdTime>
+<ind_PK_UK id="B81B44E6-4F37-2C51-9FD6-3E78927E4FA6" name="TA_IDENTIFIANT_COMMUNE_FID_IDENTIFIANT_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-12 08:14:29 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="80F9D246-A268-69B3-D3CF-F2D645540EB5"/>
 </indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="A8F941B9-59E5-2A35-C798-F2B3674C78A2" name="TA_IDENTIFIANT_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-02-21 10:33:45 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 </ind_PK_UK>
 </indexes>
 </Table>

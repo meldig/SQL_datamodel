@@ -13,7 +13,7 @@ Exemple : commune simple, code insee, unité territoriale]]></comment>
 <Column name="objectid" id="4A14C59A-AD9A-429E-5660-46C849C82FD1">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de chaque libellé.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé primaire de chaque libellé.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

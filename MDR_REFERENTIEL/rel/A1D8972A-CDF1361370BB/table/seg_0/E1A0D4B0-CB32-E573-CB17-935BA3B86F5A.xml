@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1A0D4B0-CB32-E573-CB17-935BA3B86F5A" name="TA_IDENTIFIANT_ZONE_ADMIN">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1A0D4B0-CB32-E573-CB17-935BA3B86F5A" name="TA_IDENTIFIANT_ZONE_ADMINISTRATIVE">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <comment><![CDATA[Table de liaison entre les tables TA_CODE et TA_ZONE_ADMINISTRATIVE,
@@ -14,6 +14,7 @@ Exemple : "Lille-Seclin" est le nom d'une zone supra-communale de type "unité t
 <Column name="objectid" id="617D64B6-CB23-B75E-8027-C72EA2F06B65">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -25,6 +26,7 @@ Exemple : "Lille-Seclin" est le nom d'une zone supra-communale de type "unité t
 <Column name="fid_zone_administrative" id="0A646745-A339-1F63-80D7-0B114922F540">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_ZONE_ADMINISTRATIVE permettant d'associer une zone administrative à son code.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -53,7 +55,7 @@ Exemple : "Lille-Seclin" est le nom d'une zone supra-communale de type "unité t
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="074362E8-8A8C-39CB-A58E-8CD9C1AA7DF3" name="TA_IDENTIFIANT_ZA_PK">
+<ind_PK_UK id="074362E8-8A8C-39CB-A58E-8CD9C1AA7DF3" name="TA_IDENTIFIANT_ZONE_ADMINISTRATIVE_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -64,7 +66,7 @@ Exemple : "Lille-Seclin" est le nom d'une zone supra-communale de type "unité t
 <colUsage columnID="617D64B6-CB23-B75E-8027-C72EA2F06B65"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6D81E9D2-67B7-A8D9-C066-A9A8359B0DE5" name="TA_ZONE_ADMINISTRATIVE_FKv1">
+<ind_PK_UK id="6D81E9D2-67B7-A8D9-C066-A9A8359B0DE5" name="TA_IDENTIFIANT_COMMUNE_FID_ZONE_ADMINISTRATIVE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -74,7 +76,7 @@ Exemple : "Lille-Seclin" est le nom d'une zone supra-communale de type "unité t
 <colUsage columnID="0A646745-A339-1F63-80D7-0B114922F540"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FC541820-57FA-CEB4-624E-711715C2E7B4" name="TA_CODE_FKv3">
+<ind_PK_UK id="FC541820-57FA-CEB4-624E-711715C2E7B4" name="TA_IDENTIFIANT_COMMUNE_FID_IDENTIFIANT_FKv1">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-01-27 09:41:32 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -83,13 +85,6 @@ Exemple : "Lille-Seclin" est le nom d'une zone supra-communale de type "unité t
 <indexColumnUsage>
 <colUsage columnID="CF2F5537-681A-D887-4A01-DA23A4B8C2A7"/>
 </indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="623ADDA1-3852-9C43-41EE-239AA06A20BA" name="TA_IDENTIFIANT_FKv1">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-02-21 10:33:45 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
 </ind_PK_UK>
 </indexes>
 </Table>

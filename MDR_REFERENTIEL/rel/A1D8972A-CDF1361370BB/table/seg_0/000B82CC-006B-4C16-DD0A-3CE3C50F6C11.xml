@@ -64,7 +64,7 @@
 <colUsage columnID="A6F920A7-561B-3FE2-E9A1-8FB351CE27C8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="213F1B70-59CA-0768-CB5F-1FA0DD903A76" name="TA_BPE_RELATION_CODE_TA_CODE_FK">
+<ind_PK_UK id="213F1B70-59CA-0768-CB5F-1FA0DD903A76" name="TA_BPE_RELATION_CODE_FID_CODE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-08-21 08:02:39 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
