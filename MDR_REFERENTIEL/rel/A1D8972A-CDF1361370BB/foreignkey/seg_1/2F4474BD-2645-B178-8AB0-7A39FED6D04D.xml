@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9D8ED19F-F3CE-20E1-D3C3-284749C60506" containerWithKeyObject="482B0C47-B031-28C1-03CA-13DD51EE58C0" localFKIndex="7D0303F3-FFCF-F536-899E-81192FA9152E" name="TA_RVLLP_FID_METADONNEE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="2F4474BD-2645-B178-8AB0-7A39FED6D04D" containerWithKeyObject="44E64A1C-1308-2F4F-5204-01C184936736" localFKIndex="EEB945E4-DC02-D120-6ACE-CE167E6995C8" name="TA_RVLLP_TARIF_TA_METADONNEE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-07-17 07:20:17 UTC</createdTime>
-<comment><![CDATA[Clé étrangère vers la table TA_METADONNEE.]]></comment>
+<createdTime>2020-10-08 09:46:23 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_METADONNEE pour connaitre les métadonnées de la source.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_METADONNEE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

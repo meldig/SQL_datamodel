@@ -67,17 +67,6 @@
 <colAssociation fkAssociation="D7D52C70-2321-725A-C5C4-519C9D50C23A" referredColumn="BDF51AC6-722D-4109-6318-B9A8D8EC7610"/>
 </associations>
 </Column>
-<Column name="fid_echelle" id="693F86E1-78C6-911F-5CC4-8A51D7AA589C">
-<createdBy>rjault</createdBy>
-<createdTime>2020-01-10 13:19:47 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clef étrangère vers la table TA_ECHELLE.]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="6CF3B720-A5F7-BA1D-0BF1-E21F3209C577" name="TA_METADONNEE_PK">

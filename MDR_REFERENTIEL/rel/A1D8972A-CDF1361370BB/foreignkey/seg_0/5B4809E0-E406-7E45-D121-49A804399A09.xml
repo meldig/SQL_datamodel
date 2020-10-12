@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5B4809E0-E406-7E45-D121-49A804399A09" containerWithKeyObject="44E64A1C-1308-2F4F-5204-01C184936736" localFKIndex="207E0CE1-8655-EEA7-08CC-219238075B55" name="TA_RVLLP_TARIF_FID_LIBELLE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-08 09:45:41 UTC</createdTime>
+<comment><![CDATA[clé primaire vers la table TA_LIBELLE pour connaitre le local concerné par le tarif de la taxe.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5BA04846-FCD4-327F-D4D7-00C6BC71F6D8</referredTableID>
+<keyObject>E20F724E-8EE6-8F08-7516-7771919FFA52</keyObject>
+<referredKeyID>E20F724E-8EE6-8F08-7516-7771919FFA52</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

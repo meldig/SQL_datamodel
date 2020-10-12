@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CBE7A99E-FABA-7A44-0567-8F08B5B3AC60" containerWithKeyObject="482B0C47-B031-28C1-03CA-13DD51EE58C0" localFKIndex="366B6FA2-2CC6-EAD7-9057-260BE0B0EA96" name="TA_RVLLP_FID_CODE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57E5BD6D-4C60-9DE7-7034-48D0A25EB44B" containerWithKeyObject="44E64A1C-1308-2F4F-5204-01C184936736" localFKIndex="F66AA5D9-4138-FE4D-3C2D-1ADCE4BBDFC1" name="TA_RVLLP_TARIF_FID_CODE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2020-07-17 07:19:39 UTC</createdTime>
-<comment><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre le code section de la section RVLLP.]]></comment>
+<createdTime>2020-10-08 09:45:11 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre le secteur concerné par le tarif.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_CODE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
