@@ -53,7 +53,7 @@
 <colUsage columnID="C4F00EF2-2156-27B5-923F-E1708C4577E9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8A79C822-F2A5-718A-0ED6-BA25D5047506" name="TA_LIBELLE_OBJECTID_FID_LIBELLE_FILS_FK">
+<ind_PK_UK id="8A79C822-F2A5-718A-0ED6-BA25D5047506" name="TA_LIBELLE_RELATION_FID_LIBELLE_FILS_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-05 07:42:38 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -63,7 +63,7 @@
 <colUsage columnID="3629640D-B529-48BA-B21F-548A365062C9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="619CC684-15E5-A04F-F1A1-83D88776E9A3" name="TA_LIBELLE_OBJECTID_FID_LIBELLE_PARENT_FK">
+<ind_PK_UK id="619CC684-15E5-A04F-F1A1-83D88776E9A3" name="TA_LIBELLE_RELATION_FID_LIBELLE_PARENT_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-02-05 07:42:48 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

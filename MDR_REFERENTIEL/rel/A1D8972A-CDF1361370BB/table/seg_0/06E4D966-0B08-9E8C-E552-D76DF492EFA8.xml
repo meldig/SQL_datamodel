@@ -35,6 +35,7 @@ Exemple : les communes françaises et les municipalités belges]]></comment>
 <Column name="fid_lib_type_commune" id="CBA78D8A-B70C-CF26-3726-EEC10E02A0F0">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE  pour connaitre le type de commune(commune simple/associée).]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -89,7 +90,7 @@ Exemple : les communes françaises et les municipalités belges]]></comment>
 <colUsage columnID="3E0B2346-AFE5-9E01-FBFC-EF59E37B89ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9A71C23C-0266-A740-283D-A760BD7614FD" name="TA_LIBELLE_FK">
+<ind_PK_UK id="9A71C23C-0266-A740-283D-A760BD7614FD" name="TA_COMMUNE_FID_LIB_TYPE_COMMUNE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -99,7 +100,7 @@ Exemple : les communes françaises et les municipalités belges]]></comment>
 <colUsage columnID="CBA78D8A-B70C-CF26-3726-EEC10E02A0F0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A3EE9B31-B626-FD70-952A-DD867D9DD126" name="TA_METADONNEE_FK">
+<ind_PK_UK id="A3EE9B31-B626-FD70-952A-DD867D9DD126" name="TA_COMMUNE_FID_METADONNEE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-01-27 09:27:43 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -109,7 +110,7 @@ Exemple : les communes françaises et les municipalités belges]]></comment>
 <colUsage columnID="75E32236-A3C5-E7FD-037B-69C57B856459"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="627D548D-0801-1358-A406-A0A6FBCBC88E" name="TA_NOM_FKv1">
+<ind_PK_UK id="627D548D-0801-1358-A406-A0A6FBCBC88E" name="TA_COMMUNE_FID_NOM_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-02-21 10:48:04 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

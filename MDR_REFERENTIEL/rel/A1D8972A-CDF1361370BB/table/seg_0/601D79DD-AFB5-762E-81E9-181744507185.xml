@@ -63,7 +63,7 @@ Exemple : les départements, régions, unités territoriales...]]></comment>
 <colUsage columnID="494F5814-E7F8-3983-905B-C8E2747AB35C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="584A33F7-3AFA-11BA-6D8E-3AFA526E2D48" name="TA_LIBELLE_FKv1">
+<ind_PK_UK id="584A33F7-3AFA-11BA-6D8E-3AFA526E2D48" name="TA_ZONE_ADMINISTRATIVE_FID_LIBELLE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -73,7 +73,7 @@ Exemple : les départements, régions, unités territoriales...]]></comment>
 <colUsage columnID="ABE62FC1-478B-31B8-B05E-251EFE3A6574"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9EE5D30F-EF3F-DA10-926E-049474305307" name="TA_NOM_FK">
+<ind_PK_UK id="9EE5D30F-EF3F-DA10-926E-049474305307" name="TA_ZONE_ADMINISTRATIVE_FID_NOM_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-02-21 10:44:55 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

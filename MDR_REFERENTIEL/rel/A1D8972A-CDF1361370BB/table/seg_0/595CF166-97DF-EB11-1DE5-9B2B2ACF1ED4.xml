@@ -37,7 +37,7 @@ Exemple : MEL]]></commentInRDBMS>
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nom" id="66A82088-B09D-0A6F-B766-CC8AD865B2D0">
+<Column name="valeur" id="66A82088-B09D-0A6F-B766-CC8AD865B2D0">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-02-21 10:41:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[Nom de chaque objets présents dans la base.

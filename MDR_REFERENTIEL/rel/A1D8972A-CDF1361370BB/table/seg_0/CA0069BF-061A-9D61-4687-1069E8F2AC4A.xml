@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA0069BF-061A-9D61-4687-1069E8F2AC4A" name="TA_LIBELLE_LONG">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-04 09:07:39 UTC</createdTime>
+<comment><![CDATA[Table utilisée pour catégoriser les types d'objets.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <ordsAlias>table_44</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

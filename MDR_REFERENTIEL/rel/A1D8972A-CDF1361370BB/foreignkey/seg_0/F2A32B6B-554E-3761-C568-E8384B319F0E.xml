@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F2A32B6B-554E-3761-C568-E8384B319F0E" containerWithKeyObject="3DCD645D-F32F-3D02-660A-8A35DA02282A" localFKIndex="65274A94-BE2F-8E1B-067C-8BAADEC5A2A3" name="TA_SOURCE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F2A32B6B-554E-3761-C568-E8384B319F0E" containerWithKeyObject="3DCD645D-F32F-3D02-660A-8A35DA02282A" localFKIndex="65274A94-BE2F-8E1B-067C-8BAADEC5A2A3" name="TA_METADONNEE_FID_SOURCE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-01-10 13:32:31 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Clé étrangère vers la table TA_SOURCE pour connaitre la source de la donnée.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_SOURCE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>D9812882-3186-E109-305D-3116AA692C8B</referredTableID>

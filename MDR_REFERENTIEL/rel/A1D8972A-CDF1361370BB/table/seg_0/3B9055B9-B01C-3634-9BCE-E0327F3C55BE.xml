@@ -57,7 +57,7 @@ Exemple : insertion de la donnée source millésimée "2019" le "01/05/2019"]]><
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D6B0BC32-32DA-A4C8-FD50-C6060C4C8222" name="TA_ACQUISITION_PK">
+<ind_PK_UK id="D6B0BC32-32DA-A4C8-FD50-C6060C4C8222" name="TA_DATE_ACQUISITION_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

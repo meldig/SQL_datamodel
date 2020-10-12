@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E71552C1-4529-3C7D-3CF7-AE50D53CDBE2" containerWithKeyObject="8E6A577C-CE28-B22E-7C55-A3AF7E34082E" localFKIndex="14DAF329-DDDC-12CA-569A-7E327EA518F3" name="TA_FAMILLE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E71552C1-4529-3C7D-3CF7-AE50D53CDBE2" containerWithKeyObject="8E6A577C-CE28-B22E-7C55-A3AF7E34082E" localFKIndex="14DAF329-DDDC-12CA-569A-7E327EA518F3" name="TA_FAMILLE_LIBELLE_FID_FAMILLE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Clé étrangère vers la table TA_FAMILLE  pour connaitre la famille à laquelle appartiennent les libellés.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_FAMILLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>A4CE1E9C-573A-EA4C-4E1E-4F5FA7FD0FB9</referredTableID>

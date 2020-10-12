@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="484EE066-34EB-E8AF-48A8-C2D079620D21" containerWithKeyObject="B8308977-B206-D0F0-00B0-925887DA5B43" localFKIndex="62C6293A-A8B3-E367-71D0-5251B05BC340" name="TA_COMMUNE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="484EE066-34EB-E8AF-48A8-C2D079620D21" containerWithKeyObject="B8308977-B206-D0F0-00B0-925887DA5B43" localFKIndex="62C6293A-A8B3-E367-71D0-5251B05BC340" name="TA_ZA_COMMUNES_FID_COMMUNE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2019-11-19 08:54:21 UTC</createdTime>
-<ownerDesignName>MRD_G_REFERENTIEL</ownerDesignName>
+<comment><![CDATA[Clé étrangère vers la table TA_COMMUNE pour savoir quelle commune appartient à quelle zone administrative et quand.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_COMMUNE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>06E4D966-0B08-9E8C-E552-D76DF492EFA8</referredTableID>
