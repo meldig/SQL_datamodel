@@ -172,7 +172,7 @@ Les autres champs sont remplis par l'utilisateur via la liste de valeur d'un for
 <colUsage columnID="C2BDF8EA-96BC-6A29-32F2-F04A647B02B8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D83EDD22-0BCB-A508-D7F3-22522783DA25" name="TA_LIBELLE_FID_VERIFICATION_FK">
+<ind_PK_UK id="D83EDD22-0BCB-A508-D7F3-22522783DA25" name="TA_GG_POINT_VIGILANCE_FID_VERIFICATION_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-07-20 15:50:08 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>

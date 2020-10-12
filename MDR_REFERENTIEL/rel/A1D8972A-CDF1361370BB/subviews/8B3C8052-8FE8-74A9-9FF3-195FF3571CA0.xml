@@ -35,7 +35,7 @@ le libellé &quot;bâti - gros chantier&quot; appartient à la famille &quot;él
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="1CB2504A-007C-C9A1-4AB9-7203DC4057A8" otype="Note" vid="5799BBF8-EFB5-7218-5F30-06E0C1C52E13">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="17" y="91" width="469" height="227"/>
+<bounds x="17" y="91" width="469" height="210"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -48,8 +48,7 @@ le libellé &quot;bâti - gros chantier&quot; appartient à la famille &quot;él
 4. &quot;types de points&quot; à laquelle appartient les points de vigilance, les erreurs carto et les erreurs topo ;
 5. &quot;statut du dossier&quot; à laquelle appartiennent tous les statuts que peuvent prendre les points de vigilances et les erreurs carto/topo ;
 6. &quot;catégorie des points&quot; à laquelle appartiennent toutes les catégories que peuvent prendre les points de vigilances et les erreurs carto/topo ;
-7. &quot;type d&apos;action des individus&quot; à laquelle appartient chaque action pouvant être effectuée sur un objet par un pnom ;
-8. &quot;type de dates&quot; à laquelle appartient (pour le moment) les dates des permis de construire ;</comment>
+7. &quot;type d&apos;action des individus&quot; à laquelle appartient chaque action pouvant être effectuée sur un objet par un pnom ;</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
@@ -82,7 +81,7 @@ le libellé &quot;bâti - gros chantier&quot; appartient à la famille &quot;él
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="67C35870-3764-E090-94F4-D1E3D566287D" otype="Note" vid="D956DAC3-91E5-CA54-2679-75DC9D86B0F3">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1189" y="9" width="333" height="615"/>
+<bounds x="1189" y="9" width="333" height="560"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -125,11 +124,7 @@ public, lotissement) ;
 - édition ;
 - création de fiche ;
 - suppression ;
-- dernière observation ;
-
-8. Les types de date :
-- date de début du permis de construire ;
-- date de fin du permis de construire ;</comment>
+- dernière observation ;</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
