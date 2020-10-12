@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1AB2C296-81E6-2B7B-2D25-54891859FA08" containerWithKeyObject="8E6A577C-CE28-B22E-7C55-A3AF7E34082E" localFKIndex="62A8CE72-1AC0-1830-3F7E-DAC45FC4485A" name="TA_LIBELLE_LONG_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1AB2C296-81E6-2B7B-2D25-54891859FA08" containerWithKeyObject="8E6A577C-CE28-B22E-7C55-A3AF7E34082E" localFKIndex="62A8CE72-1AC0-1830-3F7E-DAC45FC4485A" name="TA_FAMILLE_LIBELLE_FID_LIBELLE_LONG_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-04 09:15:37 UTC</createdTime>
-<comment><![CDATA[Clé étrangère vers la table TA_LIBELLE_LONG.]]></comment>
+<comment><![CDATA[Clé étrangère vers la table TA_LIBELLE_LONG permettant d'associer un libelle long à sa famille.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <referredTableLongName>TA_LIBELLE_LONG</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

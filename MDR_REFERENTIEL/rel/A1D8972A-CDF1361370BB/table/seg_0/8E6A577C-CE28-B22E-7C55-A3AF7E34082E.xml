@@ -73,7 +73,7 @@ Exemple : les libellés "commune simple" et "commune associée" appartiennent à
 <colUsage columnID="AC91DAF0-ED43-6525-2B78-649FB3E1886C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="62A8CE72-1AC0-1830-3F7E-DAC45FC4485A" name="TA_LIBELLE_LONG_FK">
+<ind_PK_UK id="62A8CE72-1AC0-1830-3F7E-DAC45FC4485A" name="TA_FAMILLE_LIBELLE_FID_LIBELLE_LONG_FK">
 <createdBy>Romain</createdBy>
 <createdTime>2020-06-04 09:15:37 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
