@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="5D7E5479-1F40-A79A-8DEC-A7263B3AB580" containerWithKeyObject="2F9889C9-539F-950A-7D0F-FB373800C488" localFKIndex="E8BC55C8-E9DD-75A5-A54E-B8AE8C2B51F2" name="TA_GG_RELATION_PERMIS_CONSTRUIRE_FID_PERMIS_DE_CONSTUIRE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="5D7E5479-1F40-A79A-8DEC-A7263B3AB580" containerWithKeyObject="2F9889C9-539F-950A-7D0F-FB373800C488" localFKIndex="E8BC55C8-E9DD-75A5-A54E-B8AE8C2B51F2" name="TA_GG_POINT_VIGILANCE_PERMIS_CONSTRUIRE_FID_PERMIS_DE_CONSTUIRE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-08-11 07:18:24 UTC</createdTime>
 <comment><![CDATA[Clé étrangère portant sur la table ta_permis_de_construire et servant à associer le point de vigilance à son permis de construire.]]></comment>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<referredTableLongName>TA_GG_PERMIS_DE_CONSTUIRE</referredTableLongName>
+<referredTableLongName>TA_GG_PERMIS_CONSTUIRE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>DDFACE90-D9C3-B2C9-005A-2B827D7E88CB</referredTableID>
 <keyObject>E0A53C2A-BF43-4977-0512-45A94DB93BBE</keyObject>

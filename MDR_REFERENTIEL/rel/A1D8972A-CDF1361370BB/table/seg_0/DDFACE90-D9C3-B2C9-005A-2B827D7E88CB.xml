@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DDFACE90-D9C3-B2C9-005A-2B827D7E88CB" name="TA_GG_PERMIS_DE_CONSTUIRE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DDFACE90-D9C3-B2C9-005A-2B827D7E88CB" name="TA_GG_PERMIS_CONSTUIRE">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-08-07 14:52:10 UTC</createdTime>
 <comment><![CDATA[Table contenant le numéro et les dates des permis de construire.]]></comment>
@@ -21,7 +21,7 @@
 <ownDataTypeParameters>,30,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="numero_de_permis" id="8290762E-D0F1-6A08-2601-9C4E6A393B3B">
+<Column name="numero" id="8290762E-D0F1-6A08-2601-9C4E6A393B3B">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-08-07 14:56:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Numéro du permis de construire.]]></commentInRDBMS>
@@ -34,7 +34,7 @@
 <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="debut_permis_de_construire" id="8EE4AED9-EB09-B7A7-02DD-B1633FC02EAC">
+<Column name="debut" id="8EE4AED9-EB09-B7A7-02DD-B1633FC02EAC">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-08-07 14:56:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date de début du permis de construire]]></commentInRDBMS>
@@ -46,7 +46,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fin_permis_de_construire" id="8C564E52-F905-2A4D-F920-CDFEDF86A5A8">
+<Column name="fin" id="8C564E52-F905-2A4D-F920-CDFEDF86A5A8">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-08-07 14:56:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date de fin du permis de construire]]></commentInRDBMS>
@@ -60,7 +60,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E0A53C2A-BF43-4977-0512-45A94DB93BBE" name="TA_GG_PERMIS_DE_CONSTUIRE_PK">
+<ind_PK_UK id="E0A53C2A-BF43-4977-0512-45A94DB93BBE" name="TA_GG_PERMIS_CONSTUIRE_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-08-07 14:56:43 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
