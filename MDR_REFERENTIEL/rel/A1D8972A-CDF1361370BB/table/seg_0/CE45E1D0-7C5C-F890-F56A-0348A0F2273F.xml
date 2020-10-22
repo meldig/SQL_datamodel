@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE45E1D0-7C5C-F890-F56A-0348A0F2273F" name="TA_GG_ACTION_PNOM">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE45E1D0-7C5C-F890-F56A-0348A0F2273F" name="TA_GG_POINT_VIGILANCE_AUDIT">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-10-12 07:21:47 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -79,7 +79,7 @@ Ce champ se remplit automatiquement via un trigger.]]></commentInRDBMS>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A49D699A-62E3-79D9-6ED4-E0B67F409C80" name="TA_GG_ACTION_PNOM_PK">
+<ind_PK_UK id="A49D699A-62E3-79D9-6ED4-E0B67F409C80" name="TA_GG_POINT_VIGILANCE_AUDIT_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-10-12 07:25:12 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -90,7 +90,7 @@ Ce champ se remplit automatiquement via un trigger.]]></commentInRDBMS>
 <colUsage columnID="541464E9-53FD-9398-5955-61C1F9AF2A59"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="060D2737-DEFA-3240-0A19-FF4B7A35F760" name="TA_GG_ACTION_PNOM_FID_POINT_VIGILANCE_FK">
+<ind_PK_UK id="060D2737-DEFA-3240-0A19-FF4B7A35F760" name="TA_GG_POINT_VIGILANCE_AUDIT_FID_POINT_VIGILANCE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-10-12 07:25:24 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
@@ -100,7 +100,7 @@ Ce champ se remplit automatiquement via un trigger.]]></commentInRDBMS>
 <colUsage columnID="1C267EFF-9532-E7A9-8558-1F292AE226B4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0CD8100C-3597-6087-3C26-898D16530FAD" name="TA_GG_ACTION_PNOM_FID_LIBELLE_FK">
+<ind_PK_UK id="0CD8100C-3597-6087-3C26-898D16530FAD" name="TA_GG_POINT_VIGILANCE_AUDIT_FID_LIBELLE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-10-12 07:26:25 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
