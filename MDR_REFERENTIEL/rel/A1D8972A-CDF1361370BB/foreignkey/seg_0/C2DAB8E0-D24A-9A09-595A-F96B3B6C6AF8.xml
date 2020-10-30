@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C2DAB8E0-D24A-9A09-595A-F96B3B6C6AF8" containerWithKeyObject="87DD6D0E-5023-125A-1669-8A1E783AEED3" localFKIndex="4C616D9F-7C7E-D918-04B3-B191C3BECF65" name="TA_ACQ_GG_COM_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:50:54 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_PNOM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C31ADF45-13FA-5F5A-A1CF-27FA290C2BA2</referredTableID>
+<keyObject>25645741-AFAE-8E80-9284-398EE5D5CF29</keyObject>
+<referredKeyID>25645741-AFAE-8E80-9284-398EE5D5CF29</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

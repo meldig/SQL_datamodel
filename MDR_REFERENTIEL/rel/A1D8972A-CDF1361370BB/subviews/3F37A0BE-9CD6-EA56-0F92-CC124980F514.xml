@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="MRD - Gestion communes par agent" id="3F37A0BE-9CD6-EA56-0F92-CC124980F514">
+<createdBy>bjacq</createdBy>
+<modifiedBy>bjacq</modifiedBy>
+<createdTime>2020-10-30 16:33:46 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>false</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="06E4D966-0B08-9E8C-E552-D76DF492EFA8" otype="Table" vid="9D7C18DD-C4BD-BA2B-12AB-D2D7D1371E2B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="426" y="15" width="375" height="167"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="14F62236-464B-7A94-76C3-C1AA0EFD8664" otype="Table" vid="9596885C-1FBC-02AC-B43D-AC9F74CCAF37">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="186" y="427" width="286" height="122"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2BD8DD48-3D71-2D6A-9E0D-9FD9E4EB850F" otype="Table" vid="F16BC08A-6D97-E7FE-F629-2891E30A6AD1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="10" y="226" width="367" height="126"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="3BE05544-52D2-896A-AF32-43BDC823639F" otype="Note" vid="24305E9A-94CC-3359-56E8-138954D83E98">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="436" y="192" width="367" height="56"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13382401</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant toutes les géométries des entités administratives de base.
+Exemple : les communes françaises et les municipalités belges</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="5591B69A-E30B-3C07-C1BC-1DE5C6FD6A9E" otype="Note" vid="277F221B-0D58-3ED2-F096-7B6892D4DC48">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="580" y="616" width="306" height="76"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13382401</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison permettant d&apos;associer le pnom d&apos;un agent à la commune qu&apos;il gère.
+Exemple : bjacq gère la commune dont le code INSEE est 59350</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="6576920A-0F42-588F-5192-F1D64C83D424" otype="Note" vid="10CE3B4D-3C39-0C1E-F116-F27FD233C01D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="959" y="544" width="214" height="45"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13382401</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les pnoms de tous les agents participant à la vie de la donnée.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="824F34B0-7833-10C1-650E-288F985AAECE" otype="Note" vid="66B22479-7D44-2D28-2D10-CF86A6EE1942">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="186" y="554" width="284" height="50"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13382401</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les codes de chaque objet de la base.
+Exemple : 59000, 59350</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="87DD6D0E-5023-125A-1669-8A1E783AEED3" otype="Table" vid="92219B6D-A753-784C-5604-1A6824AC692D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="578" y="420" width="313" height="186"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C31ADF45-13FA-5F5A-A1CF-27FA290C2BA2" otype="Table" vid="A80E76B4-FD8F-1A13-5B77-35B3DF96844F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="958" y="456" width="216" height="79"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="F3BA5EF2-DB20-A5CD-6746-448F5FFF451D" otype="Note" vid="C2816FC0-2CD5-9446-2542-2742E997A300">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="21" y="151" width="301" height="66"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13382401</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison entre les tables TA_CODE et TA_COMMUNE afin de connaître les identifiants de chaque entité administrative de base.
+Exemple : le code insee Lille est 59000</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B89E7851-B894-1A84-D6DE-4520A1E80165" otype="FKIndexAssociation" vid_source="9596885C-1FBC-02AC-B43D-AC9F74CCAF37" vid_target="F16BC08A-6D97-E7FE-F629-2891E30A6AD1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="281" y="427"/>
+<point x="281" y="352"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C2DAB8E0-D24A-9A09-595A-F96B3B6C6AF8" otype="FKIndexAssociation" vid_source="A80E76B4-FD8F-1A13-5B77-35B3DF96844F" vid_target="92219B6D-A753-784C-5604-1A6824AC692D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="958" y="495"/>
+<point x="891" y="495"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D16B80BA-19D5-9DF1-B781-4ACFBED4C147" otype="FKIndexAssociation" vid_source="9D7C18DD-C4BD-BA2B-12AB-D2D7D1371E2B" vid_target="F16BC08A-6D97-E7FE-F629-2891E30A6AD1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="429" y="182"/>
+<point x="332" y="226"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D2CFC190-7C3B-F9E8-8434-3128B35B4946" otype="FKIndexAssociation" vid_source="9596885C-1FBC-02AC-B43D-AC9F74CCAF37" vid_target="92219B6D-A753-784C-5604-1A6824AC692D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="472" y="488"/>
+<point x="578" y="488"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

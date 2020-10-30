@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C31ADF45-13FA-5F5A-A1CF-27FA290C2BA2" name="TA_PNOM">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:44:43 UTC</createdTime>
+<comment><![CDATA[Table rassemblant les pnoms de tous les agents participant à la vie de la donnée.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_60</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="940AE917-B4DC-4D48-F898-18E53F2BA632">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:48:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="0464760A-BBD3-7AF6-49D5-29E02D2E5112">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:48:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pnom de chaque agent participant à la vie de la donnée.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25645741-AFAE-8E80-9284-398EE5D5CF29" name="TA_PNOM_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:48:03 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="940AE917-B4DC-4D48-F898-18E53F2BA632"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

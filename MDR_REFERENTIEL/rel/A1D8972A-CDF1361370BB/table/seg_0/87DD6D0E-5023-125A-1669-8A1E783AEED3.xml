@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87DD6D0E-5023-125A-1669-8A1E783AEED3" name="TA_ACQ_GG_COM">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:35:25 UTC</createdTime>
+<comment><![CDATA[Table pivot permettant d'associer le pnom d'un agent à la commune qu'il gère.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_59</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fid_code" id="0B15DFD3-4B51-E8FB-DD48-EEC4F82E0A19">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:38:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire et étrangère de la table TA_CODE permettant d'associer le code INSEE d'une commune à l'agent qui la gère.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom" id="736819BD-DFFC-7FEA-59C1-0D8040C9B864">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:38:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire et étrangère de la table TA_PNOM  permettant d'associer un agent au code INSEE de la commune qu'il gère.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_debut" id="1B388889-C7D7-7119-2E60-1B9A291BBBD1">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:44:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de début de gestion d'une commune par un agent]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_fin" id="A202F786-2F11-1617-3FB0-EBBFF6FCC1CB">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:44:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin de gestion d'une commune par un agent]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valid" id="5CE4F8E9-9D29-99E7-A817-0837175A8D67">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:44:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Validié de la relation commune - agent :
+0 = la commune n'est plus gérée par cet agent
+1 = la commune est gérée par cet agent]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TA_CODE_objectid" id="4885EE8A-D81A-4758-A56F-98A766085662">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:49:32 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2CFC190-7C3B-F9E8-8434-3128B35B4946" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
+</Column>
+<Column name="TA_PNOM_objectid" id="54BBFB6A-76A0-AFCF-76E7-6223899F08CD">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:50:54 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2DAB8E0-D24A-9A09-595A-F96B3B6C6AF8" referredColumn="940AE917-B4DC-4D48-F898-18E53F2BA632"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7A4B2E7-5A73-1417-C22C-825D13B072C2" name="TA_ACQ_GG_COM_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:38:19 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B15DFD3-4B51-E8FB-DD48-EEC4F82E0A19"/>
+<colUsage columnID="736819BD-DFFC-7FEA-59C1-0D8040C9B864"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AE54243-D8C1-A7D0-AC53-4CF4E7EA7261" name="TA_ACQ_GG_COM_FID_CODE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:49:32 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4885EE8A-D81A-4758-A56F-98A766085662"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C616D9F-7C7E-D918-04B3-B191C3BECF65" name="TA_ACQ_GG_COM_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-10-30 16:50:54 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54BBFB6A-76A0-AFCF-76E7-6223899F08CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
