@@ -45,7 +45,7 @@ Exemple : les communes françaises et les municipalités belges</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="5591B69A-E30B-3C07-C1BC-1DE5C6FD6A9E" otype="Note" vid="277F221B-0D58-3ED2-F096-7B6892D4DC48">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="580" y="616" width="306" height="76"/>
+<bounds x="582" y="583" width="306" height="76"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-13382401</backgroundColor>
@@ -95,7 +95,7 @@ Exemple : 59000, 59350</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="87DD6D0E-5023-125A-1669-8A1E783AEED3" otype="Table" vid="92219B6D-A753-784C-5604-1A6824AC692D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="578" y="420" width="313" height="186"/>
+<bounds x="578" y="420" width="313" height="156"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C31ADF45-13FA-5F5A-A1CF-27FA290C2BA2" otype="Table" vid="A80E76B4-FD8F-1A13-5B77-35B3DF96844F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

@@ -18,8 +18,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2CFC190-7C3B-F9E8-8434-3128B35B4946" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
 </Column>
 <Column name="fid_pnom" id="736819BD-DFFC-7FEA-59C1-0D8040C9B864">
 <createdBy>bjacq</createdBy>
@@ -32,6 +35,9 @@
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2DAB8E0-D24A-9A09-595A-F96B3B6C6AF8" referredColumn="940AE917-B4DC-4D48-F898-18E53F2BA632"/>
+</associations>
 </Column>
 <Column name="date_debut" id="1B388889-C7D7-7119-2E60-1B9A291BBBD1">
 <createdBy>bjacq</createdBy>
@@ -72,35 +78,6 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TA_CODE_objectid" id="4885EE8A-D81A-4758-A56F-98A766085662">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-10-30 16:49:32 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D2CFC190-7C3B-F9E8-8434-3128B35B4946" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
-</associations>
-</Column>
-<Column name="TA_PNOM_objectid" id="54BBFB6A-76A0-AFCF-76E7-6223899F08CD">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-10-30 16:50:54 UTC</createdTime>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C2DAB8E0-D24A-9A09-595A-F96B3B6C6AF8" referredColumn="940AE917-B4DC-4D48-F898-18E53F2BA632"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E7A4B2E7-5A73-1417-C22C-825D13B072C2" name="TA_ACQ_GG_COM_PK">
@@ -122,7 +99,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4885EE8A-D81A-4758-A56F-98A766085662"/>
+<colUsage columnID="0B15DFD3-4B51-E8FB-DD48-EEC4F82E0A19"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="4C616D9F-7C7E-D918-04B3-B191C3BECF65" name="TA_ACQ_GG_COM_FID_PNOM_FK">
@@ -132,7 +109,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="54BBFB6A-76A0-AFCF-76E7-6223899F08CD"/>
+<colUsage columnID="736819BD-DFFC-7FEA-59C1-0D8040C9B864"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
