@@ -62,5 +62,38 @@ Dans un premier temps l'appli se limitera au plan topo et au données des IC]]><
 <colUsage columnID="2BF0E3DD-A278-0E84-1111-19A4D9578CCB"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="28EFDADA-8762-CB3A-1D1D-37BF03C84F37" name="TA_GG_FAMILLE_FAM_ID_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:22:19 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité de la clé primaire]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BF0E3DD-A278-0E84-1111-19A4D9578CCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A82FD7A2-2E52-32EF-F318-53CC353E02A0" name="TA_GG_FAMILLE_FAM_LIB_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:22:19 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F19D1A2-3C88-7E98-46B8-983894ECDF46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB24AB7E-ECE5-5B8F-56C6-6EDADC5FC616" name="TA_GG_FAMILLE_FAM_LIB_SMALL_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:22:19 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B33F7688-4D18-627D-45A2-17A26A25C954"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

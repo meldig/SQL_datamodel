@@ -32,8 +32,11 @@
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C84F32F-AFE8-0C06-E9D1-0FA4DFDBFC4B" referredColumn="433B37DC-E4B2-CAD2-6472-89A5E93E1EE1"/>
+</associations>
 </Column>
-<Column name="CODE_COMMUNE" id="00C79E12-DDEF-942F-1E3F-1014499A603D">
+<Column name="GEO_INSEE" id="00C79E12-DDEF-942F-1E3F-1014499A603D">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:48:55 UTC</createdTime>
 <commentInRDBMS><![CDATA[Code de la commune dans laquelle se situe l'objet.]]></commentInRDBMS>
@@ -220,6 +223,22 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="GEO_REF" id="E329E83C-10C7-0E5F-74AE-A97E5CD0F49D">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:07:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ rempli par FME permettant de distinguer les IC des REC.
+Son remplissage se fait ainsi :
+- Récolement -> REC_||ID_DOS ;
+- Investigation Complémentaire -> IC||ID_DOS ;]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="510342BF-D261-319E-0E19-C2C7E393A57E" name="TA_POINT_TOPO_GPS_PK">
@@ -231,6 +250,52 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DCD7ED35-421B-4270-3080-C3B66D502699"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FC31937-FEC4-70F0-14F2-58E4BC17D8C9" name="TA_POINT_TOPO_GPS_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:07:15 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCD7ED35-421B-4270-3080-C3B66D502699"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EA6AEEB-26EB-17CB-01BD-881C2449FBCC" name="TA_POINT_TOPO_GPS_CLA_INU_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:07:15 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F02FA050-A874-C7EB-71E1-33D3992E8F86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6092E8A2-21A2-7526-B2D2-D2B4DDCDBCF5" name="TA_POINT_TOPO_GPS_GEO_REF_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:07:15 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E329E83C-10C7-0E5F-74AE-A97E5CD0F49D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D659B6A8-E876-971A-3EBF-2DBDFC4FFFEB" name="TA_POINT_TOPO_GPS_GEO_INSEE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:07:15 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00C79E12-DDEF-942F-1E3F-1014499A603D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61A4DBB9-EDA8-58C5-6207-BAEECB0DB3F7" name="TA_POINT_TOPO_GPS_CLA_INU_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:16:10 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F02FA050-A874-C7EB-71E1-33D3992E8F86"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

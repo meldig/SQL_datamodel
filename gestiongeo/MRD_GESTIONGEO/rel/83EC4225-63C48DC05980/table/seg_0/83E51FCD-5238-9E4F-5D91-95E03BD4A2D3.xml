@@ -292,6 +292,107 @@
 <colUsage columnID="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="B939D303-6118-42A3-858A-245476E3DEEE" name="TA_GG_DOSSIER_ID_DOS_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:20:41 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité sur la clé primaire]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="840E15B4-F8A4-96C9-7709-74C137D0675B" name="TA_GG_DOSSIER_ID_DOS_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:17:16 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la table (ID_DOS).]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A525E62-5DD0-B059-5138-267EA3C1836F" name="TA_GG_DOSSIER_DOS_NUM_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:17:16 UTC</createdTime>
+<comment><![CDATA[Index sur les numéros de dossiers]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B972EBDA-2E86-DBF6-0757-F44E98B8D7B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="717F965E-DB33-C6B1-5739-654333849EB0" name="TA_GG_DOSSIER_ETAT_ID_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:17:16 UTC</createdTime>
+<comment><![CDATA[Index sur les valeurs d'avancement des dossiers.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DCE167E-15D5-E2A2-BAC6-C63092A8EAC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26A05234-D708-85D3-2426-14E1E60B739A" name="TA_GG_DOSSIER_FAM_ID_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:17:16 UTC</createdTime>
+<comment><![CDATA[Index sur la clé étrangère TA_GG_DOSSIER_FAM_ID_IDX.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5CEE8A6-4CD9-0B07-1A0B-D6B751F99D46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B28B5A0B-E7EB-0035-1554-F1AC68977B12" name="TA_GG_DOSSIER_DOS_VOIE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:17:16 UTC</createdTime>
+<comment><![CDATA[Index sur la Clé étrangère TA_GG_DOSSIER_DOS_VOIE_FK.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD0EFB2D-0002-D6AE-B07E-10D7536952A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AF47F1C-0BA4-FBDF-8264-F9AD13ACF360" name="TA_GG_DOSSIER_DOS_INSEE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:17:16 UTC</createdTime>
+<comment><![CDATA[Index sur les codes communes.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFFD29E9-EE69-7278-DB1A-C6D260A053AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="748F870B-E026-C8FB-FCD0-989EDA67D529" name="TA_GG_DOSSIER_USER_ID_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:17:16 UTC</createdTime>
+<comment><![CDATA[Index sur la clé étrangère TA_GG_DOSSIER_USER_ID_FK.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22AD77C6-E2CE-ACF5-13D4-525A693E3612"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EDABF10-A721-615D-6FEE-FE52CA3275E9" name="TA_GG_DOSSIER_SRC_ID_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:17:16 UTC</createdTime>
+<comment><![CDATA[Index sur la clé étrangère TA_GG_DOSSIER_SRC_FK]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E47A7739-8607-1277-0B74-97B0FB79F1C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25D10556-D1A2-D8D7-0D07-EA01F18DECB5" name="TA_GG_DOSSIER_DOS_URL_FILE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:17:16 UTC</createdTime>
+<comment><![CDATA[Index sur les liens url des fichiers dwg d'infogeo.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="004295EF-6A05-9125-9E8B-78B63B931366"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="6C8098C9-3E1D-A07F-1A99-C0283B4D885F" name="TA_GG_DOSSIER_FAM_ID_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 11:00:49 UTC</createdTime>

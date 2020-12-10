@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E99559DD-CD94-850C-F74F-F59DC1897609" name="TA_LIMITES">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:21:12 UTC</createdTime>
+<comment><![CDATA[Périmètres de la MEL par millésime.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="0671C81F-A00F-4159-E573-89CB988BC3FD">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:24:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lilbelle" id="8C5756C8-3430-D3D6-ABC7-75D64CCE490B">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:24:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé du périmètre (à quoi correspond ce périmètre).]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOM" id="56CB1925-FE84-DF7B-0BA8-84FDC63D20AA">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:24:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique de la table (de type polygone 2D).]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37D6EBF3-F86A-3539-59D9-96E4FDD1F09F" name="TA_LIMITES_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:24:41 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0671C81F-A00F-4159-E573-89CB988BC3FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFFF5C78-2A17-89C1-84BD-82BFDDFE6EC2" name="TA_LIMITES_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:18:44 UTC</createdTime>
+<comment><![CDATA[Index de clé primaire.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0671C81F-A00F-4159-E573-89CB988BC3FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

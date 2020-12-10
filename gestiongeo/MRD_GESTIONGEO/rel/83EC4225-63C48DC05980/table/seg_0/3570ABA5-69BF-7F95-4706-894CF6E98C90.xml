@@ -102,5 +102,15 @@
 <colUsage columnID="2B0DF798-7933-22D4-B1FD-BC3EE5534913"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="2CE96CD3-8EAB-3B04-1A3D-B9DA0D183923" name="TA_GG_ETAT_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:19:21 UTC</createdTime>
+<comment><![CDATA[Index de clé primaire.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B0DF798-7933-22D4-B1FD-BC3EE5534913"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

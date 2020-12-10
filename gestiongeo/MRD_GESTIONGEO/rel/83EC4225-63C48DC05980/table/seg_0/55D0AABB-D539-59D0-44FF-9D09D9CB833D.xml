@@ -60,5 +60,27 @@
 <colUsage columnID="B19A1176-F7BE-4B98-5770-C652D7807509"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="53B6DE23-5489-EE09-954E-50B054B99614" name="TA_GG_SOURCE_SRC_ID_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:23:59 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité de la clé primaire.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A15F39A9-D03F-1AED-D99A-95B14F57B66A" name="TA_GG_SOURCE_SRC_LIBEL_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:23:59 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité des pnoms]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6561225A-F9DA-F974-38D7-23E8AA3E7EA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

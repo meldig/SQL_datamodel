@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="05481747-6128-6DC8-B999-58CB484783B5" name="TA_LIG_TOPO_GPS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65B91C60-F92B-C3B2-0994-2CEF6A731D7B" name="TA_LIG_TOPO_IC">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 08:45:53 UTC</createdTime>
-<comment><![CDATA[Table servant à enregistrer les données (avec une géométrie linéaire) des relevées faits par les géomètres dans des fichiers dwg. L'intégration est déclenchée dans GestionGeo (DynMap) et se fait via FME (workbench).]]></comment>
+<createdTime>2020-12-10 15:42:42 UTC</createdTime>
+<comment><![CDATA[Table regroupant toutes les investigations complémentaires avec une géométrie de type linéaire en 3D.]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<ordsAlias>table_3</ordsAlias>
+<ordsAlias>table_12</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="OBJECTID" id="CF87FB71-CE5D-ECA8-11F1-3894780B4340">
+<Column name="OBJECTID" id="3D3C1325-8B75-A541-9428-A0B58E0D91E2">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé primaire de la table]]></commentInRDBMS>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table remplie par FME.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,9 +21,9 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CLA_INU" id="31302A44-C6EC-4C8F-B912-C6F69140AC29">
+<Column name="CLA_INU" id="59BB1500-F568-3E97-BD3C-CB8AB996666D">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Reference a la classe a laquelle appartient l'objet - Clé étrangère vers la table TA_CLASSE.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -33,36 +33,41 @@
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="632A8F15-D01A-084B-4EF9-27499CAB34B6" referredColumn="433B37DC-E4B2-CAD2-6472-89A5E93E1EE1"/>
+<colAssociation fkAssociation="5175AC3D-2FF7-AAFF-1ABA-1AEF4DB5F82E" referredColumn="433B37DC-E4B2-CAD2-6472-89A5E93E1EE1"/>
 </associations>
 </Column>
-<Column name="GEO_INSEE" id="A2B43E87-B9B5-D8F0-ECF2-826318FBB0CD">
+<Column name="GEO_REF" id="209F8EE6-056F-D9AC-EA64-5CF3F3C3E4A6">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code de la commune dans laquelle se situe l'objet
-]]></commentInRDBMS>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ rempli par FME permettant de distinguer les IC des REC.
+Son remplissage se fait ainsi :
+- Récolement -> REC_||ID_DOS ;
+- Investigation Complémentaire -> IC||ID_DOS ;]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>3 BYTE</dataTypeSize>
-<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEOM" id="DAF4E4C3-5A65-EE54-E0F0-B68A6F3EB51C">
+<Column name="GEO_INSEE" id="37F73038-0586-C578-E6B7-AF9E31B15E5A">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ géométrique de type multi-ligne 3D.]]></commentInRDBMS>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code de la commune à laquelle appartient l'entité.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
-<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_DV" id="B2F3B761-52CA-5D82-34C7-856E49290B73">
+<Column name="GEO_DV" id="C61D972D-7A5A-EEBC-D998-8C9681EA1084">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date de debut de validite de l'objet.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -72,20 +77,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_DF" id="BA8FF7B4-5B5A-CEC0-BDE3-023953EF47F9">
+<Column name="GEO_DF" id="7D24DD9D-853A-09F8-CDF5-C27851689B2C">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date de fin de validite de l'objet.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_ON_VALIDE" id="F674060C-3C2E-39EB-FE38-2AB2067F1A0A">
+<Column name="GEO_ON_VALIDE" id="8900791F-6264-CF5B-9FD5-27F2DD5F68F1">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Statut valide O/N de l'objet.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -96,23 +102,23 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_TEXTE" id="0EE723A8-7CDD-638A-9D73-EEF79C5D79BC">
+<Column name="GEO_TEXTE" id="46B2143D-B76D-C3AC-67F5-D2ADE339F6F5">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Texte de commentaire.]]></commentInRDBMS>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Texte de commentaire]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000 BYTE</dataTypeSize>
-<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_LIG_OFFSET_D" id="E6A5C830-A15C-952B-7882-7797E8B3BC9F">
+<Column name="GEO_LIG_OFFSET_D" id="FF4B3DB3-83A1-8D2B-DBD8-4D7ED2B089D1">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ utilisé pour les mégaconstituants (caniveau ou mur avec une grande épaisseur) permettant de connaître l'encombrement de l'objet à sa droite.]]></commentInRDBMS>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Decallage a droite par rapport a la generatrice.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -122,10 +128,10 @@
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_LIG_OFFSET_G" id="4709F058-FF16-7544-0CB3-020F4ED78C66">
+<Column name="GEO_LIG_OFFSET_G" id="BC3A9327-10E7-A3F2-CF31-A00AA80A6BB5">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ utilisé pour les mégaconstituants (caniveau ou mur avec une grande épaisseur) permettant de connaître l'encombrement de l'objet à sa gauche.]]></commentInRDBMS>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Decallage a gauche par rapport a la generatrice.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -135,22 +141,22 @@
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_NMN" id="1BABF72D-E13B-3BDF-0BF2-E9776E990F2F">
+<Column name="GEO_NMN" id="5B7DCDBD-00C3-EA04-66A0-96EBA8259724">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Auteur de la derniere modification.]]></commentInRDBMS>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auteur de la derniere modification]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 BYTE</dataTypeSize>
-<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_DS" id="107D4B3E-AFA2-2432-B9BA-6B4B6C8F3667">
+<Column name="GEO_DS" id="4844FF70-B8EE-9BEA-9600-ED117ECC4EE2">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date de creation de l'objet.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -160,9 +166,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_NMS" id="F9F53C7C-4277-F94A-4D39-4824A8F9DCC5">
+<Column name="GEO_NMS" id="26AF1856-68C1-B77B-FEED-CE2A45EB4CFF">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auteur de la creation de l'objet.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -172,9 +178,9 @@
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_DM" id="51A6EABE-B153-E3BD-BCCE-E48137181908">
+<Column name="GEO_DM" id="82169CE9-CC5D-F0F3-74EA-6C3A70EE63D0">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date de deniere modification de l'objet.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -184,27 +190,75 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="GEOM" id="6112A1BF-FBE0-5C65-C1AB-90DAB4AEC99C">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique de la table (de type polygone simple 3D).]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D9BB0913-E847-9393-2B0A-285C5BA6ED8F" name="TA_LIG_TOPO_GPS_PK">
+<ind_PK_UK id="899B9D3A-1EEF-3015-E950-9044BA7756FA" name="TA_LIG_TOPO_IC_PK">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:28:22 UTC</createdTime>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="CF87FB71-CE5D-ECA8-11F1-3894780B4340"/>
+<colUsage columnID="3D3C1325-8B75-A541-9428-A0B58E0D91E2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DED47603-3A4A-A289-C03A-74C1C362FDF7" name="TA_LIG_TOPO_GPS_CLA_INU_FK">
+<ind_PK_UK id="C22D825D-9476-A244-C71B-74131152F93A" name="TA_LIG_TOPO_IC_PK">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:16:58 UTC</createdTime>
+<createdTime>2020-12-10 15:58:44 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D3C1325-8B75-A541-9428-A0B58E0D91E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2683CE4A-2C6A-0807-0688-CE54B0E575FB" name="TA_LIG_TOPO_IC_GEO_REF_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:03:16 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="209F8EE6-056F-D9AC-EA64-5CF3F3C3E4A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9258A52D-1DE5-5E8B-B213-0F436468B420" name="TA_LIG_TOPO_IC_CLA_INU_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:03:16 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59BB1500-F568-3E97-BD3C-CB8AB996666D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA86F14B-F6C7-0EB6-9886-985B74B0781D" name="TA_LIG_TOPO_IC_GEO_INSEE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:03:16 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37F73038-0586-C578-E6B7-AF9E31B15E5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1081C558-7E6B-F727-FF09-C31EA0549524" name="TA_LIG_TOPO_IC_CLA_INU_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:03:47 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="31302A44-C6EC-4C8F-B912-C6F69140AC29"/>
+<colUsage columnID="59BB1500-F568-3E97-BD3C-CB8AB996666D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
