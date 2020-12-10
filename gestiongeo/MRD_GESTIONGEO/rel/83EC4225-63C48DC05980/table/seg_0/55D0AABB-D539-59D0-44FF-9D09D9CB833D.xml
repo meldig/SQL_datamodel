@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55D0AABB-D539-59D0-44FF-9D09D9CB833D" name="TA_GG_SOURCE">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:55:13 UTC</createdTime>
+<comment><![CDATA[Table recensant tous les agents participant à la création, l'édition et la suppression des dossiers dans GestionGeo.]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <ordsAlias>table_5</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

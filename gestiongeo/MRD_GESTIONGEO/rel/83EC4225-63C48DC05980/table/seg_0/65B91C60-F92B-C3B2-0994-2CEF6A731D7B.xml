@@ -30,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="5175AC3D-2FF7-AAFF-1ABA-1AEF4DB5F82E" referredColumn="433B37DC-E4B2-CAD2-6472-89A5E93E1EE1"/>
@@ -200,6 +200,20 @@ Son remplissage se fait ainsi :
 <use>3</use>
 <structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEO_TYPE" id="75606271-CA36-5FC7-64FC-8C85604CBA28">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:55:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type de geometrie de l'objet geographique
+]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

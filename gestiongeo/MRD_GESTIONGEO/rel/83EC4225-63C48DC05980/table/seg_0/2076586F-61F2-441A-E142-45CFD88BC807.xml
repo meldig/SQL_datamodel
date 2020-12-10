@@ -1,0 +1,229 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2076586F-61F2-441A-E142-45CFD88BC807" name="TA_POINT_TOPO_IC">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:03:42 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="7436030C-EBF5-3255-E8D7-A599BF452118">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALQUE_RESEAU" id="74CAD8D3-575D-C216-81C5-773B5853C105">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[nom du calque du fichier dwg dans lequel se trouve l'IC à faire.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE_RESEAU" id="D25C2C3F-3474-4E76-F89D-B443AFE54A9C">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type du réseau sur lequel faire l'IC.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOURCE_FICHIER" id="517EFD44-E685-A15B-6D07-E2926C7507FF">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[nom du fichier dwg contenant le calque dans lequel se trouve l'IC à faire.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="X" id="0667DCA6-2596-CCC4-6A0E-014E91CF9F9C">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Coordonnées en abscisse du point.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>11</dataTypeScale>
+<ownDataTypeParameters>,38,11</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Y" id="8180CC89-4676-A217-C9FF-2D1432335D89">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Coordonnées en ordonnées du point.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>11</dataTypeScale>
+<ownDataTypeParameters>,38,11</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Z_TERRAIN_NAT " id="C555C968-DE42-E211-4DF6-5A75F84F34EA">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Je ne sais pas à quoi sert ce champ.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>11</dataTypeScale>
+<ownDataTypeParameters>,38,11</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Z_PROF" id="07F6F990-70A8-85BC-267B-7248D7126EC2">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Je ne sais pas à quoi sert ce champ - le Z de la profondeur de l'objet ?]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>11</dataTypeScale>
+<ownDataTypeParameters>,38,11</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROFONDEUR" id="ABC5556C-43F5-A252-881B-8FDB8820A49C">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[profondeur de l'IC à faire - je suppose.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOM" id="5EF71D5A-49DB-5D7B-E770-7DE2E63CE3C2">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique de la table]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE_RESEAU_CHARTE " id="64384D36-339D-911E-3F15-7CC22133A9B1">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Types de réseaux de la charte TOPO de la MEL]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E741A264-E250-878E-6DE3-03A64B66F3CC" name="TA_POINT_TOPO_IC_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7436030C-EBF5-3255-E8D7-A599BF452118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E6500D8-9198-E929-B878-272DEF74AF9F" name="TA_POINT_TOPO_IC_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<comment><![CDATA[Index de la clé primaire.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7436030C-EBF5-3255-E8D7-A599BF452118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4702D44F-3FFC-BE34-5915-40CC94843640" name="TA_POINT_TOPO_IC_CALQUE_RESEAU_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<comment><![CDATA[Index des claques contenant les objets concernés par les IC.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74CAD8D3-575D-C216-81C5-773B5853C105"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1104B226-9763-B399-040C-D2D1A1A7DA9F" name="TA_POINT_TOPO_IC_SOURCE_FICHIER_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<comment><![CDATA[Index des noms de fichiers dwg.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="517EFD44-E685-A15B-6D07-E2926C7507FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91C7E969-B7AF-F0D9-CB64-5BE693653F73" name="TA_POINT_TOPO_IC_X_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<comment><![CDATA[Index des abscisses de l'objet géographique]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0667DCA6-2596-CCC4-6A0E-014E91CF9F9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EC6B26A-C55E-89A3-8237-7E230C7421EC" name="TA_POINT_TOPO_IC_Y_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<comment><![CDATA[Index des ordonnées de l'objet géographique.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8180CC89-4676-A217-C9FF-2D1432335D89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3EAB7224-B436-FEC7-34EB-349FBB15BB95" name="TA_POINT_TOPO_IC_TYPE_RESEAU_CHARTE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 18:17:51 UTC</createdTime>
+<comment><![CDATA[Index des types de réseaux contenus dans la charte TOPO de la MEL]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64384D36-339D-911E-3F15-7CC22133A9B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
