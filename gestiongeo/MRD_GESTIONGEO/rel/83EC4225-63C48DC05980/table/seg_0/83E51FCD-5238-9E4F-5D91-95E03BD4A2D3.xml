@@ -42,7 +42,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="C672CD0A-A4E8-9647-525A-66A60ACA4BE0" referredColumn="2B0DF798-7933-22D4-B1FD-BC3EE5534913"/>
@@ -66,7 +66,7 @@
 <Column name="DOS_INSEE" id="EFFD29E9-EE69-7278-DB1A-C6D260A053AA">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_CODE contenant les code INSEE de la commune dans laquelle se situe chaque dossier.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Code INSEE de la commune dans laquelle se situe l'objet nécessitant un dossier.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -109,7 +109,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="065514A0-E34A-D0E5-A600-3AC687B97F40" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
@@ -124,7 +124,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="17A4D5CC-6C5C-0576-0DC5-82BCA602129C" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
