@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C672CD0A-A4E8-9647-525A-66A60ACA4BE0" containerWithKeyObject="83E51FCD-5238-9E4F-5D91-95E03BD4A2D3" localFKIndex="F1B0D931-02BD-3FE5-0F28-FB722F5E2EFB" name="TA_GG_DOSSIER_ETAT_ID_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 11:09:57 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<referredTableLongName>TA_GG_ETAT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3570ABA5-69BF-7F95-4706-894CF6E98C90</referredTableID>
+<keyObject>DFEFF880-A5D9-39A7-7172-3DFC5D657E31</keyObject>
+<referredKeyID>DFEFF880-A5D9-39A7-7172-3DFC5D657E31</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ETAT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="MRD_GESTIONGEO" id="83EC4225-D842-452E-EC46-63C48DC05980" mainViewID="54A045FF-1553-DDEC-8428-8CB6D755958C">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 08:40:11 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+</relationalModel>

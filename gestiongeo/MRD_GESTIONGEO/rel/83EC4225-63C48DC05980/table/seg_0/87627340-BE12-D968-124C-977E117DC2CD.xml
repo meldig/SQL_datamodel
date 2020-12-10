@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87627340-BE12-D968-124C-977E117DC2CD" name="TA_GG_FAMILLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:50:00 UTC</createdTime>
+<comment><![CDATA[Famille de données liées au dossier
+   - plan topo
+   - réseau (IC)
+   - autres
+Dans un premier temps l'appli se limitera au plan topo et au données des IC]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FAM_ID" id="2BF0E3DD-A278-0E84-1111-19A4D9578CCB">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:53:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAM_LIB" id="9F19D1A2-3C88-7E98-46B8-983894ECDF46">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:53:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé de la famille.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAM_LIB_SMALL" id="B33F7688-4D18-627D-45A2-17A26A25C954">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:53:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé abrégé de la famille sur 2 caractères uniquement.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66F024C0-4B70-FA2E-2BA2-30CAA99629EC" name="TA_GG_FAMILLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:53:34 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BF0E3DD-A278-0E84-1111-19A4D9578CCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
