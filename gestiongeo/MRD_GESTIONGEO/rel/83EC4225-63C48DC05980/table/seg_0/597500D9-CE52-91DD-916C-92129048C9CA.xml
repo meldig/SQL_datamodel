@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="597500D9-CE52-91DD-916C-92129048C9CA" name="TA_GG_RELATION_LIG_TOPO_IC">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:21:29 UTC</createdTime>
+<comment><![CDATA[Table de relation permettant d'associer un dossier avec des objets de type linéaire concernés par des IC.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="86C95E18-C93E-AF42-F0F0-8FE280A88385">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:30:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_DOS" id="37507A08-9AFD-0C52-E3FF-356C4F2592A0">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:30:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_DOSSIER, permettant d'associer un dossier avec les objets de type linéaires (3D) concernés par les IC.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8AD96672-1AD6-3D43-03BA-080199961EE9" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</associations>
+</Column>
+<Column name="FID_TA_LIG_TOPO_IC" id="4A489248-D9D0-37D8-F7EA-2AE63EA34048">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:30:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_LIG_TOPO_IC permettant d'asscoier les objets de type linéaire (3D) avec leur dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADE70441-45E1-424C-F6A1-53C85A49FAAD" referredColumn="3D3C1325-8B75-A541-9428-A0B58E0D91E2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1DED7B6-641F-6B06-3940-560CDD05B799" name="TA_GG_RELATION_LIG_TOPO_IC_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:30:17 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86C95E18-C93E-AF42-F0F0-8FE280A88385"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7ABE5B69-630B-57AD-78F1-2D693A5D12F0" name="TA_GG_RELATION_LIG_TOPO_IC_PKv2">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:31:35 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité de la clé primaire de la table.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86C95E18-C93E-AF42-F0F0-8FE280A88385"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="201D8C8D-9043-5828-8DE3-A96C4B567D95" name="TA_GG_RELATION_LIG_TOPO_IC_FID_TA_LIG_TOPO_IC_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:31:52 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A489248-D9D0-37D8-F7EA-2AE63EA34048"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B773763-2970-2488-A54B-6ED5C63A825D" name="TA_GG_RELATION_LIG_TOPO_IC_FID_DOS_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:32:49 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37507A08-9AFD-0C52-E3FF-356C4F2592A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

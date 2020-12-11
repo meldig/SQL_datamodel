@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AFDA8DEC-054D-4053-7EAB-CBA8AA93D833" name="TA_GG_POINT">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:52:27 UTC</createdTime>
+<comment><![CDATA[Table des centroïdes des objets présents dans TA_GG_GEO.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_GEOM" id="F1ED4EEA-D0F1-EDF8-97E9-07F2A58E955F">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:54:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la géométrie présente dans TA_GG_GEO et à partir de laquelle est issue chaque point de la table. Attention, il n'y a pas de contrainte de clé étrangère sur ce champ.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="347C451F-688A-0BEE-8166-C9FE8A16AE11" referredColumn="B6F50EA4-FF03-69B5-1437-BA2E17F7AF5B"/>
+</associations>
+</Column>
+<Column name="ID_DOS" id="7DFBE4C7-E4F9-F994-929F-B66D0AF51389">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:54:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du dossier GestionGeo présent dans TA_GG_DOSSIER. Attention, il n'y a pas de contrainte de clé étrangère sur ce champ.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE862FC2-0F33-56CF-1485-08C14603D675" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</associations>
+</Column>
+<Column name="CLASSE_DICT" id="05666A1C-4824-2869-0C94-9BF0403F0A06">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:54:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant des réseaux contenus dans la charte topographique et réseaux de la DSIG.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOM" id="C2DC7C84-1B1B-10AC-6038-105A183519D9">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:54:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique rassemblant tous les centroïdes des objets de la table TA_GG_GEO.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F423F5CE-3A4C-C835-B5DF-0E4CACBFEA77" name="TA_GG_POINT_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:56:55 UTC</createdTime>
+<comment><![CDATA[Clé primaire composée de l'identifiant du périmètre et de celui du dossier.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1ED4EEA-D0F1-EDF8-97E9-07F2A58E955F"/>
+<colUsage columnID="7DFBE4C7-E4F9-F994-929F-B66D0AF51389"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21216140-8109-24A4-4632-935060BE6FEE" name="TA_GG_POINT_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:59:00 UTC</createdTime>
+<comment><![CDATA[Index de la clé primaire composée.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1ED4EEA-D0F1-EDF8-97E9-07F2A58E955F"/>
+<colUsage columnID="7DFBE4C7-E4F9-F994-929F-B66D0AF51389"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0B27E4B-072E-31AF-2C09-2E7D08B11A4E" name="TA_GG_POINT_ID_DOS_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:57:06 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DFBE4C7-E4F9-F994-929F-B66D0AF51389"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1DE2987-5B41-20FD-479F-427474B87BA9" name="TA_GG_POINT_ID_GEOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-11 08:57:39 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1ED4EEA-D0F1-EDF8-97E9-07F2A58E955F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
