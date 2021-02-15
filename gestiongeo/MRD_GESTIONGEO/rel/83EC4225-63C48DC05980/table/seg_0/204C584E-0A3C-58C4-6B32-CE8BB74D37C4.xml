@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="14D6B92D-F190-13DA-6DA9-110504B05B19" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
@@ -71,6 +71,15 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BD9A6829-DF34-6CF1-47CD-63DB45FBC6C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5A63BA6-7D11-1880-A2C1-48424633B3C0" name="TA_GG_URL_FILE_FID_DOSSIER_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 14:18:55 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EAB8FB0-E7A2-6E27-FD0A-143CDAB4218F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="5464CD31-C6E9-AAE0-F2A8-51E433F8BB5A" name="TA_GG_URL_FILE_FID_DOSSIER_FK">

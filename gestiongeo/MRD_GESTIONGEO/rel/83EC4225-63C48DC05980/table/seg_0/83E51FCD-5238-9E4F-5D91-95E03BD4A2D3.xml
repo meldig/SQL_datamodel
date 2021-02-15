@@ -280,19 +280,6 @@
 <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DOS_URL_FILE" id="004295EF-6A05-9125-9E8B-78B63B931366">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[URL du fichier dwg se trouvant dans infogeo auquel le dossier est associé.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>400 BYTE</dataTypeSize>
-<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="DOS_NUM" id="B972EBDA-2E86-DBF6-0757-F44E98B8D7B6">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:35:02 UTC</createdTime>
@@ -455,16 +442,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E47A7739-8607-1277-0B74-97B0FB79F1C6"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="25D10556-D1A2-D8D7-0D07-EA01F18DECB5" name="TA_GG_DOSSIER_DOS_URL_FILE_IDX">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 16:17:16 UTC</createdTime>
-<comment><![CDATA[Index sur les liens url des fichiers dwg d'infogeo.]]></comment>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="004295EF-6A05-9125-9E8B-78B63B931366"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="6C8098C9-3E1D-A07F-1A99-C0283B4D885F" name="TA_GG_DOSSIER_FAM_ID_FK">
