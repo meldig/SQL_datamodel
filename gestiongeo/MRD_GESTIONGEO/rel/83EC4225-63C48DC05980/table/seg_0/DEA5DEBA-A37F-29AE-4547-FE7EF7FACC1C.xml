@@ -37,20 +37,16 @@
 <colAssociation fkAssociation="449CEC39-7A36-1766-25E5-E81F89BE8A8F" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
 </associations>
 </Column>
-<Column name="DOS_NUM" id="C287FF91-15A6-B200-84B9-23731C4B946F">
+<Column name="GEOM" id="EE2D06B8-A71A-73C2-B1AE-F7FB432AEE59">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 14:58:27 UTC</createdTime>
-<commentInRDBMS><![CDATA[Numéro de dossier associé à la géométrie de la table. Clé étrangère vers la table TA_GG_DOSSIER.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Champ géométrique de la table de type multipolygone (2D).]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D2C29CE7-440C-C70A-4972-BBA2DC2C3B8B" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
-</associations>
 </Column>
 <Column name="ETAT_ID" id="3AF80537-2FC8-0686-562B-BB753A51B7AC">
 <createdBy>bjacq</createdBy>
@@ -68,28 +64,33 @@
 <colAssociation fkAssociation="B4049D17-B8FD-EAA2-57D8-8670031BB7C0" referredColumn="2B0DF798-7933-22D4-B1FD-BC3EE5534913"/>
 </associations>
 </Column>
-<Column name="GEOM" id="EE2D06B8-A71A-73C2-B1AE-F7FB432AEE59">
+<Column name="DOS_NUM" id="C287FF91-15A6-B200-84B9-23731C4B946F">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 14:58:27 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ géométrique de la table de type multipolygone (2D).]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Numéro de dossier associé à la géométrie de la table. Clé étrangère vers la table TA_GG_DOSSIER.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
-<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2C29CE7-440C-C70A-4972-BBA2DC2C3B8B" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</associations>
 </Column>
-<Column name="CLASSE_DICT" id="F4B81EFE-2245-8518-D228-A6FD0C55A083">
+<Column name="SURFACE" id="F4B81EFE-2245-8518-D228-A6FD0C55A083">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 14:58:27 UTC</createdTime>
-<commentInRDBMS><![CDATA[je ne sais pas ce qu'est ce champ]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Champ rempli via un déclencheur permettant de calculer la surface de chaque objet de la table en m².]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,38,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

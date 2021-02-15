@@ -38,6 +38,18 @@
 <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ETAT_AFF" id="80C350E5-3074-5404-D860-6123F78EE6A5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:45:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Je ne sais pas à quoi correspond ce champ.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="ETAT_LIB_SMALL" id="CE03E0B3-9C61-BBCD-07D5-81636E74E2ED">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 11:09:41 UTC</createdTime>
@@ -50,38 +62,11 @@
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ETAT_STYLE" id="11D36EDC-E1C3-9773-96F2-0BB6D31EA336">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:09:41 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code couleur de chaque état d'avancement au format HTML/CSS (hexadecimal) mais sans le préfixe #.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>6 BYTE</dataTypeSize>
-<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ETAT_COULEUR" id="AF4C592F-1648-77BC-7056-DC40F3E06A31">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:09:41 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code couleur de chaque état d'avancement au format HTML/CSS (hexadecimal) - A voir si on garde.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>7</dataTypeSize>
-<ownDataTypeParameters>7,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="ETAT_SMALL" id="0C9248C1-BD2D-D498-05D8-EA44976E2A22">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 11:09:41 UTC</createdTime>
 <commentInRDBMS><![CDATA[Etats d'avancement des dossiers en abrégé.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="204C584E-0A3C-58C4-6B32-CE8BB74D37C4" name="TA_GG_URL_FILE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:47:53 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="BD9A6829-DF34-6CF1-47CD-63DB45FBC6C6">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:51:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table correspondant à l''identifiant unique de chaque URL.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOS_URL_FILE" id="486A9F8C-37C4-B281-EB5F-29A697C0D5B5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:51:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[URL de chaque fichier correspondant à un dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_DOSSIER" id="4EAB8FB0-E7A2-6E27-FD0A-143CDAB4218F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:51:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_DOSSIER permettant d''associer un URL à un dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14D6B92D-F190-13DA-6DA9-110504B05B19" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</associations>
+</Column>
+<Column name="INTEGRATION" id="0CBC39F1-43EC-E254-F499-1232F9355592">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:51:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ permettant de savoir si le fichier a été utilisé lors de l''intégration du fichier dwg par FME pour déterminer le périmètre du dossier. : 1 = oui ; 0 = non.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="008AC3F6-D25D-CB59-893E-4F06521F9D86" name="TA_GG_URL_FILE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:51:00 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD9A6829-DF34-6CF1-47CD-63DB45FBC6C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5464CD31-C6E9-AAE0-F2A8-51E433F8BB5A" name="TA_GG_URL_FILE_FID_DOSSIER_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:51:36 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EAB8FB0-E7A2-6E27-FD0A-143CDAB4218F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

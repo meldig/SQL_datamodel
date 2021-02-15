@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="G_GestionGeo" id="B32E590A-629A-9FDA-03DD-897D7A3446B4">
+<createdBy>bjacq</createdBy>
+<modifiedBy>bjacq</modifiedBy>
+<createdTime>2021-02-15 13:02:41 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="204C584E-0A3C-58C4-6B32-CE8BB74D37C4" otype="Table" vid="5889B97C-8D52-9AB7-4901-D80D559C9769">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1048" y="769" width="363" height="153"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="25E35AAF-69B2-DE25-6CC0-6BDB6ADC5F67" otype="Note" vid="E17DFE57-2ADD-3078-8EC9-64E61C9736E2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1036" y="204" width="352" height="152"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table listant tous les états d&apos;&apos;avancement que peuvent prendre les dossiers créés dans GestionGeo, avec leur code couleur respectif :
+   0 : actif en base (visible en carto : vert)
+   1 : non valide (non visible en carto)
+   2 : prévisionnel (visible en carto : bleu)
+   3 : non vérifié (visible en carto : orange)
+   4 : vérifié, non validé (visible en carto : rouge)</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="320E4F70-9474-CE8F-4AA5-ED2A8D33CD8D" otype="Note" vid="FA6425B9-CA71-C748-816A-9FF7387FC4E6">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1278" y="480" width="251" height="71"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les géométries des dossiers créés dans GestionGeo. Le lien avec TA_GG_DOSSIER se fait via le champ ID_DOS.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3570ABA5-69BF-7F95-4706-894CF6E98C90" otype="Table" vid="CEC20C2E-4B97-445C-EC16-C6E473B1A913">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="765" y="204" width="259" height="155"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="55D0AABB-D539-59D0-44FF-9D09D9CB833D" otype="Table" vid="F6A569E1-60E7-A07C-0E1A-136A7DF76B97">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="149" y="239" width="226" height="127"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="68B2B65C-6971-E58F-3C6B-10DD9722635F" otype="Note" vid="E65E92E1-6AC9-87AE-B4A0-A57489990463">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="308" y="1173" width="333" height="56"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table principale GestionGeo dans laquelle chaque dossier pour le plan topo et IC est renseigné via qgis et FME.
+</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="83E51FCD-5238-9E4F-5D91-95E03BD4A2D3" otype="Table" vid="1C7F0EA5-1F15-1169-7EAC-125E37B967F2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="306" y="526" width="334" height="643"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="87627340-BE12-D968-124C-977E117DC2CD" otype="Table" vid="79FA9FBA-006C-5D01-E68E-E2F33749DA39">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="410" y="234" width="316" height="143"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="8ECDF0F2-33E6-8D1B-827C-386F64B59320" otype="Note" vid="3E13526E-B695-8BE9-CC66-C2A30D577826">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="409" y="112" width="308" height="107"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Famille de données liées au dossier
+ - plan topo
+ - réseau (IC)
+ - autres
+Dans un premier temps l&apos;&apos;appli se limitera au plan topo et au données des IC</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="B40C8970-EBBE-A836-409C-8ABD284BD105" otype="Note" vid="D9E942AA-45A5-B8C2-B5B2-58D97BA6BD1B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="146" y="168" width="232" height="63"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table recensant tous les agents participant à la création, l&apos;&apos;édition et la suppression des dossiers dans GestionG_GESTIONGEO.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="D8267DC9-1412-BBB5-CEE5-B5389460E9DB" otype="Note" vid="E71E4FFE-F5D5-0EBA-0888-F8CE96CA0DEC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1052" y="933" width="364" height="91"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table GestionGEO permettant de lister tous les fichiers correspondants à un dossier (dwg, pdf, etc).
+Cette table contient les url de tous les dossiers présents sur le réseau dans APLI_GG.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DEA5DEBA-A37F-29AE-4547-FE7EF7FACC1C" otype="Table" vid="E960A958-2351-6603-C298-A7D40BCC3C2D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1046" y="478" width="227" height="257"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="065514A0-E34A-D0E5-A600-3AC687B97F40" otype="FKIndexAssociation" vid_source="F6A569E1-60E7-A07C-0E1A-136A7DF76B97" vid_target="1C7F0EA5-1F15-1169-7EAC-125E37B967F2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="355" y="366"/>
+<point x="355" y="526"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="14D6B92D-F190-13DA-6DA9-110504B05B19" otype="FKIndexAssociation" vid_source="1C7F0EA5-1F15-1169-7EAC-125E37B967F2" vid_target="5889B97C-8D52-9AB7-4901-D80D559C9769">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="640" y="830"/>
+<point x="1048" y="830"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="17A4D5CC-6C5C-0576-0DC5-82BCA602129C" otype="FKIndexAssociation" vid_source="F6A569E1-60E7-A07C-0E1A-136A7DF76B97" vid_target="1C7F0EA5-1F15-1169-7EAC-125E37B967F2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="340" y="366"/>
+<point x="340" y="526"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="449CEC39-7A36-1766-25E5-E81F89BE8A8F" otype="FKIndexAssociation" vid_source="1C7F0EA5-1F15-1169-7EAC-125E37B967F2" vid_target="E960A958-2351-6603-C298-A7D40BCC3C2D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="640" y="615"/>
+<point x="1046" y="615"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="669E67AA-8024-F195-4652-A5B5937F4CEE" otype="FKIndexAssociation" vid_source="79FA9FBA-006C-5D01-E68E-E2F33749DA39" vid_target="1C7F0EA5-1F15-1169-7EAC-125E37B967F2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="525" y="377"/>
+<point x="525" y="526"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B4049D17-B8FD-EAA2-57D8-8670031BB7C0" otype="FKIndexAssociation" vid_source="CEC20C2E-4B97-445C-EC16-C6E473B1A913" vid_target="E960A958-2351-6603-C298-A7D40BCC3C2D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="957" y="359"/>
+<point x="1054" y="478"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C672CD0A-A4E8-9647-525A-66A60ACA4BE0" otype="FKIndexAssociation" vid_source="CEC20C2E-4B97-445C-EC16-C6E473B1A913" vid_target="1C7F0EA5-1F15-1169-7EAC-125E37B967F2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="836" y="359"/>
+<point x="640" y="563"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D2C29CE7-440C-C70A-4972-BBA2DC2C3B8B" otype="FKIndexAssociation" vid_source="1C7F0EA5-1F15-1169-7EAC-125E37B967F2" vid_target="E960A958-2351-6603-C298-A7D40BCC3C2D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="640" y="660"/>
+<point x="1046" y="660"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

@@ -34,6 +34,10 @@ Table utilisée dans le wokbench afin de ne sélectionner que les objets à l&ap
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="204C584E-0A3C-58C4-6B32-CE8BB74D37C4" otype="Table" vid="EA5EA617-9AC2-91B7-1671-4BCF230A177D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="50" width="170" height="110"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2076586F-61F2-441A-E142-45CFD88BC807" otype="Table" vid="65781AFC-9B21-5EFD-62BA-E08277804A4B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="968" y="1402" width="425" height="291"/>
@@ -99,7 +103,6 @@ Elle est remplie par :
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>13</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -246,7 +249,6 @@ le reste sauf DOS_NUM_SHORT</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>13</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -266,7 +268,6 @@ le reste sauf DOS_NUM_SHORT</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>13</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -350,6 +351,15 @@ Elle est remplie par :
 <points>
 <point x="1043" y="334"/>
 <point x="1043" y="497"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="14D6B92D-F190-13DA-6DA9-110504B05B19" otype="FKIndexAssociation" vid_source="F1B0170B-D45D-B50A-3CFF-9D5993F6ED5D" vid_target="EA5EA617-9AC2-91B7-1671-4BCF230A177D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1009" y="663"/>
+<point x="190" y="160"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="17A4D5CC-6C5C-0576-0DC5-82BCA602129C" otype="FKIndexAssociation" vid_source="D7CA2585-3B3F-7CB0-E084-64B54A5D84A9" vid_target="F1B0170B-D45D-B50A-3CFF-9D5993F6ED5D">

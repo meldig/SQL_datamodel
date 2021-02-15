@@ -37,6 +37,18 @@ Dans un premier temps l'appli se limitera au plan topo et au données des IC]]><
 <ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="FAM_VAL" id="49091C5A-1C9E-81F0-A245-2F21B681D9E0">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:46:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ permettant de savoir si la famille est encore valide ou non. 1 = oui ; 0 = non.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="FAM_LIB_SMALL" id="B33F7688-4D18-627D-45A2-17A26A25C954">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:53:34 UTC</createdTime>
