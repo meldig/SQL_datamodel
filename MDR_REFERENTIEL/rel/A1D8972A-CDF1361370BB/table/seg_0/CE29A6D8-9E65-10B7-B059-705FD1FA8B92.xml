@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE29A6D8-9E65-10B7-B059-705FD1FA8B92" name="VM_ACQ_ZONAGE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-03-26 13:56:54 UTC</createdTime>
+<comment><![CDATA[Vue matérialisée du schéma G_GEO proposant les communes gérées par chaque agent de l''UF Acquisition de données.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_61</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="identifiant" id="1FDE3FE3-753D-EB9C-212C-675351B5E973">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-03-26 14:00:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la VM correspondant à la PK de la table TA_GG_SOURCE.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_agent" id="E0EBEF1A-603C-2B36-959E-26F651278776">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-03-26 14:00:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom de l'agent de l'UF Acquisition de Données qui gère les communes situées dans l'emprise du champ GEOM de la VM.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="ED837F82-379F-B675-8633-3BD3F9E0820A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-03-26 14:00:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique de type multipolygone - emprise du territoire géré par chaque photo-interprète de l'UF Acquisition de Données.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9862B2E9-7B64-FECA-4356-FFB77F823F24" name="VM_ACQ_ZONAGE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-03-26 14:00:38 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FDE3FE3-753D-EB9C-212C-675351B5E973"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

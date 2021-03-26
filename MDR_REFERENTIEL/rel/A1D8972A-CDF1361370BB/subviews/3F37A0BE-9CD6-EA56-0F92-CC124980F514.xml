@@ -60,6 +60,22 @@ Exemple : bjacq gère la commune dont le code INSEE est 59350</comment>
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="64E563D9-9832-4DBB-3358-866F9DBA8EA6" otype="Note" vid="1D706FEF-66C2-0321-344C-1172DA93827C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="187" y="797" width="292" height="59"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13382401</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Vue matérialisée du schéma G_GEO proposant les communes gérées par chaque agent de l&apos;&apos;UF Acquisition de données.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="6576920A-0F42-588F-5192-F1D64C83D424" otype="Note" vid="10CE3B4D-3C39-0C1E-F116-F27FD233C01D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="959" y="544" width="214" height="56"/>
@@ -100,6 +116,10 @@ Exemple : 59000, 59350</comment>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C31ADF45-13FA-5F5A-A1CF-27FA290C2BA2" otype="Table" vid="A80E76B4-FD8F-1A13-5B77-35B3DF96844F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="958" y="456" width="216" height="86"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="CE29A6D8-9E65-10B7-B059-705FD1FA8B92" otype="Table" vid="EF128CBC-C8E7-A5DE-27CA-175AF3290E81">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="188" y="865" width="290" height="102"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="F3BA5EF2-DB20-A5CD-6746-448F5FFF451D" otype="Note" vid="C2816FC0-2CD5-9446-2542-2742E997A300">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
