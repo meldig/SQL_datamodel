@@ -38,6 +38,7 @@ Exemple : les communes françaises et les municipalités belges</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
+<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -54,13 +55,14 @@ Exemple : bjacq gère la commune dont le code INSEE est 59350</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
+<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="6576920A-0F42-588F-5192-F1D64C83D424" otype="Note" vid="10CE3B4D-3C39-0C1E-F116-F27FD233C01D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="959" y="544" width="214" height="45"/>
+<bounds x="959" y="544" width="214" height="56"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-13382401</backgroundColor>
@@ -69,6 +71,7 @@ Exemple : bjacq gère la commune dont le code INSEE est 59350</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
+<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -85,6 +88,7 @@ Exemple : 59000, 59350</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
+<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -109,6 +113,7 @@ Exemple : le code insee Lille est 59000</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
+<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
