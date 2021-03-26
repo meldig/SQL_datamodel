@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3570ABA5-69BF-7F95-4706-894CF6E98C90" name="TA_GG_ETAT">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 11:05:32 UTC</createdTime>
+<comment><![CDATA[Table listant tous les états d'avancement que peuvent prendre les dossiers créés dans GestionGeo, avec leur code couleur respectif :
+   0 : actif en base (visible en carto : vert)
+   1 : non valide (non visible en carto)
+   2 : prévisionnel (visible en carto : bleu)
+   3 : non vérifié (visible en carto : orange)
+   4 : vérifié, non validé (visible en carto : rouge)]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ETAT_ID" id="2B0DF798-7933-22D4-B1FD-BC3EE5534913">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 11:09:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETAT_LIB" id="FA8A7D45-708E-C6A7-1E27-02FC5EBE7E2E">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 11:09:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellés longs expliquant les états d'avancement des dossiers.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETAT_AFF" id="80C350E5-3074-5404-D860-6123F78EE6A5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:45:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Je ne sais pas à quoi correspond ce champ.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETAT_LIB_SMALL" id="CE03E0B3-9C61-BBCD-07D5-81636E74E2ED">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 11:09:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellés courts.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETAT_SMALL" id="0C9248C1-BD2D-D498-05D8-EA44976E2A22">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 11:09:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Etats d'avancement des dossiers en abrégé.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DFEFF880-A5D9-39A7-7172-3DFC5D657E31" name="TA_GG_ETAT_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 11:09:41 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B0DF798-7933-22D4-B1FD-BC3EE5534913"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CE96CD3-8EAB-3B04-1A3D-B9DA0D183923" name="TA_GG_ETAT_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:19:21 UTC</createdTime>
+<comment><![CDATA[Index de clé primaire.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B0DF798-7933-22D4-B1FD-BC3EE5534913"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55D0AABB-D539-59D0-44FF-9D09D9CB833D" name="TA_GG_SOURCE">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:55:13 UTC</createdTime>
+<comment><![CDATA[Table recensant tous les agents participant à la création, l'édition et la suppression des dossiers dans GestionGeo.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SRC_ID" id="B19A1176-F7BE-4B98-5770-C652D7807509">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:58:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SRC_LIBEL" id="6561225A-F9DA-F974-38D7-23E8AA3E7EA4">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:58:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pnom de chaque agent.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SRC_VAL" id="D0721FE0-1219-72C6-96CE-4F8DB856F985">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:58:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ booléen permettant de savoir si l'agent participe encore à la gestion des dossiers ou non.
+0 = non ; 1 = oui.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20E44D0B-E1E6-D5B5-9761-48AA594A8C67" name="TA_GG_SOURCE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:58:33 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53B6DE23-5489-EE09-954E-50B054B99614" name="TA_GG_SOURCE_SRC_ID_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:23:59 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité de la clé primaire.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A15F39A9-D03F-1AED-D99A-95B14F57B66A" name="TA_GG_SOURCE_SRC_LIBEL_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:23:59 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité des pnoms]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6561225A-F9DA-F974-38D7-23E8AA3E7EA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

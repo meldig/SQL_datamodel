@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="6B83E397-F334-2AAD-81A2-36289A4CEA06" mainViewID="D4EA0231-77F8-A716-58B8-F812021CC749">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 08:40:09 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

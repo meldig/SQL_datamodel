@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5175AC3D-2FF7-AAFF-1ABA-1AEF4DB5F82E" containerWithKeyObject="65B91C60-F92B-C3B2-0994-2CEF6A731D7B" localFKIndex="1081C558-7E6B-F727-FF09-C31EA0549524" name="TA_LIG_TOPO_IC_CLA_INU_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:03:47 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<referredTableLongName>TA_CLASSE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4EC8509A-2741-FD7F-7A1B-549C6BC8324B</referredTableID>
+<keyObject>9F8BE81F-70FD-2748-26A6-B00CA03B06EC</keyObject>
+<referredKeyID>9F8BE81F-70FD-2748-26A6-B00CA03B06EC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CLA_INU</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

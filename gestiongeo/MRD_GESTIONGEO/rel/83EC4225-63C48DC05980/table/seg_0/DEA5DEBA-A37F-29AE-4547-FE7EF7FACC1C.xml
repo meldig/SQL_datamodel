@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEA5DEBA-A37F-29AE-4547-FE7EF7FACC1C" name="TA_GG_GEO">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 14:25:01 UTC</createdTime>
+<comment><![CDATA[Table rassemblant les géométries des dossiers créés dans GestionGeo. Le lien avec TA_GG_DOSSIER se fait via les champs ID_DOS et DOS_NUM.
+]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_GEOM" id="B6F50EA4-FF03-69B5-1437-BA2E17F7AF5B">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 14:58:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_DOS" id="4B162DCA-E538-195F-10BE-36332CD716F2">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 14:58:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_DOSSIE permettant d'associer un dossier avec une géométrie.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="449CEC39-7A36-1766-25E5-E81F89BE8A8F" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</associations>
+</Column>
+<Column name="GEOM" id="EE2D06B8-A71A-73C2-B1AE-F7FB432AEE59">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 14:58:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique de la table de type multipolygone (2D).]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETAT_ID" id="3AF80537-2FC8-0686-562B-BB753A51B7AC">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 14:58:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de l'état d'avancement du dossier- Clé étrangère vers la table TA_GG_ETAT.
+]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4049D17-B8FD-EAA2-57D8-8670031BB7C0" referredColumn="2B0DF798-7933-22D4-B1FD-BC3EE5534913"/>
+</associations>
+</Column>
+<Column name="DOS_NUM" id="C287FF91-15A6-B200-84B9-23731C4B946F">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 14:58:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro de dossier associé à la géométrie de la table. Clé étrangère vers la table TA_GG_DOSSIER.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2C29CE7-440C-C70A-4972-BBA2DC2C3B8B" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</associations>
+</Column>
+<Column name="SURFACE" id="F4B81EFE-2245-8518-D228-A6FD0C55A083">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 14:58:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ rempli via un déclencheur permettant de calculer la surface de chaque objet de la table en m².]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,38,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0991B43-6EBE-1794-4080-AD389CF8E89E" name="TA_GG_GEO_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 14:58:27 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6F50EA4-FF03-69B5-1437-BA2E17F7AF5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73C5B6CF-637B-2E25-6392-94C9BE680FBB" name="TA_GG_GEO_ID_GEOM_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:26:43 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité de la clé primaire.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6F50EA4-FF03-69B5-1437-BA2E17F7AF5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43AFF4A3-FDFC-C6F3-5E99-686AF580BB56" name="TA_GG_GEO_ID_DOS_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:26:43 UTC</createdTime>
+<comment><![CDATA[Contrainte d'unicité de la clé étrangère vers TA_GG_DOSSIER (1 dossier = 1 géométrie). Cette contrainte est dépendante de la correction des géométries.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B162DCA-E538-195F-10BE-36332CD716F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8A77076-A05A-7A59-7787-DEE13EB9BC44" name="TA_GG_GEO_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:09:12 UTC</createdTime>
+<comment><![CDATA[Index de clé primaire]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6F50EA4-FF03-69B5-1437-BA2E17F7AF5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="632F8F28-D289-ED05-6D70-DC86B8619520" name="TA_GG_GEO_ID_DOS_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:09:12 UTC</createdTime>
+<comment><![CDATA[Index de la clé étrangère TA_GG_GEO_ID_DOS_FK]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B162DCA-E538-195F-10BE-36332CD716F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17963C4C-1E7A-885C-EF9F-0C4F4A8320E2" name="TA_GG_GEO_ETAT_ID_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 16:09:12 UTC</createdTime>
+<comment><![CDATA[Index sur les valeurs d'avancement des dossiers]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AF80537-2FC8-0686-562B-BB753A51B7AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D44C6E19-30FD-CDD7-D5F3-E94DC0FDF1C0" name="TA_GG_GEO_ETAT_ID_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:10:21 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AF80537-2FC8-0686-562B-BB753A51B7AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB0479F9-8686-19DE-310A-4B124455DE73" name="TA_GG_GEO_DOS_NUM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:14:52 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C287FF91-15A6-B200-84B9-23731C4B946F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0CC47F4-0A6D-074C-C097-506208A50954" name="TA_GG_GEO_ID_DOS_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 15:15:31 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B162DCA-E538-195F-10BE-36332CD716F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

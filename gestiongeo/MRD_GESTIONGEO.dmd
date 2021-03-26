@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MRD_GESTIONGEO" id="51DF62C8-7215-4180-C67D-52CFCE15AA95" version="3.5">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 08:40:09 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>51DF62C8-7215-4180-C67D-52CFCE15AA95</designId>
+</OSDM_Design>
