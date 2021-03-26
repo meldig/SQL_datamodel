@@ -38,7 +38,6 @@ Exemple : les communes françaises et les municipalités belges</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -55,7 +54,6 @@ Exemple : bjacq gère la commune dont le code INSEE est 59350</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -67,11 +65,10 @@ Exemple : bjacq gère la commune dont le code INSEE est 59350</comment>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-13382401</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table rassemblant les pnoms de tous les agents participant à la vie de la donnée.</comment>
+<comment>Table du schéma g_gestiongeo rassemblant les pnoms de tous les agents participant à la vie de la donnée.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -88,7 +85,6 @@ Exemple : 59000, 59350</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -99,7 +95,7 @@ Exemple : 59000, 59350</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C31ADF45-13FA-5F5A-A1CF-27FA290C2BA2" otype="Table" vid="A80E76B4-FD8F-1A13-5B77-35B3DF96844F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="958" y="456" width="216" height="79"/>
+<bounds x="958" y="456" width="216" height="86"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="F3BA5EF2-DB20-A5CD-6746-448F5FFF451D" otype="Note" vid="C2816FC0-2CD5-9446-2542-2742E997A300">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -113,7 +109,6 @@ Exemple : le code insee Lille est 59000</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -134,8 +129,8 @@ Exemple : le code insee Lille est 59000</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="958" y="495"/>
-<point x="891" y="495"/>
+<point x="958" y="499"/>
+<point x="891" y="499"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D16B80BA-19D5-9DF1-B781-4ACFBED4C147" otype="FKIndexAssociation" vid_source="9D7C18DD-C4BD-BA2B-12AB-D2D7D1371E2B" vid_target="F16BC08A-6D97-E7FE-F629-2891E30A6AD1">
