@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="204C584E-0A3C-58C4-6B32-CE8BB74D37C4" name="TA_GG_URL_FILE">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-02-15 13:47:53 UTC</createdTime>
+<comment><![CDATA[Table GestionGEO permettant de lister tous les fichiers correspondants à un dossier (dwg, pdf, etc).]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <ordsAlias>table_13</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

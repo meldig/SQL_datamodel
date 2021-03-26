@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2076586F-61F2-441A-E142-45CFD88BC807" name="TA_POINT_TOPO_IC">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 18:03:42 UTC</createdTime>
+<comment><![CDATA[Cette table contient les éléments ponctuels des investigations complémentaires, leurs coordonnées  ainsi que la source dwg à partir de laquelle sont extraits ces points.]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <ordsAlias>table_15</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
