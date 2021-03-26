@@ -18,6 +18,37 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="418" y="593" width="475" height="117"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="17FDFDDD-985B-E872-9E44-355BA2B0B30B" otype="Note" vid="7B12DA32-1049-6E5C-7D94-323AF6D2EB92">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="445" y="9" width="430" height="21"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13108</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;associer une donnée à plusieurs échelles.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="33501CD1-83E2-F2EA-96EF-010A9C0A1890" otype="Note" vid="E8DACDD3-B8DA-E49D-FFFE-676E181E95E7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="664" y="236" width="274" height="80"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13108</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les modes d&apos;acquisition de chaque donnée source.
+Exemple : &quot;donnée téléchargée depuis un lien envoyé par mail par l&apos;organisme créateur de la donnée&quot;</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3B9055B9-B01C-3634-9BCE-E0327F3C55BE" otype="Table" vid="64717C57-4E93-75C7-6F45-FE5D8F9FE487">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="946" y="327" width="251" height="102"/>
@@ -26,9 +57,72 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="48" y="92" width="325" height="623"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="525F7C25-46BF-19B3-707E-CA9D4DEB53CF" otype="Note" vid="DDD66359-D4E0-B46A-9AA4-E14CF275B561">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="419" y="714" width="473" height="27"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13108</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;associer une donnée à plusieurs organsimes producteurs de données.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="6649B037-C74E-352C-36DA-6E33563E8716" otype="Note" vid="C87A3E32-D89E-EDCB-8938-6E2407A045F0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1229" y="137" width="157" height="52"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13108</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant toutes les sources de données externes.
+Exemple : BdTopo</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="839C439C-9307-0C54-FA03-B955F4A68B34" otype="Note" vid="D9D7F7D1-FFC0-3F28-082A-0F52470D459C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1201" y="326" width="181" height="109"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13108</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les dates d&apos;insertion dans la base et les millésimes de chaque donnée source.
+Exemple : insertion de la donnée source millésimée &quot;2019&quot; le &quot;01/05/2019&quot;</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9561BC35-441C-013C-BEE1-AC6BE059F474" otype="Table" vid="5C47B232-B0AF-C703-1525-F3539CD06DA2">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="443" y="35" width="433" height="120"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="9C9C6F36-0344-F215-CD54-BC6F47A31F18" otype="Note" vid="62603E35-C30A-F17A-6D02-2086069C2B40">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="46" y="26" width="322" height="58"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13108</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot rassemblant les métadonnées, c&apos;est-à-dire la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.
+</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A64DBEC9-246E-0B9F-D283-E516975B73D7" otype="Table" vid="D48D274C-449F-1B4B-16EE-FE6D6EFE4C98">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -38,6 +132,22 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="944" y="234" width="355" height="88"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="C475F653-8DE1-37FD-612D-754975EC8174" otype="Note" vid="AB9CB525-06DE-D062-42EE-22D38670086C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1202" y="42" width="169" height="56"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13108</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table qui recence les echelles d&apos;affichage des données sources.
+Exemple : 1:10 000</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D9812882-3186-E109-305D-3116AA692C8B" otype="Table" vid="87882FD8-1AB0-F477-63C6-38376A10DEB9">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="944" y="135" width="275" height="91"/>
@@ -45,6 +155,22 @@
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E1CFAD56-3EEC-B2E9-9B35-D9D0AEDD0BB4" otype="Table" vid="456FF536-BC57-8D33-A392-D015889FDA77">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="943" y="37" width="251" height="90"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="FEEB7013-2525-56AB-4B48-DBD2340D2858" otype="Note" vid="5AD4A129-11C5-08DF-94F7-135089B10915">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1201" y="478" width="179" height="62"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13108</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant les organismes créateurs des données source.
+Exemple : IGN pour la BdTopo</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 </objectViews>
 <connectors>
