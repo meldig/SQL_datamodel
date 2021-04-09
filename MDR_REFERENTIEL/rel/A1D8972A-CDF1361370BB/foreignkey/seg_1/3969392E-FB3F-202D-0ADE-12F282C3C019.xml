@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="3969392E-FB3F-202D-0ADE-12F282C3C019" containerWithKeyObject="E44A3E45-A80E-9FD7-2549-88EB9D11E1EF" localFKIndex="0C14446C-A297-DFCE-8DE6-83B522F424B0" name="SECTION_CADASTRALE_FID_PREFIXE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:37:35 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_CODE pour connaitre le prefixe de la section cadastrale(code sur 3 caractère). Libelle long prefixe, famille: Identifiants de zone administrative]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_CODE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>14F62236-464B-7A94-76C3-C1AA0EFD8664</referredTableID>
+<keyObject>97A9EEF6-8C66-E89C-51E3-DB07ABBAF908</keyObject>
+<referredKeyID>97A9EEF6-8C66-E89C-51E3-DB07ABBAF908</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

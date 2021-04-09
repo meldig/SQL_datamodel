@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E44A3E45-A80E-9FD7-2549-88EB9D11E1EF" name="SECTION_CADASTRALE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E44A3E45-A80E-9FD7-2549-88EB9D11E1EF" name="TA_SECTION_CADASTRALE">
 <createdBy>rjault</createdBy>
 <createdTime>2020-10-07 08:36:06 UTC</createdTime>
 <comment><![CDATA[Table présente dans le schéma S_EDIGEO. Accessible à partir des schémas S_EDIGEO_LEC et G_DGFIP.]]></comment>
@@ -9,64 +9,93 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_sec" id="528F89E0-948F-FB0F-F7CB-2BBF46521145">
+<Column name="objectid" id="405C5A71-0D50-C0E7-C7BE-19E4B232B420">
 <createdBy>rjault</createdBy>
-<createdTime>2020-10-07 08:37:40 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code de la section: concatenation CODE_COM + PRE + SECTION]]></commentInRDBMS>
+<createdTime>2020-10-14 13:17:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_com" id="CEEEFBA0-A7E9-FE9A-CE0C-DDA071D35AF0">
+<Column name="fid_com" id="CEEEFBA0-A7E9-FE9A-CE0C-DDA071D35AF0">
 <createdBy>rjault</createdBy>
 <createdTime>2020-10-07 08:37:40 UTC</createdTime>
 <commentInRDBMS><![CDATA[Code INSEE de la commune]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEFE618F-F573-3C0B-7101-E2CF43B3DDB1" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
 </Column>
-<Column name="section" id="CD96F7CB-7670-576B-AE7A-7943B739CB8D">
+<Column name="fid_section" id="CD96F7CB-7670-576B-AE7A-7943B739CB8D">
 <createdBy>rjault</createdBy>
 <createdTime>2020-10-07 08:37:40 UTC</createdTime>
 <commentInRDBMS><![CDATA[identifiant section cadastrale sur 2 caractères]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38D3A188-B8AA-118F-8B1E-B8B2724D22FA" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
 </Column>
-<Column name="pre" id="051F670A-56A9-AD97-79B6-B38FCF17270E">
+<Column name="fid_prefixe" id="051F670A-56A9-AD97-79B6-B38FCF17270E">
 <createdBy>rjault</createdBy>
 <createdTime>2020-10-07 08:37:40 UTC</createdTime>
 <commentInRDBMS><![CDATA[préfixe de section sur 3 caractères]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3969392E-FB3F-202D-0ADE-12F282C3C019" referredColumn="BCEF0135-7194-DC58-2430-67A637FD4B6F"/>
+</associations>
 </Column>
-<Column name="geom" id="A6EF966E-11D8-9F30-09EC-20A3841900FE">
+<Column name="fid_geom" id="A6EF966E-11D8-9F30-09EC-20A3841900FE">
 <createdBy>rjault</createdBy>
 <createdTime>2020-10-07 08:37:40 UTC</createdTime>
-<commentInRDBMS><![CDATA[Géométrie de la section]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SECTION_CADASTRALE_GEOM pour connaitre la géométrie de la section.]]></commentInRDBMS>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
+<use>1</use>
 <structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6E3221D-12ED-E0A0-4903-89ADC9A167E1" referredColumn="18D096FD-9199-CD68-1C48-F7671DA5C4A6"/>
+</associations>
+</Column>
+<Column name="fid_metadonnee" id="8BC51FF6-C23E-EE5C-D628-396DB4329389">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:39:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE pour connaitre les métadonnée des sections cadastrale(organisme, source, date d'acquisition, millesime...).]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32F7E63B-E1F2-E82E-1219-C03CDA303A92" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -79,7 +108,57 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="528F89E0-948F-FB0F-F7CB-2BBF46521145"/>
+<colUsage columnID="405C5A71-0D50-C0E7-C7BE-19E4B232B420"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1C8C89C-6B08-6D03-E0D7-BF6FBD50DA8A" name="SECTION_CADASTRALE_FID_GEOM_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:26:58 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6EF966E-11D8-9F30-09EC-20A3841900FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4803DF8-46DD-8287-9B6D-1834708038DA" name="SECTION_CADASTRALE_FID_COM_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:31:35 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEEEFBA0-A7E9-FE9A-CE0C-DDA071D35AF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="834ABD37-2434-C1E3-3820-B915A79D9DB2" name="SECTION_CADASTRALE_FID_SECTION_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:35:45 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD96F7CB-7670-576B-AE7A-7943B739CB8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C14446C-A297-DFCE-8DE6-83B522F424B0" name="SECTION_CADASTRALE_FID_PREFIXE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:37:35 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="051F670A-56A9-AD97-79B6-B38FCF17270E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFBD2648-03B2-9481-20EA-173989FE0525" name="SECTION_CADASTRALE_TA_METADONNEE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:41:15 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BC51FF6-C23E-EE5C-D628-396DB4329389"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

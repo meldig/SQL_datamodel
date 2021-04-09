@@ -21,20 +21,6 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_idu" id="D26778E1-09A9-297A-57DD-ADA0A73FFD41">
-<createdBy>rjault</createdBy>
-<createdTime>2020-10-07 08:58:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table SECTION_CADASTRALE pour connaitre la section concerné par le code section de la section RVLLP.]]></commentInRDBMS>
-<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="3153C182-770B-CAA8-6462-CCC7631CEC9D" referredColumn="528F89E0-948F-FB0F-F7CB-2BBF46521145"/>
-</associations>
-</Column>
 <Column name="fid_code_RVLLP" id="2F19C2B6-5732-F104-125C-C837EC4728F8">
 <createdBy>rjault</createdBy>
 <createdTime>2020-07-17 06:55:53 UTC</createdTime>
@@ -63,6 +49,22 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="9D8ED19F-F3CE-20E1-D3C3-284749C60506" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
+</Column>
+<Column name="fid_section_cadastrale" id="D37073DB-0E9C-56E1-C1A7-C1E55DA69918">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:21:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SECTION_CADASTRALE pour connaitre la section concerné par le code section de la section RVLLP.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3153C182-770B-CAA8-6462-CCC7631CEC9D" referredColumn="405C5A71-0D50-C0E7-C7BE-19E4B232B420"/>
 </associations>
 </Column>
 </columns>
@@ -98,14 +100,14 @@
 <colUsage columnID="A1BF4515-CFC3-710F-DAC7-D4729C4E8CDF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D0A8EC1C-7162-625C-FFFD-785E74D92417" name="TA_RVLLP_SECTION_CADASTRALE_FK">
+<ind_PK_UK id="D0A8EC1C-7162-625C-FFFD-785E74D92417" name="TA_RVLLP_FID_SECTION_CADASTRALE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2020-10-07 09:02:03 UTC</createdTime>
 <ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D26778E1-09A9-297A-57DD-ADA0A73FFD41"/>
+<colUsage columnID="D37073DB-0E9C-56E1-C1A7-C1E55DA69918"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

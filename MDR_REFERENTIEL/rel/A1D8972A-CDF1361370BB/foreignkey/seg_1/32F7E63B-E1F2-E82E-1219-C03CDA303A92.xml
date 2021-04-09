@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="32F7E63B-E1F2-E82E-1219-C03CDA303A92" containerWithKeyObject="E44A3E45-A80E-9FD7-2549-88EB9D11E1EF" localFKIndex="FFBD2648-03B2-9481-20EA-173989FE0525" name="SECTION_CADASTRALE_TA_METADONNEE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:41:15 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_METADONNEE pour connaitre les métadonnée des sections cadastrale(organisme, source, date d'acquisition, millesime...).]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_METADONNEE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3DCD645D-F32F-3D02-660A-8A35DA02282A</referredTableID>
+<keyObject>6CF3B720-A5F7-BA1D-0BF1-E21F3209C577</keyObject>
+<referredKeyID>6CF3B720-A5F7-BA1D-0BF1-E21F3209C577</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
