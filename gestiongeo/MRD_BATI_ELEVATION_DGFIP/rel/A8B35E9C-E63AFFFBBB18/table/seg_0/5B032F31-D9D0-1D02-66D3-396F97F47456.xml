@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B032F31-D9D0-1D02-66D3-396F97F47456" name="TA_ELEVATION">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:03:09 UTC</createdTime>
+<comment><![CDATA[Table permettant de regrouper les valeurs d'élévation issues du LIDAR afin d'extruder les objets du plan topo de gestion.]]></comment>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="AAE83415-A4D2-3515-B8CF-4070D2ED61F4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:11:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table auto-incrémentée.]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="elevation" id="1AA50083-7F1D-AE7F-D653-AF3895F59CD2">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:15:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur d'élévation permettant d'extruder les polygones.]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,38,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="9018034F-A7D5-6AD2-6482-550E9A6344A8">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:15:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de distinguer les valeurs d'élévation entre valeur minimum, valeur moyenne, valeur médiane et valeur maximale.]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7060AA7-8717-22B2-8AB3-F41F3FFAFC67" referredColumn="23F6B285-CF39-73BD-7F71-0B435F75D336"/>
+</associations>
+</Column>
+<Column name="fid_source" id="C8DA6229-D6EC-87AF-8762-2FD0EE49C893">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:25:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère permettant de savoir à partir de quelle source a été déterminée chaque élévation présente dans la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6F03FA1-D300-849E-FBA3-22C29E65DE12" referredColumn="F1470FF9-F357-7C50-0B5A-BF70A618B7A0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1CC828EE-2690-01F8-0B70-D10F7C94974B" name="TA_ELEVATION_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:15:05 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAE83415-A4D2-3515-B8CF-4070D2ED61F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="919C87BE-4923-CD26-EE9F-409793F72F1B" name="TA_ELEVATION_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:28:44 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9018034F-A7D5-6AD2-6482-550E9A6344A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3256514E-600D-FC33-EDBE-4262C7B824D1" name="TA_ELEVATION_FID_SOURCE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:30:32 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8DA6229-D6EC-87AF-8762-2FD0EE49C893"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MRD_BATI_ELEVATION_DGFIP" id="CEF822F8-B77F-CDB5-96B9-58BDCF1C5000" version="3.5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:02:40 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CEF822F8-B77F-CDB5-96B9-58BDCF1C5000</designId>
+</OSDM_Design>

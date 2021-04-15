@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="858DB304-22E5-42ED-346E-AD5C6CC73349" mainViewID="50ED989A-B1B6-B6C2-AD98-A5A2135E3256">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:02:40 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

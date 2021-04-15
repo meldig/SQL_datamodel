@@ -1,0 +1,269 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B116DED-5D84-1F65-BF70-1154F8C189F0" name="TA_POINT_TOPO_G">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:38:48 UTC</createdTime>
+<comment><![CDATA[Objets ponctuels du plan topographique de gestion]]></comment>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="3DF81AF8-2D98-289B-F4A0-775C8FEA99C8">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant interne de l'objet geographique]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cla_inu" id="5082C157-6F08-1D33-0423-CC7AE51DE3BE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reference a la classe a laquelle appartient l'objet]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_ref" id="29906369-655A-B1A0-2788-7DEF6C4F7279">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant metier. Non obligatoire car certain objet geographique n'ont pas d''objet metier associe.]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_insee" id="92399F79-FDD9-D37F-1D82-20AE52290366">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code insee de la commune sur laquelle se situe ''objet]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="88624F6F-86B6-4DDA-FAE5-6F658ECF053D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Geometrie ORACLE de l''objet]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_dv" id="44DA5CDC-CDB4-AB28-6C31-340B26DEF2C2">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de debut de validite de l''objet]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_df" id="121D4A3C-49AD-B1CD-EF8D-E8940D29B16B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin de validite de l'objet.]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_on_valide" id="3C64E2CD-6AE1-B439-6413-4F2B9B7E5A16">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Statut valide O/N de l'objet]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_texte" id="009FDBE6-E887-69A6-BCCA-C826F3E55746">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Texte de commentaire]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2048 BYTE</dataTypeSize>
+<ownDataTypeParameters>2048 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_poi_ln" id="6821AB64-B0B1-44CA-EDE9-57F76C8C6716">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longueur de l''objet (en cm)]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_poi_la" id="3710617B-7C1E-FD3E-E03D-1394E2B21579">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Largeur de l''objet (en cm)]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_poi_ag_orientation" id="68FC2767-1FE1-A07C-BC82-F8CEADE40CCA">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Orientation de l''objet (en degre)]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_poi_ha" id="4FCFE3FA-9371-FAA2-686F-167F0839537D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Hauteur de l''objet (en cm)]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_poi_ag_inclinaison" id="547F39F4-D545-5489-F515-CDC750F6D228">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Inclinaison de l'objet (en degre, par rapport a la verticale).]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_type" id="458A9B0B-5ED4-0DD7-D655-5330E8EEB006">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type de geometrie de l''objet geographique]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_nmn" id="092A731E-F8DA-B0A4-AC84-14DD973CBC95">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auteur de la derniere modification]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_ds" id="DCE68F4F-22FD-DA7D-0688-7776171022A0">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de creation de l'objet]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_nms" id="6A6BFAD9-2843-E46E-1EE6-2DF0DC0D9A25">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auteur de la creation de l'objet]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_dm" id="137E2C6D-686F-47EB-6C6A-1CFCCAF965BC">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de deniere modification de l'objet]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A362C615-57FD-B54D-8CB3-700CAA5B9C22" name="TA_POINT_TOPO_G_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:55:03 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DF81AF8-2D98-289B-F4A0-775C8FEA99C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E4F2749-763D-6E2D-0011-412413A5FDCF" name="TA_SOURCE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:21:14 UTC</createdTime>
+<comment><![CDATA[Table permettant de connaître la source des données en base.]]></comment>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="F1470FF9-F357-7C50-0B5A-BF70A618B7A0">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:23:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="95F56968-F737-2598-CEFA-8DA4C7EEFF81">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:23:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom de la source]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B1DA109E-253D-30EF-FD45-829B57BD1658" name="TA_SOURCE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:23:59 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1470FF9-F357-7C50-0B5A-BF70A618B7A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

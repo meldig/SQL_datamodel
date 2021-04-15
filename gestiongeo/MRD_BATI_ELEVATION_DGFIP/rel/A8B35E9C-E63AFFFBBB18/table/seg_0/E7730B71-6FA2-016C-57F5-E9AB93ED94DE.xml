@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7730B71-6FA2-016C-57F5-E9AB93ED94DE" name="TA_SUR_TOPO_G_ELEVATION">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:31:39 UTC</createdTime>
+<comment><![CDATA[Table pivot permettant d'associer une ou plusieurs élévations à une ou plusieurs entités surfaciques de la table TA_SUR_TOPO_G.]]></comment>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fid_sur_topo_g" id="83BAA440-ED9C-CBC0-0DF6-B496D27EB8A3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:37:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Partie de la clé primaire qui est aussi la clé étrangère vers la table TA_SUR_TOPO_G indiquant l'entité à associer à une élévation.]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1920F996-E294-D754-080D-62CDB2D2529E" referredColumn="1BFF4C26-C699-B513-5EC5-EF8C20636946"/>
+</associations>
+</Column>
+<Column name="fid_elevation" id="3519DD34-5E2A-ECFA-CD93-7DA5BB8093E6">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:37:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Partie de la clé primaire qui est aussi la clé étrangère vers TA_ELEVATION permettant d'associer une élévation à une entité surfcique.]]></commentInRDBMS>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82640BB8-962F-1DB8-F1AA-0029CB1DFDA6" referredColumn="AAE83415-A4D2-3515-B8CF-4070D2ED61F4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7FD5C11-4EDF-DE5D-9D4B-895580941B34" name="TA_SUR_TOPO_G_ELEVATION_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:37:45 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83BAA440-ED9C-CBC0-0DF6-B496D27EB8A3"/>
+<colUsage columnID="3519DD34-5E2A-ECFA-CD93-7DA5BB8093E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="865A0F75-A8C7-E07D-13CE-599DA0A1DC47" name="TA_SUR_TOPO_G_ELEV_FID_ELEV_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:38:10 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3519DD34-5E2A-ECFA-CD93-7DA5BB8093E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05E21ACD-353D-7094-E33F-E98463F8155E" name="T_SUR_TP_G_ELEV_FID_TOPO_G_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 14:15:12 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83BAA440-ED9C-CBC0-0DF6-B496D27EB8A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

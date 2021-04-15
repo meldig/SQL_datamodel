@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="86C83DFD-9C83-FD6B-F40D-7DA1DFEF3CCE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-15 13:02:40 UTC</createdTime>
+<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>
