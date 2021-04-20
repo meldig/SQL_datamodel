@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B0A3026-C5C3-C672-BF8F-3B2BAD68474C" name="TA_ELEVATION">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:03:23 UTC</createdTime>
+<comment><![CDATA[Table permettant d'associer les valeurs d'élévation issues du LIDAR aux objets surfacique de la table TA_SUR_TOPO_G, permettant d'extruder les bâtiments et d'offrir une meilleure visualisation de la morphologie du territoire.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_64</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="2D7438E7-C904-3AB8-48BC-C9CAAD2F4FA7">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:06:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table auto-incrémentée.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="elevation" id="AA3224D6-0CC5-27B5-ADCC-8E2A27D6607F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:06:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur d'élévation permettant d'extruder les polygones.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,38,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="FBF96B55-6E37-55E7-908F-1B2080E4F2DE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:06:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de distinguer les valeurs d'élévation entre valeur minimum, valeur moyenne, valeur médiane et valeur maximale.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="91C3E5EF-A5DA-1F82-2C0C-77624AE346CA" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="fid_type_elevation" id="037DF1B0-80D1-1F3F-1D4D-049A1B62ACB2">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:06:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de distinguer l'élévation absolue (mesurée au-dessus du niveau de la mer, donc du niveau 0) de l'élévation relative (mesurée au-dessus du sol et donc pouvant différer du niveau 0).]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C4A2846-4713-31AB-CE04-E63ED537E37D" referredColumn="4A14C59A-AD9A-429E-5660-46C849C82FD1"/>
+</associations>
+</Column>
+<Column name="fid_sur_topo_g" id="F0C94AD8-739E-4532-F4F7-BF9FC60B3E9D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:06:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SUR_TOPO_G permettant d'associer une surface de cette table avec une élévation.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C221FB1-D0B8-A717-0F9D-A4E3978AC4E2" referredColumn="A6428227-9E9E-CDD6-40B0-2F000423B503"/>
+</associations>
+</Column>
+<Column name="fid_metadonnee" id="3A5C3E98-8DEF-A50C-FD36-29C3F74DE4B8">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:06:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE permettant de connaître la source, la date d'acquisition et l'organisme créateur de la donnée.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DE7F387-4E0D-3F74-A313-BF082190D0CC" referredColumn="E533FD02-B451-4BA0-EF70-1E4BA7BBD609"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66DF7B87-9C7A-1EF9-BB0A-22BE230C62AE" name="TA_ELEVATION_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:06:14 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D7438E7-C904-3AB8-48BC-C9CAAD2F4FA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C127B450-97E0-8C60-1C50-ED0ECDECA87B" name="TA_ELEVATION_FID_SUR_TOPO_G_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:06:50 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0C94AD8-739E-4532-F4F7-BF9FC60B3E9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A86F9121-E220-2A9A-EEF7-6865AEA0F799" name="TA_ELEVATION_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:07:13 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBF96B55-6E37-55E7-908F-1B2080E4F2DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33A6B915-EA63-9323-3DDB-C46956B0B53F" name="TA_ELEVATION_FID_TYPE_ELEVATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:07:33 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="037DF1B0-80D1-1F3F-1D4D-049A1B62ACB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E6A934D-2091-E459-067F-167FC1EAA5D2" name="TA_ELEVATION_FID_METADONNEE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:08:31 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A5C3E98-8DEF-A50C-FD36-29C3F74DE4B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="MRD - Bati-elevation_DGFIP" id="552F30F5-6C48-918E-6EE5-0D16B84404FE">
+<createdBy>bjacq</createdBy>
+<modifiedBy>bjacq</modifiedBy>
+<createdTime>2021-04-20 08:31:18 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>false</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="07902382-BB16-F2B5-7401-BDB84F2E22A5" otype="Table" vid="2D7A5C63-7AC1-8BF3-10A1-7FD75B7FABC8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="6" y="259" width="234" height="253"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="363B6A8E-1D00-8308-1688-12A30168CB6E" otype="Note" vid="A669C3F4-7B10-F850-3032-0E1029076C74">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="7" y="212" width="233" height="38"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Objets surfaciques du plan topographique de gestion</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3DCD645D-F32F-3D02-660A-8A35DA02282A" otype="Table" vid="B57436F3-46CE-68F1-8DB2-3D7EBC68C6B2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="745" y="392" width="306" height="156"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="EF8244A8-8454-2538-4C3C-E3F58E079046">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="745" y="261" width="249" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6B0A3026-C5C3-C672-BF8F-3B2BAD68474C" otype="Table" vid="5B5324F7-6313-26C2-5FBE-D63B35EE12ED">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="328" y="260" width="321" height="202"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="9EC23AD0-6632-6EC8-5632-ACE21E654F11" otype="Note" vid="8C3C6833-0DC4-DE6B-1438-54D4B53BF6C0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="750" y="173" width="243" height="79"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant les libellés utilisés pour catégoriser un type d&apos;objets.
+Exemple : élévation minimale, élévation médiane, élévation absolue, élévation relative</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="F7A7C299-F3FA-0FCB-3CAA-A958E097D53A" otype="Note" vid="510F54CE-EEB9-3F2C-3A0B-47DCF05FE60A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="744" y="557" width="309" height="66"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de liaison rassemblant la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="FA12FD1F-CA76-3DBF-673C-0529FB3A0748" otype="Note" vid="6083D298-B791-C5BA-5C31-18432D82036F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="327" y="164" width="322" height="88"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table permettant d&apos;associer les valeurs d&apos;élévation issues du LIDAR aux objets surfacique de la table TA_SUR_TOPO_G, permettant d&apos;extruder les bâtiments et d&apos;offrir une meilleure visualisation de la morphologie du territoire.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0DE7F387-4E0D-3F74-A313-BF082190D0CC" otype="FKIndexAssociation" vid_source="B57436F3-46CE-68F1-8DB2-3D7EBC68C6B2" vid_target="5B5324F7-6313-26C2-5FBE-D63B35EE12ED">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="745" y="442"/>
+<point x="649" y="442"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6C221FB1-D0B8-A717-0F9D-A4E3978AC4E2" otype="FKIndexAssociation" vid_source="2D7A5C63-7AC1-8BF3-10A1-7FD75B7FABC8" vid_target="5B5324F7-6313-26C2-5FBE-D63B35EE12ED">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="240" y="361"/>
+<point x="328" y="361"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7C4A2846-4713-31AB-CE04-E63ED537E37D" otype="FKIndexAssociation" vid_source="EF8244A8-8454-2538-4C3C-E3F58E079046" vid_target="5B5324F7-6313-26C2-5FBE-D63B35EE12ED">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="745" y="331"/>
+<point x="649" y="331"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="91C3E5EF-A5DA-1F82-2C0C-77624AE346CA" otype="FKIndexAssociation" vid_source="EF8244A8-8454-2538-4C3C-E3F58E079046" vid_target="5B5324F7-6313-26C2-5FBE-D63B35EE12ED">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="745" y="316"/>
+<point x="649" y="316"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>
