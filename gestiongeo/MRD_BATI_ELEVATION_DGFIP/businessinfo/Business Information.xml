@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="829E4FD5-3E47-D435-2393-2181E3FBAEE5">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-15 13:02:40 UTC</createdTime>
-<ownerDesignName>MRD_BATI_ELEVATION_DGFIP</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</BusinessInfoDesign>
