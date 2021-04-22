@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3FCBFE4B-659B-797E-F5EC-88E0C1050EF5" name="TA_FAMILLE_POINT_INTERET">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:26:37 UTC</createdTime>
+<comment><![CDATA[Familles permettant de distinguer les différents types de points d''intérêt de la Base Voie.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="41969DBF-418F-91B2-E8DA-8467CA7894E4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:30:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table permettant d'identifier les familles de la Base Voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_long" id="6547DDEB-AEB7-F977-E861-4D4EC3C62FC3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:30:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellés longs des familles des points d''intérêt de la Base Voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_court" id="4EB82079-AEEA-6FE1-43B2-2F8F53F1E8C3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 13:01:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellés courts des familles des points d''intérêt de la Base Voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code_famille" id="12BA07AB-D9FA-25F1-F567-EB1D0901A0F7">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 13:03:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code de chaque famille de point d''intérêt de la Base Voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB37CCE9-E9CA-15D5-F724-2075915411F6" name="TA_FAMILLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:30:11 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41969DBF-418F-91B2-E8DA-8467CA7894E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

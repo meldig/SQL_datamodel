@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A" name="TA_SEUIL">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:06:47 UTC</createdTime>
+<comment><![CDATA[Table contenant les seuils de la Base Voie.
+Plusieurs seuils peuvent se situer sur le même point géographique.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="17B52127-565B-8393-9FEF-543334313340">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table identifiant les seuils de la Base Voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_seuil" id="D99B45A6-FAF3-DF51-5C54-8B6246C6C109">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro du seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_parcelle" id="EB30B1EC-13E9-C39C-A5FA-32CD9C30C2B0">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro de la parcelle dans laquelle se situe le seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complement_numero_seuil" id="24765ED5-0CB4-7172-CF7E-1108AAEA9519">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Complément du numéro de seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_troncon" id="6C127CDB-D873-56EB-9742-D6DDFD40F1B3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant d'associer les seuils à leur tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF244E8C-1F09-FB59-1E21-906FC7A3C092" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
+</associations>
+</Column>
+<Column name="code_insee" id="D3A5C6F5-295F-91C1-53E1-A10A22ECDE63">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code INSEE de la commune dans laquelle se situe les seuils.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cote_rue" id="01FB9B87-3AC5-7887-151F-8402DDF25F0C">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Côté de la rue auquel est rattaché le seuil.
+G = gauche ; D = droite.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_saisie" id="0608F24E-E239-AC01-BE89-060E50FE4B72">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie du seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_edition" id="01061B5D-8FD9-A379-8E9C-57A220BBCD2A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de mise à jour du seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="1B4D2960-2288-DFBA-3BAC-132D92499845">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de type point de chaque seuil présent dans la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="838F77A7-636D-7ED1-59D2-8E4C5D8022C9" name="TA_SEUIL_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17B52127-565B-8393-9FEF-543334313340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82422627-6003-9035-5156-2BF56D6B1C3F" name="TA_SEUIL_FID_TRONCON_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:24:06 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C127CDB-D873-56EB-9742-D6DDFD40F1B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

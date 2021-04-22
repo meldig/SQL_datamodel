@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E" name="TA_TRONCON">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:45:22 UTC</createdTime>
+<comment><![CDATA[Table contenant les tronçons de la base voie.
+Les tronçons sont les objets de base de la base voie servant à constituer les rues qui elles-mêmes constituent les voies.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="6BAB728A-6409-837F-A6D7-816BDD4CA27D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:58:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table identifiant chaque tronçon. Cette pk est auto-incrémentée.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validite" id="5DC6E15B-E92D-2ACF-3835-5143C381705A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:58:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ de validité : 0 = tronçon invalide ; 1 = tronçon valide.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_saisie" id="D9C5D278-33CF-5E51-E173-5B6EC3BF9722">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:58:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie du tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_edition" id="C9A7B97F-D31D-7DDB-EE81-65B195997D39">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:58:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de nmise à jour du tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_debut_validite" id="871A7F37-947E-5296-E1BA-D6F69A0CFEDA">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 08:23:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cette date correspond à la date de début d'utilisation du tronçon (donc de sa validité). Attention, la date de début de validité diffère de la date de saisie puisque cette dernière ne peut se faire qu'après que tous les euils du tronçon aient été attribués.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_fin_validite" id="924DFBFA-28E9-2F08-3B94-37D4679D5B5D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:58:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin de validité du tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longueur_troncon" id="71CAAF94-D5E3-F972-6342-66D02D648620">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:58:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longeur du tronçon en mètre.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,38,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E592A88-A528-7A96-21AD-DCA6DBC07555" name="TA_TRONCON_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:58:56 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
