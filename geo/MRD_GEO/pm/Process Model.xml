@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="E1D371B6-84C8-A1B6-AC37-8F5A67F8BF6A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 12:41:54 UTC</createdTime>
+<ownerDesignName>MRD_GEO</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

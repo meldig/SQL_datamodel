@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4CF31EF7-F9D9-8098-7725-749BFFA1C174" name="TA_THEMATIQUE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 13:04:08 UTC</createdTime>
+<comment><![CDATA[Table regroupant toutes les thématiques utilisées dans la table ta_grille.]]></comment>
+<ownerDesignName>MRD_GEO</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="2AE5AA51-0FB4-879A-10DC-340515969C77">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 13:09:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="thematique" id="0EFD6A66-B64D-889A-BE5B-0E1C4BA4D75B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 13:09:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Thématique décrivant l'utilisation de la grille ta_grille.]]></commentInRDBMS>
+<ownerDesignName>MRD_GEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_ds" id="03A91467-C14F-EEE5-0862-45306141C446">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 13:09:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de création de la thématique.]]></commentInRDBMS>
+<ownerDesignName>MRD_GEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="594DBAD1-E3DF-9B58-17D2-C558672715AA" name="TA_THEMATIQUE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 13:09:37 UTC</createdTime>
+<ownerDesignName>MRD_GEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AE5AA51-0FB4-879A-10DC-340515969C77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
