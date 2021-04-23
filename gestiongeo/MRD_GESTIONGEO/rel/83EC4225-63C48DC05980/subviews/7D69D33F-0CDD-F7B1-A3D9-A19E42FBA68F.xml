@@ -1,0 +1,264 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="MRD - dossiers 3D" id="7D69D33F-0CDD-F7B1-A3D9-A19E42FBA68F">
+<createdBy>bjacq</createdBy>
+<modifiedBy>bjacq</modifiedBy>
+<createdTime>2021-04-22 13:35:38 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1573D9C0-ED0F-64B6-B3D5-53DDC984A513" otype="Table" vid="BD3E7D1B-12C5-43C1-A2B8-7B9CD4D80F4B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="721" y="596" width="348" height="117"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="36360475-FC31-9220-4FD3-8108FB11BA10" otype="Note" vid="A0F6C3B6-1B7B-916D-EF16-99A8E25442DB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="387" y="909" width="361" height="45"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;associer un dossier à un ou plusieurs prestataires et demandeurs.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="3C16FBB7-BFF2-D552-DA1F-1265261D51A4" otype="Note" vid="7B479A39-6FEA-1EC5-601B-9531333ED2E2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1061" y="99" width="287" height="186"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table regroupant tous les produits 3D faits à partir des dossiers 3D recensés dans la table TA_DOSSIER_3D.
+Ces produits sont regroupés dans les catégories suivantes :
+- photo ;
+- vidéo ;
+- orthophoto ;
+- modèle numérique ;
+- maillage ;
+- nuage ;</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3F65754E-A684-5BE3-7D46-1BBE8998F970" otype="Table" vid="50569074-B788-6FBB-74ED-73CBFC4C8508">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1089" y="295" width="235" height="111"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="48B783C1-F945-588A-24F8-C34EA0CBFED4" otype="Note" vid="5389EEC8-A85E-6438-7287-EFD4F775EBB8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="713" y="358" width="184" height="66"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Communes de la MEL actuelle.
+Cette table est présente dans le schéma G_REFERENTIEL.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4A65AB69-B277-89C2-955D-C0563D2B4DFB" otype="Table" vid="F0B57B61-D302-2389-44D7-DAB55E689FF7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="838" y="784" width="230" height="93"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="4AF39DF8-8D14-4026-D7CF-7814C56BE9A5" otype="Note" vid="EEDACA41-C9FC-AA09-5352-245C1499521D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="237" y="627" width="143" height="54"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant tous les dossiers 3D de l&apos;UF Acquisition de données.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="622A44BB-20D3-7CB2-D31A-13EF882EEC65" otype="Table" vid="AA0D94A7-A82C-9FC8-5C1D-CAF282126032">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="499" y="297" width="209" height="243"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7566290E-C920-4258-7560-55B69E04A0EF" otype="Table" vid="BF74F937-98A6-13F0-85FD-94AE4D5C05AB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="545" y="180" width="178" height="75"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="A5C24048-9245-0D39-C006-A9426F3F6B91" otype="Note" vid="14D2C7C0-7112-8509-AC92-566054D4FD57">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="26" y="307" width="292" height="100"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;associer un ou plusieurs libellés du schéma G_GEO à un ou plusieurs objets du schéma G_GESTIONGEO.
+Dans le cas présent elle permet d&apos;associer les états d&apos;avancement et les types de données à chaque dossier 3D.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D2823E7A-095E-86EC-CDBF-90606366FB3F" otype="Table" vid="7C7783B4-D223-6FA9-8A30-7E9C8082F008">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="389" y="584" width="266" height="142"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D3226AAB-4F83-CF0F-6556-12BFF7CDDF18" otype="Table" vid="764A7C6A-128A-3B23-4EDD-5E053B3070BE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="26" y="414" width="293" height="117"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="DB9FCCD2-98CB-FB1C-56B4-9E954A163425" otype="Note" vid="A50EA173-5A41-2CC5-6408-02B56DA95B4F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="838" y="881" width="228" height="104"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table regroupant tous les acteurs en lien avec l&apos;équipe 3D de l&apos;UF Acquisition de données.
+l peuvent être de deux types :
+- prestataire ;
+- demandeur ;</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E24099D6-DBA7-89F4-F101-8C58180D89F4" otype="Note" vid="91A261AD-3D1A-044F-FC9F-BEA25DAA51E1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="530" y="109" width="218" height="62"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table permetant d&apos;accéder aux libellés de TA_LIBELLE_LONG qui catégorisent les objets des schémas.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="EA252777-9A74-C66E-5404-B3DAF88C4C40" otype="Table" vid="E50E4F12-0596-2730-C2DD-92ADBE1EAB6B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="386" y="789" width="362" height="115"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="F35E0238-AE67-E46C-BBF3-7B3AB742548E" otype="Note" vid="7931C0FB-051B-0791-F298-1B0BCB75BA2A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="721" y="519" width="345" height="71"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;associer un ou plusieurs dossiers 3D de la table TA_DOSSIER_3D à un ou plusieurs produits 3D de la table TA_PRODUIT_3D dans lesquels les premiers sont utilisés.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>12</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="382FEFD8-7D2C-3561-CF18-9CE369F6815D" otype="FKIndexAssociation" vid_source="BF74F937-98A6-13F0-85FD-94AE4D5C05AB" vid_target="764A7C6A-128A-3B23-4EDD-5E053B3070BE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="545" y="246"/>
+<point x="316" y="414"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4EFD566C-56CE-77F9-8D4D-72864B372A63" otype="FKIndexAssociation" vid_source="7C7783B4-D223-6FA9-8A30-7E9C8082F008" vid_target="764A7C6A-128A-3B23-4EDD-5E053B3070BE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="389" y="585"/>
+<point x="284" y="531"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="57978B6A-18CB-DB7E-8075-0CA939830832" otype="FKIndexAssociation" vid_source="50569074-B788-6FBB-74ED-73CBFC4C8508" vid_target="BD3E7D1B-12C5-43C1-A2B8-7B9CD4D80F4B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1149" y="406"/>
+<point x="1069" y="647"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6AA9C2E3-3FD2-73A9-70EA-E7A6C1614DDA" otype="FKIndexAssociation" vid_source="7C7783B4-D223-6FA9-8A30-7E9C8082F008" vid_target="BD3E7D1B-12C5-43C1-A2B8-7B9CD4D80F4B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="655" y="654"/>
+<point x="721" y="654"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7BB5B8F8-2FAA-39DE-B28E-95613BA6D072" otype="FKIndexAssociation" vid_source="AA0D94A7-A82C-9FC8-5C1D-CAF282126032" vid_target="7C7783B4-D223-6FA9-8A30-7E9C8082F008">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="577" y="540"/>
+<point x="577" y="584"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="9C137888-4207-51E6-E752-7E976DC85923" otype="FKIndexAssociation" vid_source="7C7783B4-D223-6FA9-8A30-7E9C8082F008" vid_target="E50E4F12-0596-2730-C2DD-92ADBE1EAB6B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="522" y="726"/>
+<point x="522" y="789"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="9C43C30B-5051-E941-EA96-E1E00EB9A948" otype="FKIndexAssociation" vid_source="F0B57B61-D302-2389-44D7-DAB55E689FF7" vid_target="E50E4F12-0596-2730-C2DD-92ADBE1EAB6B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="838" y="833"/>
+<point x="748" y="833"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D9785E2C-5B03-6665-45F2-21046D50FD58" otype="FKIndexAssociation" vid_source="BF74F937-98A6-13F0-85FD-94AE4D5C05AB" vid_target="50569074-B788-6FBB-74ED-73CBFC4C8508">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="723" y="238"/>
+<point x="1089" y="323"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

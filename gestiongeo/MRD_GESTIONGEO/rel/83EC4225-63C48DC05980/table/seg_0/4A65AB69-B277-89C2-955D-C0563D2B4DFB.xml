@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A65AB69-B277-89C2-955D-C0563D2B4DFB" name="TA_ACTEURS_3D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:10:09 UTC</createdTime>
+<comment><![CDATA[Table regroupant tous les acteurs en lien avec l'équipe 3D de l'UF Acquisition de données.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="72F7E6FC-D25B-99D5-227B-FF40BB4C8AA6">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:13:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="365E213C-283C-9916-10D5-D461747D360E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:13:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom de l''acteur]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_type_acteur" id="52459518-6FB8-7802-BA19-1726E3F45074">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:13:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère ves la table TA_LIBELLE permettant de distinguer les prestataires des demandeurs parmi les acteurs 3D.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="80136172-3BD7-71AB-606F-386DDCE142A5" name="TA_ACTEURS_3D_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:13:34 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72F7E6FC-D25B-99D5-227B-FF40BB4C8AA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

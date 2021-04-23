@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7566290E-C920-4258-7560-55B69E04A0EF" name="TA_LIBELLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 08:34:18 UTC</createdTime>
+<comment><![CDATA[Table permetant d'accéder aux libellés de TA_LIBELLE_LONG qui catégorisent les objets des schémas.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="E81F25D7-7E97-73C7-0B60-A70969091B6E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 08:43:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle_long" id="E2C02509-FB5D-D09D-BF2D-04C791E9640E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 08:43:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE_LONG, permettant d'associer un libelle catégorisant un objet à la PK de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7DAD8D5C-5657-D69B-883C-2FED08C36A2C" name="TA_LIBELLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 08:43:32 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E81F25D7-7E97-73C7-0B60-A70969091B6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

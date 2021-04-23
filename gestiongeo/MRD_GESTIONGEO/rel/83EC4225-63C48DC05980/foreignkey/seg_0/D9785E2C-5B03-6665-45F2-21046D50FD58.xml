@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D9785E2C-5B03-6665-45F2-21046D50FD58" containerWithKeyObject="3F65754E-A684-5BE3-7D46-1BBE8998F970" localFKIndex="D3A8DA0E-0978-8CDC-AA96-C52F24B62688" name="TA_PRODUIT_3D_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 08:45:35 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<referredTableLongName>TA_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7566290E-C920-4258-7560-55B69E04A0EF</referredTableID>
+<keyObject>7DAD8D5C-5657-D69B-883C-2FED08C36A2C</keyObject>
+<referredKeyID>7DAD8D5C-5657-D69B-883C-2FED08C36A2C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

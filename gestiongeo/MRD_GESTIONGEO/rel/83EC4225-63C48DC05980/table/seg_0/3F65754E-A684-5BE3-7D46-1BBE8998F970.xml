@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F65754E-A684-5BE3-7D46-1BBE8998F970" name="TA_PRODUIT_3D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 07:52:33 UTC</createdTime>
+<comment><![CDATA[Table regroupant tous les produits 3D faits à partir des dossiers 3D recensés dans la table TA_DOSSIER_3D.
+Ces produits sont regroupés dans les catégories suivantes :
+- photo ;
+- vidéo ;
+- orthophoto ;
+- modèle numérique ;
+- maillage ;
+- nuage ;]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="A56DB6FC-1391-B2C4-6B4B-C6A0ACA8D505">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 07:56:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="97A2096E-3474-246E-A357-20ECE91CB709">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 07:56:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom du produit/fichier]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="DB56B419-0FAC-9E29-4A44-A3F220351185">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 07:56:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type de produit 3D dans lequel les dossiers issus des relevés 3D sont utilisés.
+Exemple : photo, vidéo, nuage de points, etc.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9785E2C-5B03-6665-45F2-21046D50FD58" referredColumn="E81F25D7-7E97-73C7-0B60-A70969091B6E"/>
+</associations>
+</Column>
+<Column name="detail" id="96FB0C75-366E-B275-510C-5275A5203CEC">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 07:56:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Description rapide du produit.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE89F650-1F4C-4BC1-93D6-9E3D7FD4F004" name="TA_PRODUIT_3D_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 07:56:48 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A56DB6FC-1391-B2C4-6B4B-C6A0ACA8D505"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3A8DA0E-0978-8CDC-AA96-C52F24B62688" name="TA_PRODUIT_3D_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 08:45:35 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB56B419-0FAC-9E29-4A44-A3F220351185"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

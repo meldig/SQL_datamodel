@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3226AAB-4F83-CF0F-6556-12BFF7CDDF18" name="TA_RELATION_LIBELLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:28:42 UTC</createdTime>
+<comment><![CDATA[Table pivot permettant d'associer un ou plusieurs libellés à un ou plusieurs dossiers 3D.
+Dans le cas présent elle permet d'associer les états d'avancement et les types de données à chaque dossier 3D.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="ED2DF061-A7C6-6CED-FB90-3729D05A3A03">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:34:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="1CAB7C07-B7BB-862E-5D88-8977341795A7">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:34:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant d'affecter un ou plusieurs états d'avancement à un dossier et type de données.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="382FEFD8-7D2C-3561-CF18-9CE369F6815D" referredColumn="E81F25D7-7E97-73C7-0B60-A70969091B6E"/>
+</associations>
+</Column>
+<Column name="fid_objet" id="B72A970E-9E1C-F04C-6F67-09C50760C504">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:34:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_DOSSIER_3D permettant d'assoccier un ou plusieurs dossiers à un ou plusieurs états d'avancement et types de données.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4EFD566C-56CE-77F9-8D4D-72864B372A63" referredColumn="FF89FD33-BC01-F622-E595-D40907070132"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ABB6B9DE-26E3-F00C-4DCC-9AB56F6C8D70" name="TA_RELATION_LIBELLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:34:45 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED2DF061-A7C6-6CED-FB90-3729D05A3A03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F57E3A8-3F66-9983-11D5-92D0BA8693B2" name="TA_RELATION_LIBELLE_FID_OBJET_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:38:27 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B72A970E-9E1C-F04C-6F67-09C50760C504"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C39BF7F3-099F-A75A-6CB2-51242438930C" name="TA_RELATION_LIBELLE_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 08:45:01 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CAB7C07-B7BB-862E-5D88-8977341795A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

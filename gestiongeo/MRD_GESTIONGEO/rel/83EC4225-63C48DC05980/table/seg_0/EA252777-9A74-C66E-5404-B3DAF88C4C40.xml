@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA252777-9A74-C66E-5404-B3DAF88C4C40" name="TA_RELATION_DOSSIER_ACTEUR_3D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:13:54 UTC</createdTime>
+<comment><![CDATA[Table pivot permettant d'associer un dossier à un ou plusieurs prestataires et demandeurs.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="DFA1FD56-503C-35AB-F092-E93E1BEFC7E4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 08:21:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_dossier" id="127D4CCE-FF1A-5780-D789-1AE83F366CE2">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:17:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_DOSSIER_3D permettant d'associer un dossier à un acteur de la 3D.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C137888-4207-51E6-E752-7E976DC85923" referredColumn="FF89FD33-BC01-F622-E595-D40907070132"/>
+</associations>
+</Column>
+<Column name="fid_acteur" id="5CF6C376-81FB-8C72-6A8E-5C9B3481D7E5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:17:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_ACTEUR_3D permettant d'associer un acteur à un dossier 3D.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C43C30B-5051-E941-EA96-E1E00EB9A948" referredColumn="72F7E6FC-D25B-99D5-227B-FF40BB4C8AA6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22FE9D9D-3C3E-EB43-87A2-924CE6AB6A85" name="TA_RELATION_DOSSIER_ACTEUR_3D_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:17:27 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="127D4CCE-FF1A-5780-D789-1AE83F366CE2"/>
+<colUsage columnID="5CF6C376-81FB-8C72-6A8E-5C9B3481D7E5"/>
+<colUsage columnID="DFA1FD56-503C-35AB-F092-E93E1BEFC7E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C2004A6-A28D-ABE1-E40C-63A7DB21D012" name="TA_RELATION_DOSSIER_ACTEUR_3D_FID_DOSSIER_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:17:33 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="127D4CCE-FF1A-5780-D789-1AE83F366CE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31ACC14B-949A-B352-9771-AB39EE9347D6" name="TA_RELATION_DOSSIER_ACTEUR_3D_FID_ACTEURS_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:17:58 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CF6C376-81FB-8C72-6A8E-5C9B3481D7E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2823E7A-095E-86EC-CDBF-90606366FB3F" name="TA_DOSSIER_3D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 14:37:08 UTC</createdTime>
+<comment><![CDATA[Table rassemblant tous les dossiers 3D de l'UF Acquisition de données.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="FF89FD33-BC01-F622-E595-D40907070132">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:03:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_saisie" id="04FCBCC5-A510-C823-5E7F-FA4A909C790F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:03:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[date de saisie du relevé, correspond à sa date d'insertion en abse (en non à la date à laquelle le relevé a été fait sur le terrain).]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_commune" id="EE7C592A-55DB-DBF0-5754-5D7F11075B42">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:03:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la vue matérialisée G_REFERENTIEL.A_COMMUNE permettant d'associer un relevé à la commune dans laquelle il a été fait.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BB5B8F8-2FAA-39DE-B28E-95613BA6D072" referredColumn="C0AD8B6D-049D-A5A6-6D75-6B32379E6268"/>
+</associations>
+</Column>
+<Column name="nom_mel" id="E16C239C-1E0C-3C2E-46A0-9A12AC2250CA">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:03:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom du dossier à la MEL correspondant également au lieu du dossier, c'est-à-dire le nom du bâtiment, ouvrage du dossier.
+Exemple : moulin_brabant]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_prestataire" id="273484A6-8351-A341-3D0A-4DCE02DDE602">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:03:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom du dossier chez le prestataire ayant fait les levés du dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_type_donnee" id="35A9F396-3A40-8934-4A04-DC6E5D816A27">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:09:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de connaître le type de données de chaque dossier 3D.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="368CD969-205B-4B94-17E1-3F8B9453E102" name="TA_DOSSIER_3D_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 15:03:20 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF89FD33-BC01-F622-E595-D40907070132"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B90F7A3C-22AD-47B5-E4EC-0F44E5F74028" name="TA_DOSSIER_3D_FID_COMMUNE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 08:57:14 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE7C592A-55DB-DBF0-5754-5D7F11075B42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
