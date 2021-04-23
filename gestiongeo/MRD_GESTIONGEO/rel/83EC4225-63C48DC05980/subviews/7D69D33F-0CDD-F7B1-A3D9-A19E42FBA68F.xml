@@ -16,11 +16,11 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1573D9C0-ED0F-64B6-B3D5-53DDC984A513" otype="Table" vid="BD3E7D1B-12C5-43C1-A2B8-7B9CD4D80F4B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="721" y="596" width="348" height="117"/>
+<bounds x="721" y="596" width="358" height="129"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="36360475-FC31-9220-4FD3-8108FB11BA10" otype="Note" vid="A0F6C3B6-1B7B-916D-EF16-99A8E25442DB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="387" y="909" width="361" height="45"/>
+<bounds x="387" y="919" width="361" height="45"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -59,7 +59,7 @@ Ces produits sont regroupés dans les catégories suivantes :
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3F65754E-A684-5BE3-7D46-1BBE8998F970" otype="Table" vid="50569074-B788-6FBB-74ED-73CBFC4C8508">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1089" y="295" width="235" height="111"/>
+<bounds x="1089" y="295" width="235" height="123"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="48B783C1-F945-588A-24F8-C34EA0CBFED4" otype="Note" vid="5389EEC8-A85E-6438-7287-EFD4F775EBB8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -100,7 +100,7 @@ Cette table est présente dans le schéma G_REFERENTIEL.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="622A44BB-20D3-7CB2-D31A-13EF882EEC65" otype="Table" vid="AA0D94A7-A82C-9FC8-5C1D-CAF282126032">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="499" y="297" width="209" height="243"/>
+<bounds x="495" y="289" width="213" height="252"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7566290E-C920-4258-7560-55B69E04A0EF" otype="Table" vid="BF74F937-98A6-13F0-85FD-94AE4D5C05AB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -125,7 +125,7 @@ Dans le cas présent elle permet d&apos;associer les états d&apos;avancement et
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D2823E7A-095E-86EC-CDBF-90606366FB3F" otype="Table" vid="7C7783B4-D223-6FA9-8A30-7E9C8082F008">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="389" y="584" width="266" height="142"/>
+<bounds x="389" y="584" width="266" height="151"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D3226AAB-4F83-CF0F-6556-12BFF7CDDF18" otype="Table" vid="764A7C6A-128A-3B23-4EDD-5E053B3070BE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -168,7 +168,7 @@ l peuvent être de deux types :
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="EA252777-9A74-C66E-5404-B3DAF88C4C40" otype="Table" vid="E50E4F12-0596-2730-C2DD-92ADBE1EAB6B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="386" y="789" width="362" height="115"/>
+<bounds x="386" y="789" width="368" height="123"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="F35E0238-AE67-E46C-BBF3-7B3AB742548E" otype="Note" vid="7931C0FB-051B-0791-F298-1B0BCB75BA2A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -202,8 +202,8 @@ l peuvent être de deux types :
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="389" y="585"/>
-<point x="284" y="531"/>
+<point x="389" y="588"/>
+<point x="281" y="531"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="57978B6A-18CB-DB7E-8075-0CA939830832" otype="FKIndexAssociation" vid_source="50569074-B788-6FBB-74ED-73CBFC4C8508" vid_target="BD3E7D1B-12C5-43C1-A2B8-7B9CD4D80F4B">
@@ -211,8 +211,8 @@ l peuvent être de deux types :
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1149" y="406"/>
-<point x="1069" y="647"/>
+<point x="1144" y="418"/>
+<point x="965" y="596"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6AA9C2E3-3FD2-73A9-70EA-E7A6C1614DDA" otype="FKIndexAssociation" vid_source="7C7783B4-D223-6FA9-8A30-7E9C8082F008" vid_target="BD3E7D1B-12C5-43C1-A2B8-7B9CD4D80F4B">
@@ -220,8 +220,8 @@ l peuvent être de deux types :
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="655" y="654"/>
-<point x="721" y="654"/>
+<point x="655" y="660"/>
+<point x="721" y="660"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7BB5B8F8-2FAA-39DE-B28E-95613BA6D072" otype="FKIndexAssociation" vid_source="AA0D94A7-A82C-9FC8-5C1D-CAF282126032" vid_target="7C7783B4-D223-6FA9-8A30-7E9C8082F008">
@@ -229,8 +229,8 @@ l peuvent être de deux types :
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="577" y="540"/>
-<point x="577" y="584"/>
+<point x="575" y="541"/>
+<point x="575" y="584"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="9C137888-4207-51E6-E752-7E976DC85923" otype="FKIndexAssociation" vid_source="7C7783B4-D223-6FA9-8A30-7E9C8082F008" vid_target="E50E4F12-0596-2730-C2DD-92ADBE1EAB6B">
@@ -238,7 +238,7 @@ l peuvent être de deux types :
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="522" y="726"/>
+<point x="522" y="735"/>
 <point x="522" y="789"/>
 </points>
 </Connector>
@@ -248,7 +248,7 @@ l peuvent être de deux types :
 <lineWidth>1</lineWidth>
 <points>
 <point x="838" y="833"/>
-<point x="748" y="833"/>
+<point x="754" y="833"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D9785E2C-5B03-6665-45F2-21046D50FD58" otype="FKIndexAssociation" vid_source="BF74F937-98A6-13F0-85FD-94AE4D5C05AB" vid_target="50569074-B788-6FBB-74ED-73CBFC4C8508">
@@ -256,8 +256,8 @@ l peuvent être de deux types :
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="723" y="238"/>
-<point x="1089" y="323"/>
+<point x="723" y="239"/>
+<point x="1089" y="327"/>
 </points>
 </Connector>
 </connectors>
