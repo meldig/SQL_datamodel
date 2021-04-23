@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6DD3DE3A-6B18-015F-DF1B-DCDD02DA15C2" name="TA_DOSSIER_3D_LOG">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:22:53 UTC</createdTime>
+<comment><![CDATA[Table de log recensant toutes les actions effectuées sur les dossiers 3D. Pour rappel, un dossier ne peut pas être supprimé, mais son état d''avancement peut devenir "abandonne".]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="E7C74137-9B1A-3FC4-B3FB-77959221901B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:35:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_dossier_3d" id="EA18B7F1-9648-E992-EDC3-D6A5B8724003">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:35:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_DOSSIER_3D permettant d'associer un dossier à ses dates de création, édition, suppression.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CD1AFD8-AEA5-E41C-8D05-952C054DA4D2" referredColumn="FF89FD33-BC01-F622-E595-D40907070132"/>
+</associations>
+</Column>
+<Column name="date_creation" id="FE3FDCB6-F67D-8D80-B6C4-E7C9A2F0E159">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:35:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de création du dossier 3D.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_edition" id="41A5CBE4-DC76-EA8E-65FF-AAE64CC15EE5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:35:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date d'édition de chaque dossier 3D.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_creation" id="0E076DBE-A217-460C-49CE-3BBD061FADDF">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:35:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_SOURCE permettant d'associer le pnom de l''agent au dossier qu''il a créé.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E618850E-6A6D-0000-F76A-8C761979E5C7" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+</associations>
+</Column>
+<Column name="fid_pnom_edition" id="8809A9AA-6DEA-D1A7-3E2F-12F9612D4162">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:35:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_SOURCE permettant d'associer le pnom de l''agent au dossier qu''il a modifié.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>80</dataTypePrecision>
+<ownDataTypeParameters>,80,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3B16061-E69F-525D-9CF4-72977E3F773B" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39F880F7-529E-F876-F0F6-A59359D47FD5" name="TA_DOSSIER_3D_LOG_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:35:29 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7C74137-9B1A-3FC4-B3FB-77959221901B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB2171DF-B4CE-E8D7-D75D-53F636F92FA2" name="TA_DOSSIER_3D_LOG_FID_DOSSIER_3D_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:36:07 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA18B7F1-9648-E992-EDC3-D6A5B8724003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1EE540F-AD1D-C2F1-ADA2-CFB1D29CAAAF" name="TA_DOSSIER_3D_LOG_FID_PNOM_CREATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:39:28 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E076DBE-A217-460C-49CE-3BBD061FADDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CA81FD2-034E-2525-E6B0-273CB800E965" name="TA_DOSSIER_3D_LOG_FID_PNOM_EDITION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:40:01 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8809A9AA-6DEA-D1A7-3E2F-12F9612D4162"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -161,6 +161,10 @@ Dans un premier temps l&apos;appli se limitera au plan topo et au données des I
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1851" y="495" width="316" height="354"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6DD3DE3A-6B18-015F-DF1B-DCDD02DA15C2" otype="Table" vid="D564B453-3B1B-CD54-C8E8-DBCC3B52DF79">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="50" width="170" height="110"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="6F56E15C-9289-FE04-4E3F-9153584AA1F6" otype="Note" vid="8BD95E78-DF98-CA89-E32E-745E03F43061">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="2198" y="878" width="298" height="251"/>
@@ -451,6 +455,15 @@ Elle est remplie par :
 <point x="1499" y="600"/>
 </points>
 </Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4CD1AFD8-AEA5-E41C-8D05-952C054DA4D2" otype="FKIndexAssociation" vid_source="68CAD0E6-B592-5927-289C-9A05518CF24C" vid_target="D564B453-3B1B-CD54-C8E8-DBCC3B52DF79">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="50" y="105"/>
+<point x="50" y="105"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4EFD566C-56CE-77F9-8D4D-72864B372A63" otype="FKIndexAssociation" vid_source="68CAD0E6-B592-5927-289C-9A05518CF24C" vid_target="FDBEEA79-27AE-7763-F7A0-54D45F1660D6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -541,6 +554,15 @@ Elle est remplie par :
 <point x="70" y="135"/>
 </points>
 </Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B3B16061-E69F-525D-9CF4-72977E3F773B" otype="FKIndexAssociation" vid_source="D7CA2585-3B3F-7CB0-E084-64B54A5D84A9" vid_target="D564B453-3B1B-CD54-C8E8-DBCC3B52DF79">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="602" y="239"/>
+<point x="220" y="129"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B4049D17-B8FD-EAA2-57D8-8670031BB7C0" otype="FKIndexAssociation" vid_source="A994739A-8B8C-D540-738C-89C7440B2133" vid_target="13DDC196-F9A6-7A2F-5312-330D3BC94063">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -584,6 +606,15 @@ Elle est remplie par :
 <points>
 <point x="90" y="145"/>
 <point x="220" y="145"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="E618850E-6A6D-0000-F76A-8C761979E5C7" otype="FKIndexAssociation" vid_source="D7CA2585-3B3F-7CB0-E084-64B54A5D84A9" vid_target="D564B453-3B1B-CD54-C8E8-DBCC3B52DF79">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="602" y="239"/>
+<point x="220" y="129"/>
 </points>
 </Connector>
 </connectors>

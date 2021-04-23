@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57978B6A-18CB-DB7E-8075-0CA939830832" containerWithKeyObject="1573D9C0-ED0F-64B6-B3D5-53DDC984A513" localFKIndex="B1928894-0D9E-9CC8-0B1D-CCDEFC7F7E4E" name="TA_RELATION_DOSSIER_PRODUIT_3D_FID_PRODUIT_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57978B6A-18CB-DB7E-8075-0CA939830832" containerWithKeyObject="1573D9C0-ED0F-64B6-B3D5-53DDC984A513" localFKIndex="B1928894-0D9E-9CC8-0B1D-CCDEFC7F7E4E" name="TA_RELATION_DOSSIER_3D_PRODUCTION_FID_PRODUIT_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-23 08:05:39 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<referredTableLongName>TA_PRODUIT_3D</referredTableLongName>
+<referredTableLongName>TA_DOSSIER_3D_PRODUCTION</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>3F65754E-A684-5BE3-7D46-1BBE8998F970</referredTableID>
 <keyObject>AE89F650-1F4C-4BC1-93D6-9E3D7FD4F004</keyObject>

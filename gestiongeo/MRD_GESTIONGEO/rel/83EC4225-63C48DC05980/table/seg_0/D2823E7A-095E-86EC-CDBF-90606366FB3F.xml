@@ -21,18 +21,6 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_saisie" id="04FCBCC5-A510-C823-5E7F-FA4A909C790F">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 15:03:20 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de saisie du relevé, correspond à sa date d'insertion en abse (en non à la date à laquelle le relevé a été fait sur le terrain).]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="fid_commune" id="EE7C592A-55DB-DBF0-5754-5D7F11075B42">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 15:03:20 UTC</createdTime>
@@ -42,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7BB5B8F8-2FAA-39DE-B28E-95613BA6D072" referredColumn="C0AD8B6D-049D-A5A6-6D75-6B32379E6268"/>
@@ -75,6 +63,19 @@ Exemple : moulin_brabant]]></commentInRDBMS>
 <ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="url_dossier" id="09485851-A6AC-677A-6B11-F352EBE8A28B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:46:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[URL du dossier stocké sur batzella.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="fid_type_donnee" id="35A9F396-3A40-8934-4A04-DC6E5D816A27">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 15:09:25 UTC</createdTime>
@@ -86,6 +87,30 @@ Exemple : moulin_brabant]]></commentInRDBMS>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="9D49C4BC-B647-9865-9DE6-6EA44A5424C8">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:17:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Périmètre de type multi-polygone de chaque dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_enregistrement_mission" id="C5EA5CCF-E22C-7ECF-F585-3B8090794C6D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-23 14:50:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Année durant laquelle la mission a été enregistrée.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

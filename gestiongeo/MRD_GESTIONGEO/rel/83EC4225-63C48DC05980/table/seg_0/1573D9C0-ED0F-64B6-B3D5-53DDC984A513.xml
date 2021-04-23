@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1573D9C0-ED0F-64B6-B3D5-53DDC984A513" name="TA_RELATION_DOSSIER_PRODUIT_3D">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1573D9C0-ED0F-64B6-B3D5-53DDC984A513" name="TA_RELATION_DOSSIER_3D_PRODUCTION">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-23 07:57:27 UTC</createdTime>
-<comment><![CDATA[Table pivot permettant d'associer un ou plusieurs dossiers 3D de la table TA_DOSSIER_3D à un ou plusieurs produits 3D de la table TA_PRODUIT_3D dans lesquels les premiers sont utilisés.]]></comment>
+<comment><![CDATA[Table pivot permettant d'associer un ou plusieurs dossiers 3D de la table TA_DOSSIER_3D à une ou plusieurs productions de la table TA_DOSSIER_3D_PRODUCTION dans lesquelles les premiers sont utilisés.]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <ordsAlias>table_19</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -53,7 +53,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0F5E2188-E7F8-5A5E-7EC8-1BE233086F06" name="TA_RELATION_DOSSIER_PRODUIT_3D_PK">
+<ind_PK_UK id="0F5E2188-E7F8-5A5E-7EC8-1BE233086F06" name="TA_RELATION_DOSSIER_3D_PRODUCTION_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-23 08:03:24 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
@@ -64,7 +64,7 @@
 <colUsage columnID="3A69C79E-5991-5CA3-C4EF-4919767366D2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7EBCE4EF-3217-98E2-A7B2-003BEFDFEEAF" name="TA_RELATION_DOSSIER_PRODUIT_3D_FID_DOSSIER_FK">
+<ind_PK_UK id="7EBCE4EF-3217-98E2-A7B2-003BEFDFEEAF" name="TA_RELATION_DOSSIER_3D_PRODUCTION_FID_DOSSIER_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-23 08:05:13 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
@@ -74,7 +74,7 @@
 <colUsage columnID="E4D23960-C2B2-FB31-ECEC-1D70D47CEDCE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B1928894-0D9E-9CC8-0B1D-CCDEFC7F7E4E" name="TA_RELATION_DOSSIER_PRODUIT_3D_FID_PRODUIT_FK">
+<ind_PK_UK id="B1928894-0D9E-9CC8-0B1D-CCDEFC7F7E4E" name="TA_RELATION_DOSSIER_3D_PRODUCTION_FID_PRODUIT_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-23 08:05:39 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
