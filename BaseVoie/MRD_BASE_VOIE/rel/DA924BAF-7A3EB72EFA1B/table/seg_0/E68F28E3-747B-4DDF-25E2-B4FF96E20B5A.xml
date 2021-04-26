@@ -70,7 +70,7 @@ Plusieurs seuils peuvent se situer sur le même point géographique.]]></comment
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="CF244E8C-1F09-FB59-1E21-906FC7A3C092" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
@@ -89,11 +89,13 @@ Plusieurs seuils peuvent se situer sur le même point géographique.]]></comment
 <ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cote_rue" id="01FB9B87-3AC5-7887-151F-8402DDF25F0C">
+<Column name="cote_tronçon" id="01FB9B87-3AC5-7887-151F-8402DDF25F0C">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Côté de la rue auquel est rattaché le seuil.
-G = gauche ; D = droite.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Côté du tronçon auquel est rattaché le seuil.
+G = gauche ; D = droite.
+- En agglomération le sens des tronçons est déterminé par ses numéros de seuils. En d'autres termes il commence au niveau du seuil dont le numéro est égal à 1 ;
+- Hors agglomération, le sens du tronçon dépend du sens de circulation pour les rues à sens unique. Pour les rues à double-sens chaque tronçon est doublé donc leur sens dépend aussi du sens de circulation;]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

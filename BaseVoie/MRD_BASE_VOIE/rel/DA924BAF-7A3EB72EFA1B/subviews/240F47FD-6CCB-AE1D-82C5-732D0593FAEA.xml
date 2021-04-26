@@ -16,11 +16,11 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3FCBFE4B-659B-797E-F5EC-88E0C1050EF5" otype="Table" vid="4E197434-C16C-0179-9E8B-2D39954F64F6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1267" y="474" width="213" height="103"/>
+<bounds x="1527" y="514" width="213" height="109"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="42697969-0A8E-411E-336A-7EF6C86828BC" otype="Note" vid="B78C3A88-8C97-CE45-4342-121D00D7B553">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="89" y="671" width="274" height="56"/>
+<bounds x="349" y="971" width="274" height="56"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -30,14 +30,13 @@ Plusieurs seuils peuvent se situer sur le même point géographique.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>12</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="4BE76660-BD40-6209-9EB1-11B34284E8EC" otype="Note" vid="A57BF60D-66BB-7F5D-E13A-FF334C9D8EF9">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="844" y="267" width="334" height="72"/>
+<bounds x="1104" y="307" width="334" height="72"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -47,14 +46,17 @@ Exemple : la poste, gare, hôpital, etc</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>12</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6DA33FB6-2DD0-E59D-3059-4BA090A25202" otype="Table" vid="3AF35E81-C91B-BDCE-765F-6B9F2897834E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="16" y="581" width="364" height="138"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="7AC771A4-EF2D-3D0C-03B1-AEE8DD6F1A33" otype="Note" vid="64CC19F4-B542-7A44-A823-E95B7D8C3BE0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="719" y="11" width="236" height="90"/>
+<bounds x="979" y="35" width="236" height="75"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -64,14 +66,13 @@ Elle se remplit automatiquement à la création de chaque tronçon de la table T
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>12</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="7EC0BC9D-8EBF-2407-9C28-122D3DF171A0" otype="Note" vid="6F6F6E0D-B1E6-D0C2-D340-35C1E44DD9E6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="391" y="181" width="316" height="119"/>
+<bounds x="651" y="257" width="316" height="82"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -82,14 +83,17 @@ Cette table ne contient que les tronçons et ses start/end point valides.</comme
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>12</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="854A4AF7-0CF9-AEB9-6529-B7DDC8F41E1A" otype="Table" vid="40F45B34-55BF-4BD5-6784-395760FF6385">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1085" y="872" width="170" height="110"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="88228965-A8DD-277E-FF2A-7E2DCF71362F" otype="Note" vid="D4F1E93F-05BC-76AA-FFF3-2F775C18BAE1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="165" y="0" width="211" height="101"/>
+<bounds x="416" y="292" width="220" height="88"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -99,18 +103,17 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>12</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8FBB44FB-EDEE-037E-6A08-CA849CD70780" otype="Table" vid="00F9D9D7-7033-837A-BB87-C2B29682C412">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="375" y="306" width="348" height="145"/>
+<bounds x="703" y="353" width="348" height="200"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="A2F3CA8D-C30F-813D-EA28-6B92958507F8" otype="Note" vid="19E59EB4-F6F9-AAF3-F659-53088D137904">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1266" y="414" width="214" height="55"/>
+<bounds x="1526" y="454" width="214" height="55"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -119,36 +122,73 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>12</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AC6340E5-A5EA-6AE2-5B97-23F0281D2B7B" otype="Table" vid="FC5AD7B0-8249-EAB0-0525-7CD7A0710634">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="845" y="344" width="332" height="405"/>
+<bounds x="1105" y="384" width="332" height="405"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B0F51BE5-86B3-9282-4E83-FACDEA600F2B" otype="Table" vid="20E45B76-4861-613F-328B-2C3498AA130A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="719" y="106" width="237" height="132"/>
+<bounds x="979" y="116" width="237" height="161"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E" otype="Table" vid="7C3397E1-C778-EEB6-4A2C-D498A67A89F0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="163" y="108" width="212" height="143"/>
+<bounds x="416" y="388" width="219" height="163"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A" otype="Table" vid="DD63E26C-B8D4-261D-0059-A164F18F3CF6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="89" y="459" width="273" height="209"/>
+<bounds x="349" y="759" width="273" height="209"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="EE29B7FC-51B8-D974-9F22-4371A0778715" otype="Table" vid="08AAEB08-BC93-1BAE-24C6-9028DC8C4321">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="695" y="618" width="306" height="289"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="F15B63D8-59A6-6B0B-C249-142074D0D8C9" otype="Note" vid="F3F5C838-3DC6-4F1B-2DD4-4A8A748ECC2B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="17" y="727" width="309" height="61"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot faisant la relation entre les tronçons de la table TA_TRONCON et les seuils de la table TA_SEUIl qui s&apos;y rattachent.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
 </OView>
 </objectViews>
 <connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="1EB8A428-FFC9-9458-A695-C3576595E9B8" otype="FKIndexAssociation" vid_source="DD63E26C-B8D4-261D-0059-A164F18F3CF6" vid_target="3AF35E81-C91B-BDCE-765F-6B9F2897834E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="364" y="759"/>
+<point x="364" y="719"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="28E53672-DEDB-E250-2D79-3C13F095B3A9" otype="FKIndexAssociation" vid_source="20E45B76-4861-613F-328B-2C3498AA130A" vid_target="00F9D9D7-7033-837A-BB87-C2B29682C412">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="721" y="238"/>
-<point x="721" y="306"/>
+<point x="1015" y="277"/>
+<point x="1015" y="353"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3E471026-BBCA-9C77-E1F0-9759A9361637" otype="FKIndexAssociation" vid_source="7C3397E1-C778-EEB6-4A2C-D498A67A89F0" vid_target="3AF35E81-C91B-BDCE-765F-6B9F2897834E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="416" y="529"/>
+<point x="323" y="581"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6D4B968D-875D-F90B-953A-57EB9742253A" otype="FKIndexAssociation" vid_source="7C3397E1-C778-EEB6-4A2C-D498A67A89F0" vid_target="00F9D9D7-7033-837A-BB87-C2B29682C412">
@@ -156,8 +196,8 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="375" y="251"/>
-<point x="375" y="306"/>
+<point x="635" y="469"/>
+<point x="703" y="469"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C03C6D6E-2084-2174-EDA5-0F9187633304" otype="FKIndexAssociation" vid_source="4E197434-C16C-0179-9E8B-2D39954F64F6" vid_target="FC5AD7B0-8249-EAB0-0525-7CD7A0710634">
@@ -165,8 +205,8 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1267" y="540"/>
-<point x="1177" y="540"/>
+<point x="1527" y="568"/>
+<point x="1437" y="568"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="CF244E8C-1F09-FB59-1E21-906FC7A3C092" otype="FKIndexAssociation" vid_source="7C3397E1-C778-EEB6-4A2C-D498A67A89F0" vid_target="DD63E26C-B8D4-261D-0059-A164F18F3CF6">
@@ -174,8 +214,8 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="262" y="251"/>
-<point x="262" y="459"/>
+<point x="519" y="551"/>
+<point x="519" y="759"/>
 </points>
 </Connector>
 </connectors>

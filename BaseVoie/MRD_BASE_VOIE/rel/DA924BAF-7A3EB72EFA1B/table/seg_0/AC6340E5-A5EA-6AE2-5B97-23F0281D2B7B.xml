@@ -22,10 +22,10 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_famille_basevoie" id="E2CC769A-DAC8-B1C0-DFDC-97E4C91B64C5">
+<Column name="fid_type_poi" id="E2CC769A-DAC8-B1C0-DFDC-97E4C91B64C5">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_FAMILLE_BASEVOIE permettant de catégoriser les points d''intérêt.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE_BASEVOIE permettant de catégoriser les points d''intérêt.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -53,7 +53,8 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <Column name="code_insee" id="6881783D-EF98-3BA8-97CC-B8F76E635F72">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code INSEE appartenant à la commune dans laquelle se trouve les points d''intérêt.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Code INSEE appartenant à la commune dans laquelle se trouve les points d''intérêt.
+Ce champ remplace l''ancien CNUMCOM qui correspondait au code commune.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -75,7 +76,19 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_debut_validite" id="D623BB3C-48EF-9A5E-B29C-31EB9F2FB046">
+<Column name="date_edition" id="CF29EE87-97AA-6B82-1140-5B69BB6C5053">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-26 09:07:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de mise à jour du point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="debut_validite" id="D623BB3C-48EF-9A5E-B29C-31EB9F2FB046">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date de début de validité du point d''intérêt. Cette date diffère de la date de saise, car elle correspond à la date de début validité du bâtiment/ouvrage du point d''intérêt.]]></commentInRDBMS>
@@ -87,7 +100,7 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_fin_validite" id="F3CAD8A6-2BD5-6007-C7D2-23C3B52AE3EE">
+<Column name="fin_validite" id="F3CAD8A6-2BD5-6007-C7D2-23C3B52AE3EE">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date de fin de validité du point d''intérêt.]]></commentInRDBMS>
@@ -151,7 +164,7 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_point_interet_pere" id="9914B02D-C9D4-47F7-72E1-3E3A40CE794E">
+<Column name="id_poi_pere" id="9914B02D-C9D4-47F7-72E1-3E3A40CE794E">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identifiant du point d''intérêt père.]]></commentInRDBMS>
@@ -164,7 +177,7 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_point_interet_fils" id="648BED57-141A-555E-12AA-3C689FF73497">
+<Column name="id_poi_fils" id="648BED57-141A-555E-12AA-3C689FF73497">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identifiant du point d''interêt fils.]]></commentInRDBMS>
@@ -177,7 +190,7 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cinfos" id="6A4363A9-FD29-C3E4-E469-AA24600CF95D">
+<Column name="complement_info" id="6A4363A9-FD29-C3E4-E469-AA24600CF95D">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Compément d''information de chaque point d''intérêt.]]></commentInRDBMS>
@@ -232,6 +245,7 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <Column name="ecrire_lieu" id="2DA264C0-2191-5946-3CF6-E28CB77897A9">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Je ne sais pas à quoi sert ce champ, mais il est manifestement remplit très souvent (mais pas totalement).]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -270,7 +284,8 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <Column name="importance" id="BFE9D068-DD65-CADE-B761-94C3AFDC027F">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[Importance du point d''intérêt.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Importance du point d''intérêt.
+Il faut se renseigner pour savoir quel est l''ordre d''importance des chiffres renseignés, autrement dit l''échelle d''importance est-elle croissante ou non ?]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
