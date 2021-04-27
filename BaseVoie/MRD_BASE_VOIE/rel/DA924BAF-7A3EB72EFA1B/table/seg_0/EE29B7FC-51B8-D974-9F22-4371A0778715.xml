@@ -39,13 +39,15 @@
 <createdTime>2021-04-26 10:11:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étangère vers la table TA_TYPE_VOIE permettant de catégoriser les voies de la base.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52E3B4C6-742F-5FAA-A520-4BEBC6B0C640" referredColumn="10582D37-3039-372B-C21B-163C26922848"/>
+</associations>
 </Column>
 <Column name="numero_voie" id="CB3DF129-40BB-FF76-FEAB-19460B21BC2F">
 <createdBy>bjacq</createdBy>
@@ -250,6 +252,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9565913-E0DF-44F5-CB9C-52BFE21EAC67" name="TA_VOIE_FID_TYPEVOIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-27 13:37:02 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD022E49-C561-0CF9-99EB-CAAF3658B318"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

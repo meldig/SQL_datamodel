@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="854A4AF7-0CF9-AEB9-6529-B7DDC8F41E1A" name="TA_TYPE_VOIE">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 11:40:24 UTC</createdTime>
+<comment><![CDATA[Table rassemblant tous les types de voies présents dans la base voie.]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_10</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -23,7 +24,8 @@
 <Column name="code_type_voie" id="46809A31-AEFF-A6F3-9AC5-630188F6FB14">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 11:43:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code des types de voie présents dans la base voie.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Code des types de voie présents dans la base voie.
+Ce champ remplace le champ CCODTVO.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -33,13 +35,33 @@
 <ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Column_3" id="9BA4AFDA-8571-162C-1FA3-BFB56684B980">
+<Column name="importance" id="9BA4AFDA-8571-162C-1FA3-BFB56684B980">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 11:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Importance de la voie.
+L'échelle d''importance va de 1 à 5, par ordre décroissant.
+Autrement dit un type de voie ayant une importance de 1 fait partie des plus importants, tandis que 5 désigne les types de voie les moins importants.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle" id="F340C1D0-AB4C-47E6-7659-BE187B5D561D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-27 13:45:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé des types de voie.
+Exemple : Boulevard, avenue, reu, sentier, etc]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -53,6 +75,18 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="10582D37-3039-372B-C21B-163C26922848"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1328768-98E4-74EA-0026-8715E65905DF" name="TA_TYPE_VOIE_CODE_TYPE_VOIE_UN">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-27 13:49:19 UTC</createdTime>
+<comment><![CDATA[Chaque type de voie doit obligatoirement disposer d''un code/abbréviation permettant de le désigner rapidement.
+Chaque code doit être unique.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46809A31-AEFF-A6F3-9AC5-630188F6FB14"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -108,6 +108,34 @@ Elle se remplit automatiquement à la création de chaque tronçon de la table T
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="x_epsg_2154" id="A6B64DA2-ED05-EF2A-406C-B2FDAA372380">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-27 13:33:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Coordonnées en abscisse du point dans le système de projection Lambert93/RGF93.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,38,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="x_epsg_2154_1" id="5F654820-D9CC-9529-1E7B-8AC8DCFA529B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-27 13:33:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Coordonnées en ordonnée du point dans le système de projection Lambert93/RGF93.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,38,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="0E927F5B-8CAE-CA3A-EA0D-6058AA642958" name="TA_NOEUD_PK">
