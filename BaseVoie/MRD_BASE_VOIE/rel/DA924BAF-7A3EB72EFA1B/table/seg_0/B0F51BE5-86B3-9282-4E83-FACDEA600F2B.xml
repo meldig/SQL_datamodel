@@ -122,7 +122,7 @@ Elle se remplit automatiquement à la création de chaque tronçon de la table T
 <ownDataTypeParameters>,38,5</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="x_epsg_2154_1" id="5F654820-D9CC-9529-1E7B-8AC8DCFA529B">
+<Column name="y_epsg_2154" id="5F654820-D9CC-9529-1E7B-8AC8DCFA529B">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-27 13:33:06 UTC</createdTime>
 <commentInRDBMS><![CDATA[Coordonnées en ordonnée du point dans le système de projection Lambert93/RGF93.]]></commentInRDBMS>

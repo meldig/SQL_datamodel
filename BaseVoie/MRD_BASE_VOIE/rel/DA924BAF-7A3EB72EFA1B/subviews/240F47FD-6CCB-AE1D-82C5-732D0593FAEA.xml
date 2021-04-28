@@ -181,7 +181,7 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B0F51BE5-86B3-9282-4E83-FACDEA600F2B" otype="Table" vid="20E45B76-4861-613F-328B-2C3498AA130A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1087" y="157" width="237" height="178"/>
+<bounds x="1087" y="157" width="237" height="188"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E" otype="Table" vid="7C3397E1-C778-EEB6-4A2C-D498A67A89F0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -226,8 +226,8 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1087" y="253"/>
-<point x="1028" y="253"/>
+<point x="1087" y="258"/>
+<point x="1028" y="258"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3BA569FE-6727-829B-B65E-155D6D53AE4F" otype="FKIndexAssociation" vid_source="08AAEB08-BC93-1BAE-24C6-9028DC8C4321" vid_target="DA6A7F28-A31D-8AC0-71D8-A89AD6742032">
