@@ -3,7 +3,8 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 07:59:31 UTC</createdTime>
 <comment><![CDATA[Table contenant les startpoint et endpoint de chaque tronçon. 
-Elle se remplit automatiquement à la création de chaque tronçon de la table TA_TRONCON.]]></comment>
+Elle se remplit automatiquement à la création de chaque tronçon de la table TA_TRONCON.
+Cette table ne contient que les start/end points valides des tronçons.]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_2</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -22,20 +23,7 @@ Elle se remplit automatiquement à la création de chaque tronçon de la table T
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="validite" id="FA9B1B00-124A-3E28-B2B3-151946FAD1AD">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 08:21:28 UTC</createdTime>
-<commentInRDBMS><![CDATA[Validité de chaque noeud : 0 = noeud invalide ; 1 = noeud valide.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="type_carrefour" id="8DB6C410-4D25-A94B-A914-DDCE0522D678">
+<Column name="nb_troncon_connecte" id="8DB6C410-4D25-A94B-A914-DDCE0522D678">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 08:21:28 UTC</createdTime>
 <commentInRDBMS><![CDATA[Type de carrefour : si la valeur est un chiffre, cela correspond au nombre de tronçons s'intersectant dans ce carrefour.]]></commentInRDBMS>
@@ -48,60 +36,11 @@ Elle se remplit automatiquement à la création de chaque tronçon de la table T
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_saisie" id="CC6B5446-4D13-55B0-F7FC-2ECC9ED91590">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 08:21:28 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de saisie des noeuds de chaque tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_edition" id="B451AB5A-E40B-5AD2-DF43-C94A33B05706">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 08:21:28 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de mise à jour des noeuds.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="debut_validite" id="C7317CE0-17C4-D0CC-C0C0-21CA3EEFC53D">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 08:21:28 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de début de validité du noeud. Cette date est égale à la date de début de validité du tronçon et diffère de la date de saisie. Elle correspond à la date de début d'utilisation du tronçon (donc de sa validité).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fin validite" id="C21ECE48-2FA6-23F4-BDD0-FCED3077DD1A">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 08:00:21 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de fin de validité du noeud. Cette date est égale à la date de fin de validité du tronçon. Elle correspond à la date de fin d'utilisation du tronçon (donc de sa validité).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="geom" id="2578A123-4B3B-467C-9D80-36582A052B1F">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 08:00:21 UTC</createdTime>
 <commentInRDBMS><![CDATA[Géométrie de type ponctuel de chaque noeud de la table.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>3</use>
 <structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
@@ -111,9 +50,8 @@ Elle se remplit automatiquement à la création de chaque tronçon de la table T
 <Column name="x_epsg_2154" id="A6B64DA2-ED05-EF2A-406C-B2FDAA372380">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-27 13:33:06 UTC</createdTime>
-<commentInRDBMS><![CDATA[Coordonnées en abscisse du point dans le système de projection Lambert93/RGF93.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Champ calculé - Coordonnées en abscisse du point dans le système de projection Lambert93/RGF93.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -125,9 +63,8 @@ Elle se remplit automatiquement à la création de chaque tronçon de la table T
 <Column name="y_epsg_2154" id="5F654820-D9CC-9529-1E7B-8AC8DCFA529B">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-27 13:33:06 UTC</createdTime>
-<commentInRDBMS><![CDATA[Coordonnées en ordonnée du point dans le système de projection Lambert93/RGF93.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Champ calculé - Coordonnées en ordonnée du point dans le système de projection Lambert93/RGF93.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

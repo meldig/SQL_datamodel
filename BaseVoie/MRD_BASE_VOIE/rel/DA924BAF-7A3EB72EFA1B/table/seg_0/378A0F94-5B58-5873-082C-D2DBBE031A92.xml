@@ -84,30 +84,6 @@ Question pour Marie-Hélène : Ce champ est-il tjrs utile puisque les voies à d
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="debut_validite" id="B0D8458D-C02A-B94A-29F4-D84EEAC08EBF">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-27 15:05:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de début de validité de la voie.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fin_validite" id="B68A9626-2DBE-E8C4-2C10-3DF9A4F6805C">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-27 15:05:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de fin de validité de la voie.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="code_commune" id="C6E20D48-D931-46F8-7597-0BE8E5D22987">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-27 15:05:14 UTC</createdTime>
@@ -133,20 +109,6 @@ Question pour Marie-Hélène : Ce champ est-il tjrs utile puisque les voies à d
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="validite" id="F78F17F2-4CD5-C2C2-6BD8-BC114B9E3449">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-27 15:05:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Validité de l'association tronçon / voie.
-Valide = V ; invalide = I]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

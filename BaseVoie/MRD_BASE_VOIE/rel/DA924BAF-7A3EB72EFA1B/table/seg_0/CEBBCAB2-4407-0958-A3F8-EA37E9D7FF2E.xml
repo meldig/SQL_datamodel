@@ -22,71 +22,10 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="validite" id="5DC6E15B-E92D-2ACF-3835-5143C381705A">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 07:58:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ de validité : 0 = tronçon invalide ; 1 = tronçon valide.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_saisie" id="D9C5D278-33CF-5E51-E173-5B6EC3BF9722">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 07:58:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de saisie du tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_edition" id="C9A7B97F-D31D-7DDB-EE81-65B195997D39">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 07:58:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de nmise à jour du tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="debut_validite" id="871A7F37-947E-5296-E1BA-D6F69A0CFEDA">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 08:23:47 UTC</createdTime>
-<commentInRDBMS><![CDATA[Cette date correspond à la date de début d'utilisation du tronçon (donc de sa validité). Attention, la date de début de validité diffère de la date de saisie puisque cette dernière ne peut se faire qu'après que tous les euils du tronçon aient été attribués.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fin_validite" id="924DFBFA-28E9-2F08-3B94-37D4679D5B5D">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 07:58:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de fin de validité du tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="longueur_troncon" id="71CAAF94-D5E3-F972-6342-66D02D648620">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 07:58:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[Longeur du tronçon en mètre.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Champ calculé - Longeur du tronçon en mètre.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -102,11 +41,72 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 <createdTime>2021-04-26 07:55:35 UTC</createdTime>
 <commentInRDBMS><![CDATA[Géométrie de type ligne simple de chaque tronçon.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>3</use>
 <structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_saisie" id="AD8AF610-C052-9E84-7E32-ED32C76F6C32">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:08:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie du tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_edition" id="6D7CAFAE-7EA2-C097-2851-A355F881C07C">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:08:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de mise à jour du tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_debut_validite" id="E646F87A-90FC-E925-BB7D-4D879E1C19F7">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:08:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de début de validité du tronçon.
+Cette date correspond à la date du chantier du tronçon (cf. doc_dynmap_mhsuzanne.pdf p. 11 alinéa 2).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_fin_validite" id="0587CC6E-7CEF-C8F0-2267-7F134D1EB263">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:08:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[date de fin de validité du troçon.
+Cette date correspond à la date d'invalidation du tronçon (cf. doc_dynmap_mhsuzanne.pdf p. 11 alinéa 2).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validite" id="F2D5D094-0A76-D063-FAF9-AF0AA7704F09">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:10:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ permettant de savoir si un tronçon est valide (opérationnel) ou non.
+- 0 = invalide ;
+- 1 = valide ;]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

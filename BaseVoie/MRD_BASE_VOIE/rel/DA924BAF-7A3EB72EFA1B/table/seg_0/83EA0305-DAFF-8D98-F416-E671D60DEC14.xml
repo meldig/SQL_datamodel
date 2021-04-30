@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="83EA0305-DAFF-8D98-F416-E671D60DEC14" name="TA_RUE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 13:09:21 UTC</createdTime>
+<comment><![CDATA[Table regroupant toutes les rues de la MEL.
+La rue est le composée de plusieurs voies elles-mêmes composées de plusieurs tronçons.
+Schématiquement la rue c'est le concept, la voie c'est l'objet et les tronçons composent l''objet.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="1EDF734E-035B-B2D0-C7F1-67D85AD22C0F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 13:21:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_rue" id="EFA36ACD-10EB-6667-3F44-BF22690DA32D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 13:21:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé de la rue (imposé par la commune)]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="57F805D9-7538-721B-3C93-FBE7AC1EFFAC">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 13:21:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom de la rue.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF1C81CC-E94D-918E-413A-D3D7A7B9F87B" name="TA_RUE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 13:21:47 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EDF734E-035B-B2D0-C7F1-67D85AD22C0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

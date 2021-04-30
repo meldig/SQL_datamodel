@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CF244E8C-1F09-FB59-1E21-906FC7A3C092" containerWithKeyObject="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A" localFKIndex="82422627-6003-9035-5156-2BF56D6B1C3F" name="TA_SEUIL_FID_TRONCON_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0FCD4F9D-333F-565F-52B0-B3155BFF1C72" containerWithKeyObject="98E9DCF8-C00E-F17B-58B4-1CE4E531E55A" localFKIndex="F2FF880C-8EDA-D203-9DB4-37918BA524AD" name="TA_TRONCON_NOEUD_LOG_FID_TRONCON_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:24:06 UTC</createdTime>
+<createdTime>2021-04-30 09:25:58 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <referredTableLongName>TA_TRONCON</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

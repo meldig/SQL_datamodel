@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Base Voie V2" id="09E9A75A-4181-9742-D2B2-0C008CD89D02">
+<createdBy>bjacq</createdBy>
+<modifiedBy>bjacq</modifiedBy>
+<createdTime>2021-04-30 08:05:08 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<showPageGrid>true</showPageGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4D13A871-B157-CE25-1623-FCBA582BB701" otype="Table" vid="952C8A8E-3DA7-6FC5-38CD-4BEF270BDC87">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="102" y="230" width="229" height="203"/>
+</OView>
+</objectViews>
+</Diagram>

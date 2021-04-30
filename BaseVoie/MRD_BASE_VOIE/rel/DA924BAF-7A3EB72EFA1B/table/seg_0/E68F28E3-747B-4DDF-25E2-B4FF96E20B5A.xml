@@ -61,21 +61,6 @@ Plusieurs seuils peuvent se situer sur le même point géographique.]]></comment
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_troncon" id="6C127CDB-D873-56EB-9742-D6DDFD40F1B3">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant d'associer les seuils à leur tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="CF244E8C-1F09-FB59-1E21-906FC7A3C092" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
-</associations>
-</Column>
 <Column name="code_insee" id="D3A5C6F5-295F-91C1-53E1-A10A22ECDE63">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 12:22:33 UTC</createdTime>
@@ -152,16 +137,6 @@ G = gauche ; D = droite.
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="17B52127-565B-8393-9FEF-543334313340"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="82422627-6003-9035-5156-2BF56D6B1C3F" name="TA_SEUIL_FID_TRONCON_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:24:06 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="6C127CDB-D873-56EB-9742-D6DDFD40F1B3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

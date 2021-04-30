@@ -3,8 +3,7 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 08:27:44 UTC</createdTime>
 <comment><![CDATA[Table pivot faisant le lien entre les noeuds de la table TA_NOEUD avec les tronçons de la table TA_TRONCON.
-Les noeuds correspondent aux start/end point de chaque tronçon.
-Cette table ne contient que les tronçons et ses start/end point valides.]]></comment>
+Les noeuds correspondent aux start/end point de chaque tronçon.]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_3</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -65,54 +64,6 @@ Cette table ne contient que les tronçons et ses start/end point valides.]]></co
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,5,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="debut_validite" id="0615E5E5-5FD0-30F4-ED1F-F8EF4CBC276B">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 07:52:19 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de début de validité]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fin_validite" id="FA1FD56B-3855-9127-6B3D-622215FE0CB3">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 07:52:19 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de fin de validité]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_edition" id="F43DBD0E-97BF-F66A-365C-0E86CE1B8525">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 07:52:19 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de modification du tronçon (et donc des noeuds).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_saisie" id="E7322B12-CDC5-8C1F-F550-6E6F8F9B9518">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 07:52:19 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de saisie.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
