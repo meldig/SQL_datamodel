@@ -51,6 +51,21 @@
 <colAssociation fkAssociation="25DEF2F6-B038-1784-04DF-2BF5CC4EDCFF" referredColumn="41A97374-8979-30B9-6221-9494F0238FB8"/>
 </associations>
 </Column>
+<Column name="fid_tronçon_pere" id="472D1145-8872-6B78-E608-5F6E39757FB6">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:47:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant, en cas de coupure de tronçon, de savoir quel était le tronçon original.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A60B1B8-1397-A6E8-FFD5-07D7C6D22D30" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
+</associations>
+</Column>
 <Column name="date_saisie" id="3054BE90-6670-5F00-0B84-AA57710DC3C9">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:24:46 UTC</createdTime>
@@ -164,6 +179,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="73019714-E49E-FB43-3A78-1979A1AC8E4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AF4FF40-86C4-0417-96F7-3C5193A3E58C" name="TA_TRONCON_NOEUD_LOG_FID_TRONCON_PERE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:48:27 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="472D1145-8872-6B78-E608-5F6E39757FB6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
