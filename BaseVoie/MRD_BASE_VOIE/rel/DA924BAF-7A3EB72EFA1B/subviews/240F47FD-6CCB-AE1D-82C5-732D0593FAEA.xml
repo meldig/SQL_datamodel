@@ -174,6 +174,10 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8E9461CA-BADD-C758-1913-BD8D0F129BC6" otype="Table" vid="4B87D1D8-E527-B3E6-742E-48B9B033C971">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1539" y="1061" width="230" height="84"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8FBB44FB-EDEE-037E-6A08-CA849CD70780" otype="Table" vid="00F9D9D7-7033-837A-BB87-C2B29682C412">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="680" y="411" width="348" height="143"/>
@@ -222,6 +226,23 @@ Schématiquement la rue c&apos;est le concept, la voie c&apos;est l&apos;objet e
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1110" y="699" width="332" height="429"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="AC676122-018B-4BBC-06AE-54159928C495" otype="Note" vid="4E402239-59A1-F689-540E-195475016A78">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1540" y="963" width="235" height="90"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Sources des points d&apos;&apos;intérêt. Il s&apos;&apos;agit davantage des catégories de sources, que des sources exactes.
+Exemple : commerce, scolaire, transport, hébergement, etc</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="AD22C359-C876-7258-52A5-52FDC7174B5B" otype="Note" vid="7549F47D-4DF0-ED41-CB06-54FF5855DAAB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="37" y="1310" width="257" height="44"/>
@@ -243,7 +264,7 @@ Schématiquement la rue c&apos;est le concept, la voie c&apos;est l&apos;objet e
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E" otype="Table" vid="7C3397E1-C778-EEB6-4A2C-D498A67A89F0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="362" y="252" width="234" height="159"/>
+<bounds x="362" y="252" width="234" height="171"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A" otype="Table" vid="DD63E26C-B8D4-261D-0059-A164F18F3CF6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -320,8 +341,8 @@ Schématiquement la rue c&apos;est le concept, la voie c&apos;est l&apos;objet e
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="416" y="411"/>
-<point x="231" y="649"/>
+<point x="411" y="423"/>
+<point x="232" y="649"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="52E3B4C6-742F-5FAA-A520-4BEBC6B0C640" otype="FKIndexAssociation" vid_source="40F45B34-55BF-4BD5-6784-395760FF6385" vid_target="08AAEB08-BC93-1BAE-24C6-9028DC8C4321">
@@ -338,7 +359,7 @@ Schématiquement la rue c&apos;est le concept, la voie c&apos;est l&apos;objet e
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="486" y="411"/>
+<point x="486" y="423"/>
 <point x="486" y="648"/>
 </points>
 </Connector>
@@ -347,8 +368,8 @@ Schématiquement la rue c&apos;est le concept, la voie c&apos;est l&apos;objet e
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="596" y="411"/>
-<point x="680" y="411"/>
+<point x="596" y="417"/>
+<point x="680" y="417"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C03C6D6E-2084-2174-EDA5-0F9187633304" otype="FKIndexAssociation" vid_source="4E197434-C16C-0179-9E8B-2D39954F64F6" vid_target="FC5AD7B0-8249-EAB0-0525-7CD7A0710634">
