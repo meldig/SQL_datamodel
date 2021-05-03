@@ -62,19 +62,6 @@
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cdrue" id="E8D0A14C-7CC4-1FD3-171E-80A763F855A2">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 10:11:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[conformité avec ta_rue (validé par la commune ; aujourdh'ui Lille / Lomme / Hellemmes)]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="cdtrvoi" id="EB7D7FF2-CD6F-9D72-260A-3E57A496A2A9">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 10:11:44 UTC</createdTime>

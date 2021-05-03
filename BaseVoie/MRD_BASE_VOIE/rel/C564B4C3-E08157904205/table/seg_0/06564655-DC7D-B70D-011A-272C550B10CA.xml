@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="06564655-DC7D-B70D-011A-272C550B10CA" name="TA_VOIE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 13:48:34 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="347709CD-70EF-C48A-FFDF-513AA90C39E3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 14:29:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code_fantoir" id="E5B0981E-447B-A1A7-C963-95E68A3235C7">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 14:29:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code fantoir sur 7 caractères répartis de la façon dans l''ordre suivant :
+- 3 pour le code commune ;
+- 4 pour l''identifiant de la voie au sein de la commune ;
+Ce code ne peut, en aucun cas, servir d''identifiant puisque l'identifiant de voie au sein d''une commune est recyclé. De plus, le type varchar s''explique par le fait que nous utilisons le code commune sur 3 chiffres, hors pour certaines communes comme Villeneuve-d''Ascq (code INSEE = 59009) le code commune commence par 2 zéros, ce qui sera transformé en "9" dans un champ de type number.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="D7D39D5A-5C22-1B59-1BBC-BEC288399503">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 14:29:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de distinguer les types de voie.
+Exemple : boulevard, avenue, rue, sentier, etc.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD261C20-4F1C-FF59-8708-AD7C03734FB7" name="TA_VOIE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 14:29:57 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="347709CD-70EF-C48A-FFDF-513AA90C39E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

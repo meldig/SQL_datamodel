@@ -35,52 +35,6 @@ Les tronçons sont les objets de base de la base voie servant à constituer les 
 <ownDataTypeParameters>,38,5</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_saisie" id="85B232AF-CE22-E787-1A23-9CE57419D15A">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 08:23:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de saisie du tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_edition" id="0C4465BC-110D-7E27-F42D-56511B691C7B">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 08:23:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de mise à jour du tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_debut_validite" id="48C96FC0-239D-F44F-04F4-F86D73BF2667">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 08:23:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de début de validité du tronçon, c'est-à-dire la date à partir de laquelle le tronçon est opérationnel.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_fin_validite" id="8E4CF9F6-5F96-11B3-6D62-8209CBBB05FC">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 08:23:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de fin de validité du troçon, c'est-à-dire la date à partir de laquelle tronçon est définitevement abandonné/détruit et donc n'est plus opérationnel.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="validite" id="D571B737-0BD0-6C8E-4DBF-EA113842D816">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 08:23:14 UTC</createdTime>

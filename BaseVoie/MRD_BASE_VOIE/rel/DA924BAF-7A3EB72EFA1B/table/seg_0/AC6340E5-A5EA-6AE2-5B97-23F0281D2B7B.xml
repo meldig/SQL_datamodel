@@ -308,19 +308,6 @@ Il faut se renseigner pour savoir quel est l''ordre d''importance des chiffres r
 <ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cdlpu" id="CA608BBF-5E4E-64DB-60C6-9B3C15B275FC">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 10:00:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[code de conformité avec la commune (R: conforme à ta_rue)]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="geom" id="45DEAD87-F81B-FA89-7B3C-036A4C85A3C7">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 12:05:56 UTC</createdTime>
