@@ -3,7 +3,9 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 08:27:44 UTC</createdTime>
 <comment><![CDATA[Table pivot faisant le lien entre les noeuds de la table TA_NOEUD avec les tronçons de la table TA_TRONCON.
-Les noeuds correspondent aux start/end point de chaque tronçon.]]></comment>
+Les noeuds correspondent aux start/end point de chaque tronçon.
+
+Ancienne table : ILTADTN]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_3</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

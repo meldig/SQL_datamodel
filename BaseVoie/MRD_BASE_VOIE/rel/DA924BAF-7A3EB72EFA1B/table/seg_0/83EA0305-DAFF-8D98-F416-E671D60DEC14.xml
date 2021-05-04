@@ -4,7 +4,9 @@
 <createdTime>2021-04-29 13:09:21 UTC</createdTime>
 <comment><![CDATA[Table regroupant toutes les rues de la MEL.
 La rue est le composée de plusieurs voies elles-mêmes composées de plusieurs tronçons.
-Schématiquement la rue c'est le concept, la voie c'est l'objet et les tronçons composent l''objet.]]></comment>
+Schématiquement la rue c'est le concept, la voie c'est l'objet et les tronçons composent l''objet.
+
+Ancienne table : TA_RUE]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_11</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

@@ -3,7 +3,9 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 08:51:46 UTC</createdTime>
 <comment><![CDATA[Table des points d''intérêt de la Base Voie, c'est-à-dire de tous les bâtiments disposant de service public ou de commerce ou d'entreprise.
-Exemple : la poste, gare, hôpital, etc]]></comment>
+Exemple : la poste, gare, hôpital, etc
+
+Ancienne table ILTALPU]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_4</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -42,7 +44,6 @@ Exemple : la poste, gare, hôpital, etc]]></comment>
 <createdTime>2021-04-22 10:00:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Champ de validité de chaque point d''intérêt : 0 = point d'intérêt invalide ; 1 = point d''intérêt valide.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -227,19 +228,6 @@ Ce champ remplace l''ancien CNUMCOM qui correspondait au code commune.]]></comme
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>2048 BYTE</dataTypeSize>
 <ownDataTypeParameters>2048 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="origine" id="927BEC58-93EE-7C83-70F7-1456A0669FE6">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 10:00:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[Origine de l''info (LPU: table courante; COM : fichier commerce ...)]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>3 BYTE</dataTypeSize>
-<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ecrire_lieu" id="2DA264C0-2191-5946-3CF6-E28CB77897A9">

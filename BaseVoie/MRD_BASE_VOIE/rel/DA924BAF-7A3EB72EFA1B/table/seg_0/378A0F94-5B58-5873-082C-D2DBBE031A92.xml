@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="378A0F94-5B58-5873-082C-D2DBBE031A92" name="TA_RELATION_TRONCON_VOIE">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-27 13:55:48 UTC</createdTime>
-<comment><![CDATA[Table pivot permettant d''associer les tronçons de la table TA_TRONCON à leur voie présente dans TA_VOIE.]]></comment>
+<comment><![CDATA[Table pivot permettant d''associer les tronçons de la table TA_TRONCON à leur voie présente dans TA_VOIE.
+
+Ancienne table : VOIECVT]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_10</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -67,34 +69,6 @@ A préciser avec Marie-Hélène, car les valeurs ne sont pas compréhensibles sa
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>1 BYTE</dataTypeSize>
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CDCOTE" id="65BDD520-122F-D487-C909-9877A14A42A9">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-27 15:05:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[code coté (en rapport avec la commune)
-
-Question pour Marie-Hélène : Ce champ est-il tjrs utile puisque les voies à double sens sont doublées au niveau des tronçons (un pour chaque sens) ? Initialement ce champ permettait de dire quel côté du tronçon se trouve dans le commune qui lui ait affecté, cependant toutes les valeurs sont "?"...]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="code_commune" id="C6E20D48-D931-46F8-7597-0BE8E5D22987">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-27 15:05:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code commune issu du code INSEE identifiant la commune dans laquelle se trouve la voie.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ordre_troncon" id="79A75E6E-3B48-229F-7B13-DE5BC1A2A196">

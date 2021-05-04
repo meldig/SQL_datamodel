@@ -3,7 +3,9 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-03 07:47:51 UTC</createdTime>
 <comment><![CDATA[Catégories des différents points d''intérêt.
-Exemple : commerce, scolaire, transport, hébergement, etc]]></comment>
+Exemple : commerce, scolaire, transport, hébergement, etc
+
+Ancienne table ADMIN_LISTE_ORIGINE_POI]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_14</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

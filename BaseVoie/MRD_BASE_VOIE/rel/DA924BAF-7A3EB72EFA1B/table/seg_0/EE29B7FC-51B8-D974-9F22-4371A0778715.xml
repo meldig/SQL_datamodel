@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EE29B7FC-51B8-D974-9F22-4371A0778715" name="TA_VOIE">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 09:15:56 UTC</createdTime>
-<comment><![CDATA[Table rassemblant toutes les informations pour chaque voie de la base.]]></comment>
+<comment><![CDATA[Table rassemblant toutes les informations pour chaque voie de la base.
+
+Ancienne table : VOIEVOI]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_9</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -77,7 +79,9 @@
 <Column name="cote_commune" id="FADC64FA-F6B7-F189-0671-8F23D55CB4C4">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 10:11:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Côté de la voie appartenant à la commune (gauche/droite)]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Côté de la voie appartenant à la commune (gauche/droite)
+
+Remplace les champs ]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -112,16 +116,16 @@
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="code_commune" id="DF7C08F5-AD98-662F-58AF-5F06B2AA1B58">
+<Column name="code_insee" id="DF7C08F5-AD98-662F-58AF-5F06B2AA1B58">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 11:36:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code commune sur 3 chiffres.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Code INSEE sur 5 chiffres.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="genre_voie" id="A00C4D0F-8C18-8683-7DBE-0F5FB7592275">

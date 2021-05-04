@@ -3,7 +3,9 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 12:06:47 UTC</createdTime>
 <comment><![CDATA[Table contenant les seuils de la Base Voie.
-Plusieurs seuils peuvent se situer sur le même point géographique.]]></comment>
+Plusieurs seuils peuvent se situer sur le même point géographique.
+
+Ancienne table : ILTASEU]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_5</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

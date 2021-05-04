@@ -2,7 +2,9 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="854A4AF7-0CF9-AEB9-6529-B7DDC8F41E1A" name="TA_TYPE_VOIE">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 11:40:24 UTC</createdTime>
-<comment><![CDATA[Table rassemblant tous les types de voies présents dans la base voie.]]></comment>
+<comment><![CDATA[Table rassemblant tous les types de voies présents dans la base voie.
+
+Ancienne table : TPEVOIE]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_10</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

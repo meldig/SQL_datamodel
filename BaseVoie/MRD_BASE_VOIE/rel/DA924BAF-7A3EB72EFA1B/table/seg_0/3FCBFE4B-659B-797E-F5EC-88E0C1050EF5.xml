@@ -3,7 +3,9 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 12:26:37 UTC</createdTime>
 <comment><![CDATA[Libellés permettant de distinguer les différents types de points d''intérêt de la Base Voie.
-Chaque libellé appartient à une famille présente dans la table TA_FAMILLE_POINT_INTERET, ce qui permet de les distinguer faiclement.]]></comment>
+Chaque libellé appartient à une famille présente dans la table TA_FAMILLE_POINT_INTERET, ce qui permet de les distinguer faiclement.
+
+Ancienne table ADMIN_LISTE_FAMILLE_POI]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_6</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

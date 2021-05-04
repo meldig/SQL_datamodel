@@ -4,7 +4,9 @@
 <createdTime>2021-04-22 07:59:31 UTC</createdTime>
 <comment><![CDATA[Table contenant les startpoint et endpoint de chaque tronçon. 
 Elle se remplit automatiquement à la création de chaque tronçon de la table TA_TRONCON.
-Cette table ne contient que les start/end points valides des tronçons.]]></comment>
+Cette table ne contient que les start/end points valides des tronçons.
+
+Ancienne table : ILTAPTZ]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_2</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>

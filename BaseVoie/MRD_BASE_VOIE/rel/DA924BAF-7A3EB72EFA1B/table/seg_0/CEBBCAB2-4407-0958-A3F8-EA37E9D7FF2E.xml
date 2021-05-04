@@ -3,7 +3,9 @@
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 07:45:22 UTC</createdTime>
 <comment><![CDATA[Table contenant les tronçons de la base voie.
-Les tronçons sont les objets de base de la base voie servant à constituer les rues qui elles-mêmes constituent les voies.]]></comment>
+Les tronçons sont les objets de base de la base voie servant à constituer les rues qui elles-mêmes constituent les voies.
+
+Ancienne table : ILTATRC]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_1</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
