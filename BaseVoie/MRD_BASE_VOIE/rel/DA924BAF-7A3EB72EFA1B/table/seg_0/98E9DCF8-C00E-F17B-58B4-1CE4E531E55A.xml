@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98E9DCF8-C00E-F17B-58B4-1CE4E531E55A" name="TA_TRONCON_NOEUD_LOG">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98E9DCF8-C00E-F17B-58B4-1CE4E531E55A" name="TA_TRONCON_LOG">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:15:01 UTC</createdTime>
 <comment><![CDATA[Table d''historisation des actions effectuées sur les tronçons de la base voie.
@@ -26,7 +26,7 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <Column name="fid_troncon" id="78EEBF69-ED9E-C499-E241-CF7D0A1BE0E4">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant d''associer un tronçon a ses start/end points.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant de savoir sur quel tronçon ont été effectué les actions.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -36,21 +36,6 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="0FCD4F9D-333F-565F-52B0-B3155BFF1C72" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
-</associations>
-</Column>
-<Column name="fid_noeud" id="73019714-E49E-FB43-3A78-1979A1AC8E4A">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_NOEUD permettant d''associer les start/endpoints à chaque tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="25DEF2F6-B038-1784-04DF-2BF5CC4EDCFF" referredColumn="41A97374-8979-30B9-6221-9494F0238FB8"/>
 </associations>
 </Column>
 <Column name="fid_tronçon_pere" id="472D1145-8872-6B78-E608-5F6E39757FB6">
@@ -68,21 +53,10 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <colAssociation fkAssociation="4A60B1B8-1397-A6E8-FFD5-07D7C6D22D30" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
 </associations>
 </Column>
-<Column name="date_saisie" id="3054BE90-6670-5F00-0B84-AA57710DC3C9">
+<Column name="date_fin_validite" id="B368A3C9-7CCE-ED84-533D-7560D977109A">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de saisie du tronçon et des noeuds (les noeuds étant enregistrés automatiquement à chaque création/édition des tronçons les dates de saisie sont les mêmes entre les noeuds et leur tronçon).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_edition" id="2BD5D645-9D7F-3DC8-0B3E-C0EF0F0D2716">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de mise à jour du tronçon et des noeuds (les noeuds étant enregistrés automatiquement à chaque création/édition des tronçons les dates d'édition sont les mêmes entre les noeuds et leur tronçon).]]></commentInRDBMS>
+<createdTime>2021-05-06 12:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin de validité du tronçon]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -91,10 +65,25 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_suppression" id="4B646400-6947-3863-7FDB-3FEDD7BE431A">
+<Column name="fid_type_action" id="0E0F3F5A-C39E-D795-D2EC-3ADD4F2D19F6">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:21:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de catégoriser le type d''action effectué sur les tronçons.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58AFCC10-ACC3-0A38-4F88-ECC42CAF040A" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
+</Column>
+<Column name="date_action" id="3054BE90-6670-5F00-0B84-AA57710DC3C9">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de suppression du tronçon, entraînant la suppression des noeuds dans la table TA_NOEUD.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[date de saisie, modification et suppression du tronçon.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -102,34 +91,10 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="pnom_saisie" id="AF9C1AD4-A998-AF20-A9DE-6EF958EDB7DF">
+<Column name="pnom_action" id="C66B049D-590D-5433-3CBA-B88F4222CD86">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Pnom de l''agent ayant saisie le tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 BYTE</dataTypeSize>
-<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="pnom_edition" id="0032D547-6A03-8438-E557-A654B65C2FEE">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Pnom de l''agent ayant effectué l''édition du tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 BYTE</dataTypeSize>
-<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="pnom_suppression" id="C66B049D-590D-5433-3CBA-B88F4222CD86">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Pnom de l''agent ayant supprimé le tronçon.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Pnom de l''agent ayant créé, modifié ou supprimé le tronçon.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -173,16 +138,6 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <colUsage columnID="78EEBF69-ED9E-C499-E241-CF7D0A1BE0E4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A7CFAA2C-E502-E931-8577-CFBC1CA3CC5B" name="TA_TRONCON_NOEUD_LOG_FID_NOEUD_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 09:26:16 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="73019714-E49E-FB43-3A78-1979A1AC8E4A"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="2AF4FF40-86C4-0417-96F7-3C5193A3E58C" name="TA_TRONCON_NOEUD_LOG_FID_TRONCON_PERE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-03 12:48:27 UTC</createdTime>
@@ -191,6 +146,16 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="472D1145-8872-6B78-E608-5F6E39757FB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BD5E0BF-6B9B-FF22-BBA0-58FB7366AB19" name="TA_TRONCON_LOG_FID_TYPE_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:01:29 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E0F3F5A-C39E-D795-D2EC-3ADD4F2D19F6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -37,21 +37,6 @@ Ce champ remplace le champ CCODTVO.]]></commentInRDBMS>
 <ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="importance" id="9BA4AFDA-8571-162C-1FA3-BFB56684B980">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 11:43:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Importance de la voie.
-L'échelle d''importance va de 1 à 5, par ordre décroissant.
-Autrement dit un type de voie ayant une importance de 1 fait partie des plus importants, tandis que 5 désigne les types de voie les moins importants.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="libelle" id="F340C1D0-AB4C-47E6-7659-BE187B5D561D">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-27 13:45:21 UTC</createdTime>

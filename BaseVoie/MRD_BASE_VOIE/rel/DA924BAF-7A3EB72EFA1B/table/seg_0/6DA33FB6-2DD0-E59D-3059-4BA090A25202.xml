@@ -41,35 +41,6 @@ Ancienne table : ILTASIT]]></comment>
 <colAssociation fkAssociation="1EB8A428-FFC9-9458-A695-C3576595E9B8" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
 </associations>
 </Column>
-<Column name="cote_troncon" id="3B65AC6D-0116-8899-E28C-3F26E34ADF80">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 08:08:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[Côté du tronçon auquel est rattaché le seuil.
-G = gauche ; D = droite.
-- En agglomération le sens des tronçons est déterminé par ses numéros de seuils. En d'autres termes il commence au niveau du seuil dont le numéro est égal à 1 ;
-- Hors agglomération, le sens du tronçon dépend du sens de circulation pour les rues à sens unique. Pour les rues à double-sens chaque tronçon est doublé donc leur sens dépend aussi du sens de circulation;]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="abscisse_curviligne" id="C16A4ED4-B064-842D-912F-DB1965EDE523">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 08:08:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[Abscisse curviligne.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,6,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="42A24845-A8FE-A875-D160-7F077955E420" name="TA_RELATION_TRONCON_SEUIL_PK">

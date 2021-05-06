@@ -24,57 +24,20 @@ Ancienne table : ILTASEU]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="numero_seuil" id="D99B45A6-FAF3-DF51-5C54-8B6246C6C109">
+<Column name="fid_infos_seuil" id="8C286244-DF8A-A028-BA3E-8C77B8F340F8">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Numéro du seuil.]]></commentInRDBMS>
+<createdTime>2021-05-06 13:33:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_INFOS_SEUIL permettant d''associer un ou plusieurs seuils à un point géométrique.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="numero_parcelle" id="EB30B1EC-13E9-C39C-A5FA-32CD9C30C2B0">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Numéro de la parcelle dans laquelle se situe le seuil.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>9 BYTE</dataTypeSize>
-<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="complement_numero_seuil" id="24765ED5-0CB4-7172-CF7E-1108AAEA9519">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Complément du numéro de seuil.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 BYTE</dataTypeSize>
-<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="code_insee" id="D3A5C6F5-295F-91C1-53E1-A10A22ECDE63">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code INSEE de la commune dans laquelle se situe les seuils.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="726A9993-10C2-991E-BCC6-E12AAF45CC32" referredColumn="34BA1DF2-9A2A-C4FB-FF46-5D8008B21AEB"/>
+</associations>
 </Column>
 <Column name="cote_tronçon" id="01FB9B87-3AC5-7887-151F-8402DDF25F0C">
 <createdBy>bjacq</createdBy>
@@ -92,28 +55,17 @@ G = gauche ; D = droite.
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_saisie" id="0608F24E-E239-AC01-BE89-060E50FE4B72">
+<Column name="code_insee" id="E766C759-F842-5B41-2BD0-A52788A937CC">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de saisie du seuil.]]></commentInRDBMS>
+<createdTime>2021-05-06 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ calculé via une requête spatiale, permettant d''associer à chaque rue le code insee de la commune dans laquelle elle se trouve (issue de la table G_REFERENTIEL.A_COMMUNES).]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_edition" id="01061B5D-8FD9-A379-8E9C-57A220BBCD2A">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de mise à jour du seuil.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="geom" id="1B4D2960-2288-DFBA-3BAC-132D92499845">
@@ -139,6 +91,16 @@ G = gauche ; D = droite.
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="17B52127-565B-8393-9FEF-543334313340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11C5A9C7-47FC-E286-9D78-01A1FCFF0DE1" name="TA_SEUIL_FID_INFOS_SEUIL_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 14:00:07 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C286244-DF8A-A028-BA3E-8C77B8F340F8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
