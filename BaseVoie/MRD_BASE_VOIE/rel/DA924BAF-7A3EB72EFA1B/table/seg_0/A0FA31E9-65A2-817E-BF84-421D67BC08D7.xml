@@ -72,23 +72,26 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="0B0842BF-78E3-E0EB-B7CD-729433E7C20A" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
 </associations>
 </Column>
-<Column name="pnom_action" id="FF7A2A9E-EA10-8D19-5EBA-9A9E2FEE5CAC">
+<Column name="fid_pnom" id="FF7A2A9E-EA10-8D19-5EBA-9A9E2FEE5CAC">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 08:37:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Pnom de l''agent ayant créé, modifié ou supprimé l''association voie / tronçon.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent à l''association voie / tronçon qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 BYTE</dataTypeSize>
-<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="735C6C76-C56F-AF24-ECEC-9B35B4112319" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -131,6 +134,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="52F01D36-F703-0992-3A11-7CAF6AD73359"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1734AF2B-A7CD-0D56-2DFC-9C2188B41AFE" name="TA_RELATION_TRONCON_VOIE_LOG_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:33:22 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF7A2A9E-EA10-8D19-5EBA-9A9E2FEE5CAC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

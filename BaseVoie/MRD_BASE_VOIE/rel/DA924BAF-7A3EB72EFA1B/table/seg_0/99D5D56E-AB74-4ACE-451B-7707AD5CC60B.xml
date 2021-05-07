@@ -147,14 +147,17 @@
 <Column name="fid_pnom" id="7EA0EF17-9B05-D17F-FC22-9A3631E38BA3">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 10:17:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Pnom de l''agent ayant saisie, modifié ou supprimé la voie.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent à la voie qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 BYTE</dataTypeSize>
-<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F9062D4-E2C0-90E0-17BF-A31D00066390" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -188,6 +191,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D1F6AC68-435E-91E9-0CD2-547F4E60FBD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB353204-157D-1E7F-C0C6-44436211E465" name="TA_VOIE_LOG_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:34:33 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EA0EF17-9B05-D17F-FC22-9A3631E38BA3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

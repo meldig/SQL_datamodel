@@ -24,6 +24,7 @@
 <Column name="numero_seuil" id="E3488398-E892-FFFC-8371-F881ECF0ABA9">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:28:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro de seuil.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,6 +36,7 @@
 <Column name="numero_parcelle" id="51627598-9871-3F6E-FA2C-60AACEAEB170">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:28:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro de parcelle issu du cadastre.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,6 +48,9 @@
 <Column name="complement_numero_seuil" id="09B59980-C21A-EC06-8563-D74DA19C6F31">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:28:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Complément du numéro de seuil.
+
+Exemple : 1bis]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

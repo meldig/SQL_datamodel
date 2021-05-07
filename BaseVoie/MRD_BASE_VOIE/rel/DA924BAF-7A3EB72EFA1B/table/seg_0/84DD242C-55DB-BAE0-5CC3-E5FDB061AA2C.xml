@@ -30,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="CABE5CA5-42A0-5D40-D984-E51D09716F24" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
@@ -56,7 +56,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7B477C34-A6A1-2DD8-EFCD-6760073479FC" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
@@ -65,7 +65,7 @@
 <Column name="fid_pnom" id="C2CFDD73-8DD3-71F1-DFAC-839BFB7D8E9A">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:58:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Pnom de l''agent ayant effectué une action sur un seuil.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent au seuil qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -73,6 +73,9 @@
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5304DA7-B523-5DE2-696C-EBC218AE9D79" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
 </Column>
 <Column name="geom" id="113E1378-C769-EE56-DF7A-EFF83AACFCE7">
 <createdBy>bjacq</createdBy>
@@ -116,6 +119,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F5B65273-B5B2-D4ED-A233-25428A6D1F83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F2C70E5-4C81-CA27-6646-499FA89D5C01" name="TA_SEUIL_LOG_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:35:35 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2CFDD73-8DD3-71F1-DFAC-839BFB7D8E9A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

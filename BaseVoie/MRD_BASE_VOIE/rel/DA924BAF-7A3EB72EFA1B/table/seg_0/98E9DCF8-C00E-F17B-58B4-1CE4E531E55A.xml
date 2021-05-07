@@ -74,7 +74,7 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="58AFCC10-ACC3-0A38-4F88-ECC42CAF040A" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
@@ -91,17 +91,20 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="pnom_action" id="C66B049D-590D-5433-3CBA-B88F4222CD86">
+<Column name="fid_pnom" id="C66B049D-590D-5433-3CBA-B88F4222CD86">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Pnom de l''agent ayant créé, modifié ou supprimé le tronçon.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent au tronçon qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 BYTE</dataTypeSize>
-<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C158F960-2BB4-D9B9-223B-0B8F2F2B765C" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
 </Column>
 <Column name="geom" id="7D0B4C1F-1C35-5A88-7804-4F5F13A24361">
 <createdBy>bjacq</createdBy>
@@ -156,6 +159,16 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0E0F3F5A-C39E-D795-D2EC-3ADD4F2D19F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E30B12AF-7EE9-A7E4-F8CE-87A8B25F1D91" name="TA_TRONCON_LOG_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:32:55 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C66B049D-590D-5433-3CBA-B88F4222CD86"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
