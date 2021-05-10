@@ -115,10 +115,63 @@ Remplace les champs ]]></commentInRDBMS>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="BB5D6453-4DD8-FD9D-A265-532E40D964E1" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
+</Column>
+<Column name="date_saisie" id="88D8D0FB-73DC-A559-088E-E2C0570E11D9">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:42:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[date de saisie de la voie (via un trigger).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_saisie" id="B6673DA9-93E4-FE7B-A312-CFC22E01A09A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:42:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant créé une voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6FA79705-C005-6CDA-B8E3-1A7F59615FF9" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+<Column name="date_modification" id="4EA22C5B-AF7B-4997-5757-9370F64AD6C6">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:42:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[date de modification de la voie (via un trigger).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_modification" id="0E85DF8D-7983-6EAD-1132-E523B2921C07">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:42:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant modifié une voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="791BABDF-B59B-92E9-242E-4DE0DD329329" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
 </columns>
@@ -162,6 +215,26 @@ Remplace les champs ]]></commentInRDBMS>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A00C4D0F-8C18-8683-7DBE-0F5FB7592275"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DE5552D-B96C-AC21-609F-DD994E95AD70" name="TA_VOIE_FID_PNOM_SAISIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:46:13 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6673DA9-93E4-FE7B-A312-CFC22E01A09A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D30E7907-1070-554F-6E27-AF0E72444729" name="TA_VOIE_FID_PNOM_MODIFICATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:46:38 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E85DF8D-7983-6EAD-1132-E523B2921C07"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

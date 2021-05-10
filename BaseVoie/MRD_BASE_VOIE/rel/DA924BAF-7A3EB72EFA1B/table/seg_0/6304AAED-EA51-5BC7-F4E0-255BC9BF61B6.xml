@@ -34,7 +34,7 @@ Exemple :
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="BFB10AB6-899C-CE5F-252A-F3BABB73A13C" referredColumn="149007C5-567F-345D-6F3D-D82960ABA756"/>
@@ -49,7 +49,7 @@ Exemple :
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="202AAB57-A1C6-B9B1-EE16-E6466CAB9E69" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

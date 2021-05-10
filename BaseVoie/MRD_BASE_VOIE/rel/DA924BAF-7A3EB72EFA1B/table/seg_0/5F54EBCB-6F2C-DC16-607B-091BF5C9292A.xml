@@ -1,21 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="83EA0305-DAFF-8D98-F416-E671D60DEC14" name="TA_RUE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F54EBCB-6F2C-DC16-607B-091BF5C9292A" name="TA_RUE_LOG">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 13:09:21 UTC</createdTime>
-<comment><![CDATA[Table regroupant toutes les rues de la MEL.
-La rue est le composée de plusieurs voies elles-mêmes composées de plusieurs tronçons.
-Schématiquement la rue c'est le concept, la voie c'est l'objet et les tronçons composent l''objet.
-
-Ancienne table : TA_RUE]]></comment>
+<createdTime>2021-05-10 08:52:17 UTC</createdTime>
+<comment><![CDATA[Table de log de la table TA_RUE, permettant d''enregistrer toutes les évolutions des rues.]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<ordsAlias>table_11</ordsAlias>
+<ordsAlias>table_27</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="1EDF734E-035B-B2D0-C7F1-67D85AD22C0F">
+<Column name="objectid" id="25E6E7F5-CF25-F5D5-2E42-13AB75144223">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 13:21:47 UTC</createdTime>
+<createdTime>2021-05-10 08:59:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -25,9 +21,24 @@ Ancienne table : TA_RUE]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="libelle_rue" id="EFA36ACD-10EB-6667-3F44-BF22690DA32D">
+<Column name="fid_rue" id="4C9F8578-991E-EC98-E13A-62E4D8462038">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 13:21:47 UTC</createdTime>
+<createdTime>2021-05-10 08:59:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_RUE permettant de savoirsur quelle rue ont été faites les actions.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="827B1A69-2609-4643-6FC7-C15AA37A97B8" referredColumn="1EDF734E-035B-B2D0-C7F1-67D85AD22C0F"/>
+</associations>
+</Column>
+<Column name="libelle_rue" id="89B43ECF-3720-E441-A843-2E20DAC04E58">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:59:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Libellé de la rue (imposé par la commune)]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -37,11 +48,12 @@ Ancienne table : TA_RUE]]></comment>
 <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nom" id="57F805D9-7538-721B-3C93-FBE7AC1EFFAC">
+<Column name="nom" id="E5873B0F-BB78-2DDF-217B-744F6DB3EF84">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 13:21:47 UTC</createdTime>
+<createdTime>2021-05-10 08:59:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Nom de la rue.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -49,9 +61,9 @@ Ancienne table : TA_RUE]]></comment>
 <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="code_insee" id="BF683994-6509-0723-AD7C-8E30AE608B79">
+<Column name="code_insee" id="94DBFC79-415E-7327-0887-B1810D32FCE6">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-05-05 09:06:34 UTC</createdTime>
+<createdTime>2021-05-10 08:59:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Champ calculé via une requête spatiale, permettant d''associer à chaque rue le code insee de la commune dans laquelle elle se trouve (issue de la table G_REFERENTIEL.A_COMMUNES).]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -61,20 +73,10 @@ Ancienne table : TA_RUE]]></comment>
 <ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_saisie" id="0F32CCD4-C948-88D3-0684-9C20A4106257">
+<Column name="fid_type_action" id="6EE295A8-7702-BABA-01B2-7DDCB3C673D1">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-05-10 09:09:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de saisie de la rue (via un trigger).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fid_pnom_saisie" id="A0F0FD0B-412E-6320-CCA9-612B3215792B">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-10 09:09:26 UTC</createdTime>
+<createdTime>2021-05-10 08:59:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -83,12 +85,12 @@ Ancienne table : TA_RUE]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="B5D1FF8A-EFA7-6FF9-62B0-034E05D0B7BA" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+<colAssociation fkAssociation="64E5E8A4-9AFA-5774-F9FC-E78A021BAFFE" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
 </associations>
 </Column>
-<Column name="date_modification" id="ECD3BB2F-0721-1A90-BB4E-DC8B3DB31754">
+<Column name="date_action" id="AF4C3435-A609-9574-26B2-53A41EBADB9E">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-05-10 09:09:26 UTC</createdTime>
+<createdTime>2021-05-10 08:59:54 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -97,9 +99,9 @@ Ancienne table : TA_RUE]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_pnom_modification" id="607E437E-E1E9-E74B-35C9-2F44F9FF8986">
+<Column name="fid_pnom" id="007A6E69-4AE2-23ED-CB78-DE3F0253AD11">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-05-10 09:09:26 UTC</createdTime>
+<createdTime>2021-05-10 08:59:54 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -108,40 +110,50 @@ Ancienne table : TA_RUE]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="925C8F11-7406-B8B9-DB3C-A7B48B781471" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+<colAssociation fkAssociation="F33C785D-C35A-EF9E-718C-5F8775B2DA8E" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="EF1C81CC-E94D-918E-413A-D3D7A7B9F87B" name="TA_RUE_PK">
+<ind_PK_UK id="FAC53014-5348-2BB4-21CD-D6BCEBE5C8A0" name="TA_RUE_LOG_PK">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 13:21:47 UTC</createdTime>
+<createdTime>2021-05-10 08:59:54 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1EDF734E-035B-B2D0-C7F1-67D85AD22C0F"/>
+<colUsage columnID="25E6E7F5-CF25-F5D5-2E42-13AB75144223"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="52C9AF81-3FDB-254B-73E7-756E1C114543" name="TA_RUE_FID_PNOM_SAISIE_FK">
+<ind_PK_UK id="208C3372-6F1E-16CA-EDE1-2F76E756615A" name="TA_RUE_LOG_FID_RUE_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-05-10 09:10:36 UTC</createdTime>
+<createdTime>2021-05-10 09:01:52 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A0F0FD0B-412E-6320-CCA9-612B3215792B"/>
+<colUsage columnID="4C9F8578-991E-EC98-E13A-62E4D8462038"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2464CA07-14F5-AA84-0553-D211D1466577" name="TA_RUE_FID_PNOM_MODIFICATION_FK">
+<ind_PK_UK id="2D786750-314D-2130-137F-5BC9B90C2801" name="TA_RUE_LOG_FID_PNOM_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-05-10 09:11:02 UTC</createdTime>
+<createdTime>2021-05-10 09:02:11 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="607E437E-E1E9-E74B-35C9-2F44F9FF8986"/>
+<colUsage columnID="007A6E69-4AE2-23ED-CB78-DE3F0253AD11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EAA44E2-5901-84CA-77E1-E09826E5D538" name="TA_RUE_LOG_FID_TYPE_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 09:02:36 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EE295A8-7702-BABA-01B2-7DDCB3C673D1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
