@@ -21,10 +21,10 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_troncon" id="73217806-81FB-5263-52B0-E705EF864E06">
+<Column name="fid_relation_troncon_voie" id="C41280DB-2423-BF64-F1D5-EEC9DC00FF9E">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 08:37:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_RELATION_TRONCON_VOIE permettant d''associer un tronçon à une voie.]]></commentInRDBMS>
+<createdTime>2021-05-11 14:52:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_RELATION_TRONCON_VOIE permettant d''identifier les relations tronçon/voies.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,23 +33,31 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="7C45D294-4C5A-1A1D-CC09-8052EB5493C4" referredColumn="510779FC-0E45-595F-40ED-DC296D3D9B73"/>
+<colAssociation fkAssociation="06F5EA94-E6B2-7C70-C4E6-FAEE6DDA0EB4" referredColumn="510779FC-0E45-595F-40ED-DC296D3D9B73"/>
 </associations>
 </Column>
 <Column name="fid_voie" id="11EB3FB5-A132-76A7-D719-E09CAB2E7F71">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 08:37:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_RELATION_TRONCON_VOIE permettant d''associer une voie à un tronçon.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Identifiant des voies permettant d''associer une voie à un ou plusieurs tronçons.
+Ancien champ : CCOMVOI.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A2D2197C-F8C9-DCE9-07AF-FFCD94D86E3A" referredColumn="510779FC-0E45-595F-40ED-DC296D3D9B73"/>
-</associations>
+</Column>
+<Column name="fid_troncon" id="73217806-81FB-5263-52B0-E705EF864E06">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 08:37:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant des tronçons permettant d''associer un ou plusieurs tronçon à une voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="date_action" id="D8331AC1-C54F-9AEA-4DBD-10D93D8A06EF">
 <createdBy>bjacq</createdBy>
@@ -106,26 +114,6 @@
 <colUsage columnID="0EAB9EE2-CBE7-5D6B-723E-88E609DE0E66"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8D46D26B-E8CA-4148-7C71-98F9EA2D8007" name="TA_RELATION_TRONCON_VOIE_LOG_FID_VOIE_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 08:37:58 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="11EB3FB5-A132-76A7-D719-E09CAB2E7F71"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="34EF3B30-99A1-5A37-2C73-F69EBD2323FA" name="TA_RELATION_TRONCON_VOIE_LOG_FID_TRONCON_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 08:38:33 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="73217806-81FB-5263-52B0-E705EF864E06"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="0D397731-BB51-6C13-4183-A7549AC835F2" name="TA_RELATION_TRONCON_VOIE_LOG_FID_TYPE_ACTION_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:05:13 UTC</createdTime>
@@ -144,6 +132,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FF7A2A9E-EA10-8D19-5EBA-9A9E2FEE5CAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E36ECEE-D809-8E68-6C7E-FF3442877F4A" name="TA_RELATION_TRONCON_VOIE_LOG_FID_RELATION_TRONCON_VOIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-11 14:57:49 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C41280DB-2423-BF64-F1D5-EEC9DC00FF9E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

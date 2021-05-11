@@ -90,7 +90,7 @@ Ancienne table : ILTATRC]]></comment>
 <Column name="date_fin_validite" id="0587CC6E-7CEF-C8F0-2267-7F134D1EB263">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:08:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de fin de validité du troçon.
+<commentInRDBMS><![CDATA[date de fin de validité du tronçon.
 Cette date correspond à la date d'invalidation du tronçon (cf. doc_dynmap_mhsuzanne.pdf p. 11 alinéa 2).]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
