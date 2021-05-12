@@ -30,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="827B1A69-2609-4643-6FC7-C15AA37A97B8" referredColumn="1EDF734E-035B-B2D0-C7F1-67D85AD22C0F"/>
@@ -76,13 +76,13 @@
 <Column name="fid_type_action" id="6EE295A8-7702-BABA-01B2-7DDCB3C673D1">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-10 08:59:54 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE, permettant d''associer un type d''action à une voie.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="64E5E8A4-9AFA-5774-F9FC-E78A021BAFFE" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
@@ -91,6 +91,7 @@
 <Column name="date_action" id="AF4C3435-A609-9574-26B2-53A41EBADB9E">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-10 08:59:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie, modification ou suppression de la rue.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -102,6 +103,7 @@
 <Column name="fid_pnom" id="007A6E69-4AE2-23ED-CB78-DE3F0253AD11">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-10 08:59:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent à la voie qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

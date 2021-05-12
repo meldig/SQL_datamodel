@@ -11,6 +11,18 @@ Ancienne table TA_RUEVOIE]]></comment>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="B90C3BEF-32F7-EF0C-64E6-00F2C92F45A3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-12 09:24:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="fid_rue" id="260FB9FD-4F5A-B409-DFD1-115EE1895EE2">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-29 14:18:53 UTC</createdTime>
@@ -43,6 +55,17 @@ Ancienne table TA_RUEVOIE]]></comment>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EEFA2138-DFC6-82E9-5A25-D5262425DA6D" name="TA_RELATION_RUE_VOIE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-12 09:24:29 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B90C3BEF-32F7-EF0C-64E6-00F2C92F45A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="CCF55270-3E7E-6506-1652-D375BEA9B27F" name="TA_RELATION_RUE_VOIE_FID_RUE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-29 14:20:25 UTC</createdTime>

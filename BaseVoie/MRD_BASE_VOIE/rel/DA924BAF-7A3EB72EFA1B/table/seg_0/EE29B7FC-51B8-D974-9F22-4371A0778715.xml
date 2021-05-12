@@ -71,7 +71,7 @@ Ancienne table : VOIEVOI]]></comment>
 <createdTime>2021-04-26 10:11:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Côté de la voie appartenant à la commune (gauche/droite)
 
-Remplace les champs ]]></commentInRDBMS>
+Remplace les champs CGPARITE et CDPARITE]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
