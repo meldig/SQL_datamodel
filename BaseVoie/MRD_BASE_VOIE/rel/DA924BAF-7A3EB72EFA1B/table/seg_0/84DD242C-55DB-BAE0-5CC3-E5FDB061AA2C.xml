@@ -24,7 +24,7 @@
 <Column name="fid_seuil" id="3B844A8E-8D2B-8620-2B11-C43AEC677151">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:58:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SEUIL permettant de savoir sur quel seuil les actions ont été entreprises.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_INFOS_SEUIL permettant d''associer un ou plusieurs seuils à un point géométrique.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,6 +35,57 @@
 <associations>
 <colAssociation fkAssociation="CABE5CA5-42A0-5D40-D984-E51D09716F24" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
 </associations>
+</Column>
+<Column name="fid_infos_seuil" id="3E05D627-C4CF-2987-7CAD-FFFD1C8E78AB">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-17 08:26:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_INFOS_SEUIL permettant d''associer un ou plusieurs seuils à un point géométrique.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cote_troncon" id="DDFFD1A2-BA04-E9A8-6350-C1772507673D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-17 08:26:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Côté du tronçon auquel est rattaché le seuil.
+G = gauche ; D = droite.
+- En agglomération le sens des tronçons est déterminé par ses numéros de seuils. En d''autres termes il commence au niveau du seuil dont le numéro est égal à 1 ;
+- Hors agglomération, le sens du tronçon dépend du sens de circulation pour les rues à sens unique. Pour les rues à double-sens chaque tronçon est doublé donc leur sens dépend aussi du sens de circulation;]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code_insee" id="570E6F9B-A8E9-2840-363F-55BBA878B676">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-17 08:26:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ calculé via une requête spatiale, permettant d''associer à chaque rue le code insee de la commune dans laquelle elle se trouve (issue de la table G_REFERENTIEL.A_COMMUNES).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="113E1378-C769-EE56-DF7A-EFF83AACFCE7">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:58:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie du seuil de type point.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="date_action" id="F1EF94A0-2D93-7A56-4198-4E06DAC6B926">
 <createdBy>bjacq</createdBy>
@@ -76,17 +127,6 @@
 <associations>
 <colAssociation fkAssociation="B5304DA7-B523-5DE2-696C-EBC218AE9D79" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
-</Column>
-<Column name="geom" id="113E1378-C769-EE56-DF7A-EFF83AACFCE7">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 13:58:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Géométrie du seuil de type point.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
-<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

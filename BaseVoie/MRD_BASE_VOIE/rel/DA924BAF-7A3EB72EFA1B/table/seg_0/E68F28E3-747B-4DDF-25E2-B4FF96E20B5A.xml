@@ -39,7 +39,7 @@ Ancienne table : ILTASEU]]></comment>
 <colAssociation fkAssociation="726A9993-10C2-991E-BCC6-E12AAF45CC32" referredColumn="34BA1DF2-9A2A-C4FB-FF46-5D8008B21AEB"/>
 </associations>
 </Column>
-<Column name="cote_tronçon" id="01FB9B87-3AC5-7887-151F-8402DDF25F0C">
+<Column name="cote_troncon" id="01FB9B87-3AC5-7887-151F-8402DDF25F0C">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 12:22:33 UTC</createdTime>
 <commentInRDBMS><![CDATA[Côté du tronçon auquel est rattaché le seuil.
