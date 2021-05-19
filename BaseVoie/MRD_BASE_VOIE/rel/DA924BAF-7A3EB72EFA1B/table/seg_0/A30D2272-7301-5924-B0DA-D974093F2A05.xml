@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A30D2272-7301-5924-B0DA-D974093F2A05" name="TA_RELATION_RUE_VOIE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 14:15:56 UTC</createdTime>
+<comment><![CDATA[Table pivot permettant d''associer chaque rue à sa/ses voies.
+
+Ancienne table TA_RUEVOIE]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="B90C3BEF-32F7-EF0C-64E6-00F2C92F45A3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-12 09:24:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_rue" id="260FB9FD-4F5A-B409-DFD1-115EE1895EE2">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 14:18:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_RUE permettant d''associer une rue à une ou plusieurs voies.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA42B58B-6CCE-8CCA-43B7-8E55EC3D6D86" referredColumn="1EDF734E-035B-B2D0-C7F1-67D85AD22C0F"/>
+</associations>
+</Column>
+<Column name="fid_voie" id="6860EDE1-11AD-C8D2-F4B6-BA40D93BD258">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 14:18:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère permettant d''associer une ou plusieurs voies à une rue.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C249B7F6-5DA6-A938-E834-BE750714FDCF" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EEFA2138-DFC6-82E9-5A25-D5262425DA6D" name="TA_RELATION_RUE_VOIE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-12 09:24:29 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B90C3BEF-32F7-EF0C-64E6-00F2C92F45A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCF55270-3E7E-6506-1652-D375BEA9B27F" name="TA_RELATION_RUE_VOIE_FID_RUE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 14:20:25 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="260FB9FD-4F5A-B409-DFD1-115EE1895EE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A73E2C9A-C61B-D258-22C5-16CDAD111170" name="TA_RELATION_RUE_VOIE_FID_VOIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-29 14:20:45 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6860EDE1-11AD-C8D2-F4B6-BA40D93BD258"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

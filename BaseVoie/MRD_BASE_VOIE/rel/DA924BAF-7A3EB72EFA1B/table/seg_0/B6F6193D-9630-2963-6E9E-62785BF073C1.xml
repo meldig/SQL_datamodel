@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6F6193D-9630-2963-6E9E-62785BF073C1" name="TA_RELATION_FAMILLE_LIBELLE_POI">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 11:44:18 UTC</createdTime>
+<comment><![CDATA[Table pivot permettant d''associer les libellés aux familles de POI afin de les catégoriser.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="1285EDAA-0E51-3A22-3C68-54294F9B6FA5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:14:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_famille" id="2B90B578-1C10-8BF9-3A71-2956EBD5AD2E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:14:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_FAMILLE_POINT_INTERET permettant d''associer une famille de POI à ses libellés et donc de les catégoriser.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BEF1E089-5A32-4383-CCEE-BFDEBAABA58F" referredColumn="6A16E519-BED4-0A71-6B09-85926CE69237"/>
+</associations>
+</Column>
+<Column name="fid_libelle" id="ADB79C3E-62B7-00E1-900F-6AD9C3B780A4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:14:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE_POINT_INTERET permettant d''associer les libellés à leur famille de POI.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="626A465F-F0B5-0C99-850C-8677C3B31547" referredColumn="41969DBF-418F-91B2-E8DA-8467CA7894E4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC8CC912-2DDE-6E8C-DBFC-7CDB7D813EF6" name="TA_RELATION_FAMILLE_LIBELLE_POI_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:14:46 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1285EDAA-0E51-3A22-3C68-54294F9B6FA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00C4E316-EFAC-4E73-5650-FA21F7C241A6" name="TA_RELATION_FAMILLE_LIBELLE_POI_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:15:05 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADB79C3E-62B7-00E1-900F-6AD9C3B780A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E1DD07A-68E8-78F3-1285-6743EC792FD7" name="TA_RELATION_FAMILLE_LIBELLE_POI_FID_FAMILLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:15:48 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B90B578-1C10-8BF9-3A71-2956EBD5AD2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

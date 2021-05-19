@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9DA16142-A2E2-5278-A34B-F38DC86CADDE" containerWithKeyObject="AEB46F17-72FA-15AF-1A2D-92D6C8DACA91" localFKIndex="F130B5EE-FC31-1E36-F89E-6A32EC4FDE93" name="TA_INFOS_SEUIL_LOG_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:36:26 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<referredTableLongName>TA_AGENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E3BF7124-E619-AF72-63F3-110CCDBC024F</referredTableID>
+<keyObject>F16BC264-217B-5220-0556-4F49EE50C7F5</keyObject>
+<referredKeyID>F16BC264-217B-5220-0556-4F49EE50C7F5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>numero_agent</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

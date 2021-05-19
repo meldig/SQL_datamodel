@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEBC71FB-173F-339F-0458-1290650FAD0C" name="TA_FANTOIR">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 08:53:38 UTC</createdTime>
+<comment><![CDATA[Table rassemblant tous les codes fantoirs issus du fichier fantoir et correspondants aux voies présentes sur le territoire de la MEL.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="99792614-68D7-3C7A-1B0F-46003990D42F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 09:01:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code_fantoir" id="B17E9800-B175-581D-55BF-FFEBCF458922">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 09:01:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code fantoir de chaque voie.
+Ce code est composé du code commune sur 3 caractère et de l''identifiant de la voie dans la commune.
+Attention cet identifiant est recyclé dans le fichier fantoir, ce champ ne doit donc jamais être utilisé en tant que clé primaire ou étrangère.
+
+Exemple : 
+- 3502153 pour une voie situé dans Lille ;
+- 0096870 pour une voie située dans Villeneuve-d''Ascq ;
+]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D48F66F-654E-3962-E111-78EB6E50FEB8" name="TA_FANTOIR_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 09:01:16 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99792614-68D7-3C7A-1B0F-46003990D42F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

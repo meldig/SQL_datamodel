@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="186C56FC-D668-FBCD-D56D-9308A745EFA7" containerWithKeyObject="EE29B7FC-51B8-D974-9F22-4371A0778715" localFKIndex="217F0E74-CD84-E6E0-CA05-865F32E06187" name="TA_VOIE_FID_FANTOIR_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 09:25:02 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<referredTableLongName>TA_FANTOIR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DEBC71FB-173F-339F-0458-1290650FAD0C</referredTableID>
+<keyObject>9D48F66F-654E-3962-E111-78EB6E50FEB8</keyObject>
+<referredKeyID>9D48F66F-654E-3962-E111-78EB6E50FEB8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

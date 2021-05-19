@@ -1,0 +1,335 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC6340E5-A5EA-6AE2-5B97-23F0281D2B7B" name="TA_POINT_INTERET">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 08:51:46 UTC</createdTime>
+<comment><![CDATA[Table des points d''intérêt de la Base Voie, c'est-à-dire de tous les bâtiments disposant de service public ou de commerce ou d'entreprise.
+Exemple : la poste, gare, hôpital, etc
+
+Ancienne table ILTALPU]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="83D3EEF4-A3F4-43ED-63D2-CF7FD69D2C73">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table identifiant chaque point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_type_poi" id="E2CC769A-DAC8-B1C0-DFDC-97E4C91B64C5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE_BASEVOIE permettant de catégoriser les points d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C03C6D6E-2084-2174-EDA5-0F9187633304" referredColumn="41969DBF-418F-91B2-E8DA-8467CA7894E4"/>
+</associations>
+</Column>
+<Column name="validite" id="82937C0B-B5B2-5200-2129-C13F1B884A46">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ de validité de chaque point d''intérêt : 0 = point d'intérêt invalide ; 1 = point d''intérêt valide.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code_insee" id="6881783D-EF98-3BA8-97CC-B8F76E635F72">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code INSEE appartenant à la commune dans laquelle se trouve les points d''intérêt.
+Ce champ remplace l''ancien CNUMCOM qui correspondait au code commune.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_saisie" id="5B0B70CF-8325-8D45-EB9E-F55F7EC26127">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie du point d''intérêt dans la base de données.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_edition" id="CF29EE87-97AA-6B82-1140-5B69BB6C5053">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-26 09:07:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de mise à jour du point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="debut_validite" id="D623BB3C-48EF-9A5E-B29C-31EB9F2FB046">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de début de validité du point d''intérêt. Cette date diffère de la date de saise, car elle correspond à la date de début validité du bâtiment/ouvrage du point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fin_validite" id="F3CAD8A6-2BD5-6007-C7D2-23C3B52AE3EE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin de validité du point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code_niveau" id="60D05686-374B-F33F-AF48-3C99F00A1C2A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code niveau (voir Bernard).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle" id="03A7D3AE-EFB2-A4FB-4349-D2C4B304FFCF">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé de chaque point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_court" id="756985F7-83D3-B44D-7442-64047E7352D4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé court de chaque point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clef_origine" id="8F8859A4-8959-5A24-2730-62449F20BAF2">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé du fichier d''origine.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_poi_pere" id="9914B02D-C9D4-47F7-72E1-3E3A40CE794E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du point d''intérêt père.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_poi_fils" id="648BED57-141A-555E-12AA-3C689FF73497">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du point d''interêt fils.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complement_info" id="6A4363A9-FD29-C3E4-E469-AA24600CF95D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Compément d''information de chaque point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="url" id="4C047D4F-F716-28AE-4F16-B5A2858F0322">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[URL du site de chaque point d''intérêt en disposant un.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="html" id="95A2D0C2-041E-9B97-606C-9D0085381CCE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[je ne sais pas à quoi correspond ce champ exactement.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2048 BYTE</dataTypeSize>
+<ownDataTypeParameters>2048 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ecrire_lieu" id="2DA264C0-2191-5946-3CF6-E28CB77897A9">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Je ne sais pas à quoi sert ce champ, mais il est manifestement remplit très souvent (mais pas totalement).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prefixe_libelle" id="F31B6033-90BA-E9C2-C527-FA3EDDCCE4B4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Préfixe du libellé de chaque point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prefixe_libelle_court" id="6AB87F04-62F2-EF04-DD8B-490286934732">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Préfixe du libellé court de chaque point d'intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="importance" id="BFE9D068-DD65-CADE-B761-94C3AFDC027F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Importance du point d''intérêt.
+Il faut se renseigner pour savoir quel est l''ordre d''importance des chiffres renseignés, autrement dit l''échelle d''importance est-elle croissante ou non ?]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="symbole_lieu" id="421155A0-F940-69D1-5F61-FC735C15C8BF">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Symbole du point d''intérêt (je ne sais pas à quoi cela correspond dans la base).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="45DEAD87-F81B-FA89-7B3C-036A4C85A3C7">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:05:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de type point des points d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A5984ED-ED27-5198-B27E-C66F84DE628B" name="TA_POINT_INTERET_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 10:00:58 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83D3EEF4-A3F4-43ED-63D2-CF7FD69D2C73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9805F787-FF21-B872-EB17-B59A40C7E002" name="TA_POINT_INTERET_FID_FAMILLE_POI_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 13:04:19 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2CC769A-DAC8-B1C0-DFDC-97E4C91B64C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

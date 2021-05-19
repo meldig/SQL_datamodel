@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98E9DCF8-C00E-F17B-58B4-1CE4E531E55A" name="TA_TRONCON_LOG">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:15:01 UTC</createdTime>
+<comment><![CDATA[Table d''historisation des actions effectuées sur les tronçons de la base voie.
+
+Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTAFILIA.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="7D3CD2AE-3124-B250-CD38-6C677BC882D2">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:24:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_troncon" id="78EEBF69-ED9E-C499-E241-CF7D0A1BE0E4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:24:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant de savoir sur quel tronçon ont été effectué les actions.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FCD4F9D-333F-565F-52B0-B3155BFF1C72" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
+</associations>
+</Column>
+<Column name="fid_tronçon_pere" id="472D1145-8872-6B78-E608-5F6E39757FB6">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:47:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant, en cas de coupure de tronçon, de savoir quel était le tronçon original.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A60B1B8-1397-A6E8-FFD5-07D7C6D22D30" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
+</associations>
+</Column>
+<Column name="date_fin_validite" id="B368A3C9-7CCE-ED84-533D-7560D977109A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin de validité du tronçon]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_type_action" id="0E0F3F5A-C39E-D795-D2EC-3ADD4F2D19F6">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:21:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de catégoriser le type d''action effectué sur les tronçons.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58AFCC10-ACC3-0A38-4F88-ECC42CAF040A" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
+</Column>
+<Column name="date_action" id="3054BE90-6670-5F00-0B84-AA57710DC3C9">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:24:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[date de saisie, modification et suppression du tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom" id="C66B049D-590D-5433-3CBA-B88F4222CD86">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:24:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent au tronçon qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C158F960-2BB4-D9B9-223B-0B8F2F2B765C" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+<Column name="geom" id="7D0B4C1F-1C35-5A88-7804-4F5F13A24361">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 14:31:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de chaque tronçon de type ligne simple.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A857452-28E3-4B2F-D3E9-7368A350E723" name="TA_TRONCON_NOEUD_LOG_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:24:46 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D3CD2AE-3124-B250-CD38-6C677BC882D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2FF880C-8EDA-D203-9DB4-37918BA524AD" name="TA_TRONCON_NOEUD_LOG_FID_TRONCON_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:25:58 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78EEBF69-ED9E-C499-E241-CF7D0A1BE0E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2AF4FF40-86C4-0417-96F7-3C5193A3E58C" name="TA_TRONCON_NOEUD_LOG_FID_TRONCON_PERE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 12:48:27 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="472D1145-8872-6B78-E608-5F6E39757FB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BD5E0BF-6B9B-FF22-BBA0-58FB7366AB19" name="TA_TRONCON_LOG_FID_TYPE_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:01:29 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E0F3F5A-C39E-D795-D2EC-3ADD4F2D19F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E30B12AF-7EE9-A7E4-F8CE-87A8B25F1D91" name="TA_TRONCON_LOG_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:32:55 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C66B049D-590D-5433-3CBA-B88F4222CD86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
