@@ -14,7 +14,7 @@ Ancienne table : VOIEVOI]]></comment>
 <Column name="objectid" id="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 10:11:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table anciennement CCOMVOI.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -52,19 +52,6 @@ Ancienne table : VOIEVOI]]></comment>
 <associations>
 <colAssociation fkAssociation="186C56FC-D668-FBCD-D56D-9308A745EFA7" referredColumn="99792614-68D7-3C7A-1B0F-46003990D42F"/>
 </associations>
-</Column>
-<Column name="numero_voie" id="CB3DF129-40BB-FF76-FEAB-19460B21BC2F">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-26 10:11:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[numéro de voie (commence par code insee)]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="cote_commune" id="FADC64FA-F6B7-F189-0671-8F23D55CB4C4">
 <createdBy>bjacq</createdBy>
