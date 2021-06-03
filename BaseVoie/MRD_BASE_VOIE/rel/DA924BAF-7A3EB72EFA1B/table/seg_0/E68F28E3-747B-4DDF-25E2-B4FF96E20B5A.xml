@@ -24,21 +24,6 @@ Ancienne table : ILTASEU]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_infos_seuil" id="8C286244-DF8A-A028-BA3E-8C77B8F340F8">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 13:33:11 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_INFOS_SEUIL permettant d''associer un ou plusieurs seuils à un point géométrique.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="726A9993-10C2-991E-BCC6-E12AAF45CC32" referredColumn="34BA1DF2-9A2A-C4FB-FF46-5D8008B21AEB"/>
-</associations>
-</Column>
 <Column name="cote_troncon" id="01FB9B87-3AC5-7887-151F-8402DDF25F0C">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 12:22:33 UTC</createdTime>
@@ -144,16 +129,6 @@ G = gauche ; D = droite.
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="17B52127-565B-8393-9FEF-543334313340"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="11C5A9C7-47FC-E286-9D78-01A1FCFF0DE1" name="TA_SEUIL_FID_INFOS_SEUIL_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 14:00:07 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="8C286244-DF8A-A028-BA3E-8C77B8F340F8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="E14A92B6-C73A-9E88-6DBF-7B22FB3EE616" name="TA_SEUIL_FID_PNOM_SAISIE_FK">

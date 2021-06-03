@@ -351,6 +351,15 @@ Ancienne table TA_RUEVOIE</comment>
 <point x="509" y="825"/>
 </points>
 </Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="34B17AAC-C99F-C9F0-FC6D-A4B8EACEA5A1" otype="FKIndexAssociation" vid_source="517380F5-E418-005A-53A4-594CFA4FFE61" vid_target="287B158C-156F-C114-F37F-AB433D6BCE77">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="340" y="685"/>
+<point x="340" y="825"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3BA569FE-6727-829B-B65E-155D6D53AE4F" otype="FKIndexAssociation" vid_source="11037EE8-1F71-3BBB-D6F9-33087F04F0C7" vid_target="BE88FAA2-F001-6562-A513-FD2E12A18AF2">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -403,15 +412,6 @@ Ancienne table TA_RUEVOIE</comment>
 <points>
 <point x="956" y="666"/>
 <point x="1153" y="767"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="726A9993-10C2-991E-BCC6-E12AAF45CC32" otype="FKIndexAssociation" vid_source="287B158C-156F-C114-F37F-AB433D6BCE77" vid_target="517380F5-E418-005A-53A4-594CFA4FFE61">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="325" y="825"/>
-<point x="325" y="685"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="791BABDF-B59B-92E9-242E-4DE0DD329329" otype="FKIndexAssociation" vid_source="7EB789C4-77F7-992B-093B-EF0BBFFFA868" vid_target="11037EE8-1F71-3BBB-D6F9-33087F04F0C7">

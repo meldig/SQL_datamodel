@@ -36,18 +36,6 @@
 <colAssociation fkAssociation="CABE5CA5-42A0-5D40-D984-E51D09716F24" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
 </associations>
 </Column>
-<Column name="fid_infos_seuil" id="3E05D627-C4CF-2987-7CAD-FFFD1C8E78AB">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-17 08:26:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de la table TA_INFOS_SEUIL permettant d''associer un ou plusieurs seuils à un point géométrique.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="cote_troncon" id="DDFFD1A2-BA04-E9A8-6350-C1772507673D">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-17 08:26:44 UTC</createdTime>

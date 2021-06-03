@@ -115,7 +115,7 @@ Ancienne table : ILTASIT</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="83A79B39-5380-CEEC-BC05-B2414F632505" otype="Note" vid="252F2FE5-555E-2D6B-27FA-DE410B0DF08C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="14" y="1854" width="285" height="71"/>
+<bounds x="14" y="1884" width="285" height="71"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -134,7 +134,7 @@ Ancienne table : ILTASIT</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="84DD242C-55DB-BAE0-5CC3-E5FDB061AA2C" otype="Table" vid="D38BFF18-DE0F-3CCA-935E-3B3010FC91F0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="320" y="1366" width="320" height="227"/>
+<bounds x="320" y="1366" width="320" height="215"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="854A4AF7-0CF9-AEB9-6529-B7DDC8F41E1A" otype="Table" vid="AE610433-0129-07C3-26A4-B3456D87B425">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -303,7 +303,7 @@ Ancienne table : ILTATRC</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D34DB8C2-15C5-EED7-6419-8D609974CCBC" otype="Table" vid="3CBD398E-5604-E257-614E-1D8D7DB37EE4">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="8" y="1653" width="398" height="194"/>
+<bounds x="8" y="1653" width="398" height="211"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="D52BC666-B696-384F-0B35-6A7198E633D2" otype="Note" vid="5E127B4B-1EAB-1D82-AF29-76BE0BF75EA8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -380,7 +380,7 @@ Cette table reprend notamment le champ fid_troncon_pere de l&apos;ancienne table
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A" otype="Table" vid="C93A40CF-2E5C-9811-D693-B4CE2870E529">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="104" y="952" width="357" height="225"/>
+<bounds x="104" y="987" width="357" height="189"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="ECF75E24-BBDF-485A-FC28-E13CCD3E850C" otype="Note" vid="00524961-882C-4D52-BAE6-4A672847CE10">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -474,7 +474,7 @@ Ancienne table : VOIEVOI</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="291" y="952"/>
+<point x="291" y="987"/>
 <point x="291" y="308"/>
 </points>
 </Connector>
@@ -504,6 +504,15 @@ Ancienne table : VOIEVOI</comment>
 <point x="2797" y="558"/>
 <point x="2797" y="1743"/>
 <point x="406" y="1743"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="34B17AAC-C99F-C9F0-FC6D-A4B8EACEA5A1" otype="FKIndexAssociation" vid_source="C93A40CF-2E5C-9811-D693-B4CE2870E529" vid_target="3CBD398E-5604-E257-614E-1D8D7DB37EE4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="270" y="1176"/>
+<point x="270" y="1653"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3BA569FE-6727-829B-B65E-155D6D53AE4F" otype="FKIndexAssociation" vid_source="43CB917E-40E4-431B-8B82-547DB9DDF8E1" vid_target="DF3FC7A5-3E5C-BBB8-4117-59B909C4D6EF">
@@ -597,15 +606,6 @@ Ancienne table : VOIEVOI</comment>
 <point x="1167" y="859"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="726A9993-10C2-991E-BCC6-E12AAF45CC32" otype="FKIndexAssociation" vid_source="3CBD398E-5604-E257-614E-1D8D7DB37EE4" vid_target="C93A40CF-2E5C-9811-D693-B4CE2870E529">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="255" y="1653"/>
-<point x="255" y="1177"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="735C6C76-C56F-AF24-ECEC-9B35B4112319" otype="FKIndexAssociation" vid_source="C22550A8-68CC-7ACE-C22D-85B6F6135932" vid_target="C0A81762-790B-DA6F-9331-DF45C5C8B714">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -651,7 +651,7 @@ Ancienne table : VOIEVOI</comment>
 <point x="2685" y="558"/>
 <point x="2685" y="1575"/>
 <point x="299" y="1618"/>
-<point x="299" y="1177"/>
+<point x="299" y="1176"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="925C8F11-7406-B8B9-DB3C-A7B48B781471" otype="FKIndexAssociation" vid_source="C22550A8-68CC-7ACE-C22D-85B6F6135932" vid_target="7439096E-7C01-8EAD-7113-8047EB28D534">
@@ -673,7 +673,7 @@ Ancienne table : VOIEVOI</comment>
 <point x="2704" y="558"/>
 <point x="2704" y="1597"/>
 <point x="281" y="1638"/>
-<point x="281" y="1177"/>
+<point x="281" y="1176"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="98C8D6BD-E162-F0C8-D2E4-11E377A2A61A" otype="FKIndexAssociation" vid_source="C22550A8-68CC-7ACE-C22D-85B6F6135932" vid_target="BB2A512D-10F4-4F97-29FC-0DDA0323A3C8">
@@ -778,7 +778,7 @@ Ancienne table : VOIEVOI</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="390" y="1177"/>
+<point x="390" y="1176"/>
 <point x="390" y="1366"/>
 </points>
 </Connector>
@@ -787,8 +787,8 @@ Ancienne table : VOIEVOI</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="406" y="1834"/>
-<point x="661" y="1942"/>
+<point x="406" y="1840"/>
+<point x="661" y="1944"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F33C785D-C35A-EF9E-718C-5F8775B2DA8E" otype="FKIndexAssociation" vid_source="C22550A8-68CC-7ACE-C22D-85B6F6135932" vid_target="C8B3F79D-05A5-F19D-A1B2-8C433AFCBCBD">
