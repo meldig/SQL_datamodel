@@ -124,10 +124,6 @@ Ancienne table ILTALPU</comment>
 </FontObject>
 </fonts>
 </OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5F54EBCB-6F2C-DC16-607B-091BF5C9292A" otype="Table" vid="1E703041-70D0-0EB1-9D54-27E366654B48">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="130" y="210" width="170" height="110"/>
-</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6304AAED-EA51-5BC7-F4E0-255BC9BF61B6" otype="Table" vid="1ECCA6B7-8FE1-38B7-0C84-37580504E49E">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="160" y="270" width="170" height="110"/>
@@ -192,10 +188,6 @@ Ancienne table : ILTADTN</comment>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8042F19F-BCD1-B7BE-C086-3761A8C9C218" otype="Table" vid="21274CBD-820B-3DA4-F080-C1016EDD10DE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="130" y="210" width="170" height="110"/>
-</OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="83EA0305-DAFF-8D98-F416-E671D60DEC14" otype="Table" vid="A2A8712E-FAFA-1578-38EB-30AA5CA504BA">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1026" y="1459" width="233" height="115"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="84DD242C-55DB-BAE0-5CC3-E5FDB061AA2C" otype="Table" vid="ADA0D6AB-2236-CBE2-CDEE-4AD42A294835">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -287,10 +279,6 @@ Ancienne table ADMIN_LISTE_FAMILLE_POI</comment>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
-</OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A30D2272-7301-5924-B0DA-D974093F2A05" otype="Table" vid="96C40AED-47C5-6CC9-9153-88F9713556F6">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1020" y="1298" width="282" height="102"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AC6340E5-A5EA-6AE2-5B97-23F0281D2B7B" otype="Table" vid="FC5AD7B0-8249-EAB0-0525-7CD7A0710634">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -568,15 +556,6 @@ Ancienne table : ILTASIT</comment>
 <point x="2070" y="827"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="64E5E8A4-9AFA-5774-F9FC-E78A021BAFFE" otype="FKIndexAssociation" vid_source="21274CBD-820B-3DA4-F080-C1016EDD10DE" vid_target="1E703041-70D0-0EB1-9D54-27E366654B48">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="130" y="265"/>
-<point x="130" y="265"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6D4B968D-875D-F90B-953A-57EB9742253A" otype="FKIndexAssociation" vid_source="7C3397E1-C778-EEB6-4A2C-D498A67A89F0" vid_target="00F9D9D7-7033-837A-BB87-C2B29682C412">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -622,15 +601,6 @@ Ancienne table : ILTASIT</comment>
 <point x="300" y="490"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="827B1A69-2609-4643-6FC7-C15AA37A97B8" otype="FKIndexAssociation" vid_source="A2A8712E-FAFA-1578-38EB-30AA5CA504BA" vid_target="1E703041-70D0-0EB1-9D54-27E366654B48">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="1099" y="1459"/>
-<point x="255" y="320"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="850A0EDD-371F-B4C1-E4C8-53DA4D378007" otype="FKIndexAssociation" vid_source="1AD616DA-681C-D84D-8868-A4D08FE901F7" vid_target="DD63E26C-B8D4-261D-0059-A164F18F3CF6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -638,15 +608,6 @@ Ancienne table : ILTASIT</comment>
 <points>
 <point x="234" y="200"/>
 <point x="234" y="660"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="925C8F11-7406-B8B9-DB3C-A7B48B781471" otype="FKIndexAssociation" vid_source="1AD616DA-681C-D84D-8868-A4D08FE901F7" vid_target="A2A8712E-FAFA-1578-38EB-30AA5CA504BA">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="194" y="200"/>
-<point x="1131" y="1459"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="95E6FEE9-1632-1DDA-8D57-A34C62F977F7" otype="FKIndexAssociation" vid_source="1AD616DA-681C-D84D-8868-A4D08FE901F7" vid_target="DD63E26C-B8D4-261D-0059-A164F18F3CF6">
@@ -694,15 +655,6 @@ Ancienne table : ILTASIT</comment>
 <point x="327" y="490"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B5D1FF8A-EFA7-6FF9-62B0-034E05D0B7BA" otype="FKIndexAssociation" vid_source="1AD616DA-681C-D84D-8868-A4D08FE901F7" vid_target="A2A8712E-FAFA-1578-38EB-30AA5CA504BA">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="194" y="200"/>
-<point x="1116" y="1459"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="BB5D6453-4DD8-FD9D-A265-532E40D964E1" otype="FKIndexAssociation" vid_source="21274CBD-820B-3DA4-F080-C1016EDD10DE" vid_target="08AAEB08-BC93-1BAE-24C6-9028DC8C4321">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -748,24 +700,6 @@ Ancienne table : ILTASIT</comment>
 <point x="1031" y="162"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C249B7F6-5DA6-A938-E834-BE750714FDCF" otype="FKIndexAssociation" vid_source="08AAEB08-BC93-1BAE-24C6-9028DC8C4321" vid_target="96C40AED-47C5-6CC9-9153-88F9713556F6">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="1161" y="1149"/>
-<point x="1161" y="1298"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="CA42B58B-6CCE-8CCA-43B7-8E55EC3D6D86" otype="FKIndexAssociation" vid_source="A2A8712E-FAFA-1578-38EB-30AA5CA504BA" vid_target="96C40AED-47C5-6CC9-9153-88F9713556F6">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="1142" y="1459"/>
-<point x="1142" y="1400"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="CABE5CA5-42A0-5D40-D984-E51D09716F24" otype="FKIndexAssociation" vid_source="DD63E26C-B8D4-261D-0059-A164F18F3CF6" vid_target="ADA0D6AB-2236-CBE2-CDEE-4AD42A294835">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -782,15 +716,6 @@ Ancienne table : ILTASIT</comment>
 <points>
 <point x="317" y="470"/>
 <point x="162" y="160"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F33C785D-C35A-EF9E-718C-5F8775B2DA8E" otype="FKIndexAssociation" vid_source="1AD616DA-681C-D84D-8868-A4D08FE901F7" vid_target="1E703041-70D0-0EB1-9D54-27E366654B48">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="200" y="200"/>
-<point x="200" y="210"/>
 </points>
 </Connector>
 </connectors>
