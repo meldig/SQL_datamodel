@@ -53,7 +53,7 @@ Ancienne table : VOIEVOI]]></comment>
 <colAssociation fkAssociation="186C56FC-D668-FBCD-D56D-9308A745EFA7" referredColumn="99792614-68D7-3C7A-1B0F-46003990D42F"/>
 </associations>
 </Column>
-<Column name="cote_commune" id="FADC64FA-F6B7-F189-0671-8F23D55CB4C4">
+<Column name="lateralite_commune" id="FADC64FA-F6B7-F189-0671-8F23D55CB4C4">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-26 10:11:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Côté de la voie appartenant à la commune (gauche/droite)
