@@ -150,8 +150,8 @@ Ancienne table : VOIEVOI</comment>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table pivot permettant d&apos;assoccier chaque tronçon aux communes qu&apos;&apos;il intersecte.
-Le remplissage de cette se fait automatiquement via un trigger qui asoccie chaque tronçon aux communes qu&apos;&apos;il intersecte via la fonction SDO_ANYINTERACT.</comment>
+<comment>Table pivot permettant d&apos;associer chaque tronçon aux communes qu&apos;&apos;il intersecte.
+Le remplissage de cette table se fait automatiquement via un trigger qui asocie chaque tronçon aux communes qu&apos;&apos;il intersecte via la fonction SDO_ANYINTERACT.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
