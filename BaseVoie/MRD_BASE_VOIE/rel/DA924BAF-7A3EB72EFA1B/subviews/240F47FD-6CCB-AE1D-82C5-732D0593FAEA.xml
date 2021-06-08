@@ -349,6 +349,10 @@ Ancienne table TA_RUEVOIE</comment>
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="70" y="90" width="170" height="110"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVView" oid="E57D9D07-3831-6B66-6B0E-954243BE3AD2" otype="View" vid="FA005C88-D287-6114-2714-1D90F461B7AF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="50" width="170" height="110"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A" otype="Table" vid="DD63E26C-B8D4-261D-0059-A164F18F3CF6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="229" y="660" width="292" height="180"/>

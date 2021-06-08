@@ -14,6 +14,22 @@
 <display>false</display>
 <notation>1</notation>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="0C79C3C7-BCA3-FEE8-F191-D6198E81F7DE" otype="Note" vid="CCD413D9-C70E-C676-A13C-4B0792390425">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="303" y="59" width="221" height="82"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Vue rassemblant la longueur, les coordonnées des start/end points, les dates de saisie/modification, de début/fin de la validité et la géométrie de chaque tronçon de la table ILTATRC.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="378A0F94-5B58-5873-082C-D2DBBE031A92" otype="Table" vid="DF3FC7A5-3E5C-BBB8-4117-59B909C4D6EF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="774" y="417" width="356" height="150"/>
@@ -46,7 +62,6 @@ Ancienne table : VOIEVOI</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -72,11 +87,11 @@ Ancienne table : VOIEVOI</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6DA33FB6-2DD0-E59D-3059-4BA090A25202" otype="Table" vid="46F851B5-83EE-C355-B434-918222FD9EB3">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="122" y="200" width="361" height="108"/>
+<bounds x="122" y="500" width="361" height="108"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="79A5472F-2838-C697-D444-0A84C79ACA48" otype="Note" vid="452E76A0-E7E2-B198-5686-B96002C75AEB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="127" y="113" width="361" height="77"/>
+<bounds x="127" y="413" width="361" height="77"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -333,6 +348,10 @@ Cette table reprend notamment le champ fid_troncon_pere de l&apos;ancienne table
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="2585" y="456" width="262" height="102"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVView" oid="E57D9D07-3831-6B66-6B0E-954243BE3AD2" otype="View" vid="5B008EDC-6357-50A2-75AD-A33DF95E671D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="304" y="149" width="223" height="177"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A" otype="Table" vid="C93A40CF-2E5C-9811-D693-B4CE2870E529">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="104" y="987" width="357" height="189"/>
@@ -430,7 +449,7 @@ Ancienne table : VOIEVOI</comment>
 <lineWidth>1</lineWidth>
 <points>
 <point x="291" y="987"/>
-<point x="291" y="308"/>
+<point x="291" y="608"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="202AAB57-A1C6-B9B1-EE16-E6466CAB9E69" otype="FKIndexAssociation" vid_source="0961D1EE-C665-9582-70CF-553765FF21A7" vid_target="F828655A-76DA-0881-D6F7-8F168DF1A3B0">
@@ -484,8 +503,9 @@ Ancienne table : VOIEVOI</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="688" y="253"/>
-<point x="483" y="253"/>
+<point x="688" y="292"/>
+<point x="643" y="292"/>
+<point x="483" y="500"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4A60B1B8-1397-A6E8-FFD5-07D7C6D22D30" otype="FKIndexAssociation" vid_source="BB2A512D-10F4-4F97-29FC-0DDA0323A3C8" vid_target="3DB597D9-B1E9-DB94-DDFE-C1FAF2B4DFCC">
@@ -622,7 +642,7 @@ Ancienne table : VOIEVOI</comment>
 <points>
 <point x="2847" y="558"/>
 <point x="2909" y="1875"/>
-<point x="1000" y="1911"/>
+<point x="1000" y="1797"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A5D722C5-6E62-B521-A552-37192B731533" otype="FKIndexAssociation" vid_source="43CB917E-40E4-431B-8B82-547DB9DDF8E1" vid_target="3A68C51F-FDBE-0DA3-CAEE-DF4C2B35112D">
@@ -687,7 +707,7 @@ Ancienne table : VOIEVOI</comment>
 <lineWidth>1</lineWidth>
 <points>
 <point x="404" y="1634"/>
-<point x="661" y="1911"/>
+<point x="661" y="1797"/>
 </points>
 </Connector>
 </connectors>

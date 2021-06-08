@@ -115,6 +115,22 @@ Ancienne table : ILTASIT</comment>
 </FontObject>
 </fonts>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="5EBD4EA7-77CF-C23D-9B7A-5D75FC61F4F0" otype="Note" vid="EBE7000F-2632-8AC9-DA77-B6E3D43485CD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1453" y="7" width="220" height="84"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Vue rassemblant la longueur, les coordonnées des start/end points, les dates de saisie/modification, de début/fin de la validité et la géométrie de chaque tronçon de la table ILTATRC.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6304AAED-EA51-5BC7-F4E0-255BC9BF61B6" otype="Table" vid="21B54D8F-6B92-E8E6-C745-CF798B18F5A0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1682" y="897" width="356" height="122"/>
@@ -251,6 +267,10 @@ Exemple :
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E3BF7124-E619-AF72-63F3-110CCDBC024F" otype="Table" vid="7EB789C4-77F7-992B-093B-EF0BBFFFA868">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="724" y="578" width="235" height="88"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVView" oid="E57D9D07-3831-6B66-6B0E-954243BE3AD2" otype="View" vid="7C7B2717-4174-B661-C0D3-F348E64D1C88">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1452" y="101" width="220" height="176"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A" otype="Table" vid="517380F5-E418-005A-53A4-594CFA4FFE61">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
