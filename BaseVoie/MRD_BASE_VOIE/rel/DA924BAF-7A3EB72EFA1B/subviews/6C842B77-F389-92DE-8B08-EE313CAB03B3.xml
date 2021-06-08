@@ -1,0 +1,224 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Proposition_code_insee" id="6C842B77-F389-92DE-8B08-EE313CAB03B3">
+<createdBy>bjacq</createdBy>
+<modifiedBy>bjacq</modifiedBy>
+<createdTime>2021-06-08 14:42:14 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="1433EB22-4365-164E-B9E4-D40904B35ED2" otype="Note" vid="ECB1481F-E619-C8BC-9F09-54B345FF6F57">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1143" y="427" width="229" height="38"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Communes de la région Hauts-de-France et leur équivalent belge.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="2456AF0D-AAA7-82E8-6136-B6A4491E9218" otype="Note" vid="39A9ADB5-A5F0-834F-1368-77C7C3E9757A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="14" y="399" width="207" height="85"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;&apos;associer les tronçons de la table TA_TRONCON à leur voie présente dans TA_VOIE.
+
+Ancienne table : VOIECVT</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="378A0F94-5B58-5873-082C-D2DBBE031A92" otype="Table" vid="53104DB5-1886-E65C-E662-B7A0A761A42C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="230" y="401" width="356" height="150"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="7FFE6A9B-18F4-972A-99D6-2B7496978A79" otype="Note" vid="D4ABD426-A972-C1D9-4606-ECF52A244388">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="4" y="154" width="203" height="134"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant les tronçons de la base voie.
+Les tronçons sont les objets de base de la base voie servant à constituer les rues qui elles-mêmes constituent les voies.
+
+Ancienne table : ILTATRC</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="854A4AF7-0CF9-AEB9-6529-B7DDC8F41E1A" otype="Table" vid="3DFDFDA4-6E00-01AA-308E-C0D9D468BE83">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="486" y="939" width="317" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="97C83B88-EDAC-12A4-F649-AE50F3F18B0E" otype="Table" vid="0CCDEC4B-F54A-8F68-38B1-F315C5EAC301">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1143" y="168" width="230" height="250"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9CC54979-25EF-7831-3DBE-3B7CBA5630D9" otype="Table" vid="FBB9423D-12B1-58D1-9B45-D5BDAC4128D8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="680" y="174" width="398" height="132"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="ABE90958-7A2B-91F4-B1AE-D653E028995F" otype="Note" vid="3DE970D4-BE82-BF94-7E1A-DB4D6DEED12E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="487" y="1059" width="322" height="73"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant tous les types de voies présents dans la base voie.
+
+Ancienne table : TPEVOIE</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="B2143426-2B74-5546-0194-D22E0B5AC563" otype="Note" vid="293BF2A1-C780-C9D9-B6BD-0133A58F6737">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="23" y="616" width="196" height="89"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant toutes les informations pour chaque voie de la base.
+
+Ancienne table : VOIEVOI</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E" otype="Table" vid="94D832B8-92D2-DCB8-2460-FE894592940C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="217" y="148" width="385" height="192"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="DC3BAC0E-ACB0-BEB3-8FEF-FD7F502F397E" otype="Note" vid="93CA4EBE-F580-688F-7079-53771006D24B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="217" y="1043" width="193" height="73"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table rassemblant tous les codes fantoirs issus du fichier fantoir et correspondants aux voies présentes sur le territoire de la MEL.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DEBC71FB-173F-339F-0458-1290650FAD0C" otype="Table" vid="7B454F26-CE56-E61E-6536-F1E270D4B107">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="218" y="944" width="193" height="88"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E03F786A-0667-33E7-F3BE-F23DF061389E" otype="Note" vid="584FF96A-2612-BC67-7F91-6F452351B91A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="683" y="69" width="295" height="88"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table pivot permettant d&apos;assoccier chaque tronçon aux communes qu&apos;&apos;il intersecte.
+Le remplissage de cette se fait automatiquement via un trigger qui asoccie chaque tronçon aux communes qu&apos;&apos;il intersecte via la fonction SDO_ANYINTERACT.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="EE29B7FC-51B8-D974-9F22-4371A0778715" otype="Table" vid="45DB7705-6FA9-9571-9B5A-4D1DF1DCCF1B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="230" y="611" width="359" height="276"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="11893AE1-0CFB-B273-AA7B-05007EC939D5" otype="FKIndexAssociation" vid_source="94D832B8-92D2-DCB8-2460-FE894592940C" vid_target="FBB9423D-12B1-58D1-9B45-D5BDAC4128D8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="602" y="240"/>
+<point x="680" y="240"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="186C56FC-D668-FBCD-D56D-9308A745EFA7" otype="FKIndexAssociation" vid_source="7B454F26-CE56-E61E-6536-F1E270D4B107" vid_target="45DB7705-6FA9-9571-9B5A-4D1DF1DCCF1B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="320" y="944"/>
+<point x="320" y="887"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3BA569FE-6727-829B-B65E-155D6D53AE4F" otype="FKIndexAssociation" vid_source="45DB7705-6FA9-9571-9B5A-4D1DF1DCCF1B" vid_target="53104DB5-1886-E65C-E662-B7A0A761A42C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="408" y="611"/>
+<point x="408" y="551"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="52E3B4C6-742F-5FAA-A520-4BEBC6B0C640" otype="FKIndexAssociation" vid_source="3DFDFDA4-6E00-01AA-308E-C0D9D468BE83" vid_target="45DB7705-6FA9-9571-9B5A-4D1DF1DCCF1B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="537" y="939"/>
+<point x="537" y="887"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="569FB563-C705-EB5D-E6A3-8D7B6DEDBD5F" otype="FKIndexAssociation" vid_source="94D832B8-92D2-DCB8-2460-FE894592940C" vid_target="53104DB5-1886-E65C-E662-B7A0A761A42C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="408" y="340"/>
+<point x="408" y="401"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="BA75948E-630C-85D3-2BB8-A870D81D35B5" otype="FKIndexAssociation" vid_source="0CCDEC4B-F54A-8F68-38B1-F315C5EAC301" vid_target="FBB9423D-12B1-58D1-9B45-D5BDAC4128D8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1143" y="240"/>
+<point x="1078" y="240"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

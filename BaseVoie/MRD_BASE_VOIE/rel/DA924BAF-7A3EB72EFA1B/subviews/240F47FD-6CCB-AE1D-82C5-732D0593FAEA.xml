@@ -231,6 +231,10 @@ Ancienne table : ILTATRC</comment>
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="120" y="190" width="170" height="110"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="97C83B88-EDAC-12A4-F649-AE50F3F18B0E" otype="Table" vid="77B1CFA1-F594-492A-10C6-2379F92158DE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="70" y="90" width="170" height="110"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="98E9DCF8-C00E-F17B-58B4-1CE4E531E55A" otype="Table" vid="7C5384F0-4094-71DB-5CE0-3950C8C2E57C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1031" y="95" width="362" height="258"/>
@@ -238,6 +242,10 @@ Ancienne table : ILTATRC</comment>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="99D5D56E-AB74-4ACE-451B-7707AD5CC60B" otype="Table" vid="29B5C9CC-73C3-C7C3-1E55-E0164025C812">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="100" y="150" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9CC54979-25EF-7831-3DBE-3B7CBA5630D9" otype="Table" vid="4F15AE3E-6A21-29DE-3910-B36E77CAE41D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="80" y="110" width="170" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="9D1F59E7-2B25-6C06-1EC5-75E1FDD60965" otype="Note" vid="FA90A663-AEF9-C0F8-E24D-26E175F92511">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -414,6 +422,15 @@ Ancienne table : ILTASIT</comment>
 <points>
 <point x="942" y="446"/>
 <point x="1055" y="353"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="11893AE1-0CFB-B273-AA7B-05007EC939D5" otype="FKIndexAssociation" vid_source="7C3397E1-C778-EEB6-4A2C-D498A67A89F0" vid_target="4F15AE3E-6A21-29DE-3910-B36E77CAE41D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="763" y="446"/>
+<point x="250" y="204"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="186C56FC-D668-FBCD-D56D-9308A745EFA7" otype="FKIndexAssociation" vid_source="9713BF4B-09E3-6054-0F08-C0D8D241603C" vid_target="08AAEB08-BC93-1BAE-24C6-9028DC8C4321">
@@ -657,6 +674,15 @@ Ancienne table : ILTASIT</comment>
 <points>
 <point x="182" y="200"/>
 <point x="327" y="490"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="BA75948E-630C-85D3-2BB8-A870D81D35B5" otype="FKIndexAssociation" vid_source="77B1CFA1-F594-492A-10C6-2379F92158DE" vid_target="4F15AE3E-6A21-29DE-3910-B36E77CAE41D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="240" y="155"/>
+<point x="80" y="155"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="BB5D6453-4DD8-FD9D-A265-532E40D964E1" otype="FKIndexAssociation" vid_source="21274CBD-820B-3DA4-F080-C1016EDD10DE" vid_target="08AAEB08-BC93-1BAE-24C6-9028DC8C4321">
