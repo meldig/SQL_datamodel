@@ -21,6 +21,47 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="sens" id="CFBDDFD4-8805-5A0F-F08B-0250910AD9B5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-28 15:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code permettant de connaître le sens du tronçon. 
+Ancien champ : CCODSTR
+Il s'agit du sens de codage du tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ordre_troncon" id="17ED1C79-53BF-1591-B43C-7E0C0CB7E0F3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-28 15:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ordre dans lequel les tronçons se positionnent afin de contituer la voie.
+1 est égal au début de la voie et 1 + n est égal au tronçon suivant.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_action" id="D8331AC1-C54F-9AEA-4DBD-10D93D8A06EF">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 08:37:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de création, modification ou suppression de la voie avec ce tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="fid_relation_troncon_voie" id="C41280DB-2423-BF64-F1D5-EEC9DC00FF9E">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-11 14:52:17 UTC</createdTime>
@@ -59,18 +100,6 @@ Ancien champ : CCOMVOI.]]></commentInRDBMS>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_action" id="D8331AC1-C54F-9AEA-4DBD-10D93D8A06EF">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 08:37:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de création, modification ou suppression de la voie avec ce tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="fid_type_action" id="52F01D36-F703-0992-3A11-7CAF6AD73359">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:05:07 UTC</createdTime>
@@ -100,35 +129,6 @@ Ancien champ : CCOMVOI.]]></commentInRDBMS>
 <associations>
 <colAssociation fkAssociation="735C6C76-C56F-AF24-ECEC-9B35B4112319" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
-</Column>
-<Column name="sens" id="CFBDDFD4-8805-5A0F-F08B-0250910AD9B5">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-28 15:17:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code permettant de connaître le sens du tronçon. 
-Ancien champ : CCODSTR
-A préciser avec Marie-Hélène, car les valeurs ne sont pas compréhensibles sans documentation.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ordre_troncon" id="17ED1C79-53BF-1591-B43C-7E0C0CB7E0F3">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-28 15:17:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[Ordre dans lequel les tronçons se positionnent afin de contituer la voie.
-1 est égal au début de la voie et 1 + n est égal au tronçon suivant.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

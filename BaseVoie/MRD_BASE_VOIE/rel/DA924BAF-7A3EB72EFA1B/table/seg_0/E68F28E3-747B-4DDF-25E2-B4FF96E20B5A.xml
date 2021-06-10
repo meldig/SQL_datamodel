@@ -24,6 +24,18 @@ Ancienne table : ILTASEU]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="geom" id="1B4D2960-2288-DFBA-3BAC-132D92499845">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 12:22:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de type point de chaque seuil présent dans la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="cote_troncon" id="01FB9B87-3AC5-7887-151F-8402DDF25F0C">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 12:22:33 UTC</createdTime>
@@ -53,22 +65,21 @@ G = gauche ; D = droite.
 <ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="geom" id="1B4D2960-2288-DFBA-3BAC-132D92499845">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Géométrie de type point de chaque seuil présent dans la table.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
-<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="date_saisie" id="CC962E93-02E7-C41B-D93D-255944E674D3">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-10 08:13:36 UTC</createdTime>
 <commentInRDBMS><![CDATA[date de saisie du seuil (via un trigger).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_modification" id="62BC387D-7BBC-91D4-9B04-1720D79CDA0A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:13:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dernière date de modification du seuil (via un trigger).]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -90,18 +101,6 @@ G = gauche ; D = droite.
 <associations>
 <colAssociation fkAssociation="850A0EDD-371F-B4C1-E4C8-53DA4D378007" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
-</Column>
-<Column name="date_modification" id="62BC387D-7BBC-91D4-9B04-1720D79CDA0A">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-10 08:13:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Dernière date de modification du seuil (via un trigger).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fid_pnom_modification" id="7E756093-95C1-4FA0-B9CE-0E111F956C42">
 <createdBy>bjacq</createdBy>

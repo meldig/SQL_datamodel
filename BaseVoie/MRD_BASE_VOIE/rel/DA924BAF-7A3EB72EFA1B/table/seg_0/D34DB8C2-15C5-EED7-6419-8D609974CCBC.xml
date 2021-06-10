@@ -60,21 +60,6 @@ Exemple : 1bis]]></commentInRDBMS>
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_seuil" id="32BFEC61-6259-CDF8-7E46-AA4D01136734">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-31 14:00:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SEUIL, permettant d'affecter une géométrie à un ou plusieurs seuils, dans le cas où plusieurs se superposent sur le même point.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="34B17AAC-C99F-C9F0-FC6D-A4B8EACEA5A1" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
-</associations>
-</Column>
 <Column name="date_saisie" id="A64377FE-3139-12FC-91BE-640E88A3782A">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-10 08:23:23 UTC</createdTime>
@@ -85,6 +70,32 @@ Exemple : 1bis]]></commentInRDBMS>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_modification" id="C7E1439E-ACFE-80E5-B762-F0839E3587AD">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:23:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de modification des informations du seuil (via un trigger).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_seuil" id="32BFEC61-6259-CDF8-7E46-AA4D01136734">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-31 14:00:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SEUIL, permettant d'affecter une géométrie à un ou plusieurs seuils, dans le cas où plusieurs se superposent sur le même point.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34B17AAC-C99F-C9F0-FC6D-A4B8EACEA5A1" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
+</associations>
 </Column>
 <Column name="fid_pnom_saisie" id="366EB3F0-6682-CC28-78C8-90FE67E15967">
 <createdBy>bjacq</createdBy>
@@ -100,18 +111,6 @@ Exemple : 1bis]]></commentInRDBMS>
 <associations>
 <colAssociation fkAssociation="512B6A53-A98A-ED06-A002-53C8B919C3B5" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
-</Column>
-<Column name="date_modification" id="C7E1439E-ACFE-80E5-B762-F0839E3587AD">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-10 08:23:23 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de modification des informations du seuil (via un trigger).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fid_pnom_modification" id="769469F4-05AE-FF7E-E4AD-5E8E69D8EDD4">
 <createdBy>bjacq</createdBy>

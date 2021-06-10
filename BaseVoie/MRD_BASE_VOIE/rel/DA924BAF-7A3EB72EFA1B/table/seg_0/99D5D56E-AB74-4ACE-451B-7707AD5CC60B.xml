@@ -21,58 +21,17 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_voie" id="3D56E90C-F156-2A42-874A-3FFC73058EDE">
+<Column name="libelle_voie" id="C5EE67EC-C89D-64C0-A9C0-0973A3A4C28B">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 10:17:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE permettant d''identifier la voie qui a été créée, modifiée ou supprimée.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A5D722C5-6E62-B521-A552-37192B731533" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
-</associations>
-</Column>
-<Column name="fid_type_voie" id="3E9D2DA0-5C1B-714C-1E5E-23A06E26FDE8">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 10:17:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de la table TA_TYPE_VOIE permettant de catégoriser les voies de la base.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fid_fantoir" id="3A26CBB8-3BC9-D9A0-D1E6-10B448BCF7E9">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 10:17:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de la table TA_FANTOIR permettant d''associer un code fantoir à chaque voie.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="cote_commune" id="3DE17E25-865B-D455-98A4-329DA5EA31B9">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 10:17:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Côté de la voie appartenant à la commune (gauche/droite)
-
-Remplace les champs CGPARITE et CDPARITE]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Nom de la voie.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>6 BYTE</dataTypeSize>
-<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="complement_nom_voie" id="47563B49-6CB7-51F0-D2BE-815A624AF1AC">
@@ -88,23 +47,45 @@ Remplace les champs CGPARITE et CDPARITE]]></commentInRDBMS>
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="libelle_voie" id="C5EE67EC-C89D-64C0-A9C0-0973A3A4C28B">
+<Column name="date_action" id="08CB0041-7C86-0738-9D24-19D75EB01A5F">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 10:17:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nom de la voie.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Date de saisie, modification ou suppression de la voie.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 BYTE</dataTypeSize>
-<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_type_voie" id="3E9D2DA0-5C1B-714C-1E5E-23A06E26FDE8">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_TYPE_VOIE permettant de catégoriser les voies de la base.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fid_genre_voie" id="7B202155-C8D4-B99E-02F4-20BF7663DDC4">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 10:17:49 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identifiant la table TA_LIBELLE permettant de connaître le genre du nom de la voie : masculin, féminin, neutre et non-identifié.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_rivoli" id="3A26CBB8-3BC9-D9A0-D1E6-10B448BCF7E9">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_RIVOLI permettant d''associer un code RIVOLI à chaque voie.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -128,16 +109,20 @@ Remplace les champs CGPARITE et CDPARITE]]></commentInRDBMS>
 <colAssociation fkAssociation="248AFC41-27D5-F0A4-FF9F-7BB08928FE11" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
 </associations>
 </Column>
-<Column name="date_action" id="08CB0041-7C86-0738-9D24-19D75EB01A5F">
+<Column name="fid_voie" id="3D56E90C-F156-2A42-874A-3FFC73058EDE">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 10:17:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de saisie, modification ou suppression de la voie.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE permettant d''identifier la voie qui a été créée, modifiée ou supprimée.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5D722C5-6E62-B521-A552-37192B731533" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+</associations>
 </Column>
 <Column name="fid_pnom" id="7EA0EF17-9B05-D17F-FC22-9A3631E38BA3">
 <createdBy>bjacq</createdBy>

@@ -23,6 +23,29 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="geom" id="7D0B4C1F-1C35-5A88-7804-4F5F13A24361">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 14:31:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de chaque tronçon de type ligne simple.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_action" id="3054BE90-6670-5F00-0B84-AA57710DC3C9">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-30 09:24:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[date de saisie, modification et suppression du tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="fid_troncon" id="78EEBF69-ED9E-C499-E241-CF7D0A1BE0E4">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:24:46 UTC</createdTime>
@@ -68,17 +91,6 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <colAssociation fkAssociation="58AFCC10-ACC3-0A38-4F88-ECC42CAF040A" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
 </associations>
 </Column>
-<Column name="date_action" id="3054BE90-6670-5F00-0B84-AA57710DC3C9">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 09:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de saisie, modification et suppression du tronçon.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="fid_pnom" id="C66B049D-590D-5433-3CBA-B88F4222CD86">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:24:46 UTC</createdTime>
@@ -93,43 +105,6 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <associations>
 <colAssociation fkAssociation="C158F960-2BB4-D9B9-223B-0B8F2F2B765C" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
-</Column>
-<Column name="geom" id="7D0B4C1F-1C35-5A88-7804-4F5F13A24361">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 14:31:29 UTC</createdTime>
-<commentInRDBMS><![CDATA[Géométrie de chaque tronçon de type ligne simple.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
-<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_debut_validite" id="2D7633D8-95FD-2905-0690-CDE5FCB39196">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-25 08:42:52 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de début de vie du tyronçon (qui peut être différente de la date de création du tronçon dans la base voie).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_fin_validite" id="B368A3C9-7CCE-ED84-533D-7560D977109A">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 12:25:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de fin de validité du tronçon.
-Cette date correspond à la date d'invalidation du tronçon (cf. doc_dynmap_mhsuzanne.pdf p. 11 alinéa 2).
-Pour les tronçons encore en vie cette date est, par convention du service voirie, 31/12/2099.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
