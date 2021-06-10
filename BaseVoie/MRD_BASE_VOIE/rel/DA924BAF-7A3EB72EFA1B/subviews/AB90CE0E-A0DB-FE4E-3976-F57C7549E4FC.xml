@@ -53,7 +53,7 @@ Ancienne table : VOIEVOI</comment>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table rassemblant tous les codes fantoirs issus du fichier fantoir et correspondants aux voies présentes sur le territoire de la MEL.</comment>
+<comment>Table rassemblant tous les codes RIVOLI issus du fichier fantoir et correspondants aux voies présentes sur le territoire de la MEL.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
