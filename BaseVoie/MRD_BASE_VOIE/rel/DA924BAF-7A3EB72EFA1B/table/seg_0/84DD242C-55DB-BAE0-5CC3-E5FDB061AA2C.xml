@@ -21,20 +21,16 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_seuil" id="3B844A8E-8D2B-8620-2B11-C43AEC677151">
+<Column name="geom" id="113E1378-C769-EE56-DF7A-EFF83AACFCE7">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:58:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_INFOS_SEUIL permettant d''associer un ou plusieurs seuils à un point géométrique.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Géométrie du seuil de type point.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="CABE5CA5-42A0-5D40-D984-E51D09716F24" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
-</associations>
 </Column>
 <Column name="cote_troncon" id="DDFFD1A2-BA04-E9A8-6350-C1772507673D">
 <createdBy>bjacq</createdBy>
@@ -64,17 +60,6 @@ G = gauche ; D = droite.
 <ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="geom" id="113E1378-C769-EE56-DF7A-EFF83AACFCE7">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 13:58:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Géométrie du seuil de type point.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
-<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="date_action" id="F1EF94A0-2D93-7A56-4198-4E06DAC6B926">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:58:34 UTC</createdTime>
@@ -99,6 +84,21 @@ G = gauche ; D = droite.
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7B477C34-A6A1-2DD8-EFCD-6760073479FC" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
+</Column>
+<Column name="fid_seuil" id="3B844A8E-8D2B-8620-2B11-C43AEC677151">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:58:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_INFOS_SEUIL permettant d''associer un ou plusieurs seuils à un point géométrique.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CABE5CA5-42A0-5D40-D984-E51D09716F24" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
 </associations>
 </Column>
 <Column name="fid_pnom" id="C2CFDD73-8DD3-71F1-DFAC-839BFB7D8E9A">

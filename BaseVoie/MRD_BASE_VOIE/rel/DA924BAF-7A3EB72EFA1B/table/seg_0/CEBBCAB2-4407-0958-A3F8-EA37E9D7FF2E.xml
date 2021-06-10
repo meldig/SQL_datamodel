@@ -46,6 +46,17 @@ Ancienne table : ILTATRC]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="date_modification" id="7CA51539-8F9E-F968-0AC6-215CBB27C9A5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:54:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dernière date de modification du tronçon (via un trigger).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="fid_pnom_saisie" id="F0783C40-739C-AB04-E7A9-66AF9684B984">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:54:36 UTC</createdTime>
@@ -61,17 +72,6 @@ Ancienne table : ILTATRC]]></comment>
 <colAssociation fkAssociation="98C8D6BD-E162-F0C8-D2E4-11E377A2A61A" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
-<Column name="date_modification" id="7CA51539-8F9E-F968-0AC6-215CBB27C9A5">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-07 15:54:36 UTC</createdTime>
-<commentInRDBMS><![CDATA[Dernière date de modification du tronçon (via un trigger).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="fid_pnom_modification" id="80C9AA32-2E4D-D26A-EDA4-3F06F8541C41">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:54:36 UTC</createdTime>
@@ -86,32 +86,6 @@ Ancienne table : ILTATRC]]></comment>
 <associations>
 <colAssociation fkAssociation="0B1298B5-0624-071D-F95A-E3AC3CBEA64E" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
-</Column>
-<Column name="date_debut_validite" id="D080D1B3-88F9-2BFC-D02A-BB2B6DAD1D5A">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-25 07:45:08 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de début de vie du tyronçon (qui peut être différente de la date de création du tronçon dans la base voie).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_fin_validite" id="0587CC6E-7CEF-C8F0-2267-7F134D1EB263">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-30 09:08:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[date de fin de validité du tronçon.
-Cette date correspond à la date d'invalidation du tronçon (cf. doc_dynmap_mhsuzanne.pdf p. 11 alinéa 2).
-Pour les tronçons encore en vie cette date est, par convention du service voirie, 31/12/2099.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

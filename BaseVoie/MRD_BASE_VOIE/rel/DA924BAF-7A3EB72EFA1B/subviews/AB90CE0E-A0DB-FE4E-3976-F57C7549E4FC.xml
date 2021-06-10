@@ -122,7 +122,7 @@ Ancienne table : ILTASIT</comment>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Vue rassemblant la longueur, les coordonnées des start/end points, les dates de saisie/modification, de début/fin de la validité et la géométrie de chaque tronçon de la table ILTATRC.</comment>
+<comment>Vue rassemblant la longueur, les coordonnées des start/end points, les dates de saisie/modification et la géométrie de chaque tronçon de la table TA_TRONCON.</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
