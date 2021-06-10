@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEBC71FB-173F-339F-0458-1290650FAD0C" name="TA_FANTOIR">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEBC71FB-173F-339F-0458-1290650FAD0C" name="TA_RIVOLI">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 08:53:38 UTC</createdTime>
 <comment><![CDATA[Table rassemblant tous les codes fantoirs issus du fichier fantoir et correspondants aux voies présentes sur le territoire de la MEL.]]></comment>
@@ -21,23 +21,30 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="code_fantoir" id="B17E9800-B175-581D-55BF-FFEBCF458922">
+<Column name="code_rivoli" id="B17E9800-B175-581D-55BF-FFEBCF458922">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 09:01:16 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code fantoir de chaque voie.
-Ce code est composé du code commune sur 3 caractère et de l''identifiant de la voie dans la commune.
-Attention cet identifiant est recyclé dans le fichier fantoir, ce champ ne doit donc jamais être utilisé en tant que clé primaire ou étrangère.
-
-Exemple : 
-- 3502153 pour une voie situé dans Lille ;
-- 0096870 pour une voie située dans Villeneuve-d''Ascq ;
+<commentInRDBMS><![CDATA[Code RIVOLI du code fantoir. Ce code est l'identifiant sur 4 caractères de la voie au sein de la commune. Attention : il ne faut pas confondre ce code avec le code de l'ancien fichier RIVOLI, devenu depuis fichier fantoir. Le code RIVOLI fait partie du code fantoir. Attention cet identifiant est recyclé dans le fichier fantoir, ce champ ne doit donc jamais être utilisé en tant que clé primaire ou étrangère.
 ]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>7 BYTE</dataTypeSize>
-<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cle_controle" id="0ABFC579-A182-38C7-0486-D35414B718AF">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-07 14:08:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé de contrôle du code fantoir.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

@@ -1,19 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A30D2272-7301-5924-B0DA-D974093F2A05" name="TA_RELATION_RUE_VOIE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9CC54979-25EF-7831-3DBE-3B7CBA5630D9" name="TA_RELATION_TRONCON_COMMUNE">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 14:15:56 UTC</createdTime>
-<comment><![CDATA[Table pivot permettant d''associer chaque rue à sa/ses voies.
-
-Ancienne table TA_RUEVOIE]]></comment>
+<createdTime>2021-06-08 14:52:37 UTC</createdTime>
+<comment><![CDATA[Table pivot permettant d'associer chaque tronçon aux communes qu''il intersecte.
+Le remplissage de cette table se fait automatiquement via un trigger qui asocie chaque tronçon aux communes qu''il intersecte via la fonction SDO_ANYINTERACT.]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<ordsAlias>table_12</ordsAlias>
+<ordsAlias>table_27</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="B90C3BEF-32F7-EF0C-64E6-00F2C92F45A3">
+<Column name="objectid" id="20B07032-E2A9-8B3B-B09F-6D9D6356C22B">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-05-12 09:24:29 UTC</createdTime>
+<createdTime>2021-06-08 14:57:04 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -23,10 +22,10 @@ Ancienne table TA_RUEVOIE]]></comment>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_rue" id="260FB9FD-4F5A-B409-DFD1-115EE1895EE2">
+<Column name="fid_troncon" id="30AFD868-0C96-34F7-2856-D30B5831C34C">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 14:18:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_RUE permettant d''associer une rue à une ou plusieurs voies.]]></commentInRDBMS>
+<createdTime>2021-06-08 14:57:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant d''associer un ou plusieurs tronçons à une ou plusieurs communes.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,13 +34,13 @@ Ancienne table TA_RUEVOIE]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="CA42B58B-6CCE-8CCA-43B7-8E55EC3D6D86" referredColumn="1EDF734E-035B-B2D0-C7F1-67D85AD22C0F"/>
+<colAssociation fkAssociation="11893AE1-0CFB-B273-AA7B-05007EC939D5" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
 </associations>
 </Column>
-<Column name="fid_voie" id="6860EDE1-11AD-C8D2-F4B6-BA40D93BD258">
+<Column name="fid_commune" id="27CCA895-6786-7B0B-9A9E-15EC9974AE7A">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 14:18:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère permettant d''associer une ou plusieurs voies à une rue.]]></commentInRDBMS>
+<createdTime>2021-06-08 14:57:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_REFERENTIEL.A_COMMUNE permettant d''associer une ou plusieurs communes à un ou plusieurs tronçons.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -50,40 +49,40 @@ Ancienne table TA_RUEVOIE]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="C249B7F6-5DA6-A938-E834-BE750714FDCF" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+<colAssociation fkAssociation="BA75948E-630C-85D3-2BB8-A870D81D35B5" referredColumn="174CFDB9-23D4-F4D5-2DE6-B54D66EAEB44"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="EEFA2138-DFC6-82E9-5A25-D5262425DA6D" name="TA_RELATION_RUE_VOIE_PK">
+<ind_PK_UK id="844AEF8E-908A-5B45-52AE-AA8DFFBB7AD3" name="TA_RELATION_TRONCON_COMMUNE_PK">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-05-12 09:24:29 UTC</createdTime>
+<createdTime>2021-06-08 14:57:04 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B90C3BEF-32F7-EF0C-64E6-00F2C92F45A3"/>
+<colUsage columnID="20B07032-E2A9-8B3B-B09F-6D9D6356C22B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CCF55270-3E7E-6506-1652-D375BEA9B27F" name="TA_RELATION_RUE_VOIE_FID_RUE_FK">
+<ind_PK_UK id="94A75878-E022-D500-8ADA-7735B5C4AC24" name="TA_RELATION_TRONCON_COMMUNE_FID_TRONCON_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 14:20:25 UTC</createdTime>
+<createdTime>2021-06-08 15:01:50 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="260FB9FD-4F5A-B409-DFD1-115EE1895EE2"/>
+<colUsage columnID="30AFD868-0C96-34F7-2856-D30B5831C34C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A73E2C9A-C61B-D258-22C5-16CDAD111170" name="TA_RELATION_RUE_VOIE_FID_VOIE_FK">
+<ind_PK_UK id="7A0BB3A2-8DA7-1292-231F-D6A13BC1709E" name="TA_RELATION_TRONCON_COMMUNE_FID_COMMUNE_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2021-04-29 14:20:45 UTC</createdTime>
+<createdTime>2021-06-08 15:02:08 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6860EDE1-11AD-C8D2-F4B6-BA40D93BD258"/>
+<colUsage columnID="27CCA895-6786-7B0B-9A9E-15EC9974AE7A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

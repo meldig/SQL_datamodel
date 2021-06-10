@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="E57D9D07-3831-6B66-6B0E-954243BE3AD2" name="V_TRONCON">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:34:31 UTC</createdTime>
+<comment><![CDATA[Vue rassemblant la longueur, les coordonnées des start/end points, les dates de saisie/modification, de début/fin de la validité et la géométrie de chaque tronçon de la table ILTATRC.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+	    a.objectid,
+	    a.date_saisie,
+	    a.date_modification,
+	    a.date_debut_validite,
+	    a.date_fin_validite,
+	    ROUND(SDO_LRS.MEASURE_RANGE(SDO_LRS.CONVERT_TO_LRS_GEOM(a.geom, m.diminfo)), 2) AS longueur,
+	    REPLACE(
+	        TRIM(
+	            BOTH')' FROM
+	                TRIM(
+	                    BOTH '(' FROM
+	                    SUBSTR(
+	                        SDO_UTIL.TO_WKTGEOMETRY(
+	                            SDO_LRS.GEOM_SEGMENT_START_PT(a.geom)
+	                        ),
+	                        7
+	                    )
+	                )
+	        ),
+	        ' ',
+	        ', '
+	    )AS start_point,
+	    
+	    REPLACE(
+	        TRIM(
+	            BOTH')' FROM
+	                TRIM(
+	                    BOTH '(' FROM
+	                    SUBSTR(
+	                        SDO_UTIL.TO_WKTGEOMETRY(
+	                            SDO_LRS.GEOM_SEGMENT_END_PT(a.geom)
+	                        ),
+	                        7
+	                    )
+	                )
+	        ),
+	        ' ',
+	        ', '
+	    )AS end_point,
+	    a.geom
+	FROM
+	    G_BASE_VOIE.TA_TRONCON a,
+	    USER_SDO_GEOM_METADATA m
+	WHERE
+	    m.TABLE_NAME = 'TA_TRONCON']]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="objectid" id="FCD43199-059A-E148-CF34-A8170A4707B9">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:47:01 UTC</createdTime>
+<comment><![CDATA[Identifiant de chaque tronçon valide.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>objectid</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="date_saisie" id="5B2B5B64-C748-C9B3-2C72-7CDDC27DBBDE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:47:01 UTC</createdTime>
+<comment><![CDATA[Date de saisie du tronçon dans la base voie.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>date_saisie</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="date_modification" id="0F2683C3-0BC7-01C6-A20D-8240DA017EC4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:47:01 UTC</createdTime>
+<comment><![CDATA[Date de la dernière modification du tronçon en base.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>date_modification</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="date_debut_validite" id="3A41B121-3306-694D-093B-00F9BBA5BFBE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:47:01 UTC</createdTime>
+<comment><![CDATA[Date de début de vie du tronçon, équivalent à sa date de fin de chantier. Cette date peut être différente de sa date de création en base.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>date_debut_validite</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="date_fin_validite" id="15B8FE59-C41D-CEEF-16F3-259D250324AD">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:47:01 UTC</createdTime>
+<comment><![CDATA[Date de fin de validité du tronçon. Cette date correspond à la date d''invalidation du tronçon.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>date_fin_validite</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="longueur" id="1C5984CE-2977-FEA8-00D5-A795F7904813">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:47:01 UTC</createdTime>
+<comment><![CDATA[Longueur du tronçon en mètre.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>longueur</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>longueur</headerAlias>
+<expression>ROUND(SDO_LRS.MEASURE_RANGE(SDO_LRS.CONVERT_TO_LRS_GEOM(a.geom,m.diminfo)),2)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="start_point" id="C34208AE-EC3C-A765-0170-60ACF0E62723">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:47:01 UTC</createdTime>
+<comment><![CDATA[Coordonnées du startpoint du tronçon - EPSG 2154.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>start_point</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>start_point</headerAlias>
+<expression>REPLACE(TRIM(BOTH&apos;)&apos;FROMTRIM(BOTH&apos;(&apos;FROMSUBSTR(SDO_UTIL.TO_WKTGEOMETRY(SDO_LRS.GEOM_SEGMENT_START_PT(a.geom)),7))),&apos; &apos;,&apos;, &apos;)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="end_point" id="F759E120-1E4F-A431-A59E-4054A93629FE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:47:01 UTC</createdTime>
+<comment><![CDATA[Coordonnées du endpoint du tronçon - EPSG 2154.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>end_point</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>end_point</headerAlias>
+<expression>REPLACE(TRIM(BOTH&apos;)&apos;FROMTRIM(BOTH&apos;(&apos;FROMSUBSTR(SDO_UTIL.TO_WKTGEOMETRY(SDO_LRS.GEOM_SEGMENT_END_PT(a.geom)),7))),&apos; &apos;,&apos;, &apos;)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="7A588116-A6F3-0D8A-8F57-E313A80765EC">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:53:35 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>geom</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6BAB728A-6409-837F-A6D7-816BDD4CA27D">
+<columnName>objectid</columnName>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D080D1B3-88F9-2BFC-D02A-BB2B6DAD1D5A">
+<columnName>date_debut_validite</columnName>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7CA51539-8F9E-F968-0AC6-215CBB27C9A5">
+<columnName>date_modification</columnName>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DA7495A2-7120-19A9-599C-53EE5DBA0169">
+<columnName>geom</columnName>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EF03400A-1606-D225-6909-E96CD2A23839">
+<columnName>date_saisie</columnName>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0587CC6E-7CEF-C8F0-2267-7F134D1EB263">
+<columnName>date_fin_validite</columnName>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="C4B7C394-44AE-EE55-EAC4-40AF2C31EEB0" name="V_TRONCON_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-08 13:53:35 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="FCD43199-059A-E148-CF34-A8170A4707B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

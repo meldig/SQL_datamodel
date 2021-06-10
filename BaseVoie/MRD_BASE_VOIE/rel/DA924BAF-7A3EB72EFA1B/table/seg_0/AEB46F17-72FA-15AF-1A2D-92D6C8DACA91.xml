@@ -75,6 +75,18 @@ Exemple : 1bis]]></commentInRDBMS>
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="fid_seuil" id="8159CA11-3DE9-9F53-2491-FFBDA39C2BBF">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-03 11:41:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_SEUIL permettant d'affecter une géométrie à un ou plusieurs seuils, dans le cas où plusieurs se superposent sur le même point.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="date_action" id="87DF1489-7DBA-94D4-9E2A-AF53577B3356">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:06:53 UTC</createdTime>

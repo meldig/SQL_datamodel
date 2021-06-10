@@ -101,6 +101,35 @@ Ancien champ : CCOMVOI.]]></commentInRDBMS>
 <colAssociation fkAssociation="735C6C76-C56F-AF24-ECEC-9B35B4112319" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
+<Column name="sens" id="CFBDDFD4-8805-5A0F-F08B-0250910AD9B5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-28 15:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code permettant de connaître le sens du tronçon. 
+Ancien champ : CCODSTR
+A préciser avec Marie-Hélène, car les valeurs ne sont pas compréhensibles sans documentation.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ordre_troncon" id="17ED1C79-53BF-1591-B43C-7E0C0CB7E0F3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-28 15:17:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ordre dans lequel les tronçons se positionnent afin de contituer la voie.
+1 est égal au début de la voie et 1 + n est égal au tronçon suivant.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="6A1F24F7-F2EA-322F-E51F-D7E6D468B2BC" name="TA_RELATION_TRONCON_VOIE_LOG_PK">

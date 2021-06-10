@@ -60,19 +60,6 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="numero_voie" id="88FFA2FE-F189-63E7-8495-CA2C8D0C948A">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 10:17:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[numéro de voie (commence par code insee)]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="cote_commune" id="3DE17E25-865B-D455-98A4-329DA5EA31B9">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 10:17:49 UTC</createdTime>
