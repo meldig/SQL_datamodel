@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07902382-BB16-F2B5-7401-BDB84F2E22A5" name="TA_SUR_TOPO_G">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:44:36 UTC</createdTime>
+<comment><![CDATA[Objets surfaciques du plan topographique de gestion]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_63</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="A6428227-9E9E-CDD6-40B0-2F000423B503">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant interne de l'objet geographique.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cla_inu" id="2EEFE25D-21AA-2363-4AAA-D36D7EF165E6">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reference a la classe a laquelle appartient l'objet.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_ref" id="E077FBDC-8253-C218-5F59-80682C833792">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant metier. Non obligatoire car certain objet geographique n'ont pas d'objet metier associe.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_insee" id="4DB00AC3-0A6C-EF56-0BEB-FA79FE96BD13">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code insee de la commune sur laquelle se situe l'objet]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="860EA30B-4523-76A3-3599-9533A4EAAF9F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Geometrie ORACLE de l'objet]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_dv" id="AF930DE1-4103-4010-9DB9-A51DC50BF43C">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de debut de validite de l'objet]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_df" id="AB05917D-04C6-7647-6DCF-9A2B39D5D5BD">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin de validite de l'objet.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_on_valide" id="F41CC5C5-5820-14CC-775B-3C2D442D5550">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Statut valide O/N de l'objet]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_texte" id="617BD193-827C-2BBC-131B-85EB79F04267">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Texte de commentaire]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2048 BYTE</dataTypeSize>
+<ownDataTypeParameters>2048 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_type" id="C409B778-265F-461D-D120-9B32761A8923">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type de geometrie de l'objet geographique]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_nmn" id="9CD25993-05AE-B1D4-B33B-BC62FEC9747E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auteur de la derniere modification]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_ds" id="50BDF142-0E49-3CB2-A9CB-C772084804A1">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de creation de l'objet]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_nms" id="929338D9-FD91-7978-24B9-9D137944E134">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auteur de la creation de l'objet]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geo_dm" id="53561BA5-8EEE-2B9F-96DD-CB84864A248D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de deniere modification de l'objet]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EBD9B77-0AFB-F9BF-1D6D-94D481380292" name="TA_SUR_TOPO_G_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 08:52:29 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6428227-9E9E-CDD6-40B0-2F000423B503"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

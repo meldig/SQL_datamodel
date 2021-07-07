@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="7C4A2846-4713-31AB-CE04-E63ED537E37D" containerWithKeyObject="6B0A3026-C5C3-C672-BF8F-3B2BAD68474C" localFKIndex="33A6B915-EA63-9323-3DDB-C46956B0B53F" name="TA_ELEVATION_FID_TYPE_ELEVATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-20 09:07:33 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5BA04846-FCD4-327F-D4D7-00C6BC71F6D8</referredTableID>
+<keyObject>E20F724E-8EE6-8F08-7516-7771919FFA52</keyObject>
+<referredKeyID>E20F724E-8EE6-8F08-7516-7771919FFA52</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
