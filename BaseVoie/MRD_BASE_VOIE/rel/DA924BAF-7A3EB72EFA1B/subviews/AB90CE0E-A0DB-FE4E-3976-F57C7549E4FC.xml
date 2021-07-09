@@ -63,7 +63,7 @@ Ancienne table : VOIEVOI</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1B6ABFA8-181D-331C-6A53-73B3A2736597" otype="Table" vid="8182E4C3-A71B-0494-1A96-843F11EC2B8C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="823" y="1092" width="407" height="212"/>
+<bounds x="823" y="1092" width="407" height="249"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="378A0F94-5B58-5873-082C-D2DBBE031A92" otype="Table" vid="BE88FAA2-F001-6562-A513-FD2E12A18AF2">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -281,7 +281,7 @@ Exemple :
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="E82B1299-A377-D32A-55CE-132B69554AFA" otype="Note" vid="D97D3B1E-C264-9F90-7AFB-238FA03B171B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="821" y="1315" width="409" height="38"/>
+<bounds x="821" y="1345" width="409" height="38"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -290,7 +290,6 @@ Exemple :
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -486,8 +485,8 @@ Exemple :
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1733" y="1011"/>
-<point x="1230" y="1144"/>
+<point x="1733" y="1014"/>
+<point x="1230" y="1158"/>
 </points>
 </Connector>
 </connectors>
