@@ -32,53 +32,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="complement_infos" id="59D62276-F0F2-E69A-115E-A1B86D2AF36B">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-08 09:49:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Complément d''informations du point d''intérêt.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>250 BYTE</dataTypeSize>
-<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="code_insee" id="A138F7E9-135E-FD85-50CA-88BB49E8F643">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-08 09:49:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code INSEE de la commune d''appartenance du POI.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000 BYTE</dataTypeSize>
-<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="nom" id="92484A23-2C49-FEF2-3FA3-2BE433265EA4">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-08 09:49:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nom du point d''intérêt correspondant au champ CLIBLPU de l''ancienne table ILTALPU.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200 BYTE</dataTypeSize>
-<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fid_libelle" id="5A0F6581-666C-6345-5CBD-A4DFE0F1DF7D">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-08 09:49:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de la table TA_LIBELLE permettant de connaître le type de chaque POI (point d''intérêt).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="fid_point_interet" id="B85C96E7-3115-051F-2A1F-3F846511DB92">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-08 09:49:09 UTC</createdTime>
@@ -88,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7DAAAEAB-7F1F-E17C-AD5D-52B860903D9E" referredColumn="AD47C692-A393-A8C0-9C35-BD94BFD11684"/>

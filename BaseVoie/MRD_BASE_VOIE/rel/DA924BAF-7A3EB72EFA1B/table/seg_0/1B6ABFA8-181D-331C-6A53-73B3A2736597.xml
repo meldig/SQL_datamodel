@@ -32,44 +32,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="code_insee" id="1B1F23B8-12DC-9F1C-8132-154A8273BC4B">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-07 12:07:08 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ calculé via une requête spatiale, permettant d''associer à chaque point d''intérêt le code insee de la commune dans laquelle il se trouve (issue de la table G_REFERENTIEL.MEL_COMMUNE).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000 BYTE</dataTypeSize>
-<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="nom" id="265ABBCE-B3DB-402E-D4E3-EEF50E549677">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-07 09:34:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nom du POI (point d''intérêt) correspondant au champ LIBLPU de l''ancienne base.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200 BYTE</dataTypeSize>
-<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="complement_infos" id="BBD3935D-D94E-CCEF-C5C0-5924D7A6DE13">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-07 09:28:50 UTC</createdTime>
-<commentInRDBMS><![CDATA[Complément d''informations du point d''intérêt.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>250 BYTE</dataTypeSize>
-<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="date_saisie" id="00245D5A-18CD-3958-8EA8-35C9D5D3320B">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-07 09:26:26 UTC</createdTime>
@@ -92,21 +54,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fid_libelle" id="E6ABE308-5133-9B71-E90C-117C96ECCCDF">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-07 09:26:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de connaître le type de chaque POI (point d'intérêt).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="F217303F-DA1F-7A5B-98BC-86B6E750E251" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
-</associations>
 </Column>
 <Column name="fid_pnom_saisie" id="6AADCA08-C490-4B2A-E492-010AE24C5B10">
 <createdBy>bjacq</createdBy>
@@ -149,16 +96,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="AD47C692-A393-A8C0-9C35-BD94BFD11684"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="FD5CF3A2-5754-928F-F095-E84104F93441" name="TA_POINT_INTERET_FID_LIBELLE_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-07 09:30:05 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="E6ABE308-5133-9B71-E90C-117C96ECCCDF"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="75A2BC5A-4326-2DBF-1640-CA00A6318997" name="TA_POINT_INTERET_FID_PNOM_SAISIE_FK">
