@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F8097E8-320C-5421-9EE2-9EFFDF729882" name="TA_POINT_INTERET_INFOS_LOG">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F8097E8-320C-5421-9EE2-9EFFDF729882" name="TA_INFOS_POINT_INTERET_LOG">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-13 12:57:12 UTC</createdTime>
 <comment><![CDATA[Table d''historisation des actions effectuées sur les POI de la base voie.]]></comment>
@@ -56,10 +56,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_point_interet_infos" id="F1D53BD9-756E-15AB-37B7-20BB9DEADC18">
+<Column name="fid_infos_point_interet" id="F1D53BD9-756E-15AB-37B7-20BB9DEADC18">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-13 13:34:40 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de chaque objet de la table TA_POINT_INTERET ]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Identifiant de chaque objet de la table TA_INFOS_POINT_INTERET ]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -113,7 +113,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A59DD5C1-C96A-A9D6-25B4-896BFFAA193C" name="TA_POINT_INTERET_INFOS_LOG_PK">
+<ind_PK_UK id="A59DD5C1-C96A-A9D6-25B4-896BFFAA193C" name="TA_INFOS_POINT_INTERET_LOG_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-13 13:00:20 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
@@ -124,7 +124,7 @@
 <colUsage columnID="99DDC7C9-6AFD-90EF-4FAB-8EC58CC7F5A0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D3EA957C-83AA-A763-DD00-0D99CC239371" name="TA_POINT_INTERET_INFOS_LOG_FID_INFOS_POINT_INTERET_FK">
+<ind_PK_UK id="D3EA957C-83AA-A763-DD00-0D99CC239371" name="TA_INFOS_POINT_INTERET_LOG_FID_INFOS_POINT_INTERET_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-13 13:41:04 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
@@ -134,7 +134,7 @@
 <colUsage columnID="F1D53BD9-756E-15AB-37B7-20BB9DEADC18"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="692AEFC6-1FD2-BE3E-E5F3-7736848CBDC9" name="TA_POINT_INTERET_INFOS_LOG_FID_PNOM_FK">
+<ind_PK_UK id="692AEFC6-1FD2-BE3E-E5F3-7736848CBDC9" name="TA_INFOS_POINT_INTERET_LOG_FID_PNOM_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-13 13:43:53 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
@@ -144,7 +144,7 @@
 <colUsage columnID="A9876003-C79C-62A4-D7C1-917EFEB2BF58"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F240E272-6377-8946-DA85-F3EFE75B6ABE" name="TA_POINT_INTERET_INFOS_LOG_FID_TYPE_ACTION_FK">
+<ind_PK_UK id="F240E272-6377-8946-DA85-F3EFE75B6ABE" name="TA_INFOS_POINT_INTERET_LOG_FID_TYPE_ACTION_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-13 13:44:27 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
