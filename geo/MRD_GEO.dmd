@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MRD_GEO" id="3E254732-72C9-C6F2-0617-03AE5EA90E43" version="3.5">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-23 12:41:54 UTC</createdTime>
-<ownerDesignName>MRD_GEO</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>3E254732-72C9-C6F2-0617-03AE5EA90E43</designId>
-</OSDM_Design>

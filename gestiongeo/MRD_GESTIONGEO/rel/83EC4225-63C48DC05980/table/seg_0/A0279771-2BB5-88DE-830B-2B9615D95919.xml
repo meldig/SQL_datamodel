@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0279771-2BB5-88DE-830B-2B9615D95919" name="TA_GRILLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:49:02 UTC</createdTime>
+<comment><![CDATA[Table contenant toutes les grilles utilisées pour la saisie/vérification de données.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="05B08AE8-ADC6-4DFC-EE9E-C27CE3526D04">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:52:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="CF72AEC7-7778-C735-72D2-54B23410B134">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:52:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique de type polygone.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_usage" id="B0FDECAC-3BE1-96C8-3400-D3E030B99BE0">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:52:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE permettant d''associer un usage aux éléments d''une grille. Chaque grille est dévolue à un et un seul usage. Exemple : la grille de recalage est uniquement à utiliser pour le recalage des objets par photo-interprétation]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9821572C-305F-7B49-4482-8185FE08318F" referredColumn="AE016281-6FD8-4D66-2159-D42D8451D3C4"/>
+</associations>
+</Column>
+<Column name="fid_etat" id="A7F08250-912F-F9F6-B1CA-613A44768C6B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:52:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE permettant d''associer un état d''avancement à un élément d''une grille.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84F9D7E1-8DBE-A22F-755C-DB2967A272E9" referredColumn="AE016281-6FD8-4D66-2159-D42D8451D3C4"/>
+</associations>
+</Column>
+<Column name="fid_gestionnaire" id="08777675-5334-23FF-7C46-384AB21F48CD">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:52:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_SOURCE permettant d''attribuer le pnom d''un agent à un élément de la grille afin d''indiquer qu''il doit s''en occuper.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9B0CEEB-0300-30C9-F650-12AECB0F16ED" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E00A9CA8-C515-9C91-443F-6EA608D7840B" name="TA_GRILLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:52:18 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05B08AE8-ADC6-4DFC-EE9E-C27CE3526D04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B90A0BCA-4B7D-5173-B8E1-DA962DAC64DD" name="TA_GRILLE_FID_USAGE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:04:21 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0FDECAC-3BE1-96C8-3400-D3E030B99BE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A09E2C7-F10F-B06A-6C42-108D859B5FCE" name="TA_GRILLE_FID_ETAT_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:04:36 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7F08250-912F-F9F6-B1CA-613A44768C6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88947666-B6C2-DE11-9B2B-E9AE27ACF02F" name="TA_GRILLE_FID_GESTIONNAIRE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:04:50 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08777675-5334-23FF-7C46-384AB21F48CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

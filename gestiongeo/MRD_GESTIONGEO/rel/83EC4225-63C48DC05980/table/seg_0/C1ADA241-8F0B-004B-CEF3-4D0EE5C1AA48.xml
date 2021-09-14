@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1ADA241-8F0B-004B-CEF3-4D0EE5C1AA48" name="TA_LIBELLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:02:21 UTC</createdTime>
+<comment><![CDATA[Table listant les libelles utilisé afin d'établir une hiérarchie.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="AE016281-6FD8-4D66-2159-D42D8451D3C4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:03:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef primaire de la table temp_libelle_long.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle_long" id="EA7AE227-4BD5-8B82-64F6-0D84A2AC4A78">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:03:49 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A739A1A-5561-BF15-0821-70879E5E324C" referredColumn="DDC95C5B-123F-E007-B1F6-63924A9CD4C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9AFACE5B-9EAC-D79B-4FAD-017FA5C98629" name="TA_LIBELLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:03:59 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE016281-6FD8-4D66-2159-D42D8451D3C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05874B6D-39B9-A4BF-CD7F-8606F9805BB6" name="TA_LIBELLE_FID_LIBELLE_LONG_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:04:04 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA7AE227-4BD5-8B82-64F6-0D84A2AC4A78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

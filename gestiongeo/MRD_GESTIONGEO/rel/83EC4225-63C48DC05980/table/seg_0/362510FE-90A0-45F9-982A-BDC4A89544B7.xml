@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="362510FE-90A0-45F9-982A-BDC4A89544B7" name="TA_LIBELLE_LONG">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:58:29 UTC</createdTime>
+<comment><![CDATA[Table regroupant les libelles long pouvant être pris par les objets de la base]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="DDC95C5B-123F-E007-B1F6-63924A9CD4C1">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:59:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clef primaire de la table TA_LIBELLE_LONG]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="77F4D85B-A763-2E35-112C-0C5BBF4ADD53">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:59:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur pouvant être prises par les variables]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87B85B15-F323-6A98-ACAE-D0BACF8CB7C5" name="TA_LIBELLE_LONG_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:59:54 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDC95C5B-123F-E007-B1F6-63924A9CD4C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

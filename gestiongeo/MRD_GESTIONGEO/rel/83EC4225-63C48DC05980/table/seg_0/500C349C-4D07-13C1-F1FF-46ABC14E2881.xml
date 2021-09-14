@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="500C349C-4D07-13C1-F1FF-46ABC14E2881" name="TA_FAMILLE_LIBELLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:59:56 UTC</createdTime>
+<comment><![CDATA[Table contenant les identifiant des tables ta_libelle et ta_famille, permettant de joindre le libellé à sa famille de libellés.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="77A14409-CC27-1329-DE50-11A141039A6C">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:01:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de chaque ligne.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_famille" id="AD4817C6-C31E-C029-80CF-581DED269E2B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:01:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de chaque famille de libellés - FK de la table ta_famille.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5504668-6EBD-B185-F620-3F7DE2D895FB" referredColumn="7445FD6E-E1CB-5B6B-24EF-8457B748EA19"/>
+</associations>
+</Column>
+<Column name="fid_libelle_long" id="8EAE56B3-9578-635C-6DF3-823581C83B47">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:01:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de chaque libellés - FK de la table ta_libelle.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82F73B7F-E81B-6566-CAFE-B45EE73BE311" referredColumn="DDC95C5B-123F-E007-B1F6-63924A9CD4C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="619952A4-8A85-D258-8A76-E800EE8FDDAF" name="TA_FAMILLE_LIBELLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:01:30 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77A14409-CC27-1329-DE50-11A141039A6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DC9392A-6E5D-2D1B-28A3-88770037B13E" name="TA_FAMILLE_LIBELLE_FID_FAMILLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:01:35 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD4817C6-C31E-C029-80CF-581DED269E2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFDDFD8D-6E31-0950-872F-4D5E2CD40AF1" name="TA_FAMILLE_LIBELLE_FID_LIBELLE_LONG_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:01:53 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EAE56B3-9578-635C-6DF3-823581C83B47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
