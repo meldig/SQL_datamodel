@@ -94,6 +94,21 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="fid_voie" id="3D56E90C-F156-2A42-874A-3FFC73058EDE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de tronçon de la table TA_VOIE permettant d''identifier la voie qui a été créée, modifiée ou supprimée.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5D722C5-6E62-B521-A552-37192B731533" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+</associations>
+</Column>
 <Column name="fid_type_action" id="D1F6AC68-435E-91E9-0CD2-547F4E60FBD9">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 10:17:49 UTC</createdTime>
@@ -107,21 +122,6 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="248AFC41-27D5-F0A4-FF9F-7BB08928FE11" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
-</associations>
-</Column>
-<Column name="fid_voie" id="3D56E90C-F156-2A42-874A-3FFC73058EDE">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 10:17:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE permettant d''identifier la voie qui a été créée, modifiée ou supprimée.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A5D722C5-6E62-B521-A552-37192B731533" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
 </associations>
 </Column>
 <Column name="fid_pnom" id="7EA0EF17-9B05-D17F-FC22-9A3631E38BA3">

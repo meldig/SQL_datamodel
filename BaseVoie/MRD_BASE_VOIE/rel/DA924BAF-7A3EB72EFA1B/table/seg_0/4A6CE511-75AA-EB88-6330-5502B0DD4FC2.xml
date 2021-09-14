@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A6CE511-75AA-EB88-6330-5502B0DD4FC2" name="TA_METADONNEE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 13:57:56 UTC</createdTime>
+<comment><![CDATA[Table qui regroupe toutes les informations relatives aux métadonnées des différentes données du schéma.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_30</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="6191C57D-1BB4-0EBA-14E0-8DA5AB6D4C5E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:02:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_source" id="FD70184E-823A-118F-8CF9-275246AF328D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:02:20 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_acquisition" id="70BF4B2E-F89B-D673-E994-16931C1A609F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:02:20 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_provenance" id="0B6326B1-FF30-191C-2082-C8DC9BEE2B24">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:02:20 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7961E14-19B4-88F6-079F-9965FE114BB0" name="TA_METADONNEE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:02:20 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6191C57D-1BB4-0EBA-14E0-8DA5AB6D4C5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

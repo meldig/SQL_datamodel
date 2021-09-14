@@ -87,6 +87,21 @@ Ancienne table : ILTATRC]]></comment>
 <colAssociation fkAssociation="0B1298B5-0624-071D-F95A-E3AC3CBEA64E" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
+<Column name="fid_metadonnee" id="F064B8CC-092C-3615-6C16-7881136B97DA">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:04:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE, permettant notamment de connaître la source des données (IGN ou MEL).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51AD149D-D0E0-8A48-B775-0040260FEDCF" referredColumn="6191C57D-1BB4-0EBA-14E0-8DA5AB6D4C5E"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="8E592A88-A528-7A96-21AD-DCA6DBC07555" name="TA_TRONCON_PK">
@@ -118,6 +133,16 @@ Ancienne table : ILTATRC]]></comment>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="80C9AA32-2E4D-D26A-EDA4-3F06F8541C41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="637CE9EA-F885-89DA-D599-78CCB36BFFE3" name="TA_TRONCON_FID_METADONNEE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:04:22 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F064B8CC-092C-3615-6C16-7881136B97DA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
