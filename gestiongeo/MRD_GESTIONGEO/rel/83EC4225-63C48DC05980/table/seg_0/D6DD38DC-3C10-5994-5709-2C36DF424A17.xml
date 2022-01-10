@@ -62,6 +62,24 @@
 <colUsage columnID="C5BA8091-5C73-8C4A-7424-C908209A5D36"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="16597467-B8FB-131E-9185-8EAC854B7BD3" name="TA_GG_DOS_NUM_FID_DOSSIER_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:56:02 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31724D38-69BD-C764-BAEA-D5D6A722C536"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="394C9A31-5C66-1B40-BF8A-36D772E5A509" name="TA_GG_DOS_NUM_DOS_NUM_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:56:02 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30B5FDDB-57FE-9475-68C7-8236D92A34D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="D600B686-F802-A991-2FEB-00D13A55BE9E" name="TA_GG_DOS_NUM_FID_DOSSIER_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-01-10 08:26:55 UTC</createdTime>

@@ -93,5 +93,23 @@
 <colUsage columnID="B6F50EA4-FF03-69B5-1437-BA2E17F7AF5B"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="B13BD124-8A27-A083-D875-05682A92EE8D" name="TA_GG_GEO_CODE_INSEE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:54:49 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B53098E2-7E95-FE9D-4181-7A0CF3240AB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E1DE316-855C-8E5B-A8AB-895B13670587" name="TA_GG_GEO_SURFACE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:54:49 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4B81EFE-2245-8518-D228-A6FD0C55A083"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

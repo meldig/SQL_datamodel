@@ -84,6 +84,24 @@
 <colUsage columnID="4EAB8FB0-E7A2-6E27-FD0A-143CDAB4218F"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="FCADAA6F-7239-6777-7718-8CDC04E75E79" name="TA_GG_URL_FILE_DOS_URL_FILE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:53:45 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="486A9F8C-37C4-B281-EB5F-29A697C0D5B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E69C5E51-ABDD-CC74-7AA2-39863340A383" name="TA_GG_URL_FILE_INTEGRATION_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:53:45 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CBC39F1-43EC-E254-F499-1232F9355592"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="5464CD31-C6E9-AAE0-F2A8-51E433F8BB5A" name="TA_GG_URL_FILE_FID_DOSSIER_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-02-15 13:51:36 UTC</createdTime>

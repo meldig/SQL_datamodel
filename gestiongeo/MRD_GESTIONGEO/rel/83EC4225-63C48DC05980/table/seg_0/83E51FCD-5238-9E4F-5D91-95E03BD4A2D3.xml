@@ -349,6 +349,15 @@
 <colUsage columnID="F5CEE8A6-4CD9-0B07-1A0B-D6B751F99D46"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="C10D297E-9913-AB37-51F2-A1D744AA4BF9" name="TA_GG_DOSSIER_FID_PERIMETRE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:51:41 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2C70E3D-B4FD-4179-6267-44FC1A13968B"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="10B1F5D1-1965-E3B5-8BBB-3E95FBB413F1" name="TA_GG_DOSSIER_FID_PNOM_CREATION_IDX">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-01-10 08:36:14 UTC</createdTime>

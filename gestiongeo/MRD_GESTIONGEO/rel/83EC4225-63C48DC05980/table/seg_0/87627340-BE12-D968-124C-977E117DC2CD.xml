@@ -107,5 +107,32 @@ Dans un premier temps l'appli se limitera au plan topo et au données des IC]]><
 <colUsage columnID="B33F7688-4D18-627D-45A2-17A26A25C954"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="4248ED0E-BB39-A08D-462E-D6AAF71A13D1" name="TA_GG_FAMILLE_LIBELLE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 11:14:58 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F19D1A2-3C88-7E98-46B8-983894ECDF46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4C795BB-0443-5EC6-2314-87F3719C946E" name="TA_GG_FAMILLE_LIBELLE_AGREGE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 11:14:58 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B33F7688-4D18-627D-45A2-17A26A25C954"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF44F487-41C9-9D1F-F2E5-88BCAC41290F" name="TA_GG_FAMILLE_VALIDITE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 11:14:58 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49091C5A-1C9E-81F0-A245-2F21B681D9E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>
