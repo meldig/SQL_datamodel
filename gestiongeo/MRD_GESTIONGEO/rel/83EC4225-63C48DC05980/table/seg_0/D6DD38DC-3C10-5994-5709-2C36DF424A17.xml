@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6DD38DC-3C10-5994-5709-2C36DF424A17" name="TA_GG_DOS_NUM">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 07:58:12 UTC</createdTime>
+<comment><![CDATA[Table listant tous les DOS_NUM des dossiers créés dans GestionGeo. Cet identifiant de dossier est en cours d'abandon.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="C5BA8091-5C73-8C4A-7424-C908209A5D36">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:00:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table (identifiant unique) auto-incrémentée.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_DOSSIER" id="31724D38-69BD-C764-BAEA-D5D6A722C536">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:00:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_DOSSIER permettant d'associer un DOS_NUM à son dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9005B2E0-8992-2F4F-6E5B-3D174952A91B" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</associations>
+</Column>
+<Column name="DOS_NUM" id="30B5FDDB-57FE-9475-68C7-8236D92A34D7">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:00:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ rempli par le trigger A_IXX_TA_GG_GEO. Le DOS_NUM est un identifiant de dossier historique conservé uniquement pour certains utilisateurs qui ont l'habitude de travailler avec. Il se compose des 2 derniers chiffres de l'année en cours, des 3 chiffres du code commune, de 5 chiffres représentant le nombre de dossiers créés + 1 durant l'année en cours.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F15DC7BE-AD4D-C846-9443-B2A15B6D5453" name="TA_GG_DOS_NUM_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:00:23 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5BA8091-5C73-8C4A-7424-C908209A5D36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D600B686-F802-A991-2FEB-00D13A55BE9E" name="TA_GG_DOS_NUM_FID_DOSSIER_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:26:55 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31724D38-69BD-C764-BAEA-D5D6A722C536"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
