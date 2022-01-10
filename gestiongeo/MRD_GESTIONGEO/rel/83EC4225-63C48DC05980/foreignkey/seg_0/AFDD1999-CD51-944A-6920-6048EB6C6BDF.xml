@@ -1,15 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B4049D17-B8FD-EAA2-57D8-8670031BB7C0" containerWithKeyObject="DEA5DEBA-A37F-29AE-4547-FE7EF7FACC1C" localFKIndex="D44C6E19-30FD-CDD7-D5F3-E94DC0FDF1C0" name="TA_GG_GEO_ETAT_ID_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AFDD1999-CD51-944A-6920-6048EB6C6BDF" containerWithKeyObject="83E51FCD-5238-9E4F-5D91-95E03BD4A2D3" localFKIndex="8C757C49-F221-AEBB-1F70-6E49E7A68497" name="TA_GG_DOSSIER_FID_ETAT_AVANCEMENT_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:10:21 UTC</createdTime>
+<createdTime>2022-01-10 08:37:29 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<referredTableLongName>TA_GG_ETAT</referredTableLongName>
+<referredTableLongName>TA_GG_ETAT_AVANCEMENT</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>3570ABA5-69BF-7F95-4706-894CF6E98C90</referredTableID>
 <keyObject>DFEFF880-A5D9-39A7-7172-3DFC5D657E31</keyObject>
 <referredKeyID>DFEFF880-A5D9-39A7-7172-3DFC5D657E31</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>ETAT_ID</refColNames>
+<refColNames>OBJECTID</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D2C29CE7-440C-C70A-4972-BBA2DC2C3B8B" containerWithKeyObject="DEA5DEBA-A37F-29AE-4547-FE7EF7FACC1C" localFKIndex="CB0479F9-8686-19DE-310A-4B124455DE73" name="TA_GG_GEO_DOS_NUM_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9005B2E0-8992-2F4F-6E5B-3D174952A91B" containerWithKeyObject="D6DD38DC-3C10-5994-5709-2C36DF424A17" localFKIndex="D600B686-F802-A991-2FEB-00D13A55BE9E" name="TA_GG_DOS_NUM_FID_DOSSIER_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:14:52 UTC</createdTime>
+<createdTime>2022-01-10 08:26:55 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <referredTableLongName>TA_GG_DOSSIER</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
@@ -9,7 +9,7 @@
 <keyObject>96EB13A5-8313-D41F-2CE1-28A0FA9D75E7</keyObject>
 <referredKeyID>96EB13A5-8313-D41F-2CE1-28A0FA9D75E7</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>ID_DOS</refColNames>
+<refColNames>OBJECTID</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
