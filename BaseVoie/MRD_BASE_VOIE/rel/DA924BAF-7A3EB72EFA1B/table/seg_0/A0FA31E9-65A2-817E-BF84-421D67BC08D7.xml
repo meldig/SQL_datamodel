@@ -24,9 +24,7 @@
 <Column name="sens" id="CFBDDFD4-8805-5A0F-F08B-0250910AD9B5">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-28 15:17:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code permettant de connaître le sens du tronçon. 
-Ancien champ : CCODSTR
-Il s'agit du sens de codage du tronçon.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Code permettant de connaître le sens du tronçon. Ancien champ : CCODSTR Il s''agit du sens de codage du tronçon qui suit l''ordre de numération des seuils.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -39,8 +37,7 @@ Il s'agit du sens de codage du tronçon.]]></commentInRDBMS>
 <Column name="ordre_troncon" id="17ED1C79-53BF-1591-B43C-7E0C0CB7E0F3">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-28 15:17:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[Ordre dans lequel les tronçons se positionnent afin de contituer la voie.
-1 est égal au début de la voie et 1 + n est égal au tronçon suivant.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Ordre dans lequel les tronçons se positionnent afin de contituer la voie. 1 est égal au début de la voie et 1 + n est égal au tronçon suivant.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

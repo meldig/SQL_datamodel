@@ -9,10 +9,10 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_DOS" id="AB50324A-3B28-6E0E-DEA5-919B2264305A">
+<Column name="OBJECTID" id="AB50324A-3B28-6E0E-DEA5-919B2264305A">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de chaque dossier. Champ correspondant à ID_DOS.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de de la table (identifiant de chaque dossier). Champ correspondant à l''ancien ID_DOS.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,10 +21,10 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SRC_ID" id="E47A7739-8607-1277-0B74-97B0FB79F1C6">
+<Column name="FID_ETAT_AVANCEMENT" id="7DCE167E-15D5-E2A2-BAC6-C63092A8EAC3">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant du pnom de l'agent ayant créé le dossier  - Clé étrangère vers la table TA_GG_SOURCE.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_ETAT_AVANCEMENT dans laquelle se trouve tous les états que peuvent prendre les dossiers.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,13 +33,13 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="17A4D5CC-6C5C-0576-0DC5-82BCA602129C" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+<colAssociation fkAssociation="AFDD1999-CD51-944A-6920-6048EB6C6BDF" referredColumn="2B0DF798-7933-22D4-B1FD-BC3EE5534913"/>
 </associations>
 </Column>
-<Column name="ETAT_ID" id="7DCE167E-15D5-E2A2-BAC6-C63092A8EAC3">
+<Column name="FID_FAMILLE" id="F5CEE8A6-4CD9-0B07-1A0B-D6B751F99D46">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_ETAT dans laquelle se trouve tous les états que peuvent prendre les dossiers.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_FAMILLE permettant de savoir à quelle famille appartient chaque dossier : plan de récolement, investigation complémentaire, maj carto]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -48,13 +48,13 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="C672CD0A-A4E8-9647-525A-66A60ACA4BE0" referredColumn="2B0DF798-7933-22D4-B1FD-BC3EE5534913"/>
+<colAssociation fkAssociation="5BACAA39-E658-1ADC-B8DB-4602F49C7E8F" referredColumn="2BF0E3DD-A278-0E84-1111-19A4D9578CCB"/>
 </associations>
 </Column>
-<Column name="FAM_ID" id="F5CEE8A6-4CD9-0B07-1A0B-D6B751F99D46">
+<Column name="FID_PERIMETRE" id="E2C70E3D-B4FD-4179-6267-44FC1A13968B">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_FAMILLE permettant de savoir à quelle famille de données appartient chaque dossier.	]]></commentInRDBMS>
+<createdTime>2022-01-06 08:16:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_GEO permettant d'associer un périmètre à un dossier.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -63,13 +63,13 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="669E67AA-8024-F195-4652-A5B5937F4CEE" referredColumn="2BF0E3DD-A278-0E84-1111-19A4D9578CCB"/>
+<colAssociation fkAssociation="023C161F-0431-300E-9F28-EAD0CF711DEE" referredColumn="B6F50EA4-FF03-69B5-1437-BA2E17F7AF5B"/>
 </associations>
 </Column>
-<Column name="USER_ID" id="22AD77C6-E2CE-ACF5-13D4-525A693E3612">
+<Column name="FID_PNOM_CREATION" id="E47A7739-8607-1277-0B74-97B0FB79F1C6">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant du pnom ayant fait la dernière mise à jour du dossier - Clé étrangère vers la table TA_GG_SOURCE.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_AGENT permettant de savoir quel utilisateur a créé quel dossier - champ utilisé uniquement pour de la création.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -78,10 +78,25 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="065514A0-E34A-D0E5-A600-3AC687B97F40" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+<colAssociation fkAssociation="DC4529C3-4BC5-E155-3DA3-B044F0E3B400" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
 </associations>
 </Column>
-<Column name="DOS_DC" id="259B16AB-FC1E-4BA5-E372-3911C7F1A430">
+<Column name="FID_PNOM_MODIFICATION" id="22AD77C6-E2CE-ACF5-13D4-525A693E3612">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_AGENT permettant de savoir quel utilisateur a modifié quel dossier en dernier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C0B132F-8BAC-60D9-E6AE-73ABDBE6B6AD" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+</associations>
+</Column>
+<Column name="DATE_SAISIE" id="259B16AB-FC1E-4BA5-E372-3911C7F1A430">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:35:02 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date de création du dossier.]]></commentInRDBMS>
@@ -91,6 +106,129 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_MODIFICATION" id="F75E9BF8-37E5-9490-5896-1FCFE2C90C1E">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de mise à jour du dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_CLOTURE" id="157DE9FE-F14D-4150-9746-A7FAF4F16E45">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de clôture du dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_DEBUT_LEVE" id="25CBA320-9EDE-3512-67A6-2E286A8DCB97">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de début des levés de l'objet (du dossier) par les géomètres.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_FIN_LEVE" id="CEB48B99-90E7-7E7C-9FA2-7B04162A7CCA">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin des levés de l'objet (du dossier) par les géomètres.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_DEBUT_TRAVAUX" id="48A70BA1-9D8A-E752-B423-4219F3348CB6">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de début des travaux sur l'objet concerné par le dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_FIN_TRAVAUX" id="58A3A57D-6B2F-194F-6ABE-E5174DBA7D13">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin des travaux sur l'objet concerné par le dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_COMMANDE_DOSSIER" id="758FF86D-D2E0-C3C3-47C9-B3E7E2626336">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-02-15 13:10:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de commande ou de création de dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOS_VOIE" id="DD0EFB2D-0002-D6AE-B07E-10D7536952A0">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la voie d''appartenance du dossier (G_BASE_VOIE.TA_VOIE).]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAITRE_OUVRAGE" id="F2CC028B-0170-1FFE-14D0-B1DD207735F5">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom du maître d'ouvrage.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESPONSABLE_LEVE" id="2645CC0B-65D4-C250-0184-566B587FA2BD">
+<createdBy>bjacq</createdBy>
+<createdTime>2020-12-10 10:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom de l'entreprise responsable du levé.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DOS_PRECISION" id="6A3538D2-053E-CA31-479F-B576B0D716BF">
@@ -106,19 +244,20 @@
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DOS_DMAJ" id="F75E9BF8-37E5-9490-5896-1FCFE2C90C1E">
+<Column name="ENTREPRISE_TRAVAUX" id="C8CCE1E0-7C00-CCCC-47F6-5C7E17C7A828">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de mise à jour du dossier.]]></commentInRDBMS>
+<createdTime>2021-02-15 13:10:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entreprise ayant effectué les travaux de levé (si l''entreprise responsable du levé utilise un sous-traitant, alors c''est le nom du sous-traitant qu''il faut mettre ici).]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DOS_RQ" id="5E490F51-5D62-61CC-8CB8-D0FBDCF531D6">
+<Column name="REMARQUE" id="5E490F51-5D62-61CC-8CB8-D0FBDCF531D6">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:35:02 UTC</createdTime>
 <commentInRDBMS><![CDATA[Remarque lors de la création du dossier permettant de préciser la raison de sa création, sa délimitation ou le type de bâtiment/voirie qui a été construit/détruit.]]></commentInRDBMS>
@@ -129,167 +268,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>4000 BYTE</dataTypeSize>
 <ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_DT_FIN" id="157DE9FE-F14D-4150-9746-A7FAF4F16E45">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de clôture du dossier.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_PRIORITE" id="934B467E-629C-1C2E-BFC0-FEAD1A30ED1C">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_PRIORITE contenant tous les niveaux de priorité pouvant être associés aux dossiers.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_IDPERE" id="8FA33D64-741C-BDA8-D476-541A65507937">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-02-15 13:07:54 UTC</createdTime>
-<commentInRDBMS><![CDATA[Indique un numéro de dossier associé s''il y en a un (ce champ accepte les NULL) - n''est plus utilisé]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_DT_DEB_TR" id="48A70BA1-9D8A-E752-B423-4219F3348CB6">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de début des travaux sur l'objet concerné par le dossier.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_DT_FIN_TR" id="58A3A57D-6B2F-194F-6ABE-E5174DBA7D13">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de fin des travaux sur l'objet concerné par le dossier.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_DT_CMD_SAI" id="758FF86D-D2E0-C3C3-47C9-B3E7E2626336">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-02-15 13:10:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de commande ou de création de dossier.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_INSEE" id="EFFD29E9-EE69-7278-DB1A-C6D260A053AA">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code INSEE de la commune dans laquelle se situe l'objet nécessitant un dossier.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_VOIE" id="DD0EFB2D-0002-D6AE-B07E-10D7536952A0">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la vue V_VOIE_AGGR contenant le nom, la commune d'appartenance, le code INSEE et la géométrie de chaque voie. Cette vue fait sa sélection depuis G_SIDU.ILTAVOI.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ORDER_ID" id="D34740DD-0D5A-38C0-3E19-608F8C895A7D">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-02-15 13:42:08 UTC</createdTime>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_MAO" id="F2CC028B-0170-1FFE-14D0-B1DD207735F5">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nom du maître d'ouvrage]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200 BYTE</dataTypeSize>
-<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ENTREPRISE_TRAVAUX" id="C8CCE1E0-7C00-CCCC-47F6-5C7E17C7A828">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-02-15 13:10:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[entreprise ayant effectué les travaux de levé (si l''entreprise responsable du levé utilise un sous-traitant, alors c''est le nom du sous-traitant qu''il faut mettre ici).]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200 BYTE</dataTypeSize>
-<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_ENTR" id="2645CC0B-65D4-C250-0184-566B587FA2BD">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nom de l'entreprise responsable du levé.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200 BYTE</dataTypeSize>
-<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_NUM" id="B972EBDA-2E86-DBF6-0757-F44E98B8D7B6">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Numéro de chaque dossiercréé via le formulaire de qgis. Champ correspondant à DOS_NUM.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DOS_OLD_ID" id="B529CC3F-1D3B-5333-4CAF-3A7D2D28B81C">
@@ -305,39 +283,17 @@
 <ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DOS_DT_DEB_LEVE" id="25CBA320-9EDE-3512-67A6-2E286A8DCB97">
+<Column name="DOS_IDPERE" id="8FA33D64-741C-BDA8-D476-541A65507937">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de début des levés de l'objet (du dossier) par les géomètres.]]></commentInRDBMS>
+<createdTime>2021-02-15 13:07:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indique un numéro de dossier associé s''il y en a un (ce champ accepte les NULL) - n''est plus utilisé]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_DT_FIN_LEVE" id="CEB48B99-90E7-7E7C-9FA2-7B04162A7CCA">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 10:35:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de fin des levés de l'objet (du dossier) par les géomètres.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="DOS_DT_PREV" id="F779B36F-D3F8-9D83-8FF6-B0D3E4DA8AE5">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-02-15 13:42:08 UTC</createdTime>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -364,89 +320,112 @@
 <colUsage columnID="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="840E15B4-F8A4-96C9-7709-74C137D0675B" name="TA_GG_DOSSIER_ID_DOS_PK">
+<ind_PK_UK id="840E15B4-F8A4-96C9-7709-74C137D0675B" name="TA_GG_DOSSIER_OBJECTID_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 16:17:16 UTC</createdTime>
 <comment><![CDATA[Clé primaire de la table (ID_DOS).]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9A525E62-5DD0-B059-5138-267EA3C1836F" name="TA_GG_DOSSIER_DOS_NUM_IDX">
+<ind_PK_UK id="A81CBEE6-66AC-37EB-474C-D21282C6F4C3" name="TA_GG_DOSSIER_FID_ETAT_AVANCEMENT_IDX">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 16:17:16 UTC</createdTime>
-<comment><![CDATA[Index sur les numéros de dossiers]]></comment>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="B972EBDA-2E86-DBF6-0757-F44E98B8D7B6"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="717F965E-DB33-C6B1-5739-654333849EB0" name="TA_GG_DOSSIER_ETAT_ID_IDX">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 16:17:16 UTC</createdTime>
-<comment><![CDATA[Index sur les valeurs d'avancement des dossiers.]]></comment>
+<createdTime>2022-01-10 08:36:14 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7DCE167E-15D5-E2A2-BAC6-C63092A8EAC3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="26A05234-D708-85D3-2426-14E1E60B739A" name="TA_GG_DOSSIER_FAM_ID_IDX">
+<ind_PK_UK id="3BAA86D8-BB26-5096-50DA-A30E79088754" name="TA_GG_DOSSIER_FID_FAMILLE_IDX">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 16:17:16 UTC</createdTime>
-<comment><![CDATA[Index sur la clé étrangère TA_GG_DOSSIER_FAM_ID_IDX.]]></comment>
+<createdTime>2022-01-10 08:36:14 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F5CEE8A6-4CD9-0B07-1A0B-D6B751F99D46"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B28B5A0B-E7EB-0035-1554-F1AC68977B12" name="TA_GG_DOSSIER_DOS_VOIE_IDX">
+<ind_PK_UK id="C10D297E-9913-AB37-51F2-A1D744AA4BF9" name="TA_GG_DOSSIER_FID_PERIMETRE_IDX">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 16:17:16 UTC</createdTime>
-<comment><![CDATA[Index sur la Clé étrangère TA_GG_DOSSIER_DOS_VOIE_FK.]]></comment>
+<createdTime>2022-01-10 10:51:41 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DD0EFB2D-0002-D6AE-B07E-10D7536952A0"/>
+<colUsage columnID="E2C70E3D-B4FD-4179-6267-44FC1A13968B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7AF47F1C-0BA4-FBDF-8264-F9AD13ACF360" name="TA_GG_DOSSIER_DOS_INSEE_IDX">
+<ind_PK_UK id="10B1F5D1-1965-E3B5-8BBB-3E95FBB413F1" name="TA_GG_DOSSIER_FID_PNOM_CREATION_IDX">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 16:17:16 UTC</createdTime>
-<comment><![CDATA[Index sur les codes communes.]]></comment>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="EFFD29E9-EE69-7278-DB1A-C6D260A053AA"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="748F870B-E026-C8FB-FCD0-989EDA67D529" name="TA_GG_DOSSIER_USER_ID_IDX">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 16:17:16 UTC</createdTime>
-<comment><![CDATA[Index sur la clé étrangère TA_GG_DOSSIER_USER_ID_FK.]]></comment>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="22AD77C6-E2CE-ACF5-13D4-525A693E3612"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="8EDABF10-A721-615D-6FEE-FE52CA3275E9" name="TA_GG_DOSSIER_SRC_ID_IDX">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 16:17:16 UTC</createdTime>
-<comment><![CDATA[Index sur la clé étrangère TA_GG_DOSSIER_SRC_FK]]></comment>
+<createdTime>2022-01-10 08:36:14 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E47A7739-8607-1277-0B74-97B0FB79F1C6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6C8098C9-3E1D-A07F-1A99-C0283B4D885F" name="TA_GG_DOSSIER_FAM_ID_FK">
+<ind_PK_UK id="C3252153-E9DB-6CFE-2DA0-612E85FA3724" name="TA_GG_DOSSIER_FID_PNOM_MODIFICATION_IDX">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:00:49 UTC</createdTime>
+<createdTime>2022-01-10 08:36:14 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22AD77C6-E2CE-ACF5-13D4-525A693E3612"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55BF7A00-FE45-5305-8E1E-9FA137F64EA7" name="TA_GG_DOSSIER_MAITRE_OUVRAGE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:36:14 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2CC028B-0170-1FFE-14D0-B1DD207735F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48F1C454-C9E6-10EC-D20E-124C97856374" name="TA_GG_DOSSIER_RESPONSABLE_LEVE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:36:14 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2645CC0B-65D4-C250-0184-566B587FA2BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25DCABF5-DD5D-7157-705B-FCF00E42FDE9" name="TA_GG_DOSSIER_ENTREPRISE_TRAVAUX_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:36:14 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8CCE1E0-7C00-CCCC-47F6-5C7E17C7A828"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D12B30F3-0F9B-B529-6C8D-0C7DCA3ED707" name="TA_GG_DOSSIER_FID_PNOM_CREATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:27:52 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E47A7739-8607-1277-0B74-97B0FB79F1C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26C65578-C6D6-61FB-13D2-13B6766FBF2B" name="TA_GG_DOSSIER_FID_PNOM_MODIFICATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:28:15 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22AD77C6-E2CE-ACF5-13D4-525A693E3612"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="410AA6F6-1654-185D-0C4C-75C9459F9A6C" name="TA_GG_DOSSIER_FID_FAMILLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:28:56 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -454,29 +433,19 @@
 <colUsage columnID="F5CEE8A6-4CD9-0B07-1A0B-D6B751F99D46"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D834EDC2-C4E5-5DC5-2A81-CEBC33F7CC27" name="TA_GG_DOSSIER_SRC_ID_FK">
+<ind_PK_UK id="7EE05007-2588-14A6-4100-4861F37B1752" name="TA_GG_DOSSIER_FID_PERIMETRE_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:02:44 UTC</createdTime>
+<createdTime>2022-01-10 08:29:45 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="E47A7739-8607-1277-0B74-97B0FB79F1C6"/>
+<colUsage columnID="E2C70E3D-B4FD-4179-6267-44FC1A13968B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9E3D798E-61BD-DCB4-9C98-02EA94FD3F4D" name="TA_GG_DOSSIER_USER_ID_FK">
+<ind_PK_UK id="8C757C49-F221-AEBB-1F70-6E49E7A68497" name="TA_GG_DOSSIER_FID_ETAT_AVANCEMENT_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:04:55 UTC</createdTime>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="22AD77C6-E2CE-ACF5-13D4-525A693E3612"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="F1B0D931-02BD-3FE5-0F28-FB722F5E2EFB" name="TA_GG_DOSSIER_ETAT_ID_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 11:09:57 UTC</createdTime>
+<createdTime>2022-01-10 08:37:29 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5AB9F60-F617-2AFF-9FD5-03B6605EA6C6" name="TA_MODALITE_CIRCULATION">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:14:54 UTC</createdTime>
+<comment><![CDATA[Table de relation entre la table TA_VOIE et la table TA_LIBELLE permettant d''associer une ou plusieurs modalités de circulation(carrossable, cyclable, bus) à une voie.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_31</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="96A21F59-9C76-6E06-69FD-B410C2503515">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:19:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_voie" id="A12B68A9-CB05-CF62-C802-3A923684AC1E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:19:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE permettant d''associer une voie à une ou plusieurs modalités de circulation (carrossble, cyclable, bus) présentes dans la table TA_LIBELLE.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C721D07-5274-9928-F65C-AE4756BB3DC4" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+</associations>
+</Column>
+<Column name="fid_libelle" id="6FA49ACE-4044-55A0-C075-C2D81D6801D8">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:19:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant d''associer une ou plusieurs modalités de circulation à une voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8ED58988-707D-1998-75BC-08B504E17207" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15FD7534-576A-47AF-D148-4FB42E7416FB" name="TA_MODALITE_CIRCULATION_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:19:07 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96A21F59-9C76-6E06-69FD-B410C2503515"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B978CE93-9F18-761D-8D84-77554C5204B6" name="TA_MODALITE_CIRCULATION_FID_VOIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:19:23 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A12B68A9-CB05-CF62-C802-3A923684AC1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D42A8684-BD67-57DC-FC7F-31A0C4D09618" name="TA_MODALITE_CIRCULATION_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 14:19:36 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FA49ACE-4044-55A0-C075-C2D81D6801D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

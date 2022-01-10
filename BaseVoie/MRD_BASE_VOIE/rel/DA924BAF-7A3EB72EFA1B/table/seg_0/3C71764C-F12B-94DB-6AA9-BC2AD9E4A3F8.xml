@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C71764C-F12B-94DB-6AA9-BC2AD9E4A3F8" name="TA_INFOS_POINT_INTERET">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:30:02 UTC</createdTime>
+<comment><![CDATA[Table contenant les informations de tous les points d''intérêts que nous gérons, c''est-à-dire les mairies et les mairies annexes.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="9354D6C8-25CE-BA01-0CE2-AC9407A0FC74">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:32:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="B09B8E32-12CC-3698-95DD-3798819F5E41">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:32:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom du POI (point d''intérêt) correspondant au champ LIBLPU de l''ancienne base.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complement_infos" id="CF9330B5-2245-3886-74BF-1FC918124BE2">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:32:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Complément d''informations du point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_saisie" id="84514644-11F4-FFCA-F8A9-9EEF7A00D329">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie de l''objet renseignée automatiquement.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_modification" id="463853C6-A028-8E07-2EAC-32F8568DEE07">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[date de modification de l''objet renseignée automatiquement.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="BAEAB5F9-2C3D-0EE9-1697-EC61CF38E84E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:32:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de connaître le type de chaque POI (point d'intérêt).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37F1D1F6-DAFD-1D67-B1BB-939E0AFB5A92" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
+</Column>
+<Column name="fid_point_interet" id="661FE1C8-1B34-C25B-6A09-587E36BC1564">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:32:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_POINT_INTERET permettant d''associer un POI à sa géométrie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8D39709-0D87-F45F-DFE1-EFDEE0BAD189" referredColumn="AD47C692-A393-A8C0-9C35-BD94BFD11684"/>
+</associations>
+</Column>
+<Column name="fid_pnom_saisie" id="A01475F8-B45C-65BB-0C45-85148F03D926">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant créé un point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0842F09-4C68-E626-DAA9-94E05E28F100" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+<Column name="fid_pnom_modification" id="4F8AF71D-CE8A-ABAC-5680-5565679823FE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant modifié un point d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62315EA8-72CD-28F7-1BEA-1496D7E8F1D9" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8AA7A51F-1563-9D6F-C2DB-52EC0D9F2274" name="TA_INFOS_POINT_INTERET_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 11:32:57 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9354D6C8-25CE-BA01-0CE2-AC9407A0FC74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D8CFD35-2EEC-A010-2010-D48EC671B019" name="TA_INFOS_POINT_INTERET_FID_PNOM_SAISIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 13:42:11 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A01475F8-B45C-65BB-0C45-85148F03D926"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B351C5E8-C97E-1FB5-3A93-E9590DB33987" name="TA_INFOS_POINT_INTERET_FID_PNOM_MODIFICATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 13:42:33 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F8AF71D-CE8A-ABAC-5680-5565679823FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94810DBA-B9DA-FB0C-6A3E-5C962CFF6F68" name="TA_INFOS_POINT_INTERET_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 13:43:10 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAEAB5F9-2C3D-0EE9-1697-EC61CF38E84E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7730ABCF-83A9-7583-8FA4-135FFA79BD9D" name="TA_INFOS_POINT_INTERET_FID_POINT_INTERET_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-07-13 13:49:40 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="661FE1C8-1B34-C25B-6A09-587E36BC1564"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
