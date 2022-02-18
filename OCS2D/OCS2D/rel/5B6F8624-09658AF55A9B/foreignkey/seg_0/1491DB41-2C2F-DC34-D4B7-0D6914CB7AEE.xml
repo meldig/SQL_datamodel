@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1491DB41-2C2F-DC34-D4B7-0D6914CB7AEE" containerWithKeyObject="66B24DBB-57E6-9B72-4B9F-4D63FDE0C55D" localFKIndex="0B73FAD3-58F7-738F-1D30-54F3661CC984" name="TA_OCS2D_RELATION_COMMENTAIRE_fid_ocs2d_MILLESIME_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:07:42 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_OCS2D_MILLESIME.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<referredTableLongName>TA_OCS2D_MILLESIME</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C9723DBB-066A-20A1-9774-06F680775A85</referredTableID>
+<keyObject>492434BE-F6F8-71E9-2E75-8472ADA35E27</keyObject>
+<referredKeyID>492434BE-F6F8-71E9-2E75-8472ADA35E27</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid </refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

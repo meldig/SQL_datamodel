@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DCAFBD6D-6D5A-AA2E-0889-BFFF1C19B744" name="TA_OCS2D_GEOM">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:20:57 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="EEFCA8BF-0D4D-2C9B-EA22-8A2AAF7A8C8E">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:31:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_GEOM.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="22F2A262-A68E-1D47-8EAE-2CD6E55E08DC">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:31:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie des zones OCS2D.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DA8611D3-75AA-9797-A42A-F2BF6C8D507C" name="TA_OCS2D_GEOM_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:31:04 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEFCA8BF-0D4D-2C9B-EA22-8A2AAF7A8C8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

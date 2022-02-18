@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="OCS2D" id="E27FEDB0-A9AB-10CD-CE8E-8C207EBAC03E" version="3.5">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:19:09 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E27FEDB0-A9AB-10CD-CE8E-8C207EBAC03E</designId>
+</OSDM_Design>

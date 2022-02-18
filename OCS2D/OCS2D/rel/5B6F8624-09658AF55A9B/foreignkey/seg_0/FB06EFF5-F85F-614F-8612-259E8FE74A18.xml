@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FB06EFF5-F85F-614F-8612-259E8FE74A18" containerWithKeyObject="B5E6BAF4-530B-F8AB-A7A3-AD3B480BDEAA" localFKIndex="105071F0-1FD2-A905-7E0D-3547AAE951ED" name="TA_OCS2D_RELATION_GEOM_TA_OCS2D_GEOM_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 22:56:14 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_OCS2D_GEOM pour connaitre la geométrie d''un élément OCS2D.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<referredTableLongName>TA_OCS2D_GEOM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DCAFBD6D-6D5A-AA2E-0889-BFFF1C19B744</referredTableID>
+<keyObject>DA8611D3-75AA-9797-A42A-F2BF6C8D507C</keyObject>
+<referredKeyID>DA8611D3-75AA-9797-A42A-F2BF6C8D507C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
