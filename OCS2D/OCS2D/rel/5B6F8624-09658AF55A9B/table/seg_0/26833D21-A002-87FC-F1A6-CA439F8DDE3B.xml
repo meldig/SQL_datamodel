@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26833D21-A002-87FC-F1A6-CA439F8DDE3B" name="TA_OCS2D_POINT_RELATION_ERREUR">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:29:11 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="E49658F9-6D45-D3E5-F133-C7D0E5A3FBCF">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:35:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_POINT_RELATION_ERREUR.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_point" id="DE95758C-7B91-6431-8D7D-99BC98E79BFD">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:35:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_POINT_VIGILANCE.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD7EA0E5-FB2B-C211-50ED-CF903CA18C98" referredColumn="29DE6F8F-77FE-8280-9B25-C0C9E490A0BB"/>
+</associations>
+</Column>
+<Column name="fid_type_erreur" id="020A3A2D-8E68-89FD-0120-F2A56D7B3AB9">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:35:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F665A7F3-0F82-BC0D-F5FF-8DC8D13DCFDC" referredColumn="57466412-ACB0-0769-6303-6026D9A178B8"/>
+</associations>
+</Column>
+<Column name="date_creation" id="FC863ADF-CCDC-5821-089E-A8DA472DA7AC">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:08:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de création du commentaire.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_creation" id="8F646DE5-9655-570F-0847-3D1C7CA54A0F">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:08:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GESTIONGEO.TA_GG_AGENT pour connaitre le créateur du point.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F16B178-5FB4-A7CC-DCF1-3E99692F7C37" referredColumn="0CD2268C-5E1A-FF77-7BFF-D20747F0360B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDD77D63-7730-83ED-3E3B-E6FBC5685CEC" name="TA_OCS2D_POINT_RELATION_ERREUR_TA_OCS2D_POINT_VIGILANCE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:13:36 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE95758C-7B91-6431-8D7D-99BC98E79BFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB4EE484-84DF-15C1-E77F-407DD010ED8D" name="TA_OCS2D_POINT_RELATION_ERREUR_G_GEO.TA_LIBELLE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:13:36 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="020A3A2D-8E68-89FD-0120-F2A56D7B3AB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5E2222D-0443-1B4B-C25B-C92A4ACAE2DA" name="TA_OCS2D_POINT_RELATION_ERREUR_G_GESTIONGEO.TA_GG_SOURCE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:30:50 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F646DE5-9655-570F-0847-3D1C7CA54A0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

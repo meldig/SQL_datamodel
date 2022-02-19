@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1ADEB74D-54F3-8996-E2A7-75F3F36EFA8B" name="G_GEO.TA_LIBELLE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:29:24 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="57466412-ACB0-0769-6303-6026D9A178B8">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:32:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table G_GEO.TA_LIBELLE]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle_long" id="7B42E050-8129-8C01-1D22-FC7C6CC9FD79">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:32:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE_LONG]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D76B7EF-0E23-2627-E5BB-9D2568830E83" name="G_GEO.TA_LIBELLE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:11:02 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57466412-ACB0-0769-6303-6026D9A178B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="40291977-A369-6820-D642-C7312AA597DE" containerWithKeyObject="FD1CB761-B44E-41DE-F934-8D3E0F883D72" localFKIndex="E9BF105C-75FE-40AC-DC13-F60C14594897" name="TA_OCS2D_GRILLLE_G_GESTIONGEO.TA_GG_SOURCE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:32:36 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_GG_AGENT permettant d''attribuer le pnom d''un agent à un élément de la grille afin d''indiquer qu''il doit s''en occuper.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<referredTableLongName>G_GESTIONGEO.TA_GG_AGENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C67A36C-4CFB-CB7E-22B5-568E6E44C5DE</referredTableID>
+<keyObject>16A0B81D-6368-FD0D-F968-3B15C49D5764</keyObject>
+<referredKeyID>16A0B81D-6368-FD0D-F968-3B15C49D5764</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

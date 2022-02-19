@@ -40,13 +40,15 @@
 <createdTime>2022-02-18 15:25:46 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_METADONNEE]]></commentInRDBMS>
 <ownerDesignName>OCS2D</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3045B859-9079-B920-3814-F96FFA541F16" referredColumn="0CAFBB72-5473-E2FA-5FC0-30A42DF0A061"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -69,6 +71,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E108C8C2-8680-B4F8-E01B-A838FE713211"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AFB6890-5AAF-1EF8-12B3-0B0FBE3816B2" name="TA_OCS2D_MILLESIME_G_GEO.TA_METADONNEE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:40:08 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B31BE1B4-0C9F-0311-3110-FB7480004E18"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

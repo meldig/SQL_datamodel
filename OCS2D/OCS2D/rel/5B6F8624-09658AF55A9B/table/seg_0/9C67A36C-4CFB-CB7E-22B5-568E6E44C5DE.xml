@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C67A36C-4CFB-CB7E-22B5-568E6E44C5DE" name="G_GESTIONGEO.TA_GG_AGENT">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:30:08 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="0CD2268C-5E1A-FF77-7BFF-D20747F0360B">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:34:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table (identifiant unique) sans auto-incrémentation. Il s'agit des codes agents.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnom" id="8A4CC000-1431-C03C-B1C1-FA35D47BD234">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:34:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pnom de chaque agent.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validite" id="82358DF9-1496-4390-1088-DFC8C7D87398">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:34:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ booléen permettant de savoir si l'agent participe encore à la vie des données de GestionGeo : 1 = oui ; 0 = non.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="16A0B81D-6368-FD0D-F968-3B15C49D5764" name="G_GESTIONGEO.TA_GG_SOURCE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:28:59 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CD2268C-5E1A-FF77-7BFF-D20747F0360B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

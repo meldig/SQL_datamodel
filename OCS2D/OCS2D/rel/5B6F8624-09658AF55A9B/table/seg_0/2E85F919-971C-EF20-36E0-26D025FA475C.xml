@@ -1,0 +1,418 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E85F919-971C-EF20-36E0-26D025FA475C" name="TA_OCS2D_MULTIDATE_CONTROLE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:49:50 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="24819CD8-B6C5-A867-5313-E9BAFA85E202">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_MULTIDATE_CONTROLE]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid" id="C1C3B29D-9E95-5815-025C-ECE91F1ADFAC">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[dentifiant OCS2D du polygone avant mutation]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cs05" id="EB03FF20-0FF5-B773-44F0-D0BA86A712B0">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Couvert du sol 2005]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libcs05" id="D6CDCB60-7F18-719D-6ACB-C06B2CC41B29">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle du couvert du sol 2005]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="us05" id="01FE5586-80A0-900A-F777-FF4DBCC78CD1">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usage du sol 2005]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libus05" id="CAE9AD92-5227-21C5-3E5B-BDB233BDB059">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle Usage du sol 2015]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="indice05" id="14758BE3-8ED2-0A37-90FC-46FBB62A9B11">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indice de confiance donné à la photo-interprétation en 2005]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="source05" id="89DB1B05-1BC7-C707-EC61-966CCFCA2DE5">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origine de l’information de 2005 : par défaut « photo-interprétation »]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comment05" id="4D0F2AC7-7856-01DB-3593-A3FAF5486B9D">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Informations complémentaires (si nécessaire) donnée sur le polygone en 2005]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cs15" id="9432A6B2-4AED-4CE1-F3F3-5E7126E0EAA0">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Couvert du sol 2015]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libcs15" id="88C79525-1D5B-FF15-A513-473C9DFEB5BC">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle du couvert du sol 2015]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="us15" id="2ED5F705-B155-E6EC-7029-FCC13B6D87F1">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usage du sol 2015]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libus15" id="F1AA1546-C35A-6E19-1A65-BCA93A98F1F8">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:50:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle Usage du sol 2015]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="indice15" id="6280C1E1-9D60-612C-83D2-432B9B69E77C">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indice de confiance donné à la photo-interprétation en 2015]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="source15" id="8721769A-9770-4213-3CA0-4C418DB304CB">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origine de l’information de 2015 : par défaut « photo-interprétation »]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comment15" id="001E7382-81FD-EDC7-E843-94A544B70C2C">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Informations complémentaires (si nécessaire) donnée sur le polygone en 2015]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="evol05_15" id="60ED29DB-337E-E88B-E263-5BC1BA7EDBEA">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[code pour l’évolution du polygone. 1 évolution entre les deux dates 2005 et 2015, 2 pas d''évolution]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cs20" id="512168B5-DA23-C996-B2D3-29258FE0F5D2">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Couvert du sol 2020]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libcs20" id="8B83335E-EF90-93CE-7C73-B040BABB5B8E">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle du couvert du sol 2020]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="us20" id="DE3D131E-B11D-1C75-64E0-C7703C04C446">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usage du sol 2020]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libus20" id="3B91F2BF-6F26-CAA3-BA8F-0BEC7F7566EC">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle Usage du sol 2020]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="indice20" id="75A8C228-75A0-BCE3-F7B1-EB7E5C3011E5">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indice de confiance donné à la photo-interprétation en 2020]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="source20" id="36D9A606-3304-72D5-AB5B-0CF0FA24D585">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origine de l’information de 2020 : par défaut « photo-interprétation »]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comment20" id="EEC17C72-429A-FDE7-CCBE-9C7D3EFFBF35">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Informations complémentaires (si nécessaire) donnée sur le polygone en 2020]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="evol15_20" id="47027C7F-1757-EA99-02B2-581E71C02742">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[code pour l’évolution du polygone. 1 évolution entre les deux dates 2015 et 2020, 2 pas d''évolution]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surface_m2" id="BA48B248-C55E-3B69-415D-47BBC9B7EECA">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surface du polygone en m²]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>24</dataTypePrecision>
+<dataTypeScale>15</dataTypeScale>
+<ownDataTypeParameters>,24,15</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surface_ha" id="6FBC74FE-8EB5-EF93-2503-C57C3AF8B627">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surface du polygone en hectare]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>24</dataTypePrecision>
+<dataTypeScale>15</dataTypeScale>
+<ownDataTypeParameters>,24,15</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Perimetre du polygone en mètres" id="D0A63260-7804-E45C-622F-EFF35A6FF7EC">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Perimetre du polygone en mètres]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>24</dataTypePrecision>
+<dataTypeScale>15</dataTypeScale>
+<ownDataTypeParameters>,24,15</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_metadonnee" id="E526B4E3-2A6C-B56F-E127-1BAAC8D527FC">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_METADONNE pour connaitre les métadonnées des données]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13D3A88C-F55C-2FB1-A2C8-F59888F47B0C" referredColumn="0CAFBB72-5473-E2FA-5FC0-30A42DF0A061"/>
+</associations>
+</Column>
+<Column name="geom" id="601E5778-EFA5-C12D-6D30-1CA19CF7EC8E">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:58:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Geometrie du polygone]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC67B4A7-C99B-1BC2-818C-5BD9923DA48F" name="TA_OCS2D_MULTIDATE_CONTROLE_G_GEO.TA_METADONNEE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:41:20 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E526B4E3-2A6C-B56F-E127-1BAAC8D527FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

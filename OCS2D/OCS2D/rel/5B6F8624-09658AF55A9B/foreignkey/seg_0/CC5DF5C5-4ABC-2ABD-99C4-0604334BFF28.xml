@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CC5DF5C5-4ABC-2ABD-99C4-0604334BFF28" containerWithKeyObject="0D370A58-AADA-FC17-0C02-C30EDECF2BDA" localFKIndex="0C5A2EFC-16C7-D03D-4105-123A14FC1CAC" name="TA_OCS2D_POINT_VIGILANCE_FID_PNOM_MODIFICATION_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:30:22 UTC</createdTime>
+<comment><![CDATA[Agent qui à mise à jour le point et l''observation.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<referredTableLongName>G_GESTIONGEO.TA_GG_AGENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C67A36C-4CFB-CB7E-22B5-568E6E44C5DE</referredTableID>
+<keyObject>16A0B81D-6368-FD0D-F968-3B15C49D5764</keyObject>
+<referredKeyID>16A0B81D-6368-FD0D-F968-3B15C49D5764</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
