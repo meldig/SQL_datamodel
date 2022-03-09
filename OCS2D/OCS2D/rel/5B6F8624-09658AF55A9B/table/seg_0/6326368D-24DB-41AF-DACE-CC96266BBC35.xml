@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE7DD7BE-21B9-4553-CBB7-A5169DF820E1" name="TA_OCS2D_RELATION_LIBELLE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6326368D-24DB-41AF-DACE-CC96266BBC35" name="TA_OCS2D_LIBELLE_CORRESPONDANCE">
 <createdBy>rjault</createdBy>
-<createdTime>2022-02-18 15:20:40 UTC</createdTime>
+<createdTime>2022-03-07 15:13:31 UTC</createdTime>
 <ownerDesignName>OCS2D</ownerDesignName>
-<ordsAlias>table_3</ordsAlias>
+<ordsAlias>table_25</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="F1182C26-5988-028B-831B-AA2BC72D8920">
+<Column name="objectid" id="DC4DDF4E-9F09-5AD2-FF84-5CC2E1169F99">
 <createdBy>rjault</createdBy>
-<createdTime>2022-02-18 15:28:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_RELATION_LIBELLE]]></commentInRDBMS>
+<createdTime>2022-03-07 15:25:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[clé primaire de la table.]]></commentInRDBMS>
 <ownerDesignName>OCS2D</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -20,10 +20,10 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_ocs2d_millesime" id="61B1C5CD-BA3B-8ECD-0048-F576BDD096AE">
+<Column name="fid_libelle" id="014C2777-EA96-0678-1555-0398812370CC">
 <createdBy>rjault</createdBy>
-<createdTime>2022-02-18 15:28:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_MILLESIME]]></commentInRDBMS>
+<createdTime>2022-03-07 15:25:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_LIBELLE. Pour mettre en relation un libelle avec sont libelle_court.]]></commentInRDBMS>
 <ownerDesignName>OCS2D</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,13 +32,13 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="00AA1DA6-F3BD-8502-DCCD-5BCA2FCA50A6" referredColumn="86464D58-6B91-2046-223C-A2C8AB15954D"/>
+<colAssociation fkAssociation="47637C0E-56BF-7579-9191-CBDF82DFCD83" referredColumn="C815ED14-E00B-7FCB-A7A2-DFE47D444ADE"/>
 </associations>
 </Column>
-<Column name="fid_libelle" id="AE6FEC1C-EB52-2E7C-626A-B4BEC04D962C">
+<Column name="fid_libelle_court" id="EFFC9121-B987-00B7-3088-BE7C987DD6DA">
 <createdBy>rjault</createdBy>
-<createdTime>2022-02-18 15:28:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE]]></commentInRDBMS>
+<createdTime>2022-03-07 15:25:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_LIBELLE_COURT Pour mettre en relation un libelle avec sont libelle_court.]]></commentInRDBMS>
 <ownerDesignName>OCS2D</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -47,40 +47,40 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A0126EC1-2D8B-CBE4-2338-3B18969BC4CB" referredColumn="C815ED14-E00B-7FCB-A7A2-DFE47D444ADE"/>
+<colAssociation fkAssociation="4A374FFB-8961-29A6-18FB-C29EA3456773" referredColumn="65BF81F0-C46E-F9A2-9D08-B97BCEB227E3"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5EA1B80B-AF64-118D-122E-116C7077A1CC" name="TA_OCS2D_RELATION_LIBELLE_PK">
+<ind_PK_UK id="459952F3-AF4A-1713-5D5C-15B64CF73BAC" name="TA_OCS2D_LIBELLE_CORRESPONDANCE_PK">
 <createdBy>rjault</createdBy>
-<createdTime>2022-02-18 15:28:39 UTC</createdTime>
+<createdTime>2022-03-07 15:25:14 UTC</createdTime>
 <ownerDesignName>OCS2D</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F1182C26-5988-028B-831B-AA2BC72D8920"/>
+<colUsage columnID="DC4DDF4E-9F09-5AD2-FF84-5CC2E1169F99"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="52355984-C8F1-4FAC-778F-41FC0AEF0EA5" name="TA_OCS2D_RELATION_LIBELLE_FID_OCS2D_MILLESIME_FK">
+<ind_PK_UK id="83A17127-9F2F-D836-88C2-63E6C46476B3" name="TA_OCS2D_LIBELLE_CORRESPONDANCE_TA_OCS2D_LIBELLE_COURT_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2022-02-18 15:29:15 UTC</createdTime>
+<createdTime>2022-03-08 15:19:01 UTC</createdTime>
 <ownerDesignName>OCS2D</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="61B1C5CD-BA3B-8ECD-0048-F576BDD096AE"/>
+<colUsage columnID="EFFC9121-B987-00B7-3088-BE7C987DD6DA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C7799ADD-E72A-A5F5-92AE-878428B803D2" name="TA_OCS2D_RELATION_LIBELLE_TA_OCS2D_LIBELLE_FK">
+<ind_PK_UK id="1A9F2CA1-2BF3-5285-A639-573F7A1B2168" name="TA_OCS2D_LIBELLE_CORRESPONDANCE_TA_OCS2D_LIBELLE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2022-03-08 15:24:31 UTC</createdTime>
+<createdTime>2022-03-08 15:19:26 UTC</createdTime>
 <ownerDesignName>OCS2D</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="AE6FEC1C-EB52-2E7C-626A-B4BEC04D962C"/>
+<colUsage columnID="014C2777-EA96-0678-1555-0398812370CC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

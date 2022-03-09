@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AFF22A66-BF96-372A-9743-621069D01C31" containerWithKeyObject="7044893C-BDE5-5024-924E-1227036F287D" localFKIndex="5E5EC8D0-C9D4-C3DE-B15B-2F5C03B5B83A" name="TA_OCS2D_LIBELLE_RELATION_NOMENCLATURE_FID_LIBELLE_POSTE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-08 15:23:26 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_OCS2D_LIBELLE.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<referredTableLongName>TA_OCS2D_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B79499DC-9B3F-DC68-7455-1AAD980CCF86</referredTableID>
+<keyObject>63835D1F-494A-9CF8-AEB9-4971D8258AF7</keyObject>
+<referredKeyID>63835D1F-494A-9CF8-AEB9-4971D8258AF7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

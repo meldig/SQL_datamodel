@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4A374FFB-8961-29A6-18FB-C29EA3456773" containerWithKeyObject="6326368D-24DB-41AF-DACE-CC96266BBC35" localFKIndex="83A17127-9F2F-D836-88C2-63E6C46476B3" name="TA_OCS2D_LIBELLE_CORRESPONDANCE_TA_OCS2D_LIBELLE_COURT_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-08 15:19:01 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_OCS2D_LIBELLE_COURT. Afin d'associer à chaque élément OCS2D son libelle court.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<referredTableLongName>TA_OCS2D_LIBELLE_COURT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>29275E86-63CF-D595-7279-319254C10AEA</referredTableID>
+<keyObject>41A2E72E-2F23-0D82-98A4-5BC5FEBDDC2E</keyObject>
+<referredKeyID>41A2E72E-2F23-0D82-98A4-5BC5FEBDDC2E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

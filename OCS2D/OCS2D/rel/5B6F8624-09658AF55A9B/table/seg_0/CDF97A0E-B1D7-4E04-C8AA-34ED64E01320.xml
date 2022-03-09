@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDF97A0E-B1D7-4E04-C8AA-34ED64E01320" name="TA_OCS2D_FAMILLE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-07 15:12:27 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="42CA539F-BA68-A6AF-16A1-691934F76ECD">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-07 15:14:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="10EAE6A2-E64C-E279-9C9F-AAE182A6CDE5">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-07 15:14:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom des différents familles des libellés.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="742222BC-0088-2AC5-F620-7103317778B7" name="TA_OCS2D_FAMILLE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-07 15:15:55 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la table TA_OCS2D_FAMILLE.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42CA539F-BA68-A6AF-16A1-691934F76ECD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
