@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4DF5CE28-1D80-B920-CFFD-D532BA9FDCE3" containerWithKeyObject="D5789D43-EB93-AE84-97CF-AF7410715926" localFKIndex="2B3C193B-1162-7A07-931E-2A5098102F9F" name="TA_GG_RELATION_CLASSE_DOMAINE_FID_DOMAINE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:01:50 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<referredTableLongName>TA_GG_DOMAINE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>761ADEB1-998D-5D5D-4C8E-80E6BC8EDF43</referredTableID>
+<keyObject>D11EF9CF-EE0E-6DDE-41FF-D43844862B4C</keyObject>
+<referredKeyID>D11EF9CF-EE0E-6DDE-41FF-D43844862B4C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>OBJECTID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

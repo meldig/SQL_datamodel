@@ -38,18 +38,6 @@
 <ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ETAT_AFF" id="80C350E5-3074-5404-D860-6123F78EE6A5">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-02-15 13:45:24 UTC</createdTime>
-<commentInRDBMS><![CDATA[Je ne sais pas à quoi correspond ce champ.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="LIBELLE_COURT" id="CE03E0B3-9C61-BBCD-07D5-81636E74E2ED">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 11:09:41 UTC</createdTime>
