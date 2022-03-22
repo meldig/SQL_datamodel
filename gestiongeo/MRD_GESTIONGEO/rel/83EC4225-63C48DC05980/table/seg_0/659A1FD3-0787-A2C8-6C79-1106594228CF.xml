@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="659A1FD3-0787-A2C8-6C79-1106594228CF" name="TA_GG_GEO_LOG">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:06:47 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="80CDDE66-89DB-4043-F757-BD57B5E2E33E">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:09:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PERIMETRE" id="288FAFCF-782E-9357-4E13-C8DEC108ACF8">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:09:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_GG_GEO permettant de savoir sur quel périmètre de dossier les actions ont été entreprises.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOM" id="11956268-7A70-6C4A-CBDD-DEB6F6B8F38E">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:09:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de type multipolygone de chaque dossier présent dans la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE_INSEE" id="563D8411-2454-D7DD-789D-FB0AA176D4BB">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:09:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code INSEE de la commune d''appartenance du centroïde du dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SURFACE" id="D07BA279-7C9B-E37E-AFCD-B2102362AD77">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:09:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surface de chaque périmètre de chaque dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_DOSSIER" id="9EBCE831-18BC-9430-0F64-C0DFF28FDE55">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:09:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETAT_AVANCEMENT" id="31B456F5-5B9B-8B2E-0542-33E6031CD31B">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:09:33 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC43B9E8-C4BC-4820-77DC-B6B82A67C755" name="TA_GG_GEO_LOG_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:09:33 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80CDDE66-89DB-4043-F757-BD57B5E2E33E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

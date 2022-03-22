@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51B7A254-789F-D816-60EA-23B46A21FB1E" name="TA_GG_FICHIER">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:50:11 UTC</createdTime>
+<comment><![CDATA[Table permettant de lister tous les fichiers correspondant à un dossier (dwg, pdf, etc).]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="00F6D76C-4C2A-865E-D42F-5BDA5AC98B25">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:52:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table correspondant à l''identifiant unique de chaque URL.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_DOSSIER" id="7B2EF510-2C98-4F62-389B-6CB9D482E051">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:52:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_DOSSIER permettant d''associer un l''URL de fichier (exemple : dwg, pdf, etc) à un dossier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EF21755-AF65-591E-375E-DC6BAA08747B" referredColumn="AB50324A-3B28-6E0E-DEA5-919B2264305A"/>
+</associations>
+</Column>
+<Column name="FICHIER" id="08357F26-159A-2668-6596-319910BA0BEE">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:52:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom de chaque fichier.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>250</dataTypePrecision>
+<ownDataTypeParameters>,250,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTEGRATION" id="05FF327C-9B42-4070-4A1C-D2AC766EFEAD">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:52:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ permettant de savoir si le fichier a été utilisé lors de l''intégration du fichier dwg par FME pour déterminer le périmètre du dossier. : 1 = oui ; 0 = non.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C370572-1AAC-C232-2EC7-8938B8928213" name="TA_GG_FICHIER_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:52:05 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00F6D76C-4C2A-865E-D42F-5BDA5AC98B25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32B1B0C9-8253-5FA4-AFC8-E8BFE3F14B04" name="TA_GG_FICHIER_FID_DOSSIER_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:53:09 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B2EF510-2C98-4F62-389B-6CB9D482E051"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

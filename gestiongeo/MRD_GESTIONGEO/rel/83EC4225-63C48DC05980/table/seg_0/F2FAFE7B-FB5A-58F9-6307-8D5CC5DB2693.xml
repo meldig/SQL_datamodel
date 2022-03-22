@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2FAFE7B-FB5A-58F9-6307-8D5CC5DB2693" name="TA_GG_REPERTOIRE">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:04:15 UTC</createdTime>
+<comment><![CDATA[Table qui présente les chemins d''accès aux fichiers des dossiers de levés des géomètres, faits via l''application gestiongeo.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="79735AF5-847F-7940-1B03-5AD9E1F60543">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:05:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REPERTOIRE" id="563E7352-9583-2FD8-07B1-AD595F3181EF">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:05:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chemin des repertoires.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROTOCOLE" id="921AF765-67D6-4701-0470-7E08C851C82A">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:05:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type de protocole du chemin.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E6346C2-4280-261F-6E85-FAF2B3B06287" name="TA_GG_REPERTOIRE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:05:46 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79735AF5-847F-7940-1B03-5AD9E1F60543"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

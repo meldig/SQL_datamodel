@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5789D43-EB93-AE84-97CF-AF7410715926" name="TA_GG_RELATION_CLASSE_DOMAINE">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:58:50 UTC</createdTime>
+<comment><![CDATA[Table de relation permettant d''associer une classe à ses domaines d''utilisation.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FID_CLASSE" id="CA549941-38D8-50C0-EC0B-C535B0887492">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:00:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_CLASSE.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA29B05E-EC0B-B07F-A46F-439FE91CF050" referredColumn="7A6BF8A2-B565-2FDC-2FCD-E2F933EEA81B"/>
+</associations>
+</Column>
+<Column name="FID_DOMAINE" id="A835AC05-CFCC-DFF2-BB49-9488D591AA1F">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:00:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_DOMAINE.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DF5CE28-1D80-B920-CFFD-D532BA9FDCE3" referredColumn="4AD1268D-E6AD-BB3E-3A5F-5C868B86C25A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2022E297-8B6A-3771-D943-F8766F3CB9F0" name="TA_GG_RELATION_CLASSE_DOMAINE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:00:02 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA549941-38D8-50C0-EC0B-C535B0887492"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B3C193B-1162-7A07-931E-2A5098102F9F" name="TA_GG_RELATION_CLASSE_DOMAINE_FID_DOMAINE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:01:50 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A835AC05-CFCC-DFF2-BB49-9488D591AA1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52808FC5-BDD5-87FD-2810-386317753986" name="TA_GG_RELATION_CLASSE_DOMAINE_FID_CLASSE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 08:02:58 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA549941-38D8-50C0-EC0B-C535B0887492"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

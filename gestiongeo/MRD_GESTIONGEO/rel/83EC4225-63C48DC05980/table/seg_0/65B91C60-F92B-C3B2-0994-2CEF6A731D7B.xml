@@ -30,11 +30,8 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="5175AC3D-2FF7-AAFF-1ABA-1AEF4DB5F82E" referredColumn="433B37DC-E4B2-CAD2-6472-89A5E93E1EE1"/>
-</associations>
 </Column>
 <Column name="GEO_REF" id="209F8EE6-056F-D9AC-EA64-5CF3F3C3E4A6">
 <createdBy>bjacq</createdBy>
@@ -216,6 +213,21 @@ Son remplissage se fait ainsi :
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TA_GG_CLASSE_OBJECTID" id="5947F8EE-1340-624C-01AE-107A8A37C182">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:23:04 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5175AC3D-2FF7-AAFF-1ABA-1AEF4DB5F82E" referredColumn="7A6BF8A2-B565-2FDC-2FCD-E2F933EEA81B"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="899B9D3A-1EEF-3015-E950-9044BA7756FA" name="TA_LIG_TOPO_IC_PK">
@@ -272,7 +284,7 @@ Son remplissage se fait ainsi :
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="59BB1500-F568-3E97-BD3C-CB8AB996666D"/>
+<colUsage columnID="5947F8EE-1340-624C-01AE-107A8A37C182"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

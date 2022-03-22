@@ -1,43 +1,30 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4EC8509A-2741-FD7F-7A1B-549C6BC8324B" name="TA_CLASSE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4EC8509A-2741-FD7F-7A1B-549C6BC8324B" name="TA_GG_CLASSE">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 14:58:50 UTC</createdTime>
-<comment><![CDATA[Liste des differentes classes d'objets geographiques.]]></comment>
+<comment><![CDATA[Table recensant tous les états des objets du plan de gestion et du plan topo fin.]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <ordsAlias>table_9</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CLA_INU" id="433B37DC-E4B2-CAD2-6472-89A5E93E1EE1">
+<Column name="OBJECTID" id="7A6BF8A2-B565-2FDC-2FCD-E2F933EEA81B">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:09:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant interne de la classe - Clé primaire auto-incrémentée.]]></commentInRDBMS>
+<createdTime>2022-03-22 07:23:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DOM_INU" id="4E417560-C154-5B47-4959-AA83DF245C29">
+<Column name="LIBELLE_COURT" id="B6DC2B88-7495-980E-C271-DFFFDF3C8190">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:09:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Référence au domaine d'appartenance.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CLA_CODE" id="151F4F10-CC36-3316-AE5F-9CD81B6E99FF">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:09:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nom court de la classe.]]></commentInRDBMS>
+<createdTime>2022-03-22 07:25:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé court de chaque état.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,10 +34,10 @@
 <ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CLA_LI" id="0069683D-8948-1633-937A-D44275A3250F">
+<Column name="LIBELLE_LONG" id="3B2A9288-EA69-793F-96F8-4B2AA4802CE0">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:09:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Libellé de la classe.]]></commentInRDBMS>
+<createdTime>2022-03-22 07:25:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé long de chaque état.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,38 +47,11 @@
 <ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CLA_STATION" id="6BD487A8-1D31-56DE-41F1-53CEA62BF519">
+<Column name="VALIDITE" id="3A71C407-A419-84E3-A0C3-859A1C9C8BD4">
 <createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:09:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Code station terrain.]]></commentInRDBMS>
+<createdTime>2022-03-22 07:25:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ booléen permettant de savoir si l''état est encore valide/utilisé ou non : 1 = oui ; 0 = non.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>12 BYTE</dataTypeSize>
-<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CLA_DIM" id="76D71AE0-5B13-D564-7151-E82A339CF4CB">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:09:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Taille de l'objet par défaut]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="CLA_VAL" id="D6B3F445-BC2A-5B8A-4373-763EF262F7BE">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:09:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Validité en cours.]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -99,22 +59,9 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MI_STYLE" id="D283A748-EAF4-BBA2-A6C8-44E37AB6D55A">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 15:09:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Style de la classe d'objet (contenu, contours).]]></commentInRDBMS>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>300 BYTE</dataTypeSize>
-<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="9F8BE81F-70FD-2748-26A6-B00CA03B06EC" name="TA_CLASSE_PK">
+<ind_PK_UK id="9F8BE81F-70FD-2748-26A6-B00CA03B06EC" name="TA_GG_CLASSE_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 15:09:09 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
@@ -122,17 +69,17 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="433B37DC-E4B2-CAD2-6472-89A5E93E1EE1"/>
+<colUsage columnID="7A6BF8A2-B565-2FDC-2FCD-E2F933EEA81B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="18389E7A-EF02-0B3A-A2C2-E54D1A3CA688" name="TA_CLASSE_PK">
+<ind_PK_UK id="18389E7A-EF02-0B3A-A2C2-E54D1A3CA688" name="TA_GG_CLASSE_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 16:18:08 UTC</createdTime>
 <comment><![CDATA[Index de clé primaire]]></comment>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="433B37DC-E4B2-CAD2-6472-89A5E93E1EE1"/>
+<colUsage columnID="7A6BF8A2-B565-2FDC-2FCD-E2F933EEA81B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
