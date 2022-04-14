@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C79FBC46-41B4-B14E-88F0-E3BDB28D1FC3" name="TA_FAMILLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:57:03 UTC</createdTime>
+<comment><![CDATA[Table contenant les familles de libellés.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="7445FD6E-E1CB-5B6B-24EF-8457B748EA19">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:58:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de chaque famille de libellés.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALEUR" id="1D4BBCD5-AA6F-C1D9-B615-ABD67F20851E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:58:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur de chaque famille de libellés.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEA020C1-86F5-7A8D-42D6-3BF99F7D1E62" name="TA_FAMILLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 08:58:20 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7445FD6E-E1CB-5B6B-24EF-8457B748EA19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

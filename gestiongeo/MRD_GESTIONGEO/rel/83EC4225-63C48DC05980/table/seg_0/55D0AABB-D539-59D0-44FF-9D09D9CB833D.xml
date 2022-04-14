@@ -12,7 +12,7 @@
 <Column name="OBJECTID" id="B19A1176-F7BE-4B98-5770-C652D7807509">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:58:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé primaire de la table (identifiant unique) sans auto-incrémentation. Il s'agit des codes agents.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -37,8 +37,7 @@
 <Column name="VALIDITE" id="D0721FE0-1219-72C6-96CE-4F8DB856F985">
 <createdBy>bjacq</createdBy>
 <createdTime>2020-12-10 10:58:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ booléen permettant de savoir si l'agent participe encore à la gestion des dossiers ou non.
-0 = non ; 1 = oui.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Champ booléen permettant de savoir si l'agent participe encore à la vie des données de GestionGeo : 1 = oui ; 0 = non.]]></commentInRDBMS>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -56,17 +55,6 @@
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="B19A1176-F7BE-4B98-5770-C652D7807509"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="53B6DE23-5489-EE09-954E-50B054B99614" name="TA_GG_AGENT_OBJECTID_UN">
-<createdBy>bjacq</createdBy>
-<createdTime>2020-12-10 16:23:59 UTC</createdTime>
-<comment><![CDATA[Contrainte d'unicité de la clé primaire.]]></comment>
-<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
-<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B19A1176-F7BE-4B98-5770-C652D7807509"/>
