@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D34DB8C2-15C5-EED7-6419-8D609974CCBC" name="TA_INFOS_SEUIL">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:24:47 UTC</createdTime>
+<comment><![CDATA[Table contenant le détail des seuils, c'est-à-dire les numéros de seuil, de parcelles et les compléments de numéro de seuil. Cela permet d''associer un ou plusieurs seuils à un et un seul point géométrique au besoin.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="34BA1DF2-9A2A-C4FB-FF46-5D8008B21AEB">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:28:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_seuil" id="E3488398-E892-FFFC-8371-F881ECF0ABA9">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:28:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro de seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_parcelle" id="51627598-9871-3F6E-FA2C-60AACEAEB170">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:28:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro de parcelle issu du cadastre.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complement_numero_seuil" id="09B59980-C21A-EC06-8563-D74DA19C6F31">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:28:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Complément du numéro de seuil.
+
+Exemple : 1bis]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_saisie" id="A64377FE-3139-12FC-91BE-640E88A3782A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:23:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie des informations du seuil (via un trigger).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_modification" id="C7E1439E-ACFE-80E5-B762-F0839E3587AD">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:23:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de modification des informations du seuil (via un trigger).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_seuil" id="32BFEC61-6259-CDF8-7E46-AA4D01136734">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-31 14:00:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SEUIL, permettant d'affecter une géométrie à un ou plusieurs seuils, dans le cas où plusieurs se superposent sur le même point.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34B17AAC-C99F-C9F0-FC6D-A4B8EACEA5A1" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
+</associations>
+</Column>
+<Column name="fid_pnom_saisie" id="366EB3F0-6682-CC28-78C8-90FE67E15967">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:23:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant créé les informations d''un seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="512B6A53-A98A-ED06-A002-53C8B919C3B5" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+<Column name="fid_pnom_modification" id="769469F4-05AE-FF7E-E4AD-5E8E69D8EDD4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:23:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant modifié les informations d''un seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27263312-7958-F7B7-44A5-3015BB504184" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D92A728F-A324-BF00-832B-EEF6C0DBC713" name="TA_INFOS_SEUIL_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:28:51 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34BA1DF2-9A2A-C4FB-FF46-5D8008B21AEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D57EB01-0845-90ED-2C08-5AE14F912E38" name="TA_INFOS_SEUIL_FID_PNOM_SAISIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:25:46 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="366EB3F0-6682-CC28-78C8-90FE67E15967"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13D1685F-846D-7AE3-A4A5-5B221B5760A2" name="TA_INFOS_SEUIL_FID_PNOM_MODIFICATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-10 08:26:10 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="769469F4-05AE-FF7E-E4AD-5E8E69D8EDD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84272E7B-3D9F-22DC-A116-76CD9C5B8571" name="TA_INFOS_SEUIL_FID_SEUIL_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-31 14:00:20 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32BFEC61-6259-CDF8-7E46-AA4D01136734"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

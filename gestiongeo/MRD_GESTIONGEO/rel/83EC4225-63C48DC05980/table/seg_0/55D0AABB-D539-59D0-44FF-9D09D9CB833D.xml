@@ -71,5 +71,32 @@
 <colUsage columnID="6561225A-F9DA-F974-38D7-23E8AA3E7EA4"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="A135B603-17A0-BD7F-86D9-B04F8D3CED79" name="TA_GG_AGENT_OBJECTID_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:57:06 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B56E5C6-E394-1D55-A10D-D465270C1303" name="TA_GG_AGENT_PNOM_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:57:06 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6561225A-F9DA-F974-38D7-23E8AA3E7EA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91AC4716-7E00-38CD-EBA1-4DF9BDD229B1" name="TA_GG_AGENT_VALIDITE_IDX">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 10:57:06 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0721FE0-1219-72C6-96CE-4F8DB856F985"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

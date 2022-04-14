@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3BF7124-E619-AF72-63F3-110CCDBC024F" name="TA_AGENT">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:22:04 UTC</createdTime>
+<comment><![CDATA[Table listant les pnoms de tous les agents ayant travaillés et qui travaillent encore pour la base voie.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero_agent" id="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:25:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro d''agent présent sur la carte de chaque agent.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnom" id="A7FD5D48-A624-D887-CC86-1002365C1921">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:25:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pnom de l''agent, c'est-à-dire la concaténation de l''initiale de son prénom et de son nom entier.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validite" id="AEE66A32-191D-B2F7-409A-19AD6052A624">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:25:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Validité de l''agent, c'est-à-dire que ce champ permet de savoir si l''agent continue de travailler dans/pour la base voie ou non.
+
+- 1 = oui ;
+- 0 = non ;]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F16BC264-217B-5220-0556-4F49EE50C7F5" name="TA_AGENT_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:25:47 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

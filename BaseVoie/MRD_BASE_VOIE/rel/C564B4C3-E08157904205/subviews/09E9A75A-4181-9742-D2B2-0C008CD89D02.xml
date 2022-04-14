@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Base Voie V2" id="09E9A75A-4181-9742-D2B2-0C008CD89D02">
+<createdBy>bjacq</createdBy>
+<modifiedBy>bjacq</modifiedBy>
+<createdTime>2021-04-30 08:05:08 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<showPageGrid>true</showPageGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="06564655-DC7D-B70D-011A-272C550B10CA" otype="Table" vid="E1FFAC00-97A4-84F4-2EF0-E7F165CFA3E5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="266" y="589" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4D13A871-B157-CE25-1623-FCBA582BB701" otype="Table" vid="952C8A8E-3DA7-6FC5-38CD-4BEF270BDC87">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="102" y="230" width="229" height="141"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="FCF628DF-5491-2FA1-1C8A-9862800807A1" otype="Table" vid="D6AFA83A-43A8-EAF3-858F-C0F6B20594FE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="499" y="245" width="266" height="151"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="75134DA1-F487-600B-A20E-6C383E67439E" otype="FKIndexAssociation" vid_source="952C8A8E-3DA7-6FC5-38CD-4BEF270BDC87" vid_target="D6AFA83A-43A8-EAF3-858F-C0F6B20594FE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="331" y="323"/>
+<point x="499" y="323"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

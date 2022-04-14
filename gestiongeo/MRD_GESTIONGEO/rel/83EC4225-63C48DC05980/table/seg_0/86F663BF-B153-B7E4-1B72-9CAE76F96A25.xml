@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86F663BF-B153-B7E4-1B72-9CAE76F96A25" name="TA_GG_FME_MESURE">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:53:54 UTC</createdTime>
+<comment><![CDATA[Table utilisée par la chaine d''intégration FME. Elle permet d''attribuer au symbole de chaque type de point une longueur et une largeur correspondant à la longueur et la largeur de leur classe.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="49AA12A3-0F21-3D4E-E3F6-DC1EDE93837D">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:57:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_CLASSE" id="E9D972AE-748D-9C3D-8C0D-D7CFAB106133">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:57:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_CLASSE.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2664557-A06A-6402-FEEF-72A735C56B95" referredColumn="7A6BF8A2-B565-2FDC-2FCD-E2F933EEA81B"/>
+</associations>
+</Column>
+<Column name="VALEUR" id="F6BC3F97-D77F-AA04-E263-D096E97B365A">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:57:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur de la mesure attribuée au symbole de la classe.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_MESURE" id="CACF8878-EAB3-DD25-4B6D-11A1FE32E5F1">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:57:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE pour determiner la mesure caractérisée par la valeur attribuée au symbole de la classe.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6253D9C-57FC-ABB8-104D-5F9010195640" name="TA_GG_FME_MESURE_FID_CLASSE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:58:11 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9D972AE-748D-9C3D-8C0D-D7CFAB106133"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

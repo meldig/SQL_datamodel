@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99D5D56E-AB74-4ACE-451B-7707AD5CC60B" name="TA_VOIE_LOG">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 09:45:23 UTC</createdTime>
+<comment><![CDATA[Table de log de la table TA_VOIE, permettant d''enregistrer toutes les évolutions des voies.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="C9D23F71-EE30-6945-D683-BAA2BABB903E">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_voie" id="C5EE67EC-C89D-64C0-A9C0-0973A3A4C28B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom de la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complement_nom_voie" id="47563B49-6CB7-51F0-D2BE-815A624AF1AC">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Complément du nom de la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_action" id="08CB0041-7C86-0738-9D24-19D75EB01A5F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie, modification ou suppression de la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_type_voie" id="3E9D2DA0-5C1B-714C-1E5E-23A06E26FDE8">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_TYPE_VOIE permettant de catégoriser les voies de la base.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_genre_voie" id="7B202155-C8D4-B99E-02F4-20BF7663DDC4">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant la table TA_LIBELLE permettant de connaître le genre du nom de la voie : masculin, féminin, neutre et non-identifié.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_rivoli" id="3A26CBB8-3BC9-D9A0-D1E6-10B448BCF7E9">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_RIVOLI permettant d''associer un code RIVOLI à chaque voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_voie" id="3D56E90C-F156-2A42-874A-3FFC73058EDE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de tronçon de la table TA_VOIE permettant d''identifier la voie qui a été créée, modifiée ou supprimée.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5D722C5-6E62-B521-A552-37192B731533" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+</associations>
+</Column>
+<Column name="fid_type_action" id="D1F6AC68-435E-91E9-0CD2-547F4E60FBD9">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE, permettant d''associer un type d''action à une voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="248AFC41-27D5-F0A4-FF9F-7BB08928FE11" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
+</Column>
+<Column name="fid_pnom" id="7EA0EF17-9B05-D17F-FC22-9A3631E38BA3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent à la voie qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F9062D4-E2C0-90E0-17BF-A31D00066390" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F00D3A8F-F079-7F04-7CBB-7C7AA02AD903" name="TA_VOIE_LOG_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 10:17:49 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9D23F71-EE30-6945-D683-BAA2BABB903E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA0B3C72-28F7-BF27-E0D2-0F8ACB9A3D55" name="TA_VOIE_LOG_FID_VOIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:22:20 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D56E90C-F156-2A42-874A-3FFC73058EDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A6A83CA-6A12-B043-FFFD-74FA9C39E6CF" name="TA_VOIE_LOG_FID_TYPE_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:06:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1F6AC68-435E-91E9-0CD2-547F4E60FBD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB353204-157D-1E7F-C0C6-44436211E465" name="TA_VOIE_LOG_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:34:33 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EA0EF17-9B05-D17F-FC22-9A3631E38BA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

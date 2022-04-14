@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0F51BE5-86B3-9282-4E83-FACDEA600F2B" name="TA_NOEUD">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:59:31 UTC</createdTime>
+<comment><![CDATA[Table contenant les startpoint et endpoint de chaque tronçon. 
+Elle se remplit automatiquement à la création de chaque tronçon de la table TA_TRONCON.
+Cette table ne contient que les start/end points valides des tronçons.
+
+Ancienne table : ILTAPTZ]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="41A97374-8979-30B9-6221-9494F0238FB8">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 08:21:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire identifiant les start/end point de chaque tronçon de la Base Voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nb_troncon_connecte" id="8DB6C410-4D25-A94B-A914-DDCE0522D678">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 08:21:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type de carrefour : si la valeur est un chiffre, cela correspond au nombre de tronçons s'intersectant dans ce carrefour.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="2578A123-4B3B-467C-9D80-36582A052B1F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-26 08:00:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de type ponctuel de chaque noeud de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="x_epsg_2154" id="A6B64DA2-ED05-EF2A-406C-B2FDAA372380">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-27 13:33:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ calculé - Coordonnées en abscisse du point dans le système de projection Lambert93/RGF93.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,38,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="y_epsg_2154" id="5F654820-D9CC-9529-1E7B-8AC8DCFA529B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-27 13:33:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ calculé - Coordonnées en ordonnée du point dans le système de projection Lambert93/RGF93.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,38,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E927F5B-8CAE-CA3A-EA0D-6058AA642958" name="TA_NOEUD_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 08:21:28 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41A97374-8979-30B9-6221-9494F0238FB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

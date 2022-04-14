@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7C0B132F-8BAC-60D9-E6AE-73ABDBE6B6AD" containerWithKeyObject="83E51FCD-5238-9E4F-5D91-95E03BD4A2D3" localFKIndex="26C65578-C6D6-61FB-13D2-13B6766FBF2B" name="TA_GG_DOSSIER_FID_PNOM_MODIFICATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:28:15 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<referredTableLongName>TA_GG_AGENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>55D0AABB-D539-59D0-44FF-9D09D9CB833D</referredTableID>
+<keyObject>20E44D0B-E1E6-D5B5-9761-48AA594A8C67</keyObject>
+<referredKeyID>20E44D0B-E1E6-D5B5-9761-48AA594A8C67</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>OBJECTID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

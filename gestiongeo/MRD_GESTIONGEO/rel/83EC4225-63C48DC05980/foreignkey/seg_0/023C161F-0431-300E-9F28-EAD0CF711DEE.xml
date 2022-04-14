@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="023C161F-0431-300E-9F28-EAD0CF711DEE" containerWithKeyObject="83E51FCD-5238-9E4F-5D91-95E03BD4A2D3" localFKIndex="7EE05007-2588-14A6-4100-4861F37B1752" name="TA_GG_DOSSIER_FID_PERIMETRE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-01-10 08:29:45 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<referredTableLongName>TA_GG_GEO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DEA5DEBA-A37F-29AE-4547-FE7EF7FACC1C</referredTableID>
+<keyObject>B0991B43-6EBE-1794-4080-AD389CF8E89E</keyObject>
+<referredKeyID>B0991B43-6EBE-1794-4080-AD389CF8E89E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>OBJECTID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

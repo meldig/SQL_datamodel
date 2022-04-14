@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D0BFF71-AC91-2B1D-C15E-DD394730E329" name="TA_RELATION_FAMILLE_LIBELLEv1">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:41:33 UTC</createdTime>
+<comment><![CDATA[Table pivot permettant de ranger les libbellés par familles.
+
+Exemple : 
+- La famille "action" dispose des libellés "création", "modification" et "suppression" ;
+- La famille "genre" dispose des libellés "masculin", "féminin" et "neutre" ;]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="5908160A-6D26-6F77-AC20-6658FC4DFF63">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:46:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_famille" id="FBF1D619-5463-0CFF-2048-DCE01116A836">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:46:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_FAMILLE permettant d''associer une ou plusieurs familles à un ou plusieurs libellés.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle" id="1293BF46-6813-A7E6-592F-77D0079477A3">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:46:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant d''associer un ou plusieurs libellés à une ou plusieurs familles.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC9619D3-D145-3962-A6B6-B0019F02E235" name="TA_RELATION_FAMILLE_LIBELLE_PKv1">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:46:44 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5908160A-6D26-6F77-AC20-6658FC4DFF63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

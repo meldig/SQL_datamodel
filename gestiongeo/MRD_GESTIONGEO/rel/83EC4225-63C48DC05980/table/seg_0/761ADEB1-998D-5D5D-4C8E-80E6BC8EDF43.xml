@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="761ADEB1-998D-5D5D-4C8E-80E6BC8EDF43" name="TA_GG_DOMAINE">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:27:12 UTC</createdTime>
+<comment><![CDATA[Liste des domaines regroupant les données géographiques.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="4AD1268D-E6AD-BB3E-3A5F-5C868B86C25A">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:28:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table (identifiant interne du domaine).]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMAINE" id="E83C566B-9CBF-745B-C480-30FA022F250E">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:28:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle du domaine]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D11EF9CF-EE0E-6DDE-41FF-D43844862B4C" name="TA_GG_DOMAINE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-03-22 07:28:32 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AD1268D-E6AD-BB3E-3A5F-5C868B86C25A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
