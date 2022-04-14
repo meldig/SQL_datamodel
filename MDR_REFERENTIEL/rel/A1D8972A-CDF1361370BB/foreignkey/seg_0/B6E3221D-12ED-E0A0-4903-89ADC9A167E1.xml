@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B6E3221D-12ED-E0A0-4903-89ADC9A167E1" containerWithKeyObject="E44A3E45-A80E-9FD7-2549-88EB9D11E1EF" localFKIndex="D1C8C89C-6B08-6D03-E0D7-BF6FBD50DA8A" name="SECTION_CADASTRALE_FID_GEOM_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:26:58 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_SECTION_CADASTRALE_GEOM.]]></comment>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<referredTableLongName>TA_SECTION_CADASTRALE_GEOM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AD4E1B2D-1909-676D-C1D4-0477A8E6ACB3</referredTableID>
+<keyObject>6E561D04-3261-596A-E596-74522CD171F6</keyObject>
+<referredKeyID>6E561D04-3261-596A-E596-74522CD171F6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

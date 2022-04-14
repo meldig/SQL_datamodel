@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD4E1B2D-1909-676D-C1D4-0477A8E6ACB3" name="TA_SECTION_CADASTRALE_GEOM">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:24:02 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<ordsAlias>table_59</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="18D096FD-9199-CD68-1C48-F7671DA5C4A6">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:24:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_SECTION_CADASTRALE_GEOM.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="BDF7F8DF-9B90-BD53-EB37-26F871B34363">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:24:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie des sections cadastrales.]]></commentInRDBMS>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E561D04-3261-596A-E596-74522CD171F6" name="TA_SECTION_CADASTRALE_GEOM_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2020-10-14 13:24:55 UTC</createdTime>
+<ownerDesignName>MDR_REFERENTIEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18D096FD-9199-CD68-1C48-F7671DA5C4A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -16,7 +16,18 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="14F62236-464B-7A94-76C3-C1AA0EFD8664" otype="Table" vid="C81DD37C-CA53-5A6A-1BCE-FC0CE8008ACA">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="713" y="276" width="253" height="117"/>
+<bounds x="759" y="279" width="253" height="428"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="26808169-EF85-2E6E-8ED8-C57A43DA370E" otype="Note" vid="C458DDEA-9B92-60A6-EC7A-32CF81F7D5DF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="757" y="716" width="292" height="62"/>
+<comment>Table rassemblant les codes de chaque objet de la base.
+Exemple : 59000, 59350</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="27BE7546-42A4-A8B6-A2FC-CD23F79C108D" otype="Note" vid="4DA2C61F-17CB-BC50-2CAE-FE075DDEEB87">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1184" y="70" width="316" height="58"/>
+<comment>Table rassemblant les différents tarifs de la taxe dite du RVLLP selon la section cadastrale et le type de local professionnels.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3DCD645D-F32F-3D02-660A-8A35DA02282A" otype="Table" vid="26AD3B5B-8504-36A6-09CF-E3AA7D625697">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -24,19 +35,56 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="44E64A1C-1308-2F4F-5204-01C184936736" otype="Table" vid="67B7A6DC-2198-DFE6-F094-A3B962BD5F5C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1164" y="153" width="296" height="343"/>
+<bounds x="1184" y="138" width="296" height="189"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="482B0C47-B031-28C1-03CA-13DD51EE58C0" otype="Table" vid="1573285D-8874-9E47-B237-A5D2AEF54CC9">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="377" y="90" width="254" height="383"/>
+<bounds x="316" y="103" width="254" height="217"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="498AEF81-FF55-22E3-0F1C-3118B004660C" otype="Note" vid="2B336A59-428E-6B2E-6EA8-E261722309B9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="714" y="214" width="277" height="57"/>
+<comment>Table pivot rassemblant les métadonnées, c&apos;est-à-dire la provenance, la date d&apos;acquisition, la source,  l&apos;organisme et l&apos;échelle de chaque donnée source.
+</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="4D087D58-8339-3417-A510-433E97352A28" otype="Note" vid="46ACE74F-E6F8-C32F-AE6A-E7B7CCED499B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="315" y="727" width="254" height="76"/>
+<noBackgroundColor>true</noBackgroundColor>
+<noForegroundColor>true</noForegroundColor>
+<comment>Table rassemblant la géométrie de chaque section cadastrale</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5BA04846-FCD4-327F-D4D7-00C6BC71F6D8" otype="Table" vid="64A0A736-C0FB-A386-A317-1F227A008488">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="706" y="439" width="261" height="110"/>
+<bounds x="1196" y="359" width="261" height="131"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="82AB7F55-3EAA-5D13-5F95-1F13667E0AA7" otype="Note" vid="A5FA24EB-6812-51D3-198F-90F32A1DA285">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="90" y="102" width="184" height="78"/>
+<noBackgroundColor>true</noBackgroundColor>
+<noForegroundColor>true</noForegroundColor>
+<comment>Table permettant de connaitre le secteur de la taxe dite du RVLLP pour chaque section cadastrale.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AD4E1B2D-1909-676D-C1D4-0477A8E6ACB3" otype="Table" vid="F82CD8B2-FC75-82B9-A7DD-F1D0DEE599C8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="315" y="616" width="251" height="101"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="C80E8C35-AB6D-6417-3F5F-3CC6B73667C5" otype="Note" vid="6D59D528-42B9-2248-0B18-9E80610A5FEA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="127" y="400" width="177" height="73"/>
+<noBackgroundColor>true</noBackgroundColor>
+<noForegroundColor>true</noForegroundColor>
+<comment>Table rassemblant les sections cadastrales.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="D4AE0172-89FB-7023-975D-65450F3D0E8B" otype="Note" vid="A76EF16B-5302-39A9-23B9-B7D04C6F3C2A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1199" y="498" width="221" height="65"/>
+<comment>Table contenant les libellés utilisés pour catégoriser un type d&apos;objets.
+Exemple : Hotel</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E44A3E45-A80E-9FD7-2549-88EB9D11E1EF" otype="Table" vid="3F92521E-293D-07EC-EC3C-9C342582CA71">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="55" y="86" width="246" height="382"/>
+<bounds x="315" y="344" width="246" height="227"/>
 </OView>
 </objectViews>
 <connectors>
@@ -45,8 +93,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="964" y="181"/>
-<point x="1164" y="181"/>
+<point x="964" y="173"/>
+<point x="1184" y="173"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3153C182-770B-CAA8-6462-CCC7631CEC9D" otype="FKIndexAssociation" vid_source="3F92521E-293D-07EC-EC3C-9C342582CA71" vid_target="1573285D-8874-9E47-B237-A5D2AEF54CC9">
@@ -54,8 +102,37 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="301" y="279"/>
-<point x="377" y="279"/>
+<point x="438" y="344"/>
+<point x="438" y="320"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="32F7E63B-E1F2-E82E-1219-C03CDA303A92" otype="FKIndexAssociation" vid_source="26AD3B5B-8504-36A6-09CF-E3AA7D625697" vid_target="3F92521E-293D-07EC-EC3C-9C342582CA71">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="713" y="68"/>
+<point x="282" y="68"/>
+<point x="283" y="362"/>
+<point x="315" y="362"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="38D3A188-B8AA-118F-8B1E-B8B2724D22FA" otype="FKIndexAssociation" vid_source="C81DD37C-CA53-5A6A-1BCE-FC0CE8008ACA" vid_target="3F92521E-293D-07EC-EC3C-9C342582CA71">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="759" y="472"/>
+<point x="561" y="472"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3969392E-FB3F-202D-0ADE-12F282C3C019" otype="FKIndexAssociation" vid_source="C81DD37C-CA53-5A6A-1BCE-FC0CE8008ACA" vid_target="3F92521E-293D-07EC-EC3C-9C342582CA71">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="759" y="442"/>
+<point x="561" y="442"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="57E5BD6D-4C60-9DE7-7034-48D0A25EB44B" otype="FKIndexAssociation" vid_source="C81DD37C-CA53-5A6A-1BCE-FC0CE8008ACA" vid_target="67B7A6DC-2198-DFE6-F094-A3B962BD5F5C">
@@ -63,8 +140,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="966" y="334"/>
-<point x="1164" y="334"/>
+<point x="1012" y="303"/>
+<point x="1184" y="303"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="594DEAD1-098B-4874-519B-56D957F2C1F6" otype="FKIndexAssociation" vid_source="64A0A736-C0FB-A386-A317-1F227A008488" vid_target="C81DD37C-CA53-5A6A-1BCE-FC0CE8008ACA">
@@ -72,8 +149,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="839" y="439"/>
-<point x="839" y="393"/>
+<point x="1196" y="424"/>
+<point x="1012" y="424"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="5B4809E0-E406-7E45-D121-49A804399A09" otype="FKIndexAssociation" vid_source="64A0A736-C0FB-A386-A317-1F227A008488" vid_target="67B7A6DC-2198-DFE6-F094-A3B962BD5F5C">
@@ -81,8 +158,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="967" y="467"/>
-<point x="1164" y="467"/>
+<point x="1326" y="359"/>
+<point x="1326" y="327"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="9D8ED19F-F3CE-20E1-D3C3-284749C60506" otype="FKIndexAssociation" vid_source="26AD3B5B-8504-36A6-09CF-E3AA7D625697" vid_target="1573285D-8874-9E47-B237-A5D2AEF54CC9">
@@ -90,8 +167,17 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="713" y="149"/>
-<point x="631" y="149"/>
+<point x="713" y="156"/>
+<point x="570" y="156"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B6E3221D-12ED-E0A0-4903-89ADC9A167E1" otype="FKIndexAssociation" vid_source="F82CD8B2-FC75-82B9-A7DD-F1D0DEE599C8" vid_target="3F92521E-293D-07EC-EC3C-9C342582CA71">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="438" y="616"/>
+<point x="438" y="571"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="CBE7A99E-FABA-7A44-0567-8F08B5B3AC60" otype="FKIndexAssociation" vid_source="C81DD37C-CA53-5A6A-1BCE-FC0CE8008ACA" vid_target="1573285D-8874-9E47-B237-A5D2AEF54CC9">
@@ -99,8 +185,17 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="713" y="334"/>
-<point x="631" y="334"/>
+<point x="759" y="299"/>
+<point x="570" y="299"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="DEFE618F-F573-3C0B-7101-E2CF43B3DDB1" otype="FKIndexAssociation" vid_source="C81DD37C-CA53-5A6A-1BCE-FC0CE8008ACA" vid_target="3F92521E-293D-07EC-EC3C-9C342582CA71">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="759" y="457"/>
+<point x="561" y="457"/>
 </points>
 </Connector>
 </connectors>
