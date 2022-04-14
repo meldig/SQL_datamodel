@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="77A14409-CC27-1329-DE50-11A141039A6C">
+<Column name="OBJECTID" id="77A14409-CC27-1329-DE50-11A141039A6C">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-09-14 09:01:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identifiant de chaque ligne.]]></commentInRDBMS>
@@ -21,7 +21,7 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_famille" id="AD4817C6-C31E-C029-80CF-581DED269E2B">
+<Column name="FID_FAMILLE" id="AD4817C6-C31E-C029-80CF-581DED269E2B">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-09-14 09:01:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identifiant de chaque famille de libellés - FK de la table ta_famille.]]></commentInRDBMS>
@@ -36,7 +36,7 @@
 <colAssociation fkAssociation="D5504668-6EBD-B185-F620-3F7DE2D895FB" referredColumn="7445FD6E-E1CB-5B6B-24EF-8457B748EA19"/>
 </associations>
 </Column>
-<Column name="fid_libelle_long" id="8EAE56B3-9578-635C-6DF3-823581C83B47">
+<Column name="FID_LIBELLE_LONG" id="8EAE56B3-9578-635C-6DF3-823581C83B47">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-09-14 09:01:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identifiant de chaque libellés - FK de la table ta_libelle.]]></commentInRDBMS>

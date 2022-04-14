@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="DDC95C5B-123F-E007-B1F6-63924A9CD4C1">
+<Column name="OBJECTID" id="DDC95C5B-123F-E007-B1F6-63924A9CD4C1">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-09-14 08:59:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef primaire de la table TA_LIBELLE_LONG]]></commentInRDBMS>
@@ -21,7 +21,7 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="valeur" id="77F4D85B-A763-2E35-112C-0C5BBF4ADD53">
+<Column name="VALEUR" id="77F4D85B-A763-2E35-112C-0C5BBF4ADD53">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-09-14 08:59:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Valeur pouvant être prises par les variables]]></commentInRDBMS>

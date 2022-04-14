@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="AE016281-6FD8-4D66-2159-D42D8451D3C4">
+<Column name="OBJECTID" id="AE016281-6FD8-4D66-2159-D42D8451D3C4">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-09-14 09:03:49 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clef primaire de la table temp_libelle_long.]]></commentInRDBMS>
@@ -21,7 +21,7 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_libelle_long" id="EA7AE227-4BD5-8B82-64F6-0D84A2AC4A78">
+<Column name="FID_LIBELLE_LONG" id="EA7AE227-4BD5-8B82-64F6-0D84A2AC4A78">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-09-14 09:03:49 UTC</createdTime>
 <ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
