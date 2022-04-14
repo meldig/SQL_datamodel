@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87FA8B20-935C-3CE1-4CB1-FC680F2B6E7E" name="TA_GRILLE_LOG">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:06:14 UTC</createdTime>
+<comment><![CDATA[Table de log permettant d'avoir l'historique de toutes les évolutions des éléments des grilles.]]></comment>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="CF7506B3-EA97-2838-D9A3-FB451685124B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:14:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOM" id="802981AF-FA70-6614-0E60-E25C771BAE0B">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:14:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique de type polygone contenant l''état précédent la modification de chaque objet.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_GRILLE" id="799C7673-4826-BB34-0B6B-9FE3ED47EE96">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:14:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de l''élément de la grille ayant été modifié (TA_GRILLE).]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27313A53-A983-E5C7-2D5E-FBD539ABA0A5" referredColumn="05B08AE8-ADC6-4DFC-EE9E-C27CE3526D04"/>
+</associations>
+</Column>
+<Column name="ID_USAGE" id="8FB3D157-40C1-E774-4A37-F354EDEB6995">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:14:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table G_GEO.TA_LIBELLE permettant d''associer un usage aux éléments d''une grille. Chaque grille est dévolue à un et un seul usage. Exemple : la grille de recalage est uniquement à utiliser pour le recalage des objets par photo-interprétation.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ETAT" id="1DFFC80D-D122-EB56-0079-A38590C3336D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:14:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table G_GEO.TA_LIBELLE permettant d''associer un état d''avancement à un élément d''une grille.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_GESTIONNAIRE" id="0F737E5B-4F6D-8F0E-BD15-D70B04556B72">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:14:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_GG_AGENT permettant d''attribuer le pnom d''un agent à un élément de la grille afin d''indiquer qu''il doit s''en occuper.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_TYPE_ACTION" id="2C046DB8-E7B5-69A3-1CFC-9539AF54DB9A">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:14:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE permettant de savoir quelle action a été effectuée sur un élément d''une grille.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97206CCA-6C12-B62E-6604-76CEF6BF5095" referredColumn="AE016281-6FD8-4D66-2159-D42D8451D3C4"/>
+</associations>
+</Column>
+<Column name="FID_PNOM" id="D4F75DB6-A35D-65E5-A141-30A7901CA5DE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:14:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_AGENT permettant d''associer à chaque objet le pnom de l''agent l''ayant créé ou modifié.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9FE1FCEE-BC30-3468-6322-E2BBE18A8C74" referredColumn="B19A1176-F7BE-4B98-5770-C652D7807509"/>
+</associations>
+</Column>
+<Column name="DATE_ACTION" id="4FF7EB72-D7AE-4892-D779-7435D8F05E6C">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:14:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de la création, modification ou suppression d''un objet de la table G_GESTIONGEO.TA_GRILLE.]]></commentInRDBMS>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C4824CC-4A4C-B064-A037-BEEBE12AD90A" name="TA_GRILLE_LOG_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:15:05 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF7506B3-EA97-2838-D9A3-FB451685124B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7814EE5E-1E60-E231-6B4D-58EF10BB62E1" name="TA_GRILLE_LOG_FID_GRILLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:15:11 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="799C7673-4826-BB34-0B6B-9FE3ED47EE96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4A12D64-782F-77E3-3BDE-07DFC77E2607" name="TA_GRILLE_LOG_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:16:25 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4F75DB6-A35D-65E5-A141-30A7901CA5DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D01B667E-A1E7-17D3-492E-6EC1DE724EF8" name="TA_GRILLE_LOG_FID_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-09-14 09:16:51 UTC</createdTime>
+<ownerDesignName>MRD_GESTIONGEO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C046DB8-E7B5-69A3-1CFC-9539AF54DB9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
