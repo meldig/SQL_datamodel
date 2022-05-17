@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" name="TA_LIBELLE_VOIE">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:05:25 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_32</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="D1FD2F23-7562-FB1A-948D-5C0FCF8E2E57">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:17:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genre_voie" id="9204870E-9A4D-AA51-69BC-4BCB08F03304">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:24:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Genre de la voie (masculin, féminin, neutre).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_voie" id="85BC597A-6554-9457-937A-3315DF68E024">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:17:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom de la voie]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complement_nom_voie" id="0D45E7D9-00AA-97E4-369E-4ED901C8806E">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:17:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Complément du nom de la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lateralite" id="FC503963-6968-2411-98AE-614380590035">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:17:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latéralité de la voie. En limite de commune le côté gauche de la voie peut appartenir à la commune A et le côté droit à la comune B. Ce champ permet de faire cette distinction : G = côté gauche de la voie ; D = côté droit de la voie ; GD : les deux côtés de la voie appartiennent à la même commune. ]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="insee" id="E8D539D9-470E-AD59-F6F9-7EBB356DBCE3">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:17:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code INSEE du nom de voie : en limite de commune une voie physique peut appartenir à deux communes et donc avoir deux noms. Ce champ permet de rattacher la voie à sa commune.
+]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_voie" id="6E67FB8C-1E30-F789-4EC5-544906277FAA">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:18:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE permettant d''affecter un ou plusieurs noms à une voie physique.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40C2D573-E0F6-5297-AA5A-AE2AF1B19094" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+</associations>
+</Column>
+<Column name="fid_type_voie" id="1806E77B-9011-79FD-6598-E711D33C4488">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:24:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TYPE_VOIE afin d''associer un type à chaque voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FE524F0-D931-E823-4422-6EEE44D94CE3" referredColumn="10582D37-3039-372B-C21B-163C26922848"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23D4423E-7FDF-EC97-0FBD-DC8FBE771626" name="TA_LIBELLE_VOIE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:17:41 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1FD2F23-7562-FB1A-948D-5C0FCF8E2E57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03F1364F-668F-8995-D14B-B61A65ADE00C" name="TA_LIBELLE_VOIE_FID_VOIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:18:41 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E67FB8C-1E30-F789-4EC5-544906277FAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EFB9C79-75AB-FFC6-C110-A2E576EC7487" name="TA_LIBELLE_VOIE_FID_TYPE_VOIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:26:05 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1806E77B-9011-79FD-6598-E711D33C4488"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

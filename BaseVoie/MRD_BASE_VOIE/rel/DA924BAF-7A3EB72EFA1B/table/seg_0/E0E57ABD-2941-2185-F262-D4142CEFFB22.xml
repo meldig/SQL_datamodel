@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0E57ABD-2941-2185-F262-D4142CEFFB22" name="TA_LIBELLE_VOIE_LOG">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:36:21 UTC</createdTime>
+<comment><![CDATA[Table de log de la table TA_LIBELLE_VOIE permettant d''enregistrer l''historique des insertions, modifications, suppressions de la table TA_LIBELLE_VOIE.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_34</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="8FDA469B-96B1-F4EF-E5A9-90671B66859B">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_libelle_voie" id="647A4623-BE15-6CBB-C3D3-0933736218BC">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du libelle de  la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genre_voie" id="89BC7D52-F5AE-3C91-BA90-C9EDA4294CE4">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_voie" id="B00FC54F-0CDB-5FAC-C248-D40B119C2181">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complement_nom_voie" id="E19BDD7C-084E-6350-EE5E-3F1F92F9090D">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lateralite" id="2C1F24F1-0B6E-DC3C-0B69-53430AEA1EAF">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="insee" id="6B29B62C-B4AF-D742-B59F-B6B5737E49A7">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_voie" id="B5E3023B-8CC3-0EA9-9022-3958A3F4CCC3">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_type_voie" id="4104CEFF-47E9-6E2B-4639-D43FBC21C636">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_action" id="BBC06015-B4E6-B389-98EC-E2D61D5F71AF">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:46:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de l''action ayant déclenché la création d''une entité dans la table TA_LIBELLE_VOIE_LOG.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_action" id="3D94CEF5-5E10-8888-352E-F3F3B542DE44">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:46:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant d''indiquer le type d''action ayant délécenché la création d''une entité dans TA_LIBELLE_VOIE_LOG.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom" id="F6124114-D4FD-E564-2516-2411921BE6DF">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:46:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent à la voie qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81B5962E-C125-3B6C-2D41-CADFDB080F6B" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6BB046DB-9E2C-576A-FD69-1856CFB77C5A" name="TA_LIBELLE_VOIE_LOG_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FDA469B-96B1-F4EF-E5A9-90671B66859B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB36046C-8789-A5E0-F608-AE3FA146960E" name="TA_LIBELLE_VOIE_LOG_FID_PNOM_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:48:59 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6124114-D4FD-E564-2516-2411921BE6DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

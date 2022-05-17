@@ -35,6 +35,19 @@ Ancienne table : ILTATRC]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="sens" id="B55373DD-CC6C-C585-BCEF-2DF23ECD92C9">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:20:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sens de circulation par rapport au sens de saisie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="date_saisie" id="EF03400A-1606-D225-6909-E96CD2A23839">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:54:36 UTC</createdTime>
@@ -87,6 +100,21 @@ Ancienne table : ILTATRC]]></comment>
 <colAssociation fkAssociation="0B1298B5-0624-071D-F95A-E3AC3CBEA64E" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
+<Column name="fid_voie" id="330C7FFA-7CD3-6167-C9BA-051552DAACCD">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:02:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE permettant d''associer un tronçon à une et une seule voie et une voie à un ou plusieurs tronçons.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="320A2940-4D01-0B37-1EC8-05E014380DEE" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+</associations>
+</Column>
 <Column name="fid_metadonnee" id="F064B8CC-092C-3615-6C16-7881136B97DA">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-13 14:04:17 UTC</createdTime>
@@ -96,7 +124,7 @@ Ancienne table : ILTATRC]]></comment>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="51AD149D-D0E0-8A48-B775-0040260FEDCF" referredColumn="6191C57D-1BB4-0EBA-14E0-8DA5AB6D4C5E"/>
@@ -143,6 +171,16 @@ Ancienne table : ILTATRC]]></comment>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F064B8CC-092C-3615-6C16-7881136B97DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F5E7FCF-2AE5-F6FB-EB1B-D3C3EF2D7630" name="TA_TRONCON_FID_VOIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:04:33 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="330C7FFA-7CD3-6167-C9BA-051552DAACCD"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

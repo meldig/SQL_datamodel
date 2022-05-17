@@ -25,7 +25,6 @@
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -43,7 +42,6 @@ Ancienne table : VOIECVT</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -66,7 +64,6 @@ Ancienne table : ILTATRC</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -96,7 +93,6 @@ Ancienne table : TPEVOIE</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -114,7 +110,6 @@ Ancienne table : VOIEVOI</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -134,7 +129,6 @@ Ancienne table : VOIEVOI</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -155,7 +149,6 @@ Le remplissage de cette table se fait automatiquement via un trigger qui asocie 
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -175,13 +168,13 @@ Le remplissage de cette table se fait automatiquement via un trigger qui asocie 
 <point x="680" y="240"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="186C56FC-D668-FBCD-D56D-9308A745EFA7" otype="FKIndexAssociation" vid_source="7B454F26-CE56-E61E-6536-F1E270D4B107" vid_target="45DB7705-6FA9-9571-9B5A-4D1DF1DCCF1B">
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="320A2940-4D01-0B37-1EC8-05E014380DEE" otype="FKIndexAssociation" vid_source="45DB7705-6FA9-9571-9B5A-4D1DF1DCCF1B" vid_target="94D832B8-92D2-DCB8-2460-FE894592940C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="320" y="944"/>
-<point x="320" y="887"/>
+<point x="424" y="611"/>
+<point x="424" y="340"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="3BA569FE-6727-829B-B65E-155D6D53AE4F" otype="FKIndexAssociation" vid_source="45DB7705-6FA9-9571-9B5A-4D1DF1DCCF1B" vid_target="53104DB5-1886-E65C-E662-B7A0A761A42C">
@@ -191,15 +184,6 @@ Le remplissage de cette table se fait automatiquement via un trigger qui asocie 
 <points>
 <point x="408" y="611"/>
 <point x="408" y="551"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="52E3B4C6-742F-5FAA-A520-4BEBC6B0C640" otype="FKIndexAssociation" vid_source="3DFDFDA4-6E00-01AA-308E-C0D9D468BE83" vid_target="45DB7705-6FA9-9571-9B5A-4D1DF1DCCF1B">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="537" y="939"/>
-<point x="537" y="887"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="569FB563-C705-EB5D-E6A3-8D7B6DEDBD5F" otype="FKIndexAssociation" vid_source="94D832B8-92D2-DCB8-2460-FE894592940C" vid_target="53104DB5-1886-E65C-E662-B7A0A761A42C">
