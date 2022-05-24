@@ -108,10 +108,64 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="5FE524F0-D931-E823-4422-6EEE44D94CE3" referredColumn="10582D37-3039-372B-C21B-163C26922848"/>
+</associations>
+</Column>
+<Column name="date_saisie" id="DCBA3628-4153-FD1A-F1CE-0934710C8868">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-24 11:32:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie du libellé de la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_modification" id="C027A791-E704-6F2A-1D10-F41BE513646D">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-24 11:32:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de modification du libellé de la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_saisie" id="8F22F668-E86C-18D3-F1A3-D2E58302A311">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-24 11:32:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TEMP_A_AGENT permettant de savoir quel agent a saisi le libellé de voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD0ECB28-B359-8805-3E30-80E96D9222E5" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+<Column name="fid_pnom_modification" id="034E82DA-37A0-E92A-56DE-14612FD51EFD">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-24 11:32:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TEMP_A_AGENT permettant de savoir quel agent a modifié le libellé de voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8785F9F4-F643-29C2-CC04-EE89A5DA1B68" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
 </columns>
@@ -145,6 +199,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1806E77B-9011-79FD-6598-E711D33C4488"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B7F9F2A-3056-6C52-E3E6-41438721A149" name="TA_LIBELLE_VOIE_FID_PNOM_SAISIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-24 11:32:42 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F22F668-E86C-18D3-F1A3-D2E58302A311"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3225EA98-9F77-C5D6-1D04-94C55A2A400B" name="TA_LIBELLE_VOIE_FID_PNOM_MODIFICATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-24 11:33:03 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="034E82DA-37A0-E92A-56DE-14612FD51EFD"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
