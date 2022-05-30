@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0E57ABD-2941-2185-F262-D4142CEFFB22" name="TA_LIBELLE_VOIE_LOG">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0E57ABD-2941-2185-F262-D4142CEFFB22" name="TA_VOIE_ADMINISTRATIVE_LOG">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:36:21 UTC</createdTime>
 <comment><![CDATA[Table de log de la table TA_LIBELLE_VOIE permettant d''enregistrer l''historique des insertions, modifications, suppressions de la table TA_LIBELLE_VOIE.]]></comment>
@@ -159,7 +159,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="6BB046DB-9E2C-576A-FD69-1856CFB77C5A" name="TA_LIBELLE_VOIE_LOG_PK">
+<ind_PK_UK id="6BB046DB-9E2C-576A-FD69-1856CFB77C5A" name="TA_VOIE_ADMINISTRATIVE_LOG_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:41:00 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
@@ -170,7 +170,7 @@
 <colUsage columnID="8FDA469B-96B1-F4EF-E5A9-90671B66859B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BB36046C-8789-A5E0-F608-AE3FA146960E" name="TA_LIBELLE_VOIE_LOG_FID_PNOM_ACTION_FK">
+<ind_PK_UK id="BB36046C-8789-A5E0-F608-AE3FA146960E" name="TA_VOIE_ADMINISTRATIVE_LOG_FID_PNOM_ACTION_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:48:59 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>

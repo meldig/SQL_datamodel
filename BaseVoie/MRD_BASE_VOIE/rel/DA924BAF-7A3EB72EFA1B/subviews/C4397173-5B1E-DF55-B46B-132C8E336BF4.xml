@@ -831,6 +831,15 @@ Ancienne table : VOIEVOI</comment>
 <point x="1645" y="160"/>
 </points>
 </Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C6F4484D-AE8A-A780-1D46-A73780D10F73" otype="FKIndexAssociation" vid_source="BB2A512D-10F4-4F97-29FC-0DDA0323A3C8" vid_target="C93A40CF-2E5C-9811-D693-B4CE2870E529">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="814" y="286"/>
+<point x="348" y="987"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C8D39709-0D87-F45F-DFE1-EFDEE0BAD189" otype="FKIndexAssociation" vid_source="941C8400-963D-AC1D-E02E-BC239CCE5FE6" vid_target="75470935-733F-DB3C-1434-EABE9A6B82DF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>

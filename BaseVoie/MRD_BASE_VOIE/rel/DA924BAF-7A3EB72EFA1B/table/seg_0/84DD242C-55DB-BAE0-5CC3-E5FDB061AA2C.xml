@@ -32,6 +32,31 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="fid_voie_administrative" id="6C9981F5-9EB9-4364-036A-1F8FDEA3F07A">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-30 15:00:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[identifiant de la table TA_VOIE_ADMINISTRATIVE permettant d''afecter un seuil à une et une seule voie administrative.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_troncon" id="A0B85CB8-2028-F013-12BD-4ED079DCA096">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-30 15:00:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_TRONCON permettant d''affecter un seuil à un et un seul tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="geom" id="113E1378-C769-EE56-DF7A-EFF83AACFCE7">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:58:34 UTC</createdTime>
@@ -41,34 +66,6 @@
 <use>3</use>
 <structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="cote_troncon" id="DDFFD1A2-BA04-E9A8-6350-C1772507673D">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-17 08:26:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Côté du tronçon auquel est rattaché le seuil.
-G = gauche ; D = droite.
-- En agglomération le sens des tronçons est déterminé par ses numéros de seuils. En d''autres termes il commence au niveau du seuil dont le numéro est égal à 1 ;
-- Hors agglomération, le sens du tronçon dépend du sens de circulation pour les rues à sens unique. Pour les rues à double-sens chaque tronçon est doublé donc leur sens dépend aussi du sens de circulation;]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="code_insee" id="570E6F9B-A8E9-2840-363F-55BBA878B676">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-17 08:26:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ calculé via une requête spatiale, permettant d''associer à chaque rue le code insee de la commune dans laquelle elle se trouve (issue de la table G_REFERENTIEL.A_COMMUNES).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>5 BYTE</dataTypeSize>
-<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="date_action" id="F1EF94A0-2D93-7A56-4198-4E06DAC6B926">

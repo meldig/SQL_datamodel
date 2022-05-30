@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="40C2D573-E0F6-5297-AA5A-AE2AF1B19094" containerWithKeyObject="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" localFKIndex="03F1364F-668F-8995-D14B-B61A65ADE00C" name="TA_LIBELLE_VOIE_FID_VOIE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="40C2D573-E0F6-5297-AA5A-AE2AF1B19094" containerWithKeyObject="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" localFKIndex="03F1364F-668F-8995-D14B-B61A65ADE00C" name="TA_VOIE_ADMINISTRATIVE_FID_VOIE_PHYSIQUE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:18:41 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<referredTableLongName>TA_VOIE</referredTableLongName>
+<referredTableLongName>TA_VOIE_PHYSIQUE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>EE29B7FC-51B8-D974-9F22-4371A0778715</referredTableID>
 <keyObject>3DE90DEE-D088-D07F-E301-8CF98D4EE102</keyObject>

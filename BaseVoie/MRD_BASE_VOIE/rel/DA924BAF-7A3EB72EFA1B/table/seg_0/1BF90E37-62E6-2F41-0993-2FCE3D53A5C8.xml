@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" name="TA_LIBELLE_VOIE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" name="TA_VOIE_ADMINISTRATIVE">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:05:25 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
@@ -170,7 +170,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="23D4423E-7FDF-EC97-0FBD-DC8FBE771626" name="TA_LIBELLE_VOIE_PK">
+<ind_PK_UK id="23D4423E-7FDF-EC97-0FBD-DC8FBE771626" name="TA_VOIE_ADMINISTRATIVE_PK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:17:41 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
@@ -181,7 +181,7 @@
 <colUsage columnID="D1FD2F23-7562-FB1A-948D-5C0FCF8E2E57"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="03F1364F-668F-8995-D14B-B61A65ADE00C" name="TA_LIBELLE_VOIE_FID_VOIE_FK">
+<ind_PK_UK id="03F1364F-668F-8995-D14B-B61A65ADE00C" name="TA_VOIE_ADMINISTRATIVE_FID_VOIE_PHYSIQUE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:18:41 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
@@ -191,7 +191,7 @@
 <colUsage columnID="6E67FB8C-1E30-F789-4EC5-544906277FAA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8EFB9C79-75AB-FFC6-C110-A2E576EC7487" name="TA_LIBELLE_VOIE_FID_TYPE_VOIE_FK">
+<ind_PK_UK id="8EFB9C79-75AB-FFC6-C110-A2E576EC7487" name="TA_VOIE_ADMINISTRATIVE_FID_TYPE_VOIE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:26:05 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
@@ -201,7 +201,7 @@
 <colUsage columnID="1806E77B-9011-79FD-6598-E711D33C4488"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9B7F9F2A-3056-6C52-E3E6-41438721A149" name="TA_LIBELLE_VOIE_FID_PNOM_SAISIE_FK">
+<ind_PK_UK id="9B7F9F2A-3056-6C52-E3E6-41438721A149" name="TA_VOIE_ADMINISTRATIVE_FID_PNOM_SAISIE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-24 11:32:42 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
@@ -211,7 +211,7 @@
 <colUsage columnID="8F22F668-E86C-18D3-F1A3-D2E58302A311"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3225EA98-9F77-C5D6-1D04-94C55A2A400B" name="TA_LIBELLE_VOIE_FID_PNOM_MODIFICATION_FK">
+<ind_PK_UK id="3225EA98-9F77-C5D6-1D04-94C55A2A400B" name="TA_VOIE_ADMINISTRATIVE_FID_PNOM_MODIFICATION_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-24 11:33:03 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F18F87EA-6DA7-0C7B-5684-BF21A998CFC5" containerWithKeyObject="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A" localFKIndex="FE06E438-E4A2-991D-4F04-E478DA253557" name="TA_SEUIL_FID_VOIE_ADMINISTRATIVE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-30 08:49:22 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<referredTableLongName>TA_LIBELLE_VOIE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1BF90E37-62E6-2F41-0993-2FCE3D53A5C8</referredTableID>
+<keyObject>23D4423E-7FDF-EC97-0FBD-DC8FBE771626</keyObject>
+<referredKeyID>23D4423E-7FDF-EC97-0FBD-DC8FBE771626</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

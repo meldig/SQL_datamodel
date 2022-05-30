@@ -519,6 +519,15 @@ Exemple :
 <point x="524" y="1244"/>
 </points>
 </Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C6F4484D-AE8A-A780-1D46-A73780D10F73" otype="FKIndexAssociation" vid_source="A2404075-7AB3-411C-3F4E-1A5FECC235CA" vid_target="517380F5-E418-005A-53A4-594CFA4FFE61">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1009" y="285"/>
+<point x="498" y="498"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C8D39709-0D87-F45F-DFE1-EFDEE0BAD189" otype="FKIndexAssociation" vid_source="8182E4C3-A71B-0494-1A96-843F11EC2B8C" vid_target="FA93038D-1900-4046-72B1-0DD228484098">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>

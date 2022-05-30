@@ -100,10 +100,10 @@ Ancienne table : ILTATRC]]></comment>
 <colAssociation fkAssociation="0B1298B5-0624-071D-F95A-E3AC3CBEA64E" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
-<Column name="fid_voie" id="330C7FFA-7CD3-6167-C9BA-051552DAACCD">
+<Column name="fid_voie_physique" id="330C7FFA-7CD3-6167-C9BA-051552DAACCD">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:02:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE permettant d''associer un tronçon à une et une seule voie et une voie à un ou plusieurs tronçons.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE_PHYSIQUE permettant d''associer un tronçon à une et une seule voie et une voie à un ou plusieurs tronçons.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -173,7 +173,7 @@ Ancienne table : ILTATRC]]></comment>
 <colUsage columnID="F064B8CC-092C-3615-6C16-7881136B97DA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0F5E7FCF-2AE5-F6FB-EB1B-D3C3EF2D7630" name="TA_TRONCON_FID_VOIE_FK">
+<ind_PK_UK id="0F5E7FCF-2AE5-F6FB-EB1B-D3C3EF2D7630" name="TA_TRONCON_FID_VOIE_PHYSIQUE_FK">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:04:33 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
