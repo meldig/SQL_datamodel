@@ -70,19 +70,20 @@
 <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="lateralite" id="2C1F24F1-0B6E-DC3C-0B69-53430AEA1EAF">
+<Column name="id_lateralite" id="2C1F24F1-0B6E-DC3C-0B69-53430AEA1EAF">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:41:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_LIBELLE permettant de savoir à quel côté de la voie physique appartient la voie administrative.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="insee" id="6B29B62C-B4AF-D742-B59F-B6B5737E49A7">
+<Column name="code_insee" id="6B29B62C-B4AF-D742-B59F-B6B5737E49A7">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:41:00 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>

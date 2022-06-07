@@ -21,6 +21,17 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="geom" id="113E1378-C769-EE56-DF7A-EFF83AACFCE7">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:58:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie du seuil de type point.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="id_seuil" id="3B844A8E-8D2B-8620-2B11-C43AEC677151">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:58:34 UTC</createdTime>
@@ -32,7 +43,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_voie_administrative" id="6C9981F5-9EB9-4364-036A-1F8FDEA3F07A">
+<Column name="id_voie_administrative" id="6C9981F5-9EB9-4364-036A-1F8FDEA3F07A">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-30 15:00:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[identifiant de la table TA_VOIE_ADMINISTRATIVE permettant d''afecter un seuil à une et une seule voie administrative.]]></commentInRDBMS>
@@ -55,17 +66,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="geom" id="113E1378-C769-EE56-DF7A-EFF83AACFCE7">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 13:58:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Géométrie du seuil de type point.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>3</use>
-<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="date_action" id="F1EF94A0-2D93-7A56-4198-4E06DAC6B926">

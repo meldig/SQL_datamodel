@@ -58,19 +58,7 @@
 <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="lateralite" id="FC503963-6968-2411-98AE-614380590035">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-05-17 08:17:41 UTC</createdTime>
-<commentInRDBMS><![CDATA[Latéralité de la voie. En limite de commune le côté gauche de la voie peut appartenir à la commune A et le côté droit à la comune B. Ce champ permet de faire cette distinction : G = côté gauche de la voie ; D = côté droit de la voie ; GD : les deux côtés de la voie appartiennent à la même commune. ]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="insee" id="E8D539D9-470E-AD59-F6F9-7EBB356DBCE3">
+<Column name="code_insee" id="E8D539D9-470E-AD59-F6F9-7EBB356DBCE3">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:17:41 UTC</createdTime>
 <commentInRDBMS><![CDATA[Code INSEE du nom de voie : en limite de commune une voie physique peut appartenir à deux communes et donc avoir deux noms. Ce champ permet de rattacher la voie à sa commune.
@@ -83,36 +71,6 @@
 <dataTypeSize>5 BYTE</dataTypeSize>
 <ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="fid_voie" id="6E67FB8C-1E30-F789-4EC5-544906277FAA">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-05-17 08:18:29 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE permettant d''affecter un ou plusieurs noms à une voie physique.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="40C2D573-E0F6-5297-AA5A-AE2AF1B19094" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
-</associations>
-</Column>
-<Column name="fid_type_voie" id="1806E77B-9011-79FD-6598-E711D33C4488">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-05-17 08:24:42 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TYPE_VOIE afin d''associer un type à chaque voie.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="5FE524F0-D931-E823-4422-6EEE44D94CE3" referredColumn="10582D37-3039-372B-C21B-163C26922848"/>
-</associations>
 </Column>
 <Column name="date_saisie" id="DCBA3628-4153-FD1A-F1CE-0934710C8868">
 <createdBy>bjacq</createdBy>
@@ -168,6 +126,51 @@
 <colAssociation fkAssociation="8785F9F4-F643-29C2-CC04-EE89A5DA1B68" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
+<Column name="fid_type_voie" id="1806E77B-9011-79FD-6598-E711D33C4488">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:24:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TYPE_VOIE afin d''associer un type à chaque voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FE524F0-D931-E823-4422-6EEE44D94CE3" referredColumn="10582D37-3039-372B-C21B-163C26922848"/>
+</associations>
+</Column>
+<Column name="fid_voie_physique" id="6E67FB8C-1E30-F789-4EC5-544906277FAA">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:18:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE permettant d''affecter un ou plusieurs noms à une voie physique.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40C2D573-E0F6-5297-AA5A-AE2AF1B19094" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
+</associations>
+</Column>
+<Column name="fid_lateralite" id="FC503963-6968-2411-98AE-614380590035">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-17 08:17:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de récupérer la latéralité de la voie. En limite de commune le côté gauche de la voie physique peut appartenir à la commune A et le côté droit à la comune B, tandis qu'au sein de la commune la voie physique appartient à une et une seule commune et est donc affectée à une et une seule voie administrative. Cette distinction se fait grâce à ce champ.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05E56E8F-DC65-DE8A-2D2B-CF3F44B2813F" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="23D4423E-7FDF-EC97-0FBD-DC8FBE771626" name="TA_VOIE_ADMINISTRATIVE_PK">
@@ -219,6 +222,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="034E82DA-37A0-E92A-56DE-14612FD51EFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C3B09F6-DDE2-DD2B-794E-80F30EFC8F61" name="TA_VOIE_ADMINISTRATIVE_FID_LATERALITE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-31 08:55:03 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC503963-6968-2411-98AE-614380590035"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
