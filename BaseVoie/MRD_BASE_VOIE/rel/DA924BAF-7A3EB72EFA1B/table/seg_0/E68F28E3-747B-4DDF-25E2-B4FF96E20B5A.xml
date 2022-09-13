@@ -97,25 +97,10 @@ Ancienne table : ILTASEU]]></comment>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C6F4484D-AE8A-A780-1D46-A73780D10F73" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
-</associations>
-</Column>
-<Column name="fid_voie_administrative" id="63FF2CEF-5C0B-FC49-D02A-48CDE9F68215">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-05-30 08:49:18 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE_ADMINISTRATIVE permettant d''affecter un seuil à une et une seule voie administrative.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="F18F87EA-6DA7-0C7B-5684-BF21A998CFC5" referredColumn="D1FD2F23-7562-FB1A-948D-5C0FCF8E2E57"/>
+<colAssociation fkAssociation="C6F4484D-AE8A-A780-1D46-A73780D10F73" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
 </associations>
 </Column>
 </columns>
@@ -149,16 +134,6 @@ Ancienne table : ILTASEU]]></comment>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7E756093-95C1-4FA0-B9CE-0E111F956C42"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="FE06E438-E4A2-991D-4F04-E478DA253557" name="TA_SEUIL_FID_VOIE_ADMINISTRATIVE_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-05-30 08:49:22 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="63FF2CEF-5C0B-FC49-D02A-48CDE9F68215"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="732617FC-A01C-FAF0-58FA-303FC1C6F162" name="TA_SEUIL_FID_TRONCON_FK">

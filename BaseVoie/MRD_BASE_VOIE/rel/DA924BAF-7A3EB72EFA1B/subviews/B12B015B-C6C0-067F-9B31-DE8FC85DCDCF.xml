@@ -64,7 +64,6 @@ Ancienne table : ILTATRC</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -163,15 +162,6 @@ Ancienne table : TPEVOIE</comment>
 <points>
 <point x="759" y="726"/>
 <point x="658" y="794"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="40C2D573-E0F6-5297-AA5A-AE2AF1B19094" otype="FKIndexAssociation" vid_source="EE3201BD-FE29-296E-5F7D-49BC10EFFD13" vid_target="41AF2287-1F12-C311-44AB-B5F6934535E1">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="764" y="666"/>
-<point x="677" y="601"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="5FE524F0-D931-E823-4422-6EEE44D94CE3" otype="FKIndexAssociation" vid_source="7B180AAE-DAAB-6D82-B305-B040258A6F8D" vid_target="41AF2287-1F12-C311-44AB-B5F6934535E1">

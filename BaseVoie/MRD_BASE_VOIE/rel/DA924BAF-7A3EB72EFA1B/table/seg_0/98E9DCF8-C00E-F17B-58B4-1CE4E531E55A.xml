@@ -23,7 +23,7 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_pnom" id="C66B049D-590D-5433-3CBA-B88F4222CD86">
+<Column name="fid_pnom" id="C66B049D-590D-5433-3CBA-B88F4222CD86">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:24:46 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent au tronçon qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>

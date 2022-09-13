@@ -130,18 +130,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_action" id="3D94CEF5-5E10-8888-352E-F3F3B542DE44">
+<Column name="fid_type_action" id="3D94CEF5-5E10-8888-352E-F3F3B542DE44">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:46:27 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant d''indiquer le type d''action ayant délécenché la création d''une entité dans TA_LIBELLE_VOIE_LOG.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de catégoriser le type d''action effectué sur les voies administratives.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B60F5993-FFAE-4558-EE87-62564C6ABE14" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
 </Column>
 <Column name="fid_pnom" id="F6124114-D4FD-E564-2516-2411921BE6DF">
 <createdBy>bjacq</createdBy>
@@ -179,6 +181,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F6124114-D4FD-E564-2516-2411921BE6DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D46A809-B19F-2FC3-87D0-DDCD39ABC777" name="TA_VOIE_ADMINISTRATIVE_LOG_FID_TYPE_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-09-13 16:32:58 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D94CEF5-5E10-8888-352E-F3F3B542DE44"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
