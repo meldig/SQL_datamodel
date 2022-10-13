@@ -14,6 +14,10 @@
 <display>false</display>
 <notation>1</notation>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="07A257FC-19DB-D3C0-61FA-0EAB5B3F035B" otype="Table" vid="458305D5-91AA-6629-F2CF-3BA52238B9CE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="2045" y="1784" width="278" height="124"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="0B5AE31C-FBC9-F892-CFC8-5ABCAF8A55A0" otype="Note" vid="153A1717-CDD8-3381-E8F0-D25D6FBDD342">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="839" y="1599" width="203" height="73"/>
@@ -78,7 +82,7 @@ Ancienne table : VOIEVOI</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" otype="Table" vid="7FFA3A1D-86A2-93A1-4FB4-AE7B06876B78">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1867" y="1402" width="430" height="278"/>
+<bounds x="1867" y="1402" width="492" height="293"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="22E06C5C-A545-958E-24E2-4BC55BD2639F" otype="Table" vid="576B7B04-7391-87DA-E932-6ABD458D7EBB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -140,6 +144,22 @@ Ancienne table : VOIEVOI</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="686D06DC-A523-FE73-98F5-C36A29AD63F4" otype="Note" vid="586EB2D0-3213-1985-111C-05C1033D8636">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="2046" y="1909" width="279" height="68"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant les identifiants et noms des voies supra-communales (c&apos;est-à-dire ne se limitant pas aux limites communales), type voie métropolitaine et autoroute.</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Titre</foType>
+<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -212,7 +232,6 @@ Ancienne table : ILTATRC</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -234,12 +253,12 @@ Ancienne table : ILTATRC</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="B7AA3B0D-D97F-1150-F3ED-AC26C14946DC" otype="Note" vid="CE076AAC-8E08-2051-1D74-EA2B2F23793F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1871" y="1682" width="378" height="43"/>
+<bounds x="1868" y="1696" width="320" height="54"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table rassemblant tous les libellés de voies des voies physiques de la MEL.</comment>
+<comment>Table rassemblant toutes les informations de chaque voie administrative. Pour rappel, en limite de commune, deux voies administratives peuvent partager la même voie physique. </comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
@@ -341,7 +360,16 @@ Ancienne table : ILTASEU</comment>
 <point x="1519" y="242"/>
 <point x="2487" y="483"/>
 <point x="2488" y="1402"/>
-<point x="2297" y="1402"/>
+<point x="2359" y="1402"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="09091AF2-7AE1-3DDD-FEE0-086FE7707825" otype="FKIndexAssociation" vid_source="458305D5-91AA-6629-F2CF-3BA52238B9CE" vid_target="7FFA3A1D-86A2-93A1-4FB4-AE7B06876B78">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="2199" y="1784"/>
+<point x="2199" y="1695"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0B1298B5-0624-071D-F95A-E3AC3CBEA64E" otype="FKIndexAssociation" vid_source="D0719D4B-8AD0-C211-6F62-918A95291F78" vid_target="B922CF43-7149-3659-085A-2A27AB750389">
@@ -367,8 +395,8 @@ Ancienne table : ILTASEU</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1867" y="1443"/>
-<point x="1741" y="1161"/>
+<point x="1877" y="1402"/>
+<point x="1747" y="1161"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="27263312-7958-F7B7-44A5-3015BB504184" otype="FKIndexAssociation" vid_source="D0719D4B-8AD0-C211-6F62-918A95291F78" vid_target="5545F1C6-EF87-C82A-B0D0-6B27EFCF1E29">
@@ -403,8 +431,8 @@ Ancienne table : ILTASEU</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="2149" y="1402"/>
-<point x="2149" y="1324"/>
+<point x="2180" y="1402"/>
+<point x="2180" y="1324"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4AC4EDEC-078D-4439-C384-0A33D6D34777" otype="FKIndexAssociation" vid_source="7FFA3A1D-86A2-93A1-4FB4-AE7B06876B78" vid_target="223531EE-C7E8-765D-2028-724EAA768CF5">
@@ -412,8 +440,8 @@ Ancienne table : ILTASEU</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="2164" y="1402"/>
-<point x="2164" y="1324"/>
+<point x="2195" y="1402"/>
+<point x="2195" y="1324"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="512B6A53-A98A-ED06-A002-53C8B919C3B5" otype="FKIndexAssociation" vid_source="D0719D4B-8AD0-C211-6F62-918A95291F78" vid_target="5545F1C6-EF87-C82A-B0D0-6B27EFCF1E29">
@@ -440,8 +468,8 @@ Ancienne table : ILTASEU</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="2521" y="1654"/>
-<point x="2297" y="1654"/>
+<point x="2521" y="1661"/>
+<point x="2359" y="1661"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7B477C34-A6A1-2DD8-EFCD-6760073479FC" otype="FKIndexAssociation" vid_source="7B29E9BD-B7AA-52BB-98D2-A1349021D108" vid_target="BE90EE43-EB27-A480-BD7D-A9A371020946">
@@ -458,8 +486,8 @@ Ancienne table : ILTASEU</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1867" y="1617"/>
-<point x="1700" y="1617"/>
+<point x="1867" y="1618"/>
+<point x="1700" y="1618"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="81B5962E-C125-3B6C-2D41-CADFDB080F6B" otype="FKIndexAssociation" vid_source="D0719D4B-8AD0-C211-6F62-918A95291F78" vid_target="036D4928-23B0-0C46-E986-51749876FAB0">
@@ -597,7 +625,7 @@ Ancienne table : ILTASEU</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="2297" y="1538"/>
+<point x="2359" y="1538"/>
 <point x="2523" y="1538"/>
 </points>
 </Connector>

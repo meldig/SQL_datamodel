@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" name="TA_VOIE_ADMINISTRATIVE">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:05:25 UTC</createdTime>
+<comment><![CDATA[Table rassemblant toutes les informations de chaque voie administrative. Pour rappel, en limite de commune, deux voies administratives peuvent partager la même voie physique. ]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_32</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -156,6 +157,21 @@
 <colAssociation fkAssociation="05E56E8F-DC65-DE8A-2D2B-CF3F44B2813F" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
 </associations>
 </Column>
+<Column name="fid_voie_supra_communale" id="64A4B109-E142-EE49-F16B-89EE0C206FA0">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-13 14:53:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE_SUPRA_COMMUNALE permettant d''associer une ou plusieurs voies administratives à une voie supra-communale, c-à-d une voie ne tenant pas compte des limites communales, telle que les voies métropolitaines et les autoroutes.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09091AF2-7AE1-3DDD-FEE0-086FE7707825" referredColumn="59892949-20F1-E228-92F7-C6734D9B64D3"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="23D4423E-7FDF-EC97-0FBD-DC8FBE771626" name="TA_VOIE_ADMINISTRATIVE_PK">
@@ -207,6 +223,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FC503963-6968-2411-98AE-614380590035"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A18C878B-DAD3-4BE3-3B14-D7A75E8E80F4" name="TA_VOIE_ADMINISTRATIVE_FID_VOIE_SUPRA_COMMUNALE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-13 14:54:04 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64A4B109-E142-EE49-F16B-89EE0C206FA0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
