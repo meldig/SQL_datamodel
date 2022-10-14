@@ -413,6 +413,10 @@ Ancienne table TA_RUEVOIE</comment>
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="1002" y="910" width="306" height="239"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F1457AEA-ABB7-8F6F-FFCB-630A6C01CD8E" otype="Table" vid="4F55B023-6D5F-33A5-27D2-D9E1928ECE0D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="50" width="170" height="110"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="F15B63D8-59A6-6B0B-C249-142074D0D8C9" otype="Note" vid="F3F5C838-3DC6-4F1B-2DD4-4A8A748ECC2B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="226" y="343" width="341" height="76"/>
@@ -432,6 +436,15 @@ Ancienne table : ILTASIT</comment>
 </OView>
 </objectViews>
 <connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="056F4A53-1674-CFE2-97C7-0BDE8490F363" otype="FKIndexAssociation" vid_source="21274CBD-820B-3DA4-F080-C1016EDD10DE" vid_target="4F55B023-6D5F-33A5-27D2-D9E1928ECE0D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="145" y="210"/>
+<point x="145" y="160"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="05E56E8F-DC65-DE8A-2D2B-CF3F44B2813F" otype="FKIndexAssociation" vid_source="21274CBD-820B-3DA4-F080-C1016EDD10DE" vid_target="811ACCD7-AB88-4EAE-B33B-478C421847FF">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
