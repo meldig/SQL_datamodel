@@ -16,7 +16,7 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="07A257FC-19DB-D3C0-61FA-0EAB5B3F035B" otype="Table" vid="458305D5-91AA-6629-F2CF-3BA52238B9CE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="2045" y="1784" width="278" height="124"/>
+<bounds x="2045" y="1784" width="278" height="109"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="0B5AE31C-FBC9-F892-CFC8-5ABCAF8A55A0" otype="Note" vid="153A1717-CDD8-3381-E8F0-D25D6FBDD342">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -150,7 +150,7 @@ Ancienne table : VOIEVOI</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="686D06DC-A523-FE73-98F5-C36A29AD63F4" otype="Note" vid="586EB2D0-3213-1985-111C-05C1033D8636">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="2046" y="1909" width="279" height="68"/>
+<bounds x="2046" y="1899" width="279" height="68"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -159,7 +159,6 @@ Ancienne table : VOIEVOI</comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
 <foType>Titre</foType>
-<fontSize>11</fontSize>
 <colorRGB>-16777216</colorRGB>
 </FontObject>
 </fonts>
@@ -253,7 +252,7 @@ Ancienne table : ILTATRC</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="B7AA3B0D-D97F-1150-F3ED-AC26C14946DC" otype="Note" vid="CE076AAC-8E08-2051-1D74-EA2B2F23793F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1868" y="1696" width="320" height="54"/>
+<bounds x="1868" y="1696" width="311" height="54"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
@@ -368,8 +367,8 @@ Ancienne table : ILTASEU</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="2199" y="1784"/>
-<point x="2199" y="1695"/>
+<point x="2184" y="1784"/>
+<point x="2184" y="1695"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0B1298B5-0624-071D-F95A-E3AC3CBEA64E" otype="FKIndexAssociation" vid_source="D0719D4B-8AD0-C211-6F62-918A95291F78" vid_target="B922CF43-7149-3659-085A-2A27AB750389">
