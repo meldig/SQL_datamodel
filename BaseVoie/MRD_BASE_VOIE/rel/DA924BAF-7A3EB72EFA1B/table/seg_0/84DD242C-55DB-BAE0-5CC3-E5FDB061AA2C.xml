@@ -43,19 +43,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_voie_administrative" id="6C9981F5-9EB9-4364-036A-1F8FDEA3F07A">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-05-30 15:00:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[identifiant de la table TA_VOIE_ADMINISTRATIVE permettant d''afecter un seuil à une et une seule voie administrative.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="id_troncon" id="A0B85CB8-2028-F013-12BD-4ED079DCA096">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-30 15:00:17 UTC</createdTime>

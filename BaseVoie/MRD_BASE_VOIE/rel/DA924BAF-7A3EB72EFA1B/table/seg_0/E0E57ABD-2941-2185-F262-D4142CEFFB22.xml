@@ -21,10 +21,10 @@
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_libelle_voie" id="647A4623-BE15-6CBB-C3D3-0933736218BC">
+<Column name="id_voie_administrative" id="647A4623-BE15-6CBB-C3D3-0933736218BC">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:41:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant du libelle de  la voie.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Identifiant de  la voie administrative.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -93,18 +93,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>5 BYTE</dataTypeSize>
 <ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_voie" id="B5E3023B-8CC3-0EA9-9022-3958A3F4CCC3">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-05-17 08:41:00 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="id_type_voie" id="4104CEFF-47E9-6E2B-4639-D43FBC21C636">
