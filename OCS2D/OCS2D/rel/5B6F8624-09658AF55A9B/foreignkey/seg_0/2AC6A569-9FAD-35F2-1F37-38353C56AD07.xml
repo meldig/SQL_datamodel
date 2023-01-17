@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2AC6A569-9FAD-35F2-1F37-38353C56AD07" containerWithKeyObject="3523E2B7-D202-9689-0B4C-F37E7AB07769" localFKIndex="16F59257-A6EA-C784-461E-CA59F47C606C" name="TA_OCS2D_POINT_COMMENTAIRE_G_GESTIONGEO.TA_GG_SOURCE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:31:51 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table G_GESTIONGEO.TA_GG_AGENT pour connaire le créateur d''un commentaire.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<referredTableLongName>G_GESTIONGEO.TA_GG_AGENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C67A36C-4CFB-CB7E-22B5-568E6E44C5DE</referredTableID>
+<keyObject>16A0B81D-6368-FD0D-F968-3B15C49D5764</keyObject>
+<referredKeyID>16A0B81D-6368-FD0D-F968-3B15C49D5764</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

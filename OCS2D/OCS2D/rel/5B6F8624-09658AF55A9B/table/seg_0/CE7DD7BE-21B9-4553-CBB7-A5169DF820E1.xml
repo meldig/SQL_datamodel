@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE7DD7BE-21B9-4553-CBB7-A5169DF820E1" name="TA_OCS2D_RELATION_LIBELLE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:20:40 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="F1182C26-5988-028B-831B-AA2BC72D8920">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:28:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_RELATION_LIBELLE]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_ocs2d_millesime" id="61B1C5CD-BA3B-8ECD-0048-F576BDD096AE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:28:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_OCS2D_MILLESIME]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00AA1DA6-F3BD-8502-DCCD-5BCA2FCA50A6" referredColumn="86464D58-6B91-2046-223C-A2C8AB15954D"/>
+</associations>
+</Column>
+<Column name="fid_libelle" id="AE6FEC1C-EB52-2E7C-626A-B4BEC04D962C">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:28:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0126EC1-2D8B-CBE4-2338-3B18969BC4CB" referredColumn="C815ED14-E00B-7FCB-A7A2-DFE47D444ADE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5EA1B80B-AF64-118D-122E-116C7077A1CC" name="TA_OCS2D_RELATION_LIBELLE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:28:39 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1182C26-5988-028B-831B-AA2BC72D8920"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52355984-C8F1-4FAC-778F-41FC0AEF0EA5" name="TA_OCS2D_RELATION_LIBELLE_FID_OCS2D_MILLESIME_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:29:15 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61B1C5CD-BA3B-8ECD-0048-F576BDD096AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7799ADD-E72A-A5F5-92AE-878428B803D2" name="TA_OCS2D_RELATION_LIBELLE_TA_OCS2D_LIBELLE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-08 15:24:31 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE6FEC1C-EB52-2E7C-626A-B4BEC04D962C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

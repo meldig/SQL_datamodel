@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26492F9C-A736-7E55-4EAB-FE7068C22F89" name="TA_OCS2D_COMMENTAIRE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:21:39 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="1075B898-5884-E5EB-6CF8-4AA2C4C81245">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:04:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="0E9E5020-01D1-3552-BBB0-F0F686F2ED8F">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:04:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur du commentaire]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25E3C1FD-7C66-C623-53EB-4496591C6451" name="TA_OCS2D_COMMENTAIRE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:04:08 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1075B898-5884-E5EB-6CF8-4AA2C4C81245"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

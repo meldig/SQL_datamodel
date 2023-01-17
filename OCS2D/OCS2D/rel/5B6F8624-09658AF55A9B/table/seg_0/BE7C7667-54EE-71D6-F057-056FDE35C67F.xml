@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE7C7667-54EE-71D6-F057-056FDE35C67F" name="TA_OCS2D_SOURCE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 15:21:12 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="06A0EED6-CA1F-7A4E-C37E-93C6CB68FF2F">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 22:59:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_SOURCE.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="3EC72EB8-0771-7EE4-7B31-44B51D7B0E98">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 22:59:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur de la source]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ACB2CC14-2D69-464A-9BE5-245C214CF257" name="TA_OCS2D_SOURCE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 22:59:00 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06A0EED6-CA1F-7A4E-C37E-93C6CB68FF2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

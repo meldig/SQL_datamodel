@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5FC0D874-7F7E-ABA2-863A-63D8B2CA3D26" containerWithKeyObject="CB13C4AD-2DEF-0F4E-AF47-C88109F24728" localFKIndex="A3BBF8B8-E2D5-FD6B-4000-9999BF4AA206" name="TA_OCS2D_GRILLE_RELATION_ETAT_USAGE_FID_ETAT_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:23:32 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE pour connaitre l''état d''avancement de la grille.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<referredTableLongName>G_GEO.TA_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1ADEB74D-54F3-8996-E2A7-75F3F36EFA8B</referredTableID>
+<keyObject>3D76B7EF-0E23-2627-E5BB-9D2568830E83</keyObject>
+<referredKeyID>3D76B7EF-0E23-2627-E5BB-9D2568830E83</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

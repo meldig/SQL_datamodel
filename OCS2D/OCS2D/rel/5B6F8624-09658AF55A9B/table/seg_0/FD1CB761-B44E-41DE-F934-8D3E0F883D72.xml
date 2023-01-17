@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD1CB761-B44E-41DE-F934-8D3E0F883D72" name="TA_OCS2D_GRILLLE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:29:41 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="C14052A5-A9BC-FD8D-199D-34F60DF988AE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:34:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_etat" id="C6E8917E-EAC9-3C63-A289-1DD4BA1B14C6">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:34:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_GEO.TA_LIBELLE permettant d''associer un état d''avancement à un élément d''une grille.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CD5A735-FD48-F814-8BB8-D1E3A3B11E90" referredColumn="57466412-ACB0-0769-6303-6026D9A178B8"/>
+</associations>
+</Column>
+<Column name="fid_gestionnaire" id="937F9A44-A366-6933-634A-A1B3C8E0E8AA">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:34:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_GG_AGENT permettant d''attribuer le pnom d''un agent à un élément de la grille afin d''indiquer qu''il doit s''en occuper.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40291977-A369-6820-D642-C7312AA597DE" referredColumn="0CD2268C-5E1A-FF77-7BFF-D20747F0360B"/>
+</associations>
+</Column>
+<Column name="geom" id="155E4E64-4385-56E2-A3FB-6A8756E4B5D5">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:34:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique de type polygone.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD87106B-405B-BA20-9DC8-CA98E494FA6A" name="TA_OCS2D_GRILLLE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:22:30 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C14052A5-A9BC-FD8D-199D-34F60DF988AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1E9C1C8-FC8E-A876-3574-1BB83EC4B89B" name="TA_OCS2D_GRILLE_FID_ETAT_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:18:04 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6E8917E-EAC9-3C63-A289-1DD4BA1B14C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9BF105C-75FE-40AC-DC13-F60C14594897" name="TA_OCS2D_GRILLLE_G_GESTIONGEO.TA_GG_SOURCE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:32:36 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="937F9A44-A366-6933-634A-A1B3C8E0E8AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

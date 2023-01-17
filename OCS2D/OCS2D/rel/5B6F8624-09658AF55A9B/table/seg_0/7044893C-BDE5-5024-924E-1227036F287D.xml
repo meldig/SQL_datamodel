@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7044893C-BDE5-5024-924E-1227036F287D" name="TA_OCS2D_LIBELLE_RELATION_NOMENCLATURE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-07 15:13:49 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_27</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="8F15C8F6-8E33-AD91-F0EC-8F1943C95C60">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-07 15:28:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_libelle_cs" id="19E70708-2B13-DA7F-54AD-D83CA7F71668">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-07 15:28:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du code couvert.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1A4A331B-3605-97B0-2C1E-04E01A4AB460" referredColumn="C815ED14-E00B-7FCB-A7A2-DFE47D444ADE"/>
+</associations>
+</Column>
+<Column name="fid_libelle_us" id="1A6DD0BC-76F5-B8DD-0408-966172D631A7">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-07 15:28:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du code usage.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5506B292-50D4-8330-A64D-2E1F00D9EC32" referredColumn="C815ED14-E00B-7FCB-A7A2-DFE47D444ADE"/>
+</associations>
+</Column>
+<Column name="fid_libelle_poste" id="982BD89E-5509-4B7E-9EF4-641EEA339D35">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-07 15:28:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du poste.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFF22A66-BF96-372A-9743-621069D01C31" referredColumn="C815ED14-E00B-7FCB-A7A2-DFE47D444ADE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1348315-9D50-9517-BE65-6DB5298D8D66" name="TA_OCS2D_LIBELLE_RELATION_NOMENCLATURE_FID_LIBELLE_CS_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-08 15:22:31 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19E70708-2B13-DA7F-54AD-D83CA7F71668"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16761527-F72E-DB4C-FF96-43A44805DA8A" name="TA_OCS2D_LIBELLE_RELATION_NOMENCLATURE_FID_LIBELLE_US_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-08 15:23:26 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A6DD0BC-76F5-B8DD-0408-966172D631A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E5EC8D0-C9D4-C3DE-B15B-2F5C03B5B83A" name="TA_OCS2D_LIBELLE_RELATION_NOMENCLATURE_FID_LIBELLE_POSTE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-03-08 15:23:26 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="982BD89E-5509-4B7E-9EF4-641EEA339D35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

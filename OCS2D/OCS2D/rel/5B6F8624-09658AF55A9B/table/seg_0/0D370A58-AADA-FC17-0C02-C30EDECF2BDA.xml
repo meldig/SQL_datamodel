@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D370A58-AADA-FC17-0C02-C30EDECF2BDA" name="TA_OCS2D_POINT_VIGILANCE">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:29:03 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="29DE6F8F-77FE-8280-9B25-C0C9E490A0BB">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:32:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_OCS2D_POINT_VIGILANCE.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_creation" id="4FD20AF6-6850-B5C8-9C36-04FF5AA47E1D">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:32:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Créateur du point et de l''observation.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC752A55-3B0A-975D-641B-CF13BBCC55F7" referredColumn="0CD2268C-5E1A-FF77-7BFF-D20747F0360B"/>
+</associations>
+</Column>
+<Column name="date_creation" id="FA3CA4E3-D431-3CFA-AE75-6C8DA5E63457">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:32:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de création du point.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_modification" id="39C47F0C-33C4-EF34-E3BA-F4E581F1B1F4">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:32:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Agent qui à mise à jour le point et l''observation.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC5DF5C5-4ABC-2ABD-99C4-0604334BFF28" referredColumn="0CD2268C-5E1A-FF77-7BFF-D20747F0360B"/>
+</associations>
+</Column>
+<Column name="date_maj" id="07C4FA8D-BC38-11EF-D77E-05FE9F1ED736">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:32:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de mise à jour du point.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validite" id="2E9C637D-5CA3-C2B1-CF0D-7067C280BDAD">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-18 23:32:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Validite du point 0: invalide, 1: valide]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geom" id="9280549E-11E8-BDAE-9615-303857604098">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:06:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie du point.]]></commentInRDBMS>
+<ownerDesignName>OCS2D</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="77B8C486-1049-EFF5-B181-D03FF87B7EE7" name="TA_OCS2D_POINT_VIGILANCE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:10:14 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29DE6F8F-77FE-8280-9B25-C0C9E490A0BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DE63A3D-EDF3-E6C9-B516-30997130430F" name="TA_OCS2D_POINT_VIGILANCE_G_GESTIONGEO.TA_GG_SOURCE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:30:22 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FD20AF6-6850-B5C8-9C36-04FF5AA47E1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C5A2EFC-16C7-D03D-4105-123A14FC1CAC" name="TA_OCS2D_POINT_VIGILANCE_FID_PNOM_MODIFICATION_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:30:22 UTC</createdTime>
+<ownerDesignName>OCS2D</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39C47F0C-33C4-EF34-E3BA-F4E581F1B1F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

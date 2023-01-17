@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F665A7F3-0F82-BC0D-F5FF-8DC8D13DCFDC" containerWithKeyObject="26833D21-A002-87FC-F1A6-CA439F8DDE3B" localFKIndex="EB4EE484-84DF-15C1-E77F-407DD010ED8D" name="TA_OCS2D_POINT_RELATION_ERREUR_G_GEO.TA_LIBELLE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2022-02-19 00:13:36 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_OCS2D_POINT_VIGILANCE.]]></comment>
+<ownerDesignName>OCS2D</ownerDesignName>
+<referredTableLongName>G_GEO.TA_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1ADEB74D-54F3-8996-E2A7-75F3F36EFA8B</referredTableID>
+<keyObject>3D76B7EF-0E23-2627-E5BB-9D2568830E83</keyObject>
+<referredKeyID>3D76B7EF-0E23-2627-E5BB-9D2568830E83</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
