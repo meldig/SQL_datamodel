@@ -35,19 +35,6 @@ Ancienne table : ILTATRC]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="sens" id="B55373DD-CC6C-C585-BCEF-2DF23ECD92C9">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-05-17 08:20:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Sens de circulation par rapport au sens de saisie.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="date_saisie" id="EF03400A-1606-D225-6909-E96CD2A23839">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:54:36 UTC</createdTime>

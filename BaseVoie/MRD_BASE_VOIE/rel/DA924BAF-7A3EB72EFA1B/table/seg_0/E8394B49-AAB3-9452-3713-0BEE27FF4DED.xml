@@ -21,7 +21,7 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_voie_physique" id="90412154-632A-D24B-8442-E5A74E7A7F42">
+<Column name="id_voie_physique" id="90412154-632A-D24B-8442-E5A74E7A7F42">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-09-13 16:19:13 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE_PHYSIQUE permettant d''associer une ou plusieurs voies physiques à une voie administrative.]]></commentInRDBMS>
@@ -34,7 +34,7 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_voie_administrative" id="11C2A28C-CDD3-CF12-DCCF-53A27EE0CF12">
+<Column name="id_voie_administrative" id="11C2A28C-CDD3-CF12-DCCF-53A27EE0CF12">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-09-13 16:19:13 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE_PHYSIQUE permettant d''associer une voie administrative à une ou plusieurs voies physiques.]]></commentInRDBMS>
@@ -45,6 +45,16 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_lateralite" id="6145B971-25FE-9F9B-2F76-4C79B60CB798">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-01-30 09:40:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de latéralité de la voie administrative par rapport à sa voie physique.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fid_type_action" id="FA01A832-BA2E-C2E6-229D-FD1B72B4C30C">

@@ -33,18 +33,6 @@
 <ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="numero_parcelle" id="51627598-9871-3F6E-FA2C-60AACEAEB170">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 13:28:51 UTC</createdTime>
-<commentInRDBMS><![CDATA[Numéro de parcelle issu du cadastre.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>9 BYTE</dataTypeSize>
-<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="complement_numero_seuil" id="09B59980-C21A-EC06-8563-D74DA19C6F31">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:28:51 UTC</createdTime>
@@ -136,7 +124,7 @@ Exemple : 1bis]]></commentInRDBMS>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="1FD4FA22-4177-3D5B-AD03-18592EA80E5A" referredColumn="D1FD2F23-7562-FB1A-948D-5C0FCF8E2E57"/>

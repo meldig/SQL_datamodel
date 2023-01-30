@@ -30,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="B7FB29E0-0B47-4767-7C59-764821D6C5D6" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
@@ -45,10 +45,25 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="815602C8-4528-BCCF-C30F-35BB5EE1F6F7" referredColumn="D1FD2F23-7562-FB1A-948D-5C0FCF8E2E57"/>
+</associations>
+</Column>
+<Column name="fid_lateralite" id="516D3687-3EF2-6947-5192-5ACA1F02EB89">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-01-04 16:11:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TEMP_G_LIBELLE, permettant de savoir si la voie administrative est à droite ou à gauche de sa voie physique d''appartenance.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F39F7569-F47F-F04C-A07C-791E7AC67A32" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
 </associations>
 </Column>
 </columns>
@@ -82,6 +97,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="67D60DA4-00F0-D631-72E9-F3C205572214"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99220B53-7B6C-315F-50B1-F8B15F1AED4B" name="TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE_FID_LATERALITE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-01-04 16:11:42 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="516D3687-3EF2-6947-5192-5ACA1F02EB89"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -137,15 +137,6 @@ Ancienne table : TPEVOIE</comment>
 </OView>
 </objectViews>
 <connectors>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="05E56E8F-DC65-DE8A-2D2B-CF3F44B2813F" otype="FKIndexAssociation" vid_source="CFC80489-1931-88B1-9CA4-9AEEC4513D1C" vid_target="41AF2287-1F12-C311-44AB-B5F6934535E1">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="803" y="420"/>
-<point x="703" y="420"/>
-</points>
-</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0B1298B5-0624-071D-F95A-E3AC3CBEA64E" otype="FKIndexAssociation" vid_source="4403D6BF-2740-18EB-36AE-E6606FDB6621" vid_target="A720F327-2FD3-7278-5ED2-52CF75052E83">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
