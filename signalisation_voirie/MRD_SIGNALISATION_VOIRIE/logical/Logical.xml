@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="5F1897D5-50BF-CFD4-F3F1-FA32249D00F9" mainViewID="374A5BAB-8C74-060B-7158-3B6D2805D2B4">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 17:28:39 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="570F2F4B-DAF4-895E-4382-74EE2033F05D" name="TA_VOIRIE_FAMILLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:01:34 UTC</createdTime>
+<comment><![CDATA[Table contenant toutes les familles regroupant les  libellés qualifiant la signalétique horizontale et verticale de la voirie.]]></comment>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="1791C392-970F-7087-D56B-2850B1D7FA91">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:04:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="C8BFAF1C-4FE1-0A31-D4F0-2DC6FD9EF144">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:04:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé de la famille.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="8260E14F-72B2-3154-4217-9A244A6754B1">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:04:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Description de la famille.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2294AC7D-1DCB-16A5-50EF-AB4CEA1594E2" name="TA_VOIRIE_FAMILLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:04:40 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1791C392-970F-7087-D56B-2850B1D7FA91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
