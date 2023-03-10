@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="2B678BAB-F1E9-53E7-899D-110301C357FB">
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Signalisation voirie" id="2B678BAB-F1E9-53E7-899D-110301C357FB">
 <createdBy>bjacq</createdBy>
 <modifiedBy>bjacq</modifiedBy>
 <createdTime>2023-02-22 17:30:02 UTC</createdTime>
@@ -14,60 +14,162 @@
 <display>false</display>
 <notation>1</notation>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="11CD6441-8CA5-3866-6514-126CA5405D0C" otype="Note" vid="99B69255-94FC-1076-FC19-4157B17A7A2D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="745" y="756" width="410" height="47"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant tous les marquages surfaciques de la voirie (zébra, protection piéton, etc), millésimés et catégorisés. Elle correspond à la table MEL_sh_surf_marque de l&apos;&apos;export Imergis.</comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="12CC146F-2970-ACF3-81B1-A8CE1F2EDB94" otype="Note" vid="62657654-C332-A2ED-AE80-59D6AD5294CC">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="183" y="618" width="259" height="51"/>
+<bounds x="794" y="1326" width="259" height="52"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
 <comment>Table regroupant les matricules et pnoms de tous les agents travaillant ou ayant travaillé sur la signalétique horizontale et verticale de la voirie.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="4F1FFE47-EC35-6A96-0152-ACE364EAC71B" otype="Note" vid="019EC722-658D-105A-E933-86ACF9ECF0A1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="23" y="749" width="360" height="78"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant tous les marquages ponctuels de la voirie (place pour personne à mobilité réduite, logos vélos, sas cyclable, zizag bus), millésimés et catégorisés. Elle correspond aux tables MEL_sh_place_pmr, MEL_sh_sas_cyclable, ponctuelle de l&apos;&apos;export Imergis. La distinction entre les entités se ces tables se fait sur le champ fid_type.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="4F602685-73E3-7C4F-6FBB-BEC611977CAA" otype="Note" vid="9C200049-7E0B-C06B-5E84-68B15905B6A0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="17" y="65" width="411" height="36"/>
-<comment>Table contenant tous les marquages horizontaux de la voirie, millésimés et catégorisés. Elle correspond à la table MEL_sh_longitudinale de l&apos;&apos;export Imergis.</comment>
+<bounds x="1464" y="729" width="333" height="49"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant tous les marquages linéaires de la voirie, millésimés et catégorisés. Elle correspond aux tables MEL_sh_longitudinale et MEL_sh_marq_securite de l&apos;&apos;export Imergis. La distinction entre les entités se ces tables se fait sur le champ fid_type.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="570F2F4B-DAF4-895E-4382-74EE2033F05D" otype="Table" vid="532F9FCE-E3F0-32DE-654D-D96EDE355461">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="583" y="113" width="230" height="94"/>
+<bounds x="241" y="346" width="230" height="98"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="5DBEAE05-E080-8E12-9BF1-3C743102CED7" otype="Note" vid="D909EA96-F0D5-D793-E6D5-5E631BB813C6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="708" y="242" width="259" height="48"/>
+<bounds x="512" y="296" width="384" height="36"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
 <comment>Table de relation permettant de regrouper les libellés de la signalétique voirie, horizontale et verticale, par famille.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="7432C842-7948-E3D3-F308-8AED38CFA458" otype="Note" vid="D200D4F8-D4CD-D8C9-43EB-DCE113A0B60F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="3" y="26" width="551" height="40"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>MRD Signalisation horizontale de la voirie</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9018C93C-5DE5-2146-9A73-AC09077BE46F" otype="Table" vid="7270FA9B-F646-EA01-9C8A-806A9E04EE8A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="619" y="495" width="235" height="110"/>
+<bounds x="584" y="501" width="235" height="96"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="93AE7AA0-F2AF-94B4-78CD-E010EB5BF34F" otype="Table" vid="28741B72-6C5F-065A-4C01-AC4B9DFF3720">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="182" y="517" width="261" height="95"/>
+<bounds x="793" y="1224" width="261" height="96"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="A5618CD6-D060-A1F2-2253-FFF9B0EE9FD1" otype="Note" vid="903424BC-1770-FBDE-D33D-8570DC5F4E56">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="583" y="64" width="229" height="46"/>
+<bounds x="241" y="297" width="226" height="50"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
 <comment>Table contenant toutes les familles regroupant les  libellés qualifiant la signalétique horizontale et verticale de la voirie.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="A9161A3B-810C-C6B0-566C-CE80B863FC87" otype="Note" vid="09854D91-C0E4-36B9-C7A6-FD782E232FC1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="618" y="610" width="236" height="47"/>
+<bounds x="827" y="532" width="217" height="49"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
 <comment>Table regroupant tous les libellés permettant de qualifier les objets de la signalétique horizontale et verticale de la voirie.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="AED6DE28-6F39-BD44-81B0-1C62E75EFCA6" otype="Note" vid="0DF2E2C9-B4E0-A2C7-BA41-D37E33E0A360">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1062" y="346" width="248" height="66"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table contenant les tronçons de la base voie. Les tronçons sont les objets de base de la base voie servant à constituer les voies physiques qui elles-mêmes constituent les voies administratives.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BC70AF53-3126-DBC9-4B69-1BEFDEB7D498" otype="Table" vid="48AA9C7B-E785-FA37-D15A-8EC77AF9AA15">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1059" y="419" width="253" height="143"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BD8132D7-BC95-F24A-A439-D8008D4C6F99" otype="Table" vid="8EA9ACC4-02E3-B24D-5536-C7951ADC1B39">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="613" y="808" width="542" height="283"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C281270E-C421-183B-1725-18D85947F53C" otype="Table" vid="2B790BC1-5404-A6A9-1521-D42D9DEC7F5B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="23" y="830" width="534" height="251"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="C860F35E-6BFB-C2DB-CA7A-602E82B9519E" otype="Note" vid="3DFA5C07-BF09-3ACA-AB45-3B2A5F210FA0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="47" y="508" width="460" height="38"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3342388</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Table de relation permettant de catégoriser les libellés entre eux (dans le cadre des couleurs de marquage notamment).</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C94AF9D9-B25A-0331-5DEE-B02A324BC9E2" otype="Table" vid="B7B26E7A-A8BA-D1F8-68EC-7E2CB1FF2BE5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="45" y="550" width="464" height="92"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D31C70C0-0BE6-04F0-D1BF-36EA0FEB5943" otype="Table" vid="38BA68A8-6BA5-9356-A37B-94E9BA269729">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="15" y="106" width="416" height="277"/>
+<bounds x="1380" y="781" width="416" height="304"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DDD9A969-FD20-4A22-5366-8FFA36722FD0" otype="Table" vid="AA6CA62B-3211-462E-3E6D-4C28B76C516C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="583" y="293" width="385" height="110"/>
+<bounds x="510" y="337" width="385" height="114"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E2A50EE5-0497-F5F5-93EE-610F71BE14A9" otype="Note" vid="CA622396-22C3-9054-8FBB-FD7CAC75818B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="3" y="65" width="551" height="186"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Objectif :
+Centraliser et gérer la donnée de la signalisation horizontale du service voirie.
+
+Enjeux :
+L&apos;entretient du marquage horizontal.
+
+Méthode utilisée :
+1. Le service voirie identifie (sur une partie de la MEL) un certain nombre de voies dont il faudrait vérifier l&apos;état des marquages horizontaux ;
+2. Le prestataire Immergis fait le relevé de l&apos;état des marquages sur ces voies et envoie son jeu de données au service voirie ;
+3. Le service voirie répare les marquages quand ils sont identifés comme détériorés par le prestataire ;
+
+Temporalité - 5 ans :
+- 4 ans de d&apos;identification/travaux ;
+- 1 an de vérification ;
+</comment>
 </OView>
 </objectViews>
 <connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0939CD36-0280-0080-A7F5-6895D1DEDCDB" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="2B790BC1-5404-A6A9-1521-D42D9DEC7F5B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="652" y="597"/>
+<point x="402" y="830"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="094192C7-A3BF-23BF-FA11-DF3E733D36F5" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="38BA68A8-6BA5-9356-A37B-94E9BA269729">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="644" y="495"/>
-<point x="401" y="383"/>
+<point x="812" y="597"/>
+<point x="1380" y="842"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0EB28D21-F91E-6E1F-1296-BCD357A66D34" otype="FKIndexAssociation" vid_source="532F9FCE-E3F0-32DE-654D-D96EDE355461" vid_target="AA6CA62B-3211-462E-3E6D-4C28B76C516C">
@@ -75,8 +177,17 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="698" y="207"/>
-<point x="698" y="293"/>
+<point x="471" y="395"/>
+<point x="510" y="395"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="11166362-3BC1-0FE0-DAAF-BCDA3E35F338" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="8EA9ACC4-02E3-B24D-5536-C7951ADC1B39">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="701" y="597"/>
+<point x="701" y="808"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="132A6654-57DE-32A9-E33E-0AEEE34455AB" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="AA6CA62B-3211-462E-3E6D-4C28B76C516C">
@@ -84,8 +195,35 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="736" y="495"/>
-<point x="736" y="403"/>
+<point x="701" y="501"/>
+<point x="701" y="451"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="1C962320-05D1-2A9A-F2E6-21CE32BA6D3F" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="2B790BC1-5404-A6A9-1521-D42D9DEC7F5B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="652" y="597"/>
+<point x="387" y="830"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="1E448FCC-8C24-76F5-1DF7-ADAD14B309E1" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="8EA9ACC4-02E3-B24D-5536-C7951ADC1B39">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="716" y="597"/>
+<point x="716" y="808"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="40A445D6-FAEE-05C0-2ED9-01BF8F998AA4" otype="FKIndexAssociation" vid_source="48AA9C7B-E785-FA37-D15A-8EC77AF9AA15" vid_target="38BA68A8-6BA5-9356-A37B-94E9BA269729">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1250" y="562"/>
+<point x="1449" y="781"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="67084241-6CCE-ECA3-CDF9-E50D3DDC5AD8" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="38BA68A8-6BA5-9356-A37B-94E9BA269729">
@@ -93,8 +231,35 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="644" y="495"/>
-<point x="416" y="383"/>
+<point x="812" y="597"/>
+<point x="1380" y="842"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="8DEF8D79-E9D5-415A-459D-4B1411D2286F" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="B7B26E7A-A8BA-D1F8-68EC-7E2CB1FF2BE5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="584" y="573"/>
+<point x="509" y="573"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A4021061-A352-4E13-0DC7-6176A08246D8" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="8EA9ACC4-02E3-B24D-5536-C7951ADC1B39">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="731" y="597"/>
+<point x="731" y="808"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="BA8CB64E-1D70-677E-0F95-B5B590AE6214" otype="FKIndexAssociation" vid_source="28741B72-6C5F-065A-4C01-AC4B9DFF3720" vid_target="8EA9ACC4-02E3-B24D-5536-C7951ADC1B39">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="923" y="1224"/>
+<point x="923" y="1091"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C56DC695-FC2C-94F7-842A-E0966A438995" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="38BA68A8-6BA5-9356-A37B-94E9BA269729">
@@ -102,8 +267,17 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="644" y="495"/>
-<point x="386" y="383"/>
+<point x="812" y="597"/>
+<point x="1380" y="842"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C966B81D-E038-08E8-EC1E-E271C4DC8185" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="2B790BC1-5404-A6A9-1521-D42D9DEC7F5B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="652" y="597"/>
+<point x="417" y="830"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="DA1517FA-2CC0-93B2-4B8F-7C20663286F4" otype="FKIndexAssociation" vid_source="28741B72-6C5F-065A-4C01-AC4B9DFF3720" vid_target="38BA68A8-6BA5-9356-A37B-94E9BA269729">
@@ -111,8 +285,26 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="321" y="517"/>
-<point x="321" y="383"/>
+<point x="1017" y="1224"/>
+<point x="1380" y="1039"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="E1EC6C42-92DC-D1B0-E8F1-9C5856457620" otype="FKIndexAssociation" vid_source="28741B72-6C5F-065A-4C01-AC4B9DFF3720" vid_target="2B790BC1-5404-A6A9-1521-D42D9DEC7F5B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="827" y="1224"/>
+<point x="541" y="1081"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="FEEA5C01-6798-3AF3-D8C3-DC7E43B3A2B9" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="B7B26E7A-A8BA-D1F8-68EC-7E2CB1FF2BE5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="584" y="558"/>
+<point x="509" y="558"/>
 </points>
 </Connector>
 </connectors>

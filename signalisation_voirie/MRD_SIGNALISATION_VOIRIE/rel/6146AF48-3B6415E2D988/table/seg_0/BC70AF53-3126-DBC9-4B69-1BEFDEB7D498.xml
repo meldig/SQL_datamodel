@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC70AF53-3126-DBC9-4B69-1BEFDEB7D498" name="TA_TRONCON">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:50:13 UTC</createdTime>
+<comment><![CDATA[Table contenant les tronçons de la base voie. Les tronçons sont les objets de base de la base voie servant à constituer les voies physiques qui elles-mêmes constituent les voies administratives.]]></comment>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="geom" id="E99A56EB-EE89-D0C3-49AD-7B8D3B7A0D4D">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de type ligne simple.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="objectid" id="7EBDC05C-D443-6B2D-F91B-8AE225A38645">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_saisie" id="C5E9F3DA-943F-C867-2E65-88EAD56504C5">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de saisie du tronçon (par défaut la date du jour).]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_modification" id="ED28DDD1-F09B-8C9B-67BF-60BC079C8EFC">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dernière date de modification du tronçon (par défaut la date du jour).]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_saisie" id="D2B0068D-FAD3-14E3-0494-E304334379C6">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant créé un tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_modification" id="7398ED5F-B210-8D64-8BB2-05875A5B9C97">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant modifié un tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_voie_physique" id="E7CC04A6-5A19-2AEE-AA0A-AAF330FA4F71">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE_PHYSIQUE permettant d''associer un ou plusieurs tronçons à une et une seule voie physique.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="409860ED-7606-1F35-864A-FBF5BC0AFB54" name="TA_TRONCON_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EBDC05C-D443-6B2D-F91B-8AE225A38645"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
