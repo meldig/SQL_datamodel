@@ -92,15 +92,16 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="AED6DE28-6F39-BD44-81B0-1C62E75EFCA6" otype="Note" vid="0DF2E2C9-B4E0-A2C7-BA41-D37E33E0A360">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1062" y="346" width="248" height="66"/>
+<bounds x="1062" y="320" width="248" height="92"/>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-3342388</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
-<comment>Table contenant les tronçons de la base voie. Les tronçons sont les objets de base de la base voie servant à constituer les voies physiques qui elles-mêmes constituent les voies administratives.</comment>
+<comment>Table contenant, entre autre, les tronçons de la base voie.
+Cette table définit le type de &quot;propriété&quot; d&apos;une voie et permet de savoir à qui revient la gestion de la voirie pour la maintenance, ou tout autre type d&apos;intervention.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BC70AF53-3126-DBC9-4B69-1BEFDEB7D498" otype="Table" vid="48AA9C7B-E785-FA37-D15A-8EC77AF9AA15">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1059" y="419" width="253" height="143"/>
+<bounds x="1059" y="419" width="253" height="222"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BD8132D7-BC95-F24A-A439-D8008D4C6F99" otype="Table" vid="8EA9ACC4-02E3-B24D-5536-C7951ADC1B39">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -222,8 +223,8 @@ Temporalité - 5 ans :
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="1250" y="562"/>
-<point x="1449" y="781"/>
+<point x="1296" y="641"/>
+<point x="1436" y="781"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="67084241-6CCE-ECA3-CDF9-E50D3DDC5AD8" otype="FKIndexAssociation" vid_source="7270FA9B-F646-EA01-9C8A-806A9E04EE8A" vid_target="38BA68A8-6BA5-9356-A37B-94E9BA269729">
