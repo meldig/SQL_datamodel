@@ -32,6 +32,32 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id_source" id="5CC2C5D7-00AA-A518-8D39-A666C1FF0374">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-04-18 08:09:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant des tables sources. Exemple : TA_SIGNALISATION_MARQUAGE_LINEAIRE.id_source = TEMP_SIGNALISATION_MEL_SH_LONGITUDINALE.id_sh_longitudinale.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="remarque" id="53A95E32-30DF-AC62-710A-D67B750147B1">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-04-18 08:09:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Remarque des agents d''Immergis ou de la MEL. Ce champ est à utiliser pour préciser certaines informations que l''on ne peut pas mettre dans les autres champs ou pour poser des questions.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="largeur" id="A2BE0F9F-C94B-5EB2-A25B-106C0C1BCEF3">
 <createdBy>bjacq</createdBy>
 <createdTime>2023-02-22 18:01:06 UTC</createdTime>
@@ -171,6 +197,19 @@
 <createdTime>2023-03-10 07:26:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SIGNALISATION_LIBELLE permettant de faire la distinction entre les différents types de marquages au sol.]]></commentInRDBMS>
 <ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_unite_largeur" id="55BBB846-C2A3-F746-F09C-951537756E87">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-04-18 08:09:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SIGNALISATION_LIBELLE permmettant de connaître l''unité de largeur utilisée pour mesurer la largeur de chaque entité.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

@@ -32,6 +32,19 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id_source" id="3DC31BED-44CB-434A-94E1-B490955344DA">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-04-18 08:07:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant des tables sources. Exemple : TA_SIGNALISATION_MARQUAGE_SURFACIQUE.id_source = TEMP_SIGNALISATION_MEL_SH_SURF_MARQUE.id_ilot_marque.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="surface" id="F650333A-764A-16A3-7C0D-6493E55B91F2">
 <createdBy>bjacq</createdBy>
 <createdTime>2023-03-10 08:53:48 UTC</createdTime>
@@ -78,6 +91,21 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_modification" id="44C143DE-3256-6DED-74EF-B8D1C45BB9C3">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 08:53:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIRIE_AGENT permettant d''associer à chaque marquage le pnom de l''agent l''ayant modifié en dernier.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA8CB64E-1D70-677E-0F95-B5B590AE6214" referredColumn="DDBF5431-4723-0CD6-871F-B42D795AF51E"/>
+</associations>
 </Column>
 <Column name="fid_etat" id="CE0E8057-A2FD-4D41-D2C7-73F262044BB4">
 <createdBy>bjacq</createdBy>
@@ -136,19 +164,19 @@
 <colAssociation fkAssociation="11166362-3BC1-0FE0-DAAF-BCDA3E35F338" referredColumn="0F99529D-5A60-3780-8436-1ADBBD840740"/>
 </associations>
 </Column>
-<Column name="fid_pnom_modification" id="44C143DE-3256-6DED-74EF-B8D1C45BB9C3">
+<Column name="fid_troncon" id="647663B4-0D5D-B989-3DB6-FD4494F790E4">
 <createdBy>bjacq</createdBy>
-<createdTime>2023-03-10 08:53:48 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIRIE_AGENT permettant d''associer à chaque marquage le pnom de l''agent l''ayant modifié en dernier.]]></commentInRDBMS>
+<createdTime>2023-04-18 08:07:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table SIREO_LEC.OUT_DOMANIALITE permettant d''associer un marquage à un tronçon de voirie - ancien champ num_troncon.]]></commentInRDBMS>
 <ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="BA8CB64E-1D70-677E-0F95-B5B590AE6214" referredColumn="DDBF5431-4723-0CD6-871F-B42D795AF51E"/>
+<colAssociation fkAssociation="38183419-2EC7-7D6C-5AB7-D60B88F661A7" referredColumn="7EBDC05C-D443-6B2D-F91B-8AE225A38645"/>
 </associations>
 </Column>
 </columns>
@@ -202,6 +230,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="44C143DE-3256-6DED-74EF-B8D1C45BB9C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6135300E-FAAE-FC23-6803-2854E87AA840" name="TA_SIGNALISATION_MARQUAGE_SURFACIQUE_FID_TRONCON_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-04-18 08:11:23 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="647663B4-0D5D-B989-3DB6-FD4494F790E4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
