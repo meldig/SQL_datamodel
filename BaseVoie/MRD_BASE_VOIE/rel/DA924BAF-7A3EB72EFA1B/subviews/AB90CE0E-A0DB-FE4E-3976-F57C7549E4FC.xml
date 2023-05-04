@@ -26,6 +26,7 @@
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -43,6 +44,7 @@ Ancienne table : VOIEVOI</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -58,6 +60,7 @@ Ancienne table : VOIEVOI</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -81,6 +84,7 @@ Ancienne table : VOIEVOI</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -103,6 +107,7 @@ Ancienne table : ILTATRC</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -120,6 +125,7 @@ Ancienne table : ILTASIT</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -135,6 +141,7 @@ Ancienne table : ILTASIT</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -160,6 +167,7 @@ Ancienne table : TPEVOIE</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -187,6 +195,7 @@ Ancienne table : TPEVOIE</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -205,6 +214,7 @@ Ancienne table : ILTASEU</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -222,6 +232,7 @@ Ancienne table : VOIECVT</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -249,6 +260,7 @@ Exemple :
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -268,6 +280,7 @@ Exemple :
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -283,6 +296,7 @@ Exemple :
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -314,6 +328,7 @@ Exemple :
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -329,6 +344,7 @@ Exemple :
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -464,6 +480,11 @@ Exemple :
 <point x="844" y="666"/>
 <point x="844" y="1147"/>
 </points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6FE37601-C174-29EA-7D9D-9AF126949E2C" otype="FKIndexAssociation" vid_source="83951D6C-D135-C8FB-17B7-D06CA4AE19FE" vid_target="11037EE8-1F71-3BBB-D6F9-33087F04F0C7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="850A0EDD-371F-B4C1-E4C8-53DA4D378007" otype="FKIndexAssociation" vid_source="7EB789C4-77F7-992B-093B-EF0BBFFFA868" vid_target="517380F5-E418-005A-53A4-594CFA4FFE61">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

@@ -32,6 +32,7 @@ Cette table reprend notamment le champ fid_troncon_pere de l&apos;ancienne table
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -49,6 +50,7 @@ Ancienne table : VOIECVT</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -82,6 +84,7 @@ Ancienne table : TPEVOIE</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -112,6 +115,7 @@ Ancienne table : ILTASEU</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -134,6 +138,7 @@ Ancienne table ILTALPU</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -149,6 +154,7 @@ Ancienne table ILTALPU</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -170,6 +176,7 @@ Ancienne table : VOIEVOI</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -192,6 +199,7 @@ Ancienne table : ILTAPTZ</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -210,6 +218,7 @@ Ancienne table : ILTADTN</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -244,6 +253,7 @@ Ancienne table : ILTATRC</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -299,6 +309,7 @@ Ancienne table : TA_RUE</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -321,6 +332,7 @@ Ancienne table ADMIN_LISTE_FAMILLE_POI</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -341,6 +353,7 @@ Ancienne table ADMIN_LISTE_ORIGINE_POI</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -358,6 +371,7 @@ Ancienne table TA_RUEVOIE</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -431,6 +445,7 @@ Ancienne table : ILTASIT</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -715,6 +730,15 @@ Ancienne table : ILTASIT</comment>
 <point x="1429" y="499"/>
 </points>
 </Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6FE37601-C174-29EA-7D9D-9AF126949E2C" otype="FKIndexAssociation" vid_source="21274CBD-820B-3DA4-F080-C1016EDD10DE" vid_target="08AAEB08-BC93-1BAE-24C6-9028DC8C4321">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="282" y="320"/>
+<point x="1053" y="910"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="735C6C76-C56F-AF24-ECEC-9B35B4112319" otype="FKIndexAssociation" vid_source="1AD616DA-681C-D84D-8868-A4D08FE901F7" vid_target="CDD2E283-F8E4-2AAD-4F80-D21CA1A9B9BC">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
@@ -974,15 +998,6 @@ Ancienne table : ILTASIT</comment>
 <points>
 <point x="240" y="170"/>
 <point x="80" y="170"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F39F7569-F47F-F04C-A07C-791E7AC67A32" otype="FKIndexAssociation" vid_source="21274CBD-820B-3DA4-F080-C1016EDD10DE" vid_target="92598EB3-2B7D-1342-86A8-67EBDE8EA542">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="130" y="210"/>
-<point x="130" y="160"/>
 </points>
 </Connector>
 </connectors>

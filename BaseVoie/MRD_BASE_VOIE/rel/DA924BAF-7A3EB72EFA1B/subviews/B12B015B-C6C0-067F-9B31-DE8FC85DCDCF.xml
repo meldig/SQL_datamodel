@@ -32,6 +32,7 @@ Ancienne table : VOIEVOI</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -50,6 +51,7 @@ Ancienne table : ILTATRC</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -65,6 +67,7 @@ Ancienne table : ILTATRC</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -88,6 +91,7 @@ Ancienne table : ILTATRC</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -103,6 +107,7 @@ Ancienne table : ILTATRC</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -120,6 +125,7 @@ Ancienne table : TPEVOIE</comment>
 <FontObject>
 <foType>Titre</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -163,6 +169,11 @@ Ancienne table : TPEVOIE</comment>
 <point x="438" y="228"/>
 <point x="438" y="307"/>
 </points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6FE37601-C174-29EA-7D9D-9AF126949E2C" otype="FKIndexAssociation" vid_source="CFC80489-1931-88B1-9CA4-9AEEC4513D1C" vid_target="EE3201BD-FE29-296E-5F7D-49BC10EFFD13">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="8785F9F4-F643-29C2-CC04-EE89A5DA1B68" otype="FKIndexAssociation" vid_source="4403D6BF-2740-18EB-36AE-E6606FDB6621" vid_target="41AF2287-1F12-C311-44AB-B5F6934535E1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
