@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8545838B-5C6E-3139-826E-D4FA6428DE91" name="TA_SUIVI_HERONNIERE_SITE">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:24:41 UTC</createdTime>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="C7B8A5BF-D6D9-37D8-668F-71C115027F38">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:30:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table. Mise à jour de la colonne avec une sequence. SEQ_TA_SUIVI_HERONNIERE_SITES_OBJECTID.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM" id="D6D73880-0218-47B0-ABD7-AFA6CD8E1E82">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:30:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom du site.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOM" id="73F5742C-9B35-1A25-59CA-B8915C6374F1">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:31:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie du site. Type polygone]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB109C94-9CD6-9810-CF4A-CA0DD91385A2" name="TA_SUIVI_HERONNIERE_SITE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:30:25 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la table. Mise à jour de la colonne avec une sequence. SEQ_TA_SUIVI_HERONNIERE_SITES_OBJECTID.]]></comment>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7B8A5BF-D6D9-37D8-668F-71C115027F38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

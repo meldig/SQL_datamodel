@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MDR_PROJET_SUIVI_HERONIERRE" id="1790479C-2235-4B26-F983-08953F36048F" version="3.5">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:22:54 UTC</createdTime>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1790479C-2235-4B26-F983-08953F36048F</designId>
+</OSDM_Design>

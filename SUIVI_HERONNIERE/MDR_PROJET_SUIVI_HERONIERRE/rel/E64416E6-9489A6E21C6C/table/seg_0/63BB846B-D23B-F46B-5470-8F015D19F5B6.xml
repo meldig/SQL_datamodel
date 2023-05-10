@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63BB846B-D23B-F46B-5470-8F015D19F5B6" name="TA_SUIVI_HERONNIERE_FAMILLE">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:49:23 UTC</createdTime>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="1EE525A3-7041-1C1D-184E-A0DBD2FB9670">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:51:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_SUIVI_HERONNIERE_FAMILLE. Colonne mise à jour avec la SEQ_TA_SUIVI_HERONNIERE_FAMILLE_OBJECTID.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAMILLE" id="EC1F4BDA-66D3-492C-2F10-215A2684F6E0">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:51:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Famille de libelle caractérisant les données contenues dans la base de donnée de suivi des hérons.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67470238-979C-E0CD-F17A-439D3FC115FC" name="TA_SUIVI_HERONNIERE_FAMILLE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:53:44 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la table TA_SUIVI_HERONNIERE_FAMILLE. Colonne mise à jour avec la SEQ_TA_SUIVI_HERONNIERE_FAMILLE_OBJECTID.]]></comment>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EE525A3-7041-1C1D-184E-A0DBD2FB9670"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
