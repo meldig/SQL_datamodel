@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9F6F26B-E1E9-6CEF-7515-A3740505F1AE" containerWithKeyObject="8DF11F9C-88AD-D32A-CB72-EC9FAA97299E" localFKIndex="FD010097-6FD0-5DDD-D827-A4524E73B231" name="TA_SUIVI_HERONNIERE_OBSERVATION_TERRESTRE_TA_SUIVI_HERONNIERE_FID_OCCUPATION_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F13194E7-8698-7F0C-CD5D-9A728321BDBF" containerWithKeyObject="27627E7A-EECE-8DF3-081A-AE75A9945475" localFKIndex="507656A1-4A9D-BDB8-CADE-092F6EC23276" name="TA_INDIVIDU_TA_SUIVI_HERONNIERE_LIBELLE_FKv2">
 <createdBy>rjault</createdBy>
-<createdTime>2023-05-10 09:29:36 UTC</createdTime>
-<comment><![CDATA[Clé primaire vers la table TA_SUIVI_HERONNIERE_LIBELLE pour connaitre le type d'occupation du nid lors de l'observation.]]></comment>
+<createdTime>2023-05-10 13:55:28 UTC</createdTime>
+<comment><![CDATA[espece aviaire observé]]></comment>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
 <referredTableLongName>TA_SUIVI_HERONNIERE_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

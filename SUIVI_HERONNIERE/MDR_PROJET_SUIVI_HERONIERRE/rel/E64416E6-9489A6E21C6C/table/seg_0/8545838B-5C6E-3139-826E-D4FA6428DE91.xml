@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8545838B-5C6E-3139-826E-D4FA6428DE91" name="TA_SUIVI_HERONNIERE_SITE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8545838B-5C6E-3139-826E-D4FA6428DE91" name="TA_SUIVI_HERONNIERE_LOCALISATION">
 <createdBy>rjault</createdBy>
 <createdTime>2023-05-10 08:24:41 UTC</createdTime>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
@@ -36,7 +36,7 @@
 <Column name="GEOM" id="73F5742C-9B35-1A25-59CA-B8915C6374F1">
 <createdBy>rjault</createdBy>
 <createdTime>2023-05-10 08:31:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Géométrie du site. Type polygone]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Géométrie du site. Type point]]></commentInRDBMS>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,6 +44,21 @@
 <structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_echelle" id="6CB71583-3F6F-D16A-D70B-B6116F90434E">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 13:37:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[arbre, nid...]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3A340E0-3157-E0B2-1FAC-DC0ECD91B011" referredColumn="B64893B2-2594-4CC3-DAA7-2CEB75042ADC"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -57,6 +72,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C7B8A5BF-D6D9-37D8-668F-71C115027F38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E660FDC-4C1A-FC97-B4DB-BAC86C809809" name="TA_SUIVI_HERONNIERE_LOCALISATION_TA_SUIVI_HERONNIERE_LIBELLE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 13:37:20 UTC</createdTime>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CB71583-3F6F-D16A-D70B-B6116F90434E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

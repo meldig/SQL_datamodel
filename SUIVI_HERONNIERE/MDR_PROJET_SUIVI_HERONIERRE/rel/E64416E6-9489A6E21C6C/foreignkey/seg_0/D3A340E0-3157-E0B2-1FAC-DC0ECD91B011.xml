@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8FB7DC5E-84CB-30DD-9CAB-A09637072C15" containerWithKeyObject="8DF11F9C-88AD-D32A-CB72-EC9FAA97299E" localFKIndex="95FC7FC8-106D-2AFD-DC34-04995283CD17" name="TA_SUIVI_HERONNIERE_OBSERVATION_TERRESTRE_TA_SUIVI_HERONNIERE_FID_FIABILITE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D3A340E0-3157-E0B2-1FAC-DC0ECD91B011" containerWithKeyObject="8545838B-5C6E-3139-826E-D4FA6428DE91" localFKIndex="0E660FDC-4C1A-FC97-B4DB-BAC86C809809" name="TA_SUIVI_HERONNIERE_LOCALISATION_TA_SUIVI_HERONNIERE_LIBELLE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2023-05-10 09:31:26 UTC</createdTime>
-<comment><![CDATA[Valeur d'appréciation de l'observation. Clé étrangère vers la table TA_SUIVI_HERONNIERE_LIBELLE.]]></comment>
+<createdTime>2023-05-10 13:37:20 UTC</createdTime>
+<comment><![CDATA[clé étrangère vers TA_LIBELLE, nid, arbre, site....]]></comment>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
 <referredTableLongName>TA_SUIVI_HERONNIERE_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EF2C8A4D-D097-0092-2B9A-1B13960D9A0A" containerWithKeyObject="548DEFDE-07AB-92E5-36D7-8D739D2A2430" localFKIndex="C6D05340-953C-2274-30A3-9A5650DD0A63" name="TA_SUIVI_HERONNIERE_OBSERVATION_DRONE_TA_SUIVI_HERONNIERE_LIBELLE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2790E34F-2A8A-E666-D9D0-E0E0639768B6" containerWithKeyObject="27627E7A-EECE-8DF3-081A-AE75A9945475" localFKIndex="5831BD76-D7D0-BE24-FAE8-3D58156345FB" name="TA_INDIVIDU_TA_SUIVI_HERONNIERE_LIBELLE_FK">
 <createdBy>rjault</createdBy>
-<createdTime>2023-05-10 09:33:00 UTC</createdTime>
-<comment><![CDATA[Clé étrangère vers la table TA_SUIVI_HERONNIERE_LIBELLE pour connaitre l'espece observé.]]></comment>
+<createdTime>2023-05-10 13:55:11 UTC</createdTime>
+<comment><![CDATA[Juvénile, adulte]]></comment>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
 <referredTableLongName>TA_SUIVI_HERONNIERE_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

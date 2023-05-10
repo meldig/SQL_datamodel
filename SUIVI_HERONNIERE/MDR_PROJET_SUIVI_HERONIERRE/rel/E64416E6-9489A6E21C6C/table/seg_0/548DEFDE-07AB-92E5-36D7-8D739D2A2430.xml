@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="548DEFDE-07AB-92E5-36D7-8D739D2A2430" name="TA_SUIVI_HERONNIERE_OBSERVATION_DRONE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="548DEFDE-07AB-92E5-36D7-8D739D2A2430" name="TA_ESPECE_OBSERVATION">
 <createdBy>rjault</createdBy>
 <createdTime>2023-05-10 09:33:00 UTC</createdTime>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
@@ -11,7 +11,7 @@
 <Column name="OBJECTID" id="4FF92752-C36D-8358-64D4-EDB480B5F8D7">
 <createdBy>rjault</createdBy>
 <createdTime>2023-05-10 09:33:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé primaire de la table TA_SUIVI_HERONNIERE_OBSERVATION_TERRESTRE, mise à jour avec la sequence SEQ_TA_SUIVI_HERONNIERE_OBSERVATION_DRONE_OBJECTID]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_SUIVI_HERONNIERE_OBSERVATION_TERRESTRE, mise à jour avec la sequence SEQ_TA_ESPECE_OBSERVATION_OBJECTID]]></commentInRDBMS>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,21 +32,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FID_NID" id="8BBDF4BA-972A-36A1-1420-85BCBDAA502B">
-<createdBy>rjault</createdBy>
-<createdTime>2023-05-10 09:33:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SUIVI_HERONNIERE_NID pour connaitre le nid observé.]]></commentInRDBMS>
-<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="646D5091-9832-4EF9-E1C7-CE20DD5FA2CA" referredColumn="A0A309EA-CB2B-01BE-BA3B-AD83946B9757"/>
-</associations>
-</Column>
 <Column name="FID_OCCUPATION" id="CFD4D2D7-2A6E-A664-C76E-97993F5EDAA6">
 <createdBy>rjault</createdBy>
 <createdTime>2023-05-10 09:33:00 UTC</createdTime>
@@ -62,32 +47,6 @@
 <colAssociation fkAssociation="0F4BD72C-694E-0F6C-E318-314115759132" referredColumn="B64893B2-2594-4CC3-DAA7-2CEB75042ADC"/>
 </associations>
 </Column>
-<Column name="INDIVIDU_JUVENILE" id="22650C98-D673-06C3-2D2B-08C9C4600F47">
-<createdBy>rjault</createdBy>
-<createdTime>2023-05-10 09:33:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nombre d'individu juvénile observé. Par défault valeur à 0.]]></commentInRDBMS>
-<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="INDIVIDU_ADULTE" id="C9FAE6D8-A8F9-68CE-6816-DD9AD66C65F1">
-<createdBy>rjault</createdBy>
-<createdTime>2023-05-10 09:33:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nombre d'individu adulte observé. Par défault valeur à 0.]]></commentInRDBMS>
-<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="FID_ESPECE" id="AED5CF15-609F-6855-6707-5BAD5C85B3CB">
 <createdBy>rjault</createdBy>
 <createdTime>2023-05-10 09:33:00 UTC</createdTime>
@@ -100,7 +59,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="EF2C8A4D-D097-0092-2B9A-1B13960D9A0A" referredColumn="0AF43213-4F9D-BC9D-D112-F0A0BAE3A99B"/>
+<colAssociation fkAssociation="EF2C8A4D-D097-0092-2B9A-1B13960D9A0A" referredColumn="B64893B2-2594-4CC3-DAA7-2CEB75042ADC"/>
 </associations>
 </Column>
 <Column name="FID_FIABILITE" id="81426105-C060-0B43-F888-A34A964BAE0D">
@@ -131,12 +90,40 @@
 <ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="FID_TYPE_OBSERVATION" id="F233F11B-956B-1C5E-DBAA-EC88FD04C208">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 13:30:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère localisaiton de l'observation (DRONE, JUMELLE, TERRESTRE)]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_LOCALISATION" id="518140D1-01F5-F4E4-14A1-02B4B9AEF873">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 13:38:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LOCALISATION pour connaitre l'echelle d'observation (nid, arbre...)]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7F53E2E-99D9-9EA8-F0DA-804493FE74FC" referredColumn="C7B8A5BF-D6D9-37D8-668F-71C115027F38"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F1CFFE42-7A21-0D09-0817-53056774E1E9" name="TA_SUIVI_HERONNIERE_OBSERVATION_DRONE_PK">
+<ind_PK_UK id="F1CFFE42-7A21-0D09-0817-53056774E1E9" name="TA_ESPECE_OBSERVATION_PK">
 <createdBy>rjault</createdBy>
 <createdTime>2023-05-10 09:33:00 UTC</createdTime>
-<comment><![CDATA[Clé primaire de la table TA_SUIVI_HERONNIERE_OBSERVATION_TERRESTRE, mise à jour avec la sequence SEQ_TA_SUIVI_HERONNIERE_OBSERVATION_DRONE_OBJECTID]]></comment>
+<comment><![CDATA[Clé primaire de la table TA_SUIVI_HERONNIERE_OBSERVATION_TERRESTRE, mise à jour avec la sequence SEQ_TA_ESPECE_OBSERVATION_OBJECTID]]></comment>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
@@ -145,17 +132,7 @@
 <colUsage columnID="4FF92752-C36D-8358-64D4-EDB480B5F8D7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F4547154-03D0-3729-138A-066FFC6B6540" name="TA_SUIVI_HERONNIERE_OBSERVATION_TERRESTREv1_TA_SUIVI_HERONNIERE_NID_FK">
-<createdBy>rjault</createdBy>
-<createdTime>2023-05-10 09:33:00 UTC</createdTime>
-<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="8BBDF4BA-972A-36A1-1420-85BCBDAA502B"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="C6D05340-953C-2274-30A3-9A5650DD0A63" name="TA_SUIVI_HERONNIERE_OBSERVATION_TERRESTREv1_TA_SUIVI_HERONNIERE_ESPECE_FK">
+<ind_PK_UK id="C6D05340-953C-2274-30A3-9A5650DD0A63" name="TA_SUIVI_HERONNIERE_OBSERVATION_DRONE_TA_SUIVI_HERONNIERE_LIBELLE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2023-05-10 09:33:00 UTC</createdTime>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
@@ -183,6 +160,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="81426105-C060-0B43-F888-A34A964BAE0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52FDD36D-6B16-2E71-4EA4-B059C88A03C7" name="TA_OBSERVATION_TA_SUIVI_HERONNIERE_LOCALISATION_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 13:40:15 UTC</createdTime>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="518140D1-01F5-F4E4-14A1-02B4B9AEF873"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
