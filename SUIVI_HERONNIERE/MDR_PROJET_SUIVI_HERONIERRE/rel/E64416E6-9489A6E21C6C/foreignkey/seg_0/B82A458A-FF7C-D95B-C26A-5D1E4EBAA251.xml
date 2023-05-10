@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B82A458A-FF7C-D95B-C26A-5D1E4EBAA251" containerWithKeyObject="8DF11F9C-88AD-D32A-CB72-EC9FAA97299E" localFKIndex="8A10001C-75F1-3F79-5645-09FC216D37FD" name="TA_SUIVI_HERONNIERE_OBSERVATION_TERRESTRE_TA_SUIVI_HERONNIERE_ESPECE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 09:29:00 UTC</createdTime>
+<comment><![CDATA[Clé étrangère vers la table TA_SUIVI_HERONNIERE_ESPECE pour connaitre l'espece observé.]]></comment>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<referredTableLongName>TA_SUIVI_HERONNIERE_ESPECE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3ECA2C2B-ADEF-B876-FF29-44F1D61115D7</referredTableID>
+<keyObject>4A210E99-AE44-A8E4-8DAB-41DC1A5044AD</keyObject>
+<referredKeyID>4A210E99-AE44-A8E4-8DAB-41DC1A5044AD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>OBJECTID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

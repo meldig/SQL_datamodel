@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D183AAF2-5B36-3898-3446-9DC4F6426736" name="TA_SUIVI_HERONNIERE_LIBELLE">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:43:02 UTC</createdTime>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="B64893B2-2594-4CC3-DAA7-2CEB75042ADC">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:46:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table TA_SUIVI_HERONNIERE_LIBELLE. Mise à jour avec la sequence SEQ_TA_SUIVI_HERONNIERE_LIBELLE_OBJECTID.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LIBELLE" id="291B97B4-4B36-79FB-6842-F060CC8AFEEB">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:46:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libelle caractérisant une information dans le projet des suivis des hérons.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_FAMILLE" id="8D42461C-2170-A6EB-4390-5EC19A8B1BEB">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SUIVI_HERONNIERE_FAMILLE. Pour connaitre la famille du libelle]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40D35A90-E485-DAE3-B6D4-9D07C19F5F24" referredColumn="1EE525A3-7041-1C1D-184E-A0DBD2FB9670"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4B43FCC-7419-7640-FFB1-8B1470E6598F" name="TA_SUIVI_HERONNIERE_LIBELLE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:46:35 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la table TA_SUIVI_HERONNIERE_LIBELLE. Mise à jour avec la sequence SEQ_TA_SUIVI_HERONNIERE_LIBELLE_OBJECTID.]]></comment>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B64893B2-2594-4CC3-DAA7-2CEB75042ADC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4875946-5670-D82C-904E-5D022A3DC30B" name="TA_SUIVI_HERONNIERE_LIBELLE_FID_FAMILLE_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-10 08:54:04 UTC</createdTime>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D42461C-2170-A6EB-4390-5EC19A8B1BEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
