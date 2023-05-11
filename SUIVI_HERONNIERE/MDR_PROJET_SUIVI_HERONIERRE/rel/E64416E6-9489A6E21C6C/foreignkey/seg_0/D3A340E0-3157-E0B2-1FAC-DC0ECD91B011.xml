@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D3A340E0-3157-E0B2-1FAC-DC0ECD91B011" containerWithKeyObject="8545838B-5C6E-3139-826E-D4FA6428DE91" localFKIndex="0E660FDC-4C1A-FC97-B4DB-BAC86C809809" name="TA_SUIVI_HERONNIERE_LOCALISATION_TA_SUIVI_HERONNIERE_LIBELLE_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D3A340E0-3157-E0B2-1FAC-DC0ECD91B011" containerWithKeyObject="8545838B-5C6E-3139-826E-D4FA6428DE91" localFKIndex="0E660FDC-4C1A-FC97-B4DB-BAC86C809809" name="TA_ESPECE_LOCALISATION_FID_ECHELLE_FK">
 <createdBy>rjault</createdBy>
 <createdTime>2023-05-10 13:37:20 UTC</createdTime>
-<comment><![CDATA[clé étrangère vers TA_LIBELLE, nid, arbre, site....]]></comment>
+<comment><![CDATA[Clé étrangère vers la table TA_ESPECE_LIBELLE pour caractériser l'echelle d'observation: Nid, parc...]]></comment>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
-<referredTableLongName>TA_SUIVI_HERONNIERE_LIBELLE</referredTableLongName>
+<referredTableLongName>TA_ESPECE_LIBELLE</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>D183AAF2-5B36-3898-3446-9DC4F6426736</referredTableID>
 <keyObject>F4B43FCC-7419-7640-FFB1-8B1470E6598F</keyObject>
