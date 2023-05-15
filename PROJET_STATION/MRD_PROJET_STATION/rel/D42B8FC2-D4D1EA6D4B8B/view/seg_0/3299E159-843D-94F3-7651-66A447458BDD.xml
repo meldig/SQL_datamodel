@@ -1,0 +1,227 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="3299E159-843D-94F3-7651-66A447458BDD" name="V_CAPTEUR_5G_AGREGEES_QUOTIDIEN">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:33:08 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<ordsAlias>view_3</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE FORCE VIEW G_DALC.V_CAPTEUR_5G_AGREGEES_QUOTIDIEN(
+    OBJECTID,
+    IDENTIFIANT_CAPTEUR,
+    FID_IDENTIFIANT_CAPTEUR,
+    GEOM,
+    DATE_MESURE,
+    POWER_MINIMUM,
+    POWER_MAXIMUM,
+    POWER_MOYENNE,
+    TEMPERATURE_INTERNE_MINIMUM,
+    TEMPERATURE_INTERNE_MAXIMUM,
+    TEMPERATURE_INTERNE_MOYENNE,
+    HUMIDITE_INTERNE_MINIMUM,
+    HUMIDITE_INTERNE_MAXIMUM,
+    HUMIDITE_INTERNE_MOYENNE,
+    CONSTRAINT "V_CAPTEUR_5G_AGREGEES_QUOTIDIEN_PK" PRIMARY KEY ("OBJECTID") DISABLE) AS
+        SELECT
+            a.OBJECTID AS OBJECTID,
+            b.IDENTIFIANT_CAPTEUR AS IDENTIFIANT_CAPTEUR,
+            b.OBJECTID AS FID_IDENTIFIANT_CAPTEUR, 
+            TO_DATE(a.DATE_MESURE, 'YYYY/MM/DD') AS DATE_MESURE,
+            a.POWER_MINIMUM,
+            a.POWER_MAXIMUM,
+            a.POWER_MOYENNE,
+            a.TEMPERATURE_INTERNE_MINIMUM,
+            a.TEMPERATURE_INTERNE_MAXIMUM,
+            a.TEMPERATURE_INTERNE_MOYENNE,
+            a.HUMIDITE_INTERNE_MINIMUM,
+            a.HUMIDITE_INTERNE_MAXIMUM,
+            a.HUMIDITE_INTERNE_MOYENNE,
+            b.GEOM AS GEOM
+        FROM
+            G_DALC.TA_CAPTEUR_5G_COLLECTE_AGREGEES_QUOTIDIEN a
+            INNER JOIN G_DALC.TA_CAPTEUR_5G b ON a.FID_IDENTIFIANT_CAPTEUR = b.OBJECTID
+;
+]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="OBJECTID" id="EC388F33-BB78-0D9E-4B67-6BAF32977089">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 13:10:26 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>OBJECTID</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>OBJECTID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="IDENTIFIANT_CAPTEUR" id="4C63A7C4-24F6-5F1E-8904-F818CF0709ED">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>IDENTIFIANT_CAPTEUR</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>IDENTIFIANT_CAPTEUR</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FID_IDENTIFIANT_CAPTEUR" id="FDCFE31C-FC64-0292-BE51-B9FF1C1667D1">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>FID_IDENTIFIANT_CAPTEUR</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>FID_IDENTIFIANT_CAPTEUR</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DATE_MESURE" id="B7322A0E-5421-22FA-A7B8-E518DD856C16">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DATE_MESURE</alias>
+<dataType>DATE</dataType>
+<headerAlias>DATE_MESURE</headerAlias>
+<expression>TO_DATE(a.DATE_MESURE,&apos;YYYY/MM/DD&apos;)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="POWER_MINIMUM" id="22583080-C286-6AAF-F674-5AEF24AE8F8F">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>POWER_MINIMUM</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="POWER_MAXIMUM" id="D9DD71B0-3161-AD5E-0E0A-2C64B5DA617B">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>POWER_MAXIMUM</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="POWER_MOYENNE" id="4546644B-54D8-636D-0BCB-C1E8CA78AD85">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>POWER_MOYENNE</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TEMPERATURE_INTERNE_MINIMUM" id="290F75B8-A8EE-0C79-0A21-DC7533FCB2A5">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>TEMPERATURE_INTERNE_MINIMUM</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TEMPERATURE_INTERNE_MAXIMUM" id="DEE0A31E-C623-1FA3-C0DB-5AB6A8E2EE26">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>TEMPERATURE_INTERNE_MAXIMUM</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TEMPERATURE_INTERNE_MOYENNE" id="8D18B629-D103-6031-40BA-4C11CB4E7F34">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>TEMPERATURE_INTERNE_MOYENNE</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="HUMIDITE_INTERNE_MINIMUM" id="7D5501B7-05C8-714B-CF10-347A8CE55721">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>HUMIDITE_INTERNE_MINIMUM</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="HUMIDITE_INTERNE_MAXIMUM" id="0F1B2BF3-5D0A-1490-FC4B-19D78AE43A18">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>HUMIDITE_INTERNE_MAXIMUM</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="HUMIDITE_INTERNE_MOYENNE" id="397631E1-BA1F-BAEC-73DE-19D7E371CA79">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>HUMIDITE_INTERNE_MOYENNE</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="GEOM" id="D8D6F006-C56E-51E2-4193-68F663F36AD9">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 10:34:28 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>GEOM</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>GEOM</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="01C6482A-468A-E6B8-67CC-572BD544EE71">
+<columnName>FID_IDENTIFIANT_CAPTEUR</columnName>
+<tableName>TA_CAPTEUR_5G_COLLECTE_AGREGEES_QUOTIDIEN</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="596A1AF6-1687-56FB-59CA-311BB9682C1B">
+<columnName>OBJECTID</columnName>
+<tableName>TA_CAPTEUR_5G</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="837B6903-9D21-7EED-C2CF-917B06F2B898">
+<columnName>POWER_MOYENNE</columnName>
+<tableName>TA_CAPTEUR_5G_COLLECTE_AGREGEES_QUOTIDIEN</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9657AE7E-6B80-D275-F0CE-A94CEBFF5156">
+<columnName>IDENTIFIANT_CAPTEUR</columnName>
+<tableName>TA_CAPTEUR_5G</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="88C6D430-9581-ADE6-C8BE-5AD664A9E0E4">
+<columnName>POWER_MINIMUM</columnName>
+<tableName>TA_CAPTEUR_5G_COLLECTE_AGREGEES_QUOTIDIEN</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A8FBD575-1667-E2DF-0C28-63DF608CB7CF">
+<columnName>GEOM</columnName>
+<tableName>TA_CAPTEUR_5G</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="53480811-A625-7998-5CF5-5906950B3B25">
+<columnName>POWER_MAXIMUM</columnName>
+<tableName>TA_CAPTEUR_5G_COLLECTE_AGREGEES_QUOTIDIEN</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D75C9168-4669-1E36-5C06-71363D2C1739">
+<columnName>OBJECTID</columnName>
+<tableName>TA_CAPTEUR_5G_COLLECTE_AGREGEES_QUOTIDIEN</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

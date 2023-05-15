@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="278E2007-9FFC-7865-ABAB-E8DDC02813DD" name="TA_CAPTEUR_5G_COLLECTE">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:27:41 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="769C1258-248C-F9EA-21AF-65A4B3E4A2C0">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:33:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table, mise à jour par la sequence SEQ_TA_CAPTEUR_5G_COLLECTE et le declencheur B_IXX_TA_COLLECTE_PK.]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_IDENTIFIANT_CAPTEUR" id="B707B796-B9C6-7CBF-6D0A-A570CEFFAB62">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:33:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du capteur. Clé étrangère vers la table TA_CAPTEUR_5G]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AAD4C94-A1D4-7548-70FE-EF2514FA2E96" referredColumn="596A1AF6-1687-56FB-59CA-311BB9682C1B"/>
+</associations>
+</Column>
+<Column name="IDENTIFIANT_CAPTEUR" id="943C2862-3FB3-25B9-D8DD-6D973DC60622">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-13 07:38:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant du capteur
+]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BATTERYVOLTAGE" id="8598D8C2-5E65-EF67-F2B8-3278882D7AA4">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:33:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Voltage de la batterie]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNALTEMPERATURE" id="B7E38AB5-6250-8514-F878-84F750672EA5">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:33:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperateur interne]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNALHUMIDITY" id="0FEF22F8-70EE-C010-19F9-7F6F9B08D3D4">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:33:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Humidite interne]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_MESURE" id="96AAA984-0FB0-C0FA-AF97-4788CEA5A544">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:33:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de la mesure (conversion timespamp en une heure)]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POWER" id="10146A38-AF2F-61E1-F64E-1B1A60F35798">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:33:39 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ERROR" id="0317DAFB-B112-BBCA-054A-CE648C5A1CDE">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:33:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code erreur]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8348CCB1-EC0F-75CB-DCDC-34F3397D1F1C" name="TA_COLLECTE_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:36:30 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la table, mise à jour par la sequence SEQ_TA_COLLECTE et le declencheur B_IXX_TA_COLLECTE_PK.]]></comment>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="769C1258-248C-F9EA-21AF-65A4B3E4A2C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5D3C7C2-BA88-71F3-D60D-3BE80E198B66" name="TA_CAPTEUR_5G_COLLECTE_FID_IDENTIFIANT_CAPTEUR_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-28 13:54:37 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B707B796-B9C6-7CBF-6D0A-A570CEFFAB62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

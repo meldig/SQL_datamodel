@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94EBC2EA-B948-4D59-A2D0-0DDD39230D9F" name="TA_CAPTEUR_5G">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:36:37 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="596A1AF6-1687-56FB-59CA-311BB9682C1B">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-28 13:52:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table mise à jour avec la sequence SEQ_TA_CAPTEUR_5G et le trigger B_IXX_TA_CAPTEUR_5G_PK.]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDENTIFIANT_CAPTEUR" id="9657AE7E-6B80-D275-F0CE-A94CEBFF5156">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:37:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table, identifiant du capteur]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FID_GEOM" id="597F1ED8-9D55-C75A-1E13-BB5C86939DB8">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:37:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_CAPTEUR_LOCALISATION pour connaitre la position des capteur.]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_DE_DEBUT" id="BDD3A385-0BA0-55A5-7AC5-9E63ECB2E92B">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-28 07:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[DAte de pose du capteur]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_DE_FIN" id="FC32FFC1-4CDA-50A3-C6C2-8AA6ADF90ADF">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-28 07:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de depose du capteur.]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOM" id="A8FBD575-1667-E2DF-0C28-63DF608CB7CF">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 13:56:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de la table. Location du capteur -  type point ]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE_CAPTEUR" id="71FC07E6-C6B1-9B37-3997-7F371B25B0C5">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-15 06:47:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information sur le type de capteur, valeur par défaut : capteur 5g]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF52F9BA-6FB9-F09B-0C0B-25D91C942C06" name="TA_CAPTEUR_LOCALISATION_PKv3">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:37:32 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="596A1AF6-1687-56FB-59CA-311BB9682C1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="7680DCDB-413D-1406-746E-B73FC348E4BA" name="V_CAPTEUR_5G">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 14:46:00 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<ordsAlias>view_7</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE FORCE VIEW G_DALC.V_CAPTEUR_5G(
+        OBJECTID,
+        IDENTIFIANT_CAPTEUR,
+        DATE_DE_DEBUT,
+        DATE_DE_FIN,
+        GEOM,
+        CONSTRAINT "V_CAPTEUR_5G_PK" PRIMARY KEY ("OBJECTID") DISABLE) AS
+SELECT
+        OBJECTID AS OBJECTID,
+        IDENTIFIANT_CAPTEUR AS IDENTIFIANT_CAPTEUR,
+        DATE_DE_DEBUT AS DATE_DE_DEBUT,
+        DATE_DE_FIN AS DATE_DE_FIN,
+        GEOM AS GEOM
+FROM
+	G_DALC.TA_CAPTEUR_5G a
+;
+]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="OBJECTID" id="128F64F1-6E51-72C2-6955-39C2151C03C4">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 14:46:10 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>OBJECTID</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>OBJECTID</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="IDENTIFIANT_CAPTEUR" id="5AF96E18-16E5-F0FA-E258-400E9060234B">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 14:46:10 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>IDENTIFIANT_CAPTEUR</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>IDENTIFIANT_CAPTEUR</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DATE_DE_DEBUT" id="F29224A9-5729-552C-734F-5C3883F44C5F">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 14:46:10 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DATE_DE_DEBUT</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>DATE_DE_DEBUT</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DATE_DE_FIN" id="1428D52F-2288-BB07-2C32-5730797F98F8">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 14:46:10 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DATE_DE_FIN</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>DATE_DE_FIN</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="GEOM" id="26AD8314-41E5-7162-2167-B6B8EAED91BE">
+<createdBy>rjault</createdBy>
+<createdTime>2023-03-06 14:46:10 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STATION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>GEOM</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>GEOM</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>
