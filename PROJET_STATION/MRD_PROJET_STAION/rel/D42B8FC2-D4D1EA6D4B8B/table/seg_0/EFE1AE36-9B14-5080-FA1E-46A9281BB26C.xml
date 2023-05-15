@@ -1,0 +1,206 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EFE1AE36-9B14-5080-FA1E-46A9281BB26C" name="TA_COLLECTE_DONNEES_AGREGEES">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:37:51 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="D75C9168-4669-1E36-5C06-71363D2C1739">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la table aggrementé par la sequence SEQ_TA_COLLECTE_DONNEES_AGREGEES et le déclencheur B_IXX_TA_COLLECTE_DONNEES_AGREGEES_PK.]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOM" id="76EC904C-319D-F9DF-3C8E-C4EEA3CF7BDE">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie des station - type point]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATION" id="01C6482A-468A-E6B8-67CC-572BD544EE71">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la station]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D29EB99-28AA-06E7-BD65-CD7B763EB094" referredColumn="9657AE7E-6B80-D275-F0CE-A94CEBFF5156"/>
+</associations>
+</Column>
+<Column name="JOUR_DES_MESURES" id="D85F2AEE-2B68-0CAB-1374-1F6F8361F47E">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Jour de prise des mesures]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POWER_MINIMUM" id="88C6D430-9581-ADE6-C8BE-5AD664A9E0E4">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Power minimum relevé par le capteur dans la journée]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,8,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POWER_MAXIMUM" id="53480811-A625-7998-5CF5-5906950B3B25">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Power maximum relevé par le capteur dans la journée]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,8,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POWER_MOYENNE" id="837B6903-9D21-7EED-C2CF-917B06F2B898">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Power moyen relevé par le capteur dans la journée]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,8,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNAL_TEMPERATURE_MINIMUM" id="CB40FEFD-4DD7-0D82-F723-3C462ECE3003">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperature minimum relevée par le capteur dans la journée]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNAL_TEMPERATURE_MAXIMUM" id="E38747BE-0C18-0061-7ADC-A97E081B76DD">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperature maximum relevée par le capteur dans la journée]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNAL_TEMPERATURE_MOYENNE" id="ECBFE507-F084-7D85-71B2-9DA8841DF948">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperature moyenne relevée par le capteur dans la journée]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNAL_HUMIDITY_MINIMUM" id="A93A7D0E-7DDA-BC56-BD15-26CD62C5061E">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Humidité interne minimum relevée par le capteur dans la journée]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNAL_HUMIDITY_MAXIMUM" id="4EB6C3A7-38F0-FB00-9286-B3ACD5FC0B6C">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Humidité interne maximum relevée par le capteur dans la journée]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNAL_HUMIDITY_MOYENNE" id="6C0A8EB8-9778-058D-4CAD-0E7F2F2244BF">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Humidité interne moyenne relevée par le capteur dans la journée]]></commentInRDBMS>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84EFD375-3C57-C975-EBF9-B745606F96F2" name="TA_COLLECTE_DONNEES_AGREGEES_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:47:55 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D75C9168-4669-1E36-5C06-71363D2C1739"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="899FF872-4C52-4E41-9863-862055FD276B" name="TA_COLLECTE_DONNEES_AGREGEES_STATION_FK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:52:30 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01C6482A-468A-E6B8-67CC-572BD544EE71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

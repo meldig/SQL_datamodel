@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MRD_PROJET_STATION" id="F5D325DE-81AF-8785-A74E-08A65C641175" version="3.5">
+<createdBy>rjault</createdBy>
+<createdTime>2023-02-27 14:27:16 UTC</createdTime>
+<ownerDesignName>MRD_PROJET_STAION</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>F5D325DE-81AF-8785-A74E-08A65C641175</designId>
+</OSDM_Design>
