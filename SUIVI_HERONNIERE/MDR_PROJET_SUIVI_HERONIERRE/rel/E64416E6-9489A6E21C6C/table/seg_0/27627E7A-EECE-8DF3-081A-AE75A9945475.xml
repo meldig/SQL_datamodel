@@ -13,8 +13,11 @@
 <createdTime>2023-05-10 13:51:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé primaire de la table TA_ESPECE_INDIVIDU mise à jour avec la séquence SEQ_TA_ESPECE_INDIVIDU_OBJECTID.]]></commentInRDBMS>
 <ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FID_AGE" id="B759E16B-7141-21B8-3252-FAAF2F520EF8">

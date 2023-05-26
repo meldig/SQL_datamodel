@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5A7D642-635E-6F9C-6FE9-F0BE86B88DFC" name="TA_ESPECE_PROJET">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-26 08:25:57 UTC</createdTime>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="1363E580-EE9C-3388-2F3E-1C1D4C141DD1">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-26 08:28:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire de la TA_ESPECE_PROJET mise à jour grâce à la séquence SEQ_TA_ESPECE_PROJET_OBJECTID.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROJET" id="E5E59EA6-89D7-B55A-3882-D07A467F1236">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-26 08:28:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom du projet.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_DEBUT" id="B01CDBDF-F99F-D4C3-11F4-317B89BB6E8E">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-26 08:30:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date d'initialisation du projet.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_FIN" id="AA574DD4-D18B-6C78-D5BC-8CC80E73E609">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-26 08:30:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de fin du projet]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTAIRE" id="EAB7A7DC-E328-9F8C-589D-C24562F9C92B">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-26 08:30:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Observation à faire sur le projet.]]></commentInRDBMS>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="266D24ED-3510-992A-42DE-D45FDAF3770F" name="TA_ESPECE_PROJET_OBJECTID_PK">
+<createdBy>rjault</createdBy>
+<createdTime>2023-05-26 08:33:45 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la table TA_ESPECE_PROJET. Mise à jour avec la séquence TA_ESPECE_PROJET_OBJECTID]]></comment>
+<ownerDesignName>MDR_PROJET_SUIVI_HERONIERRE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1363E580-EE9C-3388-2F3E-1C1D4C141DD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
