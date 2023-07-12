@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1E448FCC-8C24-76F5-1DF7-ADAD14B309E1" containerWithKeyObject="BD8132D7-BC95-F24A-A439-D8008D4C6F99" localFKIndex="9E3592FC-C4E2-8C88-EDB8-2C4C909D9A69" name="TA_SIGNALISATION_MARQUAGE_SURFACIQUE_FID_MODULATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 08:53:48 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<referredTableLongName>TA_SIGNALISATION_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9018C93C-5DE5-2146-9A73-AC09077BE46F</referredTableID>
+<keyObject>F929339D-60B4-A1AC-972C-E4B917D9E57A</keyObject>
+<referredKeyID>F929339D-60B4-A1AC-972C-E4B917D9E57A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

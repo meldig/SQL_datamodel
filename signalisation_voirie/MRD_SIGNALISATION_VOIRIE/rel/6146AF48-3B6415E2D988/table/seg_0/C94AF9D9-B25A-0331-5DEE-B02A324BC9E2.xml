@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C94AF9D9-B25A-0331-5DEE-B02A324BC9E2" name="TA_SIGNALISATION_RELATION_LIBELLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:45:02 UTC</createdTime>
+<comment><![CDATA[Table de relation permettant de catégoriser les libellés entre eux (dans le cadre des couleurs de marquage notamment).]]></comment>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fid_libelle_parent" id="862E2F2B-D558-FB3C-0893-FF66138EFA71">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:49:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_SIGNALISATION_LIBELLE permettant d''associer un ou plusieurs libelle parent à un ou plusieurs libelles fils.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FEEA5C01-6798-3AF3-D8C3-DC7E43B3A2B9" referredColumn="0F99529D-5A60-3780-8436-1ADBBD840740"/>
+</associations>
+</Column>
+<Column name="fid_libelle_fils" id="258D58EC-3ADC-B595-40E5-1706A2C174F5">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:49:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère de la table TA_SIGNALISATION_LIBELLE permettant d''associer un ou plusieurs libelle fils un ou plusieurs libelles parents.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8DEF8D79-E9D5-415A-459D-4B1411D2286F" referredColumn="0F99529D-5A60-3780-8436-1ADBBD840740"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E873E0A6-2E31-B167-41A3-618C1D9EB120" name="TA_SIGNALISATION_RELATION_LIBELLE_FID_LIBELLE_PARENT_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:49:21 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="862E2F2B-D558-FB3C-0893-FF66138EFA71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A42B7D4A-076C-C196-C379-42CC50CF3B5B" name="TA_SIGNALISATION_RELATION_LIBELLE_FID_LIBELLE_FILS_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:49:43 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="258D58EC-3ADC-B595-40E5-1706A2C174F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

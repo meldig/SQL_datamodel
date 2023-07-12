@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Signalisation voirie" id="6146AF48-C6E3-EA30-C5E8-3B6415E2D988" mainViewID="2B678BAB-F1E9-53E7-899D-110301C357FB">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 17:28:42 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+</relationalModel>

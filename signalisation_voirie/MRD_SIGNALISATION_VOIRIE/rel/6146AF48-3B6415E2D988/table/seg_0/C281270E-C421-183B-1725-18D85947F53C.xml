@@ -1,0 +1,245 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C281270E-C421-183B-1725-18D85947F53C" name="TA_SIGNALISATION_MARQUAGE_PONCTUEL">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<comment><![CDATA[Table contenant tous les marquages ponctuels de la voirie (place pour personne à mobilité réduite, logos vélos, sas cyclable, zizag bus), millésimés et catégorisés. Elle correspond aux tables MEL_sh_place_pmr, MEL_sh_sas_cyclable, ponctuelle de l''export Imergis. La distinction entre les entités se ces tables se fait sur le champ fid_type.]]></comment>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="geom" id="72706C28-C9B6-E372-6BD8-F5321EDB048B">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ géométrique de type multiligne ]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="objectid" id="8CF71CE3-1DA1-8E68-EBFA-B18A164D9F71">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table - ancien champ id_place_pmr.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_source" id="88550246-E792-1811-4065-CCC0596884B1">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-04-18 08:05:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant des tables sources. Exemple : TA_SIGNALISATION_MARQUAGE_SURFACIQUE.id_source = TEMP_SIGNALISATION_MEL_SH_SURF_MARQUE.id_ilot_marque.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="remarque" id="6E9D2CDB-C8E0-86F6-3477-BC3D66296CAD">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-04-18 08:05:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Remarque des agents d''Immergis ou de la MEL. Ce champ est à utiliser pour préciser certaines informations que l''on ne peut pas mettre dans les autres champs ou pour poser des questions.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_livraison" id="9EC4390E-D3E0-A3E2-76F0-244A3F8E62E5">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de livraison de la donnée par le prestataire (Immergis) - ancien champ date_creation.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_intervention" id="969C7708-8502-2A07-73A8-4FC0374DCFED">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de début des travaux - ancien champ date_intervention.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_modification" id="EAADF5F6-6358-EEFE-EC69-8689F027A171">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de la dernière modification de la donnée - ancien champ date_maj.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_modification" id="F5D8CA06-E732-C6A6-28E9-7AA84A59D224">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIRIE_AGENT permettant d''associer à chaque marquage le pnom de l''agent l''ayant modifié en dernier.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1EC6C42-92DC-D1B0-E8F1-9C5856457620" referredColumn="DDBF5431-4723-0CD6-871F-B42D795AF51E"/>
+</associations>
+</Column>
+<Column name="fid_etat" id="493FC82E-83E6-1E46-1001-5BCD61ED5301">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIRIE_LIBELLE contenant les libellés servant à qualifier les objets de la signalisation horizontale et verticale - ancien champ etat.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C966B81D-E038-08E8-EC1E-E271C4DC8185" referredColumn="0F99529D-5A60-3780-8436-1ADBBD840740"/>
+</associations>
+</Column>
+<Column name="fid_materiau" id="180473F8-F527-8EF2-D85C-DA16E16BCA33">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIRIE_LIBELLE permettant de connaître le type de matériau utilisé pour le marquage - ancien champ nature_materiau.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_registre" id="1A8E634A-5615-043E-03FB-DC23BFA3BC09">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIRIE_LIBELLE permettant d''associer un marquage à son type de positionnement sur la chaussée (milieu de voie, bas-côté de la chaussée, etc) - ancien champ registre]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0939CD36-0280-0080-A7F5-6895D1DEDCDB" referredColumn="0F99529D-5A60-3780-8436-1ADBBD840740"/>
+</associations>
+</Column>
+<Column name="fid_type" id="029145F0-09E7-EA68-BDB2-C1C7C28D27E3">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:57:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_SIGNALISATION_LIBELLE permettant de distinguer les types de marquages ponctuels.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C962320-05D1-2A9A-F2E6-21CE32BA6D3F" referredColumn="0F99529D-5A60-3780-8436-1ADBBD840740"/>
+</associations>
+</Column>
+<Column name="fid_troncon" id="2B847979-48EE-36ED-61E9-F3EED49036F2">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-04-18 08:05:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table SIREO_LEC.OUT_DOMANIALITE permettant d''associer un marquage à un tronçon de voirie - ancien champ num_troncon.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7470F507-1A1E-36C6-8859-E03A8E326358" referredColumn="7EBDC05C-D443-6B2D-F91B-8AE225A38645"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B9198889-BDD3-D512-8335-813813594CA2" name="TA_SIGNALISATION_MARQUAGE_PONCTUEL_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CF71CE3-1DA1-8E68-EBFA-B18A164D9F71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BB93B1D-DD51-2E74-8CEA-54F1B969D89E" name="TA_SIGNALISATION_MARQUAGE_PONCTUEL_FID_ETAT_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="493FC82E-83E6-1E46-1001-5BCD61ED5301"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3CCA689-EED0-E6F0-1215-01F7B8AA3AA3" name="TA_SIGNALISATION_MARQUAGE_PONCTUEL_FID_REGISTRE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A8E634A-5615-043E-03FB-DC23BFA3BC09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="968DD86D-6FD4-3520-1F4B-C39B42B3F927" name="TA_SIGNALISATION_MARQUAGE_PONCTUEL_FID_PNOM_MODIFICATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:35:21 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5D8CA06-E732-C6A6-28E9-7AA84A59D224"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="926FFAC6-B666-E7BD-422D-A705D2A46663" name="TA_SIGNALISATION_MARQUAGE_PONCTUEL_FID_TYPE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-10 07:57:29 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="029145F0-09E7-EA68-BDB2-C1C7C28D27E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13987C0F-52D5-5DD1-1B76-3335197B5F34" name="TA_SIGNALISATION_MARQUAGE_PONCTUEL_FID_TRONCON_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-04-18 08:13:13 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B847979-48EE-36ED-61E9-F3EED49036F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

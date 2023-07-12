@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DDD9A969-FD20-4A22-5366-8FFA36722FD0" name="TA_SIGNALISATION_RELATION_FAMILLE_LIBELLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:08:02 UTC</createdTime>
+<comment><![CDATA[Table de relation permettant de regrouper les libellés de la signalétique voirie, horizontale et verticale, par famille.]]></comment>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fid_famille" id="D16A4098-B9DD-E8E8-A065-6E2090104BC1">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:13:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Partie de la clé primaire de la table (1/2) et clé étrangère vers la table TA_VOIRIE_FAMILLE permettant d''associer une famille à ses libellés.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0EB28D21-F91E-6E1F-1296-BCD357A66D34" referredColumn="1791C392-970F-7087-D56B-2850B1D7FA91"/>
+</associations>
+</Column>
+<Column name="fid_libelle" id="39D4AB5D-CF26-5201-F549-84A711828AC0">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:13:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Partie de la clé primaire de la table (2/2) et clé étrangère vers la table TA_VOIRIE_LIBELLE permettant d''associer les libellés à leur famille.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="132A6654-57DE-32A9-E33E-0AEEE34455AB" referredColumn="0F99529D-5A60-3780-8436-1ADBBD840740"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70B4D3D3-E593-FF4E-FD62-7470827CDE6A" name="TA_VOIRIE_RELATION_FAMILLE_LIBELLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:13:14 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D16A4098-B9DD-E8E8-A065-6E2090104BC1"/>
+<colUsage columnID="39D4AB5D-CF26-5201-F549-84A711828AC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2995E6EA-642D-C46A-6845-66EB756A862C" name="TA_VOIRIE_RELATION_FAMILLE_LIBELLE_FID_FAMILLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:22:14 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D16A4098-B9DD-E8E8-A065-6E2090104BC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D9562BA-FCB7-2FBC-3FC9-3EA90D7EAB63" name="TA_VOIRIE_RELATION_FAMILLE_LIBELLE_FID_LIBELLE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:22:56 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39D4AB5D-CF26-5201-F549-84A711828AC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
