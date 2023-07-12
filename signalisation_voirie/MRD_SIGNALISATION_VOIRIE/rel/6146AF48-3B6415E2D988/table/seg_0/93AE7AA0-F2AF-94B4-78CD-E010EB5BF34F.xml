@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93AE7AA0-F2AF-94B4-78CD-E010EB5BF34F" name="TA_SIGNALISATION_AGENT">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:26:48 UTC</createdTime>
+<comment><![CDATA[Table regroupant les matricules et pnoms de tous les agents travaillant ou ayant travaillé sur la signalétique horizontale et verticale de la voirie.]]></comment>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero_agent" id="DDBF5431-4723-0CD6-871F-B42D795AF51E">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:31:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Matricule des agents travaillant ou ayant travaillé sur la signalétique horizontale et verticale de la voirie.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnom" id="6685C36E-A1BE-F54C-ABC9-E28DF1377889">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:31:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pnom des agents travaillant ou ayant travaiilé sur la signalétique horizontale et verticale de la voirie.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validite" id="75E3D00D-E89E-5BA8-C0B6-05169F46B56F">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:31:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ permettant d''indiquer si un agent travaille ou non sur la signalétique horizontale et verticale de la voirie : 0 : non ; 1 : oui.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CCB3D039-344B-B9B3-AF8D-0D297387C2DE" name="TA_VOIRIE_AGENT_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:31:37 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDBF5431-4723-0CD6-871F-B42D795AF51E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

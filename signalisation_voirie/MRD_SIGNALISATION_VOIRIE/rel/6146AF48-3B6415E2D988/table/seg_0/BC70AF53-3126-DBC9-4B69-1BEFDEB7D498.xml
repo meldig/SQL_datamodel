@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC70AF53-3126-DBC9-4B69-1BEFDEB7D498" name="OUT_DOMANIALITE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:50:13 UTC</createdTime>
+<comment><![CDATA[Table contenant, entre autre, les tronçons de la base voie.
+Cette table définit le type de "propriété" d'une voie et permet de savoir à qui revient la gestion de la voirie pour la maintenance, ou tout autre type d'intervention.]]></comment>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="geom" id="E99A56EB-EE89-D0C3-49AD-7B8D3B7A0D4D">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Géométrie de type ligne simple des tronçons.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cnumtrc" id="E34EA221-7909-A673-28EC-DBA235CDAF63">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numéro de tronçon de la base voie]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,22,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cumuldebtrc" id="56D848CD-F237-0960-FD7A-EE935DEDD25F">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Position du début du tronçon dans la voie (abscisse curviligne)]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,22,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idvoie" id="913B9726-A0EE-14A8-9F48-4810D51CB461">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la voie]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prdebut" id="250C2DD8-82EB-B5B5-9EEC-05F6407AFBE6">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[PRDEBUT est utilisé par l'application SIREO pour localiser la donnée (type de localisation indépendant du tronçon)]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prfin" id="6ED22D78-AF56-A831-8BD7-B38695D5BEFA">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[PRFIN est utilisé par l'application SIREO pour localiser la donnée (type de localisation indépendant du tronçon)]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datemaj" id="F32EEE61-35BD-2985-473E-B232E0BC0CE9">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[
+Date de mise à jour de la donnée]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="domania" id="97532B1A-3F60-2C56-00B9-26AA557AEE58">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type de domanialité en toute lettre]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="objectid" id="7EBDC05C-D443-6B2D-F91B-8AE225A38645">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant des sous-tronçons.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_debut" id="8C7AF74E-65FA-A7C2-CFD9-D5DA6A436FD7">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de début de validité de la donnée]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_fin" id="FB1B377A-796D-8EC6-FE82-ED56AF41DE29">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[	
+Fin de validité de la donnée]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="coddoma" id="D81BEDDC-15A9-9404-850E-8182B3066EE4">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-31 15:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code identifiant de la domanialité]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="409860ED-7606-1F35-864A-FBF5BC0AFB54" name="OUT_DOMANIALITE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-03-09 16:57:34 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EBDC05C-D443-6B2D-F91B-8AE225A38645"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

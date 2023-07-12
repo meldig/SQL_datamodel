@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9018C93C-5DE5-2146-9A73-AC09077BE46F" name="TA_SIGNALISATION_LIBELLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:13:57 UTC</createdTime>
+<comment><![CDATA[Table regroupant tous les libellés permettant de qualifier les objets de la signalétique horizontale et verticale de la voirie.]]></comment>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="0F99529D-5A60-3780-8436-1ADBBD840740">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="75BBEEE0-F9B0-9C24-E6F4-52C8A2A2BF06">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Libellé permettant de catégoriser un objet de la signalétique horizontale et verticale de la voirie.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="2D166210-BFED-8A60-5B7F-F5B042517886">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Description du libellé.]]></commentInRDBMS>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F929339D-60B4-A1AC-972C-E4B917D9E57A" name="TA_VOIRIE_LIBELLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-02-22 18:17:52 UTC</createdTime>
+<ownerDesignName>MRD_SIGNALISATION_VOIRIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F99529D-5A60-3780-8436-1ADBBD840740"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
