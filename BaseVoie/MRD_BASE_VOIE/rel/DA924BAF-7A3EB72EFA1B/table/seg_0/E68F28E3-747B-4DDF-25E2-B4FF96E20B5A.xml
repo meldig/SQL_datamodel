@@ -36,35 +36,6 @@ Ancienne table : ILTASEU]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cote_troncon" id="01FB9B87-3AC5-7887-151F-8402DDF25F0C">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 12:22:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[Côté du tronçon auquel est rattaché le seuil.
-G = gauche ; D = droite.
-- En agglomération le sens des tronçons est déterminé par ses numéros de seuils. En d'autres termes il commence au niveau du seuil dont le numéro est égal à 1 ;
-- Hors agglomération, le sens du tronçon dépend du sens de circulation pour les rues à sens unique. Pour les rues à double-sens chaque tronçon est doublé donc leur sens dépend aussi du sens de circulation;]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="code_insee" id="E766C759-F842-5B41-2BD0-A52788A937CC">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-06 14:06:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[Champ calculé via une requête spatiale, permettant d''associer à chaque rue le code insee de la commune dans laquelle elle se trouve (issue de la table G_REFERENTIEL.A_COMMUNES).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>5 BYTE</dataTypeSize>
-<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="date_saisie" id="CC962E93-02E7-C41B-D93D-255944E674D3">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-10 08:13:36 UTC</createdTime>
@@ -117,6 +88,21 @@ G = gauche ; D = droite.
 <colAssociation fkAssociation="95E6FEE9-1632-1DDA-8D57-A34C62F977F7" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
+<Column name="fid_troncon" id="F856AA69-809F-BC46-1992-46B4272D6717">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-30 07:16:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant d''associer un seuil à un et un seul tronçon et donc à une et une seule voie physique.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6F4484D-AE8A-A780-1D46-A73780D10F73" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="838F77A7-636D-7ED1-59D2-8E4C5D8022C9" name="TA_SEUIL_PK">
@@ -148,6 +134,16 @@ G = gauche ; D = droite.
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7E756093-95C1-4FA0-B9CE-0E111F956C42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="732617FC-A01C-FAF0-58FA-303FC1C6F162" name="TA_SEUIL_FID_TRONCON_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-30 08:53:16 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F856AA69-809F-BC46-1992-46B4272D6717"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

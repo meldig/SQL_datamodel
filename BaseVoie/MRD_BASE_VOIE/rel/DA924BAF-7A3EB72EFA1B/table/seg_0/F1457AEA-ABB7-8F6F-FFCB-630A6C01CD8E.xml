@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1457AEA-ABB7-8F6F-FFCB-630A6C01CD8E" name="TA_VOIE_SUPRA_COMMUNALE_LOG">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-14 07:28:18 UTC</createdTime>
+<comment><![CDATA[Table d''historisation des actions effectuées sur les voies supra-communales]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_38</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="F955BF7F-31E4-FB55-FE5A-B05C33A0CE8E">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-14 07:31:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_voie_supra_communale" id="8FD68B4D-F676-6583-5D9F-F5942A9378EF">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-14 07:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de chaque voie supra-communale dans TA_VOIE_SUPRA-COMMUNALE. ]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="FB5AD62E-43C9-5D34-EB7D-A7E8983968FA">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-14 07:31:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nom de chaque voie supra-communale, mis à jour par un trigger à chaque insertion/édition/suppression d'une  voie supra-communale dans G_BASE_VOIE.TA_VOIE_SUPRA_COMMUNALE.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_action" id="C3A19023-0B34-36BF-0519-878ACC6E7BB9">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-14 07:31:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date de création, modification ou suppression d''une voie supra_communale.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_type_action" id="58C8889A-05B0-5CDE-E6AE-B30F89A5441D">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-14 07:31:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de savoir quelle action a été effectuée sur la voie supra-communale.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="056F4A53-1674-CFE2-97C7-0BDE8490F363" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</associations>
+</Column>
+<Column name="fid_pnom" id="47FA5D69-1A85-8BC4-5FC9-96AAA6DE16A9">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-07-17 14:23:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent à la voie supra-communale qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5428E88D-B39C-A005-E41C-01E29B755916" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F279E4CC-B5D5-D9E0-DB1E-D3EAC9490FA2" name="TA_VOIE_SUPRA_COMMUNALE_LOG_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-14 07:31:28 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F955BF7F-31E4-FB55-FE5A-B05C33A0CE8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA7ACEE2-3882-A0B8-9201-8129A2421F2E" name="TA_VOIE_SUPRA_COMMUNALE_LOG_FID_TYPE_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-10-14 07:40:00 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58C8889A-05B0-5CDE-E6AE-B30F89A5441D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D3B30DA-885F-25D4-F285-01CC86955CF1" name="TA_VOIE_SUPRA_COMMUNALE_LOG_FID_PNOM_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-07-17 14:24:02 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47FA5D69-1A85-8BC4-5FC9-96AAA6DE16A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

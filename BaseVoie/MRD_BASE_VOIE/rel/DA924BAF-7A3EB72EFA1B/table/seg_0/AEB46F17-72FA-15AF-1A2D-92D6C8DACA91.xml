@@ -21,6 +21,29 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id_infos_seuil" id="6496E5E4-8700-46B5-E6E0-0EA2D150B837">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-07 15:06:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de  la table TA_INFOS_SEUIL.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_seuil" id="8159CA11-3DE9-9F53-2491-FFBDA39C2BBF">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-03 11:41:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_SEUIL permettant d'affecter une géométrie à un ou plusieurs seuils, dans le cas où plusieurs se superposent sur le même point.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="numero_seuil" id="0E74350A-099A-7D9B-E28F-944D596A3622">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:11:04 UTC</createdTime>
@@ -31,18 +54,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,5,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="numero_parcelle" id="861F93C5-C958-9241-EBBC-25DEC506975B">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-07 15:11:04 UTC</createdTime>
-<commentInRDBMS><![CDATA[Numéro de parcelle issu du cadastre.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>9 BYTE</dataTypeSize>
-<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="complement_numero_seuil" id="A2EB5724-52D4-8A08-0410-1F96701E3498">
@@ -58,6 +69,18 @@ Exemple : 1bis]]></commentInRDBMS>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 BYTE</dataTypeSize>
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_voie_administrative" id="499040FD-D859-EABD-09FA-2206C1DF3452">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-01-30 09:41:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la voie admiistrative à laquelle le seuil est rattaché.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="date_action" id="87DF1489-7DBA-94D4-9E2A-AF53577B3356">
@@ -83,18 +106,6 @@ Exemple : 1bis]]></commentInRDBMS>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_seuil" id="8159CA11-3DE9-9F53-2491-FFBDA39C2BBF">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-06-03 11:41:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de la table TA_SEUIL permettant d'affecter une géométrie à un ou plusieurs seuils, dans le cas où plusieurs se superposent sur le même point.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="fid_pnom" id="99F253B7-E0E0-08C1-7CC7-950AEF97D101">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:06:53 UTC</createdTime>
@@ -110,21 +121,6 @@ Exemple : 1bis]]></commentInRDBMS>
 <colAssociation fkAssociation="9DA16142-A2E2-5278-A34B-F38DC86CADDE" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
-<Column name="fid_infos_seuil" id="6496E5E4-8700-46B5-E6E0-0EA2D150B837">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-07 15:06:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_INFOS_SEUIL, permettant d''associer chaque action aux infos de chaque seuil.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="E20CA62F-3145-21CD-3649-3DA6657DFB52" referredColumn="34BA1DF2-9A2A-C4FB-FF46-5D8008B21AEB"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="5EDC421F-C6B6-8657-2F64-0D91DF0501DC" name="TA_INFOS_SEUIL_LOG_PK">
@@ -136,16 +132,6 @@ Exemple : 1bis]]></commentInRDBMS>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F54C6087-870F-CBBA-70D7-0BE4F6756949"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="59AC71FC-F193-6F2A-76E4-D6B9C6D34BF5" name="TA_INFOS_SEUIL_LOG_FID_INFOS_SEUIL_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-07 15:13:31 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="6496E5E4-8700-46B5-E6E0-0EA2D150B837"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="F130B5EE-FC31-1E36-F89E-6A32EC4FDE93" name="TA_INFOS_SEUIL_LOG_FID_PNOM_FK">

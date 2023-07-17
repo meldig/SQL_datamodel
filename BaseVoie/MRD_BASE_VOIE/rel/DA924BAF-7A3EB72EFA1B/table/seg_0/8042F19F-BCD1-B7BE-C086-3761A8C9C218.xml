@@ -21,12 +21,24 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="valeur" id="D2C83F7B-C6B6-1E18-6367-5B7EA3D9418D">
+<Column name="libelle_court" id="D2C83F7B-C6B6-1E18-6367-5B7EA3D9418D">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 12:41:19 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nom des types d''objets ou des états permettant de catégoriser les objets de la base voie.
-Ces libellés sont catégorisés par famille.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Valeur courte pouvant être prise par un libellé de la nomenclature de la base voie.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_long" id="51657317-7990-F352-1B79-F0D2B5CFCF96">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-31 08:49:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur longue pouvant être prise par un libellé de la nomenclature de la base voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
