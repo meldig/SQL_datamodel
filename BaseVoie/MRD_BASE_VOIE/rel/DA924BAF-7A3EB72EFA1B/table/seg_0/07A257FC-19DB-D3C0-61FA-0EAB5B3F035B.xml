@@ -24,20 +24,20 @@
 <Column name="nom_voie" id="05F236B1-4D77-55B2-73CB-54EC14811970">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-10-14 07:23:37 UTC</createdTime>
-<commentInRDBMS><![CDATA[Nom de chaque voie supra-communale, mis à jour par un trigger à chaque insertion/édition/suppression d'une  voie supra-communale dans SIREO.EXRD_ORDONNEE, permettant d''associer une voie supra-communale à une ou plusieurs voies administratives.Le champ correspondant dans SIREO.EXRD_ORDONNEE s'appelle IDSUPVOI.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Nom de la voie supra-communale - nom de l''Ex-RD ou laissez ce champ vide - Exemple : MD0750, MD0006D DGIR3.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 BYTE</dataTypeSize>
-<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="date_saisie" id="467E1D80-C454-3E17-66BF-C52B8C9E8CA7">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-10-13 07:53:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de saisie/création de la voie supra-communale]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Date de saisie de la voie supra-communale en base.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -48,13 +48,43 @@
 <Column name="date_modification" id="1C5EA129-1CF0-34B0-53BE-72000730DD6C">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-10-13 14:36:58 UTC</createdTime>
-<commentInRDBMS><![CDATA[Date de modification de la voie supra-communale.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Date de modification de la voie supra-communale en base.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_pnom_saisie" id="1783C141-EDC6-5AEC-3181-4D31DC42FEA5">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-07-17 13:42:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant inséré en base une voie supra-communale.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0895D81F-56C3-ABD8-F672-872B65525619" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
+</Column>
+<Column name="fid_pnom_modification" id="13304BA1-F82B-AB03-4822-911089F059DB">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-07-17 13:42:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant de récupérer le pnom de l''agent ayant modifié en base une voie supra-communale.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29D6794C-58E2-A38F-29E8-6F4B0D695CF1" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -67,6 +97,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="59892949-20F1-E228-92F7-C6734D9B64D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB0BA8CA-7172-EF14-7238-120B0F8A54DA" name="TA_VOIE_SUPRA_COMMUNALE_FID_PNOM_SAISIE_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-07-17 13:45:03 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1783C141-EDC6-5AEC-3181-4D31DC42FEA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1495CA6-E920-6B52-6393-65E82A2C7D73" name="TA_VOIE_SUPRA_COMMUNALE_FID_PNOM_MODIFICATION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-07-17 13:45:03 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13304BA1-F82B-AB03-4822-911089F059DB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

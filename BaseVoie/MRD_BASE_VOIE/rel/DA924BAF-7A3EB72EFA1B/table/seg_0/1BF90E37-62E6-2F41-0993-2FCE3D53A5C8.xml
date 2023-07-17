@@ -133,7 +133,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="5FE524F0-D931-E823-4422-6EEE44D94CE3" referredColumn="10582D37-3039-372B-C21B-163C26922848"/>
@@ -148,11 +148,28 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TA_RELATION_VOIE_ADMINISTRATIVE_SUPRA_COMMUNALE_fid_voie_administrative" id="38165D2B-CE8A-7FF4-26B2-BCA0645B6BD3">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-07-13 07:29:25 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="09091AF2-7AE1-3DDD-FEE0-086FE7707825" referredColumn="59892949-20F1-E228-92F7-C6734D9B64D3"/>
-</associations>
+</Column>
+<Column name="TA_RELATION_VOIE_ADMINISTRATIVE_SUPRA_COMMUNALE_fid_voie_supra_communale" id="3F2DAEDF-DF1A-3C50-FD71-F57A8FA7EAE6">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-07-13 07:29:25 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -195,16 +212,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="034E82DA-37A0-E92A-56DE-14612FD51EFD"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="A18C878B-DAD3-4BE3-3B14-D7A75E8E80F4" name="TA_VOIE_ADMINISTRATIVE_FID_VOIE_SUPRA_COMMUNALE_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-10-13 14:54:04 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="64A4B109-E142-EE49-F16B-89EE0C206FA0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
