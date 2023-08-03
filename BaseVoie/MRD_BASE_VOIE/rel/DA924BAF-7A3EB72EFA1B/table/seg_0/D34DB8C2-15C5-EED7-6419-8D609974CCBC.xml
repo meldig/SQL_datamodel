@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D34DB8C2-15C5-EED7-6419-8D609974CCBC" name="TA_INFOS_SEUIL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D34DB8C2-15C5-EED7-6419-8D609974CCBC" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_INFOS_SEUIL">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:24:47 UTC</createdTime>
 <comment><![CDATA[Table contenant le détail des seuils, c'est-à-dire les numéros de seuil, de parcelles et les compléments de numéro de seuil. Cela permet d''associer un ou plusieurs seuils à un et un seul point géométrique au besoin.]]></comment>
@@ -79,7 +79,7 @@ Exemple : 1bis]]></commentInRDBMS>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="34B17AAC-C99F-C9F0-FC6D-A4B8EACEA5A1" referredColumn="17B52127-565B-8393-9FEF-543334313340"/>
@@ -124,7 +124,7 @@ Exemple : 1bis]]></commentInRDBMS>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="1FD4FA22-4177-3D5B-AD03-18592EA80E5A" referredColumn="D1FD2F23-7562-FB1A-948D-5C0FCF8E2E57"/>

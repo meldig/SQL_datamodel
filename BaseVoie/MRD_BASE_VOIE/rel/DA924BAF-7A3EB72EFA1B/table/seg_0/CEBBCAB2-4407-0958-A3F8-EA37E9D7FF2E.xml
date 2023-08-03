@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E" name="TA_TRONCON">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_TRONCON">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 07:45:22 UTC</createdTime>
 <comment><![CDATA[Table contenant les tronçons de la base voie.
@@ -96,7 +96,7 @@ Ancienne table : ILTATRC]]></comment>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="320A2940-4D01-0B37-1EC8-05E014380DEE" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
@@ -111,7 +111,7 @@ Ancienne table : ILTATRC]]></comment>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="51AD149D-D0E0-8A48-B775-0040260FEDCF" referredColumn="6191C57D-1BB4-0EBA-14E0-8DA5AB6D4C5E"/>

@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="F65F08F9-FE74-A93A-E905-19A0BE559F28" name="VM_AUDIT_START_END_POINT_VOIE_PHYSIQUE_ADMINISTRATIVE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:09:58 UTC</createdTime>
+<comment><![CDATA[Vue matérialisée  matérialisant les start/end points des voies physiques par voie administrative de type 2006 (donc composée de plusieurs lignes non-jointives).]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>view_15</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[WITH
+    C_1 AS(
+        SELECT
+            a.id_voie_administrative,
+            a.NBR_VOIE_PHYSIQUE
+        FROM
+            G_BASE_VOIE.V_TA_AUDIT_NOMBRE_VOIE_PHYSIQUE_PAR_VOIE_ADMINISTRATIVE a
+            INNER JOIN G_BASE_VOIE.VM_VOIE_ADMINISTRATIVE_MATERIALISEE b ON b.id_voie_administrative = a.id_voie_administrative  
+        WHERE
+            b.geom.sdo_gtype = '2006'
+            AND a.NBR_VOIE_PHYSIQUE > 1
+    ),
+
+    C_2 AS(
+        SELECT
+            a.id_voie_administrative,
+            c.id_voie_physique,
+            SDO_CS.MAKE_2D(SDO_LRS.GEOM_SEGMENT_START_PT(SDO_LRS.CONVERT_TO_LRS_GEOM(c.geom, m.diminfo))) AS geom,
+            'startpoint' AS type_sommet
+        FROM
+            C_1 a
+            INNER JOIN G_BASE_VOIE.TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE b ON b.fid_voie_administrative = a.id_voie_administrative
+            INNER JOIN G_BASE_VOIE.VM_VOIE_PHYSIQUE_MATERIALISEE_NON_REORIENTEE c ON c.id_voie_physique = b.fid_voie_physique,
+            USER_SDO_GEOM_METADATA m 
+        WHERE
+            m.table_name = 'VM_VOIE_PHYSIQUE_MATERIALISEE_NON_REORIENTEE'
+        UNION ALL
+        SELECT
+            a.id_voie_administrative,
+            c.id_voie_physique,
+            SDO_CS.MAKE_2D(SDO_LRS.GEOM_SEGMENT_END_PT(SDO_LRS.CONVERT_TO_LRS_GEOM(c.geom, m.diminfo))) AS geom,
+            'endpoint' AS type_sommet
+        FROM
+            C_1 a
+            INNER JOIN G_BASE_VOIE.TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE b ON b.fid_voie_administrative = a.id_voie_administrative
+            INNER JOIN G_BASE_VOIE.VM_VOIE_PHYSIQUE_MATERIALISEE_NON_REORIENTEE c ON c.id_voie_physique = b.fid_voie_physique,
+            USER_SDO_GEOM_METADATA m 
+        WHERE
+            m.table_name = 'VM_VOIE_PHYSIQUE_MATERIALISEE_NON_REORIENTEE'
+    ),
+    
+    C_3 AS(
+        SELECT DISTINCT
+            id_voie_administrative,
+            id_voie_physique 
+        FROM
+            C_2
+    )
+    
+    SELECT
+        b.geom,
+        rownum AS objectid,
+        a.id_voie_administrative,
+        a.id_voie_physique,
+        b.type_sommet
+    FROM
+        C_3 a
+        INNER JOIN C_2 b ON b.id_voie_administrative = a.id_voie_administrative AND b.id_voie_physique = a.id_voie_physique;]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="35548705-4BD3-6DC5-4791-D5DD10674768">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:11:07 UTC</createdTime>
+<comment><![CDATA[Géométrie de type point.]]></comment>
+<commentInRDBMS><![CDATA[Géométrie de type point.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>geom</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="objectid" id="3C258C44-C569-B297-209C-6A735FFE780C">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:11:07 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la VM.]]></comment>
+<commentInRDBMS><![CDATA[Clé primaire de la VM.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>objectid</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>objectid</headerAlias>
+<expression>rownum</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_voie_administrative" id="9EA591DB-0394-ABED-8894-CE199C662018">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:11:07 UTC</createdTime>
+<comment><![CDATA[Identifiants des voies administratives.]]></comment>
+<commentInRDBMS><![CDATA[Identifiants des voies administratives.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>id_voie_administrative</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_voie_physique" id="0E09D7D0-0422-8CF6-EF36-D778FD8BBADA">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:11:07 UTC</createdTime>
+<comment><![CDATA[Identifiants des voies physiques.]]></comment>
+<commentInRDBMS><![CDATA[Identifiants des voies physiques.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>id_voie_physique</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="type_sommet" id="038F3569-015B-4496-17CF-1E4C2789E115">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:11:07 UTC</createdTime>
+<comment><![CDATA[Start/end points des voies physiques.]]></comment>
+<commentInRDBMS><![CDATA[Start/end points des voies physiques.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>type_sommet</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="22E06C5C-A545-958E-24E2-4BC55BD2639F">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="67D60DA4-00F0-D631-72E9-F3C205572214">
+<columnName>fid_voie_administrative</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="620FE706-037B-970E-09A8-BEF6526B2A2B">
+<columnName>fid_voie_physique</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="805B7158-11E6-7E8F-9455-960ACFD024C7" name="VM_AUDIT_START_END_POINT_VOIE_PHYSIQUE_ADMINISTRATIVE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:13:38 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="3C258C44-C569-B297-209C-6A735FFE780C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

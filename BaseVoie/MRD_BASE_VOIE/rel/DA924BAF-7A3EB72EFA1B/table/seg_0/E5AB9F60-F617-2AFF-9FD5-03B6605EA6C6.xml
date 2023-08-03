@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5AB9F60-F617-2AFF-9FD5-03B6605EA6C6" name="TA_MODALITE_CIRCULATION">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5AB9F60-F617-2AFF-9FD5-03B6605EA6C6" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_MODALITE_CIRCULATION">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-07-13 14:14:54 UTC</createdTime>
 <comment><![CDATA[Table de relation entre la table TA_VOIE et la table TA_LIBELLE permettant d''associer une ou plusieurs modalités de circulation(carrossable, cyclable, bus) à une voie.]]></comment>
@@ -30,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="3C721D07-5274-9928-F65C-AE4756BB3DC4" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
@@ -46,7 +46,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="8ED58988-707D-1998-75BC-08B504E17207" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

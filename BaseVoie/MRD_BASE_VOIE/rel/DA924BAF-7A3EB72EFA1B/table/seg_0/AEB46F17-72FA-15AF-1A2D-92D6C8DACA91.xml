@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AEB46F17-72FA-15AF-1A2D-92D6C8DACA91" name="TA_INFOS_SEUIL_LOG">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AEB46F17-72FA-15AF-1A2D-92D6C8DACA91" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_INFOS_SEUIL_LOG">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:01:29 UTC</createdTime>
 <comment><![CDATA[Table de log permettant d''enregistrer toutes les évlutions des objets présents dans la table TA_INFOS_SEUIL.]]></comment>

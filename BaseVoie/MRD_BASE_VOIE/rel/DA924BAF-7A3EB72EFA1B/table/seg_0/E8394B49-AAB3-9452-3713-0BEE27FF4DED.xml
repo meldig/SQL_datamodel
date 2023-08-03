@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8394B49-AAB3-9452-3713-0BEE27FF4DED" name="TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE_LOG">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8394B49-AAB3-9452-3713-0BEE27FF4DED" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE_LOG">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-09-13 16:12:13 UTC</createdTime>
 <comment><![CDATA[Table d''historisation des actions effectuées sur les relations voies physiques / voies administratives de la base voie.]]></comment>
@@ -66,7 +66,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="8AF7DD8E-1ECE-9BB3-2BAB-E4650E8C7761" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

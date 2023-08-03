@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0FA31E9-65A2-817E-BF84-421D67BC08D7" name="TA_RELATION_TRONCON_VOIE_LOG">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0FA31E9-65A2-817E-BF84-421D67BC08D7" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_RELATION_TRONCON_VOIE_LOG">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 08:28:39 UTC</createdTime>
 <comment><![CDATA[Table de log enregistrant l''évolution des associations voies / tronçons.]]></comment>
@@ -68,7 +68,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="06F5EA94-E6B2-7C70-C4E6-FAEE6DDA0EB4" referredColumn="510779FC-0E45-595F-40ED-DC296D3D9B73"/>
@@ -106,7 +106,7 @@ Ancien champ : CCOMVOI.]]></commentInRDBMS>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="0B0842BF-78E3-E0EB-B7CD-729433E7C20A" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1457AEA-ABB7-8F6F-FFCB-630A6C01CD8E" name="TA_VOIE_SUPRA_COMMUNALE_LOG">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1457AEA-ABB7-8F6F-FFCB-630A6C01CD8E" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_VOIE_SUPRA_COMMUNALE_LOG">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-10-14 07:28:18 UTC</createdTime>
 <comment><![CDATA[Table d''historisation des actions effectuées sur les voies supra-communales]]></comment>
@@ -65,7 +65,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="056F4A53-1674-CFE2-97C7-0BDE8490F363" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

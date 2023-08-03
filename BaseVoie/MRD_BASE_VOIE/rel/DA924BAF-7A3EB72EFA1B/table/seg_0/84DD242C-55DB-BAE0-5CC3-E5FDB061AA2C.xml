@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84DD242C-55DB-BAE0-5CC3-E5FDB061AA2C" name="TA_SEUIL_LOG">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84DD242C-55DB-BAE0-5CC3-E5FDB061AA2C" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_SEUIL_LOG">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-06 13:33:42 UTC</createdTime>
 <comment><![CDATA[Table de log de la table TA_SEUIL permettant d''avoir l''historique de toutes les évolutions des seuils.]]></comment>
@@ -75,7 +75,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7B477C34-A6A1-2DD8-EFCD-6760073479FC" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

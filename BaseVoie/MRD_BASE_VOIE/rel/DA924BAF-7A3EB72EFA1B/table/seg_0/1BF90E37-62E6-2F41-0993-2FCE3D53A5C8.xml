@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" name="TA_VOIE_ADMINISTRATIVE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_VOIE_ADMINISTRATIVE">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:05:25 UTC</createdTime>
 <comment><![CDATA[Table rassemblant toutes les informations de chaque voie administrative. Pour rappel, en limite de commune, deux voies administratives peuvent partager la même voie physique. ]]></comment>

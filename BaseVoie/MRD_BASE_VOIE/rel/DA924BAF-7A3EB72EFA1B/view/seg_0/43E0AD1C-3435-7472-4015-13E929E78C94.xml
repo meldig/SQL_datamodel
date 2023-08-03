@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="43E0AD1C-3435-7472-4015-13E929E78C94" name="VM_CONSULTATION_VOIE_PHYSIQUE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:42:57 UTC</createdTime>
+<comment><![CDATA[Vue matérialisée matérialisant les voies physiques, permettant de distinguer les voies dont le sens géométrique est inversé ou non. Mise à jour quotidienne à 19h00.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>view_10</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    b.objectid AS id_voie_physique,
+    'sens conservé' AS type_sens,
+    SDO_AGGR_UNION(
+        SDOAGGRTYPE(a.geom , 0.005)
+    ) AS geom
+FROM
+    G_BASE_VOIE.TA_TRONCON a
+    INNER JOIN G_BASE_VOIE.TA_VOIE_PHYSIQUE b ON b.objectid = a.fid_voie_physique
+    INNER JOIN G_BASE_VOIE.TA_LIBELLE c ON c.objectid = b.fid_action
+WHERE
+    c.libelle_court = 'à conserver'
+GROUP BY
+    b.objectid,
+    'sens conservé'-- sens de saisie conservé
+UNION ALL
+SELECT
+    b.objectid AS id_voie_physique,
+    'sens inversé' AS type_sens,
+    SDO_UTIL.REVERSE_LINESTRING(SDO_AGGR_UNION(SDOAGGRTYPE(a.geom , 0.005))) AS geom
+FROM
+    G_BASE_VOIE.TA_TRONCON a
+    INNER JOIN G_BASE_VOIE.TA_VOIE_PHYSIQUE b ON b.objectid = a.fid_voie_physique
+    INNER JOIN G_BASE_VOIE.TA_LIBELLE c ON c.objectid = b.fid_action
+WHERE
+    c.libelle_court = 'à inverser'
+GROUP BY
+    b.objectid,
+    'sens inversé';]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_voie_physique" id="609B0E90-E024-4A2F-F35C-C1F753BCFA28">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:43:31 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la VM et identifiant des voies physiques.]]></comment>
+<commentInRDBMS><![CDATA[Clé primaire de la VM et identifiant des voies physiques.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id_voie_physique</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>id_voie_physique</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="type_sens" id="5C2BD2F7-51EA-6442-6650-3199634F7B43">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:43:31 UTC</createdTime>
+<comment><![CDATA[Types de sens géométrique des voies. Si elles ont été taguées en "à inverser" dans TA_VOIE_PHYSIQUE, alors le sens géométrique de la voie a été inversé, sinon il a été conservé.]]></comment>
+<commentInRDBMS><![CDATA[Types de sens géométrique des voies. Si elles ont été taguées en "à inverser" dans TA_VOIE_PHYSIQUE, alors le sens géométrique de la voie a été inversé, sinon il a été conservé.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>type_sens</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>type_sens</headerAlias>
+<expression>&apos;sens conservé&apos;</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="A4E70930-F405-AF47-7B96-8CE6E80196E9">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:43:31 UTC</createdTime>
+<comment><![CDATA[Géométries de type multiligne.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>geom</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>geom</headerAlias>
+<expression>SDO_AGGR_UNION(SDOAGGRTYPE(a.geom,0.005))</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_voie_physique_1" id="1597C9F3-6142-9FBC-B434-5835BA94DF08">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:43:31 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id_voie_physique</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>id_voie_physique_1</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="type_sens_1" id="B9E6A670-3BEE-4462-E860-4596F449E16B">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:43:31 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>type_sens</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>type_sens_1</headerAlias>
+<expression>&apos;sens inversé&apos;</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom_1" id="36C8CC0B-79A8-47D5-E1F6-92596332C1EF">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:43:31 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>geom</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>geom_1</headerAlias>
+<expression>SDO_UTIL.REVERSE_LINESTRING(SDO_AGGR_UNION(SDOAGGRTYPE(a.geom,0.005)))</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EE29B7FC-51B8-D974-9F22-4371A0778715">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_PHYSIQUE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8042F19F-BCD1-B7BE-C086-3761A8C9C218">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_LIBELLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_PHYSIQUE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7BF91B78-CD19-2BF1-97EB-1DFF7F2460BC">
+<columnName>fid_action</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_PHYSIQUE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="330C7FFA-7CD3-6167-C9BA-051552DAACCD">
+<columnName>fid_voie_physique</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D2C83F7B-C6B6-1E18-6367-5B7EA3D9418D">
+<columnName>libelle_court</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_LIBELLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DA7495A2-7120-19A9-599C-53EE5DBA0169">
+<columnName>geom</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_LIBELLE</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="493E3D13-0F94-D46A-5351-A3F9D4638571" name="VM_CONSULTATION_VOIE_PHYSIQUE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:46:53 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="609B0E90-E024-4A2F-F35C-C1F753BCFA28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

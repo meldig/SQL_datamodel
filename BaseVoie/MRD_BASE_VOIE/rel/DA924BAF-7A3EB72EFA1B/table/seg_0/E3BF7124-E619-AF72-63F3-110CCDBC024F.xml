@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3BF7124-E619-AF72-63F3-110CCDBC024F" name="TA_AGENT">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3BF7124-E619-AF72-63F3-110CCDBC024F" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_AGENT">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:22:04 UTC</createdTime>
 <comment><![CDATA[Table listant les pnoms de tous les agents ayant travaillés et qui travaillent encore pour la base voie.]]></comment>
