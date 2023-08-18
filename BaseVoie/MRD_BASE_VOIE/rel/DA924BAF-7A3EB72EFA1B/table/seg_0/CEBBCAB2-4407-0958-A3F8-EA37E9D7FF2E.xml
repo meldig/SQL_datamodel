@@ -2,10 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_TRONCON">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-22 07:45:22 UTC</createdTime>
-<comment><![CDATA[Table contenant les tronçons de la base voie.
-Les tronçons sont les objets de base de la base voie servant à constituer les rues qui elles-mêmes constituent les voies.
-
-Ancienne table : ILTATRC]]></comment>
+<comment><![CDATA[Table contenant les tronçons de la base voie.]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_1</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -96,25 +93,10 @@ Ancienne table : ILTATRC]]></comment>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="320A2940-4D01-0B37-1EC8-05E014380DEE" referredColumn="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B"/>
-</associations>
-</Column>
-<Column name="fid_metadonnee" id="F064B8CC-092C-3615-6C16-7881136B97DA">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-13 14:04:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_METADONNEE, permettant notamment de connaître la source des données (IGN ou MEL).]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="51AD149D-D0E0-8A48-B775-0040260FEDCF" referredColumn="6191C57D-1BB4-0EBA-14E0-8DA5AB6D4C5E"/>
 </associations>
 </Column>
 </columns>
@@ -148,16 +130,6 @@ Ancienne table : ILTATRC]]></comment>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="80C9AA32-2E4D-D26A-EDA4-3F06F8541C41"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="637CE9EA-F885-89DA-D599-78CCB36BFFE3" name="TA_TRONCON_FID_METADONNEE_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-07-13 14:04:22 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="F064B8CC-092C-3615-6C16-7881136B97DA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="0F5E7FCF-2AE5-F6FB-EB1B-D3C3EF2D7630" name="TA_TRONCON_FID_VOIE_PHYSIQUE_FK">

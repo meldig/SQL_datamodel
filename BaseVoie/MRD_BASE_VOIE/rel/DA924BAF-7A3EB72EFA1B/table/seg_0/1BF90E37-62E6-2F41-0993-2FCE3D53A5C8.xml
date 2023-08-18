@@ -2,7 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_VOIE_ADMINISTRATIVE">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-17 08:05:25 UTC</createdTime>
-<comment><![CDATA[Table rassemblant toutes les informations de chaque voie administrative. Pour rappel, en limite de commune, deux voies administratives peuvent partager la même voie physique. ]]></comment>
+<comment><![CDATA[Table rassemblant les informations de chaque voie et notamment leurs libellés et leur latéralité : une voie physique peut avoir deux noms différents (à gauche et à droite) si elle traverse deux communes différentes.]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <ordsAlias>table_32</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
@@ -133,7 +133,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="5FE524F0-D931-E823-4422-6EEE44D94CE3" referredColumn="10582D37-3039-372B-C21B-163C26922848"/>

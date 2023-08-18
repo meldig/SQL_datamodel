@@ -70,9 +70,6 @@
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="06F5EA94-E6B2-7C70-C4E6-FAEE6DDA0EB4" referredColumn="510779FC-0E45-595F-40ED-DC296D3D9B73"/>
-</associations>
 </Column>
 <Column name="fid_voie" id="11EB3FB5-A132-76A7-D719-E09CAB2E7F71">
 <createdBy>bjacq</createdBy>
@@ -158,16 +155,6 @@ Ancien champ : CCOMVOI.]]></commentInRDBMS>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FF7A2A9E-EA10-8D19-5EBA-9A9E2FEE5CAC"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="2E36ECEE-D809-8E68-6C7E-FF3442877F4A" name="TA_RELATION_TRONCON_VOIE_LOG_FID_RELATION_TRONCON_VOIE_FK">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-11 14:57:49 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="C41280DB-2423-BF64-F1D5-EEC9DC00FF9E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
