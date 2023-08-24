@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="C67D7DC9-00D5-DD71-2E15-1D1B6739A6A6" name="VM_AUDIT_DISTANCE_SEUIL_TRONCON_1KM">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:15:07 UTC</createdTime>
+<comment><![CDATA[Vue permettant d''identifier les seuils distants d''1km ou plus de leur tronçon d''affectation. Mise à jour tous les samedis à 08h00.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>view_5</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT
+    b.objectid AS id_infos_seuil,
+    d.libelle_court AS position_seuil,
+    a.code_insee AS code_insee_seuil,
+    c.objectid AS id_troncon,
+    ROUND(SDO_GEOM.SDO_DISTANCE(-- Sélection de la distance entre le seuil et le point le plus proche du tronçon qui lui est affecté
+        SDO_LRS.LOCATE_PT(-- Création du point situé le plus près du seuil sur le tronçon
+            SDO_LRS.CONVERT_TO_LRS_GEOM(c.geom, m.diminfo),
+            SDO_LRS.FIND_MEASURE(SDO_LRS.CONVERT_TO_LRS_GEOM(c.geom, m.diminfo), a.geom),
+            0
+        ),
+        a.geom
+    ), 2) AS distance,
+    a.geom
+FROM
+    G_BASE_VOIE.TA_SEUIL a
+    INNER JOIN G_BASE_VOIE.TA_INFOS_SEUIL b ON b.fid_seuil = a.objectid
+    INNER JOIN G_BASE_VOIE.TA_TRONCON c ON c.objectid = a.fid_troncon
+    INNER JOIN G_BASE_VOIE.TA_LIBELLE d ON d.objectid = a.fid_position,
+    USER_SDO_GEOM_METADATA m
+WHERE
+    m.table_name = 'TA_TRONCON'
+    AND ROUND(SDO_GEOM.SDO_DISTANCE(-- Sélection de la distance entre le seuil et le point le plus proche du tronçon qui lui est affecté
+        SDO_LRS.LOCATE_PT(-- Création du point situé le plus près du seuil sur le tronçon
+            SDO_LRS.CONVERT_TO_LRS_GEOM(c.geom, m.diminfo),
+            SDO_LRS.FIND_MEASURE(SDO_LRS.CONVERT_TO_LRS_GEOM(c.geom, m.diminfo), a.geom),
+            0
+        ),
+        a.geom
+    ), 2) >=1000;]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_infos_seuil" id="EB9F4D7E-7C33-0D4E-856E-B82EC947BA99">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:16:02 UTC</createdTime>
+<comment><![CDATA[Identifiants des seuils utilisés en tant que clé primaire (objectid de TA_INFOS_SEUIL).]]></comment>
+<commentInRDBMS><![CDATA[Identifiants des seuils utilisés en tant que clé primaire (objectid de TA_INFOS_SEUIL).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id_infos_seuil</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>id_infos_seuil</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="position_seuil" id="85B9D6C9-37ED-8972-581B-D1BC53DBD271">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:16:02 UTC</createdTime>
+<comment><![CDATA[Position géographique du seuil (entrée du bâtiment/seuil, boîte postale, entrée de rue, portail, etc).]]></comment>
+<commentInRDBMS><![CDATA[Position géographique du seuil (entrée du bâtiment/seuil, boîte postale, entrée de rue, portail, etc).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>position_seuil</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>position_seuil</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="code_insee_seuil" id="3E248625-A98A-1945-3F2C-BC137057D835">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:16:02 UTC</createdTime>
+<comment><![CDATA[Code INSEE de la commune dans laquelle se situe le seuil.]]></comment>
+<commentInRDBMS><![CDATA[Code INSEE de la commune dans laquelle se situe le seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>code_insee_seuil</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>code_insee_seuil</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_troncon" id="7766B963-FCC3-0FFD-D7C6-FE63EB510C3E">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:16:02 UTC</createdTime>
+<comment><![CDATA[Identifiant du tronçon affecté au seuil.]]></comment>
+<commentInRDBMS><![CDATA[Identifiant du tronçon affecté au seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>id_troncon</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>id_troncon</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="distance" id="884D8546-5B89-B261-84A1-A98E1E64652A">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:16:02 UTC</createdTime>
+<comment><![CDATA[Distance minimale entre un seuil et le tronçon qui lui est affecté.]]></comment>
+<commentInRDBMS><![CDATA[Distance minimale entre un seuil et le tronçon qui lui est affecté.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>distance</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>distance</headerAlias>
+<expression>ROUND(SDO_GEOM.SDO_DISTANCE(SDO_LRS.LOCATE_PT(SDO_LRS.CONVERT_TO_LRS_GEOM(c.geom,m.diminfo),SDO_LRS.FIND_MEASURE(SDO_LRS.CONVERT_TO_LRS_GEOM(c.geom,m.diminfo),a.geom),0),a.geom),2)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="040CF564-629B-30B8-DCED-BC3F1070D752">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:16:02 UTC</createdTime>
+<comment><![CDATA[Champ géométrique de type point contenant la géométrie des seuils.]]></comment>
+<commentInRDBMS><![CDATA[Champ géométrique de type point contenant la géométrie des seuils.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>SDO_GEOMETRY</dataType>
+<headerAlias>geom</headerAlias>
+<reference>false</reference>
+<referencedColumn>1B4D2960-2288-DFBA-3BAC-132D92499845</referencedColumn>
+<table>E68F28E3-747B-4DDF-25E2-B4FF96E20B5A</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E68F28E3-747B-4DDF-25E2-B4FF96E20B5A">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_SEUIL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D34DB8C2-15C5-EED7-6419-8D609974CCBC">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_INFOS_SEUIL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8042F19F-BCD1-B7BE-C086-3761A8C9C218">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_LIBELLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1B4D2960-2288-DFBA-3BAC-132D92499845">
+<columnName>geom</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_SEUIL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DA7495A2-7120-19A9-599C-53EE5DBA0169">
+<columnName>geom</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="17B52127-565B-8393-9FEF-543334313340">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_SEUIL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6BAB728A-6409-837F-A6D7-816BDD4CA27D">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D2C83F7B-C6B6-1E18-6367-5B7EA3D9418D">
+<columnName>libelle_court</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_LIBELLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="32BFEC61-6259-CDF8-7E46-AA4D01136734">
+<columnName>fid_seuil</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_INFOS_SEUIL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="34BA1DF2-9A2A-C4FB-FF46-5D8008B21AEB">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_INFOS_SEUIL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_LIBELLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F856AA69-809F-BC46-1992-46B4272D6717">
+<columnName>fid_troncon</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_SEUIL</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="66711F3C-1B15-05C6-5698-ED90C8C0583B" name="VM_AUDIT_DISTANCE_SEUIL_TRONCON_1KM_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:19:03 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="EB9F4D7E-7C33-0D4E-856E-B82EC947BA99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

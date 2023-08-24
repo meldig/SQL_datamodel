@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9546BFFB-A000-2D06-DD20-8A776C1F9578" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_FAMILLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:33:17 UTC</createdTime>
+<comment><![CDATA[Table listant toutes les familles des types d''états et d''objets de la base base voie, ce qui permet de les catégoriser.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="149007C5-567F-345D-6F3D-D82960ABA756">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:35:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="7CE99D2A-6CE8-7087-1CA8-167D5B94D74F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:35:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Famille d''objets ou d''actions permettant de catégoriser un état ou un objet dans la base voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE958457-4C1C-2D83-2DF5-D0DFC06A5DE4" name="TA_FAMILLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:35:07 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="149007C5-567F-345D-6F3D-D82960ABA756"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

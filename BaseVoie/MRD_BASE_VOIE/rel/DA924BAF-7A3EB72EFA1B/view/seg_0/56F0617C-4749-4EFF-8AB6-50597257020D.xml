@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="56F0617C-4749-4EFF-8AB6-50597257020D" name="VM_CONSULTATION_VOIE_SUPRA_COMMUNALE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:55:14 UTC</createdTime>
+<comment><![CDATA[Vue matérialisée contenant la géométrie des voies supra-communales avec leur identifiant, leur nom et leur géométrie. Mise à jour quotidienne à 23h00.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>view_12</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[WITH 
+        C_1 AS(
+            SELECT
+                coalesce(c.id_sireo, TO_CHAR(c.objectid)) AS id_voie_supra_communale,
+                c.nom,
+                SDO_AGGR_UNION(SDOAGGRTYPE(b.geom, 0.005)) AS geom
+            FROM 
+                G_BASE_VOIE.TA_RELATION_VOIE_ADMINISTRATIVE_SUPRA_COMMUNALE a 
+                INNER JOIN G_BASE_VOIE.VM_CONSULTATION_VOIE_ADMINISTRATIVE b ON b.id_voie_administrative = a.fid_voie_administrative
+                INNER JOIN G_BASE_VOIE.TA_VOIE_SUPRA_COMMUNALE c ON c.objectid = a.fid_voie_supra_communale
+            GROUP BY
+                coalesce(c.id_sireo, TO_CHAR(c.objectid)),
+                c.objectid,
+                c.nom
+        )
+
+        SELECT
+            rownum AS objectid,
+            a.id_voie_supra_communale,
+            a.nom,
+            a.geom
+        FROM
+            C_1 a;]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="objectid" id="FD141177-9C0A-7DDE-5B47-0419E6CDBE4E">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:55:49 UTC</createdTime>
+<comment><![CDATA[Clé primaire auto-incrémentée de la VM.]]></comment>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la VM.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>objectid</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>objectid</headerAlias>
+<expression>rownum</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_voie_supra_communale" id="48345728-4F5C-C713-7629-CA9462B4E265">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:55:49 UTC</createdTime>
+<comment><![CDATA[Identifiants des voies supra-communales correspondant aux dentifiants des ex-rd et des voies supra-communales antérieures à la migration (TA_VOIE_SUPRA_COMMUNALE.id_sireo) et aux identifiants des voies supra-communales postérieures à la migration (TA_VOIE_SUPRA_COMMUNALE.objectid).]]></comment>
+<commentInRDBMS><![CDATA[Identifiants des voies supra-communales correspondant aux dentifiants des ex-rd et des voies supra-communales antérieures à la migration (TA_VOIE_SUPRA_COMMUNALE.id_sireo) et aux identifiants des voies supra-communales postérieures à la migration (TA_VOIE_SUPRA_COMMUNALE.objectid).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>id_voie_supra_communale</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nom" id="2FA240AE-12C9-54FE-60B7-6EE5A785033E">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:55:49 UTC</createdTime>
+<comment><![CDATA[Nom de la voie supra-communale : s''il s''agit d''une ex RD au moement de l''import, alors l''idsupvoi de la table SIREO_LEC.EXRD_IDSUPVOIE est utilisé, s''il s''agit d''une voie supra-communale absente de la table SIREO_LEC.EXRD_IDSUPVOIE au moment de l''import alors l''idvoi de SIREO_LEC.OUT_DOMANIALITE est utilisé. Pour toute nouvelle voie supra-communale post-import, le nom correspond à l''identifiant auto-incrémenté de la voie.]]></comment>
+<commentInRDBMS><![CDATA[Nom de la voie supra-communale : s''il s''agit d''une ex RD au moement de l''import, alors l''idsupvoi de la table SIREO_LEC.EXRD_IDSUPVOIE est utilisé, s''il s''agit d''une voie supra-communale absente de la table SIREO_LEC.EXRD_IDSUPVOIE au moment de l''import alors l''idvoi de SIREO_LEC.OUT_DOMANIALITE est utilisé. Pour toute nouvelle voie supra-communale post-import, le nom correspond à l''identifiant auto-incrémenté de la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>nom</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="5A682696-E74A-C236-CE25-C50D6ADC0D30">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:55:49 UTC</createdTime>
+<comment><![CDATA[Géométrie des voies supra-communales de type multiligne.]]></comment>
+<commentInRDBMS><![CDATA[Géométrie des voies supra-communales de type multiligne.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>geom</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5409C47E-F9F6-1127-1FC6-026034CBB86B">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_ADMINISTRATIVE_SUPRA_COMMUNALE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="07A257FC-19DB-D3C0-61FA-0EAB5B3F035B">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_SUPRA_COMMUNALE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A5301D1B-32A3-CB30-FB8D-4CB02C2097E0">
+<columnName>id_voie_administrative</columnName>
+<tableName>VM_CONSULTATION_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1A8C7FF9-274E-D912-7755-39BC30387DA1">
+<columnName>fid_voie_administrative</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_ADMINISTRATIVE_SUPRA_COMMUNALE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="59892949-20F1-E228-92F7-C6734D9B64D3">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_SUPRA_COMMUNALE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E53B4FF8-121E-5681-435B-1C5006E220C9">
+<columnName>fid_voie_supra_communale</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_ADMINISTRATIVE_SUPRA_COMMUNALE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="408A46EF-706B-49F4-CDDA-56B9AA6F022F">
+<columnName>geom</columnName>
+<tableName>VM_CONSULTATION_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="47D4E070-6B41-196E-2E5C-0B1A460E0BCF" name="VM_CONSULTATION_VOIE_SUPRA_COMMUNALE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:58:34 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="FD141177-9C0A-7DDE-5B47-0419E6CDBE4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E9461CA-BADD-C758-1913-BD8D0F129BC6" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_FAMILLE_POINT_INTERET">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 07:47:51 UTC</createdTime>
+<comment><![CDATA[Catégories des différents points d''intérêt.
+Exemple : commerce, scolaire, transport, hébergement, etc
+
+Ancienne table ADMIN_LISTE_ORIGINE_POI]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="6A16E519-BED4-0A71-6B09-85926CE69237">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 07:53:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code" id="9E36F87B-7E81-2DAB-39CF-1C676BBC46CC">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 07:53:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code de la famille du POI.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="A344F3E7-3AB9-BAE7-ADA4-AEF31F7DC6BF">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 07:53:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Familles des POI. Ces familles permettent de catégoriser les points d''intérêt.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C3DD886-6C20-F2FD-31B3-3E95E257CA8D" name="TA_FAMILLE_POINT_INTERET_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-03 07:53:23 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A16E519-BED4-0A71-6B09-85926CE69237"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

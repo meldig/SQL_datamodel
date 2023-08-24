@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MRD_BASE_VOIE" id="43FBF9D5-6E3D-8C0C-10E5-73FE642C8C3B" version="3.5">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-04-22 07:43:16 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>43FBF9D5-6E3D-8C0C-10E5-73FE642C8C3B</designId>
+</OSDM_Design>

@@ -1,0 +1,359 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="84D729D4-C443-70A4-158E-2579FEB1DE1D" name="VM_CONSULTATION_VOIE_ADMINISTRATIVE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:47:58 UTC</createdTime>
+<comment><![CDATA[Vue matérialisée contenant la géométrie des voies administratives avec leur nom, code insee, latéralité et hiérarchie. Mise à jour quotidienne à 21h00.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>view_11</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[WITH 
+        C_1 AS (
+            SELECT
+                d.objectid AS id_voie_administrative,
+                d.code_insee,
+                h.nom AS nom_commune,
+                TRIM(SUBSTR(UPPER(e.libelle), 1, 1) || SUBSTR(LOWER(e.libelle), 2)) AS type_voie,
+                TRIM(d.libelle_voie) AS libelle_voie,
+                TRIM(d.complement_nom_voie) AS complement_nom_voie,
+                TRIM(SUBSTR(UPPER(e.libelle), 1, 1) || SUBSTR(LOWER(e.libelle), 2) || ' ' || TRIM(d.libelle_voie) || ' ' || TRIM(d.complement_nom_voie)) || CASE WHEN d.code_insee = '59298' THEN ' (Hellemmes-Lille)' WHEN d.code_insee = '59355' THEN ' (Lomme)' END AS nom_voie,
+                f.libelle_court AS lateralite,
+                CASE WHEN COALESCE(g.fid_voie_secondaire, 0) = 0 THEN 'voie principale' ELSE 'voie secondaire' END AS hierarchie,
+                COUNT(c.fid_voie_physique) AS nbr_voie_physique
+            FROM
+                G_BASE_VOIE.TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE c
+                INNER JOIN G_BASE_VOIE.TA_VOIE_ADMINISTRATIVE d ON d.objectid = c.fid_voie_administrative
+                LEFT JOIN G_BASE_VOIE.TA_TYPE_VOIE e ON e.objectid = d.fid_type_voie
+                LEFT JOIN G_BASE_VOIE.TA_LIBELLE f ON f.objectid = c.fid_lateralite
+                LEFT JOIN G_BASE_VOIE.TA_HIERARCHISATION_VOIE g ON g.fid_voie_secondaire = d.objectid
+                INNER JOIN G_REFERENTIEL.MEL_COMMUNE_LLH h ON h.code_insee = d.code_insee
+            GROUP BY
+                d.objectid,
+                d.code_insee,
+                h.nom,
+                TRIM(SUBSTR(UPPER(e.libelle), 1, 1) || SUBSTR(LOWER(e.libelle), 2)),
+                TRIM(d.libelle_voie),
+                TRIM(d.complement_nom_voie),
+                TRIM(SUBSTR(UPPER(e.libelle), 1, 1) || SUBSTR(LOWER(e.libelle), 2) || ' ' || TRIM(d.libelle_voie) || ' ' || TRIM(d.complement_nom_voie)) || CASE WHEN d.code_insee = '59298' THEN ' (Hellemmes-Lille)' WHEN d.code_insee = '59355' THEN ' (Lomme)' END,
+                f.libelle_court,
+                CASE WHEN COALESCE(g.fid_voie_secondaire, 0) = 0 THEN 'voie principale' ELSE 'voie secondaire' END
+        ),
+
+        C_2 AS(
+            SELECT
+                d.id_voie_administrative,
+                d.code_insee,
+                d.nom_commune,
+                d.type_voie,
+                d.libelle_voie,
+                d.complement_nom_voie,
+                d.nom_voie,
+                d.lateralite,
+                d.hierarchie,
+                d.nbr_voie_physique,
+                SDO_AGGR_UNION(SDOAGGRTYPE(a.geom, 0.005)) AS geom
+            FROM
+                G_BASE_VOIE.TA_TRONCON a
+                INNER JOIN G_BASE_VOIE.TA_VOIE_PHYSIQUE b ON b.objectid = a.fid_voie_physique
+                INNER JOIN G_BASE_VOIE.TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE c ON c.fid_voie_physique = b.objectid
+                INNER JOIN C_1 d ON d.id_voie_administrative = c.fid_voie_administrative
+            GROUP BY
+                d.id_voie_administrative,
+                d.code_insee,
+                d.nom_commune,
+                d.type_voie,
+                d.libelle_voie,
+                d.complement_nom_voie,
+                d.nom_voie,
+                d.lateralite,
+                d.hierarchie,
+                d.nbr_voie_physique
+        )
+
+        SELECT
+            ROWNUM AS objectid,
+            a.id_voie_administrative,
+            a.code_insee,
+            a.nom_commune,
+            a.type_voie,
+            a.libelle_voie,
+            a.complement_nom_voie,
+            a.nom_voie,
+            a.lateralite,
+            a.hierarchie,
+            a.nbr_voie_physique,
+            a.geom
+        FROM
+            C_2 a;]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="objectid" id="61BDB0A2-1E75-AE0B-C535-403B9D8EE9A0">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la VM. Il est nécessaire que cette clé primaire soit différente des identifiants de voie administrative, car la latéralité d''une voie peut-être droite ou gauche sur une partie de son tracé et lesdeuxcôtés sur le reste.]]></comment>
+<commentInRDBMS><![CDATA[Clé primaire de la VM. Il est nécessaire que cette clé primaire soit différente des identifiants de voie administrative, car la latéralité d''une voie peut-être droite ou gauche sur une partie de son tracé et lesdeuxcôtés sur le reste.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>objectid</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>objectid</headerAlias>
+<expression>ROWNUM</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id_voie_administrative" id="A5301D1B-32A3-CB30-FB8D-4CB02C2097E0">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Identifiants des voies administratives de TA_VOIE_ADMINISTRATIVE.]]></comment>
+<commentInRDBMS><![CDATA[Identifiants des voies administratives de TA_VOIE_ADMINISTRATIVE.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>id_voie_administrative</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="code_insee" id="D9281BEF-60EA-802A-E718-4661E10AF029">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Code INSEE de la voie administrative.]]></comment>
+<commentInRDBMS><![CDATA[Code INSEE de la voie administrative.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>code_insee</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nom_commune" id="41979FE5-504C-B94A-9AFE-C45CF811CC4A">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Nom commune.]]></comment>
+<commentInRDBMS><![CDATA[Nom commune.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>nom_commune</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="type_voie" id="12EB4073-F030-328A-3299-DB1DDFE38BB3">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Type de voie administrative]]></comment>
+<commentInRDBMS><![CDATA[Type de voie administrative]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>type_voie</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="libelle_voie" id="E8F433AF-B743-A1D9-B2C6-07A358137409">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Libellé de la voie administrative.]]></comment>
+<commentInRDBMS><![CDATA[Libellé de la voie administrative.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>libelle_voie</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="complement_nom_voie" id="388ADCA9-C590-AF69-4E2A-C7BC677B0AD7">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Complément de nom de la voie administrative.]]></comment>
+<commentInRDBMS><![CDATA[Complément de nom de la voie administrative.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>complement_nom_voie</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nom_voie" id="5F8AF606-77B1-5AF6-B8A1-FF5C52769A14">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Nom des voies administratives : concaténation du type de voie, du libellé de voie et du complément de nom de voie.]]></comment>
+<commentInRDBMS><![CDATA[Nom des voies administratives : concaténation du type de voie, du libellé de voie et du complément de nom de voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>nom_voie</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="lateralite" id="EFFFEECC-378F-BB00-1198-F02D29EA0C93">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Latéralité de la voie.]]></comment>
+<commentInRDBMS><![CDATA[Latéralité de la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>lateralite</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="hierarchie" id="E2445A21-C694-C725-338E-54F34C5CB5FE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Hiérarchie des voies (prinicpale/secondaire).]]></comment>
+<commentInRDBMS><![CDATA[Hiérarchie des voies (prinicpale/secondaire).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>hierarchie</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nbr_voie_physique" id="13C08B16-595D-AF17-3AA7-0E5EAB697AA3">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Nombre de voies physiques par voie administrative.]]></comment>
+<commentInRDBMS><![CDATA[Nombre de voies physiques par voie administrative.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>nbr_voie_physique</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="408A46EF-706B-49F4-CDDA-56B9AA6F022F">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:48:31 UTC</createdTime>
+<comment><![CDATA[Géométrie de type multiligne.]]></comment>
+<commentInRDBMS><![CDATA[Géométrie de type multiligne.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>geom</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="22E06C5C-A545-958E-24E2-4BC55BD2639F">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1BF90E37-62E6-2F41-0993-2FCE3D53A5C8">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="854A4AF7-0CF9-AEB9-6529-B7DDC8F41E1A">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TYPE_VOIE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8042F19F-BCD1-B7BE-C086-3761A8C9C218">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_LIBELLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="94F7A5FB-59FA-3BD0-3009-3E993A8DA581">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_HIERARCHISATION_VOIE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EE29B7FC-51B8-D974-9F22-4371A0778715">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_PHYSIQUE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="67D60DA4-00F0-D631-72E9-F3C205572214">
+<columnName>fid_voie_administrative</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DA7495A2-7120-19A9-599C-53EE5DBA0169">
+<columnName>geom</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="40FAA5E3-9294-53A6-ABFB-BEB3F026D58B">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_PHYSIQUE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="620FE706-037B-970E-09A8-BEF6526B2A2B">
+<columnName>fid_voie_physique</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0D45E7D9-00AA-97E4-369E-4ED901C8806E">
+<columnName>complement_nom_voie</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E8D539D9-470E-AD59-F6F9-7EBB356DBCE3">
+<columnName>code_insee</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D2C83F7B-C6B6-1E18-6367-5B7EA3D9418D">
+<columnName>libelle_court</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_LIBELLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="330C7FFA-7CD3-6167-C9BA-051552DAACCD">
+<columnName>fid_voie_physique</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="10582D37-3039-372B-C21B-163C26922848">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TYPE_VOIE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F340C1D0-AB4C-47E6-7659-BE187B5D561D">
+<columnName>libelle</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TYPE_VOIE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_LIBELLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D1FD2F23-7562-FB1A-948D-5C0FCF8E2E57">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="516D3687-3EF2-6947-5192-5ACA1F02EB89">
+<columnName>fid_lateralite</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="85BC597A-6554-9457-937A-3315DF68E024">
+<columnName>libelle_voie</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1806E77B-9011-79FD-6598-E711D33C4488">
+<columnName>fid_type_voie</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="CD534BFD-2B0F-2DB8-5EBF-D61EECCBE273" name="VM_CONSULTATION_VOIE_ADMINISTRATIVE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 07:54:44 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="61BDB0A2-1E75-AE0B-C535-403B9D8EE9A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

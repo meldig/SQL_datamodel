@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="6C78A3D0-4FC5-77CD-C816-CF99C9CF1F11" name="VM_AUDIT_TRONCON_NON_JOINTIFS">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:14:40 UTC</createdTime>
+<comment><![CDATA[Vue matérialisée identifiant les tronçons distants de 5cm non-jointifs. Mise à jour tous les samedis à 12h00.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>view_16</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[WITH
+    C_1 AS(
+        SELECT
+            a.objectid AS id1,
+            b.objectid AS id2
+        FROM
+            G_BASE_VOIE.TA_TRONCON a,
+            G_BASE_VOIE.TA_TRONCON b,
+            USER_SDO_GEOM_METADATA m
+        WHERE 
+            a.objectid < b.objectid
+            AND m.table_name = 'TA_TRONCON'
+            AND SDO_WITHIN_DISTANCE(a.geom, b.geom, 'distance = 0.5') = 'TRUE'
+            AND SDO_LRS.CONNECTED_GEOM_SEGMENTS(
+                    SDO_LRS.CONVERT_TO_LRS_GEOM(a.geom, m.diminfo),
+                    SDO_LRS.CONVERT_TO_LRS_GEOM(b.geom, m.diminfo),
+                    0.5
+                ) <> 'TRUE'
+    ),
+    
+    C_2 AS(
+        SELECT
+            id1 AS objectid
+        FROM
+            C_1
+        UNION ALL
+        SELECT
+            id2 AS objectid
+        FROM
+            C_1
+    ),
+    
+    C_3 AS(
+        SELECT DISTINCT
+            objectid
+        FROM
+            C_2
+    )
+    
+    SELECT
+        a.objectid,
+        b.geom
+    FROM
+        C_3 a
+        INNER JOIN G_BASE_VOIE.TA_TRONCON b ON b.objectid = a.objectid;]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="objectid" id="616845FC-27E6-158F-D295-CFE3A501C97F">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:15:06 UTC</createdTime>
+<comment><![CDATA[Identifiants des tronçons correspondant à la clé primaire de la VM.]]></comment>
+<commentInRDBMS><![CDATA[Identifiants des tronçons correspondant à la clé primaire de la VM.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>objectid</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="A0F5829A-BD71-3E12-02B5-20AC3C8B0CB2">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:15:06 UTC</createdTime>
+<comment><![CDATA[Géométrie des tronçons.]]></comment>
+<commentInRDBMS><![CDATA[Géométrie des tronçons.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>SDO_GEOMETRY</dataType>
+<headerAlias>geom</headerAlias>
+<reference>false</reference>
+<referencedColumn>DA7495A2-7120-19A9-599C-53EE5DBA0169</referencedColumn>
+<table>CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DA7495A2-7120-19A9-599C-53EE5DBA0169">
+<columnName>geom</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6BAB728A-6409-837F-A6D7-816BDD4CA27D">
+<columnName>objectid</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="4595E35B-CD32-B73B-C21B-6C9CB414F8A2" name="VM_AUDIT_TRONCON_NON_JOINTIFS_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:16:33 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="616845FC-27E6-158F-D295-CFE3A501C97F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

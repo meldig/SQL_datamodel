@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEBC71FB-173F-339F-0458-1290650FAD0C" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_RIVOLI">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 08:53:38 UTC</createdTime>
+<comment><![CDATA[Table rassemblant tous les codes fantoirs issus du fichier fantoir et correspondants aux voies présentes sur le territoire de la MEL.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="99792614-68D7-3C7A-1B0F-46003990D42F">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 09:01:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code_rivoli" id="B17E9800-B175-581D-55BF-FFEBCF458922">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 09:01:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code RIVOLI du code fantoir. Ce code est l'identifiant sur 4 caractères de la voie au sein de la commune. Attention : il ne faut pas confondre ce code avec le code de l'ancien fichier RIVOLI, devenu depuis fichier fantoir. Le code RIVOLI fait partie du code fantoir. Attention cet identifiant est recyclé dans le fichier fantoir, ce champ ne doit donc jamais être utilisé en tant que clé primaire ou étrangère.
+]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cle_controle" id="0ABFC579-A182-38C7-0486-D35414B718AF">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-06-07 14:08:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé de contrôle du code fantoir.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D48F66F-654E-3962-E111-78EB6E50FEB8" name="TA_RIVOLI_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 09:01:16 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99792614-68D7-3C7A-1B0F-46003990D42F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
