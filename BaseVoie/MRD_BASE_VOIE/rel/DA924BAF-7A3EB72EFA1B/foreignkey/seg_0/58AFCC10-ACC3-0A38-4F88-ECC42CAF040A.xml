@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="58AFCC10-ACC3-0A38-4F88-ECC42CAF040A" containerWithKeyObject="98E9DCF8-C00E-F17B-58B4-1CE4E531E55A" localFKIndex="0BD5E0BF-6B9B-FF22-BBA0-58FB7366AB19" name="TA_TRONCON_LOG_FID_TYPE_ACTION_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 13:01:29 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<referredTableLongName>TA_LIBELLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8042F19F-BCD1-B7BE-C086-3761A8C9C218</referredTableID>
+<keyObject>6F84F133-70CC-7566-3963-53264803FABC</keyObject>
+<referredKeyID>6F84F133-70CC-7566-3963-53264803FABC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>objectid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

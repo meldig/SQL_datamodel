@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="3A661DB7-EB42-DC93-39B8-E9B5B0C93CC6" name="VM_AUDIT_DOUBLON_NOM_VOIE_PAR_COMMUNE">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:02:17 UTC</createdTime>
+<comment><![CDATA[Vue matérialisée dénombrant les voies en doublon de nom par commune. Mise à jour tous les samedis à 21h00.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>view_13</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[WITH 
+        C_1 AS( -- Sélection du centroïde des voies admin disposant d'un nom de voie 
+            SELECT
+                a.nom_voie,
+                a.code_insee,
+                SDO_LRS.LOCATE_PT(
+                        SDO_LRS.CONVERT_TO_LRS_GEOM(a.geom, m.diminfo),
+                        SDO_GEOM.SDO_LENGTH(a.geom, 0.005)/2
+                ) AS geom
+            FROM
+                G_BASE_VOIE.VM_CONSULTATION_VOIE_ADMINISTRATIVE a,
+                USER_SDO_GEOM_METADATA m
+            WHERE
+                a.libelle_voie IS NOT NULL
+                AND m.table_name = 'VM_CONSULTATION_VOIE_ADMINISTRATIVE'
+        ),
+
+        C_2 AS(-- Décompte des doubons de noms de voie par commune
+            SELECT
+                a.nom_voie,
+                a.code_insee,
+                COUNT(a.objectid) AS nombre
+            FROM
+                G_BASE_VOIE.VM_CONSULTATION_VOIE_ADMINISTRATIVE a
+                INNER JOIN C_1 b ON b.nom_voie = a.nom_voie AND b.code_insee = a.code_insee
+            GROUP BY
+                a.nom_voie,
+                a.code_insee
+            HAVING
+                COUNT(a.objectid) > 1
+        ),
+
+        C_3 AS(-- Regroupement des géométries par nom de voie et commune
+            SELECT
+                a.nom_voie,
+                a.code_insee,
+                b.nombre,
+                SDO_CS.MAKE_2D(SDO_AGGR_UNION(SDOAGGRTYPE(a.geom, 0.001))) AS geom
+            FROM
+                C_1 a 
+                INNER JOIN C_2 b ON b.nom_voie = a.nom_voie AND a.code_insee = b.code_insee
+            GROUP BY
+                a.nom_voie,
+                a.code_insee,
+                b.nombre
+        )
+        SELECT
+            rownum AS objectid,
+            a.nom_voie,
+            a.code_insee,
+            a.nombre,
+            a.geom
+        FROM
+            C_3 a;]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="objectid" id="489DE069-D6EE-5C48-2920-ECC4EEB0B2C1">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:02:51 UTC</createdTime>
+<comment><![CDATA[Clé primaire de la VM.]]></comment>
+<commentInRDBMS><![CDATA[Clé primaire de la VM.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>objectid</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>objectid</headerAlias>
+<expression>rownum</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nom_voie" id="5C8891CF-BE5D-00E8-0A18-C2ADE9F79C1F">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:02:51 UTC</createdTime>
+<comment><![CDATA[Nom de voie (Type de voie + libelle de voie + complément nom de voie + commune associée).]]></comment>
+<commentInRDBMS><![CDATA[Nom de voie (Type de voie + libelle de voie + complément nom de voie + commune associée).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>nom_voie</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="code_insee" id="C96420BB-730D-679E-AA8B-53910A9C2DC8">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:02:51 UTC</createdTime>
+<comment><![CDATA[Code INSEE de la commune d''appartenance de la voie.]]></comment>
+<commentInRDBMS><![CDATA[Code INSEE de la commune d''appartenance de la voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>code_insee</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="A79260B6-91CD-9655-4631-00FF04598C9A">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:02:51 UTC</createdTime>
+<comment><![CDATA[Nombre de voies ayant le même nom au sein d''une même commune.]]></comment>
+<commentInRDBMS><![CDATA[Nombre de voies ayant le même nom au sein d''une même commune.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>nombre</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="6617D502-E7FE-6560-1BF3-48E920E9A79D">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:02:51 UTC</createdTime>
+<comment><![CDATA[Géométrie de type multipoint rassemblant les centroïdes de toutes les voies par doublon.]]></comment>
+<commentInRDBMS><![CDATA[Géométrie de type multipoint rassemblant les centroïdes de toutes les voies par doublon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>geom</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E8F433AF-B743-A1D9-B2C6-07A358137409">
+<columnName>libelle_voie</columnName>
+<tableName>VM_CONSULTATION_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="408A46EF-706B-49F4-CDDA-56B9AA6F022F">
+<columnName>geom</columnName>
+<tableName>VM_CONSULTATION_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D9281BEF-60EA-802A-E718-4661E10AF029">
+<columnName>code_insee</columnName>
+<tableName>VM_CONSULTATION_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="61BDB0A2-1E75-AE0B-C535-403B9D8EE9A0">
+<columnName>objectid</columnName>
+<tableName>VM_CONSULTATION_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5F8AF606-77B1-5AF6-B8A1-FF5C52769A14">
+<columnName>nom_voie</columnName>
+<tableName>VM_CONSULTATION_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="6E6D2A23-0AAA-5EDF-E10C-9957E955E762" name="VM_AUDIT_DOUBLON_NOM_VOIE_PAR_COMMUNE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-03 08:04:29 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="489DE069-D6EE-5C48-2920-ECC4EEB0B2C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

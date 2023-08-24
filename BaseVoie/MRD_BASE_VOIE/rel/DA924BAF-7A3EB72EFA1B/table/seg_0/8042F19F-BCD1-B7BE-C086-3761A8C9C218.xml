@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8042F19F-BCD1-B7BE-C086-3761A8C9C218" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_LIBELLE">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:35:38 UTC</createdTime>
+<comment><![CDATA[Table listant les types et états permettant de catégoriser les objets de la base voie.]]></comment>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="objectid" id="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:41:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_court" id="D2C83F7B-C6B6-1E18-6367-5B7EA3D9418D">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:41:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur courte pouvant être prise par un libellé de la nomenclature de la base voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle_long" id="51657317-7990-F352-1B79-F0D2B5CFCF96">
+<createdBy>bjacq</createdBy>
+<createdTime>2022-05-31 08:49:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valeur longue pouvant être prise par un libellé de la nomenclature de la base voie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F84F133-70CC-7566-3963-53264803FABC" name="TA_LIBELLE_PK">
+<createdBy>bjacq</createdBy>
+<createdTime>2021-05-06 12:41:19 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
