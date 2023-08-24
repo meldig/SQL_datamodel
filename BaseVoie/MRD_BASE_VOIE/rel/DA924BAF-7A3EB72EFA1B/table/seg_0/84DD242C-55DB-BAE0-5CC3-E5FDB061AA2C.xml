@@ -43,11 +43,50 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="code_insee" id="BB870FE5-DC54-49CE-B243-467DC7E666C2">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 06:32:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code INSEE du seuil.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="id_troncon" id="A0B85CB8-2028-F013-12BD-4ED079DCA096">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-30 15:00:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Identifiant de la table TA_TRONCON permettant d''affecter un seuil à un et un seul tronçon.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_position" id="09AB26B3-92FA-30D0-0885-A1C0693E28A7">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 06:32:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table G_BASE_VOIE.TA_LIBELLE permettant d''affecter une position à un seuil. Cette position désigne le lieu physique de l''adresse (seuil, boîte postale, portail, entrée de rue, etc).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_lateralite" id="A2219074-52FF-6F3D-EA47-A9CF0D8B0430">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 06:32:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table G_BASE_VOIE.TA_LIBELLE permettant d''affecter une latéralité à un seuil. Cette latéralité est déterminée par rapport au sens géométrique du tronçon au sein d''une commune et par rapport à la latéralité de sa voie en limites de commune.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -75,7 +114,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7B477C34-A6A1-2DD8-EFCD-6760073479FC" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

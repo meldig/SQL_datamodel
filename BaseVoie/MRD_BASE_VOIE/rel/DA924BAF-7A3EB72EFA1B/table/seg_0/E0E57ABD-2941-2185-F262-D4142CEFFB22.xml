@@ -90,11 +90,12 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_voie_supra_communale" id="6A9F99C1-7C46-E820-E195-BBBD5CCE74A6">
+<Column name="id_rivoli" id="DC773814-7F34-8597-733C-57BB7F45C234">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-10-14 07:27:15 UTC</createdTime>
-<commentInRDBMS><![CDATA[identifiant de la table TA_VOIE_SUPRA_COMMUNALE permettant d''associer une ou plusieurs voies administratives à une voie supra-communale, c-à-d une voie ne tenant pas compte des limites communales, telle que les voies métropolitaines et les autoroutes.]]></commentInRDBMS>
+<createdTime>2023-08-24 06:45:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant de la table TA_RIVOLI permettant d''associer un code RIVOLI à chaque voie (cette fk est conservée uniquement dans le cadre de la production du jeu BAL).]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -122,7 +123,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="B60F5993-FFAE-4558-EE87-62564C6ABE14" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

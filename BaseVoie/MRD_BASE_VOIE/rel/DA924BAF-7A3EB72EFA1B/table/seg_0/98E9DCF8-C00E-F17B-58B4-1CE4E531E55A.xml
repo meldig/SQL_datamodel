@@ -35,18 +35,6 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_tronçon_pere" id="472D1145-8872-6B78-E608-5F6E39757FB6">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-05-03 12:47:54 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_TRONCON permettant, en cas de coupure de tronçon, de savoir quel était le tronçon original.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="id_troncon" id="78EEBF69-ED9E-C499-E241-CF7D0A1BE0E4">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-04-30 09:24:46 UTC</createdTime>
@@ -58,11 +46,12 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_voie_physique" id="DAB788D4-B76B-AB7E-09F1-D352EEAB0607">
+<Column name="old_id_troncon" id="79B1BA6C-9979-363C-0B05-3307D45825F3">
 <createdBy>bjacq</createdBy>
-<createdTime>2023-01-30 09:37:57 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de la voie physique à laquelle le tronçon est rattaché.]]></commentInRDBMS>
+<createdTime>2023-08-24 06:38:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ancien identifiant du troncon.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -70,10 +59,10 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_metadonnee" id="CBD36E67-FC0E-9020-C6C5-E3395F4E6033">
+<Column name="id_voie_physique" id="DAB788D4-B76B-AB7E-09F1-D352EEAB0607">
 <createdBy>bjacq</createdBy>
 <createdTime>2023-01-30 09:37:57 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de la métadonnée à laquelle le tronçon est rattaché, ce qui nous permet d''identifier sa source.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Identifiant de la voie physique à laquelle le tronçon est rattaché.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -102,7 +91,7 @@ Cette table reprend notamment le champ fid_troncon_pere de l'ancienne table ILTA
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="58AFCC10-ACC3-0A38-4F88-ECC42CAF040A" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

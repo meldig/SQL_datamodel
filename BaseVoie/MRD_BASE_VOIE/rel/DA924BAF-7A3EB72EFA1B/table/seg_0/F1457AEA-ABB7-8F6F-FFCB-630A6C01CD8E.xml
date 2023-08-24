@@ -33,6 +33,19 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id_sireo" id="F21B1C1A-B50C-2653-492F-98EBD61CC400">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 07:02:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiants des anciennes voies départementales et voies supra-communales antérieures à la migration et mis en place par SIREO.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="nom" id="FB5AD62E-43C9-5D34-EB7D-A7E8983968FA">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-10-14 07:31:28 UTC</createdTime>
@@ -65,7 +78,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="056F4A53-1674-CFE2-97C7-0BDE8490F363" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>

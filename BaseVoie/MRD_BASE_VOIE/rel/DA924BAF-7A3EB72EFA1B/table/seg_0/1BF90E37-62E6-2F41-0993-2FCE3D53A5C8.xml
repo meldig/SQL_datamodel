@@ -72,6 +72,19 @@
 <ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="commentaire" id="CC58AAB4-7434-B467-5039-720643714A98">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 06:40:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Commentaire de chaque voie, à remplir si besoin, pour une précision ou pour les voies n''ayant pas encore de nom.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="date_saisie" id="DCBA3628-4153-FD1A-F1CE-0934710C8868">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-05-24 11:32:30 UTC</createdTime>
@@ -139,10 +152,10 @@
 <colAssociation fkAssociation="5FE524F0-D931-E823-4422-6EEE44D94CE3" referredColumn="10582D37-3039-372B-C21B-163C26922848"/>
 </associations>
 </Column>
-<Column name="fid_voie_supra_communale" id="64A4B109-E142-EE49-F16B-89EE0C206FA0">
+<Column name="fid_rivoli" id="0164E15B-4432-6AE0-5F81-1A30D883C380">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-10-13 14:53:48 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE_SUPRA_COMMUNALE permettant d''associer une ou plusieurs voies administratives à une voie supra-communale, c-à-d une voie ne tenant pas compte des limites communales, telle que les voies métropolitaines et les autoroutes.]]></commentInRDBMS>
+<createdTime>2023-08-24 06:42:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_RIVOLI permettant d''associer un code RIVOLI à chaque voie (cette fk est conservée uniquement dans le cadre de la production du jeu BAL).]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -150,26 +163,9 @@
 <dataTypePrecision>38</dataTypePrecision>
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TA_RELATION_VOIE_ADMINISTRATIVE_SUPRA_COMMUNALE_fid_voie_administrative" id="38165D2B-CE8A-7FF4-26B2-BCA0645B6BD3">
-<createdBy>bjacq</createdBy>
-<createdTime>2023-07-13 07:29:25 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TA_RELATION_VOIE_ADMINISTRATIVE_SUPRA_COMMUNALE_fid_voie_supra_communale" id="3F2DAEDF-DF1A-3C50-FD71-F57A8FA7EAE6">
-<createdBy>bjacq</createdBy>
-<createdTime>2023-07-13 07:29:25 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DAD6AEE0-70DC-A240-53A2-4E8DD9B626DA" referredColumn="99792614-68D7-3C7A-1B0F-46003990D42F"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -212,6 +208,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="034E82DA-37A0-E92A-56DE-14612FD51EFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="209A989B-CAD7-DE64-9DBE-7BE7BF7E5BBB" name="TA_VOIE_ADMINISTRATIVE_FID_RIVOLI_FK">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 07:06:03 UTC</createdTime>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0164E15B-4432-6AE0-5F81-1A30D883C380"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8394B49-AAB3-9452-3713-0BEE27FF4DED" schemaObject="B860F510-5D76-DE42-4C6B-8989AAEA0D70" name="TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE_LOG">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF26DCB3-E9CC-FB98-EA7B-7F0DCF5F5E1B" name="TA_VOIE_PHYSIQUE_LOG">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:12:13 UTC</createdTime>
-<comment><![CDATA[Table d''historisation des actions effectuées sur les relations voies physiques / voies administratives de la base voie.]]></comment>
+<createdTime>2023-08-24 06:47:30 UTC</createdTime>
+<comment><![CDATA[Table d''historisation des actions effectuées sur les voies physiques de la base voie.]]></comment>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<ordsAlias>table_36</ordsAlias>
+<ordsAlias>table_28</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="objectid" id="6E5B88D4-15CB-E81C-0220-4E2143E387C8">
+<Column name="objectid" id="E122380C-2E15-BD3D-31EF-E88D9F3C7B6B">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:19:13 UTC</createdTime>
+<createdTime>2023-08-24 06:50:45 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé primaire auto-incrémentée de la table.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -21,10 +21,10 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_voie_physique" id="90412154-632A-D24B-8442-E5A74E7A7F42">
+<Column name="id_voie_physique" id="06FF2507-B782-382B-0009-FA5174794E02">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:19:13 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE_PHYSIQUE permettant d''associer une ou plusieurs voies physiques à une voie administrative.]]></commentInRDBMS>
+<createdTime>2023-08-24 06:50:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiant des voies physiques de la table TA_VOIE_PHYSIQUE.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -34,10 +34,10 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_voie_administrative" id="11C2A28C-CDD3-CF12-DCCF-53A27EE0CF12">
+<Column name="id_action" id="432E31BA-75E4-7A76-9121-0944BC3AF7B0">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:19:13 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_VOIE_PHYSIQUE permettant d''associer une voie administrative à une ou plusieurs voies physiques.]]></commentInRDBMS>
+<createdTime>2023-08-24 06:50:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Champ permettant de savoir s''il faut inverser le sens géométrique de la voie physique ou non.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,45 +47,36 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_lateralite" id="6145B971-25FE-9F9B-2F76-4C79B60CB798">
+<Column name="date_action" id="41BCE0A6-1A43-0FB8-E8BC-718070029F76">
 <createdBy>bjacq</createdBy>
-<createdTime>2023-01-30 09:40:28 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de latéralité de la voie administrative par rapport à sa voie physique.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="date_action" id="4E5FAB67-8787-EF6F-8942-FADBC05AAEA1">
-<createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:23:56 UTC</createdTime>
+<createdTime>2023-08-24 06:50:45 UTC</createdTime>
 <commentInRDBMS><![CDATA[date de saisie, modification et suppression du tronçon.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fid_type_action" id="FA01A832-BA2E-C2E6-229D-FD1B72B4C30C">
+<Column name="fid_type_action" id="910061DB-9C1E-94DE-0BD1-3315E705375C">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:23:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de catégoriser le type d''action effectué sur les relations voies physiques / voie administratives.]]></commentInRDBMS>
+<createdTime>2023-08-24 06:50:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant de catégoriser le type d''action effectuée sur les tronçons.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8AF7DD8E-1ECE-9BB3-2BAB-E4650E8C7761" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
+<colAssociation fkAssociation="1CCCAE5B-DBCA-CABE-F8C1-996EA2C0287C" referredColumn="8F7CD853-0DF1-B1FD-8CAA-014C37C385E8"/>
 </associations>
 </Column>
-<Column name="fid_pnom" id="0BA28BE8-15D6-4B18-BE91-AB4C749526A7">
+<Column name="fid_pnom" id="D97BC92C-4D71-AA94-955F-A6C2CEF1EC3E">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:23:56 UTC</createdTime>
+<createdTime>2023-08-24 06:50:45 UTC</createdTime>
 <commentInRDBMS><![CDATA[Clé étrangère vers la table TA_AGENT permettant d''associer le pnom d''un agent au tronçon qu''il a créé, modifié ou supprimé.]]></commentInRDBMS>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -95,40 +86,40 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="103BF6F1-2685-2C60-ADC3-8648EB28928F" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
+<colAssociation fkAssociation="DAFFD486-938F-FB72-5E98-33AF9C923A8A" referredColumn="A6B2D78C-A2C8-8344-D2E2-8BA5B738C7AA"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0C2697CC-DC97-40F5-6DD1-AF741305330F" name="TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE_LOG_PK">
+<ind_PK_UK id="634C3A5F-9D80-27B9-E267-87E120E21E68" name="TA_VOIE_PHYSIQUE_LOG_PK">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:19:13 UTC</createdTime>
+<createdTime>2023-08-24 06:50:45 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6E5B88D4-15CB-E81C-0220-4E2143E387C8"/>
+<colUsage columnID="E122380C-2E15-BD3D-31EF-E88D9F3C7B6B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E576C380-54B3-4273-2282-0D0843A579A3" name="TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE_LOG_FID_LIBELLE_FK">
+<ind_PK_UK id="0B6FD255-BE19-4B37-C9BE-2455DF98080C" name="TA_VOIE_PHYSIQUE_LOG_FID_PNOM_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:24:04 UTC</createdTime>
+<createdTime>2023-08-24 06:52:54 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FA01A832-BA2E-C2E6-229D-FD1B72B4C30C"/>
+<colUsage columnID="D97BC92C-4D71-AA94-955F-A6C2CEF1EC3E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EC28F683-FD19-0D6D-8239-550B2279DFAF" name="TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE_LOG_FID_PNOM_FK">
+<ind_PK_UK id="65BF6717-D776-E4F7-3870-740A7E041B40" name="TA_VOIE_PHYSIQUE_LOG_FID_TYPE_ACTION_FK">
 <createdBy>bjacq</createdBy>
-<createdTime>2022-09-13 16:24:27 UTC</createdTime>
+<createdTime>2023-08-24 06:55:08 UTC</createdTime>
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="0BA28BE8-15D6-4B18-BE91-AB4C749526A7"/>
+<colUsage columnID="910061DB-9C1E-94DE-0BD1-3315E705375C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

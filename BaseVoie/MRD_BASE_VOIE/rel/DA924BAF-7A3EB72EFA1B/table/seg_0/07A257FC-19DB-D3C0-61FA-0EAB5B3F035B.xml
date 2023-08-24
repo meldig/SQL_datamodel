@@ -21,7 +21,20 @@
 <ownDataTypeParameters>,38,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nom_voie" id="05F236B1-4D77-55B2-73CB-54EC14811970">
+<Column name="id_sireo" id="29F0B166-7195-ACF1-0477-A95394F6D7CB">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 06:58:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifiants des anciennes voies départementales et voies supra-communales antérieures à la migration et mis en place par SIREO.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="05F236B1-4D77-55B2-73CB-54EC14811970">
 <createdBy>bjacq</createdBy>
 <createdTime>2022-10-14 07:23:37 UTC</createdTime>
 <commentInRDBMS><![CDATA[Nom de la voie supra-communale - nom de l''Ex-RD ou laissez ce champ vide - Exemple : MD0750, MD0006D DGIR3.]]></commentInRDBMS>

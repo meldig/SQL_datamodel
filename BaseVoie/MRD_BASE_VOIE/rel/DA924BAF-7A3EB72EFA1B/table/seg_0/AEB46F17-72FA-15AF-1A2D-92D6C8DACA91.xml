@@ -71,18 +71,6 @@ Exemple : 1bis]]></commentInRDBMS>
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_voie_administrative" id="499040FD-D859-EABD-09FA-2206C1DF3452">
-<createdBy>bjacq</createdBy>
-<createdTime>2023-01-30 09:41:51 UTC</createdTime>
-<commentInRDBMS><![CDATA[Identifiant de la voie admiistrative à laquelle le seuil est rattaché.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="date_action" id="87DF1489-7DBA-94D4-9E2A-AF53577B3356">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-07 15:06:53 UTC</createdTime>

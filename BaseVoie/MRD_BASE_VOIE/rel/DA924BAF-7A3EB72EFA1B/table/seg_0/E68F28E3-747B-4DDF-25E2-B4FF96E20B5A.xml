@@ -36,6 +36,18 @@ Ancienne table : ILTASEU]]></comment>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="code_insee" id="0BECDFD2-C3FA-EF3E-125D-28274FED4146">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 06:27:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Code INSEE de chaque seuil inséré en dur à la saisie.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="date_saisie" id="CC962E93-02E7-C41B-D93D-255944E674D3">
 <createdBy>bjacq</createdBy>
 <createdTime>2021-05-10 08:13:36 UTC</createdTime>
@@ -97,11 +109,36 @@ Ancienne table : ILTASEU]]></comment>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>38</dataTypePrecision>
-<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="C6F4484D-AE8A-A780-1D46-A73780D10F73" referredColumn="6BAB728A-6409-837F-A6D7-816BDD4CA27D"/>
 </associations>
+</Column>
+<Column name="fid_position" id="8300149A-54A0-4719-9821-D4C939867F75">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 06:27:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table TA_LIBELLE permettant d''indiquer la position de l''adresse (seuil, boîte postale, portail, etc).]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fid_lateralite" id="A2C5A4B3-EBBC-F583-CF33-23ADEB394A4D">
+<createdBy>bjacq</createdBy>
+<createdTime>2023-08-24 06:27:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clé étrangère vers la table G_BASE_VOIE.TA_LIBELLE permettant d''affecter une latéralité à un seuil. Cette latéralité est déterminée par rapport au sens géométrique du tronçon.]]></commentInRDBMS>
+<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>38</dataTypePrecision>
+<ownDataTypeParameters>,38,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
