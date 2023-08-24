@@ -106,6 +106,16 @@
 <schema>G_BASE_VOIE</schema>
 <tableName>TA_VOIE_SUPRA_COMMUNALE</tableName>
 </UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="05F236B1-4D77-55B2-73CB-54EC14811970">
+<columnName>nom</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_SUPRA_COMMUNALE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="29F0B166-7195-ACF1-0477-A95394F6D7CB">
+<columnName>id_sireo</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_SUPRA_COMMUNALE</tableName>
+</UsedObject>
 <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E53B4FF8-121E-5681-435B-1C5006E220C9">
 <columnName>fid_voie_supra_communale</columnName>
 <schema>G_BASE_VOIE</schema>

@@ -241,9 +241,10 @@ FROM
 <ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<dataType>UNKNOWN</dataType>
+<dataType>VARCHAR2 (4000 BYTE)</dataType>
 <headerAlias>commentaire</headerAlias>
 <reference>false</reference>
+<referencedColumn>CC58AAB4-7434-B467-5039-720643714A98</referencedColumn>
 </viewElement>
 <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="860AA7A6-8961-7F9A-0886-1FBE1E1650B1">
 <createdBy>bjacq</createdBy>
@@ -307,6 +308,11 @@ FROM
 </UsedObject>
 <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E8D539D9-470E-AD59-F6F9-7EBB356DBCE3">
 <columnName>code_insee</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_ADMINISTRATIVE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CC58AAB4-7434-B467-5039-720643714A98">
+<columnName>commentaire</columnName>
 <schema>G_BASE_VOIE</schema>
 <tableName>TA_VOIE_ADMINISTRATIVE</tableName>
 </UsedObject>
@@ -394,6 +400,11 @@ FROM
 <columnName>objectid</columnName>
 <schema>G_BASE_VOIE</schema>
 <tableName>TA_VOIE_PHYSIQUE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="05F236B1-4D77-55B2-73CB-54EC14811970">
+<columnName>nom</columnName>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_SUPRA_COMMUNALE</tableName>
 </UsedObject>
 <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="85BC597A-6554-9457-937A-3315DF68E024">
 <columnName>libelle_voie</columnName>

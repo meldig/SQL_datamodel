@@ -18,9 +18,11 @@
                 TRIM(SUBSTR(UPPER(e.libelle), 1, 1) || SUBSTR(LOWER(e.libelle), 2) || ' ' || TRIM(d.libelle_voie) || ' ' || TRIM(d.complement_nom_voie)) || CASE WHEN d.code_insee = '59298' THEN ' (Hellemmes-Lille)' WHEN d.code_insee = '59355' THEN ' (Lomme)' END AS nom_voie,
                 f.libelle_court AS lateralite,
                 CASE WHEN COALESCE(g.fid_voie_secondaire, 0) = 0 THEN 'voie principale' ELSE 'voie secondaire' END AS hierarchie,
-                COUNT(c.fid_voie_physique) AS nbr_voie_physique
+                SDO_AGGR_UNION(SDOAGGRTYPE(a.geom, 0.005)) AS geom
             FROM
-                G_BASE_VOIE.TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE c
+                G_BASE_VOIE.TA_TRONCON a
+                INNER JOIN G_BASE_VOIE.TA_VOIE_PHYSIQUE b ON b.objectid = a.fid_voie_physique
+                INNER JOIN G_BASE_VOIE.TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE c ON c.fid_voie_physique = b.objectid
                 INNER JOIN G_BASE_VOIE.TA_VOIE_ADMINISTRATIVE d ON d.objectid = c.fid_voie_administrative
                 LEFT JOIN G_BASE_VOIE.TA_TYPE_VOIE e ON e.objectid = d.fid_type_voie
                 LEFT JOIN G_BASE_VOIE.TA_LIBELLE f ON f.objectid = c.fid_lateralite
@@ -36,37 +38,6 @@
                 TRIM(SUBSTR(UPPER(e.libelle), 1, 1) || SUBSTR(LOWER(e.libelle), 2) || ' ' || TRIM(d.libelle_voie) || ' ' || TRIM(d.complement_nom_voie)) || CASE WHEN d.code_insee = '59298' THEN ' (Hellemmes-Lille)' WHEN d.code_insee = '59355' THEN ' (Lomme)' END,
                 f.libelle_court,
                 CASE WHEN COALESCE(g.fid_voie_secondaire, 0) = 0 THEN 'voie principale' ELSE 'voie secondaire' END
-        ),
-
-        C_2 AS(
-            SELECT
-                d.id_voie_administrative,
-                d.code_insee,
-                d.nom_commune,
-                d.type_voie,
-                d.libelle_voie,
-                d.complement_nom_voie,
-                d.nom_voie,
-                d.lateralite,
-                d.hierarchie,
-                d.nbr_voie_physique,
-                SDO_AGGR_UNION(SDOAGGRTYPE(a.geom, 0.005)) AS geom
-            FROM
-                G_BASE_VOIE.TA_TRONCON a
-                INNER JOIN G_BASE_VOIE.TA_VOIE_PHYSIQUE b ON b.objectid = a.fid_voie_physique
-                INNER JOIN G_BASE_VOIE.TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE c ON c.fid_voie_physique = b.objectid
-                INNER JOIN C_1 d ON d.id_voie_administrative = c.fid_voie_administrative
-            GROUP BY
-                d.id_voie_administrative,
-                d.code_insee,
-                d.nom_commune,
-                d.type_voie,
-                d.libelle_voie,
-                d.complement_nom_voie,
-                d.nom_voie,
-                d.lateralite,
-                d.hierarchie,
-                d.nbr_voie_physique
         )
 
         SELECT
@@ -80,10 +51,9 @@
             a.nom_voie,
             a.lateralite,
             a.hierarchie,
-            a.nbr_voie_physique,
             a.geom
         FROM
-            C_2 a;]]></userDefinedSQL>
+            C_1 a;]]></userDefinedSQL>
 <parsed>true</parsed>
 <viewElements>
 <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="objectid" id="61BDB0A2-1E75-AE0B-C535-403B9D8EE9A0">
@@ -207,18 +177,6 @@
 <headerAlias>hierarchie</headerAlias>
 <reference>false</reference>
 </viewElement>
-<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nbr_voie_physique" id="13C08B16-595D-AF17-3AA7-0E5EAB697AA3">
-<createdBy>bjacq</createdBy>
-<createdTime>2023-08-03 07:48:31 UTC</createdTime>
-<comment><![CDATA[Nombre de voies physiques par voie administrative.]]></comment>
-<commentInRDBMS><![CDATA[Nombre de voies physiques par voie administrative.]]></commentInRDBMS>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<dataType>UNKNOWN</dataType>
-<headerAlias>nbr_voie_physique</headerAlias>
-<reference>false</reference>
-</viewElement>
 <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="geom" id="408A46EF-706B-49F4-CDDA-56B9AA6F022F">
 <createdBy>bjacq</createdBy>
 <createdTime>2023-08-03 07:48:31 UTC</createdTime>
@@ -233,6 +191,16 @@
 </viewElement>
 </viewElements>
 <usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_TRONCON</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EE29B7FC-51B8-D974-9F22-4371A0778715">
+<container>true</container>
+<schema>G_BASE_VOIE</schema>
+<tableName>TA_VOIE_PHYSIQUE</tableName>
+</UsedObject>
 <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="22E06C5C-A545-958E-24E2-4BC55BD2639F">
 <container>true</container>
 <schema>G_BASE_VOIE</schema>
@@ -258,15 +226,10 @@
 <schema>G_BASE_VOIE</schema>
 <tableName>TA_HIERARCHISATION_VOIE</tableName>
 </UsedObject>
-<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CEBBCAB2-4407-0958-A3F8-EA37E9D7FF2E">
-<container>true</container>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="620FE706-037B-970E-09A8-BEF6526B2A2B">
+<columnName>fid_voie_physique</columnName>
 <schema>G_BASE_VOIE</schema>
-<tableName>TA_TRONCON</tableName>
-</UsedObject>
-<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EE29B7FC-51B8-D974-9F22-4371A0778715">
-<container>true</container>
-<schema>G_BASE_VOIE</schema>
-<tableName>TA_VOIE_PHYSIQUE</tableName>
+<tableName>TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE</tableName>
 </UsedObject>
 <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="67D60DA4-00F0-D631-72E9-F3C205572214">
 <columnName>fid_voie_administrative</columnName>
@@ -283,10 +246,10 @@
 <schema>G_BASE_VOIE</schema>
 <tableName>TA_VOIE_PHYSIQUE</tableName>
 </UsedObject>
-<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="620FE706-037B-970E-09A8-BEF6526B2A2B">
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="330C7FFA-7CD3-6167-C9BA-051552DAACCD">
 <columnName>fid_voie_physique</columnName>
 <schema>G_BASE_VOIE</schema>
-<tableName>TA_RELATION_VOIE_PHYSIQUE_ADMINISTRATIVE</tableName>
+<tableName>TA_TRONCON</tableName>
 </UsedObject>
 <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0D45E7D9-00AA-97E4-369E-4ED901C8806E">
 <columnName>complement_nom_voie</columnName>
@@ -302,11 +265,6 @@
 <columnName>libelle_court</columnName>
 <schema>G_BASE_VOIE</schema>
 <tableName>TA_LIBELLE</tableName>
-</UsedObject>
-<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="330C7FFA-7CD3-6167-C9BA-051552DAACCD">
-<columnName>fid_voie_physique</columnName>
-<schema>G_BASE_VOIE</schema>
-<tableName>TA_TRONCON</tableName>
 </UsedObject>
 <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="10582D37-3039-372B-C21B-163C26922848">
 <columnName>objectid</columnName>

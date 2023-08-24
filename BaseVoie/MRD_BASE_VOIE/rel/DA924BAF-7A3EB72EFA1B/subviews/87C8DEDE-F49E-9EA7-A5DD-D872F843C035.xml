@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="MRD - BaseVoie vues de consultation" id="87C8DEDE-F49E-9EA7-A5DD-D872F843C035">
+<createdBy>bjacq</createdBy>
+<modifiedBy>bjacq</modifiedBy>
+<createdTime>2023-08-24 07:50:28 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVView" oid="2365E07F-D9B7-669D-A2EF-44C82F024EDF" otype="View" vid="0925EFAE-1C8E-5977-0BE5-F726DB063E6A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="541" y="110" width="422" height="440"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVView" oid="43E0AD1C-3435-7472-4015-13E929E78C94" otype="View" vid="C2A90F10-F4DC-7407-2627-1286E24BECEC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="48" y="824" width="340" height="174"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVView" oid="56F0617C-4749-4EFF-8AB6-50597257020D" otype="View" vid="641FDF14-C138-892B-02E7-C45D55855F09">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="30" y="610" width="422" height="132"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVView" oid="84D729D4-C443-70A4-158E-2579FEB1DE1D" otype="View" vid="3AC1A840-BFC2-DC58-5FA3-B93DB1D258A0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="544" y="631" width="367" height="314"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="9E8BFBF9-5CE3-3447-7B71-4403F3281531" otype="Note" vid="98AEABFD-DB8C-373F-6075-D9C6E7852D9E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="560" y="581" width="336" height="46"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13159</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Vue matérialisée contenant la géométrie des voies administratives avec leur nom, code insee, latéralité et hiérarchie. Mise à jour quotidienne à 21h00.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVView" oid="AEEF1C70-6908-DD53-F10E-097569346314" otype="View" vid="C6A7C3F5-B71F-B413-6B5A-B78753B9E9EB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="110" width="471" height="412"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="B9FB2619-5CB0-B2E1-B413-587C2D1E83AE" otype="Note" vid="83E35E8A-8559-0D9C-098A-4E91900B4514">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="31" y="64" width="448" height="40"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13159</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Vue matérialisée contenant les tronçons, voies physiques, voies administratives et voies supra-communales de la base voie. Mise à jour quotidienne à 02h00.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="D438C4A5-ABAF-FC6A-6652-7FD2CB767A9F" otype="Note" vid="13AAA181-2604-E86C-2550-2A8379B5F553">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="42" y="567" width="394" height="40"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13159</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Vue matérialisée contenant la géométrie des voies supra-communales avec leur identifiant, leur nom et leur géométrie. Mise à jour quotidienne à 23h00.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E69377DE-99AA-1ACE-A88B-CAC63831C427" otype="Note" vid="0F60D60B-88AF-9AF4-7E43-02A89FF873BE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="65" y="764" width="306" height="53"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13159</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Vue matérialisée matérialisant les voies physiques, permettant de distinguer les voies dont le sens géométrique est inversé ou non. Mise à jour quotidienne à 19h00.</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="ECF6242B-42CB-6E8D-1268-15CFDF3315CD" otype="Note" vid="546E17BA-0BE5-C49B-9CEB-9A6A2E7EB705">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="546" y="68" width="402" height="37"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-13159</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Vue matérialisée regroupant les seuils de la MEL, leur tronçon, voie physique et voie administrative. Mise à jour quotidienne à 04h00.</comment>
+</OView>
+</objectViews>
+</Diagram>
