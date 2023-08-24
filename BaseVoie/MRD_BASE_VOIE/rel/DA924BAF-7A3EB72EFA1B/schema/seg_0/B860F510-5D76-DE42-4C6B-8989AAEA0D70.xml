@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="G_BASE_VOIE" directorySegmentName="seg_0" id="B860F510-5D76-DE42-4C6B-8989AAEA0D70">
-<createdBy>bjacq</createdBy>
-<createdTime>2023-08-03 06:56:57 UTC</createdTime>
-<comment><![CDATA[Schéma contenant la Base Voie et la Base Adresse sur le territoire de la Métropole Européenne de Lille.]]></comment>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<ordsAlias>schema_1</ordsAlias>
-</SchemaObject>

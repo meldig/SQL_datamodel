@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Base Voie" id="DA924BAF-4DC6-8AAB-D440-7A3EB72EFA1B" mainViewID="240F47FD-6CCB-AE1D-82C5-732D0593FAEA">
-<createdBy>bjacq</createdBy>
-<createdTime>2021-04-22 07:43:20 UTC</createdTime>
-<ownerDesignName>MRD_BASE_VOIE</ownerDesignName>
-<shouldBeOpen>true</shouldBeOpen>
-<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
-</relationalModel>
